@@ -76,7 +76,7 @@
         		<tr>
           			<td><br><a href="main.php" class="main">Go back</a></td>
           	</tr>
-			</table><br>
+			</table>
 		</form>
 	</div>
 
