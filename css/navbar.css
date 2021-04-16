@@ -182,6 +182,7 @@ footer{
 }
 
 #box{
+	height: 5em;
    margin: auto;
    margin-bottom: -26em;
 }
