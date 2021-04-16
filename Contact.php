@@ -37,11 +37,11 @@
         <h1> Contact Us</h1><br>
           <p>
             For any questions or concerns regarding your privacy, you may contact us using the following details: <br><br>
-            Gmail: agapitojezreel25@gmail.com
-            Gmail: arriolaaa123@gmail.com
-            Gmail: princess.raynaud0808@gmail.com
-            Gmail: lj.baloca2@gmail.com
-            Telephone Number: 09298004626
+            Gmail: agapitojezreel25@gmail.com <br>
+            Gmail: arriolaaa123@gmail.com <br>
+            Gmail: princess.raynaud0808@gmail.com <br>
+            Gmail: lj.baloca2@gmail.com <br>
+            Telephone Number: 09298004626 <br>
           </p>
           <br><a href="main.php" class="back">Go back</a>
       </div>
