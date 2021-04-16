@@ -12,7 +12,7 @@
         text-align: center;
         border: 1px solid black;
         width: 50%;
-        margin: 2em auto;
+        margin: 5em auto;
       }
     </style>
   </head>
