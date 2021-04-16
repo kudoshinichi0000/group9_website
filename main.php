@@ -25,6 +25,6 @@
 
 
 </body>
-	<?php include_once "footer.php"; ?>
-	
+	<?php include_once "footer.php"; //TEst1 Delete this ?>
+
 </html>
