@@ -16,6 +16,7 @@
         height: 30em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
+        font-size: 1.5em;
         color: black;
         margin-bottom: -30em;
       }
