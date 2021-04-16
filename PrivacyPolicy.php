@@ -38,8 +38,8 @@
   <body>
   <?php include_once "navbar.php";?>
       <div class="Container">
+        <h1>Privacy Policy</h1><br>
           <h3>
-            <h1>Privacy Policy</h1><br>
             Your privacy is important to us. It is Feedopedia's policy to
             respect your privacy and comply with any applicable law and
             regulation regardingany personal information we may collect about
