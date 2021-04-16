@@ -11,7 +11,8 @@
         background: #fff;
         text-align: center;
         border: 1px solid black;
-        width: 25%;
+        width: 50%;
+        margin: 2em auto;
       }
     </style>
   </head>
