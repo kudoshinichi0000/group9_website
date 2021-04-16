@@ -36,7 +36,7 @@
       <div class="Container">
         <h1> Contact Us</h1><br>
           <p>
-            For any questions or concerns regarding your privacy, you may contact us using the following details: <br>
+            For any questions or concerns regarding your privacy, you may contact us using the following details: <br><br>
             Gmail: agapitojezreel25@gmail.com
             Gmail: arriolaaa123@gmail.com
             Gmail: princess.raynaud0808@gmail.com
