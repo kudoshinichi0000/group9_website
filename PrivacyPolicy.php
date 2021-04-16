@@ -13,9 +13,10 @@
         border: 1px solid black;
         width: 50%;
         margin: 10em auto;
-        height: 20em;
+        height: 30em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
+        color: black;
       }
       .back{
         text-decoration: none;
