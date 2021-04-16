@@ -8,7 +8,8 @@
       background-color: #f9f9f9;
     }
       .Container{
-
+        background: #fff;
+        text-align: center;
       }
     </style>
   </head>
