@@ -13,15 +13,8 @@
 
 	<?php include_once "db.php"; include_once "navbar.php"; ?>
 
-	<div class="Greet">
-		<img src="css/images/Logo.png" alt="" height="150" style="margin: auto; padding-top: 0.5em; ">
-		<h1>Test Your Knowledge in Feedopedia!</h1>
-	</div>
-
-
+	
 	<!---Dito ididisplay yung mga quizes--->
-
-
 
 
 </body>
