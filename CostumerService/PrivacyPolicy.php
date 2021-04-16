@@ -30,7 +30,6 @@
   <body>
 
       <div class="Container">
-        <h1>Privacy Policy</h1>
           <h3>
             <h1>Privacy Policy</h1>
             Your privacy is important to us. It is Feedopedia's policy to
