@@ -29,7 +29,7 @@
         color: green;
         text-decoration: none;
       }
-      h4{
+      p{
         color: black;
       }
 
@@ -39,14 +39,14 @@
   <?php include_once "navbar.php";?>
       <div class="Container">
         <h1>Privacy Policy</h1><br>
-          <h4>
+          <p>
             Your privacy is important to us. It is Feedopedia's policy to
             respect your privacy and comply with any applicable law and
             regulation regardingany personal information we may collect about
             you, including across our website, https://localhost/Php/GroupProj/main.php,
             and other sites we own and operate.This policy is effective as
             of 16 April 2021 and was last updated on 16 April 2021.
-          </h4>
+          </p>
           <br><a href="main.php" class="back">Go back</a>
       </div>
   </body>
