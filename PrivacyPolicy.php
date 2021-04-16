@@ -8,7 +8,7 @@
       background-color: #eeeeee;
     }
       .Container{
-        background: #fff;
+        background-color: #fff;
         text-align: center;
         border: 1px solid black;
         width: 50%;
@@ -17,7 +17,7 @@
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
         color: black;
-        margin-bottom: -12em;
+        margin-bottom: -20em;
       }
       .back{
         text-decoration: none;
