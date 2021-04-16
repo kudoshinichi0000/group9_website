@@ -28,7 +28,7 @@
     </style>
   </head>
   <body>
-
+  <?php include_once "navbar.php";?>
       <div class="Container">
           <h3>
             <h1>Privacy Policy</h1>
@@ -42,5 +42,5 @@
           <a href="main.php" class="back">Go back</a>
       </div>
   </body>
-
+  <?php include_once "footer.php";?>
 </html>
