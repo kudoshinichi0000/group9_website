@@ -13,14 +13,15 @@
         border: 1px solid black;
         width: 50%;
         margin: 10em auto;
-        height: 25em;
+        height: 20em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
         font-size: 1.5em;
         color: black;
-        margin-bottom: -30em;
+        margin-bottom: -25em;
       }
       .back{
+        margin-top: 1em;
         text-decoration: none;
         color: black;
       }
@@ -31,6 +32,7 @@
       h3{
         color: black;
       }
+
     </style>
   </head>
   <body>
