@@ -13,7 +13,7 @@
         border: 1px solid black;
         width: 50%;
         margin: 10em auto;
-        height: 30em;
+        height: 25em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
         font-size: 1.5em;
@@ -44,8 +44,8 @@
             you, including across our website, https://localhost/Php/GroupProj/main.php,
             and other sites we own and operate.This policy is effective as
             of 16 April 2021 and was last updated on 16 April 2021.
-          </h3><br>
-          <a href="main.php" class="back">Go back</a>
+          </h3>
+          <br><a href="main.php" class="back">Go back</a>
       </div>
   </body>
   <?php include_once "footer.php";?>
