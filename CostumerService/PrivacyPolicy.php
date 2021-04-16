@@ -18,13 +18,20 @@
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
       }
+      .back{
+        text-decoration: none;
+        color: black;
+      }
+      .back :hover{
+        color: green;
+      }
     </style>
   </head>
   <body>
 
       <div class="Container">
+        <h1>Privacy Policy</h1>
           <h3>
-            <h1>Privacy Policy</h1>
             Your privacy is important to us. It is Feedopedia's policy to
             respect your privacy and comply with any applicable law and
             regulation regardingany personal information we may collect about
@@ -32,6 +39,7 @@
             and other sites we own and operate.This policy is effective as
             of 16 April 2021 and was last updated on 16 April 2021.
           </h3>
+          <a href="main.php" class="back">Go back</a>
       </div>
   </body>
 
