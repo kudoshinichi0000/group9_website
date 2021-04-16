@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>Privacy Policy</title>
     <style media="screen">
-    body{
-      background-color: #eeeeee;
-    }
       .Container{
         background-color: #eeeeee;
         text-align: center;
