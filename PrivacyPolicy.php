@@ -8,9 +8,8 @@
       background-color: #eeeeee;
     }
       .Container{
-        background-color: #fff;
+        background-color: #eeeeee;
         text-align: center;
-        border: 1px solid black;
         width: 50%;
         margin: 10em auto;
         height: 20em;
