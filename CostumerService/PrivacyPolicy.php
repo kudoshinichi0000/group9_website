@@ -18,7 +18,7 @@
         margin: 5em auto;
         height: 25em;
         font-size: 1em;
-        padding: 25em;
+        padding: 25px;
       }
     </style>
   </head>
