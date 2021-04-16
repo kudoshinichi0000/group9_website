@@ -14,7 +14,7 @@
         width: 50%;
         margin: 5em auto;
         height: 25em;
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
       }
@@ -28,8 +28,7 @@
             Your privacy is important to us. It is Feedopedia's policy to
             respect your privacy and comply with any applicable law and
             regulation regardingany personal information we may collect about
-            you, including across our
-            website, https://localhost/Php/GroupProj/main.php,
+            you, including across our website, https://localhost/Php/GroupProj/main.php,
             and other sites we own and operate.This policy is effective as
             of 16 April 2021 and was last updated on 16 April 2021.
           </h3>
