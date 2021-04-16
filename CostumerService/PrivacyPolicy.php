@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Privacy Policy</title>
+    <style media="screen">
+    body{
+      background-color: #f9f9f9;
+    }
+      .Container{
+
+      }
+    </style>
   </head>
   <body>
 
@@ -19,5 +27,5 @@
           </h3>
       </div>
   </body>
-  
+
 </html>
