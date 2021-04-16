@@ -24,6 +24,7 @@
       }
       .back :hover{
         color: green;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -38,7 +39,7 @@
             you, including across our website, https://localhost/Php/GroupProj/main.php,
             and other sites we own and operate.This policy is effective as
             of 16 April 2021 and was last updated on 16 April 2021.
-          </h3>
+          </h3><br>
           <a href="main.php" class="back">Go back</a>
       </div>
   </body>
