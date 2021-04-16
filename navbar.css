@@ -1,0 +1,275 @@
+body {
+	margin: 0;
+	background-image: url('images/bg5.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #0d797b;
+  height: 4em;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.admin, .logout{
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 19px;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #feab02;
+}
+
+.home a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #feab02;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.home :hover::before {
+  width: 100%;
+  color: #feab02;
+}
+
+.results a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #feab02;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.results :hover::before {
+  width: 100%;
+  color: #feab02;
+}
+
+h3{
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 1.7em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1em;
+}
+
+.Greet{
+  background-image: url('images/edu.png');
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 4em;
+  font-size: 1em;
+  text-align: center;
+  color: yellow;
+  font-family: 'Dancing Script', cursive;
+}
+
+.hj{
+  text-align: center;
+  margin-top: 50em;
+}
+
+.question-card{
+  margin-top: 10em;
+}
+
+footer{
+  margin-top: 36em;
+  height: 8em;
+  background-color: black;
+  color: white;
+}
+
+.Centeredtext{
+  text-align: center;
+  color: #fff;
+}
+
+.Centeredtext a{
+  text-decoration: none;
+  color: #fff;
+  margin-top: 3em;
+  margin-left: 4em;
+}
+
+.Centeredtext, a:hover{
+  color: #feab02;
+}
+
+.cenocolor{
+  text-align: center;
+  color: #fff;
+}
+
+#text{
+  height: 25px;
+  border-radius: 5px;
+  padding:4px;
+  border: solid thin #aaa;
+  width: 40%;
+}
+
+#submit{
+  height: 25px;
+  border-radius: 5px;
+  padding:4px;
+  border: solid thin #aaa;
+}
+
+#submit:hover{
+   cursor: pointer;
+}
+    
+#button{
+  padding: 10px;
+  width: 100px;
+  color: white;
+  border: none;
+}
+
+#box{
+   margin: auto;
+   margin-bottom: -26em;
+}
+
+.form{
+  width: 40%;
+  padding: 35px;
+  background-color: #0d797b;
+  left: 25%;
+  right: 25%;
+  margin: 10% auto;
+  text-align: center;
+}
+
+.form th{
+  font-size: 2rem;
+}
+
+.btnon{
+  padding: 1em 2em;
+}
+
+.main{
+  text-decoration: none;
+  color: black;
+}
+
+h4{
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 1em;
+  margin-left: -0.5em;
+  margin-top: -0.1em;
+  margin-bottom: 0.5em;
+}
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+  padding: 25px 0px;
+  margin-top: 46em;
+  height: 16em;
+}
+
+
+#footer {
+    background: #000000 !important;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+#footer ul.s-links li a{
+  color:#ffffff;
+  font-size: 19px;
+
+}
+
+#footer ul.s-links li{
+    font-size: 25px;
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.s-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.s-links li a i{
+  margin-right: 5px;
+}
+#footer ul.s-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
