@@ -14,10 +14,11 @@
         background: #fff;
         text-align: center;
         border: 1px solid black;
-        width: 75%;
+        width: 50%;
         margin: 5em auto;
         height: 25em;
         font-size: 1em;
+        padding: 25em;
       }
     </style>
   </head>
