@@ -6,7 +6,6 @@
     <style media="screen">
     body{
       background-color: #eeeeee;
-      height: -25em;
     }
       .Container{
         background: #fff;
@@ -18,6 +17,7 @@
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
         color: black;
+        margin-bottom: -12em;
       }
       .back{
         text-decoration: none;
