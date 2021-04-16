@@ -6,6 +6,7 @@
     <style media="screen">
     body{
       background-color: #eeeeee;
+      height: -25em;
     }
       .Container{
         background: #fff;
