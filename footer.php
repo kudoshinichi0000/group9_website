@@ -39,7 +39,7 @@
 				</div>	<div class="col-xs-12 col-sm-5 col-md-2">
 				    <h5>Policy</h5>
 					<ul class="list-unstyled s-links">
-						<li><a href="CostumerService\PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+						<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
 					</ul>
 					<ul class="list-unstyled s-links">
 						<li><a href="#"><i class="fa fa-angle-double-right"></i> Cookies Policy</a></li>
