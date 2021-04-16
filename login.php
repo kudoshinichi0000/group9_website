@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include_once "db.php";
 	include_once "functions.php";
 	if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -20,7 +20,7 @@
 				{
 
 					$user_data = mysqli_fetch_assoc($result);
-					
+
 					if($user_data['password'] === $password)
 					{
 
@@ -30,7 +30,7 @@
 					}
 				}
 			}
-			
+
 			echo "wrong name or pass!";
 		}else
 		{
@@ -43,7 +43,7 @@
 <html>
 <head>
 <style>
-	body 
+	body
 	{
   		background-image:url("css/images/edu.png");
 	}
@@ -60,7 +60,7 @@
 		<form method="POST">
 			<table class="form child" style="border-radius: 1em;">
 				<tr>
-					<th><h4>LOGIN</h4></th>
+					<th><br><h4>LOGIN</h4></th>
 				</tr>
 				<tr>
 					<td><input type="text" name="username" placeholder="👨‍💼| Enter Username here" class="btnon" required></td>
@@ -69,13 +69,13 @@
 					<td><br><input type="password" name="password" placeholder="🔒|  Enter Password Here" class="btnon" required> </td>
 				</tr>
 				<tr>
-            		<td colspan="2">
-              		<br><input type="submit" value="LOGIN">
-            		</td>
-        		</tr>
+            <td colspan="2">
+              <br><input type="submit" value="LOGIN">
+            </td>
+        </tr>
         		<tr>
           			<td><br><a href="main.php" class="main">Go back</a></td>
-          		</tr>
+          	</tr>
 			</table>
 		</form>
 	</div>
