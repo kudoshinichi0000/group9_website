@@ -10,6 +10,8 @@
       .Container{
         background: #fff;
         text-align: center;
+        border: 1px solid black;
+        width: 25%;
       }
     </style>
   </head>
