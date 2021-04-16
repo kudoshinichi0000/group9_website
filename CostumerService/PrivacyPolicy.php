@@ -6,7 +6,7 @@
     <style media="screen">
     body{
       margin: 0;
-    	background-image: url('css/images/bg5.jpg');
+    	background-image: url('images/bg5.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -14,10 +14,10 @@
         background: #fff;
         text-align: center;
         border: 1px solid black;
-        width: 50%;
+        width: 75%;
         margin: 5em auto;
         height: 25em;
-        font-size: 2em;
+        font-size: 1em;
       }
     </style>
   </head>
