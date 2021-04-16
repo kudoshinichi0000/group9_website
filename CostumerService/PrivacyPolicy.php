@@ -5,7 +5,7 @@
     <title>Privacy Policy</title>
   </head>
   <body>
-    <?php include_once "group9_website/navbar.php"; ?>
+
       <div class="Container">
           <h3>
             <h1>Privacy Policy</h1>
@@ -19,5 +19,5 @@
           </h3>
       </div>
   </body>
-  <?php include_once "footer.php";?>
+  
 </html>
