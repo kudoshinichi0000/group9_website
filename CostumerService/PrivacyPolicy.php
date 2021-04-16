@@ -5,7 +5,10 @@
     <title>Privacy Policy</title>
     <style media="screen">
     body{
-      background-color: #f9f9f9;
+      margin: 0;
+    	background-image: url('css/images/bg5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
       .Container{
         background: #fff;
@@ -13,6 +16,8 @@
         border: 1px solid black;
         width: 50%;
         margin: 5em auto;
+        height: 25em;
+        font-size: 2em;
       }
     </style>
   </head>
