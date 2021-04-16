@@ -12,9 +12,8 @@
         text-align: center;
         border: 1px solid black;
         width: 50%;
-        margin: 5em auto;
-        height: 15em;
-        font-size: 1.5em;
+        margin: 10em auto;
+        height: 20em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
       }
@@ -31,8 +30,8 @@
   <body>
   <?php include_once "navbar.php";?>
       <div class="Container">
+        <h1>Privacy Policy</h1><br>
           <h3>
-            <h1>Privacy Policy</h1>
             Your privacy is important to us. It is Feedopedia's policy to
             respect your privacy and comply with any applicable law and
             regulation regardingany personal information we may collect about
