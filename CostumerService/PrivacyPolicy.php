@@ -13,7 +13,7 @@
         border: 1px solid black;
         width: 50%;
         margin: 5em auto;
-        height: 25em;
+        height: 15em;
         font-size: 1.5em;
         padding: 25px;
         font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
