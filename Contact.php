@@ -43,7 +43,7 @@
             Gmail: lj.baloca2@gmail.com <br>
             Telephone Number: 09298004626
           </p>
-          <br><a href="main.php" class="back">Go back</a>
+          <a href="main.php" class="back">Go back</a>
       </div>
   </body>
   <?php include_once "footer.php";?>
