@@ -13,7 +13,7 @@
 
 	<?php include_once "db.php"; include_once "navbar.php"; ?>
 
-	
+
 	<!---Dito ididisplay yung mga quizes--->
 
 
