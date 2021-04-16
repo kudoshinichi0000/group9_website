@@ -183,7 +183,7 @@ footer{
 
 #box{
    margin: auto;
-   margin-bottom: -26em;
+   margin-bottom: -28em;
 }
 
 .form{
@@ -195,7 +195,6 @@ footer{
   margin: 10% auto;
   text-align: center;
 	height: 26em;
-	margin-bottom: -12em; 
 }
 
 .form th{
