@@ -41,7 +41,7 @@
             Gmail: arriolaaa123@gmail.com <br>
             Gmail: princess.raynaud0808@gmail.com <br>
             Gmail: lj.baloca2@gmail.com <br>
-            Telephone Number: 09298004626 <br>
+            Telephone Number: 09298004626
           </p>
           <br><a href="main.php" class="back">Go back</a>
       </div>
