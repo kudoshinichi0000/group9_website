@@ -273,29 +273,3 @@ section {
     margin-bottom: 10px;
     font-size: 10px;
 }
-
-.dropbtn {
-    color: #fff;
-    padding: 10px;
-    font-size: 12px;
-}
-.dropdown {
-    display: inline-block;
-    position: relative
-}
-.dropdown-content {
-    position: absolute;
-    min-width: 200px;
-    display: none;
-    z-index: 1;
-}
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
