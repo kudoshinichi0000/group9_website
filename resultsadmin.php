@@ -12,7 +12,6 @@
 	include_once "navbaradmin.php" ?>
 	<?php echo $_SESSION['userid'];?>
 
-	<h1>admin bbbb</h1>
 </body>
 	<?php include_once "footer.php";?>
 </html>
