@@ -24,7 +24,7 @@
 				<table>
 					<tr>
 						<!---create question name--->
-				        <td>Name Your Quiz!</td>
+				        <td><h3>Name Your Quiz!</h3></td>
 					        <td>
 					          <input class='form-control' type='text' name='inputname' required>
 					        </td>
