@@ -10,62 +10,39 @@
 
 	<?php include_once "db.php"; //Kapag naayos na yung error paki tanggal tong comment iwan mo lang tong (include_once "navbar.php";)  ?>
 
-	<div class="quiz">
-		<?php 
-
-		//DISPLAY QUIZ INFO
-		$quizid = $_GET["id"];
-		echo "$name";
-
-		?>
-		<div class="question-card">
-			
-
-				
-			<div>
-				<form method='POST' action='create-question-handle.php?id=<?php echo $quizid;?>' enctype='multipart/form-data'>
-				<table>
-					<tr>
-						<?php //create question name?>
-				        <td>Question:</td>
-					        <td>
-					          <input class='form-control' type='text' name='inputname' required>
-					        </td>
-				    </tr>
-
-				    <tr>
-						<?php //create question answer?>
-				        <td>Answer:</td>
-					        <td>
-					          <input class='form-control' type='text' name='answer' required>
-					        </td>
-				    </tr>
-
-				    <tr>
-						<?php //create question choice?>
-				        <td>Choice 1:</td>
-					        <td>
-					          <input class='form-control' type='text' name='choice2' required>
-					        </td>
-				    </tr>
-
-				    <tr>
-						<?php //create question choice?>
-				        <td>Choice 2:</td>
-					        <td>
-					          <input class='form-control' type='text' name='choice3' required>
-					        </td>
-				    </tr>
-				    <tr>
-				    	<?php //go to handler ?>
-				   		<td><input class="form-control" type="submit" value="Submit Question"></td>
-					</tr>
-					</table>
-				</form>
-				<a href="main.php">Back Home.</a>
-			</div>
-					
-
+	<div id="box">
+		<form method='POST' action='create-question-handle.php?id=<?php echo $quizid;?>' enctype='multipart/form-data'>
+			<table class="form child" style="border-radius: 1em;">
+				<tr>
+					<th><br><h4>Question:</h4></th>
+				</tr>
+				<tr>
+					<!---Create Question Name--->
+					<td><input class='form-control' type='text' name='inputname' placeholder="Input Question Name: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Answer--->
+					<td><br><input class='form-control' type='text' name='answer' placeholder="Input Question Answer: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Choice--->
+					<td><br><input class='form-control' type='text' name='choice2' placeholder="Choice 1: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Choice--->
+					<td><br><input class='form-control' type='text' name='choice3' placeholder="Choice 2: " required></td>
+				</tr>
+				<tr>
+						<td colspan="2">
+							<br><input type="submit" value="LOGIN">
+						</td>
+				</tr>
+						<tr>
+								<td><br><a href="main.php" class="main">Go back</a></td>
+						</tr>
+			</table>
+		</form>
+	</div>
 		</div>
 	</div>
 
