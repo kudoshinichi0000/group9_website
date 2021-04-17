@@ -140,6 +140,13 @@ h3{
 	font-size: 1em;
 }
 
+footer{
+  margin-top: 36em;
+  height: 8em;
+  background-color: black;
+  color: white;
+}
+
 .Centeredtext{
   text-align: center;
   color: #fff;
