@@ -27,7 +27,7 @@
 				        <td><div class="cursiveblack">
 				        	Name Your Quiz!
 				        </div><td>
-					          <input class='form-control' type='text' name='inputname' required>
+					          <br><input class='form-control' type='text' name='inputname' required>
 					        </td>
 				    </tr>
 				    <tr>
