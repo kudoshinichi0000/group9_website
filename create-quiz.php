@@ -29,11 +29,6 @@
 					<tr>
 						<td><br><input class="form-control" type="submit" value="Add Question"> </td>
 					</tr>
-					<tr>
-	            <td colspan="2">
-	              <br><input type="submit" value="LOGIN">
-	            </td>
-	        </tr>
 	        		<tr>
 	          			<td><br><a href="main.php" class="main">Go Home</a></td>
 	          	</tr>
