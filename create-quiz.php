@@ -8,15 +8,9 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; //Kapag naayos na yung error paki tanggal tong comment iwan mo lang tong (include_once "navbar.php";)?>
+	<?php include_once "db.php"; include_once "navbar.php";)?>
 
 	<div class="quiz">
-		<?php
-		//DISPLAY QUIZ INFO
-		echo "$name";
-		?>
-
-
 		<div id="box">
 			<form method="POST">
 				<table class="form child" style="border-radius: 1em;">
