@@ -12,32 +12,33 @@
 
 	<div class="quiz">
 		<?php
-
 		//DISPLAY QUIZ INFO
 		echo "$name";
-
 		?>
-		<div class="question-card">
 
-			<div>
-				<form method='POST' action='create-quiz-handle.php' enctype='multipart/form-data'>
-				<table>
+
+		<div id="box">
+			<form method="POST">
+				<table class="form child" style="border-radius: 1em;">
 					<tr>
-						<!---create question name--->
-				        <td><div class="cursiveblack">
-				        	Name Your Quiz!<br>
-				        </div><br><td><br>
-					          <br><input class='form-control' type='text' name='inputname' required>
-					        </td>
-				    </tr>
-				    <tr>
-				    	<!---go to handler--->
-				   		<td><input class="form-control" type="submit" value="Add Question"></td>
+						<th><br><h4>Name Your Quiz!</h4></th>
 					</tr>
-					</table>
-				</form>
-				<a href="main.php">Back Home.</a>
-			</div>
+					<tr>
+						<td><input class='form-control' type='text' name='inputname' required> </td>
+					</tr>
+					<tr>
+						<td><br><input class="form-control" type="submit" value="Add Question"> </td>
+					</tr>
+					<tr>
+	            <td colspan="2">
+	              <br><input type="submit" value="LOGIN">
+	            </td>
+	        </tr>
+	        		<tr>
+	          			<td><br><a href="main.php" class="main">Go Home</a></td>
+	          	</tr>
+				</table>
+			</form>
 		</div>
 	</div>
 </body>
