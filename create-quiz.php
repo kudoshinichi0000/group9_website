@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; include_once "navbar.php";)?>
+	<?php include_once "db.php"; include_once "navbar.php"; ?>
 
 	<div class="quiz">
 		<div id="box">
