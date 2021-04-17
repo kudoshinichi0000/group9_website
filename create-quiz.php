@@ -25,8 +25,8 @@
 					<tr>
 						<!---create question name--->
 				        <td><div class="cursiveblack">
-				        	Name Your Quiz!
-				        </div><td>
+				        	Name Your Quiz!<br>
+				        </div><br><td><br>
 					          <br><input class='form-control' type='text' name='inputname' required>
 					        </td>
 				    </tr>
