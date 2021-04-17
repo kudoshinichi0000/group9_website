@@ -11,14 +11,14 @@
 	<?php include_once "db.php"; //Kapag naayos na yung error paki tanggal tong comment iwan mo lang tong (include_once "navbar.php";)?>
 
 	<div class="quiz">
-		<?php 
+		<?php
 
 		//DISPLAY QUIZ INFO
 		echo "$name";
 
 		?>
 		<div class="question-card">
-			
+
 			<div>
 				<form method='POST' action='create-quiz-handle.php' enctype='multipart/form-data'>
 				<table>
