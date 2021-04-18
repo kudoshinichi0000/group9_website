@@ -269,6 +269,7 @@ section {
   padding: 3px 0;
   margin-left:5px;
   font-weight:700;
+	text-decoration: none;
 }
 #footer ul.s-links li a i{
   margin-right: 5px;
