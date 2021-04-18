@@ -45,6 +45,9 @@
 					<div class="col-xs-12 col-sm 5 colmd-2">
 						<h5>Policies</h5>
 						<ul class="list-unstyled s-links">
+							<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i> PrivacyPolicy</a></li>
+						</ul>
+
 
 
 </html>
