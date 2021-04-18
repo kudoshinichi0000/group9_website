@@ -27,3 +27,8 @@ ul li a .fa {
   transition: .5s;
   padding-right: 14px;
 }
+ul li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+}
