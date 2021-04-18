@@ -9,7 +9,7 @@ body{
 ul {
   position:absolute;
   top:70%;
-  left:50%;
+  left:70%;
   transform:translate(-50%, -50%);
   display:flex;
   margin:0;
