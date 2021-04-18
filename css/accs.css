@@ -20,3 +20,7 @@ ul li {
   margin:0 15px;
   margin-left: 19px;
 }
+ul li a .fa {
+  text-align: center;
+  font-size: 40px;
+}
