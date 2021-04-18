@@ -4,7 +4,7 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/accs.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <link href="https://stackpath.bootstrapcdn.com">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 </body>
@@ -13,4 +13,7 @@
     <a href="#">
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <span> - Facebook</span>
+    </a>
+  </li>
+  <li>
 </html>
