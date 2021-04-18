@@ -2,22 +2,26 @@
 <html>
 <head>
 	<title></title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 
 </body>
-<footer>
-		<br><br>
-		<div class="Centeredtext">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Contact</a>
-			<a href="#">Terms</a>
-			<a href="#">Data Policy</a>
-			<a href="#">Cookies Policy</a>
-		<br>
-		</div>
-		<div class="cenocolor"><h5>Copyright © 2021 GROUP9</h5></div>
-	</footer>
+<!-- footer -->
+
+section id="footer">
+
+	<div class="container">
+			<div class=" row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-5 col-md-2">
+					<ul class="list-unstyled s-links">
+						<li><a href="main.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+					</ul>
+					<div class="col-xs-12 col-sm-5 col-md-2">
+						<ul class="list-unstyled s-links">
+
 </html>
