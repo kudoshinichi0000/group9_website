@@ -1,5 +1,8 @@
 body {
-
+	margin: 0;
+	background-image: url(images/bg5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .container {
@@ -142,7 +145,7 @@ input{
 footer{
   margin-top: 36em;
   height: 8em;
-  background-color: #0d797b;
+  background-color: #000;
   color: white;
 }
 
@@ -246,7 +249,7 @@ section {
 
 
 #footer {
-    background: #0d797b !important;
+    background: #000 !important;
 }
 #footer h5{
   padding-left: 10px;
