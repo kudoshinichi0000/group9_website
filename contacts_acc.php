@@ -18,4 +18,5 @@
   <li>
     <a href="#">
       <i class="fa fa-twitter" aria-hidden="true"></i>
+      <span> - Twitter</span>
 </html>
