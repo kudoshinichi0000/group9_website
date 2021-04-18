@@ -290,3 +290,10 @@ section {
     margin-bottom: 10px;
     font-size: 10px;
 }
+
+.MainContainer{
+	border: 1px solid orange;
+	background-color: #fff;
+	width: 50%
+	height: 25em;
+}

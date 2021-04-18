@@ -15,7 +15,9 @@
 
 
 	<!---Dito ididisplay yung mga quizes--->
+	<div class="MainContainer">
 
+	</div>
 
 </body>
 	<?php include_once "footer.php";?>
