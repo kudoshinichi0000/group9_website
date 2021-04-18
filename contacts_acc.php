@@ -30,5 +30,8 @@
  <li>
     <a href="#">
       <i class="fa fa-instagram" aria-hidden="true"></i>
+      <span> - Instagram</span>
+   </a>
+ </li>
 
 </html>
