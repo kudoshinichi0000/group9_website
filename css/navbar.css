@@ -285,7 +285,9 @@ section {
     font-weight: 700;
 		text-decoration: none;
 }
-
+#footer h5{
+	texxt-align:center;
+}
 @media (max-width:767px){
   #footer h5 {
     padding-left: 0;
