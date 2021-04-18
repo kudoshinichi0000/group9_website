@@ -16,7 +16,7 @@
     </a>
   </li>
   <li>
-    <a href="https://www.facebook.com/princessangelalzagaraynaud/">
+    <a href="https://twitter.com/Aakaishuichii">
       <i class="fa fa-twitter" aria-hidden="true"></i>
       <span>-Twitter</span>
     </a>
