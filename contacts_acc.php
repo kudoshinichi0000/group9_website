@@ -11,4 +11,5 @@
   <li>
     <a href="#">
       <i class="fa fa-facebook" aria-hidden="true"></i>
+      <span> - Facebook</span>
 </html>
