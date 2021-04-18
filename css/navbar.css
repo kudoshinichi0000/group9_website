@@ -295,5 +295,6 @@ section {
 	border: 1px solid orange;
 	background-color: #fff;
 	width: 50%
-	height: 25em;
+	height: 100em;
+	margin: auto;
 }
