@@ -146,6 +146,10 @@ footer{
   color: white;
 }
 
+footer :hover{
+	text-decoration: none;
+}
+
 .Centeredtext{
   text-align: center;
   color: #fff;
@@ -243,7 +247,6 @@ section {
 
 #footer {
     background: #0d797b !important;
-		text-decoration: none;
 }
 #footer h5{
   padding-left: 10px;
