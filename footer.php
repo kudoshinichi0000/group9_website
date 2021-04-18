@@ -47,6 +47,9 @@
 						<ul class="list-unstyled s-links">
 							<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i> PrivacyPolicy</a></li>
 						</ul>
+						<ul class="list-unstyled s-links">
+							<li><a href="#"><i class="fa fa-angle-double-right"></i> Cookies Policy</a></li>
+						</ul>
 
 
 
