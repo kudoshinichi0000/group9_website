@@ -43,6 +43,8 @@
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm 5 colmd-2">
+						<h5>Policies</h5>
+						<ul class="list-unstyled s-links">
 
 
 </html>
