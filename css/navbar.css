@@ -1,5 +1,9 @@
 body {
-	background-color: #286a66;
+	margin: 0;
+	background-image: url(images/bg5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
 
 .container {
@@ -289,12 +293,4 @@ section {
     padding-bottom: 0px;
     margin-bottom: 10px;
     font-size: 10px;
-}
-
-.MainContainer{
-	border: 1px solid orange;
-	background-color: #fff;
-	width: 50%
-	height: 100em;
-	margin: auto;
 }
