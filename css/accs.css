@@ -30,5 +30,7 @@ ul li a .fa {
 ul li a span {
   padding:0;
   margin:0;
-  position:absolute;
+  position:absolute
+  top: 5px;
+ color: #262626;
 }
