@@ -42,6 +42,7 @@
 							<li><a href="#"><i class="fa fa-angle-double-right"></i>Terms</a></li>
 						</ul>
 					</div>
+					<div class="col-xs-12 col-sm 5 colmd-2">
 
 
 </html>
