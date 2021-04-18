@@ -43,7 +43,7 @@
             Gmail: lj.baloca2@gmail.com <br>
             Telephone Number: 09298004626
           </p>
-          <a href="main.php" class="back">Go to social media accounts</a>
+          <a href="socmed.php" class="back">Go to social media accounts</a>
       </div>
   </body>
   <?php include_once "footer.php";?>
