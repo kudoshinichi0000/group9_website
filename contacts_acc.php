@@ -26,6 +26,9 @@
     <i class="fa fa-google-plus" aria-hidden="true"></i>
     <span> - Google</span>
   </a>
-</li>
+ </li>
+ <li>
+    <a href="#">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
 
 </html>
