@@ -2,7 +2,8 @@
 <html>
 <head>
   <title></title>
+  <link rel="stylesheet" type="text/css" href="css/soc.css">
 </head>
 <body>
 </body>
-</html>cz,vmzv
+</html>
