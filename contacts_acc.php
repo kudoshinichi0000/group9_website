@@ -12,7 +12,7 @@
   <li>
     <a href="#">
       <i class="fa fa-facebook" aria-hidden="true"></i>
-      <span> - Facebook</span>
+      <span>- Facebook</span>
     </a>
   </li>
   <li>
