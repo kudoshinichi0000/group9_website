@@ -142,7 +142,7 @@ input{
 footer{
   margin-top: 36em;
   height: 8em;
-  background-color: #feab02;
+  background-color: #0d797b;
   color: white;
 }
 
@@ -242,7 +242,7 @@ section {
 
 
 #footer {
-    background: #feab02 !important;
+    background: #0d797b !important;
 }
 #footer h5{
   padding-left: 10px;
