@@ -19,4 +19,10 @@
     <a href="#">
       <i class="fa fa-twitter" aria-hidden="true"></i>
       <span> - Twitter</span>
+    </a>
+  </li>
+  <li>
+  <a href="#">
+    <i class="fa fa-google-plus" aria-hidden="true"></i>
+
 </html>
