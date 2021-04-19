@@ -9,6 +9,10 @@
 <body>
 
   <h1> Social Media Accounts </h1>
+  <br>
+  <br>
+  <br>
+  <a href="main.php" class="back"> Go Back </a>
 </body>
 <ul>
   <li>
@@ -35,8 +39,8 @@
       <span> - Instagram</span>
    </a>
  </li>
- 
- <a href="main.php" class="back" Go back</a>
+
+ <a href="main.php" class="back"> Go back</a>
 
 
 
