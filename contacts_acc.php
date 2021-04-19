@@ -35,8 +35,7 @@
       <span> - Instagram</span>
    </a>
  </li>
-
- <br>
+ 
  <a href="main.php" class="back" Go back</a>
 
 
