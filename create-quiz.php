@@ -18,7 +18,7 @@
 						<th><br><h4>Name Your Quiz!</h4></th>
 					</tr>
 					<tr>
-						<td><input class='form-control' type='text' name='inputname' required> </td>
+						<td><input class='form-control' type='text' class="btnon" name='inputname' required> </td>
 					</tr>
 					<tr>
 						<td><br><input class="form-control" type="submit" value="Add Question"> </td>
