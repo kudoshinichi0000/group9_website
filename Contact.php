@@ -31,7 +31,7 @@
       .con{
         font-family: 'Dancing Script', cursive;
         color: #fff;
-        font-size: 5em;
+        font-size: 3em;
         margin-left: -0.5em;
         margin-top: -0.1em;
         margin-bottom: 0.5em;
