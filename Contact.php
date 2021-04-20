@@ -13,7 +13,7 @@
         margin: 10% auto;
         text-align: center;
       	height: 26em;
-        margin-bottom: -25em;
+        margin-bottom: -30em;
       }
       .back{
         margin-top: 1em;
@@ -31,7 +31,7 @@
       .con{
         font-family: 'Dancing Script', cursive;
         color: #fff;
-        font-size: 1em;
+        font-size: 5em;
         margin-left: -0.5em;
         margin-top: -0.1em;
         margin-bottom: 0.5em;
