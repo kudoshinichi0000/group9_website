@@ -222,7 +222,7 @@ footer :hover{
 .form{
   width: 40%;
   padding: 35px;
-  background-color: #0d797b;
+  background-color: #2d142c;
   left: 25%;
   right: 25%;
   margin: 10% auto;
@@ -236,6 +236,14 @@ footer :hover{
 
 .btnon{
   padding: 1em 2em;
+}
+
+.Subbotton{
+	padding: 0.5em 3em;
+}
+
+.Subbotton :hover{
+	cursor: pointer;
 }
 
 .main{
@@ -310,5 +318,5 @@ section {
 }
 
 .inputbox{
-	
+
 }
