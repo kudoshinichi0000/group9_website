@@ -33,7 +33,7 @@ header::after {
   padding: 10px 0;
 }
 
-.admin, .logout{
+.admin{
   background-color: black;
   color: black;
   padding: 0.5em 1em;
