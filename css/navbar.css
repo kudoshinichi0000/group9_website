@@ -37,7 +37,7 @@ header::after {
 }
 
 .admin a{
-	color: black;
+	color: #000;
 }
 
 .logout{
@@ -47,7 +47,7 @@ header::after {
 }
 
 .logout a{
-	color: #fff;
+	color: #000;
 }
 
 nav {
