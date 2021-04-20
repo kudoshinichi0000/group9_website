@@ -5,16 +5,14 @@
     <title>Contact</title>
     <style media="screen">
       .Container{
-        background-color: #eeeeee;
+        width: 40%;
+        padding: 35px;
+        background-color: #2d142c;
+        left: 25%;
+        right: 25%;
+        margin: 10% auto;
         text-align: center;
-        width: 50%;
-        margin: 10em auto;
-        height: 20em;
-        padding: 25px;
-        font-family: graphik,calibre,helvetica neue,Helvetica,Arial,lucida grande,sans-serif;
-        font-size: 1.5em;
-        color: black;
-        margin-bottom: -25em;
+      	height: 26em;
       }
       .back{
         margin-top: 1em;
