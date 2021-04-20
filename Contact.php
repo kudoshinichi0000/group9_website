@@ -17,14 +17,14 @@
       .back{
         margin-top: 1em;
         text-decoration: none;
-        color: white;
+        color: #fff;
       }
       .back :hover{
         color: green;
         text-decoration: none;
       }
       p{
-        color: black;
+        color: #fff;
       }
 
       h1{
