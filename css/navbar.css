@@ -240,11 +240,7 @@ footer :hover{
 
 .Subbotton{
 	padding: 0.5em 3em;
-}
-
-.Subbotton ::after{
 	cursor: pointer;
-	background-color: yellow;
 }
 
 .main{
