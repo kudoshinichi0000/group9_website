@@ -12,7 +12,7 @@
         right: 25%;
         margin: 10% auto;
         text-align: center;
-      	height: 15em;
+      	height: 20em;
       }
       .back{
         margin-top: 1em;
