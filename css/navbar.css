@@ -1,11 +1,8 @@
-
-
 body {
 	margin: 0;
 	background-image: url(images/bg5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 .container {
@@ -106,7 +103,7 @@ nav a:hover {
 h3{
   font-family: 'Dancing Script', cursive;
   color: #fff;
-  font-size: 1.7em;
+  font-size: 1.8em;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1em;
