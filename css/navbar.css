@@ -34,8 +34,8 @@ header::after {
 }
 
 .admin, .logout{
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.5em 1em;
   border-radius: 25px;
 }
