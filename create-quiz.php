@@ -21,7 +21,7 @@
 						<td><input type='text' class="btnon" name='inputname' required> </td>
 					</tr>
 					<tr>
-						<td><br><input class="form-control" type="submit" value="Add Question"> </td>
+						<td><br><input class="Subbotton" type="submit" value="Add Question"> </td>
 					</tr>
 	        		<tr>
 	          			<td><br><a href="main.php" class="main">Go Home</a></td>
