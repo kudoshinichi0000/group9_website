@@ -36,6 +36,12 @@ header::after {
   border-radius: 25px;
 }
 
+.logout{
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+
 .admin a{
 	color: black;
 }
