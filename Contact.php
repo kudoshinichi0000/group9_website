@@ -17,7 +17,7 @@
       .back{
         margin-top: 1em;
         text-decoration: none;
-        color: black;
+        color: white;
       }
       .back :hover{
         color: green;
@@ -27,12 +27,20 @@
         color: black;
       }
 
+      h1{
+        font-family: 'Dancing Script', cursive;
+        color: #fff;
+        font-size: 1em;
+        margin-left: -0.5em;
+        margin-top: -0.1em;
+        margin-bottom: 0.5em;
+      }
     </style>
   </head>
   <body>
   <?php include_once "navbar.php";?>
       <div class="Container">
-        <h1> Contact Us</h1><br>
+        <h1>Contact Us</h1><br>
           <p>
             For any questions or concerns regarding your privacy, you may contact us using the following details: <br><br>
             Gmail: agapitojezreel25@gmail.com <br>
