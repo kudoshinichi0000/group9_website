@@ -36,14 +36,18 @@ header::after {
   border-radius: 25px;
 }
 
+.admin a{
+	color: black;
+}
+
 .logout{
   background-color: white;
   padding: 0.5em 1em;
   border-radius: 25px;
 }
 
-.admin a{
-	color: black;
+.logout a{
+	color: #fff;
 }
 
 nav {
