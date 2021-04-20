@@ -41,7 +41,7 @@
   <body>
   <?php include_once "navbar.php";?>
       <div class="Container">
-        <div class="con">Contact Us</div><br>
+        <div class="con">Contact Us</div>
           <p>
             For any questions or concerns regarding your privacy, you may contact us using the following details: <br><br>
             Gmail: agapitojezreel25@gmail.com <br>
