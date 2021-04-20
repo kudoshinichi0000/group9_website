@@ -28,7 +28,7 @@
         color: #fff;
       }
 
-      h1{
+      .con{
         font-family: 'Dancing Script', cursive;
         color: #fff;
         font-size: 1em;
@@ -41,7 +41,7 @@
   <body>
   <?php include_once "navbar.php";?>
       <div class="Container">
-        <h1>Contact Us</h1><br>
+        <div class="con">Contact Us</div><br>
           <p>
             For any questions or concerns regarding your privacy, you may contact us using the following details: <br><br>
             Gmail: agapitojezreel25@gmail.com <br>
@@ -50,7 +50,7 @@
             Gmail: lj.baloca2@gmail.com <br>
             Telephone Number: 09298004626
           </p>
-          <a href="contacts_acc.php" class="back">Go to social media accounts</a>
+          <br><a href="contacts_acc.php" class="back">Go to social media accounts</a>
       </div>
   </body>
   <?php include_once "footer.php";?>
