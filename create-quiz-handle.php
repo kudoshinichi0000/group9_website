@@ -8,9 +8,9 @@
 </head>
 <body>
 
-	<?php 
+	<?php
 
-		include_once "db.php"; include_once "navbar.php"; 
+		include_once "db.php"; include_once "navbar.php";
 
 		$quizname = $_POST["inputname"];
 
@@ -32,13 +32,13 @@
 				header("Location: create-question.php?id=$quizid");
 			}
 			else{
-				echo "<h1>ERROR! Something went wrong!</h1>";
-				echo mysqli_error($con);
+				/*echo "<h1>ERROR! Something went wrong!</h1>";
+				echo mysqli_error($con);*/
 			}
 
 	?>
 
-	
+
 
 
 </body>
