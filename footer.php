@@ -56,6 +56,15 @@
 						<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i>Cookies Policy</a></li>
 					</ul>
 
+					<div class="dropdown">
+  				<button class="dropbtn">Dropdown</button>
+  			<div class="dropdown-content">
+    		<a href="#">Link 1</a>
+    		<a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
 				</div><br>
 
 			<div class="row">
