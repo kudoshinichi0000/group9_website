@@ -18,19 +18,19 @@
 				</tr>
 				<tr>
 					<!---Create Question Name--->
-					<td><input class='form-control' type='text' name='inputname' placeholder="Input Question Name: " required></td>
+					<td><input class='btnon' type='text' name='inputname' placeholder="Input Question Name: " required></td>
 				</tr>
 				<tr>
 					<!---Create Question Answer--->
-					<td><br><input class='form-control' type='text' name='answer' placeholder="Input Question Answer: " required></td>
+					<td><br><input class='btnon' type='text' name='answer' placeholder="Input Question Answer: " required></td>
 				</tr>
 				<tr>
 					<!---Create Question Choice--->
-					<td><br><input class='form-control' type='text' name='choice2' placeholder="Choice 1: " required></td>
+					<td><br><input class='btnon' type='text' name='choice2' placeholder="Choice 1: " required></td>
 				</tr>
 				<tr>
 					<!---Create Question Choice--->
-					<td><br><input class='form-control' type='text' name='choice3' placeholder="Choice 2: " required></td>
+					<td><br><input class='btnon' type='text' name='choice3' placeholder="Choice 2: " required></td>
 				</tr>
 				<tr>
 						<td colspan="2">
