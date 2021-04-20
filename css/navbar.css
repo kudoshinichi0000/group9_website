@@ -263,7 +263,7 @@ section {
 }
 
 #footer ul.s-links li a{
-  color:#blue;
+  color:#ffffff;
   font-size: 19px;
 
 }
@@ -286,6 +286,7 @@ section {
 #footer ul.s-links li:hover a i {
     font-weight: 700;
 		text-decoration: none;
+		color: blue;
 }
 
 @media (max-width:767px){
