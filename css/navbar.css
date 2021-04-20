@@ -242,7 +242,7 @@ footer :hover{
 	padding: 0.5em 3em;
 }
 
-.Subbotton hover{
+.Subbotton :hover{
 	cursor: pointer;
 }
 
