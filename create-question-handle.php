@@ -8,12 +8,12 @@
 </head>
 <body>
 
-	<?php 
+	<?php
 
-		include_once "db.php"; include_once "navbar.php"; 
+		include_once "db.php"; include_once "navbar.php";
 
 		$quizname = $_POST["inputname"];
-		
+
 		//INSERT question data
 		$query = "INSERT INTO quizzes(name) VALUES('$quizname')";
 
@@ -29,8 +29,8 @@
 				echo "<a href=main.php> Finish.</a>";
 			}
 			else{
-				echo "<h1>ERROR! Something went wrong!</h1>";
-				echo mysqli_error($con);
+				/*echo "<h1>ERROR! Something went wrong!</h1>";
+				echo mysqli_error($con);*/
 			}
 
 	?>
