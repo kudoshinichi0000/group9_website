@@ -1,4 +1,4 @@
-.
+
 
 body {
 	margin: 0;
@@ -34,8 +34,8 @@ header::after {
 }
 
 .admin, .logout{
-  background-color: black;
-  color: white;
+  background-color: #fff;
+  color: #000;
   padding: 0.5em 1em;
   border-radius: 25px;
 }
