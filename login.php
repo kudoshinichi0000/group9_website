@@ -63,10 +63,10 @@
 					<th><br><h4>LOGIN</h4></th>
 				</tr>
 				<tr>
-					<td><input type="text" name="username" placeholder="👨‍💼| Enter Username here" class="btnon" required></td>
+					<td><input type="text" name="username" placeholder="Enter Username here" class="btnon" required></td>
 				</tr>
 				<tr>
-					<td><br><input type="password" name="password" placeholder="🔒|  Enter Password Here" class="btnon" required> </td>
+					<td><br><input type="password" name="password" placeholder="Enter Password Here" class="btnon" required> </td>
 				</tr>
 				<tr>
             <td colspan="2">
