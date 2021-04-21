@@ -38,7 +38,7 @@ nav {
 }
 
 nav ul {
-
+	margin top -3px;
   padding: 0;
   list-style: none;
 }
