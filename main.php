@@ -15,6 +15,7 @@
 
 	<?php include_once "db.php"; include_once "navbar.php"; ?>
 
+<!--- Lalagyan ng mga <picture> -->
 
 	<!---Dito ididisplay yung mga quizes--->
 
