@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<!---Ito yung nag bibigay ng cursive font style sa header--->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
 	<?php include_once "db.php";

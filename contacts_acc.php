@@ -3,8 +3,8 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="css/accs.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -39,7 +39,7 @@
       <span> - Instagram</span>
    </a>
  </li>
- 
+
 
 
 </html>

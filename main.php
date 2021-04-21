@@ -4,7 +4,9 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-	<!---This gives cursive font style to the header--->
+	<!--- In this website i will use 2 font style --->
+
+	<!---this link is to design the font style --->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 
