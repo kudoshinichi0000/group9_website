@@ -14,7 +14,10 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1em;
+	float: left;
+  padding: 10px 0;
 }
+
 
 header {
   background: #fff;
@@ -60,8 +63,7 @@ nav a:hover {
 }
 
 .logo {
-  float: left;
-  padding: 10px 0;
+
 }
 
 .admin{
