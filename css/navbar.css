@@ -1,8 +1,5 @@
 body {
-	margin: 0;
-	background-image: url(images/bg5.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #fff;
 }
 
 .container {
@@ -11,7 +8,7 @@ body {
 }
 
 header {
-  background: #000;
+  background: #fff;
   height: 4em;
   position: fixed;
   top: 0;
