@@ -11,7 +11,7 @@ body {
 	font-family: 'Orelega One', cursive;
 	color: black;
 	font-size: 2.5em;
-  margin-top: auto;
+  margin-top: 5px;
   margin-bottom: auto;
   margin-left: 1em;
 	float: left;
@@ -38,7 +38,7 @@ nav {
 }
 
 nav ul {
-	margin top: -3px;
+	margin top: 0;
   padding: 0;
   list-style: none;
 }
