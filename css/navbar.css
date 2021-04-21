@@ -22,31 +22,6 @@ header::after {
   clear: both;
 }
 
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-.admin{
-  background-color: white;
-  padding: 0.5em 1em;
-  border-radius: 25px;
-}
-
-.admin a{
-	color: #000;
-}
-
-.logout{
-  background-color: white;
-  padding: 0.5em 1em;
-  border-radius: 25px;
-}
-
-.logout a{
-	color: #000;
-}
-
 nav {
   float: right;
 }
@@ -65,7 +40,7 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -73,6 +48,31 @@ nav a {
 
 nav a:hover {
   color: #feab02;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.admin{
+  background-color: #ff5e2b;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+
+.admin a{
+	color: #000;
+}
+
+.logout{
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+
+.logout a{
+	color: #000;
 }
 
 .home a::before {
