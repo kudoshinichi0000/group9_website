@@ -190,7 +190,7 @@ nav a:hover {
 
 .DisplayQuestions{
 	display: inline-block;
-  margin-left: 30px;
+  margin: auto;
   padding-top: 19px;
   position: relative;
 	border: 1px solid black;
@@ -198,17 +198,7 @@ nav a:hover {
 	height: 30em;
 }
 
-.Ads{
-	float: right;
-	margin-right: 10px;
-	border: 1px solid black;
-	width: 20%;
-	height: 30em;
-	display: inline-block;
-  margin-left: 50px;
-  padding-top: 19px;
-  position: relative;
-}
+
 
 .center{
 	font-family: 'Orelega One', cursive;

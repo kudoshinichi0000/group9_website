@@ -50,10 +50,6 @@
 
 	</div>
 
-	<div class="Ads">
-
-	</div>
-
 	<script src="app.js"></script>
 	<!---Dito ididisplay yung mga quizes--->
 
