@@ -30,7 +30,7 @@
 			<img src="css/images/Pic8.jpg" alt="" style="width: 100%">
 			<img src="css/images/Pic9.jpg" alt="" style="width: 100%">
 			<img src="css/images/Pic10.jpeg" alt="" style="width: 100%">
-			<img src="css/images/Pic1.jpg" id="firstClone" alt="">
+			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="width: 100%">
 		</div>
 	</div>
 </div>
