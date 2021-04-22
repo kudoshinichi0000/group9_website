@@ -150,6 +150,7 @@ nav a:hover {
 	content: '';
 	diplay:block;
 	heigt: 5px;
+	background-color: #feab02;
 }
 
 .results a::before {
