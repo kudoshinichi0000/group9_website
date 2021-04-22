@@ -17,7 +17,8 @@
 <!--- Lalagyan ng mga <picture> -->
 <div class="Con">
 	<div class="carousel-container">
-		<i class="fas fa-arrow-left" id="PrevBtn"
+		<i class="fas fa-arrow-left" id="PrevBtn"></i>
+		<i class="fas fa-arrow-right" id
 		<div class="carousel-slide">
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 105%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 105%">
