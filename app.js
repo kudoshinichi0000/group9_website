@@ -12,6 +12,7 @@ const size = carouselImages[0].clientwidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Button Listeners
+
 nextBtn.addEventListener('click', () => {
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
