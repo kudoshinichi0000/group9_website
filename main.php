@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; include_once "navbar.php"; ?><br><br>
+	<?php include_once "db.php"; //include_once "navbar.php"; ?><br><br>
 
 	<div class="topNavCategories">
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
