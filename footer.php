@@ -22,11 +22,6 @@
 						<li><a href="main.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
 					</ul>
 				</div>
-<<<<<<< HEAD
-				
-=======
-
->>>>>>> d525848192ed9619fe389c42dab364291f5ca57a
 				<div class="col-xs-12 col-sm-5 col-md-2">
 					<ul class="list-unstyled s-links">
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
