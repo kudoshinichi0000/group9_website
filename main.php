@@ -27,7 +27,7 @@
 			<img src="css/images/Pic7.jpg" alt="" height="100px">
 			<img src="css/images/Pic8.jpg" alt="" height="100px">
 			<img src="css/images/Pic9.jpg" alt="" height="100px">
-			<img src="css/images/Pic10.jpeg" alt="" height="100px">
+			<img src="css/images/Pic10.jpeg" alt="" height="50px">
 		</div>
 	</div>
 
