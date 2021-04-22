@@ -84,8 +84,7 @@ nav a:hover {
 .carousel-container{
 	width: 60%;
 	margin: auto;
-	overflow: hidden;
-	/*border: 5px solid black;*/
+	border: 5px solid black;
 }
 
 .Con{
