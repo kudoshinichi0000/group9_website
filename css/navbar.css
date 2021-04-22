@@ -156,6 +156,10 @@ nav a:hover {
 	width: 0%;
 	transition: all ease-in-out 250ms;
 }
+.About :hover::before{
+	width: 100%;
+	color: #feab02;
+}
 
 .results a::before {
   content: '';
