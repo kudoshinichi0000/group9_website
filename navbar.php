@@ -8,6 +8,8 @@
               <div class="home"><a href="main.php">Home</a></div>
             </li>
             <li>
+            </li>
+            <li>
               <div class="results"><a href="results.php"><b>History</b></a></div>
             </li>
             <li>
