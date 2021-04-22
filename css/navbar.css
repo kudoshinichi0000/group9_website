@@ -19,13 +19,17 @@ body {
 }
 
 header {
-  background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
   height: 4em;
   position: fixed;
   top: 0;
+	left: 0;
+	right: 0;
   overflow: hidden;
+	z-index: 1;
   width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 header::after {
@@ -167,7 +171,6 @@ nav a:hover {
 }
 
 .topNavCategories{
-	position: relative;
 	border: 1px solid black;
 	width: 100%;
 	height: 3em;
