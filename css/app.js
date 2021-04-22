@@ -3,7 +3,7 @@ const carouselImages = document.querySelectorAll('.carousel-slide img');
 
 //Buttons
 const prevBtn = document.querySelector('#prevBtn');
-const prevBtn = document.querySelector('#nextBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
@@ -12,8 +12,8 @@ const size = carouselImages[0].clientwidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Button Listeners
-nextBtn.addEventListener('click' ,()=>{
+nextBtn.addEventListener('click', () => {
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter--;
+  counter++;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
