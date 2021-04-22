@@ -33,8 +33,8 @@
 	</div>
 </div>
 
-<button id="prevBtn"> -< </button>
-<button id="nextBtn"> -> </button>
+<button id="prevBtn"> ⬅ </button>
+<button id="nextBtn"> ➡ </button>
 
 	<script src="app.js"></script>
 	<!---Dito ididisplay yung mga quizes--->
