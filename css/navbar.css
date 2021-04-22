@@ -146,6 +146,12 @@ nav a:hover {
   color: #feab02;
 }
 
+.Abput a::before{
+	content: '';
+	diplay:block;
+	heigt: 5px;
+}
+
 .results a::before {
   content: '';
   display: block;
