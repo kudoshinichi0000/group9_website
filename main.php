@@ -28,8 +28,8 @@
 			<img src="css/images/Pic6.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic7.jpg" alt="" style="width: 107%">
 			<img src="css/images/Pic8.jpg" alt="" style="width: 107%">
-			<img src="css/images/Pic9.jpg" alt="" style="width: 105%">
-			<img src="css/images/Pic10.jpeg" alt="" style="width: 105%">
+			<img src="css/images/Pic9.jpg" alt="" style="width: 107%">
+			<img src="css/images/Pic10.jpeg" alt="" style="width: 107%">
 			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="width: 105%">
 		</div>
 	</div>
