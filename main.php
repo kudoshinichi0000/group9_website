@@ -16,6 +16,7 @@
 	<?php include_once "db.php"; include_once "navbar.php"; ?>
 
 <!--- Lalagyan ng mga <picture> -->
+<div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
 			<img src="css/images/Pic1.jpg" alt="" height="100px">
@@ -30,7 +31,7 @@
 			<img src="css/images/Pic10.jpeg" alt="" height="100px">
 		</div>
 	</div>
-
+</div>
 	<button id="prevBtn">Prev</button>
 	<button id="nextBtn">Next</button>
 	<!---Dito ididisplay yung mga quizes--->

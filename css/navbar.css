@@ -1,3 +1,8 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
 body {
 	background-color: #e7dfdd;
 }
@@ -81,10 +86,8 @@ nav a:hover {
 	color: #000;
 }
 
+
 .carousel-container{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
 	width: 60%;
 	margin: auto;
 	border: 5px solid black;
