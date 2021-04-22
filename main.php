@@ -19,18 +19,18 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="background-size: cover;">
-			<img src="css/images/Pic1.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic2.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic3.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic4.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic5.jpeg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic6.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic7.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic8.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic9.jpg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic10.jpeg" alt="" style="background-size: cover;">
-			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="background-size: cover;">
+			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="100%">
+			<img src="css/images/Pic1.jpg" alt="" style="100%">
+			<img src="css/images/Pic2.jpg" alt="" style="100%">
+			<img src="css/images/Pic3.jpg" alt="">
+			<img src="css/images/Pic4.jpg" alt="">
+			<img src="css/images/Pic5.jpeg" alt="">
+			<img src="css/images/Pic6.jpg" alt="">
+			<img src="css/images/Pic7.jpg" alt="">
+			<img src="css/images/Pic8.jpg" alt="">
+			<img src="css/images/Pic9.jpg" alt="">
+			<img src="css/images/Pic10.jpeg" alt="">
+			<img src="css/images/Pic1.jpg" id="firstClone" alt="">
 		</div>
 	</div>
 </div>
