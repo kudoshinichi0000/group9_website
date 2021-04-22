@@ -18,16 +18,16 @@
 <!--- Lalagyan ng mga <picture> -->
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<img src="images/Pic1" alt="">
-			<img src="images/Pic2" alt="">
-			<img src="images/Pic3" alt="">
-			<img src="images/Pic4" alt="">
-			<img src="images/Pic5" alt="">
-			<img src="images/Pic6" alt="">
-			<img src="images/Pic7" alt="">
-			<img src="images/Pic8" alt="">
-			<img src="images/Pic9" alt="">
-			<img src="images/Pic10" alt="">
+			<img src="images/Pic1.jpg" alt="img">
+			<img src="images/Pic2.jpg" alt="">
+			<img src="images/Pic3.jpg" alt="">
+			<img src="images/Pic4.jpg" alt="">
+			<img src="images/Pic5.jpeg" alt="">
+			<img src="images/Pic6.jpg" alt="">
+			<img src="images/Pic7.jpg" alt="">
+			<img src="images/Pic8.jpg" alt="">
+			<img src="images/Pic9.jpg" alt="">
+			<img src="images/Pic10.jpeg" alt="">
 		</div>
 	</div>
 
