@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-
+	<link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWw1CMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"
 	<!--- In this website i will use 2 font style --->
 
 	<!---this link is to design the font style --->
@@ -19,6 +19,8 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
+			<i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+			<i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn></i>
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 105%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 105%">
