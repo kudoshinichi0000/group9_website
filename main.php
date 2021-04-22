@@ -24,7 +24,7 @@
 			<img src="css/images/Pic2.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic3.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic4.jpg" alt="" style="width: 105%">
-			<img src="css/images/Pic5.jpeg" alt="" style="width: 105%">
+			<img src="css/images/Pic5.jpeg" alt="" style="width: 107%">
 			<img src="css/images/Pic6.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic7.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic8.jpg" alt="" style="width: 105%">
