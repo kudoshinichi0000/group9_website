@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWw1CMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"
+	<link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWw1CMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!--- In this website i will use 2 font style --->
 
 	<!---this link is to design the font style --->
