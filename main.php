@@ -37,7 +37,7 @@
 	<button id="prevBtn">Prev</button>
 	<button id="nextBtn">Next</button>
 
-	<script src="app.js">
+	<script src="css/app.js">
 
 	</script>
 	<!---Dito ididisplay yung mga quizes--->
