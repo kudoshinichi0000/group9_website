@@ -43,15 +43,13 @@
 
 	<div class="center">News Feed</div>
 
-
-
 	<div class="DisplayQuestions">
 		<!---Dito i didisplay ang mga questions--->
 
 	</div>
 
 	<script src="app.js"></script>
-	
+
 </body>
 	<?php include_once "footer.php";?>
 </html>
