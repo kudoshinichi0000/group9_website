@@ -91,14 +91,8 @@ nav a:hover {
 }
 
 #prevBtn{
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-	float: left;
-	left: 5%;
-	font-size: 30px;
-	color: #fff;
-	cursor:pointer;
+	margin: auto;
+
 }
 
 #nextBtn{
