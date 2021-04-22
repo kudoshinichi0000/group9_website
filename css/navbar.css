@@ -91,12 +91,14 @@ nav a:hover {
 }
 
 #prevBtn{
+	top: 5%
 	float: left;
 	margin-left: 5%;
 	cursor:pointer;
 }
 
 #nextBtn{
+	top: 5%
 	float: right;
 	margin-right: 5%;
 	cursor:pointer;
