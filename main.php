@@ -19,8 +19,8 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 100%">
-			<img src="css/images/Pic1.jpg" alt="" style="width: 100%">
+			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 110%">
+			<img src="css/images/Pic1.jpg" alt="" style="width: 110%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 100%">
 			<img src="css/images/Pic3.jpg" alt="" style="width: 100%">
 			<img src="css/images/Pic4.jpg" alt="">
