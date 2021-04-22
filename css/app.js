@@ -14,6 +14,6 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //Button Listeners
 nextBtn.addEventListener('click' ,()=>{
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter++;
+  counter--;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
