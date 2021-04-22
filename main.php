@@ -20,7 +20,7 @@
 	<div class="carousel-container">
 		<div class="carousel-slide">
 			<i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
-			<i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn></i>
+			<i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 105%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 105%">
