@@ -92,15 +92,15 @@ nav a:hover {
 
 #prevBtn{
 	float: left;
-	margin-left: 5%;
-	margin-top: -15em;
+	margin-left: 10%;
+	margin-top: -13em;
 	cursor:pointer;
 }
 
 #nextBtn{
 	float: right;
-	margin-right: 5%;
-	margin-top: -15em;
+	margin-right: 10%;
+	margin-top: -13em;
 	cursor:pointer;
 }
 .Con{
