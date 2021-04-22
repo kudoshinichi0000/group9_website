@@ -95,10 +95,11 @@ nav a:hover {
 #nextBtn{
 	position: absolute;
 	top: 50%;
-	float: right;
-	margin-right: 10%;
-	margin-top: -13em;
-	cursor:pointer;
+	z-index: 10;
+	right: 5%;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
 }
 
 .Con{
