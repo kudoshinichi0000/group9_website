@@ -86,6 +86,7 @@ nav a:hover {
 	margin: auto;
 	border: 5px solid black;
 	overflow: hidden;
+	background-size: cover;
 }
 
 .Con{
