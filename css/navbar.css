@@ -104,6 +104,8 @@ nav a:hover {
 }
 
 #nextBtn{
+	position: absolute;
+	top: 50%;
 	float: right;
 	margin-right: 10%;
 	margin-top: -13em;
