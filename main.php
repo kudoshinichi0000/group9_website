@@ -36,9 +36,11 @@
 	</div>
 </div><br>
 
-<div class="LeftnavCategories">
+	<div class="center">News Feed</div>
 
-</div>
+	<div class="LeftnavCategories">
+
+	</div>
 
 	<script src="app.js"></script>
 	<!---Dito ididisplay yung mga quizes--->
