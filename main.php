@@ -3,8 +3,6 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<script src="https://use.fontawesome.com/7484622d75.js"></script>
-	<!--- In this website i will use 2 font style --->
 
 	<!---this link is to design the font style --->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,8 +17,8 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
-			<i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+			<button id="prevBtn">Prev</button>
+			<button id="nextBtn">Next</button>
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 105%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 105%">
@@ -36,6 +34,7 @@
 		</div>
 	</div>
 </div>
+
 
 	<script src="app.js"></script>
 	<!---Dito ididisplay yung mga quizes--->
