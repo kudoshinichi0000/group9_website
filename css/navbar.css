@@ -92,6 +92,7 @@ nav a:hover {
 
 #prevBtn{
 	float: left;
+	font-size: 2em;
 	margin-left: 10%;
 	margin-top: -13em;
 	cursor:pointer;
@@ -99,6 +100,7 @@ nav a:hover {
 
 #nextBtn{
 	float: right;
+	font-size: 2em;
 	margin-right: 10%;
 	margin-top: -13em;
 	cursor:pointer;
