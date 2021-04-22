@@ -90,6 +90,25 @@ nav a:hover {
 	margin-top: 10em;
 }
 
+#prevBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor:pointer;
+}
+
+#nextBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	rightt: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor:pointer;
+}
 .Con{
 	padding: 0px;
 	margin: 0px;
