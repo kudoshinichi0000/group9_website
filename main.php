@@ -19,16 +19,16 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<img src="css/images/Pic1.jpg" alt="" height="100px">
-			<img src="css/images/Pic2.jpg" alt="" height="100px">
-			<img src="css/images/Pic3.jpg" alt="" height="100px">
-			<img src="css/images/Pic4.jpg" alt="" height="100px">
-			<img src="css/images/Pic5.jpeg" alt="" height="100px">
-			<img src="css/images/Pic6.jpg" alt="" height="100px">
-			<img src="css/images/Pic7.jpg" alt="" height="100px">
-			<img src="css/images/Pic8.jpg" alt="" height="100px">
-			<img src="css/images/Pic9.jpg" alt="" height="100px">
-			<img src="css/images/Pic10.jpeg" alt="" height="100px">
+			<img src="css/images/Pic1.jpg" alt="">
+			<img src="css/images/Pic2.jpg" alt="">
+			<img src="css/images/Pic3.jpg" alt="">
+			<img src="css/images/Pic4.jpg" alt="">
+			<img src="css/images/Pic5.jpeg" alt="">
+			<img src="css/images/Pic6.jpg" alt="">
+			<img src="css/images/Pic7.jpg" alt="">
+			<img src="css/images/Pic8.jpg" alt="">
+			<img src="css/images/Pic9.jpg" alt="">
+			<img src="css/images/Pic10.jpeg" alt="">
 		</div>
 	</div>
 </div>
