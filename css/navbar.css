@@ -83,10 +83,13 @@ nav a:hover {
 
 .carousel-container{
 	width: 60%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12em;;
 	border: 5px solid black;
 	overflow: hidden;
-	background-size: cover;
+
+
 }
 
 .Con{
