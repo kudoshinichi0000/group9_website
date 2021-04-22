@@ -17,8 +17,6 @@
 <div class="Con">
 	<div class="carousel-container">
 		<div class="carousel-slide">
-			<button id="prevBtn">Prev</button>
-			<button id="nextBtn">Next</button>
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 105%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 105%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 105%">
@@ -34,6 +32,7 @@
 		</div>
 	</div>
 </div>
+
 <button id="prevBtn">Prev</button>
 <button id="nextBtn">Next</button>
 
