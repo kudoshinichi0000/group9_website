@@ -186,9 +186,10 @@ nav a:hover {
 .LeftnavCategories{
 	float: left;
 	border: 5px solid black;
-	width: 30%;
-	height: 10em;
+	width: 15%;
+	height: 50%;
 }
+
 h6{
 	text-align: center;
 }
