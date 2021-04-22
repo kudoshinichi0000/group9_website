@@ -85,14 +85,13 @@ nav a:hover {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 12em;;
 	border: 5px solid black;
 	overflow: hidden;
-
 
 }
 
 .Con{
+	margin-top: 1em;
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
