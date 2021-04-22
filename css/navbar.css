@@ -105,6 +105,7 @@ nav a:hover {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .carousel-container{
@@ -154,22 +155,6 @@ nav a:hover {
 .results :hover::before {
   width: 100%;
   color: #feab02;
-}
-
-.Greet{
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 4em;
-  font-size: 1em;
-  text-align: center;
-  color: yellow;
-  font-family: 'Dancing Script', cursive;
-}
-
-.hj{
-  text-align: center;
-  margin-top: 50em;
 }
 
 .question-card{
