@@ -14,6 +14,7 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //Button Listeners
 
 nextBtn.addEventListener('click', () => {
+
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -25,4 +26,12 @@ prevBtn.addEventListener('click', () => {
   counter--;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
+});
+
+carouselSlide.addEventListener('transitionend', () => {
+  console.log(carouselImages[counter]);
+  if(carouselImages[counter]. id === 'lastClone'){
+    carouselSlide.style.transition = "none";
+    console.log('none');
+  }
 });
