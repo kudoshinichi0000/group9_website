@@ -22,15 +22,15 @@
 			<img src="css/images/Pic10.jpeg" id="lastClone" alt="" style="width: 110%">
 			<img src="css/images/Pic1.jpg" alt="" style="width: 110%">
 			<img src="css/images/Pic2.jpg" alt="" style="width: 110%">
-			<img src="css/images/Pic3.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic4.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic5.jpeg" alt="" style="width: 100%">
-			<img src="css/images/Pic6.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic7.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic8.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic9.jpg" alt="" style="width: 100%">
-			<img src="css/images/Pic10.jpeg" alt="" style="width: 100%">
-			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="width: 100%">
+			<img src="css/images/Pic3.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic4.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic5.jpeg" alt="" style="width: 110%">
+			<img src="css/images/Pic6.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic7.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic8.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic9.jpg" alt="" style="width: 110%">
+			<img src="css/images/Pic10.jpeg" alt="" style="width: 110%">
+			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="width: 110%">
 		</div>
 	</div>
 </div>
