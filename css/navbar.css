@@ -200,8 +200,8 @@ nav a:hover {
 }
 
 .Ads{
-	float: left;
-	margin-left: 10px;
+	float: right;
+	margin-right: 10px;
 	border: 1px solid black;
 	width: 20%;
 	height: 30em;
