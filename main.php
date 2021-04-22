@@ -34,9 +34,11 @@
 			<img src="css/images/Pic1.jpg" id="firstClone" alt="" style="width: 105%">
 		</div>
 	</div>
+</div><br>
+
+<div class="LeftnavCategories">
+
 </div>
-
-
 
 	<script src="app.js"></script>
 	<!---Dito ididisplay yung mga quizes--->
