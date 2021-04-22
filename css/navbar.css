@@ -91,6 +91,7 @@ nav a:hover {
 	width: 60%;
 	margin: auto;
 	border: 5px solid black;
+	overflow: hidden;
 }
 
 .carousel-slide{
