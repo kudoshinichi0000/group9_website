@@ -21,6 +21,7 @@ body {
 header {
   background: #fff;
   height: 4em;
+	margin-bottom: 4em;
   position: fixed;
   top: 0;
   overflow: hidden;
