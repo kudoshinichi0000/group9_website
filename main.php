@@ -17,8 +17,9 @@
 	<div class="topNavCategories">
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
 
-	</div>
+	</div><br>
 
+	<div class="center">Welcome to Feedopedia</div><br>
 <!--- Lalagyan ng mga <picture> -->
 <div class="Con">
 	<div class="carousel-container">
