@@ -146,9 +146,9 @@ nav a:hover {
   color: #feab02;
 }
 
-.About a::before{
+.about a::before{
 	content: '';
-	diplay:block;
+	diplay: block;
 	heigt: 5px;
 	background-color: #feab02;
 	position: absolute;
