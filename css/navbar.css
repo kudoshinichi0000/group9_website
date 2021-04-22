@@ -88,6 +88,8 @@ nav a:hover {
 	border: 5px solid black;
 	overflow: hidden;
 	margin-top: 10em;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #prevBtn{
@@ -107,6 +109,8 @@ nav a:hover {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .carousel-slide{
 	display: flex;
