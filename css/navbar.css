@@ -87,11 +87,11 @@ nav a:hover {
 	margin-right: auto;
 	border: 5px solid black;
 	overflow: hidden;
-
+	margin-top: 10em;
 }
 
 .Con{
-	margin-top: 1em;
+
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
