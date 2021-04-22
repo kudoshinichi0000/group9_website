@@ -82,17 +82,6 @@ nav a:hover {
 	color: #000;
 }
 
-.carousel-container{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 5px solid black;
-	overflow: hidden;
-	margin-top: 10em;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 #PrevBtn{
 	Position: absolute;
 	top: 50%;
@@ -111,19 +100,28 @@ nav a:hover {
 	margin-top: -13em;
 	cursor:pointer;
 }
+
 .Con{
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+}
+
+.carousel-container{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+	overflow: hidden;
+	margin-top: 10em;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .carousel-slide{
 	display: flex;
 	width: 100%;
 	height: 400px;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .home a::before {
@@ -185,7 +183,17 @@ nav a:hover {
 
 .LeftnavCategories{
 	float: left;
-	margin-left: 5px;
+	margin-left: 10px;
+	border: 1px solid black;
+	width: 20%;
+	height: 30em;
+}
+
+.DisplayQuestions{
+	display: inline-block;
+  margin-left: 70px;
+  padding-top: 19px;
+  position: relative;
 	border: 1px solid black;
 	width: 20%;
 	height: 30em;

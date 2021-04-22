@@ -39,6 +39,16 @@
 	<div class="center">News Feed</div>
 
 	<div class="LeftnavCategories">
+		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
+
+	</div>
+
+	<div class="DisplayQuestions">
+		<!---Dito i didisplay ang mga questions--->
+
+	</div>
+
+	<div class="Ads">
 
 	</div>
 
