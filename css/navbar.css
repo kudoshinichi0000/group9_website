@@ -153,6 +153,8 @@ nav a:hover {
 	background-color: #feab02;
 	position: absolute;
 	top:0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
 }
 
 .results a::before {
