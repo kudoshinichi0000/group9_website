@@ -51,9 +51,7 @@
 	</div>
 
 	<script src="app.js"></script>
-	<!---Dito ididisplay yung mga quizes--->
-
-
+	
 </body>
 	<?php include_once "footer.php";?>
 </html>
