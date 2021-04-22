@@ -7,6 +7,7 @@
             <li>
               <div class="home"><a href="main.php">Home</a></div>
             </li>
+              <div class="About"><a href"main.php">About</a></div>
             <li>
             </li>
             <li>
