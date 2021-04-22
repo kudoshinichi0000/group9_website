@@ -185,9 +185,16 @@ nav a:hover {
 
 .LeftnavCategories{
 	float: left;
+	margin-left: 5px;
 	border: 1px solid black;
 	width: 20%;
 	height: 30em;
+  font-family: 'Orelega One', cursive;
+	color: black;
+	font-size: 2.5em;
+	margin-top: 7px;
+	margin-bottom: auto;
+	text-align: center;
 }
 
 h6{
