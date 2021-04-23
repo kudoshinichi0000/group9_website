@@ -15,8 +15,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6-xs-12 segment-one">
-						
+						<h3> Feedopedia</h3>
+						<p> Feedopedia is an entertainment and educational website. asdfghjklasdfghjklasddfghjklasdfghjklasdfghjkl</p>
 					</div>
+					<div class="col-md-m-3 col-sm-6 col-xs-12 segment-one">
 				</div>
 			</div>
 		</div>
