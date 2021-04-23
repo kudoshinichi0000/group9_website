@@ -16,11 +16,11 @@
         </li>
 
         <li>
-          <div><a href="results.php"><b>History</b></a></div>
+          <div><a href="results.php">History</a></div>
         </li>
 
         <li>
-          <div><a href="login.php"><b>Admin</b></a></div>
+          <div><a href="login.php">Admin</a></div>
         </li>
       </ul>
     </nav>
