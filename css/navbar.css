@@ -310,6 +310,7 @@ footer :hover{
   text-align: center;
 	height: 26em;
 	opacity: 0.8;
+	border-radius: 25px;
 }
 
 .form th{
