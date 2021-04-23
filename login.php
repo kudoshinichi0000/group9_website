@@ -52,6 +52,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<style media="screen">
+		body{
+			background-image: url('images/LogBackground.jfif');
+		}
+	</style>
 </head>
 <body>
 	<?php include_once "db.php"; include_once "navbar.php" ?>
