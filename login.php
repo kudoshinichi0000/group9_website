@@ -52,7 +52,6 @@
 			margin: 0;
 			background-repeat: no-repeat;
 			background-size: cover;
-			width: 100%;
 		}
 	</style>
 </head>
