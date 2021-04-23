@@ -73,10 +73,10 @@ nav a:hover {
 	margin top: 0;
   padding: 0;
   list-style: none;
-	border: 2px solid black;
 }
 
 .niv li {
+	border: 2px solid black;
   display: inline-block;
   margin-left: 30px;
   position: relative;
