@@ -42,19 +42,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	body
-	{
-  		background-image:url("css/images/edu.png");
-	}
-</style>
-	<title></title>
+	<title>Login Form</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<style media="screen">
 		body{
-			background-image: url('images/LogBackground.jfif');
+			background-image: url("css/images/LogBackground.jfif");
 		}
 	</style>
 </head>
