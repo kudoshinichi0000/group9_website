@@ -15,14 +15,10 @@
 	<?php include_once "db.php"; include_once "navbar.php"; ?><br><br><br>
 
 	<div class="topNavCategories">
-		<!--Paki delete tong div classBlack kapag literal na ilalagay na yung mga categories-->
-		<div class="centerBlack">
 			<?php include_once("Categories.php"); ?>
-		</div>
-
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
-
 	</div><br>
+	
 <!-- Gagawin ko nalang tong every seconds magpapalit ng pictures para wala ng i cli click
 	<div class="centerBlack">Welcome to Feedopedia</div><br>
 	<div class="Con">
