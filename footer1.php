@@ -35,7 +35,7 @@
 						<p>n alakaa hahahahaa<p>
 						<form action="">
 								<input type="email">
-								<input type="submit" value="ELOWS">
+								<input type="submit" value="ELOWS HAHA">
 						</form>
 					</div>
 				</div>
