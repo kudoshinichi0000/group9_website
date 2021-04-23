@@ -35,6 +35,8 @@
 						<p>n alakaa hahahahaa<p>
 						<form action="">
 								<input type="email">
+								<input type="submit" value="Subscribe">
+						</form>
 
 		</div>
 	</footer>
