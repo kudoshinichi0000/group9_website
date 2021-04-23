@@ -62,7 +62,7 @@
 		<form method="POST">
 			<table class="formchild" style="border-radius: 1em;">
 				<tr>
-					<th><br><div class="center">Login</div></th>
+					<th><br><div class="centerBlack">Login</div></th>
 				</tr>
 				<tr>
 					<td><input type="text" name="username" placeholder="Enter Username here" class="btnon" required></td>
