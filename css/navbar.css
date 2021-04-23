@@ -290,6 +290,17 @@ footer :hover{
 	height: 26em;
 }
 
+#box{
+	width: 40%;
+	padding: 35px;
+	opacity: 0.5;
+	left: 25%;
+	right: 25%;
+	margin: 10% auto;
+	text-align: center;
+	height: 26em;
+}
+
 .form th{
   font-size: 2rem;
 }
