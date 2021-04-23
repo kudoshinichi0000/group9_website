@@ -65,6 +65,27 @@ nav a:hover {
   color: #feab02;
 }
 
+.niv{
+	float: left;
+}
+
+nav ul {
+	margin top: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
 .admin{
   background-color: #ff5e2b;
   padding: 0.5em 1em;

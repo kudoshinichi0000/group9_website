@@ -5,7 +5,7 @@
     <title>Categories</title>
   </head>
   <body>
-    <nav>
+    <nav class="niv">
       <ul>
         <li>
           <div class="home"><a href="main.php">Home</a></div>
