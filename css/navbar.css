@@ -308,6 +308,7 @@ footer :hover{
   margin: 10% auto;
   text-align: center;
 	height: 26em;
+	opacity: 0.2;
 }
 
 .form th{
