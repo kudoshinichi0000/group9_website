@@ -11,6 +11,16 @@
 </head>
 <body>
 	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6-xs-12 segment-one">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 
