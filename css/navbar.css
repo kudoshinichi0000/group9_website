@@ -294,10 +294,10 @@ footer :hover{
 	width: 40%;
 	padding: 35px;
 	background-color: #fff;
-	
+ opacity: 0.2;
   margin-left: auto;
 	margin-right: auto;
-	margin: 10%;
+	margin: 10% auto;
 	text-align: center;
 	height: 26em;
 }
