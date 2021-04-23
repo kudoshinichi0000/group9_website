@@ -60,7 +60,7 @@
 
 	<div id="box">
 		<form method="POST">
-			<table class="form child" style="border-radius: 1em;">
+			<table class="formchild" style="border-radius: 1em;">
 				<tr>
 					<th><br><h4>LOGIN</h4></th>
 				</tr>
