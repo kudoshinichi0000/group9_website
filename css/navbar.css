@@ -229,9 +229,8 @@ footer{
   height: 8em;
   background-color: #000;
   color: white;
-	position: fixed;
-   left: 0;
-   bottom: 0;
+  left: 0;
+  bottom: 0;
 }
 
 footer :hover{
@@ -356,7 +355,7 @@ section {
 
 #footer {
     background: #000 !important;
-		position: fixed;
+
    left: 0;
    bottom: 0;
 }
