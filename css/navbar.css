@@ -292,7 +292,7 @@ footer :hover{
 
 #box{
 	width: 40%;
-
+	padding: auto;
 	background-color: #fff;
  	opacity: 0.2;
   margin-left: auto;
