@@ -225,18 +225,6 @@ h6{
 	text-align: center;
 }
 
-footer{
-  height: 8em;
-  background-color: #000;
-  color: white;
-  left: 0;
-  bottom: 0;
-}
-
-footer :hover{
-	text-decoration: none;
-}
-
 .Centeredtext{
   text-align: center;
   color: #fff;
@@ -289,17 +277,6 @@ footer :hover{
    margin-bottom: -28em;
 }
 
-/*.form{
-  width: 40%;
-  padding: 35px;
-  background-color: #ff5e2b;
-  left: 25%;
-  right: 25%;
-  margin: 10% auto;
-  text-align: center;
-	height: 26em;
-}*/
-
 .formchild{
 	width: 40%;
   padding: 35px;
@@ -311,6 +288,7 @@ footer :hover{
 	height: 26em;
 	opacity: 0.8;
 	border-radius: 25px;
+	margin-bottom: -5em;
 }
 
 .form th{
@@ -321,6 +299,7 @@ footer :hover{
   padding: 1em 2em;
 	color: #000;
 	background-color: #fff;
+
 }
 
 .Subbotton{
@@ -331,15 +310,6 @@ footer :hover{
 .main{
   text-decoration: none;
   color: white;
-}
-
-h4{
-  font-family: 'Dancing Script', cursive;
-  color: #fff;
-  font-size: 1em;
-  margin-left: -0.5em;
-  margin-top: -0.1em;
-  margin-bottom: 0.5em;
 }
 
 h6{
@@ -358,7 +328,6 @@ section {
 
 #footer {
     background: #000 !important;
-
    left: 0;
    bottom: 0;
 }
