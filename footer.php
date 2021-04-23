@@ -31,8 +31,10 @@
 					<p> adsfgdhhkflfas </p>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-				<h2> INFORMATION<h2>
-					<p>n alakaa hahahahaa<p>
+						<h2> INFORMATION<h2>
+						<p>n alakaa hahahahaa<p>
+						<form action="">
+								<input type="email">
 
 		</div>
 	</footer>
