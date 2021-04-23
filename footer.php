@@ -10,40 +10,49 @@
 
 </head>
 <body>
-	<footer>
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-6-xs-12 segment-one">
-						<h3> Feedopedia</h3>
-						<p> Feedopedia is an entertainment and educational website. asdfghjklasdfghjklasddfghjklasdfghjklasdfghjkl</p>
-					</div>
-					<div class="col-md-m-3 col-sm-6 col-xs-12 segment-two">
-						<h2>  BAKA H2WO TO, H2WO LANG SAKALAM </h2>
-						<ul>
-							<li><a href="#"></a>Services</li>
-							<li><a href="#"></a> Contacts</li>
-							<li><a href="#"></a> Rules</li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-					<h2> CONTACTS</h2>
-					<p> adsfgdhhkflfas </p>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-						<h2> INFORMATION<h2>
-						<p>n alakaa hahahahaa<p>
-						<form action="">
-								<input type="email">
-								<input type="submit" value="Subscribe">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
 
 </body>
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+
+				<div class="col-xs-12 col-sm-5 col-md-2">
+					<ul class="list-unstyled s-links">
+						<li><a href="main.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-2">
+					<ul class="list-unstyled s-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-5 col-md-2">
+					<ul class="list-unstyled s-links">
+						<li><a href="Contact.php"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-5 col-md-2">
+					<ul class="list-unstyled s-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Terms</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-5 col-md-2">
+					<h5>Policy</h5>
+					<ul class="list-unstyled s-links">
+						<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i>Data Policy</a></li>
+					</ul>
+					<ul class="list-unstyled s-links">
+						<li><a href="PrivacyPolicy.php"><i class="fa fa-angle-double-right"></i>Cookies Policy</a></li>
+					</ul>
+				</div></div><br>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">Copyright ©2021 GROUP9 </p>
 
 
 </html>
