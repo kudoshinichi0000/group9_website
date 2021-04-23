@@ -37,7 +37,9 @@
 								<input type="email">
 								<input type="submit" value="Subscribe">
 						</form>
-
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
