@@ -56,7 +56,7 @@
 	</style>
 </head>
 <body>
-	<?php include_once "db.php"; include_once "navbar.php" ?>
+	<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
 
 	<div id="box">
 		<form method="POST">
