@@ -18,14 +18,15 @@
 						<h3> Feedopedia</h3>
 						<p> Feedopedia is an entertainment and educational website. asdfghjklasdfghjklasddfghjklasdfghjklasdfghjkl</p>
 					</div>
-					<div class="col-md-m-3 col-sm-6 col-xs-12 segment-one">
+					<div class="col-md-m-3 col-sm-6 col-xs-12 segment-two">
 						<h2>  BAKA H2WO TO, H2WO LANG SAKALAM </h2>
 						<ul>
 							<li><a href="#"></a>Services</li>
 							<li><a href="#"></a> Contacts</li>
-							
+							<li><a href="#"></a> Rules</li>
 						</ul>
 				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 segment-three"
 			</div>
 		</div>
 	</footer>
