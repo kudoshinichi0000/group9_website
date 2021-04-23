@@ -19,6 +19,9 @@
 						<p> Feedopedia is an entertainment and educational website. asdfghjklasdfghjklasddfghjklasdfghjklasdfghjkl</p>
 					</div>
 					<div class="col-md-m-3 col-sm-6 col-xs-12 segment-one">
+						<h2>  BAKA H2WO TO, H2WO LANG SAKALAM </h2>
+						<ul>
+						</ul>
 				</div>
 			</div>
 		</div>
