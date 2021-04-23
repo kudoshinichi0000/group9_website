@@ -19,7 +19,7 @@
 
 	</div><br>
 
-	<div class="center">Welcome to Feedopedia</div><br>
+	<div class="centerBlack">Welcome to Feedopedia</div><br>
 	<div class="Con">
 		<div class="carousel-container">
 			<i class="fas fa-arrow-left" id="PrevBtn"></i>
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	</div><br>
-	<div class="center">News Feed</div>
+	<div class="centerBlack">News Feed</div>
 
 
 	<div class="DisplayQuestions">
