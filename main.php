@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<.meta name="viewport" content="width=device-width, initial-scale=1.0;">
 	<!---this link is to design the font style --->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
@@ -15,10 +15,15 @@
 	<?php include_once "db.php"; include_once "navbar.php"; ?><br><br><br>
 
 	<div class="topNavCategories">
+		<!--Paki delete tong div classBlack kapag literal na ilalagay na yung mga categories-->
+		<div class="centerBlack">
+			<h5>Dito i lalagay yung mga categories ng mga questions</h5>
+		</div>
+
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
 
 	</div><br>
-
+<!-- Gagawin ko nalang tong every seconds magpapalit ng pictures para wala ng i cli click
 	<div class="centerBlack">Welcome to Feedopedia</div><br>
 	<div class="Con">
 		<div class="carousel-container">
@@ -40,6 +45,7 @@
 			</div>
 		</div>
 	</div><br>
+-->
 	<div class="centerBlack">News Feed</div>
 
 
