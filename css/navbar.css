@@ -29,7 +29,6 @@ header {
   overflow: hidden;
 	z-index: 1;
   width: 100%;
-
 }
 
 header::after {
@@ -201,6 +200,7 @@ nav a:hover {
 	border: 1px solid black;
 	width: 50%;
 	height: 30em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .centerBlack{
