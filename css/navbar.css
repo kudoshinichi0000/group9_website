@@ -356,6 +356,9 @@ section {
 
 #footer {
     background: #000 !important;
+		position: fixed;
+   left: 0;
+   bottom: 0;
 }
 #footer h5{
   padding-left: 10px;
