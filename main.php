@@ -17,7 +17,7 @@
 	<div class="topNavCategories">
 		<!--Paki delete tong div classBlack kapag literal na ilalagay na yung mga categories-->
 		<div class="centerBlack">
-			<h5>Dito i lalagay yung mga ibat ibang categories</h5>
+			<?php include_once("Categories.php"); ?>
 		</div>
 
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
