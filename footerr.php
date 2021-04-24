@@ -28,7 +28,8 @@
                   <h2> Contacts</h2>
                   <p> You can visit out social media accounts for transactions</p>
                   <form action="">
-                      <input type="email"
+                      <input type="email">
+                      <input type="BtnSubmit" value="CLICK ME!">
                   </form>
               </div>
             </div>
