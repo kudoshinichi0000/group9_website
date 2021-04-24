@@ -21,9 +21,9 @@
                       <li><a href="#"></a> Services</li>
                       <li><a href="#"></a> Contacts</li>
                       <li><a href="#"></a> Policy</li>
-
                   </ul>
-
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
               </div>
             </div>
           </div>
