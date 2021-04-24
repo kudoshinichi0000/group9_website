@@ -1,4 +1,11 @@
 p{
   color:#a6a6a6;
+  line-height: 27px;
 
+}
+h2,h3{
+  color: white;
+}
+.footer-top{
+  background: #111;
 }
