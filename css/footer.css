@@ -8,4 +8,5 @@ h2,h3{
 }
 .footer-top{
   background: #hsl(360, 100%, 100%);
+  padding: 80px 0;
 }
