@@ -15,7 +15,11 @@
                   <h3> Feedopedia</h3>
                   <p> Feedopedia is an entertainment and educatioal websites.....asdfdghfjdkkllakkajfkldkfldslfkiduieuwifhndvmnmvs</p>
               </div>
-              <div>
+              <div class="col-md-3 col-sm-6 colxs-12 segment-one">
+                  <h2> LINKS LINKS</h2>
+                  <ul>
+                      <li><A</li>
+                  </ul>
 
               </div>
             </div>
