@@ -20,7 +20,8 @@
                   <ul>
                       <li><a href="#"></a> Services</li>
                       <li><a href="#"></a> Contacts</li>
-                      
+                      <li><a href="#"></a> Policy</li>
+
                   </ul>
 
               </div>
