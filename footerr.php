@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
                   <h3> Feedopedia</h3>
-                  <p> Feedopedia is an entertainment and educatioal websites.....<br>asdfdghfjdkkllakkajfkldkfldslfkiduieuwifhndvmnmvs</p>
+                  <p> Feedopedia is an entertainment and educatioal websites.....</p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
                   <h2> LINKS LINKS</h2>
