@@ -18,7 +18,9 @@
               <div class="col-md-3 col-sm-6 colxs-12 segment-one">
                   <h2> LINKS LINKS</h2>
                   <ul>
-                      <li><A</li>
+                      <li><a href="#"></a> Services</li>
+                      <li><a href="#"></a> Contacts</li>
+                      
                   </ul>
 
               </div>
