@@ -30,7 +30,7 @@
                   <a href="#"><i class="fa fa-facebook"></i></a>
                   <form action="">
                       <input type="email">
-                      <input type="BtnSubmit" value="CLICK ME!">
+                      <input type="submit" value="CLICK ME!">
                   </form>
               </div>
             </div>
