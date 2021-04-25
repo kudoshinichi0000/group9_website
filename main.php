@@ -21,8 +21,8 @@
 
 <!---->
 	<div id="VideoIntroCenter" style="text-align:center;">
-		<video width="400" controls>
-  		<source src="FeedopediaIntro.mp4" type="video/mp4">
+		<video width="600" controls>
+  		<source src="css/Video/FeedopediaIntro.mp4" type="mp4">
 		</video>
 	</div>
 
