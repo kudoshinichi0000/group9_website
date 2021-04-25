@@ -84,7 +84,8 @@
       padding-right: 10px;
     }
     .segment-four form input[type=submit]{
-      
+      background: #c65039;
+
     }
 
     }
