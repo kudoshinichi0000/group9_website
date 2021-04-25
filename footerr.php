@@ -88,7 +88,9 @@
                   <a href="#"><i class="fa fa-facebook"></i></a>
               </div>
               <div class=" col-md-3 col-sm-6 col-xs-12 segment-four">
-                  <form action="">
+                  <h2> Di ko pa alam ilalagay</h2>
+                  <p> HAHAHAHAHAH WALAYAA NAMAN INEE</p>
+                    <form action="">
                       <input type="email">
                       <input type="submit" value="CLICK ME!">
                   </form>
