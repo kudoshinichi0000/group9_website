@@ -28,9 +28,14 @@
       margin: 10px 0;
     }
     .segment-two h2{
-      color: red;
-      font-family: Poppins:
-
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;
+    }
+    .segment-two h2::before{
+      content: '|';
+      color: green;
+      padding-right: 10px;
     }
 
   </style>
