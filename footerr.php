@@ -122,7 +122,7 @@
         <div class="footer-top">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
                   <h3> Feedopedia</h3>
                   <p> Feedopedia is an entertainment and educatioal websites.....</p>
               </div>
