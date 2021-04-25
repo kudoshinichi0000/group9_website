@@ -50,6 +50,11 @@
       color: #999;
       text-decoration: none;
     }
+    .segment-three h2{
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;
+    }
     }
 
   </style>
