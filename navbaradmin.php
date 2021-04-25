@@ -13,6 +13,9 @@
       <div class="TextDesign">Feedopedia</div>
         <nav>
           <ul>
+            <div class="home"><a href="#">Create Quiz</a></div>
+          </ul>
+          <ul>
               <li><div class="logout"><a href="logout.php"><b>Logout</b></a></div></li>
           </ul>
         </nav>
