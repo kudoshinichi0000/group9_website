@@ -14,7 +14,8 @@
 		padding: 16px;
 		font-size: 16px;
 		border: none;
-		
+		position: fixed;
+	  
 	}
 
 	#dropdown {
