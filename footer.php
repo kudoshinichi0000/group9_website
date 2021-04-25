@@ -59,12 +59,12 @@
 							<p class="h6">Copyright ©2021 GROUP9 </p>
 
 					<div class="column">
-						<img src="image/fb.png"  width="75" class="FooterLogo">
+						<img src="images/fb.png"  width="75" class="FooterLogo">
 					</div>
 					<div class="column">
-						<img src="image/ig.png" width="75" class="FooterLogo">
+						<img src="images/ig.png" width="75" class="FooterLogo">
 					</div>
 						<div class="column">
-						<img src="image/twitter.png" width="75" class="FooterLogo">
+						<img src="images/twitter.png" width="75" class="FooterLogo">
 					</div>
 </html>
