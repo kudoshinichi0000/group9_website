@@ -78,7 +78,7 @@
       font-family: Poppins;
       text-transform: uppercase;
     }
-    .segment-three h2:before;{
+    .segment-four h2:before;{
       content: '|';
       color: #c65039;
       padding-right: 10px;
