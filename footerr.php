@@ -139,7 +139,7 @@
                   <p> You can visit out social media accounts for transactions</p>
                   <a href="#"><i class="fa fa-facebook"></i></a>
               </div>
-              <div class=" col-md-3 col-sm-6 col-xs-12 segment-four">
+              <div class=" col-md-3 col-sm-6 col-xs-12 segment-four md-mb-30 sm-mb-30">
                   <h2> Di ko pa alam ilalagay</h2>
                   <p> HAHAHAHAHAH WALAYAA NAMAN INEE</p>
                     <form action="">
