@@ -90,7 +90,9 @@
       padding: 3px 15px;
       margin-left: 5px;
       text-transform: uppercase;
-
+    }
+    .footer-bottom{
+      
     }
 
     }
