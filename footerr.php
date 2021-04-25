@@ -16,7 +16,7 @@
     }
     h2,h3{
       color: white;
-      font-size: 13px;
+      font-size: 16px;
     }
     .footer-top{
       background: #000000;
@@ -49,7 +49,7 @@
       line-height: 40px;
     }
     .segment-two ul li a{
-      color: white;
+      color: #999;
       text-decoration: none;
     }
     .segment-three h2{
