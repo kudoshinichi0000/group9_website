@@ -96,7 +96,7 @@
       text-align: center;
       line-height: 75px;
       background: #808080;
-      padding: 2px;
+      padding:-2px;
 
     }
 
