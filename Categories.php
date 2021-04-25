@@ -29,7 +29,7 @@
     }
 
     .stack{
-      background-color: #4CAF50;
+      background-color: #ff5e2b;
     }
 
     </style>
