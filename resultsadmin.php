@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<style media="screen">
-	#quiz{
+	#dropbtn {
 		margin-top: 4em;
 		background-color: #4CAF50;
 		color: white;
@@ -22,12 +22,12 @@
 		z-index: 1;
 	}
 
-	#Create {
+	#dropdown {
 		position: relative;
 		display: inline-block;
 	}
 
-	#Create-drop{
+	#dropdown-content {
 		float: right;
 		display: none;
 		position: absolute;
@@ -37,22 +37,22 @@
 		z-index: 1;
 	}
 
-	#Create-drop a {
+	#dropdown-content a {
 		color: black;
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
 	}
 
-	#Create-drop a:hover {
+	#dropdown-content a:hover {
 		background-color: #ddd;
 	}
 
-	#Create:hover #Create-drop {
+	#dropdown:hover #dropdown-content {
 		display: block;
 	}
 
-	#Create:hover #quiz{
+	#dropdown:hover #dropbtn {
 		background-color: #3e8e41;
 	}
 	</style>
@@ -63,9 +63,9 @@
 	<?php //echo $_SESSION['userid'];?>
 
 	<!---Left Side Navigator for creating quiz--->
-	<div id="Create">
-		<button id="quiz">Quiz</button>
-			<div id="Create-drop">
+	<div id="dropdown">
+		<button id="dropbtn">Quiz</button>
+			<div id="dropdown-content">
 				<a href="#">Create Quiz</a>
 				<a href="#">Link 2</a>
 				<a href="#">Link 3</a>
