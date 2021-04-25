@@ -20,7 +20,7 @@
 	</div><br>
 
 <!---->
-	<div id="VideoIntroCenter" style="text-align:center;">
+	<div id="VideoIntroCenter" style="text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
