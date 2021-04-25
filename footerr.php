@@ -34,7 +34,8 @@
     }
     .segment-two h2::before{
       content: '|';
-      color: #green;
+      color: green;
+      padding-right: 10px;
     }
 
   </style>
