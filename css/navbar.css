@@ -396,8 +396,9 @@ section {
     margin-bottom: 10px;
     font-size: 10px;
 }
-#footer .row{
-  margin: auto;
+.row{
+  margin-left: auto;
+	margin-right: auto;
 }
 
 .foot{
