@@ -66,11 +66,7 @@
 					<br><h2> Follow us on social media </h2>
 						<div class="column">
 							<img src="css/images/fb.png"  width="50" class="FooterLogo">
-						</div>
-						<div class="column">
 							<img src="css/images/ig.png" width="50" class="FooterLogo">
-						</div>
-						<div class="column">
 							<img src="css/images/twitter.png" width="50" class="FooterLogo">
 						</div>
 				</div>
