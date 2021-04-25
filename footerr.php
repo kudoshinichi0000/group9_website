@@ -61,6 +61,12 @@
       color: #c65039;
       padding-right: 10px;
     }
+    .segment-three a{
+      width: 50px;
+      height: 50px;
+      display: inli
+
+    }
     }
 
   </style>
