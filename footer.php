@@ -53,11 +53,14 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 						<p class="h6">Feedopedia</p>
-
+				</div></div>
+				
 				<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 							<p class="h6">Copyright ©2021 GROUP9 </p>
+				</div></div>
 
+					<h2> Follow us on social media </h2>
 					<div class="column">
 						<img src="css/images/fb.png"  width="75" class="FooterLogo">
 					</div>
