@@ -20,7 +20,7 @@
 	</div><br>
 
 <!---->
-	<div id="VideoIntroCenter">
+	<div id="VideoIntroCenter" style="text-align:center;">
 		<video width="400" controls>
   		<source src="FeedopediaIntro.mp4" type="video/mp4">
 		</video>
