@@ -131,6 +131,7 @@
             </div>
           </div>
         </div>
+        <p class="footer-bottom">Copyright ©2021 GROUP9</p>
     </footer>
 </body>
 
