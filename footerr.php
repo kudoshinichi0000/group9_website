@@ -49,7 +49,7 @@
       line-height: 40px;
     }
     .segment-two ul li a{
-      color: #999;
+      color: white;
       text-decoration: none;
     }
     .segment-three h2{
