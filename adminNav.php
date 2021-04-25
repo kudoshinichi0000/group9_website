@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-    ul {
+    #adminnav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -15,11 +15,11 @@
       top: 0;
 }
 
-  li {
+  #adminnav li {
     float: left;
 }
 
-  li a {
+  #adminnav li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,20 +27,23 @@
     text-decoration: none;
 }
 
-  li a:hover {
+  #adminnav li a:hover {
     background-color: #111;
 }
 
-  .active {
+  #adminnav .active {
   background-color: #4CAF50;
 }
     </style>
   </head>
   <body>
-    <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+    <div id="adminnav">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
   </body>
 </html>
