@@ -76,10 +76,16 @@ nav a:hover {
 }
 
 #login{
+	opacity: 2;
   background-color: #ff5e2b;
   padding: 0.5em 1em;
   border-radius: 25px;
 	color: #000;
+}
+
+#login :hover{
+	opacity: 1;
+  cursor: pointer;
 }
 
 
@@ -268,7 +274,7 @@ nav a:hover {
   margin: 10% auto;
   text-align: center;
 	height: 26em;
-	opacity: 0.8;
+	opacity: 0.9;
 	border-radius: 25px;
 }
 
