@@ -6,7 +6,7 @@
         <ul>
           <li><div class="logout"><a href="logout.php"><b>Logout</b></a></div></li>
         </ul>
-        <ul>
+
           <div id="dropdown">
             <button id="dropbtn">Dropdown</button>
               <div id="dropdown-content">
@@ -15,7 +15,7 @@
                 <a href="#">Link 3</a>
               </div>
             </div>
-        </ul>
+        
       </nav>
     </div>
 </header><br><br>
