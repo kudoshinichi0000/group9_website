@@ -18,7 +18,7 @@
 			<?php include_once("Categories.php"); ?>
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
 	</div><br>
-	
+
 <!-- Gagawin ko nalang tong every seconds magpapalit ng pictures para wala ng i cli click
 	<div class="centerBlack">Welcome to Feedopedia</div><br>
 	<div class="Con">
@@ -52,5 +52,5 @@
 
 	<script src="app.js"></script>
 </body>
-	<?php include_once "footer.php";?>
+	<?php include_once "footerr.php";?>
 </html>
