@@ -18,6 +18,7 @@
     }
 
     #dropdown-content {
+      float: right;
       display: none;
       position: absolute;
       background-color: #f1f1f1;
