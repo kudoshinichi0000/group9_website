@@ -71,12 +71,10 @@
 					<td><input type="password" name="password" placeholder="Password: " class="btnon" required> </td>
 				</tr>
 				<tr>
-            <td colspan="2">
-              <input type="submit" value="LOGIN" id="login">
-            </td>
+            <td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
         </tr>
         		<tr>
-          			<td><br><a href="main.php" class="main">Go back</a></td>
+          			<td><a href="main.php" class="main">Go back</a></td>
           	</tr>
 			</table>
 		</form>
