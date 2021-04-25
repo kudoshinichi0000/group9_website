@@ -16,7 +16,7 @@
     }
     h2,h3{
       color: white;
-      font-size: 10px;
+      font-size: 20px;
     }
     .footer-top{
       background: #000000;
