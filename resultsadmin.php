@@ -41,11 +41,7 @@
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		position: fixed;
-	  top: 0;
-		left: 0;
-		right: 0;
-	  overflow: hidden;
-		z-index: 1;
+
 	}
 
 	#dropdown-content a {
