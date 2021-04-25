@@ -64,7 +64,7 @@
     .segment-three a{
       width: 50px;
       height: 50px;
-      display: inli
+      display: inline-block;
 
     }
     }
