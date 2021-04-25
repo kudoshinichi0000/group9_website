@@ -35,5 +35,5 @@
 
 	<script src="app.js"></script>
 </body>
-	<?php include_once "footer.php";?>
+	<?php include_once "footerr.php";?>
 </html>

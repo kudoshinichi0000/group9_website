@@ -314,7 +314,7 @@ section {
 
 
 #footer {
-  background: #000 !important;
+  background: #000;
    left: 0;
    bottom: 0;
 }
@@ -327,7 +327,7 @@ section {
 }
 
 #footer ul.s-links li a{
-  color:#ffffff;
+  color:#fff;
   font-size: 19px;
 
 }
