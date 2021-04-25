@@ -36,6 +36,7 @@
       content: '|';
       color: green;
       padding-right: 10px;
+    }
     .segment-two ul{
       margin: 0;
       padding: 0;
@@ -85,6 +86,8 @@
                   <h2> Contacts</h2>
                   <p> You can visit out social media accounts for transactions</p>
                   <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+              <div class=" col-md-3 col-sm-6 col-xs-12 segment-four">
                   <form action="">
                       <input type="email">
                       <input type="submit" value="CLICK ME!">
