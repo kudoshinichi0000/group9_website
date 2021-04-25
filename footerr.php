@@ -88,7 +88,7 @@
       border: none;
       color:#fff;
       padding: 3px 10px;
-      margin-left: -5px;
+      margin-left: -10px;
       text-transform: uppercase;
     }
     .footer-bottom{
