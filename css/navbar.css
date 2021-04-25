@@ -405,6 +405,7 @@ section {
 }
 
 .FooterLogo{
+	display: inline-block;
     float: left;
     text-align: center;
     padding: 10px;
@@ -412,6 +413,7 @@ section {
 
 }
 .column {
+	display: inline-block;
   float: left;
   width: 33.33%;
   padding: 5px;;
