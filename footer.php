@@ -61,12 +61,14 @@
 							<p class="h6">Copyright ©2021 GROUP9 </p>
 
 				<div class="foot">
-					<br><h2> Follow us on social media </h2>
+					<br><h4> Follow us on social media </h4>
 						<div class="column">
 							<img src="css/images/fb.png"  width="50" class="FooterLogo">
 							<img src="css/images/ig.png" width="50" class="FooterLogo">
 							<img src="css/images/twitter.png" width="50" class="FooterLogo">
 						</div>
 				</div>
+			</div>
+	</div>
 
 </html>
