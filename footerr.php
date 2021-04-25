@@ -70,7 +70,7 @@
     .segment-three a i{
       color: #fff;
       font-size:20px;
-      padding:10px 12
+      padding:10px 12px;
     }
     }
 
