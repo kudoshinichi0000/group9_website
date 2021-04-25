@@ -83,6 +83,11 @@
       color: #c65039;
       padding-right: 10px;
     }
+    .segment-four form input[type=submit]{
+      
+    }
+
+    }
     }
 
   </style>
