@@ -68,8 +68,7 @@
 					<td><input type="text" name="username" placeholder="Username:" class="btnon" required></td>
 				</tr>
 				<tr>
-					<td><br><input type="password" name="password" placeholder="
-						Password: " class="btnon" required> </td>
+					<td><input type="password" name="password" placeholder="Password: " class="btnon" required> </td>
 				</tr>
 				<tr>
             <td colspan="2">
