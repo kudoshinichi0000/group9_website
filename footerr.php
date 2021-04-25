@@ -103,7 +103,11 @@
     margin-bottom: 30px;
   }
 }
-@media only screen and(max-width: 767px)
+@media only screen and(max-width: 767px){
+  .sm-mb-30{
+    margin-bottom: 30px;
+  }
+}
 
     }
 
