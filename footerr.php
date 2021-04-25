@@ -25,7 +25,12 @@
       font-family: courgette;
       color: #fff;
       letter-spacing: 3px;
-      margib: 10 px 0;
+      margin: 10px 0;
+    }
+    .segment-two h2{
+      color: red;
+      font-family: Poppins:
+
     }
 
   </style>
@@ -39,7 +44,7 @@
                   <h3> Feedopedia</h3>
                   <p> Feedopedia is an entertainment and educatioal websites.....</p>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
                   <h2> LINKS LINKS</h2>
                   <ul>
                       <li><a href="#"></a> Services</li>
