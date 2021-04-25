@@ -397,6 +397,13 @@ section {
     font-size: 10px;
 }
 
+.foot{
+	display: inline;
+	text-align: center;
+	float: center;
+	padding-left: 13.33%;
+}
+
 .FooterLogo{
     float: left;
     text-align: center;
