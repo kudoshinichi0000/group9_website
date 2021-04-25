@@ -66,6 +66,7 @@
       height: 50px;
       display: inline-block;
       border-radius:50%;
+      background: #494848;
     }
     .segment-three a i{
       color: #fff;
