@@ -45,7 +45,7 @@
 	</style>
 </head>
 <body>
-	<?php include_once "db.php";include_once "navbaradmin.php"; include_once "adminNav.php"; ?>
+	<?php include_once "db.php";/**include_once "navbaradmin.php";**/ include_once "adminNav.php"; ?>
 
 	<?php //echo $_SESSION['userid'];?><br><br><br><br>
 	<div id="dropdown">
