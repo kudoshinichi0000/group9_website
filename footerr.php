@@ -92,6 +92,7 @@
       text-transform: uppercase;
     }
     .footer-bottom{
+      color: black;
       text-align: center;
       line-height: 75px;
       background: #808080;
