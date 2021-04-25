@@ -24,8 +24,8 @@
       text-decoration: none;
     }
 
-    #niv li a:hover:not(.active) {
-      background-color: #111;
+    #niv li a:hover{
+      background-color: #feab02;
     }
 
     </style>
