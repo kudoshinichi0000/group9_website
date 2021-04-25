@@ -49,6 +49,7 @@
         <li><a href="#">Category 10</a></li>
         <li><a href="#">Category 11</a></li>
         <li><a href="#">Category 12</a></li>
+        <li><a href="#">....</a></li>
         <li><a class="stack" href="#">See More</a></li>
 
       </ul>
