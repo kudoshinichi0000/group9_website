@@ -28,7 +28,7 @@
       margin: 10px 0;
     }
     .segment-two h2{
-      color: red;
+      color: #fff;
       font-family: Poppins:
 
     }
