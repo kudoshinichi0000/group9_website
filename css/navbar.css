@@ -83,6 +83,11 @@ nav a:hover {
 	color: #000;
 }
 
+#login :hover{
+	opacity: 1;
+  cursor: pointer;
+}
+
 
 .logout{
   background-color: #ff5e2b;
