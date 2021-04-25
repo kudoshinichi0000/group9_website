@@ -31,7 +31,10 @@
       color: #fff;
       font-family: Poppins;
       text-transform: uppercase;
-
+    }
+    .segment-two h2::before{
+      content: '|';
+      color: #green;
     }
 
   </style>
