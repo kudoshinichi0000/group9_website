@@ -105,30 +105,6 @@ nav a:hover {
 	cursor: pointer;
 }
 
-.Con{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	overflow: hidden;
-}
-
-.carousel-container{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 5px solid black;
-	overflow: hidden;
-	margin-top: 1em;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.carousel-slide{
-	display: flex;
-	width: 100%;
-	height: 400px;
-}
-
 .home a::before {
   content: '';
   display: block;
