@@ -14,7 +14,12 @@
 		padding: 16px;
 		font-size: 16px;
 		border: none;
-		
+		position: fixed;
+	  top: 0;
+		left: 0;
+		right: 0;
+	  overflow: hidden;
+		z-index: 1;
 	}
 
 	#dropdown {
@@ -56,12 +61,10 @@
 	<?php include_once "db.php";include_once "navbaradmin.php";?>
 
 	<?php //echo $_SESSION['userid'];?>
-
-	<!---Left Side Navigator for creating quiz--->
 	<div id="dropdown">
 		<button id="dropbtn">Quiz</button>
 			<div id="dropdown-content">
-				<a href="#">Create Quiz</a>
+				<a href="#">Create </a>
 				<a href="#">Link 2</a>
 				<a href="#">Link 3</a>
 			</div>
