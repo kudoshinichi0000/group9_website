@@ -65,6 +65,7 @@
       width: 50px;
       height: 50px;
       display: inline-block;
+      background: #494848;
 
     }
     }
