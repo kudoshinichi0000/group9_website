@@ -107,7 +107,11 @@
   .sm-mb-30{
     margin-bottom: 30px;
   }
+  .footer-top{
+    padding: 50px;
+  }
 }
+
 
     }
 
