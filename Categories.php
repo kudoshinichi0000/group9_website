@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
+      background-color: #282923;
     }
 
     #niv li {
@@ -28,15 +28,12 @@
       background-color: #111;
     }
 
-    #niv .active {
-      background-color: #4CAF50;
-    }
     </style>
   </head>
   <body>
     <div id="niv">
       <ul>
-        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
