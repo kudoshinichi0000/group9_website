@@ -87,7 +87,7 @@
       background:#feab02;
       border: none;
       color:#fff;
-      padding: 3px 15px;
+      padding: 3px 10px;
       margin-left: -5px;
       text-transform: uppercase;
     }
