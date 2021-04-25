@@ -11,10 +11,10 @@
               <div class="about"><a href"About.php">About</a></div>
             </li>
             <li>
-              <div class="results"><a href="results.php"><b>History</b></a></div>
+              <div class="results"><a href="results.php">History</a></div>
             </li>
             <li>
-              <div class="admin"><a href="login.php"><b>Admin</b></a></div>
+              <div class="admin"><a href="login.php">Admin</a></div>
             </li>
           </ul>
     </nav>
