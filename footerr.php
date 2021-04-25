@@ -36,6 +36,7 @@
       content: '|';
       color: green;
       padding-right: 10px;
+    }
     .segment-two ul{
       margin: 0;
       padding: 0;
