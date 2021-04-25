@@ -27,6 +27,11 @@
     #niv li a:hover{
       background-color: #feab02;
     }
+
+    .stack{
+      background-color: #4CAF50;
+    }
+
     </style>
   </head>
   <body>
@@ -43,6 +48,8 @@
         <li><a href="#">Category 9</a></li>
         <li><a href="#">Category 10</a></li>
         <li><a href="#">Category 11</a></li>
+        <li><a href="#">Category 12</a></li>
+        <li><a class="stack" href="#">See More</a></li>
 
       </ul>
     </nav>
