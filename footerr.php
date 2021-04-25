@@ -25,7 +25,7 @@
       font-family: courgette;
       color: #fff;
       letter-spacing: 3px;
-      margib: 10 px 0;
+      margin: 10px 0;
     }
 
   </style>
