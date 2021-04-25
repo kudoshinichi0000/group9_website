@@ -55,7 +55,7 @@
       font-family: Poppins;
       text-transform: uppercase;
     }
-    .segment-two h2:before{
+    .segment-three h2:before{
       content: '|'
       color: #c65039;
       padding-right: 10px;
