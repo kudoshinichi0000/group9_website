@@ -71,7 +71,7 @@
 					<td><input type="password" name="password" placeholder="Password: " class="btnon" required> </td>
 				</tr>
 				<tr>
-            <br><td colspan="2">
+            <td colspan="2">
               <input type="submit" value="LOGIN" id="login">
             </td>
         </tr>
