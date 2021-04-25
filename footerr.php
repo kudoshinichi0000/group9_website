@@ -29,7 +29,8 @@
     }
     .segment-two h2{
       color: #fff;
-      font-family: Poppins:
+      font-family: Poppins;
+      text-transform: uppercase;
 
     }
 
