@@ -72,7 +72,7 @@
 				</tr>
 				<tr>
             <td colspan="2">
-              <br><input type="submit" value="LOGIN" class="login">
+              <br><input type="submit" value="LOGIN" id="login">
             </td>
         </tr>
         		<tr>
