@@ -23,8 +23,6 @@
 	<div id="VideoIntroCenter">
 		<video width="400" controls>
   		<source src="FeedopediaIntro.mp4" type="video/mp4">
-  			<source src="FeedopediaIntro.ogg" type="video/ogg">
-  				Your browser does not support HTML video.
 		</video>
 	</div>
 
