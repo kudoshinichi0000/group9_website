@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
+    header {
+    	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #fff;
+      height: 6em;
+      position: fixed;
+      top: 0;
+    	left: 0;
+    	right: 0;
+      overflow: hidden;
+    	z-index: 1;
+      width: 100%;
+    }
     #dropbtn {
       background-color: #4CAF50;
       color: white;
@@ -62,6 +74,6 @@
         </ul>
       </nav>
     </div>
-</header><br><br>
+</header>
 </body>
 </html>
