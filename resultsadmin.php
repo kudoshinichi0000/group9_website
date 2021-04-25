@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<style media="screen">
-	#dropbtn {
+	#quiz{
 		margin-top: 4em;
 		background-color: #4CAF50;
 		color: white;
@@ -22,12 +22,12 @@
 		z-index: 1;
 	}
 
-	#dropdown {
+	#Create {
 		position: relative;
 		display: inline-block;
 	}
 
-	#dropdown-content {
+	#Create-drop{
 		float: right;
 		display: none;
 		position: absolute;
@@ -37,28 +37,36 @@
 		z-index: 1;
 	}
 
-	#dropdown-content a {
+	#Create-dropt a {
 		color: black;
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
 	}
 
-	#dropdown-content a:hover {background-color: #ddd;}
+	#Create-drop a:hover {
+		background-color: #ddd;
+	}
 
-	#dropdown:hover #dropdown-content {display: block;}
+	#Create:hover #Create-drop {
+		display: block;
+	}
 
-	#dropdown:hover #dropbtn {background-color: #3e8e41;}
+	#Create:hover #quiz{
+		background-color: #3e8e41;
+	}
 	</style>
 </head>
 <body>
 	<?php include_once "db.php";include_once "navbaradmin.php";?>
 
 	<?php //echo $_SESSION['userid'];?>
-	<div id="dropdown">
-		<button id="dropbtn">Dropdown</button>
-			<div id="dropdown-content">
-				<a href="#">Link 1</a>
+
+	<!---Left Side Navigator for creating quiz--->
+	<div id="Create">
+		<button id="quiz">Quiz</button>
+			<div id="Create-drop">
+				<a href="#">Create Quiz</a>
 				<a href="#">Link 2</a>
 				<a href="#">Link 3</a>
 			</div>
