@@ -105,8 +105,7 @@ nav a:hover {
 	cursor: pointer;
 }
 #VideoIntroCenter{
-	margin-left: auto;
-	margin-right: auto;
+	align-items: center;
 }
 .home a::before {
   content: '';
