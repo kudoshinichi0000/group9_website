@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<style media="screen">
 	#dropbtn {
+		margin-top: 2em;
 		background-color: #4CAF50;
 		color: white;
 		padding: 16px;
@@ -47,7 +48,7 @@
 <body>
 	<?php include_once "db.php";include_once "navbaradmin.php";?>
 
-	<?php //echo $_SESSION['userid'];?><br><br>
+	<?php //echo $_SESSION['userid'];?>
 	<div id="dropdown">
 		<button id="dropbtn">Dropdown</button>
 			<div id="dropdown-content">
