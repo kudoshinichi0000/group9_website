@@ -73,6 +73,12 @@
       font-size:20px;
       padding:10px 12px;
     }
+    .segment-four h2{
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;
+    }
+    .segment-three h2:before;
     }
 
   </style>
