@@ -396,6 +396,9 @@ section {
     margin-bottom: 10px;
     font-size: 10px;
 }
+#footer .row{
+  margin: auto;
+}
 
 .foot{
 	display: inline;
