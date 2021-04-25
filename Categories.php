@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Categories</title>
     <style media="screen">
-    ul {
+    #niv ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -12,11 +12,11 @@
       background-color: #333;
     }
 
-    li {
+    #niv li {
       float: left;
     }
 
-    li a {
+    #niv li a {
       display: block;
       color: white;
       text-align: center;
@@ -24,17 +24,17 @@
       text-decoration: none;
     }
 
-    li a:hover:not(.active) {
+    #niv li a:hover:not(.active) {
       background-color: #111;
     }
 
-    .active {
+    #niv .active {
       background-color: #4CAF50;
     }
     </style>
   </head>
   <body>
-    <nav class="niv">
+    <div id="niv">
       <ul>
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
