@@ -46,6 +46,10 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       line-height: 40px;
     }
+    .segment-two ul li a{
+      color: #999;
+      text-decoration: none;
+    }
     }
 
   </style>
