@@ -19,7 +19,7 @@
     }
     .footer-top{
       background: #000000;
-      padding: 80px 0;
+      padding: 40px 0;
     }
     .segment-one h3{
       font-family: courgette;
