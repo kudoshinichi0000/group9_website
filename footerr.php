@@ -108,7 +108,7 @@
     margin-bottom: 30px;
   }
   .footer-top{
-    padding: 50px;
+    padding: 50px 0;
   }
 }
 
