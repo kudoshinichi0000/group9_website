@@ -104,7 +104,10 @@ nav a:hover {
 	color: white;
 	cursor: pointer;
 }
-
+#VideoIntroCenter{
+	margin-left: auto;
+	margin-right: auto;
+}
 .home a::before {
   content: '';
   display: block;
