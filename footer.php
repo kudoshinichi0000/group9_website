@@ -50,11 +50,21 @@
 					</ul>
 				</div></div><br>
 
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p class="h6">Feedopedia</p>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">Feedopedia</p>
 
-					<div class="row">
+				<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 							<p class="h6">Copyright ©2021 GROUP9 </p>
+
+					<div class="column">
+						<img src="image/fb.png"  width="75" class="FooterLogo">
+					</div>
+					<div class="column">
+						<img src="image/ig.png" width="75" class="FooterLogo">
+					</div>
+						<div class="column">
+						<img src="image/twitter.png" width="75" class="FooterLogo">
+					</div>
 </html>

@@ -396,3 +396,18 @@ section {
     margin-bottom: 10px;
     font-size: 10px;
 }
+
+.FooterLogo{
+    float: left;
+    text-align: center;
+    padding: 10px;
+	text-align: center;
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;;
+  padding-left: 13.3%;
+
+}
