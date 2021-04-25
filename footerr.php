@@ -97,10 +97,12 @@
       text-align: center;
       line-height: 30px;
       background: #808080;
-
-
     }
-
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .md-mb-30{
+    margin-bottom: 30px;
+  }
+}
     }
     }
 
