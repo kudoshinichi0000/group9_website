@@ -94,9 +94,9 @@
     .footer-bottom{
       color: black;
       text-align: center;
-      line-height: 30px;
+      line-height: 50px;
       background: #808080;
-      padding:-5px;
+      
 
     }
 
