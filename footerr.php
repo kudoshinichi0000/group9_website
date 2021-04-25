@@ -66,8 +66,11 @@
       height: 50px;
       display: inline-block;
       border-radius:50%;
-
-
+    }
+    .segment-three a i{
+      color: #fff;
+      font-size:20px;
+      padding:10px 12
     }
     }
 
