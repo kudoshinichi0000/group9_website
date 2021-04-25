@@ -344,12 +344,12 @@ h6{
 section {
   padding: 25px 0px;
   margin-top: 46em;
-  height: 16em;
+  height: 17em;
 }
 
 
 #footer {
-    background: #000 !important;
+  background: #000 !important;
    left: 0;
    bottom: 0;
 }
