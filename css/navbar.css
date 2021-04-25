@@ -75,7 +75,7 @@ nav a:hover {
 	color: #000;
 }
 
-input #login{
+#login input{
   background-color: #ff5e2b;
   padding: 0.5em 1em;
   border-radius: 25px;
