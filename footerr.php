@@ -126,7 +126,7 @@
                   <h3> Feedopedia</h3>
                   <p> Feedopedia is an entertainment and educatioal websites.....</p>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                   <h2> LINKS LINKS</h2>
                   <ul>
                       <li><a href="#"></a> Services</li>
