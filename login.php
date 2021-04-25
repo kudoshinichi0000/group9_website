@@ -81,5 +81,5 @@
 	</div>
 
 </body>
-	<?php include_once "footerr.php"; ?>
+	<?php include_once "footer.php"; ?>
 </html>
