@@ -410,7 +410,7 @@ section {
   text-align: center;
   padding: 10px;
 	text-align: center;
-	margin-right: 1em;
+	margin-left: 1em;
 }
 .column {
 	display: inline-block;
@@ -418,5 +418,6 @@ section {
   width: 33.33%;
   padding: 5px;;
   padding-left: 13.3%;
+	margin-left: 1em;
 
 }
