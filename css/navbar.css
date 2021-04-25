@@ -406,11 +406,11 @@ section {
 
 .FooterLogo{
 	display: inline-block;
-    float: left;
-    text-align: center;
-    padding: 10px;
+  float: left;
+  text-align: center;
+  padding: 10px;
 	text-align: center;
-
+	margin-right: 1em;
 }
 .column {
 	display: inline-block;
