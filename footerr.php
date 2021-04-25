@@ -27,6 +27,11 @@
       letter-spacing: 3px;
       margin: 10px 0;
     }
+    .segment-two h2{
+      color: red;
+      font-family: Poppins:
+
+    }
 
   </style>
 </head>
