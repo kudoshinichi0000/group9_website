@@ -36,6 +36,16 @@
       content: '|';
       color: green;
       padding-right: 10px;
+    .segment-two ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+    }
+    .segment-two ul li{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      line-height: 40px;
+    }
     }
 
   </style>
