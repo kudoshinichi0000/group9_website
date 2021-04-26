@@ -57,11 +57,13 @@
       padding: 3px 0;
       margin-left: 5px;
       font-weight: 600;
-
     }
     .segment-two ul li a{
       color: #999;
       text-decoration: none;
+    }
+    .segment-two uli li a i{
+      margin-right: 3px;
     }
     .segment-three h2{
       color: #fff;
