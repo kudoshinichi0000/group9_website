@@ -85,7 +85,7 @@
       font-size:20px;
       padding:10px 12px;
     }
-    .segment-three ul li a i{
+    .segment-three  a i{
       margin-right: 3px;
     }
     .segment-three a i:hover{
