@@ -54,6 +54,7 @@
     }
     .segment-two ul li:hover{
       padding: 3px 0;
+      margin-left: 5px;
 
     }
     .segment-two ul li a{
