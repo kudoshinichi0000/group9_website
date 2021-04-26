@@ -62,9 +62,7 @@
       color: #999;
       text-decoration: none;
     }
-    .segment-two uli li a i{
-      margin-right: 3px;
-    }
+
     .segment-three h2{
       color: #fff;
       font-family: Poppins;
@@ -86,6 +84,9 @@
       color: #fff;
       font-size:20px;
       padding:10px 12px;
+    }
+    .segment-three ul li a i{
+      margin-right: 3px;
     }
     .segment-four h2{
       color: #fff;
