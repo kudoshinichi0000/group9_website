@@ -53,6 +53,7 @@
       transition: .5s all ease;
     }
     .segment-two ul li:hover{
+      color: #feab02;
       padding: 3px 0;
       margin-left: 5px;
       font-weight: 700;
