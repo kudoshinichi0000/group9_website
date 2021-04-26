@@ -56,7 +56,7 @@
       color: #feab02;
       padding: 3px 0;
       margin-left: 5px;
-      font-weight: 700;
+      font-weight: 600;
 
     }
     .segment-two ul li a{
