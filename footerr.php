@@ -55,6 +55,7 @@
     .segment-two ul li:hover{
       padding: 3px 0;
       margin-left: 5px;
+      font-weight: 700;
 
     }
     .segment-two ul li a{
