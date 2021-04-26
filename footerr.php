@@ -50,6 +50,7 @@
       font size: 25px;
       -webkit-transition: .5s all ease;
       -moz-transition: .5s all ease;
+      transition: .5s all ease;
     }
     .segment-two ul li a{
       color: #999;
