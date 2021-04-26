@@ -59,7 +59,7 @@
       font-weight: 600;
     }
     .segment-two ul li a{
-      color: #999;
+      color: white;
       text-decoration: none;
     }
 
