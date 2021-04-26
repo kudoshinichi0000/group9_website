@@ -88,7 +88,7 @@
     .segment-three ul li a i{
       margin-right: 3px;
     }
-    .segment-three ul li:hover a i{
+    .segment-three a i:hover{
       font-weight: 700;
       text-decoration: none;
       color: blue;
