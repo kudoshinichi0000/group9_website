@@ -39,6 +39,7 @@
       padding-right: 10px;
     }
     .segment-two ul{
+      color: white;
       margin: 0;
       padding: 0;
       list-style: none;
