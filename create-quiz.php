@@ -8,7 +8,19 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; include_once "navbar.php"; ?>
+	<?php include_once "db.php"; include_once "navbaradmin.php"; ?>
+
+	<!---
+	Hello po,may suggesstion ako.. pwede bang gawin nyo nalang isang php file yung sa paggawa ng quiz?
+	ipag sama nyo nalang yung create quiz at create questions para maging convinient sa users para hindi
+	na sila mag pipipindot at komunti yung mga php files naten....tsaka gumawa din kayo dito ng radio button
+	para sa categories tapos ang option doon is educational at entertainment
+	 tsaka categories din sa database.... kaylangan ko po kase yun para sa categories.php
+
+	so ang silbi po ng categories.php pinag hihiwalay nya yung pang educational at pang entertanment
+	na mga questions...
+	--->
+
 
 	<div class="quiz">
 		<div id="box">
