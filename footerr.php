@@ -52,8 +52,9 @@
       -moz-transition: .5s all ease;
       transition: .5s all ease;
     }
-    .segment-two ul li{
-      
+    .segment-two ul li:hover{
+      padding: 3px 0;
+
     }
     .segment-two ul li a{
       color: #999;
