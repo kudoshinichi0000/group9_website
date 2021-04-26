@@ -52,6 +52,9 @@
       -moz-transition: .5s all ease;
       transition: .5s all ease;
     }
+    .segment-two ul li{
+      
+    }
     .segment-two ul li a{
       color: #999;
       text-decoration: none;
