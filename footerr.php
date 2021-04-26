@@ -88,6 +88,11 @@
     .segment-three ul li a i{
       margin-right: 3px;
     }
+    .segment-three ul li:hover a i{
+      font-weight: 700;
+      text-decoration: none;
+      color: blue;
+    }
     .segment-four h2{
       color: #fff;
       font-family: Poppins;
