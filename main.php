@@ -50,6 +50,6 @@
 				</table>
 	</div>
 
-</body><br><br>
+</body>
 	<?php include_once "footerr.php";?>
 </html>
