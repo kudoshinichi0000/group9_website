@@ -30,13 +30,13 @@
 					</tr>
 
 					<tr>
-						<th>
+						<th id="cent">
 							<a href="#" style="border: 1px solid black; margin: auto;">Educational</a>
 						</th>
 					</tr>
 
 					<tr>
-						<th><a href="#">Entertainment</a></th>
+						<th id="cent"><a href="#">Entertainment</a></th>
 					</tr>
 
 				</table>
