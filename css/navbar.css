@@ -135,7 +135,7 @@ nav a:hover {
 	margin-top: 5em;
 	height: 3em;
 	font-family: 'Orelega One', cursive;
-	margin: auto;
+	padding-top:1em;
 	font-size: 2em;
 }
 
