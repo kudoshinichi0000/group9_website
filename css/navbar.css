@@ -357,6 +357,7 @@ nav a:hover {
 	border: 1px solid black;
 	padding: 12px 7.9em;
 	background-color: red;
+	color: #fff;
 }
 
 .catnav :hover{
@@ -366,8 +367,9 @@ nav a:hover {
 	border: 1px solid black;
 	 padding: 13px 7.4em;
 	 background-color: red;
+	 color: #fff;
 }
 
-.catnav :hover{
+.catnav2 :hover{
 	background-color: #ff5e2b;
 }
