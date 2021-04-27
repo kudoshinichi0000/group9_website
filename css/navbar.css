@@ -185,7 +185,9 @@ nav a:hover {
 
 .topNavCategories{
 	border: 1px solid black;
-	width: 100%;
+	float: left;
+	margin-left: 10px;
+	width: 25%;
 	height: 3em;
 	margin-top: -5px;
 }
