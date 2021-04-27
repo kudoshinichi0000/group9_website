@@ -132,7 +132,8 @@ nav a:hover {
 	border: 1px solid black;
 	background-color: red;
 	color: white;
-	margin-top: 5em;
+	margin-top: 4em;
+	height: 2em;
 }
 
 .home a::before {
