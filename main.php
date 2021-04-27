@@ -25,12 +25,15 @@
 	<div class="topNavCategories">
 		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
 
-					<tr bgcolor="black">
-						<th id="cent">Categories</th>
+					<tr bgcolor="black" id="cent">
+						<th>Categories</th>
 					</tr>
 
 					<tr>
 						<th><a href="#">Educational</a></th>
+					</tr>
+
+					<tr>
 						<th><a href="#">Entertainment</a></th>
 					</tr>
 
