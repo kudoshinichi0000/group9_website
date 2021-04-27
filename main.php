@@ -35,8 +35,10 @@
 						</th>
 					</tr>
 
-					<tr id="cent">
-						<th><a href="#" style="border: 1px solid black; padding: 10px 3em;>Entertainment</a></th>
+					<tr >
+						<th id="cent">
+							<a href="#" style="border: 1px solid black; padding: 10px 3em;">Entertainment</a>
+							</th>
 					</tr>
 
 				</table>
