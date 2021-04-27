@@ -31,12 +31,12 @@
 
 					<tr>
 						<th id="cent">
-							<a href="#" style="border: 1px solid black; margin: auto;">Educational</a>
+							<a href="#" style="border: 1px solid black; padding: 10px 3em;">Educational</a>
 						</th>
 					</tr>
 
 					<tr>
-						<th id="cent"><a href="#">Entertainment</a></th>
+						<th id="cent"><a href="#" style="border: 1px solid black;>Entertainment</a></th>
 					</tr>
 
 				</table>
