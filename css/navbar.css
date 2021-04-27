@@ -326,8 +326,12 @@ section {
 
 #footer {
   background: #000;
-   left: 0;
-   bottom: 0;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
 }
 #footer h5{
   padding-left: 10px;
