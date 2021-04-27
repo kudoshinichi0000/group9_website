@@ -14,7 +14,7 @@
 
 	<?php
 		include_once "db.php";
-		
+
 
 	?>
 
@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="topNavCategories">
-		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
+		<table border="2" style="border:1px solid black; height: 10em;">
 
 					<tr bgcolor="black" >
 						<th id="cent">Categories</th>
