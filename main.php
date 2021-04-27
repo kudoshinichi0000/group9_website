@@ -28,7 +28,7 @@
 		</video>
 	</div>
 
-	<div class="topNavCategories">
+	<div class="leftNavCategories">
 		<table border="2" style="border:1px solid black; height: 10em;">
 
 					<tr bgcolor="black" >
