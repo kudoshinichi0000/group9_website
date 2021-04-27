@@ -356,20 +356,26 @@ nav a:hover {
 .catnav{
 	border: 1px solid black;
 	padding: 12px 7.9em;
-	background-color: red;
+	background-color: #ff5e2b;
 	color: #fff;
+	text-decoration: none;
 }
 
 .catnav :hover{
-	background-color: #ff5e2b;
+	background-color: #red;
+	color: white;
+	text-decoration: none;
 }
 .catnav2{
 	border: 1px solid black;
 	 padding: 13px 7.4em;
-	 background-color: red;
+	 background-color: #ff5e2b;
 	 color: #fff;
+	 text-decoration: none;
 }
 
 .catnav2 :hover{
-	background-color: #ff5e2b;
+	background-color: #red;
+	color: white;
+	text-decoration: none;
 }
