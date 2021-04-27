@@ -351,4 +351,6 @@ nav a:hover {
 }
 .cent{
 	text-align: center;
+	margin: auto;
+	padding: auto;
 }
