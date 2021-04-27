@@ -14,11 +14,13 @@
 
 	<?php
 		include_once "db.php";
-		include_once "navbar.php";
+		
 
 	?>
 
-
+	<div class="Greet">
+		Hello, Welcome To Feedopedia!
+	</div><br>
 
 
 
