@@ -18,9 +18,7 @@
 
 	?>
 
-	<div class="Greet">
-		Hello, Welcome To Feedopedia!
-	</div><br>
+
 
 
 
