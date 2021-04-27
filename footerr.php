@@ -11,6 +11,7 @@
       width: 100%;
       background-color: red;
       color: white;
+      margin-top: 50em;
     }
     p{
       color:#a6a6a6;
