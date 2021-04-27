@@ -23,8 +23,21 @@
 	</div><br>
 
 	<div class="topNavCategories">
-			<?php include_once("Categories.php"); ?>
-		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
+		<table border="2" height="350px" width="100%" style="border:1px solid black;">
+
+					<tr bgcolor="black">
+						<th style="align-text:center; color: white; font-family: 'Orelega One', cursive;">Categories</th>
+					</tr>
+
+					<tr>
+						<th><a href="#">Educational</a></th>
+					</tr>
+
+					<tr>
+						<th><a href="#">Entertainment</a></th>
+					</tr>
+
+				</table>
 	</div>
 
 </body>
