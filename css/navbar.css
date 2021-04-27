@@ -120,12 +120,20 @@ nav a:hover {
 }
 
 #VideoIntroCenter{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
+	align-items: center;
+
 }
 
 .Greet{
 	text-align: center;
+	border: 1px solid black;
+	background-color: red;
+	color: white;
 }
+
 .home a::before {
   content: '';
   display: block;
