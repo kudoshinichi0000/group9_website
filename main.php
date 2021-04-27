@@ -27,7 +27,7 @@
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
 	</div>
-	
+
 	<div class="topNavCategories">
 		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
 
@@ -50,6 +50,6 @@
 				</table>
 	</div>
 
-</body>
+</body><br><br>
 	<?php include_once "footerr.php";?>
 </html>
