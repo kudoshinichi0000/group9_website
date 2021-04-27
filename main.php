@@ -30,7 +30,9 @@
 					</tr>
 
 					<tr>
-						<th><a href="#" style="border: 1px solid black;">Educational</a></th>
+						<th>
+							<a href="#" style="border: 1px solid black; align-item: center;">Educational</a>
+						</th>
 					</tr>
 
 					<tr>
