@@ -350,7 +350,5 @@ nav a:hover {
 	margin-left: 1em;
 }
 .cent{
-	text-align: center;
-	margin: auto;
-	padding: auto;
+	padding-left: 2em;
 }
