@@ -17,9 +17,6 @@
               <div class="home"><a href="main.php">Home</a></div>
             </li>
             <li>
-              <div class="about"><a href"About.php">About</a></div>
-            </li>
-            <li>
               <div class="results"><a href="results.php">History</a></div>
             </li>
             <li>

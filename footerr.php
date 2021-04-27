@@ -39,6 +39,7 @@
       padding-right: 10px;
     }
     .segment-two ul{
+      color: white;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -47,11 +48,22 @@
     .segment-two ul li{
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       line-height: 40px;
+      font size: 25px;
+      -webkit-transition: .5s all ease;
+      -moz-transition: 1s all ease;
+      transition: .5s all ease;
+    }
+    .segment-two ul li:hover{
+      color: #feab02;
+      padding: 3px 0;
+      margin-left: 5px;
+      font-weight: 600;
     }
     .segment-two ul li a{
       color: #999;
       text-decoration: none;
     }
+
     .segment-three h2{
       color: #fff;
       font-family: Poppins;
@@ -73,6 +85,14 @@
       color: #fff;
       font-size:20px;
       padding:10px 12px;
+    }
+    .segment-three  a i{
+      margin-right: 3px;
+    }
+    .segment-three a i:hover{
+      font-weight: 700;
+      text-decoration: none;
+      color: blue;
     }
     .segment-four h2{
       color: #fff;
