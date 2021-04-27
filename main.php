@@ -25,8 +25,8 @@
 	<div class="topNavCategories">
 		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
 
-					<tr bgcolor="black" id="cent">
-						<th>Categories</th>
+					<tr bgcolor="black" >
+						<th id="cent">Categories</th>
 					</tr>
 
 					<tr>
