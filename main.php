@@ -16,31 +16,14 @@
 		include_once "db.php";
 		include_once "navbar.php";
 
-	?><br><br><br>
+	?>
 
 	<div class="Greet">
 		Hello, Welcome To Feedopedia!
 	</div>
 
-	<div class="topNavCategories">
-			<?php include_once("Categories.php"); ?>
-		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
-	</div>
 
-	<div id="VideoIntroCenter">
-		<video width="600" controls>
-  		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
-		</video>
-	</div>
 
-	<div class="centerBlack">News Feed</div>
-
-	<div class="DisplayQuestions">
-		<!---Dito i didisplay ang mga questions--->
-
-	</div>
-
-	<script src="app.js"></script>
 </body>
 	<?php include_once "footerr.php";?>
 </html>
