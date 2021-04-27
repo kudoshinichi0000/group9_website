@@ -25,9 +25,8 @@
 	<div class="topNavCategories">
 			<?php include_once("Categories.php"); ?>
 		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
-	</div><br>
+	</div>
 
-<!---->
 	<div id="VideoIntroCenter">
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
