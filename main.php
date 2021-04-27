@@ -26,7 +26,7 @@
 		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
 
 					<tr bgcolor="black">
-						<th>Categories</th>
+						<th id="cent">Categories</th>
 					</tr>
 
 					<tr>
