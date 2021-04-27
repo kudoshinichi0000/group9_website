@@ -22,7 +22,10 @@
 		Hello, Welcome To Feedopedia!
 	</div><br>
 
-
+	<div class="topNavCategories">
+			<?php include_once("Categories.php"); ?>
+		<!---Dito ilalagay yung mga different kinds of categories ng mga questions--->
+	</div>
 
 </body>
 	<?php include_once "footerr.php";?>
