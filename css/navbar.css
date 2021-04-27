@@ -378,3 +378,8 @@ nav a:hover {
 	color: white;
 	text-decoration: none;
 }
+
+footer{
+	position: absolute;
+	bottom: 0;
+}
