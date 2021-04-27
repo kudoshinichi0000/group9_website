@@ -12,7 +12,15 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; include_once "navbar.php"; ?><br><br><br>
+	<?php
+		include_once "db.php";
+		include_once "navbar.php";
+
+	?><br><br><br>
+
+	<div class="Greet">
+		Hello, Welcome To Feedopedia!
+	</div>
 
 	<div class="topNavCategories">
 			<?php include_once("Categories.php"); ?>

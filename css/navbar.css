@@ -118,7 +118,13 @@ nav a:hover {
 	color: white;
 	cursor: pointer;
 }
+
 #VideoIntroCenter{
+	text-align: center;
+	margin: auto;
+}
+
+.Greet{
 	text-align: center;
 }
 .home a::before {
@@ -297,11 +303,6 @@ nav a:hover {
 .main{
   text-decoration: none;
   color: black;
-}
-
-h6{
-	text-align: center;
-	margin: auto;
 }
 
 /* Footer */
