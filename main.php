@@ -37,7 +37,7 @@
 
 					<tr >
 						<th id="cent">
-							<a href="#" style="border: 1px solid black; padding: 11px 10em;">Entertainment</a>
+							<a href="#" style="border: 1px solid black; padding: 11px 9em;">Entertainment</a>
 							</th>
 					</tr>
 
