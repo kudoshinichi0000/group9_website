@@ -22,6 +22,12 @@
 		Hello, Welcome To Feedopedia!
 	</div><br>
 
+	<div id="VideoIntroCenter">
+		<video width="600" controls>
+  		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
+		</video>
+	</div>
+	
 	<div class="topNavCategories">
 		<table border="2" width="100%" style="border:1px solid black; height: 10em;">
 
