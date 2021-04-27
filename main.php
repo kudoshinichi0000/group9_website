@@ -31,9 +31,6 @@
 
 					<tr>
 						<th><a href="#">Educational</a></th>
-					</tr>
-
-					<tr>
 						<th><a href="#">Entertainment</a></th>
 					</tr>
 
