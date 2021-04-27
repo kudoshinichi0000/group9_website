@@ -23,10 +23,11 @@
 	</div><br>
 
 	<div class="topNavCategories">
-		<table border="2" height="350px" width="100%" style="border:1px solid black; height: 5em;">
+		<table border="2" height="350px" width="100%" style="border:1px solid black; height: 5em;
+		align-text:center; align-items: center; color: white; font-family: 'Orelega One', cursive;">
 
 					<tr bgcolor="black">
-						<th style="align-text:center; align-items: center; color: white; font-family: 'Orelega One', cursive;">Categories</th>
+						<th>Categories</th>
 					</tr>
 
 					<tr>
