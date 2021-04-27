@@ -8,6 +8,7 @@
   <style media="screen">
     footer{
       background-color: #000;
+      float: bottom;
       position: absolute;
       bottom: 1px;
       left: 0;
