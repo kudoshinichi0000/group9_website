@@ -55,7 +55,7 @@ html{
 .month p{
   font-size: 1.6em;
 }
-.weekdayskdys{
+.weekdays{
   width: 100%;
   height: 5rem;
   padding: 0 0.4rem;
