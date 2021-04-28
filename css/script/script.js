@@ -17,6 +17,8 @@ const prevLastDay = new Date(
   0
 ).getDate();
 
+const firstDayIndex= date.getDay();
+
 const nextDays = 7 - lastDayIndex - 1;
 
 const months =[
