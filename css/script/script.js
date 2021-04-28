@@ -1,5 +1,5 @@
 const date = new Date();
-
+date.setDate(1);
 const month= date.getMonth();
 console.log(month);
 
