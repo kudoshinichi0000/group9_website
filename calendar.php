@@ -13,6 +13,7 @@
         <h1> May</h1>
         <p> Fri May 7, 2021</p>
       </div>
+      i.fas.fa-angle
 
     </div>
 
