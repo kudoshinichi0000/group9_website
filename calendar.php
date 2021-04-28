@@ -76,6 +76,8 @@ html{
 days{
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 0.2rem;
 }
 
 </style>
