@@ -33,7 +33,7 @@ html{
 }
 .month{
   width: 100%;
-  heigh: 12rem;
+  height: 12rem;
   background-color: #167e56;
   display: flex;
   justify-content: space-between;
