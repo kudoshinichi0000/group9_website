@@ -18,4 +18,9 @@ const prevLastDay = new Date(
 ).getDate();
 
 const nextDays = 7 - lastDayIndex - 1;
+
+const months =[
+  "January",
+  "February"
+]
 }
