@@ -366,7 +366,7 @@ nav a:hover {
 }
 .catnav{
 	border: 1px solid black;
-
+	margin-right: 5em;
 	margin-left: 2em;
 	color: #000;
 	text-decoration: none;
@@ -374,7 +374,8 @@ nav a:hover {
 
 .catnav2{
 	border: 1px solid black;
-	margin-left: 2em;
+	margin-left: 3em;
+	margin-right: 5em;
 	color: #000;
 	text-decoration: none;
 }
