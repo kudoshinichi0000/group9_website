@@ -26,6 +26,7 @@
     </div>
     <div class="days">
       <div class="PrevDt">6</div>
+      <div class="PrevDt"></div>
     </div>
 
   </div>
