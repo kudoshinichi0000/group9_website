@@ -371,22 +371,11 @@ nav a:hover {
 	text-decoration: none;
 }
 
-.catnav :hover{
-	background-color: #red;
-	color: white;
-	text-decoration: none;
-}
 .catnav2{
 	border: 1px solid black;
 	 padding: 13px 7.4em;
 	 color: #000;
 	 text-decoration: none;
-}
-
-.catnav2 :hover{
-	background-color: #red;
-	color: white;
-	text-decoration: none;
 }
 
 .arrow{
