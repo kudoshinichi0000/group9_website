@@ -67,3 +67,5 @@ for(let k = 1; k <= nextDays; k++){
   mpnthDays.innerHTML = days;
 }
 };
+
+document.querySelector(".prev").addEventListener("click,")
