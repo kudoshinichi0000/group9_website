@@ -29,7 +29,7 @@
 
 </style>
 <body>
-</body>
+
 <div class="container">
   <div class="calendar">
     <div class="month">
@@ -124,5 +124,7 @@
 
   </div>
 </div>
+
 <script src="script.js"></script>
+</body>
 </head>
