@@ -50,6 +50,13 @@
 				</table>
 	</div>
 
+	<!---Dito ialalgay yung calendar--->
+
+	<div class="DisplayQuestions">
+		<!---Dito i didisplay ang mga questions--->
+
+	</div>
+
 </body>
 	<?php include_once "footerr.php";?>
 </html>
