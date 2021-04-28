@@ -30,7 +30,7 @@
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
-	</div><br>
+	</div>
 
 	<div class="dropdown">
 		<div class="cat">Categories</div>
@@ -38,7 +38,7 @@
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
 		</div>
-	</div><br>
+	</div>
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
