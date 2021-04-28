@@ -94,6 +94,11 @@ html{
   border: 0.2rem solid #777;
   cursor: pointer;
 }
+.PrevDt,
+.NextDt{
+  opaity:0.5;
+
+}
 
 </style>
 </head>
