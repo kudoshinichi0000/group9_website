@@ -69,5 +69,6 @@ for(let k = 1; k <= nextDays; k++){
 };
 
 document.querySelector(".prev").addEventListener("click, ()" => {
-  
+  date.setMonth(date.getMonth() -1);
+  renderCalender();
 })
