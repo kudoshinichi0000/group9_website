@@ -8,11 +8,12 @@
 <div class="container">
   <div class="calendar">
     <div class="month">
-      <i class="fas-fa-angle-leftprev"></i>
+      <i class="fas fa-angle-left prev"></i>
       <div class="date">
         <h1> May</h1>
         <p> Fri May 7, 2021</p>
       </div>
+
     </div>
 
   </div>
