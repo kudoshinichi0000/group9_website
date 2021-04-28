@@ -89,7 +89,7 @@ html{
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   transition: background-color 0.2s;
 }
-.days div:hover.not(.today){
+.days div:hover:not(.today){
   background-color: #262626;
   border: 0.2rem solid white;
   cursor: pointer;
