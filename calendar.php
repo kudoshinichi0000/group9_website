@@ -97,7 +97,6 @@ html{
 .PrevDt,
 .NextDt{
   opaity:0.5;
-
 }
 
 </style>
