@@ -14,6 +14,8 @@
 .container{
   width: 100%;
   height: 100vh;
+  color: white;
+  display: flex;
   background-color: #12121f;
 
 }
