@@ -1,6 +1,5 @@
 body {
 	background-color: #e7dfdd;
-	height:25em;
 }
 
 .container {
@@ -119,9 +118,9 @@ nav a:hover {
 	color: white;
 	cursor: pointer;
 }
-
 #VideoIntroCenter{
 	text-align: center;
+<<<<<<< HEAD
 	align-items: center;
 	margin-top: 3em;
 	margin-bottom: 5em;
@@ -137,8 +136,9 @@ nav a:hover {
 	font-family: 'Orelega One', cursive;
 	padding-top: 0.9em;
 	font-size: 1.5em;
+=======
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 }
-
 .home a::before {
   content: '';
   display: block;
@@ -195,6 +195,16 @@ nav a:hover {
 	margin-bottom: -30em;
 }
 
+<<<<<<< HEAD
+=======
+.topNavCategories{
+	border: 1px solid black;
+	width: 100%;
+	height: 3em;
+	margin-top: -5px;
+}
+
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 .DisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
@@ -202,7 +212,7 @@ nav a:hover {
   position: relative;
 	border: 1px solid black;
 	width: 50%;
-	height: 50em;
+	height: 30em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -310,6 +320,68 @@ nav a:hover {
   color: black;
 }
 
+h6{
+	text-align: center;
+	margin: auto;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+  padding: 25px 0px;
+  margin-top: 46em;
+  height: 17em;
+}
+
+
+#footer {
+  background: #000;
+   left: 0;
+   bottom: 0;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+#footer ul.s-links li a{
+  color:#fff;
+  font-size: 19px;
+
+}
+
+#footer ul.s-links li{
+    font-size: 25px;
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.s-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.s-links li a i{
+  margin-right: 5px;
+}
+#footer ul.s-links li:hover a i {
+    font-weight: 700;
+		text-decoration: none;
+		color: blue;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
 .row{
   margin-left: auto;
 	margin-right: auto;
@@ -338,6 +410,7 @@ nav a:hover {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
+<<<<<<< HEAD
 
 .cat {
   background-color: #4CAF50;
@@ -390,3 +463,5 @@ nav a:hover {
 .dropdown:hover .cat {
   background-color: #3e8e41;
 }
+=======
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
