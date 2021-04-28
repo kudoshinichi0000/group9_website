@@ -199,9 +199,11 @@ nav a:hover {
 	display: block;
 	float: left;
 	margin-top: -29em;
-	margin-left: 10px;
+	margin-left: 3em;
 	width: 20%;
-	height: 3em;
+	height: 8em;
+	text-decoration: none;
+	color: black;
 }
 
 .DisplayQuestions{
