@@ -68,6 +68,8 @@ html{
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   width: cal(44.2rem/7);
+  display:flex;
+  justify-content: center;
 
 }
 
