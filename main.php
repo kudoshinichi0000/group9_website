@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="leftNavCategories">
-		<table border="2" style="border:1px solid black; height: 10em;">
+		<table border="2" style="border:1px solid black; height: 15em;">
 
 					<tr bgcolor="black" >
 						<th id="cent">Categories</th>
