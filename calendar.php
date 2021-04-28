@@ -24,6 +24,9 @@
       <div>Fri</div>
       <div>Sat</div>
     </div>
+    <div class="days">
+      <div class="PrevDt">6</div>
+    </div>
 
   </div>
 </div>
