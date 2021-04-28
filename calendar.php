@@ -120,9 +120,6 @@ html{
       <div class="NextDt">1</div>
       <div class="NextDt">1</div>
       <div class="NextDt">1</div>
-
-
-
     </div>
 
   </div>
