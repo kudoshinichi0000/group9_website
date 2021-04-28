@@ -51,6 +51,7 @@
 
 						<tr >
 							<th id="cent2">
+								<div class="arrow"> > </div>
 								<a href="#" class="catnav2">Entertainment</a>
 								</th>
 						</tr>
