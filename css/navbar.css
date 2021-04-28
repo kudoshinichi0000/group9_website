@@ -388,3 +388,7 @@ nav a:hover {
 	color: white;
 	text-decoration: none;
 }
+
+.arrow{
+	float: left;
+}
