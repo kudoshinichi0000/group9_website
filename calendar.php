@@ -161,8 +161,8 @@ html{
       <div>30</div>
       <div class="next-date">1</div>
       <div class="next-date">2</div>
-      <div class="NextDt">3</div>
-      <div class="NextDt">4</div>
+      <div class="next-date">3</div>
+      <div class="next-date">4</div>
       <div class="NextDt">5</div>
       <div class="NextDt">6</div>
     </div>
