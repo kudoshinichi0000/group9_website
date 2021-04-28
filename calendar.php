@@ -4,6 +4,20 @@
   <link rel="stylesheet" href="calendar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"Quicksand", sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #1261A0;
+}
+
+</style>
 <body>
 </body>
 <div class="container">

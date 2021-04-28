@@ -1,6 +1,5 @@
 body {
 	background-color: #e7dfdd;
-	height:25em;
 }
 
 .container {
@@ -119,26 +118,9 @@ nav a:hover {
 	color: white;
 	cursor: pointer;
 }
-
 #VideoIntroCenter{
 	text-align: center;
-	align-items: center;
-	margin-top: -8em;
-	margin-bottom: 5em;
 }
-
-.Greet{
-	text-align: center;
-	border: 1px solid black;
-	background-color: red;
-	color: white;
-	margin-top: 4.5em;
-	height: 3em;
-	font-family: 'Orelega One', cursive;
-	padding-top: 0.9em;
-	font-size: 1.5em;
-}
-
 .home a::before {
   content: '';
   display: block;
@@ -195,14 +177,11 @@ nav a:hover {
 	margin-bottom: -30em;
 }
 
-.leftNavCategories{
-	display: block;
-	float: left;
-	margin-top: 10em;
-	margin-left: 2em;
-	width: 20%;
-	text-decoration: none;
-	color: black;
+.topNavCategories{
+	border: 1px solid black;
+	width: 100%;
+	height: 3em;
+	margin-top: -5px;
 }
 
 .DisplayQuestions{
@@ -212,7 +191,7 @@ nav a:hover {
   position: relative;
 	border: 1px solid black;
 	width: 50%;
-	height: 50em;
+	height: 30em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -320,6 +299,68 @@ nav a:hover {
   color: black;
 }
 
+h6{
+	text-align: center;
+	margin: auto;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+  padding: 25px 0px;
+  margin-top: 46em;
+  height: 17em;
+}
+
+
+#footer {
+  background: #000;
+   left: 0;
+   bottom: 0;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+#footer ul.s-links li a{
+  color:#fff;
+  font-size: 19px;
+
+}
+
+#footer ul.s-links li{
+    font-size: 25px;
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.s-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.s-links li a i{
+  margin-right: 5px;
+}
+#footer ul.s-links li:hover a i {
+    font-weight: 700;
+		text-decoration: none;
+		color: blue;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
 .row{
   margin-left: auto;
 	margin-right: auto;
@@ -347,50 +388,4 @@ nav a:hover {
   padding: 5px;;
   padding-left: 13.3%;
 	margin-left: 1em;
-}
-
-.cat {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 5em;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-	margin-left: 2em;
-	margin-top: 7em;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-	margin-left: 3em;
-
-}
-
-.content a {
-  color: black;
-  padding: 16px 9.5em;
-  text-decoration: none;
-  display: block;
-}
-
-.content a:hover {
-	background-color: #f1f1f1
-}
-
-.dropdown:hover .content {
-  display: block;
-}
-
-.dropdown:hover .cat {
-  background-color: #3e8e41;
 }
