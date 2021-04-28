@@ -28,36 +28,37 @@
 		</video>
 	</div>
 
-	<div class="leftNavCategories">
-		<table border="2" style="border:1px solid black; height: 15em; width: 25%;">
-
-					<tr bgcolor="black" >
-						<th id="cent1" >Categories</th>
-					</tr>
-
-					<tr>
-						<th id="cent2">
-							<div class="arrow"> > </div>
-							<a href="#" class="catnav">Educational</a>
-						</th>
-					</tr>
-
-					<tr >
-						<th id="cent2">
-							<a href="#" class="catnav2">Entertainment</a>
-							</th>
-					</tr>
-
-				</table>
-	</div>
-
-	<!---Dito ialalgay yung calendar--->
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
 			<!---Dito i didisplay ang mga questions--->
 
 		</div>
+
+		<div class="leftNavCategories">
+			<table border="2" style="border:1px solid black; height: 15em; width: 25%;">
+
+						<tr bgcolor="black" >
+							<th id="cent1" >Categories</th>
+						</tr>
+
+						<tr>
+							<th id="cent2">
+								<div class="arrow"> > </div>
+								<a href="#" class="catnav">Educational</a>
+							</th>
+						</tr>
+
+						<tr >
+							<th id="cent2">
+								<a href="#" class="catnav2">Entertainment</a>
+								</th>
+						</tr>
+
+					</table>
+		</div>
+
+		<!---Dito ialalgay yung calendar--->
 
 </body>
 	<?php include_once "footerr.php";?>
