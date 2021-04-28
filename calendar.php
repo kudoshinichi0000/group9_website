@@ -170,7 +170,7 @@ html{
     </div>
   </div>
 </div>
-<script src="script/script.js"></script>
+<script src="css/script/script.js"></script>
 </body>
 
 </html>
