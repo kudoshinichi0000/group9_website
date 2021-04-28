@@ -90,6 +90,7 @@ html{
   transition: background-color 0.2s;
 }
 .days div:hover.not(.today){
+  background-color: #262626;
 
 }
 
