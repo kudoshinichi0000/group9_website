@@ -167,7 +167,6 @@ html{
       <div class="next-date">3</div>
       <div class="next-date">4</div>
       <div class="next-date">5</div>
-
     </div>
   </div>
 </div>
