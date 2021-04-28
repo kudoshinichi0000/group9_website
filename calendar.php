@@ -83,6 +83,7 @@ html{
   font-size: 1.4rem;
   width: calc(40.2rem / 7);
   height: 5rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
