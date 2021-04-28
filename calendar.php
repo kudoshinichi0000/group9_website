@@ -94,9 +94,9 @@ html{
   border: 0.2rem solid #777;
   cursor: pointer;
 }
-.PrevDt,
-.NextDt{
-  opaity:0.5;
+.prev-date,
+.next-date{
+  opacity:0.5;
 }
 .today{
   background-color: #167e56;
