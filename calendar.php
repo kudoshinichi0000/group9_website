@@ -35,8 +35,10 @@ html{
   heigh: 12rem;
   background-color: #167e56;
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding
+
 
 }
 
