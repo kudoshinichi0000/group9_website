@@ -67,7 +67,8 @@ html{
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  
+  width: cal(44.2rem/7);
+
 }
 
 </style>
