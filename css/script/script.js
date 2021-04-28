@@ -1,7 +1,5 @@
 const date = new Date();
 
-const month= date.getMonth();
-
 const renderCalender = () => {
   date.setDate(1);
 
@@ -42,7 +40,7 @@ document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
 document.querySelector(".date p").innerHTML =new Date().toDateString();
 
-let days ="";
+let days = "";
 
 for(let x = firstDayIndex; x > 0; x--){
   days += '<div class="prev-date">${prevLastDay - x + 1}</div>';
