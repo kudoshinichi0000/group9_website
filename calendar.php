@@ -99,7 +99,7 @@ html{
   opaity:0.5;
 }
 .today{
-  background-color: 
+  background-color: #167e56;
 }
 
 </style>
