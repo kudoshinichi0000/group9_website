@@ -45,7 +45,7 @@ const months =[
   "December",
 ];
 
-document.querySelector(".date h1").innerHTML = months[date.getMonth(5)];
+document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
 document.querySelector(".date p").innerHTML =new Date().toDateString();
 
@@ -71,8 +71,11 @@ for(let k = 1; k <= nextDays; k++){
 }
 };
 
-document.querySelector(".prev").addEventListener("click, ()" => {
+document.querySelector(".prev").addEventListener("click", () => {
   date.setMonth(date.getMonth() -1);
   renderCalender();
 });
+document.querySelector(".next").addEventListener("click", () => {
+  date.setMonth(date.getMonth() + 1);
+})
 renderCalender();
