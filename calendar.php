@@ -9,6 +9,9 @@
   <div class="calendar">
     <div class="month">
       <i class="fas-fa-angle-left prev"></i>
+      <div class="date">
+        <h1> May</h1>
+      </div>
     </div>
 
   </div>
