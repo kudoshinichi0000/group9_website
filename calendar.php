@@ -70,6 +70,8 @@ html{
   width: cal(44.2rem/7);
   display:flex;
   justify-content: center;
+  align-items: center;
+
 
 }
 
