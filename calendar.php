@@ -124,7 +124,6 @@ html{
       <div>Sat</div>
     </div>
     <div class="days">
-      <div class="PrevDt">25</div>
       <div class="PrevDt">26</div>
       <div class="PrevDt">27</div>
       <div class="PrevDt">28</div>
