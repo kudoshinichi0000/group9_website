@@ -85,6 +85,8 @@ dys{
   width: calc(40.2rem / 7);
   height: 5rem;
   justify-content: center;
+  align-items: center;
+
 
 }
 ]
