@@ -110,7 +110,7 @@ html{
     <div class="month">
       <i class="fas fa-angle-left prev"></i>
       <div class="date">
-        <h1>May</h1>
+        <h1></h1>
         <p></p>
       </div>
       <i class="fas fa-angle-right next"></i>
