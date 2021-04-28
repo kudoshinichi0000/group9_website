@@ -50,6 +50,8 @@ html{
   font-size: 3rem;
   font-weight: 400;
   text-transform:  uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 </style>
