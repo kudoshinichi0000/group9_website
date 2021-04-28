@@ -38,7 +38,9 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 
 
 }
