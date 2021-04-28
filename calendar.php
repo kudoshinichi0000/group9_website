@@ -19,7 +19,7 @@ html{
   height: 50%;
   color: white;
   display: flex;
-  
+
   justify-content: center;
   align-items:center;
 }
@@ -169,6 +169,7 @@ html{
       <div class="next-date">5</div>
     </div>
   </div>
+</div>
 </div>
 <script src="css/script/script.js"></script>
 </body>
