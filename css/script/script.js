@@ -24,6 +24,7 @@ const lastDayIndex = new Date(
   date.getMonth() + 1,
   0
 ).getDay();
+
 const nextDays = 7 - lastDayIndex - 1;
 
 const months =[
@@ -42,11 +43,15 @@ const months =[
 ];
 
 document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+
 document.querySelector(".date p").innerHTML =new Date().toDateString();
+
 let days ="";
+
 for(let x = firstDayIndex; x > 0; x--){
   days += '<div class="prev-date">${prevLastDay - x + 1}</div>';
 }
+
 for(let i= 1; i<= lastDay; i++){
   if(
     i === new Date().getDate()&&
