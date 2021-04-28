@@ -10,6 +10,7 @@
   padding:0;
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
+    background-color: #12121f;
 }
 html{
   font-size: 62.5%;
@@ -19,7 +20,7 @@ html{
   height: 100vh;
   color: white;
   display: flex;
-  background-color: #12121f;
+
   justify-content: center;
   align-items:center;
 }
