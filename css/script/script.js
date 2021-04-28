@@ -54,4 +54,4 @@ for(let k = 1; k <= nextDays; k++){
   days += '<div class="next-date">${k}</div>';
   mpnthDays.innerHTML = days;
 }
-}
+};
