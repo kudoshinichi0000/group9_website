@@ -10,7 +10,7 @@
   padding:0;
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
-  
+
 }
 html{
   font-size: 62.5%;
@@ -134,7 +134,6 @@ html{
       <div class="NextDt">1</div>
       <div class="NextDt">1</div>
     </div>
-
   </div>
 </div>
 
