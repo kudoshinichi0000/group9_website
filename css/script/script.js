@@ -34,5 +34,5 @@ const months =[
   "December",
 ];
 
-document.querySelector(".date h1").innerHTML = months
+document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 }
