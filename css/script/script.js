@@ -51,7 +51,7 @@ for(let i = 1; i<= lastDay; i++){
     i === new Date().getDate() &&
     date.getMonth() === new Date().getMonth()
   ){
-    days +='<div class="today">${i}</div>';
+    days += '<div class="today">${i}</div>';
   }else {
     days += '<div>${i}</div>';
   }
