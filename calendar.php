@@ -53,6 +53,9 @@ html{
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }
+.month p{
+  font-size: 1.6em;
+}
 
 </style>
 </head>
