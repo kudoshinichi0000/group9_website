@@ -15,8 +15,8 @@ html{
   font-size: 62.5%;
 }
 .container{
-  width: 70%;
-  height: 50%;
+  width: 50%;
+  height: 70vh;
   color: white;
   display: flex;
   background-color: #12121f;
