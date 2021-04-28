@@ -12,8 +12,8 @@
   font-family:"Quicksand", sans-serif;
 }
 .container{
-  width: 100%;
-  height: 50%;
+  width: 50%;
+  height: 50vh;
   color: white;
   display: flex;
   background-color: #12121f;
