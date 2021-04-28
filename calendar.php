@@ -46,6 +46,11 @@ html{
   font-size: 2.5rem;
   cursor: pointer;
 }
+.month h1{
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform:  uppercase;
+}
 
 </style>
 </head>
