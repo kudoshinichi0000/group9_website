@@ -22,6 +22,18 @@
 		Hello, Welcome To Feedopedia!
 	</div><br>
 
+	<div class="dropdown">
+		<button class="cat">Categories</button>
+		<div class="content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+
+	<!---Dito ialalgay yung calendar--->
+
+
 	<div id="VideoIntroCenter">
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
@@ -35,31 +47,6 @@
 
 		</div>
 
-		<div class="leftNavCategories">
-			<table border="2" style="height: 15em; width: 25%;">
-
-						<tr bgcolor="black" >
-							<th id="cent1" >Categories</th>
-						</tr>
-
-						<tr>
-							<th id="cent2">
-								<div class="arrow"> > </div>
-								<a href="#" class="catnav">Educational</a>
-							</th>
-						</tr>
-
-						<tr >
-							<th id="cent2">
-								<div class="arrow"> > </div>
-								<a href="#" class="catnav2">Entertainment</a>
-								</th>
-						</tr>
-
-					</table>
-		</div>
-
-		<!---Dito ialalgay yung calendar--->
 
 </body>
 	<?php include_once "footerr.php";?>
