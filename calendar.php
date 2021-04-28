@@ -66,7 +66,7 @@ html{
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  width: cal(44.2rem/7);
+  width: calc(44.2rem/7);
   display:flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +166,7 @@ html{
       <div class="next-date">3</div>
       <div class="next-date">4</div>
       <div class="next-date">5</div>
-    
+
     </div>
   </div>
 </div>
