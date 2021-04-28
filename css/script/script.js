@@ -46,6 +46,8 @@ for(let i= 1; i<= lastDay; i++){
     date.getMonth() === new Date().getMonth()
   ){
     days +='<div class="today">${i}</div>';
+  }else {
+    days += '<div>${i}</div>';
   }
 }
 }
