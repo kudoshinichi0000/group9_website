@@ -19,7 +19,8 @@
       <div>Sun</div>
       <div>Mon</div>
       <div>Tues</div>
-      <div
+      <div>Wed</div>
+      <div>Thurs</div>
     </div>
 
   </div>
