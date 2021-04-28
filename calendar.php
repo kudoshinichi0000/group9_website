@@ -26,7 +26,13 @@
     </div>
     <div class="days">
       <div class="PrevDt">6</div>
-      <div class="PrevDt"></div>
+      <div class="PrevDt">7</div>
+      <div class="PrevDt">8</div>
+      <div class="PrevDt">9</div>
+      <div class="PrevDt">10</div>
+      <div class="PrevDt">11</div>
+      <div class="PrevDt">12</div>
+
     </div>
 
   </div>
