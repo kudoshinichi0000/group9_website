@@ -123,7 +123,7 @@ nav a:hover {
 #VideoIntroCenter{
 	text-align: center;
 	align-items: center;
-	margin-top: -8em;
+	margin-top: 3em;
 	margin-bottom: 5em;
 }
 
@@ -193,16 +193,6 @@ nav a:hover {
 	height: 26em;
 	margin-top: 6em;
 	margin-bottom: -30em;
-}
-
-.leftNavCategories{
-	display: block;
-	float: left;
-	margin-top: 10em;
-	margin-left: 2em;
-	width: 20%;
-	text-decoration: none;
-	color: black;
 }
 
 .DisplayQuestions{
@@ -352,17 +342,23 @@ nav a:hover {
 .cat {
   background-color: #4CAF50;
   color: white;
-  padding: 16px 5em;
+  padding: 16px 8em;
   font-size: 16px;
   border: none;
   cursor: pointer;
 	margin-left: 2em;
-	margin-top: 7em;
 }
 
 .dropdown {
+	margin-top: 1;
+	margin-bottom: 1em;
   position: relative;
   display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	float: center;
 }
 
 .content {
@@ -378,7 +374,7 @@ nav a:hover {
 
 .content a {
   color: black;
-  padding: 16px 9.5em;
+  padding: 16px 8em;
   text-decoration: none;
   display: block;
 }
