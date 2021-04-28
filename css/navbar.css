@@ -348,13 +348,19 @@ nav a:hover {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
-#cent{
+
+#cent1{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+#cent2{
 	text-align: center;
 	color: #fff;
 	color: #000;
 	text-decoration: none;
 }
-#cent :hover{
+#cent2 :hover{
 	color: #000;
 	text-decoration: none;
 }

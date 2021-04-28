@@ -32,17 +32,17 @@
 		<table border="2" style="border:1px solid black; height: 15em;">
 
 					<tr bgcolor="black" >
-						<th id="cent">Categories</th>
+						<th id="cent1" >Categories</th>
 					</tr>
 
 					<tr>
-						<th id="cent">
+						<th id="cent2">
 							<a href="#" class="catnav">Educational</a>
 						</th>
 					</tr>
 
 					<tr >
-						<th id="cent">
+						<th id="cent2">
 							<a href="#" class="catnav2">Entertainment</a>
 							</th>
 					</tr>
