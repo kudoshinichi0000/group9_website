@@ -10,18 +10,17 @@
   padding:0;
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
-  background-color: #12121f;
+  
 }
 html{
   font-size: 62.5%;
 }
 .container{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: white;
   display: flex;
   background-color: #12121f;
-
   justify-content: center;
   align-items:center;
 }
