@@ -13,7 +13,7 @@
 }
 .container{
   width: 100%;
-  height: 100vh;
+  height: 50%;
   color: white;
   display: flex;
   background-color: #12121f;
