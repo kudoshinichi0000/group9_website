@@ -56,7 +56,7 @@ for(let i = 1; i<= lastDay; i++){
     days += '<div>${i}</div>';
   }
 }
-for(let k = 1; k <= nextDays; k++){
+for(let j = 1; j <= nextDays; j++){
   days += '<div class="next-date">${k}</div>';
   monthDays.innerHTML = days;
 }
