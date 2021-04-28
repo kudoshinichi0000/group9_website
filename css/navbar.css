@@ -202,6 +202,8 @@ nav a:hover {
 	margin-left: 2em;;
 	width: 20%;
 	height: 3em;
+	text-decoration: none;
+	color: black;
 }
 
 .DisplayQuestions{
