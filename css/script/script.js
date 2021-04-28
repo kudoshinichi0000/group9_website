@@ -13,6 +13,7 @@ const renderCalender = () => {
 
 const prevLastDay = new Date(
   date.getFullYear(),
-  date.getMonth()
-)
+  date.getMonth(),
+  0
+).getDate();
 }
