@@ -4,3 +4,6 @@
   background-color:#167e56;
 
 }
+html{
+  font-size: 62.5%;
+}
