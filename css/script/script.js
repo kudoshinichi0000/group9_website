@@ -1,6 +1,7 @@
 const date = new Date();
 
 const month= date.getMonth();
+console.log(month);
 
 const renderCalender = () => {
   date.setDate(1);
@@ -44,7 +45,7 @@ const months =[
   "December",
 ];
 
-document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+document.querySelector(".date h1").innerHTML = months[date.getMonth(5)];
 
 document.querySelector(".date p").innerHTML =new Date().toDateString();
 
