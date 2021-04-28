@@ -22,9 +22,9 @@ const nextDays = 7 - lastDayIndex - 1;
 const months =[
   "January",
   "February",
-  "March"
-  "April"
-  "May"
+  "March",
+  "April",
+  "May",
   "June"
   "July"
   "August"
