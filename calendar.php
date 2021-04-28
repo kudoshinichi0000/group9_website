@@ -108,7 +108,7 @@ dys{
       <div>Fri</div>
       <div>Sat</div>
     </div>
-    <div class="days">
+    <div class="dys">
       <div class="PrevDt">6</div>
       <div class="PrevDt">7</div>
       <div class="PrevDt">8</div>
