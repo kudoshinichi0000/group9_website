@@ -14,7 +14,8 @@
 .container{
   width: 100%;
   height: 100vh;
-  background-color: #1261A0;
+  background-color: #12121f;
+
 }
 
 </style>
