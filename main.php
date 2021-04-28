@@ -52,10 +52,11 @@
 
 	<!---Dito ialalgay yung calendar--->
 
-	<div class="DisplayQuestions">
-		<!---Dito i didisplay ang mga questions--->
+	<div class="centerBlack">News Feed</div>
+		<div class="DisplayQuestions">
+			<!---Dito i didisplay ang mga questions--->
 
-	</div>
+		</div>
 
 </body>
 	<?php include_once "footerr.php";?>
