@@ -17,7 +17,7 @@ html{
 .container{
   width: 100%;
   height: 100vh;
-  color: white;
+  color: black;
   display: flex;
   background-color: #12121f;
   justify-content: center;
