@@ -16,7 +16,7 @@ html{
 }
 .container{
   width: 50%;
-  height: 55%;
+  height: 70%;
   color: white;
   display: flex;
   background-color: #12121f;
