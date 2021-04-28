@@ -98,6 +98,9 @@ html{
 .NextDt{
   opaity:0.5;
 }
+.today{
+  background-color: 
+}
 
 </style>
 </head>
