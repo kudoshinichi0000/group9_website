@@ -78,7 +78,7 @@ html{
   width: 100%;
   padding: 0.2rem;
 }
-.dys div{
+.days div{
   margin: 0.3rem;
   font-size: 1.4rem;
   width: calc(40.2rem / 7);
