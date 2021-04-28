@@ -27,6 +27,7 @@ html{
   width: 45rem;
   height: 52rem;
   background-color: #167e56;
+  background-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 4);
 
 }
 
