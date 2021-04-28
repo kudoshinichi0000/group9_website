@@ -63,6 +63,9 @@ html{
   align-items: center;
   display:flex;
 }
+.wkdys div{
+  font-weight: 400;
+}
 
 </style>
 </head>
