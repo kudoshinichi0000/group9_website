@@ -61,6 +61,7 @@ html{
   height: 5rem;
   padding: 0 0.4rem;
   align-items: center;
+  display:flex;
 }
 
 </style>
