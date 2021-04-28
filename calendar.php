@@ -84,6 +84,7 @@ dys{
   font-size: 1.4rem;
   width: calc(40.2rem / 7);
   height: 5rem;
+  justify-content: center;
 
 }
 ]
