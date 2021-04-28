@@ -171,7 +171,6 @@ html{
     </div>
   </div>
 </div>
-
-<script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
