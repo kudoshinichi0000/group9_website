@@ -25,8 +25,8 @@ html{
   align-items:center;
 }
 .calendar{
-  width: 30rem;
-  height: 42rem;
+  width: 45rem;
+  height: 52rem;
   background-color: #222227;;
   background-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 4);
 
@@ -90,7 +90,7 @@ html{
   transition: background-color 0.2s;
 }
 .days div:hover.not(.today){
-  
+
 }
 
 </style>
