@@ -72,8 +72,10 @@ html{
   justify-content: center;
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-
-
+}
+days{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 </style>
