@@ -55,14 +55,14 @@ html{
 .month p{
   font-size: 1.6em;
 }
-.wkdys{
+.weekdayskdys{
   width: 100%;
   height: 5rem;
   padding: 0 0.4rem;
   align-items: center;
   display:flex;
 }
-.wkdys div{
+.weekdays div{
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
