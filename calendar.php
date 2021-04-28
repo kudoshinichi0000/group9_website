@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
 }
+html{
+  font-size: 62.5%;
+}
 .container{
   width: 50%;
   height: 50vh;
