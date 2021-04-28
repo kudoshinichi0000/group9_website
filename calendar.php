@@ -82,6 +82,8 @@ dys{
 dys{
   margin: 0.3rem;
   font-size: 1.4rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
 
 }
 ]
