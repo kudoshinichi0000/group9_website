@@ -129,36 +129,6 @@ html{
       <div class="PrevDt">28</div>
       <div class="PrevDt">29</div>
       <div class="PrevDt">30</div>
-      <div class="PrevDt">1</div>
-      <div class="PrevDt">2</div>
-      <div class="PrevDt">3</div>
-      <div class="PrevDt">4</div>
-      <div class="PrevDt">5</div>
-      <div class="PrevDt">6</div>
-      <div class="PrevDt">7</div>
-      <div class="PrevDt">8</div>
-      <div class="PrevDt">9</div>
-      <div class="PrevDt">10</div>
-      <div class="PrevDt">11</div>
-      <div class="PrevDt">12</div>
-      <div class="PrevDt">14</div>
-      <div class="PrevDt">15</div>
-      <div class="PrevDt">16</div>
-      <div class="PrevDt">17</div>
-      <div class="PrevDt">18</div>
-      <div class="PrevDt">19</div>
-      <div class="PrevDt">20</div>
-      <div class="PrevDt">21</div>
-      <div class="PrevDt">22</div>
-      <div class="PrevDt">23</div>
-      <div class="PrevDt">24</div>
-      <div class="PrevDt">25</div>
-      <div class="PrevDt">26</div>
-      <div class="PrevDt">27</div>
-      <div class="PrevDt">28</div>
-      <div class="PrevDt">29</div>
-      <div class="PrevDt">30</div>
-      <div class="PrevDt">31</div>
       <div>1</div>
       <div>2</div>
       <div>3</div>
