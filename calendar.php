@@ -73,7 +73,7 @@ html{
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
-days{
+dys{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -82,7 +82,7 @@ days{
 dys{
   margin: 0.3rem;
   font-size: 1.4rem;
-  
+
 }
 ]
 
