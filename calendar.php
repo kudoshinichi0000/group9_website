@@ -56,6 +56,7 @@ html{
 .month p{
   font-size: 1.6em;
 }
+.weekdays{}
 
 </style>
 </head>
@@ -70,7 +71,7 @@ html{
       </div>
       <i class="fas fa-angle-right next"></i>
     </div>
-    <div class="weekdays">
+    <div class="wkdys">
       <div>Sun</div>
       <div>Mon</div>
       <div>Tues</div>
