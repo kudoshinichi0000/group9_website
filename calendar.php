@@ -130,9 +130,9 @@ html{
       <div class="PrevDt">28</div>
       <div class="PrevDt">29</div>
       <div class="PrevDt">30</div>
-      <div class="PrevDt">6</div>
-      <div class="PrevDt">6</div>
-      <div class="PrevDt">6</div>
+      <div class="PrevDt">1</div>
+      <div class="PrevDt">2</div>
+      <div class="PrevDt">3</div>
       <div class="PrevDt">6</div>
       <div class="PrevDt">7</div>
       <div class="PrevDt">8</div>
