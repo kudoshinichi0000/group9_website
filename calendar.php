@@ -41,8 +41,9 @@ html{
   padding: 0 2rem;
   text-align: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-
-
+}
+.month i{
+  font-size: 2.5rem;
 }
 
 </style>
