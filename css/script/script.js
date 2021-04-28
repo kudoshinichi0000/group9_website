@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
 }
+.container{
+  width: 100%;
+  height: 100vh;
+}
