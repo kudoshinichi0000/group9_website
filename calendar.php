@@ -30,6 +30,15 @@ html{
   background-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 4);
 
 }
+.month{
+  width: 100%;
+  heigh: 12rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: center;
+  
+
+}
 
 </style>
 </head>
