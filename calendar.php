@@ -73,13 +73,13 @@ html{
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
-dys{
+.dys{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 0.2rem;
 }
-dys{
+.dys div{
   margin: 0.3rem;
   font-size: 1.4rem;
   width: calc(40.2rem / 7);
