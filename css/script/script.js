@@ -25,9 +25,9 @@ const months =[
   "March",
   "April",
   "May",
-  "June"
-  "July"
-  "August"
+  "June",
+  "July",
+  "August",
   "September"
   "October"
   "November"
