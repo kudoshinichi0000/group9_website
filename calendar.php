@@ -127,8 +127,8 @@ html{
       <div class="prev-date">26</div>
       <div class="prev-date">27</div>
       <div class="prev-date">28</div>
-      <div class="PrevDt">29</div>
-      <div class="PrevDt">30</div>
+      <div class="prev-date">29</div>
+      <div class="prev-date">30</div>
       <div>1</div>
       <div>2</div>
       <div>3</div>
