@@ -21,6 +21,8 @@
       <div>Tues</div>
       <div>Wed</div>
       <div>Thurs</div>
+      <div>Fri</div>
+      <div>Sat</div>
     </div>
 
   </div>
