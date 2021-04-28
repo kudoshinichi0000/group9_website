@@ -51,6 +51,6 @@ for(let i= 1; i<= lastDay; i++){
   }
 }
 for(let k = 1; k <= nextDays; k++){
-  
+  days += '<div class="next-date">${k}</div>';
 }
 }
