@@ -43,7 +43,6 @@ html{
       </div>
       <i class="fas fa-angle-right next"></i>
     </div>
-  </div>
     <div class="weekdays">
       <div>Sun</div>
       <div>Mon</div>
