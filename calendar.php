@@ -7,8 +7,8 @@
 </body>
 <div class="container">
   <div class="calendar">
-    <div>
-      <i class="fas-fa-angle-left"></i>
+    <div class="month">
+      <i class="fas-fa-angle-left prev"></i>
     </div>
 
   </div>
