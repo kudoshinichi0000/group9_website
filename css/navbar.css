@@ -136,8 +136,6 @@ nav a:hover {
 	font-family: 'Orelega One', cursive;
 	padding-top: 0.9em;
 	font-size: 1.5em;
-=======
->>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 }
 .home a::before {
   content: '';
@@ -195,8 +193,7 @@ nav a:hover {
 	margin-bottom: -30em;
 }
 
-<<<<<<< HEAD
-=======
+
 .topNavCategories{
 	border: 1px solid black;
 	width: 100%;
@@ -204,7 +201,6 @@ nav a:hover {
 	margin-top: -5px;
 }
 
->>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 .DisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
@@ -410,9 +406,10 @@ section {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
-<<<<<<< HEAD
 
 .cat {
+	margin-left: auto;
+	margin-right: auto;
   background-color: #4CAF50;
   color: white;
   padding: 16px 8em;
@@ -429,9 +426,6 @@ section {
   display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
-	align-items: center;
-	float: center;
 }
 
 .content {
