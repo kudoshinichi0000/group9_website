@@ -60,6 +60,7 @@ html{
   width: 100%;
   height: 5rem;
   padding: 0 0.4rem;
+  align-items: center;
 }
 
 </style>
