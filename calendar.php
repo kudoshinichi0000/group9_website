@@ -124,9 +124,9 @@ html{
       <div>Sat</div>
     </div>
     <div class="days">
-      <div class="PrevDt">26</div>
-      <div class="PrevDt">27</div>
-      <div class="PrevDt">28</div>
+      <div class="prev-date">26</div>
+      <div class="prev-date">27</div>
+      <div class="prev-date">28</div>
       <div class="PrevDt">29</div>
       <div class="PrevDt">30</div>
       <div>1</div>
