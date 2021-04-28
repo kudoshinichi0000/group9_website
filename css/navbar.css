@@ -120,6 +120,24 @@ nav a:hover {
 }
 #VideoIntroCenter{
 	text-align: center;
+<<<<<<< HEAD
+	align-items: center;
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+
+.Greet{
+	text-align: center;
+	border: 1px solid black;
+	background-color: red;
+	color: white;
+	margin-top: 4.5em;
+	height: 3em;
+	font-family: 'Orelega One', cursive;
+	padding-top: 0.9em;
+	font-size: 1.5em;
+=======
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 }
 .home a::before {
   content: '';
@@ -177,6 +195,8 @@ nav a:hover {
 	margin-bottom: -30em;
 }
 
+<<<<<<< HEAD
+=======
 .topNavCategories{
 	border: 1px solid black;
 	width: 100%;
@@ -184,6 +204,7 @@ nav a:hover {
 	margin-top: -5px;
 }
 
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f
 .DisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
@@ -389,3 +410,58 @@ section {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
+<<<<<<< HEAD
+
+.cat {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 8em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+	margin-left: 2em;
+}
+
+.dropdown {
+	margin-top: 1;
+	margin-bottom: 1em;
+  position: relative;
+  display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	float: center;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	margin-left: 3em;
+
+}
+
+.content a {
+  color: black;
+  padding: 16px 8em;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown:hover .cat {
+  background-color: #3e8e41;
+}
+=======
+>>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f

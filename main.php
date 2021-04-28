@@ -22,14 +22,6 @@
 		Hello, Welcome To Feedopedia!
 	</div><br>
 
-	<div class="dropdown">
-		<div class="cat">Categories</div>
-		<div class="content">
-			<a href="#">Educational</a>
-			<a href="#">Entertainment</a>
-
-		</div>
-	</div>
 
 	<!---Dito ialalgay yung calendar--->
 
@@ -38,8 +30,15 @@
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
-	</div>
+	</div><br>
 
+	<div class="dropdown">
+		<div class="cat">Categories</div>
+		<div class="content">
+			<a href="#">Educational</a>
+			<a href="#">Entertainment</a>
+		</div>
+	</div><br>
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
