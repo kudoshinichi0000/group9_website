@@ -50,4 +50,7 @@ for(let i= 1; i<= lastDay; i++){
     days += '<div>${i}</div>';
   }
 }
+for(let k = 1; k <= nextDays; k++){
+  
+}
 }
