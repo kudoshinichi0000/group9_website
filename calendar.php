@@ -165,12 +165,6 @@ html{
       <div class="NextDt">4</div>
       <div class="NextDt">5</div>
       <div class="NextDt">6</div>
-      <div class="NextDt">1</div>
-      <div class="NextDt">1</div>
-      <div class="NextDt">1</div>
-      <div class="NextDt">1</div>
-      <div class="NextDt">1</div>
-      <div class="NextDt">1</div>
     </div>
   </div>
 </div>
