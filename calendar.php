@@ -30,7 +30,6 @@
 </style>
 </head>
 <body>
-
 <div class="container">
   <div class="calendar">
     <div class="month">
@@ -128,4 +127,4 @@
 
 <script src="script.js"></script>
 </body>
-</head>
+</html>
