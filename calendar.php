@@ -111,7 +111,7 @@ html{
       <i class="fas fa-angle-left prev"></i>
       <div class="date">
         <h1>May</h1>
-        <p> Sat May 29, 2021</p>
+        <p></p>
       </div>
       <i class="fas fa-angle-right next"></i>
     </div>
