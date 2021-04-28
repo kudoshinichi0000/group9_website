@@ -407,7 +407,7 @@ section {
 	margin-left: 1em;
 }
 
-.cat {
+#cat {
   background-color: #4CAF50;
   color: white;
   padding: 16px 8em;
@@ -417,7 +417,7 @@ section {
 	margin-left: 2em;
 }
 
-.dropdown {
+#dropdown {
 	margin-top: 1;
 	margin-bottom: 1em;
   position: relative;
@@ -426,7 +426,7 @@ section {
 	margin-right: auto;
 }
 
-.content {
+#content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -437,23 +437,21 @@ section {
 
 }
 
-.content a {
+#content a {
   color: black;
   padding: 16px 8em;
   text-decoration: none;
   display: block;
 }
 
-.content a:hover {
+#content a:hover {
 	background-color: #f1f1f1
 }
 
-.dropdown:hover .content {
+#dropdown:hover #content {
   display: block;
 }
 
-.dropdown:hover .cat {
+#dropdown:hover #cat {
   background-color: #3e8e41;
 }
-=======
->>>>>>> 0aa4000502323947954438ee16b37354e1aeb92f

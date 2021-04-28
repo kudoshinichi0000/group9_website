@@ -32,9 +32,9 @@
 		</video>
 	</div>
 
-	<div class="dropdown">
-		<div class="cat">Categories</div>
-		<div class="content">
+	<div id="dropdown">
+		<div id="cat">Categories</div>
+		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
 		</div>
