@@ -110,7 +110,7 @@ html{
       <i class="fas fa-angle-left prev"></i>
       <div class="date">
         <h1> May</h1>
-        <p> Fri May 29, 2021</p>
+        <p> Sat May 29, 2021</p>
       </div>
       <i class="fas fa-angle-right next"></i>
     </div>
@@ -124,6 +124,7 @@ html{
       <div>Sat</div>
     </div>
     <div class="days">
+      <div class="prev-date">25</div>
       <div class="prev-date">26</div>
       <div class="prev-date">27</div>
       <div class="prev-date">28</div>
