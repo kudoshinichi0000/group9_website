@@ -6,7 +6,7 @@ console.log(month);
 const renderCalender = () => {
   date.setDate(1);
 
-  const monthDays= document.querySelector(".dys");
+  const monthDays= document.querySelector(".days");
 
   const lastDay = new Date(
     date.getFullYear(),
