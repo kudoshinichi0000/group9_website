@@ -37,5 +37,5 @@ const months =[
 document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 document.querySelector(".date p").innerHTML =new Date().toDateString();
 let days ="";
-for(let x = firstDayIndex; x > 0;)
+for(let x = firstDayIndex; x > 0; x--)
 }
