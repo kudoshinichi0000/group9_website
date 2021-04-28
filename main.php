@@ -23,11 +23,11 @@
 	</div><br>
 
 	<div class="dropdown">
-		<button class="cat">Categories</button>
+		<div class="cat">Categories</div>
 		<div class="content">
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
+			<a href="#">Educational</a>
+			<a href="#">Entertainment</a>
+
 		</div>
 	</div>
 
