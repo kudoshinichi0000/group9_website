@@ -115,7 +115,7 @@ html{
       </div>
       <i class="fas fa-angle-right next"></i>
     </div>
-    <div class="wkdys">
+    <div class="weekdays">
       <div>Sun</div>
       <div>Mon</div>
       <div>Tues</div>
@@ -124,7 +124,7 @@ html{
       <div>Fri</div>
       <div>Sat</div>
     </div>
-    <div class="dys">
+    <div class="days">
       <div class="PrevDt">6</div>
       <div class="PrevDt">7</div>
       <div class="PrevDt">8</div>
