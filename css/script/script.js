@@ -32,5 +32,7 @@ const months =[
   "October",
   "November",
   "December",
-]
+];
+
+document.querySelector(".date h1").innerHTML = months
 }
