@@ -1,5 +1,7 @@
 const date = new Date();
 
+const month= date.getMonth();
+
 const renderCalender = () => {
   date.setDate(1);
 
