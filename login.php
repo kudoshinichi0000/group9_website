@@ -31,10 +31,14 @@
 				}
 			}
 
-			echo "wrong name or pass!";
+			$_SESSION['errormessage'] = "Wrong Username or Password!";
+			header("location: login.php");
+			exit;
 		}else
 		{
-			echo "wrong username or password!";
+			$_SESSION['errormessage'] = "Wrong Username or Password!";
+			header("location: login.php");
+			exit;
 		}
 	}
 
@@ -57,7 +61,12 @@
 </head>
 <body>
 	<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
-
+	<?php if(isset($_SESSION['errormessage'])): ?>
+		 <script type="text/javascript">
+		 		alert('<?php echo $_SESSION['errormessage']; ?>');
+		 </script>
+		 <?php unset($_SESSION['errormessage']);
+	 	endif;?>
 	<div id="box">
 		<form method="POST">
 			<table class="formchild" style="border-radius: 1em;">
