@@ -33,7 +33,7 @@
 	</div>
 
 	<div id="dropdown">
-		<div id="cat">Categories</div>
+		<option id="cat">Categories</option>
 		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
@@ -43,10 +43,7 @@
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
 			<!---Dito i didisplay ang mga questions--->
-
 		</div>
-
-
 </body>
 	<?php include_once "footerr.php";?>
 </html>
