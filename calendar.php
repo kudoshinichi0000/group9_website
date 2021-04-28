@@ -44,6 +44,7 @@ html{
 }
 .month i{
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 </style>
