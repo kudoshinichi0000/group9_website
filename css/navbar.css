@@ -1,6 +1,6 @@
 body {
 	background-color: #e7dfdd;
-	height: 50em;
+	height:25em;
 }
 
 .container {
@@ -123,7 +123,7 @@ nav a:hover {
 #VideoIntroCenter{
 	text-align: center;
 	align-items: center;
-	margin-top: 3em;
+	margin-top: -8em;
 	margin-bottom: 5em;
 }
 
@@ -349,39 +349,48 @@ nav a:hover {
 	margin-left: 1em;
 }
 
-#cent1{
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-}
-#cent2{
-	text-align: center;
-	color: #fff;
-	color: #000;
-	text-decoration: none;
-}
-#cent2 :hover{
-	color: #000;
-	text-decoration: none;
-}
-.catnav{
-	border: 1px solid black;
-	margin-right: 5em;
+.cat {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 5em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 	margin-left: 2em;
-	color: #000;
-	text-decoration: none;
+	margin-top: 7em;
 }
 
-.catnav2{
-	border: 1px solid black;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 	margin-left: 3em;
-	margin-right: 5em;
-	color: #000;
-	text-decoration: none;
+
 }
 
-.arrow{
-	float: left;
-	margin-bottom: -1.4em;
-	margin-left: 2em;
+.content a {
+  color: black;
+  padding: 16px 9.5em;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown:hover .cat {
+  background-color: #3e8e41;
 }
