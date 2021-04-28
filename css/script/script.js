@@ -48,7 +48,7 @@ for(let x = firstDayIndex; x > 0; x--){
 
 for(let i= 1; i<= lastDay; i++){
   if(
-    i === new Date().getDate()&&
+    i === new Date().getDate() &&
     date.getMonth() === new Date().getMonth()
   ){
     days +='<div class="today">${i}</div>';
