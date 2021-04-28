@@ -41,9 +41,9 @@ html{
         <h1> May</h1>
         <p> Fri May 7, 2021</p>
       </div>
-    </div>
       <i class="fas fa-angle-right next"></i>
     </div>
+  </div>
     <div class="weekdays">
       <div>Sun</div>
       <div>Mon</div>
