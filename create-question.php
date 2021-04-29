@@ -62,4 +62,5 @@
 		</div>
 		<div class="cenocolor"><h5>Copyright © 2021 GROUP9</h5></div>
 	</footer>
+	<?php include_once "footerr.php"; ?>
 </html>
