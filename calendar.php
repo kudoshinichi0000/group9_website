@@ -19,7 +19,7 @@ html{
   height: 50%;
   color: white;
   display: flex;
-  
+
   justify-content: center;
   align-items:center;
 }

@@ -389,3 +389,55 @@ section {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
+<<<<<<< HEAD
+=======
+
+#cat {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 8em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+	margin-left: 2em;
+}
+
+#dropdown {
+	margin-top: 1;
+	margin-bottom: 1em;
+  position: relative;
+  display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	margin-left: 3em;
+
+}
+
+#content a {
+  color: black;
+  padding: 16px 8em;
+  text-decoration: none;
+  display: block;
+}
+
+#content a:hover {
+	background-color: #f1f1f1
+}
+
+#dropdown:hover #content {
+  display: block;
+}
+
+#dropdown:hover #cat {
+  background-color: #3e8e41;
+}
+>>>>>>> 0498c5520479d627a7371476642d8bb7f5a27be1

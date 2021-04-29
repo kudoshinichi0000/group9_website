@@ -30,23 +30,20 @@
 		<video width="600" controls>
   		<source src="css/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
-	</div><br>
+	</div>
 
-	<div class="dropdown">
-		<div class="cat">Categories</div>
-		<div class="content">
+	<div id="dropdown">
+		<option id="cat">Categories</option>
+		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
 		</div>
-	</div><br>
+	</div>
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
 			<!---Dito i didisplay ang mga questions--->
-
 		</div>
-
-
 </body>
 	<?php include_once "footerr.php";?>
 </html>
