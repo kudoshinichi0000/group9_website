@@ -1,0 +1,18 @@
+p{
+  color:#a6a6a6;
+  line-height: 27px;
+
+}
+h2,h3{
+  color: white;
+}
+.footer-top{
+  background: #000000;
+  padding: 80px 0;
+}
+.segment-one h3{
+  font-family: courgette;
+  color: #fff;
+  letter-spacing: 3px;
+  margib: 10 px 0;
+}
