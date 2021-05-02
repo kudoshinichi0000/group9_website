@@ -60,6 +60,7 @@
 	</style>
 </head>
 <body>
+	<!-- If login info is not correct -->
 	<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
 	<?php if(isset($_SESSION['errormessage'])): ?>
 		 <script type="text/javascript">
@@ -67,6 +68,14 @@
 		 </script>
 		 <?php unset($_SESSION['errormessage']);
 	 	endif;?>
+		<!-- Admin Added -->
+		<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+		<?php if(isset($_SESSION['regsuccess'])): ?>
+			 <script type="text/javascript">
+			 		alert('<?php echo $_SESSION['regsuccess']; ?>');
+			 </script>
+			 <?php unset($_SESSION['regsuccess']);
+		 	endif;?>
 	<div id="box">
 		<form method="POST">
 			<table class="formchild" style="border-radius: 1em;">
@@ -85,6 +94,9 @@
         		<tr>
           			<td><a href="main.php" class="main">Go back</a></td>
           	</tr>
+						<tr>
+							<td><a href="register.php">Register</a></td>
+						</tr>
 			</table>
 		</form>
 	</div>
