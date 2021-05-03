@@ -59,5 +59,7 @@
   margin: 5px;
   border: 2px solid #f6f6f6
   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-tarnsition: all 0.5s ease-in-out;
 
 }
