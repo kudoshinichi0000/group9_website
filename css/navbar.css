@@ -153,7 +153,7 @@ nav a:hover {
 }
 .about :hover::before{
 	width: 100%;
-	color: #feab02;
+	color: blue;
 }
 
 .results a::before {
