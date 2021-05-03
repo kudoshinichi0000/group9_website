@@ -42,3 +42,8 @@
   font-size: 13px;
   -webkit-border-radius: 0 0 10px 10px;
 }
+#formContent input, #formContent select{
+  font-size: 12px;
+
+
+}
