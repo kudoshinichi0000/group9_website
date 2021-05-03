@@ -82,3 +82,6 @@ background-color: #e09b15;
   background-color: #fff;
   border-bottom: 2px solid #e09b15;
 }
+#formContent input[type=text]:placeholder{
+  
+}
