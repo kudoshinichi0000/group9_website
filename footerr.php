@@ -116,10 +116,10 @@
       text-transform: uppercase;
     }
     .footer-bottom{
-      color: #420264;
+      color: white ;
       text-align: center;
       line-height: 30px;
-      background: #808080;
+      background: #420264;
     }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .md-mb-30{
