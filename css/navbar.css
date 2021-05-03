@@ -129,8 +129,7 @@ nav a:hover {
   content: '';
   display: block;
   height: 5px;
-  background-color:
-	blue;
+  background-color:#228280;
   position: absolute;
   top: 0;
   width: 0%;
