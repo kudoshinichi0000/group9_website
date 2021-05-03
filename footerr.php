@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style media="screen">
     footer{
-      background-color: red;
+      background-color: #OO221C;
       width: 100%;
       background-color: red;
       color: white;
@@ -23,7 +23,7 @@
       font-size: 16px;
     }
     .footer-top{
-      background: #000000;
+      background: #00221C;
       padding: 10px 0;
     }
     .segment-one h3{
