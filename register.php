@@ -56,11 +56,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
           <form  method="post" enctype="multipart/form-data">
       			<div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" name"username" placeholder="Username : ">
+                    <input type="text" class="form-control" name="username" placeholder="Username : ">
                 </div>
             </div>
             <div class="row">
-                <div class"col">
+                <div class="col">
                   <input type="password" class="form-control" placeholder="Password: " required name="password">
                 </div>
                 <div class="col">
