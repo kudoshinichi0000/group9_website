@@ -60,6 +60,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
       <div class="row">
           <div class"col">
             <input type="password" class="form-control" placeholder="Password: " required name="password">
+          </div>
+      </div>
 			<input id="text" type="text" name="username"><br><br>
 			<input id="text" type="password" name="password"><br><br>
 
