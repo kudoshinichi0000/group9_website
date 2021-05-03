@@ -45,3 +45,7 @@
 #formContent input, #formContent select{
   font-size: 12px;
 }
+#formContent label{
+  font-size: 13px;
+  color: #717070;
+}
