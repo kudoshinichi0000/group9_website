@@ -60,7 +60,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-
+	border-radius: 15px;
 
 }
 
@@ -129,7 +129,8 @@ nav a:hover {
   content: '';
   display: block;
   height: 5px;
-  background-color: #feab02;
+  background-color:
+	blue;
   position: absolute;
   top: 0;
   width: 0%;
