@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style media="screen">
     footer{
-      background-color: #000;
+      background-color: #00221C;
       width: 100%;
       background-color: red;
       color: white;
