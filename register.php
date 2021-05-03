@@ -50,6 +50,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 </script>
   		 <?php unset($_SESSION['registererror']);
   	 	endif;?>
+    <div class="wrapper">
+      <div id="formContent">
     <form  method="post">
 			<h1>Register</h1>
       <div class="row">
