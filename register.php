@@ -55,6 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
       <div class="row">
           <div class="col">
               <input type="text" class="form-control" name"username" placeholder="Username : ">
+          </div>
 
 			<input id="text" type="text" name="username"><br><br>
 			<input id="text" type="password" name="password"><br><br>
