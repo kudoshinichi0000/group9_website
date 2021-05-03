@@ -1,3 +1,6 @@
+body{
+  color: #8B4513;
+}
 .wrapper{
   display: flex;
   flex-direction: column;
