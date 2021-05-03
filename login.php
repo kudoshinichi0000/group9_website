@@ -78,7 +78,7 @@
 		 	endif;?>
 	<div id="box">
 		<form method="POST">
-			<table class="formchild" style="border-radius: 1em;">
+			<table class="formchild" style="border-radius: 2em;">
 				<tr>
 					<th><br><div class="centerBlack">Login</div></th>
 				</tr>
