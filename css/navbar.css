@@ -141,20 +141,6 @@ nav a:hover {
   color: #feab02;
 }
 
-.about a::before{
-	content: '';
-	display: block;
-	height: 5px;
-	background-color: #228280;
-	position: absolute;
-	top:0;
-	width: 0%;
-	transition: all ease-in-out 250ms;
-}
-.about :hover::before{
-	width: 100%;
-	color: #feab02;
-}
 
 .results a::before {
   content: '';
