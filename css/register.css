@@ -67,6 +67,9 @@
   border-radius: 5px 5px 5px 5px;
 
 }
+#formContent input[type=button], input[tyoe=submit]{
+
+}
 #formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
 }
