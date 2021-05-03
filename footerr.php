@@ -117,7 +117,7 @@
       text-transform: uppercase;
     }
     .footer-bottom{
-      color: 420264;
+      color: #420264;
       text-align: center;
       line-height: 30px;
       background: #808080;
