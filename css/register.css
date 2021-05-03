@@ -69,6 +69,8 @@
 }
 #formContent input[type=button], input[tyoe=submit]{
 background-color: #f5ae24;
+border: none;
+color; white;
 }
 #formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
