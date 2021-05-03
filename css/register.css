@@ -41,7 +41,7 @@
   padding:20px;
   text-align: center;
   font-size: 13px;
-  -webkit-border-radius: 10px 0 10px 10px;
+  -webkit-border-radius: 10px 0 10px 5px;
 }
 #formContent input, #formContent select{
   font-size: 12px;
