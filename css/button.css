@@ -8,21 +8,7 @@ section{
   justify-content: center;
   align-items: center;
 }
-.s1{
-  background: #3498db;
-}
 
-.s2{
-  background: #e74c3c;
-}
-
-.s3{
-  background: #2ecc71;
-}
-
-.s4{
-  background: #34495e;
-}
 .iconbtn{
   width: 80px;
   height: 80px;
