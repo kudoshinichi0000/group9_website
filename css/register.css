@@ -74,4 +74,5 @@ background-color: #e09b15;
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
 }
