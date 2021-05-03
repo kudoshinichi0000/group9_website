@@ -90,6 +90,8 @@
 				</tr>
 				<tr>
             <td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
+						  <td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
+
         </tr>
         		<tr>
           			<td><a href="main.php" class="main">Go back</a></td>
