@@ -37,4 +37,6 @@
 #formFooter{
   background-color: #f6f6f6;
   background-top: 1px solid #dce8f1;
+  padding:15px;
+  text-align: center;
 }
