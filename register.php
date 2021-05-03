@@ -52,27 +52,27 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   	 	endif;?>
     <div class="wrapper">
       <div id="formContent">
-    <form  method="post">
-			<h1>Register</h1>
-      <div class="row">
-          <div class="col">
-              <input type="text" class="form-control" name"username" placeholder="Username : ">
-          </div>
-      </div>
-      <div class="row">
-          <div class"col">
-            <input type="password" class="form-control" placeholder="Password: " required name="password">
-          </div>
-          <div class="col">
-            <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
-          </div>
-      </div>
-      <input type="submit" value="SignUp">
-	    <div id="formFooter">
-        Already have an Account?
-        <br>
-        <a class="underlineHover" href="login.php">LOGIN</a>
+          <form  method="post">
+      			<h1>Register</h1>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" name"username" placeholder="Username : ">
+                </div>
+            </div>
+            <div class="row">
+                <div class"col">
+                  <input type="password" class="form-control" placeholder="Password: " required name="password">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
+                </div>
+            </div>
+            <input type="submit" value="SignUp">
+      	    <div id="formFooter">
+              Already have an Account?
+              <br>
+              <a class="underlineHover" href="login.php">LOGIN</a>
 
-		</form>
+      		</form>
   </body>
 </html>
