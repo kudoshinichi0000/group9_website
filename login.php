@@ -97,7 +97,7 @@
         </tr>
         		<tr>
 								<td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
-								<i class="far fa-arrow-alt-circle-left"></i>
+								<a href="#" class="iconbtn far fa-arrow-alt-circle-left"></i>
           	</tr>
 						<tr id="formFooter">
 								<td colspna="2">Don't have any account?</td>
