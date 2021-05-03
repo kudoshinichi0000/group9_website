@@ -66,7 +66,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
           </div>
       </div>
       <input type="submit" value="SignUp">
-		<input id="button" type="submit" value="Signup"><br><br>
+	    <div id="formFooter">
+        Already have an Account?<a class="underlineHover" href="login.php">
 
 			<a href="login.php">Click to Login</a><br><br>
 		</form>
