@@ -72,7 +72,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
               Already have an Account?
               <br>
               <a class="underlineHover" href="login.php">LOGIN</a>
-
+            </div>
       		</form>
+      </div>
+    </div>
   </body>
 </html>
