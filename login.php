@@ -97,7 +97,6 @@
         </tr>
         		<tr>
 								<td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
-          			<td><a href="main.php" class="main">Go back</a></td>
 								<i class="far fa-arrow-alt-circle-left"></i>
           	</tr>
 						<tr id="formFooter">
