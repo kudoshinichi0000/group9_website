@@ -36,39 +36,6 @@ section{
   border-radius: 50%;
   z-index: 0;
 }
-
-.s1 .iconbtn,.s2 .iconbtn{
-  color: #fff;
-}
-.s1 .iconbtn::after{
-  border: 4px dashed;
-}
-.s1 .iconbtn:hover::after{
-  animation: ro 7s linear infinite;
-}
-
-
-.s2 .iconbtn{
-  border: 4px solid;
-}
-.s2 .iconbtn:hover{
-  animation: ro 2s linear infinite;
-}
-
-
-.s3 .iconbtn{
-  border: 4px solid #fff;
-  color: #2ecc71;
-}
-.s3 .iconbtn::after{
-  background: #fff;
-  transition: 0.2s;
-}
-.s3 .iconbtn:hover::after{
-  transform: scale(.9);
-}
-
-
 .s4 .iconbtn{
   border: 4px solid #fff;
   color: #34495e;
