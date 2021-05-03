@@ -21,7 +21,7 @@
   max-height: 90vh;
   overflow-y: auto;
 }
-#formContent .row{
+#formContent .row {
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -67,7 +67,7 @@
   border-radius: 5px 5px 5px 5px;
 
 }
-#formContent input[type=button]:hove, input[type=submit]:hover{
+#formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
 }
 #formContent input[type=button]:active, input[type=submit]:active{
