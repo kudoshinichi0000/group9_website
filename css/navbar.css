@@ -20,7 +20,7 @@ body {
 
 header {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #008291;
+  background-color: #420264;
   height: 4.5em;
   position: fixed;
   top: 0;
@@ -258,7 +258,7 @@ nav a:hover {
 .formchild{
 	width: 43%;
   padding: 35px;
-  background-color: #008291;
+  background-color: #34495e;
   right: 25%;
   margin: 10% auto;
   text-align: center;
