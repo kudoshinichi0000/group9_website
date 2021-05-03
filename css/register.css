@@ -67,4 +67,6 @@
   border-radius: 5px 5px 5px 5px;
 
 }
-#formContent input[type=button]:hove, input[type=submit];hover
+#formContent input[type=button]:hove, input[type=submit];hover{
+background-color: #e09b15;
+}
