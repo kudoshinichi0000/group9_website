@@ -70,4 +70,7 @@
 #formContent input[type=button]:hove, input[type=submit]:hover{
 background-color: #e09b15;
 }
-#formContent input[type=button]:active, input[type=submit]:active
+#formContent input[type=button]:active, input[type=submit]:active{
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95)
+}
