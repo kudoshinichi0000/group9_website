@@ -96,7 +96,6 @@
 
         </tr>
         		<tr>
-								<td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
 								<td><a href="#" class="iconbtn far fa-arrow-alt-circle-left"></i></td>
           	</tr>
 						<tr id="formFooter">
