@@ -155,7 +155,7 @@ nav a:hover {
 
 .results :hover::before {
   width: 100%;
-  color: #feab02;
+  color: blue;
 }
 
 .question-card{
