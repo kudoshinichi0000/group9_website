@@ -104,7 +104,7 @@
 
 #formContent input[type=text]:focus{
   background-color: #fff;
-  border-bottom: 2px solid #e09b15;
+  border-bottom: 2px solid blue;
 }
 #formContent input[type=text]:placeholder{
   color: #cccccc;
