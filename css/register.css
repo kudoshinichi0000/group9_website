@@ -76,5 +76,9 @@ background-color: #e09b15;
   -o-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
+}
 
+#formContent input[type=text]:focus{
+  background-color: #fff;
+  border-bottom: 2px solid #e09b15;
 }
