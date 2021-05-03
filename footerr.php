@@ -8,8 +8,7 @@
   <style media="screen">
     footer{
       background-color: #OO221C;
-      width: 100%;
-      background-color: red;
+      width: 100%
       color: white;
       margin-top: 50em;
     }
