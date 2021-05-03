@@ -293,7 +293,12 @@ h6{
 	text-align: center;
 	margin: auto;
 }
+/* code for arrow icon*/
+.iconbtn{
+	width: 80px;
+	height: 80px;
 
+}
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
