@@ -98,7 +98,7 @@
 						<div id="formFooter">
 							Don't have any account?
 							<br>
-							< a class"underlineHover" href
+							<a class"underlineHover" href="register.php'"
 						</tr>
 						<tr>
 							<td><a href="register.php">Register</a></td>
