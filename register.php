@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
           </div>
           <div class="col">
             <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
-          <.
+          </div>
       </div>
 			<input id="text" type="text" name="username"><br><br>
 			<input id="text" type="password" name="password"><br><br>
