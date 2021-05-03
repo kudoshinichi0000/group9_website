@@ -41,6 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <title>Register</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet"
   </head>
   <body>
     <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
