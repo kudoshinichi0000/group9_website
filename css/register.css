@@ -75,6 +75,7 @@ padding: 15px 80px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
+text-transform: uppercase;
 }
 #formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
