@@ -65,10 +65,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
             <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
           </div>
       </div>
-			<input id="text" type="text" name="username"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Signup"><br><br>
+      <input type="submit" value="SignUp">
+		<input id="button" type="submit" value="Signup"><br><br>
 
 			<a href="login.php">Click to Login</a><br><br>
 		</form>
