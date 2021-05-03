@@ -303,7 +303,6 @@ h6{
 	color:#34495e;
 }
 .iconbtn::before{
-	position: absolute;
 	z-index:1;
 	left:50%;
 	top: 50%;
@@ -311,7 +310,6 @@ h6{
 }
 .iconbtn::after{
 	content: '';
-	position: absolute;
 	left:0;
 	top:0;
 	width: 100%;
