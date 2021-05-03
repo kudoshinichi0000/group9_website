@@ -94,10 +94,12 @@
         		<tr>
           			<td><a href="main.php" class="main">Go back</a></td>
           	</tr>
+						<tr>
 						<div id="formFooter">
 							Don't have any account?
 							<br>
 							< a class"underlineHover" href
+						</tr>
 						<tr>
 							<td><a href="register.php">Register</a></td>
 						</tr>
