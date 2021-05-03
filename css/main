@@ -1,3 +1,7 @@
 .underlineHover:after{
-
+display:block;
+left:0;
+bottom:-10px;
+width:0;
+height:2px;
 }
