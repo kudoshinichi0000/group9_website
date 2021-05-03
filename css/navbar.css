@@ -60,13 +60,14 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-	border-radius: 30px;
+	border-radius: 15px;
 
 }
 
 nav a:hover {
 	background-color:#228280;
   color: black ;
+	border-radius: 30px;
 }
 
 .admin{
