@@ -52,9 +52,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   	 	endif;?>
     <div class="wrapper">
       <div id="formContent">
+        <h1>Register</h1>
           <form  method="post">
-      			<h1>Register</h1>
-            <div class="row">
+      			<div class="row">
                 <div class="col">
                     <input type="text" class="form-control" name"username" placeholder="Username : ">
                 </div>
