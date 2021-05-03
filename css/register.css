@@ -72,6 +72,9 @@ background-color: #f5ae24;
 border: none;
 color; white;
 padding: 15px 80px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
 }
 #formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
