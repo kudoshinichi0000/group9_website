@@ -95,7 +95,6 @@
           			<td><a href="main.php" class="main">Go back</a></td>
           	</tr>
 						<tr>
-						<div id="formFooter">
 							Don't have any account?
 							<br>
 							<a class"underlineHover" href="register.php'"
