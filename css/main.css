@@ -8,3 +8,6 @@ background-color: #56baed;
 content: "";
 transition: width 0.2s;
 }
+.underlineHover:hover{
+  color:#0d0d0d;
+}
