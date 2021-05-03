@@ -94,8 +94,8 @@
         		<tr>
           			<td><a href="main.php" class="main">Go back</a></td>
           	</tr>
-						<tr>
-							Don't have any account?
+						<tr id="formFooter">
+								<td colspna="2">Don't have any account?</td>
 							<br>
 							<a class"underlineHover" href="register.php'"
 						</tr>
