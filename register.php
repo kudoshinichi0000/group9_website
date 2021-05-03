@@ -64,7 +64,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                   <input type="password" class="form-control" placeholder="Password: " required name="password">
                 </div>
                 <div class="col">
-                  <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
+                  <input type="password" class="form-control" placeholder="Confirm Password  amam mo: " name="password_conf">
                 </div>
             </div>
             <input type="submit" value="SignUp">
