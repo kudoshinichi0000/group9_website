@@ -96,8 +96,6 @@
           	</tr>
 						<tr id="formFooter">
 								<td colspna="2">Don't have any account?</td>
-							<br>
-							<a class"underlineHover" href="register.php'"
 						</tr>
 						<tr>
 							<td><a class="underlineHover" href="register.php">Register</a></td>
