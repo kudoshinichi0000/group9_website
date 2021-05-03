@@ -23,7 +23,7 @@
       font-size: 16px;
     }
     .footer-top{
-      background: #00221C;
+      background: #420264;
       padding: 10px 0;
     }
     .segment-one h3{
