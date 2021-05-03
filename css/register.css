@@ -92,7 +92,7 @@
 
   }
   #formContent input[type=button]:hover, input[type=submit]:hover{
-  background-color: green;
+  background-color: #61b329;
 }
 #formContent input[type=button]:active, input[type=submit]:active{
   -moz-transform: scale(0.95);
