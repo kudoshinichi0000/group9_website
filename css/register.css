@@ -76,6 +76,7 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 text-transform: uppercase;
+font-size: 13px;
 }
 #formContent input[type=button]:hover, input[type=submit]:hover{
 background-color: #e09b15;
