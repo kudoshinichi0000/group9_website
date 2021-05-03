@@ -301,6 +301,9 @@ h6{
 	margin:5px;
 	font-size: 40px;
 }
+.iconbtn::before{
+	position: absolute;
+}
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
