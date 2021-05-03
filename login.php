@@ -50,6 +50,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<style media="screen">
 		body{
 			background-image: url("css/images/LogBackground.jfif");
