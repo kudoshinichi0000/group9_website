@@ -298,6 +298,7 @@ h6{
 	height: 80px;
 	text-decoration: none;
 	margin:20px;
+	position:relative;
 	font-size: 40px;
 	border: 4px solid #fff;
 	color:#34495e;
