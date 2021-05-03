@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 #login :hover{
-	color: #84BE6A
+	background-color: #84BE6A
 	opacity: 1;
   cursor: pointer;
 }
