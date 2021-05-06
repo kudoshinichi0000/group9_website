@@ -14,6 +14,13 @@
 		<form method='POST' action='create-question-handle.php?id=<?php echo $quizid;?>' enctype='multipart/form-data'>
 			<table class="form child" style="border-radius: 1em;">
 				<tr>
+					<th><br><h4>Name Your Quiz!</h4></th>
+				</tr>
+				<tr>
+					<td><input type='text' class="btnon" name='inputname' required> </td>
+				</tr>
+				
+				<tr>
 					<th><br><h4>Question:</h4></th>
 				</tr>
 				<tr>
