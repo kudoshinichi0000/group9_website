@@ -24,9 +24,9 @@
 		$Choice2 = $_POST["choice2"];
 
 		//Step 2: Prepare the query(Insert)
-		$query = "INSERT INTO quizzes($quizname, $Questionname, $Answer, $Choice1, $Choice2)
-						 VALUES('quiz_name', 'question', 'answer' , 'choices1', 'choices2')";
-
+		$query = "INSERT INTO quizzes(quiz_name, question, answer, choices1, choices2)
+						 VALUES('$quizname', '$Questionname', '$Answer' , '$Choice1', '$Choice2')";
+						 
 		//Step 3: Execute the query
 		$execQuery = mysqli_query($con, $query);
 
