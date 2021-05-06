@@ -24,7 +24,7 @@
 				</tr>
 				<tr>
 					<!---Create Question Name--->
-					<td><input class='btnon' type='text' name='inputname' placeholder="Input Question Name: " required></td>
+					<td><input class='btnon' type='text' name='questionName' placeholder="Input Question Name: " required></td>
 				</tr>
 				<tr>
 					<!---Create Question Answer--->
@@ -32,11 +32,11 @@
 				</tr>
 				<tr>
 					<!---Create Question Choice--->
-					<td><br><input class='btnon' type='text' name='choice2' placeholder="Choice 1: " required></td>
+					<td><br><input class='btnon' type='text' name='choice1' placeholder="Choice 1: " required></td>
 				</tr>
 				<tr>
 					<!---Create Question Choice--->
-					<td><br><input class='btnon' type='text' name='choice3' placeholder="Choice 2: " required></td>
+					<td><br><input class='btnon' type='text' name='choice2' placeholder="Choice 2: " required></td>
 				</tr>
 				<tr>
 						<td colspan="2">

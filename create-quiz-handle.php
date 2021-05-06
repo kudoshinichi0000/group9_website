@@ -10,36 +10,32 @@
 
 	<?php
 
-		include_once "db.php"; include_once "navbar.php";
+		include_once "navbar.php";
 
+		//CRUD
+		//Step 1: Database Connectivity
+		include_once "db.php";
+
+		//Vardump
 		$quizname = $_POST["inputname"];
+		$Questionname = $_POST["questionName"];
+		$Answer = $_POST["answer"];
+		$Choice1 = $_POST["choice1"];
+		$Choice2 = $_POST["choice2"];
 
-		$query = "INSERT INTO quizzes(name) VALUES('$quizname')";
+		//Step 2: Prepare the query(Insert)
+		$query = "INSERT INTO quizzes($quizname, $Questionname, $Answer, $Choice1, $Choice2)
+						 VALUES('quiz_name', 'question', 'answer' , 'choices1', 'choices2')";
 
-		$insertClient = mysqli_query($con, $query);
+		//Step 3: Execute the query
+		$execQuery = mysqli_query($con, query);
 
-			if($insertClient){
-				echo "<h1>Success! Quiz set up</h1>";
-				echo "<hr>";
-
-					//GET current QUIZID from db to continue working on the same quiz.
-					//Recommendation: Give SESSION DATA to quiz making.
-					$query = "SELECT * FROM quizzes WHERE name = '$quizname'";
-					$exQuery = mysqli_query($con, $query);
-					$result = mysqli_fetch_assoc($exQuery);
-					$quizid = $result["quizid"];
-					//ADD quizid to URL
-				header("Location: create-question.php?id=$quizid");
-			}
-			else{
-				/*echo "<h1>ERROR! Something went wrong!</h1>";
-				echo mysqli_error($con);*/
-			}
-
+		if ($execQuery) {
+			<p style="margin: auto;">Create Quiz is Successfully insert in database</p>
+		}else{
+			<p style="margin: auto;">Error!</p>
+		}
+				//header("Location: create-question.php?id=$quizid");
 	?>
-
-
-
-
 </body>
 </html>
