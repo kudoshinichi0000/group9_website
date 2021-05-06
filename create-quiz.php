@@ -8,44 +8,49 @@
 </head>
 <body>
 
-	<?php include_once "db.php"; include_once "navbaradmin.php"; ?>
+	<?php include_once "db.php"; //include_once "navbar.php";  ?>
 
-	<!---
-	Hello po,may suggesstion ako.. pwede bang gawin nyo nalang isang php file yung sa paggawa ng quiz?
-	ipag sama nyo nalang yung create quiz at create questions para maging convinient sa users para hindi
-	na sila mag pipipindot at komunti yung mga php files naten....tsaka gumawa din kayo dito ng radio button
-	para sa categories tapos ang option doon is educational at entertainment
-	 tsaka categories din sa database.... kaylangan ko po kase yun para sa categories.php
+		<form method='POST' action='create-question-handle.php?id=<?php echo $quizid;?>' enctype='multipart/form-data'>
+			<table class="CreateQuiz" style="border-radius: 1em;">
+				<tr>
+					<th><br><h4>Name Your Quiz!</h4></th>
+				</tr>
+				<tr>
+					<td><input type='text' class="btnon" name='inputname' placeholder="Input quiz Name: " required> </td>
+				</tr>
 
-	so ang silbi po ng categories.php pinag hihiwalay nya yung pang educational at pang entertanment
-	na mga questions...
-	--->
-
-
-	<div class="quiz">
-		<div id="box">
-			<form method="POST">
-				<table class="form child" style="border-radius: 1em;">
-					<tr>
-						<th><br><h4>Name Your Quiz!</h4></th>
-					</tr>
-					<tr>
-						<td><input type='text' class="btnon" name='inputname' required> </td>
-					</tr>
-					<tr>
-						<td><br><input class="Subbotton" type="submit" value="Add Question"> </td>
-					</tr>
-	        		<tr>
-	          			<td><br><a href="main.php" class="main">Go Home</a></td>
-	          	</tr>
-				</table>
-			</form>
+				<tr>
+					<th><br><h4>Question:</h4></th>
+				</tr>
+				<tr>
+					<!---Create Question Name--->
+					<td><input class='btnon' type='text' name='inputname' placeholder="Input Question Name: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Answer--->
+					<td><br><input class='btnon' type='text' name='answer' placeholder="Input Question Answer: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Choice--->
+					<td><br><input class='btnon' type='text' name='choice2' placeholder="Choice 1: " required></td>
+				</tr>
+				<tr>
+					<!---Create Question Choice--->
+					<td><br><input class='btnon' type='text' name='choice3' placeholder="Choice 2: " required></td>
+				</tr>
+				<tr>
+						<td colspan="2">
+							<br><input type="submit" value="LOGIN">
+						</td>
+				</tr>
+						<tr>
+								<td><br><a href="main.php" class="main">Go back</a></td>
+						</tr>
+			</table>
+		</form>
 		</div>
 	</div>
+
 </body>
-	<!---Footer---->
-	<footer>
-		<br><br>
-		<?php include_once("footerr.php") ?>
-	</footer>
+	<?php include_once "footerr.php"; ?>
 </html>
