@@ -22,10 +22,6 @@
 		Hello, Welcome To Feedopedia!
 	</div><br>
 
-
-	<!---Dito ialalgay yung calendar--->
-
-
 	<div id="VideoIntroCenter">
 		<video width="600" controls>
   		<source src="res/Video/IntroVideo.mp4" type="video/mp4">
