@@ -31,9 +31,9 @@
 		$execQuery = mysqli_query($con, query);
 
 		if ($execQuery) {
-			echo "<p style="margin: auto;">Create Quiz is Successfully insert in database</p";
+			echo "<p style='margin: auto;'>Create Quiz is Successfully insert in database</p";
 		}else{
-			echo "<p style="margin: auto;">Error!</p>";
+			echo "<p style='margin: auto;'>Error!</p>";
 		}
 				//header("Location: create-question.php?id=$quizid");
 	?>
