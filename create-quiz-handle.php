@@ -5,12 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 </head>
 <body>
 
 	<?php
-
-
 
 		//CRUD
 		//Step 1: Database Connectivity
@@ -26,7 +25,7 @@
 		//Step 2: Prepare the query(Insert)
 		$query = "INSERT INTO quizzes(quiz_name, question, answer, choices1, choices2)
 						 VALUES('$quizname', '$Questionname', '$Answer' , '$Choice1', '$Choice2')";
-						 
+
 		//Step 3: Execute the query
 		$execQuery = mysqli_query($con, $query);
 
