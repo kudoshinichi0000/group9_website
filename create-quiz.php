@@ -10,7 +10,7 @@
 
 	<?php include_once "db.php"; //include_once "navbar.php";  ?>
 
-		<form method='POST' action='create-question-handle.php?id=<?php echo $quizid;?>' enctype='multipart/form-data'>
+		<form method='POST' action='create-quiz-handle.php' enctype='multipart/form-data'>
 			<table class="CreateQuiz" style="border-radius: 1em;">
 				<tr>
 					<th><br><h4>Name Your Quiz!</h4></th>
