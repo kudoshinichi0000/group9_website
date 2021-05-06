@@ -10,7 +10,7 @@
 
 	<?php
 
-		include_once "navbar.php";
+
 
 		//CRUD
 		//Step 1: Database Connectivity
@@ -28,7 +28,7 @@
 						 VALUES('quiz_name', 'question', 'answer' , 'choices1', 'choices2')";
 
 		//Step 3: Execute the query
-		$execQuery = mysqli_query($con, query);
+		$execQuery = mysqli_query($con, $query);
 
 		if ($execQuery) {
 			echo "<p style='margin: auto;'>Create Quiz is Successfully insert in database</p";
