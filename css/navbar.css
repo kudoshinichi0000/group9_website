@@ -424,7 +424,7 @@ section {
 	margin-left: 1em;
 }
 
-#CreateQuiz{
+.CreateQuiz{
 	border: 1px solid black;
 	margin-left: 10em;
 }
