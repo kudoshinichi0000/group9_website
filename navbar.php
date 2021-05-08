@@ -17,9 +17,6 @@
               <div class="home"><a href="main.php">Home</a></div>
             </li>
             <li>
-              <li><div class="home"><a href="create-quiz.php">Create Quiz</a></div></li>
-            </li>
-            <li>
               <div class="results"><a href="results.php">History</a></div>
             </li>
             <li>

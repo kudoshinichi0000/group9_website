@@ -21,24 +21,24 @@
 	<div class="Greet">
 		Hello, Welcome To Feedopedia!
 	</div><br>
-
+	<br><br><br><br><br>
 	<div id="VideoIntroCenter">
 		<video width="600" controls>
   		<source src="res/Video/IntroVideo.mp4" type="video/mp4">
 		</video>
 	</div>
 
-	<div id="dropdown">
+	<!---<div id="dropdown">
 		<option id="cat">Categories</option>
 		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
 		</div>
-	</div>
+	</div>--->
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
-			<!---Dito i didisplay ang mga questions--->
+
 		</div>
 </body>
 	<?php include_once "footerr.php";?>
