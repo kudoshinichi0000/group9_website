@@ -44,6 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- If register is not successful -->
     <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
   	<?php if(isset($_SESSION['errormessage'])): ?>
   		 <script type="text/javascript">
@@ -51,6 +52,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 </script>
   		 <?php unset($_SESSION['registererror']);
   	 	endif;?>
+      <!-- If Register is Successful -->
+      <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+    	<?php if(isset($_SESSION['regsuccess'])): ?>
+    		 <script type="text/javascript">
+    		 		alert('<?php echo $_SESSION['regsuccess']; ?>');
+    		 </script>
+    		 <?php unset($_SESSION['regsuccess']);
+    	 	endif;?>
     <div class="wrapper">
       <div id="formContent">
         <h1>Register</h1>
