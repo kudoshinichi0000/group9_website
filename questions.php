@@ -27,15 +27,18 @@
    	$execQuery = mysqli_query($con, $query);
  	  $fetch = mysqli_fetch_assoc($execQuery);
 
+    $title = $fetch['title'];
       //This section will provide information about the quiz
       echo "
       <div class='Containerhead'>
-        <h2>admin id = $userId </h2>
+      <h2>title: $title</h2>
+        <h2>admin id:  $userId </h2>
+        <h2>Status: pending</h2>
       </div>";
-     }
+
 
      ?>
-
+     <a href="addQuestion.php">Add Question</a>
 
 
   </body>

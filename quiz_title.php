@@ -44,10 +44,11 @@
     //something was posted
     $quizTitle = $_POST['quiz_title'];
     $userId = $_SESSION['userid'];
+    $code = rand();
     if(!empty($quizTitle) && !is_numeric($quizTitle))
     {
 
-      $sql = "INSERT INTO quiz_list (title, admin_id) VALUES ( '$quizTitle', '$userId')";
+      $sql = "INSERT INTO quiz_list (title, admin_id, quiz_code) VALUES ( '$quizTitle', '$userId', '$code')";
       if (mysqli_query($con, $sql)) {
         $_SESSION['titleinsertsuccess'] = "title Added!";
   			header("location: questions.php");
