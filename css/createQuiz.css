@@ -1,0 +1,64 @@
+*{
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  background-color: #dcdcdc;
+}
+.Containerhead{
+  width: 96%;
+  border: 1px solid black;
+  height: 12em;
+  background-color: #cce5ff;
+  color: black;
+  margin-left: 2em;
+}
+.cont{
+  margin-left: 1em;
+}
+.addMultipleQuestion{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: right;
+  margin-right: 2em;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.addMultipleQuestion:hover{
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.question-card{
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 8em;
+  margin-bottom: 10em;
+}
+
+.mid{
+  text-align: center;
+  align-items: center;
+  margin-left: -2em;
+}
+
+.cons{
+  width: 50%;
+  height: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  padding-bottom: 2em;
+  margin-top: 3em;
+}
+
+.leftin{
+  float: left;
+  margin-left: 2em;
+}

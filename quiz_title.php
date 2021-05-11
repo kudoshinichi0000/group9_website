@@ -32,7 +32,7 @@
 
 				<tr>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
-          <th colspan="2"><a href="#">Cancel</a></th>
+          <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 				</tr>
 			</table>
 		</form>

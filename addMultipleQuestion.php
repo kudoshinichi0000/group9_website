@@ -7,7 +7,7 @@
   <body>
     <div class="container1">
 
-    <form action="addQuestion.php" method="POST">
+    <form action="addMultipleQuestion.php" method="POST">
       <table border="1" height="350px" width="40%">
         <tr>
           <th colspan="2"><h2>New Question</h2>
@@ -64,7 +64,7 @@
 
         <!--Submit--->
         <tr>
-          <th><a href="#">Cancel</a></th>
+          <th><a href="questions.php">Cancel</a></th>
           <th colspan="2"><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
         </tr>
       </table>
@@ -95,7 +95,7 @@
     $optC = $_POST["C"];
     $optD = $_POST["D"];
 
- 		$insertQuestion = "INSERT INTO questions(quiz_code, question, questionPoints, answer, option1, option2, option3, option4) VALUES('$code', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD' )";
+ 		$insertQuestion = "INSERT INTO multiple_questions(quiz_code, question, questionPoints, answer, option1, option2, option3, option4) VALUES('$code', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD' )";
  		$execInsert = mysqli_query($con, $insertQuestion);
     if($execInsert){
       header("location: questions.php");
