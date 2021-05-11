@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   {
 
     //save to database
-    $user_id = random_num(20);
+    $user_id = rand();
     //$query = "insert into admin (user_id,username,password) values ('$userid','$username','$password')";
 
     //mysqli_query($con, $query);
