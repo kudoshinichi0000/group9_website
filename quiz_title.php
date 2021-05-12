@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
   </head>
   <body>
     <?php
-
     include("db.php");
     include("functions.php");
     include_once("navbaradmin.php");
@@ -15,9 +15,8 @@
     <br><br><br><br><br><br><br><br>
   	<?php echo $_SESSION['userid'];?>
     <div class="container1">
-
 		<form action="quiz_title.php" method="POST">
-			<table border="1" height="350px" width="25%">
+			<table border="1" height="350px" width="25%" class="container1">
         <tr>
 					<th colspan="2"><h2>New Quiz</h2>
 				</tr>
@@ -41,7 +40,7 @@
   <?php
   if($_SERVER['REQUEST_METHOD'] == "POST")
   {
-    //something was posted
+
     $quizTitle = $_POST['quiz_title'];
     $userId = $_SESSION['userid'];
     $code = rand();

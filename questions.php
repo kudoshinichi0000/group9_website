@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>question</title>
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
   </head>
   <body>
@@ -24,8 +24,8 @@
 
     //Getting/fetching all rows from the executed query
  	  $fetch = mysqli_fetch_assoc($execQuery);
-    $code = $fetch['quiz_code'];
-    $title = $fetch['title'];
+      $code = $fetch['quiz_code'];
+      $title = $fetch['title'];
 
       //This section will provide information about the quiz
       echo "
@@ -40,8 +40,8 @@
 
   ?>
 
-  <br><br><a href="addMultipleQuestion.php" class="addMultipleQuestion">Add Multiple Question</a><br><br><br>
-
+  <br><br><a href="addMultipleQuestion.php" class="addMultipleQuestion">Add Multiple Question</a>
+  <a href="quiz_list.php" class="Goback">Back</a><br><br><br>
      <div class="question-card">
 
        <div class="mid">
@@ -64,6 +64,7 @@
          $option3 = $fetchQuestion['option3'];
          $option4 = $fetchQuestion['option4'];
          $answer = $fetchQuestion['answer'];
+         $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
 
            //This section will provide information about the quiz
            echo "
@@ -75,6 +76,10 @@
 
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>
+               </tr>
+
+               <tr>
+                 <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuiz </i></label></th>
                </tr>
 
                <tr>
@@ -92,7 +97,7 @@
                </tr>
 
                <tr>
-                 <th colspan='2'><br><br><label><h3>Answer: $answer</h3></label></th>
+                 <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answer</h3></label></th>
                </tr>
              </table>
            </div>";

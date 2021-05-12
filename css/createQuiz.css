@@ -16,7 +16,6 @@ body{
   margin-left: 1em;
 }
 .addMultipleQuestion{
-  border: 1px solid black;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-left: 1em;
@@ -28,11 +27,31 @@ body{
   text-decoration: none;
   border-radius: 8px;
 }
+
 .addMultipleQuestion:hover{
   text-decoration: underline;
   cursor: pointer;
-
 }
+
+.Goback{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left;
+  margin-left: 2em;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.Goback:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .question-card{
   width: 80%;
   margin: auto;
@@ -61,4 +80,41 @@ body{
 .leftin{
   float: left;
   margin-left: 2em;
+}
+
+.containerTable{
+  width: 45%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+.addquiz{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: right;
+  margin-right: 2em;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.addquiz:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.list{
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container1{
+  margin-left: auto;
+  margin-right: auto;
 }

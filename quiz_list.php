@@ -2,41 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Quiz list</title>
+    <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
   </head>
   <body>
-    <?php include_once("navbaradmin.php"); ?>
 
-    <br><br><br><br><br><br><br>
+    <?php include_once "navbaradmin.php"; ?>
+
+    <br><br><br><br>
+      <table border='1' height='50px' width='50%' class="list">
+
+        <tr>
+          <th colspan='2'><h2><label>title: </label></h2>
+          <th colspan='2'><h2><label>Quiz Code: </label></h2>
+          <th colspan='3'><h2><label>Action: </label></h2>
+        </tr>
+        <br>
+        <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br><br><br>
+
     <?php
     //Step 1 Database Connectivity
     include_once "db.php";
-    include_once "navbaradmin.php";
-    echo $_SESSION['userid'];
+    $userid = $_SESSION['userid'];
 
-    ?>
-    <br><br><br><br>
-    <a href="quiz_title.php" class="addquiz">Add Quiz</a><br><br>
-
-    <?php
-    //Step 2 Prepare the query
     $query = "SELECT * FROM quiz_list";
-    //Step 3 Perform the query
     $execQuery = mysqli_query($con, $query);
-    //Getting or Fetching all rows from the executed query
-    while ($fetchTitle = mysqli_fetch_assoc($execQuery)) {
+    while ($fetchId = mysqli_fetch_assoc($execQuery)) {
+    $admin_id = $fetchId["admin_id"];
+
+    if ($userid == $admin_id) {
+      $query = "SELECT * FROM quiz_list WHERE admin_id = $admin_id ";
+      $execQuery = mysqli_query($con, $query);
+      while ($fetchTitle = mysqli_fetch_assoc($execQuery)) {
       $title = $fetchTitle["title"];
       $code = $fetchTitle['quiz_code'];
 
-      echo "<br>
-      title: $title
-      Quiz Code: $code
-      <a href='editTitle.php'>edit</a>
-      <a href='manageQuiz.php'>manage</a>
-      <a href='deleteQuiz.php'>delete</a>
+      echo "
+          <tr>
+            <br><br>
+            <th colspan='2'><h2>$title</h2></th>
+            <th colspan='2'><h2>$code</h2></th>
+            <th colspan='3'>
+              <a href='editTitle.php?quiz_code=$code'>edit</a>
+              <a href='manageQuiz.php'>manage</a>
+              <a href='deleteQuiz.php?quiz_code=$code'>delete</a>
+            </th>
+          </tr>
 
       ";
     }
+  }
+    }
      ?>
+
+   </table>
   </body>
 </html>
