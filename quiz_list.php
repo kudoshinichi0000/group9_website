@@ -9,6 +9,7 @@
 
     <br><br><br><br><br><br><br>
     <?php
+    //Step 1 Database Connectivity
     include_once "db.php";
     include_once "navbaradmin.php";
     echo $_SESSION['userid'];
@@ -18,9 +19,11 @@
     <a href="quiz_title.php" class="addquiz">Add Quiz</a><br><br>
 
     <?php
-
+    //Step 2 Prepare the query
     $query = "SELECT * FROM quiz_list";
+    //Step 3 Perform the query
     $execQuery = mysqli_query($con, $query);
+    //Getting or Fetching all rows from the executed query
     while ($fetchTitle = mysqli_fetch_assoc($execQuery)) {
       $title = $fetchTitle["title"];
       $code = $fetchTitle['quiz_code'];
@@ -29,7 +32,7 @@
       title: $title
       Quiz Code: $code
       <a href='editTitle.php'>edit</a>
-      <a href='questions.php'>manage</a>
+      <a href='manageQuiz.php'>manage</a>
       <a href='deleteQuiz.php'>delete</a>
 
       ";

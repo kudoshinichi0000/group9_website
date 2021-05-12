@@ -66,24 +66,5 @@
   }
   ?>
 
-<?php
-  /*//Vardump();
-  $quizList = $_POST["quiz_list"];
-
-  //Step1: Database Connectivity
-  include_once("db.php");
-
-  //Step 2: Prepare The Query (Insert/Inserting)
-  $query = "INSERT INTO quiz_list(title) VALUES('$quiz_list')";
-
-  //Step 3: Execute the query!
-  $insertTitle = mysqli_query($con, $query);
-
-  if ($insertTitle) {
-    echo "Title was sucessfully added to database";
-  }else{
-    echo "Error occured";
-  }*/
- ?>
   </body>
 </html>
