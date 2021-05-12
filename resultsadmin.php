@@ -9,8 +9,8 @@
 </head>
 <body>
 	<?php include_once "db.php";include_once "navbaradmin.php";?>
-
-	<?php //echo $_SESSION['userid'];?>
+	<br><br><br><br><br><br><br><br>
+	<?php echo $_SESSION['userid'];?>
 
 </body>
 	<?php include_once "footer.php";?>
