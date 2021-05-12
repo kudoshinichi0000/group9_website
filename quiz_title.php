@@ -13,9 +13,11 @@
 
      ?>
     <br><br><br><br><br><br><br><br>
-  	<?php echo $_SESSION['userid'];?>
+  	<?php
+      $code = rand();
+    ?>
     <div class="container1">
-		<form action="quiz_title.php" method="POST">
+		<form action="quizTitleHandler.php" method="POST">
 			<table border="1" height="350px" width="25%" class="container1">
         <tr>
 					<th colspan="2"><h2>New Quiz</h2>
@@ -34,36 +36,9 @@
           <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 				</tr>
 			</table>
+      <input type="hidden" name="quizCode" value="<?php $code ?>">
 		</form>
 	</div>
-
-  <?php
-  if($_SERVER['REQUEST_METHOD'] == "POST")
-  {
-
-    $quizTitle = $_POST['quiz_title'];
-    $userId = $_SESSION['userid'];
-    $code = rand();
-    if(!empty($quizTitle) && !is_numeric($quizTitle))
-    {
-
-      $sql = "INSERT INTO quiz_list (title, admin_id, quiz_code) VALUES ( '$quizTitle', '$userId', '$code')";
-      if (mysqli_query($con, $sql)) {
-        $_SESSION['titleinsertsuccess'] = "title Added!";
-  			header("location: questions.php");
-  			exit;
-      }
-      else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-      }
-    }
-    else{
-      $_SESSION['titleinserterror'] = "login first";
-      header("location: login.php");
-      exit;
-    }
-  }
-  ?>
 
   </body>
 </html>

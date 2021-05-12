@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
   </head>
   <body>
-
+    <?php
+    include_once("db.php");
+    $code = $_GET['quiz_code'];
+     ?>
     <br><br><br>
     <div class="containerTable">
-      <form action="addMultipleQuestion.php" method="POST">
+      <form action="addMultipleQuestionHandler.php" method="POST">
         <table border="1" height="350px" width="100%" >
           <tr>
             <th colspan="2"><h2>New Question</h2>
@@ -27,7 +30,6 @@
           <!---Type of quiz--->
           <tr>
             <th colspan="2"><label for="typeOfQuiz"><h3>Type of quiz: Multiple Choices</h3></label></th>
-            <input type="hidden" name="typeOfQuiz" value="Multiple Choice">
           </tr>
 
           <!---Inputing points--->
@@ -76,42 +78,8 @@
             <th colspan="2"><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
           </tr>
         </table>
+        <input type="hidden" name="Codee" value="<?php $code ?>">
       </form>
     </div>
-
-  <?php
-
-  if($_SERVER['REQUEST_METHOD'] == "POST"){
- 		//var_dump()
-    include("db.php");
-    include("functions.php");
-    $userId = $_SESSION['userid'];
-
-    //This is for user id
-	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId'";
-   	$execQuery = mysqli_query($con, $query);
- 	  $fetch = mysqli_fetch_assoc($execQuery);
-    $code = $fetch['quiz_code'];
-
-    echo "$code";
-    //Vardump();
- 		$question = $_POST["question"];
- 		$points = $_POST["points"];
-    $answer = $_POST["ans"];
-    $optA = $_POST["A"];
-    $optB = $_POST["B"];
-    $optC = $_POST["C"];
-    $optD = $_POST["D"];
-    $typeOfQuiz = $_POST["typeOfQuiz"];
-
-
- 		$insertQuestion = "INSERT INTO multiple_questions(quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz) VALUES('$code', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', '$typeOfQuiz' )";
- 		$execInsert = mysqli_query($con, $insertQuestion);
-    if($execInsert){
-      header("location: questions.php");
-    }
- 	}
-
-   ?>
   </body>
 </html>

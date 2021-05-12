@@ -25,7 +25,7 @@
 
         echo "
         <div class='container1'>
-        <form action='quiz_title.php' method='POST'>
+        <form action='editTitleHandler.php' method='POST'>
           <table border='1' height='350px' width='25%' class='container1'>
             <tr>
               <th colspan='2'><h2>New Quiz</h2>
@@ -48,29 +48,11 @@
               <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
             </tr>
           </table>
+          <input type='hidden' name='Codee' value='$code'>
         </form>
       </div>
-
-    $code
         ";
-
-  if(isset($_POST["form"])){
-    $code = $_GET['quiz_code'];
-    $quizTitle = $_POST['quiz_title'];
-    $sql = "UPDATE quiz_list
-            SET title = '$quizTitle'
-            WHERE quiz_code = '$code'";
-
-      if (mysqli_query($con, $sql)) {
-  			header("location: quiz_list.php");
-  			exit;
       }
-      else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-      }
-    }
-  }
-
   ?>
   </body>
 </html>

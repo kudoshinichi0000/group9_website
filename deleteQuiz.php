@@ -17,7 +17,7 @@
         $title = $fetchCodes["title"];
 
     echo "
-    <form action='deleteQuiz.php' method='POST'>
+    <form action='deleteQuizHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
         <tr>
           <th colspan='2'><h2>Are You Sure you want to delete this item?</h2>
@@ -39,28 +39,6 @@
     </form>
     ";
 
-    if(isset($_POST["form"]))
-    {
-      //Var_dump
-    	$Confirm = $_POST["Confirm"];
-
-    	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
-
-        	//Hidden Input
-        	$quizCode = $_POST["quizCode"];
-
-        	$deletequizcode = "DELETE FROM quiz_list WHERE quiz_code = '$quizCode'";
-        	$execQuery = mysqli_query($con, $deletequizcode);
-          if ($execQuery) {
-            $deleteQuery = "DELETE FROM multiple_questions WHERE quiz_code = '$quizCode'";
-            $execQuery = mysqli_query($con, $deleteQuery);
-            header("Location: quiz_list.php");
-          }
-    	}else{
-    		header("Location: quiz_list.php");
-    		exit();
-    	}
-    }
      ?>
 
   </body>

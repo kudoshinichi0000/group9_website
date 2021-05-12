@@ -39,8 +39,11 @@
       </div>";
 
   ?>
-
-  <br><br><a href="addMultipleQuestion.php" class="addMultipleQuestion">Add Multiple Question</a>
+  <?php
+    echo "
+  <br><br><a href='addMultipleQuestion.php?quiz_code=$code' class='addMultipleQuestion'>Add Multiple Question</a>
+    ";
+    ?>
   <a href="quiz_list.php" class="Goback">Back</a><br><br><br>
      <div class="question-card">
 
