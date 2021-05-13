@@ -7,7 +7,7 @@ body{
 .Containerhead{
   width: 96%;
   border: 1px solid black;
-  height: 12em;
+  height: 10em;
   background-color: #cce5ff;
   color: black;
   margin-left: 2em;
@@ -65,6 +65,25 @@ body{
 }
 
 .deleteQ:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.action{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.action:hover{
   text-decoration: underline;
   cursor: pointer;
 }

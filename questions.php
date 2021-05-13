@@ -33,7 +33,6 @@
           <h4>Quiz title: $title</h4>
           <h4>Quiz Code: $code </h4>
           <h4>admin id: $userId </h4>
-          <h4>Status: pending</h4>
         </div>
       </div>";
 
