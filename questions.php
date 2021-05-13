@@ -25,22 +25,31 @@
 
     //Getting/fetching all rows from the executed query
  	  $fetch = mysqli_fetch_assoc($execQuery);
-      $title = $fetch['title'];
+    $title = $fetch['title'];
+    $QuizPic = $fetch["picture"];
       //This section will provide information about the quiz
       echo "
       <div class='Containerhead'>
         <div class='cont'>
+        <img src='res/images/$QuizPic' width='175' alt='image not found' class='Prof' >
           <h4>Quiz title: $title</h4>
           <h4>Quiz Code: $code </h4>
           <h4>admin id: $userId </h4>
+
         </div>
       </div>";
 
     echo "
-      <br><br><a href='addMultipleQuestion.php?quiz_code=$code' class='addMultipleQuestion'>Add Multiple Question</a>
+
+      <br><br>
+      <a href='quiz_list.php' class='Goback'>Back</a>
+      <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
+      <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>
+      <a href='Identification.php?quiz_code=$code' class='addQ'>Add Identification</a><br><br><br>
+    
     ";
     ?>
-  <a href="quiz_list.php" class="Goback">Back</a><br><br><br>
+
      <div class="question-card">
 
        <div class="mid">
@@ -74,7 +83,7 @@
                </tr>
 
                <tr>
-                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId' class='deleteQ'>Delete</a></th>
+                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a></th>
                </tr>
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>

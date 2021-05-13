@@ -18,7 +18,7 @@
           <th colspan='3'><h2><label>Action: </label></h2>
         </tr>
         <br>
-        <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br><br><br>
+        <a href='quiz_title.php' class='addquiz'>Add Quiz</a>
 
     <?php
     //Step 1 Database Connectivity

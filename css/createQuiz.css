@@ -15,7 +15,7 @@ body{
 .cont{
   margin-left: 1em;
 }
-.addMultipleQuestion{
+.addQ{
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-left: 1em;
@@ -28,7 +28,7 @@ body{
   border-radius: 8px;
 }
 
-.addMultipleQuestion:hover{
+.addQ:hover{
   text-decoration: underline;
   cursor: pointer;
 }
@@ -48,23 +48,6 @@ body{
 }
 
 .Goback:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.deleteQ{
-  border: 1px solid black;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: white;
-  background-color: #007bff;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-.deleteQ:hover{
   text-decoration: underline;
   cursor: pointer;
 }
@@ -104,6 +87,7 @@ body{
 }
 
 .cons{
+  display: block;
   width: 50%;
   height: 20em;
   margin-left: auto;
@@ -153,4 +137,10 @@ body{
 .container1{
   margin-left: auto;
   margin-right: auto;
+}
+
+.Prof{
+  display: block;
+  float: right;
+  margin-right: 2em;
 }

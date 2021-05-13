@@ -22,21 +22,35 @@
 		<form action="quizTitleHandler.php" method="POST">
 			<table border="1" height="350px" width="25%" class="container1">
         <tr>
-					<th colspan="2"><h2>New Quiz</h2>
+					<th colspan="3"><h2>New Quiz</h2>
 				</tr>
 
         <tr>
           <th colspan="2"><label for="title"><h3>title</h3></label></th>
+          <th colspan="2"><input type="text" name="quiz_title" required></th>
         </tr>
 
 				<tr>
-					<th colspan="2"><input type="text" name="quiz_title" required></th>
+          <th colspan="2"><label for="Desc"><h3>Description</h3></label></th>
+          <th colspan="2"><input type="text" name="Desc" required></th>
 				</tr>
 
+        <tr>
+          <th colspan="2"><label for="catg"><h3>Categories</h3></label></th>
+            <th colspan="2">
+              <select name="catg">
+                <option value="Educational">Educational</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Mix">Mix</option>
+              </select>
+          </th>
+        </tr>
+
 				<tr>
+            <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
-          <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 				</tr>
+
 			</table>
       <input type="hidden" name="quizCode" value="<?php echo $code; ?>">
 		</form>
