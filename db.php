@@ -1,8 +1,8 @@
 <?php
 	$dbhost = "localhost";
  	$dbusername = "root";
-  	$dbpassword = "";
-  	$dbname = "quizdb";
+  $dbpassword = "";
+  $dbname = "quizdb";
 
   	$con = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 
