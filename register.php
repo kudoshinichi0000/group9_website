@@ -8,6 +8,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   //something was posted
   $username = $_POST['username'];
   $password = $_POST['password'];
+  $password_conf = $_POST['password_conf'];
+  if ($password == $password_conf) {
+
 
   if(!empty($username) && !empty($password) && !is_numeric($username))
   {
@@ -33,6 +36,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     header("location: register.php");
     exit;
   }
+  }
+  else {
+    $_SESSION['passerror'] = "Password is not Matched!";
+    header("location: register.php");
+    exit;
+  }
 }
 ?>
 <html lang="en" dir="ltr">
@@ -46,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   <body>
     <!-- If register is not successful -->
     <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
-  	<?php if(isset($_SESSION['errormessage'])): ?>
+  	<?php if(isset($_SESSION['registererror'])): ?>
   		 <script type="text/javascript">
   		 		alert('<?php echo $_SESSION['registererror']; ?>');
   		 </script>
@@ -60,6 +69,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     		 </script>
     		 <?php unset($_SESSION['regsuccess']);
     	 	endif;?>
+        <!-- if Password is incorrect -->
+        <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+      	<?php if(isset($_SESSION['passerror'])): ?>
+      		 <script type="text/javascript">
+      		 		alert('<?php echo $_SESSION['passerror']; ?>');
+      		 </script>
+      		 <?php unset($_SESSION['passerror']);
+      	 	endif;?>
     <div class="wrapper">
       <div id="formContent">
         <h1>Register</h1>
@@ -74,7 +91,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                   <input type="password" class="form-control" placeholder="Password: " required name="password">
                 </div>
                 <div class="col">
-                  <input type="password" class="form-control" placeholder="Confirm Password: " name="password_conf">
+                  <input type="password" class="form-control" placeholder="Confirm Password: " required name="password_conf">
                 </div>
             </div>
             <input type="submit" value="SignUp">
