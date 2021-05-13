@@ -26,7 +26,6 @@
     //Getting/fetching all rows from the executed query
  	  $fetch = mysqli_fetch_assoc($execQuery);
       $title = $fetch['title'];
-
       //This section will provide information about the quiz
       echo "
       <div class='Containerhead'>
@@ -57,7 +56,7 @@
         $execQuery = mysqli_query($con, $query);
 
       	while($fetchQuestion = mysqli_fetch_assoc($execQuery)){
-
+         $questionId = $fetchQuestion['id'];
          $question = $fetchQuestion['question'];
          $points = $fetchQuestion['questionPoints'];
          $option1 = $fetchQuestion['option1'];
@@ -75,6 +74,9 @@
                  <th colspan='2'><label><h3>Question: $question</h3></label><hr></th>
                </tr>
 
+               <tr>
+                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId' class='deleteQ'>Delete</a></th>
+               </tr>
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>
                </tr>
@@ -100,6 +102,8 @@
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answer</h3></label></th>
                </tr>
+
+
              </table>
            </div>";
          }

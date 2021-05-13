@@ -52,6 +52,23 @@ body{
   cursor: pointer;
 }
 
+.deleteQ{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.deleteQ:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .question-card{
   width: 80%;
   margin: auto;
