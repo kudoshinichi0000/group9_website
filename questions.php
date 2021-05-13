@@ -16,38 +16,48 @@
     $code = $_GET["quiz_code"];
 
 
-    //This is for user id
     //Step 2 Prepare the query
-	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId' AND quiz_code = '$code'";
+	  $query = " SELECT * FROM admin WHERE userid = '$userId'";
 
     //Step 3 Perform the query
    	$execQuery = mysqli_query($con, $query);
 
     //Getting/fetching all rows from the executed query
  	  $fetch = mysqli_fetch_assoc($execQuery);
-    $title = $fetch['title'];
-    $QuizPic = $fetch["picture"];
-      //This section will provide information about the quiz
-      echo "
-      <div class='Containerhead'>
-        <div class='cont'>
-        <img src='res/images/$QuizPic' width='175' alt='image not found' class='Prof' >
-          <h4>Quiz title: $title</h4>
-          <h4>Quiz Code: $code </h4>
-          <h4>admin id: $userId </h4>
+    $username = $fetch['username'];
 
-        </div>
-      </div>";
+        //This is for user id
+        //Step 2 Prepare the query
+    	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId' AND quiz_code = '$code'";
 
-    echo "
+        //Step 3 Perform the query
+       	$execQuery = mysqli_query($con, $query);
 
-      <br><br>
-      <a href='quiz_list.php' class='Goback'>Back</a>
-      <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
-      <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>
-      <a href='Identification.php?quiz_code=$code' class='addQ'>Add Identification</a><br><br><br>
-    
-    ";
+        //Getting/fetching all rows from the executed query
+     	  $fetch = mysqli_fetch_assoc($execQuery);
+        $title = $fetch['title'];
+        $QuizPic = $fetch["picture"];
+          //This section will provide information about the quiz
+          echo "
+          <div class='Containerhead'>
+            <div class='cont'>
+            <img src='res/images/$QuizPic' width='230' alt='image not found' class='Prof' >
+              <h4>Quiz title: $title</h4>
+              <h4>Quiz Code: $code </h4>
+              <h4>Created by: $username</h4>
+              <h4>admin id: $userId </h4>
+            </div>
+          </div>";
+
+        echo "
+
+          <br><br>
+          <a href='quiz_list.php' class='Goback'>Back</a>
+          <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
+          <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>
+          <a href='Identification.php?quiz_code=$code' class='addQ'>Add Identification</a><br><br><br>
+
+        ";
     ?>
 
      <div class="question-card">
@@ -57,7 +67,6 @@
        </div>
 
        <?php
-
          //This is for user id
      	  $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
 
