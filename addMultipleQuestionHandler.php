@@ -1,10 +1,9 @@
 <?php
 
-  //var_dump()
-  include("db.php");
-  include("functions.php");
+  //Database Connectivity
+  include_once("db.php");
 
-  //Vardump();
+  //Var_dump();
   $question = $_POST["question"];
   $points = $_POST["points"];
   $answer = $_POST["ans"];
@@ -12,20 +11,26 @@
   $optB = $_POST["B"];
   $optC = $_POST["C"];
   $optD = $_POST["D"];
-
-  $adminId = $_SESSION["userid"];
+  $typeOfQuiz = "Multiple Questions";
   //Hidden Input
-  $Codee = $_POST["Codee"];
+  $quizC = $_POST["hiencod"];
 
-  $query = " SELECT * FROM quiz_list WHERE admin_id = '$adminId' AND quiz_code = '$Codee' ";
-    $execQuery = mysqli_query($con, $query);
-    if ($execQuery) {
-      $insertQuestion = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz) VALUES('$Codee', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', 'Multiple Questions')";
-      $execInsert = mysqli_query($con, $insertQuestion);
-      if($execInsert){
-        echo "error nanaman tangina code: $Codee";
+  //Session id
+  $userid = $_SESSION["userid"];
+
+  //Prepare the query
+  $query = "SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizC'";
+
+  //Perform the query
+  $execQuery = mysqli_query($con, $query);
+
+    if($execQuery) {
+    $queryyy = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz) VALUES('$quizC', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', '$typeOfQuiz')";
+    $execQueryyy = mysqli_query($con, $queryyy);
+      if($execQueryyy){
+        header("location: questions.php");
       }else{
-        echo "error nanaman tangina code: $Codee";
+        echo "$quizC";
       }
     }
  ?>
