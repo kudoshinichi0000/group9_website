@@ -11,26 +11,16 @@
   $optB = $_POST["B"];
   $optC = $_POST["C"];
   $optD = $_POST["D"];
-  $typeOfQuiz = "Multiple Questions";
   //Hidden Input
   $quizC = $_POST["hiencod"];
 
-  //Session id
-  $userid = $_SESSION["userid"];
-
-  //Prepare the query
-  $query = "SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizC'";
-
-  //Perform the query
-  $execQuery = mysqli_query($con, $query);
-
-    if($execQuery) {
-    $queryyy = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz) VALUES('$quizC', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', '$typeOfQuiz')";
+    $queryyy = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz)
+                VALUES('$quizC', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', 'Multiple Questions')";
     $execQueryyy = mysqli_query($con, $queryyy);
       if($execQueryyy){
-        header("location: questions.php");
+        header("location: questions.php?quiz_code=$quizC");
       }else{
         echo "$quizC";
       }
-    }
+
  ?>

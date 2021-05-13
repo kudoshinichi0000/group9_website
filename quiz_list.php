@@ -44,7 +44,7 @@
             <th colspan='2'><h2>$code</h2></th>
             <th colspan='3'>
               <a href='editTitle.php?quiz_code=$code'>edit title</a>
-              <a href='manageQuiz.php?quiz_code=$code'>edit questions</a>
+              <a href='questions.php?quiz_code=$code'>edit questions</a>
               <a href='deleteQuiz.php?quiz_code=$code'>delete</a>
             </th>
           </tr>

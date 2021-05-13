@@ -13,9 +13,11 @@
 
      ?>
     <br><br><br><br><br><br><br><br>
+
   	<?php
       $code = rand();
     ?>
+
     <div class="container1">
 		<form action="quizTitleHandler.php" method="POST">
 			<table border="1" height="350px" width="25%" class="container1">
@@ -36,7 +38,7 @@
           <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 				</tr>
 			</table>
-      <input type="hidden" name="quizCode" value="<?php $code ?>">
+      <input type="hidden" name="quizCode" value="<?php echo $code; ?>">
 		</form>
 	</div>
 

@@ -11,20 +11,20 @@
 
   <?php
     //Step 1 Database Connectivity
-    include("db.php");
-    include("functions.php");
+    include_once "db.php";
     $userId = $_SESSION['userid'];
+    $code = $_GET["quiz_code"];
+
 
     //This is for user id
     //Step 2 Prepare the query
-	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId'";
+	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId' AND quiz_code = '$code'";
 
     //Step 3 Perform the query
    	$execQuery = mysqli_query($con, $query);
 
     //Getting/fetching all rows from the executed query
  	  $fetch = mysqli_fetch_assoc($execQuery);
-      $code = $fetch['quiz_code'];
       $title = $fetch['title'];
 
       //This section will provide information about the quiz
@@ -38,10 +38,8 @@
         </div>
       </div>";
 
-  ?>
-  <?php
     echo "
-  <br><br><a href='addMultipleQuestion.php?quiz_code=$code' class='addMultipleQuestion'>Add Multiple Question</a>
+      <br><br><a href='addMultipleQuestion.php?quiz_code=$code' class='addMultipleQuestion'>Add Multiple Question</a>
     ";
     ?>
   <a href="quiz_list.php" class="Goback">Back</a><br><br><br>
