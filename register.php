@@ -9,28 +9,43 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   $username = $_POST['username'];
   $password = $_POST['password'];
   $password_conf = $_POST['password_conf'];
+  // CHECK IF CONFIRMED PASSWORD IS THE SAME AS PASSWORD
   if ($password == $password_conf) {
-
-
+    // CHECK IF INPUT IS NOT EMPTY AND USERNAME IS NOT NUMERIC
   if(!empty($username) && !empty($password) && !is_numeric($username))
   {
+    // $var = "SELECT count(*) FROM admin";
+    // $query = $con2-> query($var);
 
-    //save to database
-    $user_id = rand();
-    //$query = "insert into admin (user_id,username,password) values ('$userid','$username','$password')";
+    // CHECK IF USERNAME IS ALREADY TAKEN
+    $queryString = "SELECT count(*) as countusers FROM admin WHERE username = '$username'";
+    $result = mysqli_query($con, $queryString);
+    while($row = mysqli_fetch_assoc($result))
+    {
+      //
+      if($row["countusers"] != 0)
+      {
+        $_SESSION['userexists'] = "Username Already Exists!";
+        header("location: register.php");
+        exit;
+      }
+      else {// ACTUAL PROCESS IF USER ARE NOT REGISTERED
+        $user_id = rand();
 
-    //mysqli_query($con, $query);
-
-    $sql = "INSERT INTO admin (userid, username, password) VALUES ( '$user_id', '$username', '$password')";
-    if (mysqli_query($con, $sql)) {
-      $_SESSION['regsuccess'] = "Admin Added!";
-			header("location: login.php");
-			exit;
-    }
-    else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($con);
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO admin (userid, username, password) VALUES ( '$user_id', '$username', '$password')";
+        if (mysqli_query($con, $sql)) {
+          $_SESSION['regsuccess'] = "Admin Added!";
+  			     header("location: login.php");
+  			        exit;
+              }
+        else {
+          echo "Error: " . $sql . "<br>" . mysqli_error($con);
+        }
+      }
     }
   }
+
   else{
     $_SESSION['registererror'] = "Please Input some Valid Information!";
     header("location: register.php");
@@ -53,6 +68,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- If User Exists -->
+    <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+  	<?php if(isset($_SESSION['userexists'])): ?>
+  		 <script type="text/javascript">
+  		 		alert('<?php echo $_SESSION['userexists']; ?>');
+  		 </script>
+  		 <?php unset($_SESSION['userexists']);
+  	 	endif;?>
     <!-- If register is not successful -->
     <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
   	<?php if(isset($_SESSION['registererror'])): ?>
