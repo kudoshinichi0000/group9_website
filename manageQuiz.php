@@ -1,8 +1,6 @@
 <?php
-
 //Step 1 Database Connectivity
 include_once "db.php";
-include("functions.php");
 $userId = $_SESSION['userid'];
 
 //Step 2 Prepare the query
@@ -19,8 +17,6 @@ $execQuery = mysqli_query($con, $query);
         $execQuery = mysqli_query($con, $query);
         if ($execQuery) {
           header("location: questions.php");
-        }else{
-          header("location: quiz_list.php");
         }
   }
 

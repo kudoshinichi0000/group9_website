@@ -1,8 +1,8 @@
 <?php
-  //Databae connectivity
+  //Database Connectivity
   include_once("db.php");
 
-  //dumpfile()
+  //var_dump()
   $userid = $_SESSION["userid"];
   $quizTitle = $_POST['quiz_title'];
 

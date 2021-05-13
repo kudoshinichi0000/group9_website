@@ -78,7 +78,7 @@
             <th colspan="2"><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
           </tr>
         </table>
-        <input type="hidden" name="Codee" value="<?php $code ?>">
+        <?php echo "<input type='hidden' name='Codee' value='$code'>"; ?>
       </form>
     </div>
   </body>
