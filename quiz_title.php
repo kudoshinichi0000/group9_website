@@ -41,11 +41,11 @@
           </th>
         </tr>
 
-        <!---<tr>
+        <tr>
 					<th colspan="2"><label for="ProfilePicture">Profile Picture</label></th>
 					<th colspan="2"><input type="file" name="ProfilePicture"></th>
 				</tr>
-        --->
+  
 				<tr>
           <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>

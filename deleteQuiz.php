@@ -33,7 +33,7 @@
             <tr>
               <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
             </tr>
-            
+
           </table>
           <input type='hidden' name='quizCode' value='$code'>
         </form>

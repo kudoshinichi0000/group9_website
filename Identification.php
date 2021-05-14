@@ -8,7 +8,6 @@
     <?php
       include_once("db.php");
       $code = $_GET["quiz_code"];
-      echo "$code";
      ?>
     <form action='IdentificationHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>

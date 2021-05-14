@@ -17,7 +17,18 @@
         if ($execQuery) {
       		$deleteuery = "DELETE FROM multiple_questions WHERE quiz_code = '$delGetid'";
       		$execquery = mysqli_query($con, $deleteuery);
-          header("Location: quiz_list.php");
+
+          if ($execquery) {
+            $deleteuery = "DELETE FROM trueorfalse WHERE quiz_code = '$delGetid'";
+            $execqueryy = mysqli_query($con, $deleteuery);
+
+            if ($execqueryy) {
+              $deleteuery = "DELETE FROM identification WHERE quiz_code = '$delGetid'";
+              $execqueryy = mysqli_query($con, $deleteuery);
+
+              header("Location: quiz_list.php");
+            }
+          }
         }
 	}else{
 		header("Location: quiz_list.php");

@@ -146,7 +146,8 @@
              </tr>
 
              <tr>
-                <th colspan='2'><a href='deletetrueorfalse.php?id=$questionnId'>Delete</a></th>
+                <th colspan='2'><a href='deletetrueorfalse.php?id=$questionnId'>Delete</a>
+                <a href='ToFEdit.php?id=$questionnId'>Edit</a></th>
              </tr>
              <tr>
                <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointss </i></label></th>
@@ -196,7 +197,8 @@
             </tr>
 
             <tr>
-               <th colspan='2'><a href='IdenDelete.php?id=$questionnnId'>Delete</a></th>
+               <th colspan='2'><a href='IdenDelete.php?id=$questionnnId'>Delete</a>
+               <a href='IEdit.php?id=$questionnnId'>Edit</a></th>
             </tr>
             <tr>
               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointsss </i></label></th>
