@@ -68,7 +68,7 @@
           </tr>
 
           <tr>
-            <th><a href='questions.php'>Cancel</a></th>
+            <th><a href='questions.php?quiz_code=$code'>Cancel</a></th>
             <th colspan='2'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
           </tr>
         </table>

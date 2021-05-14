@@ -124,6 +124,59 @@
              </table>
            </div>";
          }
+
+        //Getting or fetching all rows from true or false
+        $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
+
+        $execQuery = mysqli_query($con, $queryy);
+
+       while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
+         $questionnId = $fetchtrueorfalse['id'];
+         $codee = $fetchtrueorfalse['quiz_code'];
+         $questionn = $fetchtrueorfalse['question'];
+         $answerr = $fetchtrueorfalse['answer'];
+         $pointss = $fetchtrueorfalse['points'];
+         $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
+
+         //This section will provide information about the quiz
+         echo "
+         <div class='cons'>
+           <table width='100%'>
+             <tr>
+               <th colspan='2'><label><h3>Question: $questionn</h3></label><hr></th>
+             </tr>
+
+             <tr>
+                <th colspan='2'><a href='deletetrueorfalse.php?id=$questionnId'>Delete</a></th>
+             </tr>
+             <tr>
+               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointss </i></label></th>
+             </tr>
+
+             <tr>
+               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuizz </i></label></th>
+             </tr>
+
+             <tr>
+               <th colspan='2'><label style='float: left; margin-left: 4em;'><h3>Option: </h3></label></th>
+             </tr>
+
+             <tr>
+               <th colspan='2'>
+                 <label for='True'>True</label><br>
+                 <label for='False'>False</label><br>
+               </th>
+             </tr>
+
+             <tr>
+               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answerr</h3></label></th>
+             </tr>
+
+
+           </table>
+         </div>";
+
+       }
        ?>
    </div>
 
