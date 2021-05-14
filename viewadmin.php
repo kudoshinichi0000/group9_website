@@ -10,6 +10,22 @@ $result = mysqli_query($con, $query);
     <title>ViewAdmin</title>
   </head>
   <body>
+  <!-- User Successfully Edited-->
+  <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+  <?php if(isset($_SESSION['editsuccess'])): ?>
+     <script type="text/javascript">
+        alert('<?php echo $_SESSION['editsuccess']; ?>');
+     </script>
+     <?php unset($_SESSION['editsuccess']);
+    endif;?>
+  <!-- User Successfully Deleted -->
+  <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+  <?php if(isset($_SESSION['delsuccess'])): ?>
+     <script type="text/javascript">
+        alert('<?php echo $_SESSION['delsuccess']; ?>');
+     </script>
+     <?php unset($_SESSION['delsuccess']);
+    endif;?>
     <h1>Admins: </h1>
     <table align="center">
                     <thead>
