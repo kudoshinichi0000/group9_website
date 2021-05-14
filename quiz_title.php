@@ -11,16 +11,16 @@
     include("functions.php");
     include_once("navbaradmin.php");
 
-     ?>
-    <br><br><br><br><br><br><br><br>
-
-  	<?php
-      $code = rand();
+    $code = rand();
+    $query = " SELECT * FROM quiz_list";
+    $execQuery = mysqli_query($con, $query);
+    $fetchPic = mysqli_fetch_assoc($execQuery);
+    $ProfilePic = $fetchPic["picture"];
     ?>
-
+    <br><br><br><br><br><br><br><br>
     <div class="container1">
 		<form action="quizTitleHandler.php" method="POST">
-			<table border="1" height="350px" width="25%" class="container1">
+			<table border="1" height="350px" width="35%" class="container1">
         <tr>
 					<th colspan="3"><h2>New Quiz</h2>
 				</tr>
@@ -46,10 +46,16 @@
           </th>
         </tr>
 
+        <tr>
+					<th colspan="2"><label for="ProfilePicture">Profile Picture</label></th>
+					<th colspan="2"><input type="file" name="ProfilePicture"></th>
+				</tr>
+
 				<tr>
-            <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
+          <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
 				</tr>
+
 
 			</table>
       <input type="hidden" name="quizCode" value="<?php echo $code; ?>">

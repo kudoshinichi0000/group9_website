@@ -16,11 +16,26 @@
     if ($execQuery) {
       $insertQuestion = "INSERT INTO quiz_list (admin_id, quiz_code, title, categories ,description) VALUES('$userid', '$quizCode', '$quizTitle', '$Catg' ,'$Desc')";
       $execInsert = mysqli_query($con, $insertQuestion);
-      if($execInsert){
-        header("location: quiz_list.php");
-      }else{
-        echo "error nanaman!!! AYOKO NANG MABUHAY PA code: $code";
-      }
+        if($execInsert){
+          $targetDirectory = "res/quizPic/";
+      		$fileName	= $_FILES["ProfilePicture"]["name"];
+
+      			$check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]);
+      			if($check){
+      				$newFilename = $quizCode . "_" . $fileName;
+      				$destination = $targetDirectory . $newFilename;
+
+      				$upload = move_uploaded_file($_FILES["ProfilePicture"]["tmp_name"], $destination);
+
+      				if($upload){
+      					$queryUpdatePic = "UPDATE quiz_list
+      						SET picture = '$newFilename'
+      						WHERE quiz_code = '$quizCode'";
+      					  $execUpdatePic = mysqli_query($con, $queryUpdatePic);
+      					}
+      			}
+          header("location: quiz_list.php");
+        }
     }
 
  ?>
