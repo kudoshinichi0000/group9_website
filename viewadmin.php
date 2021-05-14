@@ -15,7 +15,6 @@ $result = mysqli_query($con, $query);
                     <thead>
                         <tr>
                             <th>Name</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -29,7 +28,7 @@ $result = mysqli_query($con, $query);
                                     </td>
 
                                     <td>
-                                        <a class='link' href='editadmin.php?id={$admin['id']}'>Edit</a> | <a class='link' href='deladminquestion.php?id={$admin['id']}'>Delete</a>
+                                        <a class='link' href='editadmin.php?id={$admin['id']}'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$admin['id']}'>Delete</a>
                                     </td>
                                 </tr>
                                 ";
