@@ -28,7 +28,9 @@ if(isset($_POST['btn']))
             $pass = password_hash($password, PASSWORD_DEFAULT);
             $update = "UPDATE admin SET username='$username', password='$pass' WHERE id='$userId'";
             $runQueryUpdateUser = mysqli_query($con, $update);
+            $_SESSION['editsuccess'] = "User Successfully Edited!";
             header("Location: viewadmin.php");
+            exit();
         }
       }
     }
