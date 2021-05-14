@@ -92,7 +92,8 @@
                </tr>
 
                <tr>
-                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a></th>
+                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a>
+                  <a href='MultiQEdit.php?id=$questionId'>Edit</a></th>
                </tr>
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>
