@@ -41,7 +41,7 @@
           echo "
           <div class='Containerhead'>
             <div class='cont'>
-            <img src='res/quizPicture/$QuizPic' width='230' alt='image not found' class='Prof' >
+            <img src='res/quizPicture/$QuizPic' width='15%' style='border-radius: 25em;' alt='image not found' class='Prof' >
               <h4>Quiz title: $title</h4>
               <h4>Quiz Code: $code </h4>
               <h4>Created by: $username</h4>

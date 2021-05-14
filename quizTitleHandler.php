@@ -7,6 +7,7 @@
   $quizTitle = $_POST['quiz_title'];
   $Desc = $_POST["Desc"];
   $Catg = $_POST["catg"];
+
   //Hidden Input
   $quizCode = $_POST["quizCode"];
 
@@ -16,10 +17,11 @@
       $insertQuestion = "INSERT INTO quiz_list (admin_id, quiz_code, title, categories ,description) VALUES('$userid', '$quizCode', '$quizTitle', '$Catg' ,'$Desc')";
       $execInsert = mysqli_query($con, $insertQuestion);
         if($execInsert){
-          /*$targetDirectory = "res/quizPicture/";
+
+          $targetDirectory = "res/quizPicture/";
           $fileName	= $_FILES["ProfilePicture"]["name"];
 
-            $check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]);
+            $check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]); 
             if($check){
               $newFilename = $quizCode . "_" . $fileName;
               $destination = $targetDirectory . $newFilename;
@@ -30,8 +32,7 @@
                 $queryUpdatePic = "UPDATE quiz_list SET picture = '$newFilename'WHERE quiz_code = '$quizCode'";
                   $execUpdatePic = mysqli_query($con, $queryUpdatePic);
                 }
-            }*/
-
+            }
           header("location: quiz_list.php");
         }
     }

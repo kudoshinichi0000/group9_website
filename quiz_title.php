@@ -14,7 +14,7 @@
     ?>
     <br><br><br><br><br><br><br><br>
     <div class="container1">
-		<form action="quizTitleHandler.php" method="POST">
+		<form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
 			<table border="1" height="350px" width="35%" class="container1">
         <tr>
 					<th colspan="3"><h2>New Quiz</h2>
@@ -43,9 +43,9 @@
 
         <tr>
 					<th colspan="2"><label for="ProfilePicture">Profile Picture</label></th>
-					<th colspan="2"><input type="file" name="ProfilePicture"></th>
+					<th colspan="2"><input type="file" name="ProfilePicture" required></th>
 				</tr>
-  
+
 				<tr>
           <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>

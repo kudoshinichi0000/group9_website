@@ -1,25 +1,43 @@
 <?php
+  //Database Connectivity
+  include_once("db.php");
 
-    include("db.php");
+  //var_dump()
+  $userid = $_SESSION["userid"];
+  $quizTitle = $_POST['quiz_title'];
+  $Desc = $_POST["Desc"];
+  $Catg = $_POST["catg"];
 
-    $code = $_GET["quiz_code"];
-    $quizTitle = $_POST["quiz_title"];
-    $Codee = $_POST["Codee"];
+  //Hidden Input
+  $quizCode = $_POST["quizCode"];
 
-    $query = "UPDATE quiz_list
-            SET title = '$quizTitle'
-            WHERE quiz_code = '$Codee'";
+  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizCode'";
+  $execQuery = mysqli_query($con, $query);
+    if ($execQuery) {
+      $insertQuestion = "UPDATE quiz_list
+      SET quiz_code = '$quizCode', title = '$quizTitle', categories = '$Catg' ,description = '$Desc'
+      WHERE quiz_code = '$quizCode'";
 
-    $execQuery = mysqli_query($con, $query);
-      if ($execQuery) {
-        header("location: quiz_list.php");
-      }
-      else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-        header("location: editTitle.php");
-}
+      $execInsert = mysqli_query($con, $insertQuestion);
+        if($execInsert){
 
+          $targetDirectory = "res/quizPicture/";
+          $fileName	= $_FILES["ProfilePicture"]["name"];
 
+            $check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]);
+            if($check){
+              $newFilename = $quizCode . "_" . $fileName;
+              $destination = $targetDirectory . $newFilename;
 
+              $upload = move_uploaded_file($_FILES["ProfilePicture"]["tmp_name"], $destination);
+
+              if($upload){
+                $queryUpdatePic = "UPDATE quiz_list SET picture = '$newFilename'WHERE quiz_code = '$quizCode'";
+                  $execUpdatePic = mysqli_query($con, $queryUpdatePic);
+                }
+            }
+          header("location: quiz_list.php");
+        }
+    }
 
  ?>
