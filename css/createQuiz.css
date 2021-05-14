@@ -89,7 +89,29 @@ body{
 .cons{
   display: block;
   width: 50%;
-  height: 20em;
+  height: 21em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  padding-bottom: 2em;
+  margin-top: 3em;
+}
+
+.cons2{
+  display: block;
+  width: 50%;
+  height: 18em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  padding-bottom: 2em;
+  margin-top: 3em;
+}
+
+.cons3{
+  display: block;
+  width: 50%;
+  height: 10em;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;

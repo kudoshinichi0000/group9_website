@@ -119,8 +119,6 @@
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answer</h3></label></th>
                </tr>
-
-
              </table>
            </div>";
          }
@@ -140,7 +138,7 @@
 
          //This section will provide information about the quiz
          echo "
-         <div class='cons'>
+         <div class='cons2'>
            <table width='100%'>
              <tr>
                <th colspan='2'><label><h3>Question: $questionn</h3></label><hr></th>
@@ -171,12 +169,49 @@
              <tr>
                <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answerr</h3></label></th>
              </tr>
-
-
            </table>
          </div>";
-
        }
+
+       //Getting or fetching all rows from Identification
+       $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
+
+       $execQuery = mysqli_query($con, $queryy);
+
+      while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
+        $questionnnId = $fetchtrueorfalse['id'];
+        $codeee = $fetchtrueorfalse['quiz_code'];
+        $questionnn = $fetchtrueorfalse['question'];
+        $answerrr = $fetchtrueorfalse['answer'];
+        $pointsss = $fetchtrueorfalse['points'];
+        $typeOfQuizzz = $fetchtrueorfalse['typeOfQuiz'];
+
+        //This section will provide information about the quiz
+        echo "
+        <div class='cons3'>
+          <table width='100%'>
+            <tr>
+              <th colspan='2'><label><h3>Question: $questionnn</h3></label><hr></th>
+            </tr>
+
+            <tr>
+               <th colspan='2'><a href='IdenDelete.php?id=$questionnnId'>Delete</a></th>
+            </tr>
+            <tr>
+              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointsss </i></label></th>
+            </tr>
+
+            <tr>
+              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuizzz </i></label></th>
+            </tr>
+
+            <tr>
+              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Answer: $answerrr </i></label></th>
+            </tr>
+          </table>
+        </div>";
+
+      }
        ?>
    </div>
 
