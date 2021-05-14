@@ -41,7 +41,7 @@
           echo "
           <div class='Containerhead'>
             <div class='cont'>
-            <img src='res/images/$QuizPic' width='230' alt='image not found' class='Prof' >
+            <img src='res/quizPicture/$QuizPic' width='230' alt='image not found' class='Prof' >
               <h4>Quiz title: $title</h4>
               <h4>Quiz Code: $code </h4>
               <h4>Created by: $username</h4>
@@ -92,7 +92,8 @@
                </tr>
 
                <tr>
-                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a></th>
+                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a>
+                  <a href='MultiQEdit.php?id=$questionId'>Edit</a></th>
                </tr>
                <tr>
                  <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>

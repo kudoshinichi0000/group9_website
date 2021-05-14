@@ -10,12 +10,7 @@
     include("db.php");
     include("functions.php");
     include_once("navbaradmin.php");
-
     $code = rand();
-    $query = " SELECT * FROM quiz_list";
-    $execQuery = mysqli_query($con, $query);
-    $fetchPic = mysqli_fetch_assoc($execQuery);
-    $ProfilePic = $fetchPic["picture"];
     ?>
     <br><br><br><br><br><br><br><br>
     <div class="container1">
@@ -46,11 +41,11 @@
           </th>
         </tr>
 
-        <tr>
+        <!---<tr>
 					<th colspan="2"><label for="ProfilePicture">Profile Picture</label></th>
 					<th colspan="2"><input type="file" name="ProfilePicture"></th>
 				</tr>
-
+        --->
 				<tr>
           <th colspan="2"><a href="quiz_list.php">Cancel</a></th>
 					<th><input type="submit" name="submit" class="btn" placeholder="Save" ></th>
