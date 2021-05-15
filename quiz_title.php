@@ -42,7 +42,7 @@
         </tr>
 
         <tr>
-					<th colspan="2"><label for="ProfilePicture">Profile Picture</label></th>
+					<th colspan="2"><label for="ProfilePicture">Quiz Picture</label></th>
 					<th colspan="2"><input type="file" name="ProfilePicture" required></th>
 				</tr>
 
