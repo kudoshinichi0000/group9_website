@@ -24,9 +24,8 @@
         header("Location: questions.php?quiz_code=$quizCode");
       }
 	}else{
-		header("Location: quiz_list.php");
-		exit();
-
+    $quizCode = $_POST["quizCode"];
+		header("Location: questions.php?quiz_code=$quizCode");
 	}
 
  ?>
