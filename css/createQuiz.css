@@ -161,3 +161,11 @@ body{
   float: right;
   margin-right: 2em;
 }
+
+.but{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+
+}
