@@ -11,6 +11,7 @@
 
   <?php
     //Step 1 Database Connectivity
+    include_once("navbaradmin.php");
     include_once "db.php";
     $userId = $_SESSION['userid'];
     $code = $_GET["quiz_code"];

@@ -7,6 +7,11 @@ body {
 	margin: 0 auto;
 }
 
+.container1 {
+	width: 80%;
+	margin: auto;
+}
+
 .TextDesign{
 	font-family: 'Orelega One', cursive;
 	color: white;
@@ -125,6 +130,7 @@ nav a:hover {
 #VideoIntroCenter{
 	text-align: center;
 }
+
 .home a::before {
   content: '';
   display: block;
