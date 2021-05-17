@@ -21,7 +21,7 @@
           $targetDirectory = "res/quizPicture/";
           $fileName	= $_FILES["ProfilePicture"]["name"];
 
-            $check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]); 
+            $check = getimagesize($_FILES["ProfilePicture"]["tmp_name"]);
             if($check){
               $newFilename = $quizCode . "_" . $fileName;
               $destination = $targetDirectory . $newFilename;

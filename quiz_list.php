@@ -10,7 +10,7 @@
     <?php include_once "navbaradmin.php"; ?>
 
     <br><br><br><br>
-      <table border='1' height='50px' width='50%' class="list">
+      <table height='50px' width='85%' class="list" >
 
         <tr>
           <th colspan='2'><h2><label>title: </label></h2>
