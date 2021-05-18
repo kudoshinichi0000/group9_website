@@ -58,6 +58,8 @@
                   <div class="col">
                     <label for="catg">Categories</label>
                     <select class="form-control" name="catg" required>
+                      <option value="Educational"> Educational<option>
+                      <option value="Entertainment"> Entertainment</option>
                   </div>
               </div>
             </div>
