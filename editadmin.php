@@ -56,6 +56,7 @@
                       </div>
                       <div class="row form-group">
                         <div class="col">
+                          <label for="confirmpassword">Confirm Password</label>
                         </div>
                       </div>
 
