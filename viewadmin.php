@@ -61,6 +61,7 @@ $result = mysqli_query($con, $query);
       if(confirm('Do you want to delete user?')){
         window.location.href = $(e.target).attr('href');
       }
-    }
+    });
+  </script>
   </body>
 </html>
