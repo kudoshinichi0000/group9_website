@@ -48,16 +48,16 @@
                           <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
                         </div>
                       </div>
-                      <div>
-                        <div>
+                      <div class="row form-group">
+                        <div class="col">
+                          <label for="password">Password :</label>
+                          <input type="password" class="form-control" placeholder="Enter your new password" name="password"
                         </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-
                     <label>Password: </label>
                     <input type="password" name="password" required>
                 </div>
