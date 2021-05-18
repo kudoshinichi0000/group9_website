@@ -42,6 +42,12 @@
                   <div class="row formContainer">
                     <div class="col-lg-12">
                       <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
+                        <div class="row form-group">
+                          <div class="col">
+                            <label for="password">Password :</label>
+                            <input type="password" class="form-control" placeholder="Enter your new password" name="password"
+                          </div>
+                      </div>
                       <div class="row form-group">
                         <div class="col">
                         <label for="username"> Username: <label>
