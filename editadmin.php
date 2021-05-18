@@ -44,6 +44,8 @@
                       <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
                       <div class="row form-group">
                         <div class="col">
+                        <label for="username"> Username: <label>
+                        <input type="text" name="username" required>
                         </div>
                       </div>
                     </div>
