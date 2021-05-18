@@ -40,7 +40,9 @@
       <div>
         <div class="container">
           <div class="row formContainer">
-            <div class="col-lg-12"></div>
+            <div class="col-lg-12">
+              <form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
+            </div>
           </div>
         </div>
       </div>
