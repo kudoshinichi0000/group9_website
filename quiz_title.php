@@ -49,7 +49,7 @@
               </div>
               <div class="row from-group" >
                 <div class="col">
-                <label>Description:</label>
+                <label for="Desc">Description:</label>
                 <textarea class="form-control" rows="2" placeholder="Enter Description" name
                 </div>
               </div>
