@@ -53,6 +53,11 @@
                 <textarea class="form-control" rows="2" placeholder="Enter Quiz Description...." required>
                 </div>
               </div>
+              <div>
+                <div>
+                  <div>
+                  </div>
+              </div>
             </div>
           </form>
         </div>
