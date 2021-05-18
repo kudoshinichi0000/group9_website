@@ -62,7 +62,8 @@
                       </div>
                       <div>
                         <div class="row form-group" style="margin-top: 40px;">
-                        </div>
+                        </div class="col">
+                          <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Update Profile</button>
                       </div>
                       <input type="hidden" name="id" value="<?php echo $userId ?>">
                     </form>
