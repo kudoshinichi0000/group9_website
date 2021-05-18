@@ -16,7 +16,6 @@
     $userId = $_SESSION['userid'];
     $code = $_GET["quiz_code"];
 
-
     //Step 2 Prepare the query
 	  $query = " SELECT * FROM admin WHERE userid = '$userId'";
 
@@ -38,15 +37,19 @@
      	  $fetch = mysqli_fetch_assoc($execQuery);
         $title = $fetch['title'];
         $QuizPic = $fetch["picture"];
+        $Desc = $fetch["description"];
+        $Cat = $fetch["categories"];
+        $Pub = $fetch["publish"];
+        $newDate = date("m-d-Y", strtotime($Pub));
           //This section will provide information about the quiz
           echo "
           <div class='Containerhead'>
             <div class='cont'>
             <img src='res/quizPicture/$QuizPic' width='15%' style='border-radius: 25em;' alt='image not found' class='Prof' >
-              <h4>Quiz title: $title</h4>
-              <h4>Quiz Code: $code </h4>
-              <h4>Created by: $username</h4>
-              <h4>admin id: $userId </h4>
+              <h4>Title: $title</h4>
+              <h4>Description: $Desc</h4>
+              <h4>Categories: $Cat</h4>
+              <h4>Publication Date: $newDate</h4>
             </div>
           </div>";
 
@@ -61,7 +64,7 @@
         ";
     ?>
 
-     <div class="question-card">
+     <div class="SectionQ">
 
        <div class="mid">
          <br><h2>Questions</h2><hr>
