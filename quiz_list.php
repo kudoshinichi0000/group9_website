@@ -14,7 +14,6 @@
       margin-right: auto;
       font-size: 0.8em;
       margin-bottom: 5em;
-
     }
     tr, th {
       border: 1px solid #dddddd;
@@ -34,7 +33,7 @@
     <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
       <table height='50px' width='85%'>
         <tr>
-          <th colspan='2'><h2><label><b>title: </b></label></h2>
+          <th colspan='2'><h2><label>Title: </label></h2>
           <th colspan='2'><h2><label>Description: </label></h2>
           <th colspan='2'><h2><label>Categories: </label></h2>
           <th colspan='2'><h2><label>Publication Date: </label></h2>
@@ -64,7 +63,7 @@
       $Pub = $fetchTitle['publish'];
 
 
-      if(strlen($title) >= 20){
+      if(strlen($title) >= 10){
             $title = substr($title,0,20) . "...";
 
             if(strlen($Desc) >= 10){
