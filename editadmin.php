@@ -14,6 +14,8 @@
     <head>
         <title>EditAdmin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min2.css">
+        <link rel="stylesheet" type="text/css" href="css/main2.css">
     </head>
     <body>
       <!-- Password not match message -->
