@@ -51,7 +51,7 @@ $result = mysqli_query($con, $query);
 
                   <td>
                     <a class='link' href='editadmin.php?id={$admin['id']}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$admin['id']} '>Delete</a>
-                    ${delete_btn}
+                    
                   </td>
                 </tr>
                 ";
