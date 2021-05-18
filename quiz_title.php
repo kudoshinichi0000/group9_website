@@ -38,8 +38,8 @@
           <span class="title" style="margin-left:40%;font-size:30px;"><b>Enter Quiz Details<b></span>
       </div>
       <div>
-        <div>
-          <
+        <div class="container">
+          <div class="row formContainer">
         </div>
       </div>
 			<table border="1" height="350px" width="35%" class="container1">
