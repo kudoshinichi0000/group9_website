@@ -11,6 +11,7 @@ $result = mysqli_query($con, $query);
 
     <script src="js/bootstrap.bundle.min.js"> </script>
 
+
     <title>ViewAdmin</title>
   </head>
   <body>
@@ -60,7 +61,7 @@ $result = mysqli_query($con, $query);
       </table>
   </div>
   <script>
-    $('.del-btn').click((e) => {
+    $('.delete-btn').click((e) => {
       e.preventDefault();
       if(confirm('Do you want to delete user?')){
         window.location.href = $(e.target).attr('href');
