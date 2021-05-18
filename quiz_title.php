@@ -7,23 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
     <link rel="stylesheet" type="text/css" href="css/main2.css"
     <style media="screen">
-    table {
-      background-color: #fff;
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 40%;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 0.8em;
-      margin-bottom: 5em;
-
-    }
-    tr, th {
-      border: 1px solid #000;
-      text-align: center;
-      align-items: center;
-      padding: 8px;
-    }
     </style>
   </head>
   <body>
