@@ -25,7 +25,7 @@ $result = mysqli_query($con, $query);
     endif;?>
   <!-- User Successfully Deleted -->
   <?php include_once "db.php"; include_once "navbaradmin.php" ?><br><br>
-  <?php if(isset($_SESSION['delsuccess'])): ?>
+  <?php if(isset( $_SESSION['delsuccess'])): ?>
      <script type="text/javascript">
         alert('<?php echo $_SESSION['delsuccess']; ?>');
      </script>
@@ -50,7 +50,7 @@ $result = mysqli_query($con, $query);
                   </td>
 
                   <td>
-                    <a class='link' href='editadmin.php?id={$admin['id']}' type='button' class='btn btn-warning btn-sm'>Edit</a>
+                    <a class='link' href='editadmin.php?id={$admin['id']}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$admin['id']} '>Delete</a>
                     ${delete_btn}
                   </td>
                 </tr>
