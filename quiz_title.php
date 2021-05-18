@@ -61,9 +61,7 @@
                  <a href="quiz_list.php" class="btn btn-outline-danger">Cancel</a>
                </div>
              </div>
-
             </div>
-          </form>
         </div>
         </div>
       </div>
@@ -71,6 +69,5 @@
       <input type="hidden" name="quizCode" value="<?php echo $code; ?>">
 		</form>
 	</div>
-
   </body>
 </html>
