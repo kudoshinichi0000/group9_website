@@ -45,13 +45,17 @@
                       <div class="row form-group">
                         <div class="col">
                         <label for="username"> Username: <label>
-                        <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
+                          <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
                         </div>
                       </div>
-
+                      <div>
+                        <div>
+                        </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
 
                     <label>Password: </label>
