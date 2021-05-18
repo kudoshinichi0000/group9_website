@@ -58,6 +58,9 @@ $result = mysqli_query($con, $query);
   <script>
     $('.del-btn').click((e) => {
       e.preventDefault();
+      if(confirm('Do you want to delete user?')){
+        window.location.href = $(e.target).attr('href');
+      }
     }
   </body>
 </html>
