@@ -2,14 +2,14 @@
   include_once "db.php";
   include_once "functions.php";
 
-    $name = "admin";
-    $password = "admin";
+    $name = "mod";
+    $password = "mod";
   	$userid = rand();
 
-
-    $sql = "INSERT INTO admin (userid, username, password) VALUES ( '$userid', '$name', '$password')";
+    $pass = password_hash($password, PASSWORD_DEFAULT);
+    $sql = "INSERT INTO moderator (userid, username, password) VALUES ( '$userid', '$name', '$password')";
     if (mysqli_query($con, $sql)) {
-      echo "New admin created successfully";
+      echo "Moderator Created";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
