@@ -57,6 +57,7 @@
                 <div class="row form-group">
                   <div class="col">
                     <label>Section:</label>
+                    <select class="form-control" name="catg" required>
                   </div>
               </div>
             </div>
