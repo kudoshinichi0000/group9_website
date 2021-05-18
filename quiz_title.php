@@ -34,7 +34,9 @@
     <br><br><br><br><br><br><br><br>
     <div class="container1">
 		<form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
-      <div class="row"></div>
+      <div class="row">
+          <span class="title" style="margin-left:40%;"
+      </div>
 			<table border="1" height="350px" width="35%" class="container1">
         <tr>
 					<th colspan="2"><h2>New Quiz</h2>
