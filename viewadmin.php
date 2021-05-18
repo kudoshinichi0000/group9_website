@@ -7,7 +7,10 @@ $result = mysqli_query($con, $query);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min3.css"
+    <link rel="stylesheet" href="css/bootstrap.min3.css">
+
+    <script src="js/bootstrap.bundle.min.js"> </script>
+
     <title>ViewAdmin</title>
   </head>
   <body>
