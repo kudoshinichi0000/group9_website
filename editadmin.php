@@ -14,6 +14,8 @@
     <head>
         <title>EditAdmin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min2.css">
+        <link rel="stylesheet" type="text/css" href="css/main2.css">
     </head>
     <body>
       <!-- Password not match message -->
@@ -33,27 +35,42 @@
     		 <?php unset($_SESSION['userexist']);
     	 	endif;?>
         <div class="center">
-            <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
-                <h1>Edit Profile</h1>
-                <div class="formAdjust">
-                    <label >Username: </label>
-                    <input type="text" name="username" required>
+              <div class="row">
+                <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
+              </div>
+                <div class="container">
+                  <div class="row formContainer">
+                    <div class="col-lg-12">
+                      <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
+                      <div class="row form-group">
+                        <div class="col">
+                        <label for="username">Username:</label>
+                          <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
+                        </div>
+                      </div>
+                      <div class="row form-group">
+                        <div class="col">
+                          <label for="password">Password :</label>
+                          <input type="password" class="form-control" placeholder="Enter your new password" name="password" required>
+                        </div>
+                      </div>
+                      <div class="row form-group">
+                        <div class="col">
+                          <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="row form-group" style="margin-top: 40px;">
+                        <div class="col">
+                          <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Update Profile</button>
+                      <a href="viewadmin.php" class="btn btn-outline-danger">Cancel</a>
+                        <input type="hidden" name="id" value="<?php echo $userId ?>">
+                    </form>
+                    </div>
+                  </div>
                 </div>
-                <br>
-                <div>
-                    <label>Password: </label>
-                    <input type="password" name="password" required>
-                </div>
-                <br>
-                <div>
-                    <label>Confirm Password: </label>
-                    <input type="password" name="confirmpassword" required>
-                </div>
-                <input type="hidden" name="id" value="<?php echo $userId ?>">
-                <input class="submitButton" type="submit" name="btn" value="Submit">
-                <br><br>
-                <!-- Go back -->
-                <a href="viewadmin.php">Go Back</a>
+              </div>
             </form>
         </div>
     </body>
