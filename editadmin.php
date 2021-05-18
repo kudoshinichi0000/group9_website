@@ -36,7 +36,8 @@
     	 	endif;?>
         <div class="center">
             <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
-                <h1>Edit Profile</h1>
+              <div class="row">
+                <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit
                 <div class="formAdjust">
                     <label >Username: </label>
                     <input type="text" name="username" required>
