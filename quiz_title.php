@@ -37,7 +37,6 @@
       <div class="row">
           <span class="title" style="margin-left:40%;font-size:30px;"><b>Enter Quiz Details<b></span>
       </div>
-      <div>
         <div class="container">
           <div class="row formContainer">
             <div class="col-lg-12">
@@ -46,13 +45,15 @@
                   <div clas="col">
                   <label>Title:</label>
                   <input type="text" class="form-control name="quiz_title" required>
-                  <div>
                 </div>
+              </div>
+                <div></div>
             </div>
           </form>
-          </div>
+        </div>
         </div>
       </div>
+    </div>
 			<table border="1" height="350px" width="35%" class="container1">
         <tr>
 					<th colspan="2"><h2>New Quiz</h2>
