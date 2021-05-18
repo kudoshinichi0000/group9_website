@@ -27,9 +27,8 @@ $result = mysqli_query($con, $query);
      <?php unset($_SESSION['delsuccess']);
     endif;?>
     <div class="container">
-    </div
-    <h1>Admins: </h1>
-    <table align="center">
+      <h1>Admins: </h1>
+        <table class="table table-hover" align="center">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -54,5 +53,6 @@ $result = mysqli_query($con, $query);
                           ?>
                     </tbody>
                 </table>
+  </div>
   </body>
 </html>
