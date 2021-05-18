@@ -61,6 +61,7 @@
                       <option value="Educational"> Educational<option>
                       <option value="Entertainment"> Entertainment</option>
                       <option value="Mix">Mix</option>
+                    </select>
                   </div>
               </div>
             </div>
