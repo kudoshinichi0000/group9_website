@@ -68,41 +68,6 @@
         </div>
       </div>
     </div>
-			<table border="1" height="350px" width="35%" class="container1">
-        <tr>
-					<th colspan="2"><h2>New Quiz</h2>
-				</tr>
-
-        <tr>
-          <th colspan="2"><label for="title"><h3>Title</h3></label>
-          <input type="text" name="quiz_title" placeholder="Enter Quiz Title..." required></th>
-        </tr>
-
-				<tr>
-          <th colspan="2"><label for="Desc"><h3>Description</h3></label>
-          <input type="text" name="Desc" placeholder="Enter Quiz Description..." required></th>
-				</tr>
-
-        <tr>
-          <th colspan="2"><label for="catg"><h3>Categories</h3></label>
-              <select name="catg">
-                <option value="Educational">Educational</option>
-                <option value="Entertainment">Entertainment</option>
-                <option value="Mix">Mix</option>
-              </select>
-          </th>
-        </tr>
-
-        <tr>
-					<th colspan="2"><label for="ProfilePicture"><h3>Quiz Picture</h3></label>
-					<input type="file" name="ProfilePicture" required></th>
-				</tr>
-
-				<tr>
-          <th colspan="2"><a href="quiz_list.php">Cancel</a>
-					<input type="submit" name="submit" class="btn" placeholder="Save" ></th>
-				</tr>
-			</table>
       <input type="hidden" name="quizCode" value="<?php echo $code; ?>">
 		</form>
 	</div>
