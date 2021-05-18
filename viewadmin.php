@@ -55,5 +55,9 @@ $result = mysqli_query($con, $query);
           </tbody>
       </table>
   </div>
+  <script>
+    $('.del-btn').click((e) => {
+      e.preventDefault();
+    }
   </body>
 </html>
