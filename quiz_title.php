@@ -44,13 +44,13 @@
                 <div class="row form-group">
                   <div clas="col">
                   <label>Title:</label>
-                  <input type="text" class="form-control placeholder="Enter Quiz Title" name="quiz_title" required>
+                  <input type="text" class="form-control" placeholder="Enter Quiz Title" name="quiz_title" required>
                 </div>
               </div>
               <div class="row from-group" >
                 <div class="col">
                 <label>Description:</label>
-                <textarea class="form-control" rows="2" placeholder="Enter Description"
+                <textarea class="form-control" rows="2" placeholder="Enter Description" name
                 </div>
               </div>
             </div>
