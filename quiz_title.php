@@ -67,6 +67,7 @@
               <div class="row form-group">
                 <div class="col">
                   <label for="ProfilePicture"> ProfilePicture</label>
+                  <input type="file" accept="image/*" class="form-control" required>
                 </div>
              </div>
 
