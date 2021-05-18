@@ -16,7 +16,7 @@
     include_once("navbaradmin.php");
     $code = rand();
     ?>
-    <br><br><br><br><br><br><br><br>
+
     <div class="container1">
 		<form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
       <div class="row">
