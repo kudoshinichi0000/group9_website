@@ -43,14 +43,14 @@
               <form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
                 <div class="row form-group">
                   <div clas="col">
-                  <label for="title">Title:.....</label>
+                  <label for="title">Title:</label>
                   <input type="text" class="form-control" placeholder="Enter Quiz Title" name="quiz_title" required>
                 </div>
               </div>
               <div class="row from-group" >
                 <div class="col">
                 <label for="Desc">Description:</label>
-                <textarea class="form-control" rows="2" placeholder="Enter Quiz Description...." required>
+                <textarea class="form-control" rows="2" placeholder="Enter Quiz Description...." required></textarea>
                 </div>
               </div>
               <div>
