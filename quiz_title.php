@@ -72,6 +72,8 @@
              </div>
              <div class="row form-group">
                <div class="col">
+                 <a href="#" class="btn btn-outline-danger">Cancel</a>
+
                </div>
              </div>
              <div class="row form-group" style="margin-top:20px;">
