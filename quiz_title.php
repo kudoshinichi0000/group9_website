@@ -50,6 +50,7 @@
               <div class="row from-group" >
                 <div class="col">
                 <label>Description:</label>
+                <textarea class="form-control" rows="2" placeholder="Enter Description"
                 </div>
               </div>
             </div>
