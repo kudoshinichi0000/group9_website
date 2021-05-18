@@ -60,6 +60,10 @@
                             <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
                         </div>
                       </div>
+                      <div>
+                        <div class="row form-group" style="margin-top: 40px;">
+                        </div>
+                      </div>
                       <input type="hidden" name="id" value="<?php echo $userId ?>">
                     </form>
                     </div>
