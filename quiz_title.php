@@ -75,6 +75,7 @@
              <div class="row form-group" style="margin-top: 40px;">
                <div class="col">
                  <button type="submit" name="button" class="btn btn-outline-success"Save Details</button>
+                   <br>
                  <a href="quiz_list.php" class="btn btn-outline-danger">Cancel</a>
                </div>
              </div>
