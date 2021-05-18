@@ -26,6 +26,8 @@ $result = mysqli_query($con, $query);
      </script>
      <?php unset($_SESSION['delsuccess']);
     endif;?>
+    <div class="container">
+    </div
     <h1>Admins: </h1>
     <table align="center">
                     <thead>
