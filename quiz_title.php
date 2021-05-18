@@ -43,7 +43,7 @@
               <form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
                 <div class="row form-group">
                   <div clas="col">
-                  <label>Title:</label>
+                  <label for="title">Title:</label>
                   <input type="text" class="form-control" placeholder="Enter Quiz Title" name="quiz_title" required>
                 </div>
               </div>
