@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>quiz Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min2.css">
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
     <style media="screen">
     table {
