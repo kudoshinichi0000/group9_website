@@ -50,7 +50,7 @@
               <div class="row from-group" >
                 <div class="col">
                 <label for="Desc">Description:</label>
-                <textarea class="form-control" rows="2" placeholder="Enter Description" name
+                <textarea class="form-control" rows="2" placeholder="Enter Quiz Description...." required>
                 </div>
               </div>
             </div>
