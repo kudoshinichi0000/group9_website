@@ -47,7 +47,11 @@
                   <input type="text" class="form-control name="quiz_title" required>
                 </div>
               </div>
-                <div></div>
+              <div class="row from-group" >
+                <div class="col">
+                <label>Description:</label>
+                </div>
+              </div>
             </div>
           </form>
         </div>
