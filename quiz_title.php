@@ -70,6 +70,10 @@
                   <input type="file" accept="image/*" class="form-control" required>
                 </div>
              </div>
+             <div class="row form-group">
+               <div class="col">
+               </div>
+             </div>
              <div class="row form-group" style="margin-top:20px;">
                <div class="col">
                  <button type="submit" name="submit" class="btn btn-primary"> Save</button>
