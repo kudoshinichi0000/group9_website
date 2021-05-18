@@ -35,7 +35,7 @@
               <div class="row from-group" >
                 <div class="col">
                 <label for="Desc">Description:</label>
-                <textarea class="form-control" rows="2" placeholder="Enter Quiz Description...." required></textarea>
+                <textarea class="form-control" rows="2" name="Desc" placeholder="Enter Quiz Description...." required></textarea>
                 </div>
               </div>
               <div>
@@ -52,13 +52,13 @@
               <div class="row form-group">
                 <div class="col">
                   <label for="ProfilePicture"> ProfilePicture</label>
-                  <input type="file" accept="image/*" class="form-control" name="image">
+                  <input type="file" accept="image/*" class="form-control" name="ProfilePicture" required>
                 </div>
              </div>
              <div class="row form-group" style="margin-top: 40px;">
                <div class="col">
-                 <button type="submit" name="button" class="btn btn-outline-success">Save Details</button>
                  <a href="quiz_list.php" class="btn btn-outline-danger">Cancel</a>
+                 <button type="submit" name="button" class="btn btn-outline-success">Save Details</button>
                </div>
              </div>
             </div>
