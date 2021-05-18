@@ -60,13 +60,13 @@
                             <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
                         </div>
                       </div>
-
+                      <input type="hidden" name="id" value="<?php echo $userId ?>">
+                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
-                    <label>Confirm Password: </label>
-                    <input type="password" name="confirmpassword" required>
-                </div>
+
                 <input type="hidden" name="id" value="<?php echo $userId ?>">
                 <input class="submitButton" type="submit" name="btn" value="Submit">
                 <br><br>
