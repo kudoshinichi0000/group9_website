@@ -44,7 +44,7 @@
                 <div class="row form-group">
                   <div clas="col">
                   <label>Title:</label>
-                  <input type="text" class="form-control name="quiz_title" required>
+                  <input type="text" class="form-control placeholder="Enter Quiz Title" name="quiz_title" required>
                 </div>
               </div>
               <div class="row from-group" >
