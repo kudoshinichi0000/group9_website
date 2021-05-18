@@ -72,9 +72,6 @@
                   </div>
                 </div>
               </div>
-                <!-- Saved and cancel Button -->
-                <input type="hidden" name="id" value="<?php echo $userId ?>">
-                <input class="submitButton" type="submit" name="btn" value="Submit">
             </form>
         </div>
     </body>
