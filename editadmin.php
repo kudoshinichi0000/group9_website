@@ -37,7 +37,7 @@
         <div class="center">
             <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
               <div class="row">
-                <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit
+                <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
                 <div class="formAdjust">
                     <label >Username: </label>
                     <input type="text" name="username" required>
