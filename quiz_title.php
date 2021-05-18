@@ -56,7 +56,7 @@
               <div>
                 <div class="row form-group">
                   <div class="col">
-                    <label>Section:</label>
+                    <label for="catg">Section:</label>
                     <select class="form-control" name="catg" required>
                   </div>
               </div>
