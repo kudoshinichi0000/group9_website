@@ -56,6 +56,7 @@
               <div>
                 <div class="row form-group">
                   <div class="col">
+                    <label>Section:</label>
                   </div>
               </div>
             </div>
