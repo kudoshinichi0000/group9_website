@@ -70,6 +70,10 @@
                   <input type="file" accept="image/*" class="form-control" required>
                 </div>
              </div>
+             <div class="row form-group" style="margin-top:20px">
+               <div>
+               </div>
+             </div>
 
             </div>
           </form>
