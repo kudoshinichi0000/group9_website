@@ -75,9 +75,6 @@
                 <!-- Saved and cancel Button -->
                 <input type="hidden" name="id" value="<?php echo $userId ?>">
                 <input class="submitButton" type="submit" name="btn" value="Submit">
-                <br><br>
-                <!-- Go back -->
-                <a href="viewadmin.php">Go Back</a>
             </form>
         </div>
     </body>
