@@ -57,14 +57,13 @@
                       <div class="row form-group">
                         <div class="col">
                           <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
                         </div>
                       </div>
 
                   </div>
                 </div>
               </div>
-            </div>
-
                     <label>Confirm Password: </label>
                     <input type="password" name="confirmpassword" required>
                 </div>
