@@ -37,7 +37,7 @@
     <div class="container1">
 		<form action="quizTitleHandler.php" method="POST" enctype="multipart/form-data">
       <div class="row">
-          <span class="title" style="margin-left:30%;font-size:30px;"><b>Enter Quiz Details<b></span>
+          <span class="title" style="margin-left:40%;font-size:30px;"><b>Enter Quiz Details<b></span>
       </div>
         <div class="container">
           <div class="row formContainer">
