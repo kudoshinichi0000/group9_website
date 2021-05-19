@@ -67,7 +67,7 @@
      <div class="SectionQ">
 
        <div class="mid">
-         <br><h2>Questions</h2><hr>
+         <br><h2>Questions</h2>
        </div>
 
        <?php
