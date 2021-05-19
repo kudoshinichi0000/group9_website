@@ -23,10 +23,11 @@
 
 					if(password_verify($password, $user_data['password']))
 					{
-
+						$_SESSION['username'] = $username;
 						$_SESSION['userid'] = $user_data['userid'];
 						header("Location: resultsadmin.php");
 						die;
+
 					}
 				}
 			}
@@ -92,8 +93,6 @@
 				</tr>
 				<tr>
             <td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
-
-
         </tr>
         		<tr>
 								<td><a href="#" class="iconbtn far fa-arrow-alt-circle-left"></i></td>

@@ -1,7 +1,16 @@
 <?php include_once("db.php");
 
-$query = "SELECT * FROM admin";
+if ($_SESSION["username"] == "mod") {
+  header("location: viewadmin.php");
+  exit();
+}
+
+$id = $_SESSION['userid'];
+$query = "SELECT * FROM admin WHERE userid = $id";
 $result = mysqli_query($con, $query);
+$admin = mysqli_fetch_assoc($result);
+$fetchname = $admin['username'];
+$fetchid = $admin['userid'];
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,7 +21,7 @@ $result = mysqli_query($con, $query);
     <script src="js/bootstrap.bundle.min.js"> </script>
 
 
-    <title>ViewAdmin</title>
+    <title>View User</title>
   </head>
   <body>
   <!-- User Successfully Edited-->
@@ -33,6 +42,7 @@ $result = mysqli_query($con, $query);
     endif;?>
     <div class="container">
       <h1>Admins: </h1>
+      <h1>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</h1>
         <table class="table table-hover" align="center">
             <thead>
               <tr>
@@ -41,19 +51,20 @@ $result = mysqli_query($con, $query);
             </thead>
         <tbody>
           <?php
-          while($admin = mysqli_fetch_assoc($result))
-          {
+
             echo "
                 <tr>
                   <td>
-                    {$admin['username']}
+                    $fetchname
                   </td>
+
                   <td>
-                    <a class='link' href='editadmin.php?id={$admin['userid']}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$admin['userid']} '>Delete</a>
+                    <a class='link' href='editadmin.php?id={$fetchid}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$fetchid} '>Delete</a>
+
                   </td>
                 </tr>
                 ";
-          }
+
             ?>
           </tbody>
       </table>

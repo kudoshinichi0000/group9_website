@@ -26,10 +26,10 @@ if(isset($_POST['btn']))
         else
         {//Edit success
             $pass = password_hash($password, PASSWORD_DEFAULT);
-            $update = "UPDATE admin SET username='$username', password='$pass' WHERE id='$userId'";
+            $update = "UPDATE admin SET username='$username', password='$pass' WHERE userid='$userId'";
             $runQueryUpdateUser = mysqli_query($con, $update);
             $_SESSION['editsuccess'] = "User Successfully Edited!";
-            header("Location: viewadmin.php");
+            header("Location: viewadminuser.php");
             exit();
         }
       }
