@@ -429,3 +429,12 @@ section {
   padding-left: 13.3%;
 	margin-left: 1em;
 }
+.quizzes{
+	border: 1px solid black;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+.quizzes :hover{
+	background-color: yellow;
+}

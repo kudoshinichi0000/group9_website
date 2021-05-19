@@ -13,9 +13,7 @@
 <body>
 
 	<?php
-		include_once "db.php";
 		include_once("navbar.php");
-
 	?>
 
 	<div class="Greet">
@@ -28,16 +26,39 @@
 		</video>
 	</div>
 
-	<!---<div id="dropdown">
+	<div id="dropdown">
 		<option id="cat">Categories</option>
 		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
 		</div>
-	</div>--->
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
+
+			<?php
+				include_once("db.php");
+				$query = "SELECT * FROM quiz_list";
+				$execQuery = mysqli_query($con, $query);
+				while ($fetchQuiz = mysqli_fetch_assoc($execQuery)) {
+					$pic = $fetchQuiz["picture"];
+					$title = $fetchQuiz['title'];
+	        $Desc = $fetchQuiz["description"];
+	        $Cat = $fetchQuiz["categories"];
+	        $Pub = $fetchQuiz["publish"];
+	        $newDate = date("m-d-Y", strtotime($Pub));
+
+					echo "
+						<a href='#' class='quizzes'>
+						<img src='res/quizPicture/$pic' width='30%' style='float: left; margin-left: 1em;' alt='image not found' >
+						<h4>Title: $title</h4>
+						<h4>Description: $Desc</h4>
+						<h4>Categories: $Cat</h4>
+						<h4>Publication Date: $newDate</h4>
+						</a>
+					";
+				}
+			 ?>
 
 		</div>
 </body>
