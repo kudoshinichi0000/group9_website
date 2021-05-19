@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
-
 </head>
 <body>
 
@@ -26,12 +25,12 @@
 		</video>
 	</div>
 
-	<div id="dropdown">
+	<!--<div id="dropdown">
 		<option id="cat">Categories</option>
 		<div id="content">
 			<a href="#">Educational</a>
 			<a href="#">Entertainment</a>
-		</div>
+		</div>--->
 
 	<div class="centerBlack">News Feed</div>
 		<div class="DisplayQuestions">
@@ -50,11 +49,11 @@
 
 					echo "
 						<a href='#' class='quizzes'>
-						<img src='res/quizPicture/$pic' width='30%' style='float: left; margin-left: 1em;' alt='image not found' >
-						<h4>Title: $title</h4>
-						<h4>Description: $Desc</h4>
-						<h4>Categories: $Cat</h4>
-						<h4>Publication Date: $newDate</h4>
+							<img src='res/quizPicture/$pic' width='140px' height='140px;' style='border-radius:25em; float: left; margin-left: 1em; margin-right: 1em;' alt='image not found' >
+							<h4>Title: $title</h4>
+							<h4>Description: $Desc</h4>
+							<h4>Categories: $Cat</h4>
+							<h4>Publication Date: $newDate</h4><br><br>
 						</a>
 					";
 				}
