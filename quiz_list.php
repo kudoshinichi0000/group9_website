@@ -63,22 +63,19 @@
       $Pub = $fetchTitle['publish'];
 
 
-      if(strlen($title) >= 10){
-            $title = substr($title,0,20) . "...";
+      if(strlen($title) >= 1){
+            $Ftitle = substr($title,0,10) . "...";
 
-            if(strlen($Desc) >= 10){
-                  $Desc = substr($Desc,0,10) . "...";
+            if(strlen($Desc) >= 1){
+                  $FDesc = substr($Desc,0,10) . "...";
 
                   $newDate = date("m-d-Y", strtotime($Pub));
 
                   echo "
                       <tr>
                         <br><br>
-                        <th colspan='2'>
-                          <div>
-                            <h2>$title</h2></th>
-                          </div>
-                        <th colspan='2'><h2>$Desc</h2></th>
+                        <th colspan='2'><h2>$Ftitle</h2></th>
+                        <th colspan='2'><h2>$FDesc</h2></th>
                         <th colspan='2'><h2>$Cat</h2></th>
                         <th colspan='2'><h2>$newDate</h2></th>
                         <th colspan='2'><h2>$code</h2></th>
