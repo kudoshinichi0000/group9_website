@@ -40,6 +40,7 @@
 				$query = "SELECT * FROM quiz_list";
 				$execQuery = mysqli_query($con, $query);
 				while ($fetchQuiz = mysqli_fetch_assoc($execQuery)) {
+					$QuizCode = $fetchQuiz["quiz_code"];
 					$pic = $fetchQuiz["picture"];
 					$title = $fetchQuiz['title'];
 	        $Desc = $fetchQuiz["description"];
@@ -48,7 +49,7 @@
 	        $newDate = date("m-d-Y", strtotime($Pub));
 
 					echo "
-						<a href='#' class='quizzes'>
+						<a href='takeQuiz.php?quiz_code=$QuizCode' class='quizzes'>
 							<img src='res/quizPicture/$pic' width='140px' height='140px;' style='border-radius:25em; float: left; margin-left: 1em; margin-right: 1em;' alt='image not found' >
 							<h4>Title: $title</h4>
 							<h4>Description: $Desc</h4>
