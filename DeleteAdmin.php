@@ -1,7 +1,7 @@
 <?php
   include_once("db.php");
   $adminid = $_GET["id"];
-  $query = "SELECT * FROM admin WHERE id = '$adminid'";
+  $query = "SELECT * FROM admin WHERE userid = '$adminid'";
   $execQuery = mysqli_query($con, $query);
 
   $userInfo = mysqli_fetch_assoc($execQuery);

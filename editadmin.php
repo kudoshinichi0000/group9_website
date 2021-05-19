@@ -4,7 +4,7 @@
 
     /*Preparing query*/
     $userId = $_GET["id"];
-    $query = "SELECT * FROM admin WHERE id = '$userId'";
+    $query = "SELECT * FROM admin WHERE userid = '$userId'";
     $execQuery = mysqli_query($con, $query);
 
     $userInfo = mysqli_fetch_assoc($execQuery);

@@ -31,5 +31,5 @@
 	<?php echo "Username: $username <br>
 	 						UserId: $userId"; ?>
 </body>
-	<?php include_once "footer.php";?>
+	<?php include_once "footerr.php";?>
 </html>
