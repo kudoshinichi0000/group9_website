@@ -10,5 +10,5 @@
 	<?php include_once "db.php"; include_once "navbar.php" ?>
 
 </body>
-	<?php include_once "footer.php";?>
+	<?php include_once "footerr.php";?>
 </html>
