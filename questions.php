@@ -84,18 +84,18 @@
 
            //This section will provide information about the quiz
            echo "
-             <table class='cons' width='100%' height='1em;'>
+             <table class='cons' width='100%' height='1em;'
                <tr>
                  <th colspan='5'>
-                   <i style='float:left; margin-left: 1em; font-size: 1em;'> Type of Quiz: $typeOfQuiz </i>
-                   <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $points </i>
+                   <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
+                   <i style='float:left; margin-left: 1em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
                    <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                    <a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                  </th>
                </tr>
              </table>";
-
+         }
 
         //Getting or fetching all rows from true or false
         $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
@@ -112,41 +112,19 @@
 
          //This section will provide information about the quiz
          echo "
-         <div class='cons2'>
-           <table width='100%'>
+           <table class='cons' width='100%' height='1em;'>
              <tr>
-               <th colspan='2'><label><h3>Question: $questionn</h3></label><hr></th>
+               <th colspan='5'>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointss </i>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionn</i>
+                 <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                 <a href='ToFEdit.php?id=$questionnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+              </th>
              </tr>
 
-             <tr>
-                <th colspan='2'><a href='deletetrueorfalse.php?id=$questionnId'>Delete</a>
-                <a href='ToFEdit.php?id=$questionnId'>Edit</a></th>
-             </tr>
-             <tr>
-               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointss </i></label></th>
-             </tr>
-
-             <tr>
-               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuizz </i></label></th>
-             </tr>
-
-             <tr>
-               <th colspan='2'><label style='float: left; margin-left: 4em;'><h3>Option: </h3></label></th>
-             </tr>
-
-             <tr>
-               <th colspan='2'>
-                 <label for='True'>True</label><br>
-                 <label for='False'>False</label><br>
-               </th>
-             </tr>
-
-             <tr>
-               <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answerr</h3></label></th>
-             </tr>
-           </table>
-         </div>";
-
+           </table>";
+       }
 
        //Getting or fetching all rows from Identification
        $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
@@ -163,33 +141,19 @@
 
         //This section will provide information about the quiz
         echo "
-        <div class='cons3'>
-          <table width='100%'>
+          <table class='cons' width='100%' height='1em;'>
             <tr>
-              <th colspan='2'><label><h3>Question: $questionnn</h3></label><hr></th>
-            </tr>
+              <th colspan='5'>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointsss </i>
+                 <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionnn</i>
+                 <a href='IdenDelete.php?id=$questionnnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                 <a href='IEdit.php?id=$questionnnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+               </th>
 
-            <tr>
-               <th colspan='2'><a href='IdenDelete.php?id=$questionnnId'>Delete</a>
-               <a href='IEdit.php?id=$questionnnId'>Edit</a></th>
-            </tr>
-            <tr>
-              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $pointsss </i></label></th>
-            </tr>
-
-            <tr>
-              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuizzz </i></label></th>
-            </tr>
-
-            <tr>
-              <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Answer: $answerrr </i></label></th>
-            </tr>
-          </table>
-        </div>";
+          </table>";
 
       }
-    }
-  }
        ?>
    </div>
 
