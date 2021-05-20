@@ -42,6 +42,7 @@ $title = $fetch['title'];
     <div class="Container">
 
     <?php
+    echo "<br><div style='text-align:center; font-size: 2em;'>Multiple Question</div>";
     //This is for user id
    $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
 
@@ -58,10 +59,10 @@ $title = $fetch['title'];
     $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
 
       //This section will provide information about the quiz
-      
-      echo "<br><br>
+
+      echo "<br>
       <div class='cons'>
-        <table width='100%'>
+        <table width='100%' style='background-color: #dacb72;'>
           <tr>
             <th colspan='2'><label><h3>Question: $question</h3></label></th>
           </tr>
@@ -92,6 +93,7 @@ $title = $fetch['title'];
       </div><br><br>";
     }
 
+    echo "<br><div style='text-align:center; font-size: 2em;'>True or False</div>";
     //Getting or fetching all rows from true or false
     $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
 
@@ -109,7 +111,7 @@ $title = $fetch['title'];
 
      echo "<br><br>
      <div class='cons2'>
-       <table width='100%'>
+       <table width='100%' style='background-color: #dda3f1;'>
          <tr>
            <th colspan='2'><label><h3>Question: $questionn</h3></label></th>
          </tr>
@@ -129,6 +131,8 @@ $title = $fetch['title'];
        </table>
      </div><br><br>";
    }
+
+   echo "<br><div style='text-align:center; font-size: 2em;'>Identification</div>";
    //Getting or fetching all rows from Identification
    $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
 
@@ -145,7 +149,7 @@ $title = $fetch['title'];
     //This section will provide information about the quiz
     echo "<br><br>
     <div class='cons3'>
-      <table width='100%'>
+      <table width='100%' style='background-color: #e55f5f;'>
         <tr>
           <th colspan='2'><label><h3>Question: $questionnn</h3></label></th>
         </tr>
