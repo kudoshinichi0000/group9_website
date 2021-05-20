@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/takeQuiz.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+  </head>
+  <body>
 <?php
 
 //Step 1 Database Connectivity
@@ -24,10 +33,15 @@ $title = $fetch['title'];
   </head>
   <body>
     <?php
+
     include_once("navbar.php");
-    echo "<br><br><br><br><br><br> $title";
+    echo "<br><br><br><br><br><br>
+          <div class='quiz'> $title </div><br><br><br>";
 
+    ?>
+    <div class="Container">
 
+    <?php
     //This is for user id
    $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
 
@@ -44,7 +58,8 @@ $title = $fetch['title'];
     $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
 
       //This section will provide information about the quiz
-      echo "
+      
+      echo "<br><br>
       <div class='cons'>
         <table width='100%'>
           <tr>
@@ -74,7 +89,7 @@ $title = $fetch['title'];
           </tr>
 
         </table>
-      </div>";
+      </div><br><br>";
     }
 
     //Getting or fetching all rows from true or false
@@ -91,7 +106,8 @@ $title = $fetch['title'];
      $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
 
      //This section will provide information about the quiz
-     echo "
+
+     echo "<br><br>
      <div class='cons2'>
        <table width='100%'>
          <tr>
@@ -111,7 +127,7 @@ $title = $fetch['title'];
          </tr>
 
        </table>
-     </div>";
+     </div><br><br>";
    }
    //Getting or fetching all rows from Identification
    $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
@@ -127,7 +143,7 @@ $title = $fetch['title'];
     $typeOfQuizzz = $fetchtrueorfalse['typeOfQuiz'];
 
     //This section will provide information about the quiz
-    echo "
+    echo "<br><br>
     <div class='cons3'>
       <table width='100%'>
         <tr>
@@ -138,9 +154,10 @@ $title = $fetch['title'];
           <th colspan='2'><input type='text' name='identification'></th>
         </tr>
       </table>
-    </div>";
+    </div><br><br>";
 
   }
      ?>
+     </div>
   </body>
 </html>

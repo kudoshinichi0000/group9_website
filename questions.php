@@ -84,7 +84,7 @@
 
            //This section will provide information about the quiz
            echo "
-             <table class='cons' width='100%' height='1em;'
+             <table class='cons' width='100%' height='1em' style='background-color: #dacb72;'>
                <tr>
                  <th colspan='5'>
                    <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
@@ -92,6 +92,7 @@
                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
                    <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                    <a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+
                  </th>
                </tr>
              </table>";
@@ -112,7 +113,7 @@
 
          //This section will provide information about the quiz
          echo "
-           <table class='cons' width='100%' height='1em;'>
+           <table class='cons' width='100%' height='1em;' style='background-color: #dda3f1;'>
              <tr>
                <th colspan='5'>
                  <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
@@ -141,7 +142,7 @@
 
         //This section will provide information about the quiz
         echo "
-          <table class='cons' width='100%' height='1em;'>
+          <table class='cons' width='100%' height='1em;' style='background-color: #e55f5f;'>
             <tr>
               <th colspan='5'>
                  <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>

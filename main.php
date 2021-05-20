@@ -49,12 +49,17 @@
 	        $newDate = date("m-d-Y", strtotime($Pub));
 
 					echo "
-						<a href='takeQuiz.php?quiz_code=$QuizCode' class='quizzes'>
-							<img src='res/quizPicture/$pic' width='140px' height='140px;' style='border-radius:25em; float: left; margin-left: 1em; margin-right: 1em;' alt='image not found' >
-							<h4>Title: $title</h4>
-							<h4>Description: $Desc</h4>
-							<h4>Categories: $Cat</h4>
-							<h4>Publication Date: $newDate</h4><br><br>
+						<a href='takeQuiz.php?quiz_code=$QuizCode' class='quizzes'
+							style='
+									color: black;
+									text-decoration: none;
+									font-size: 0.5em;
+									'>
+								<img src='res/quizPicture/$pic' width='140px' height='140px;' style='border-radius:25em; float: left; margin-left: 1em; margin-right: 1em;' alt='image not found' >
+								<h5>Title: $title</h5>
+								<h5>Description: $Desc</h5>
+								<h5>Categories: $Cat</h5>
+								<h5>Publication Date: $newDate</h5><br><br>
 						</a>
 					";
 				}
