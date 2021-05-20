@@ -80,53 +80,22 @@
          $questionId = $fetchQuestion['id'];
          $question = $fetchQuestion['question'];
          $points = $fetchQuestion['questionPoints'];
-         $option1 = $fetchQuestion['option1'];
-         $option2 = $fetchQuestion['option2'];
-         $option3 = $fetchQuestion['option3'];
-         $option4 = $fetchQuestion['option4'];
-         $answer = $fetchQuestion['answer'];
          $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
 
            //This section will provide information about the quiz
            echo "
-           <div class='cons'>
-             <table width='100%'>
+             <table class='cons' width='100%' height='1em;'>
                <tr>
-                 <th colspan='2'><label><h3>Question: $question</h3></label><hr></th>
-               </tr>
-
-               <tr>
-                  <th colspan='2'><a href='deleteQuestion.php?id=$questionId'>Delete</a>
-                  <a href='MultiQEdit.php?id=$questionId'>Edit</a></th>
-               </tr>
-               <tr>
-                 <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Points: $points </i></label></th>
-               </tr>
-
-               <tr>
-                 <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><i> Type of Quiz: $typeOfQuiz </i></label></th>
-               </tr>
-
-               <tr>
-                 <th colspan='2'><label style='float: left; margin-left: 4em;'><h3>Option: </h3></label></th>
-               </tr>
-
-               <tr>
-                 <th colspan='2'>
-
-                   <label for='A'>A. $option1</label><br>
-                   <label for='B'>B. $option2</label><br>
-                   <label for='C'>C. $option3</label><br>
-                   <label for='D'>D. $option4</label>
+                 <th colspan='5'>
+                   <i style='float:left; margin-left: 1em; font-size: 1em;'> Type of Quiz: $typeOfQuiz </i>
+                   <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $points </i>
+                   <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
+                   <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                   <a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                  </th>
                </tr>
+             </table>";
 
-               <tr>
-                 <th colspan='2'><label style='float:left; margin-left: 1em; font-size: 1em;'><h3>Answer: $answer</h3></label></th>
-               </tr>
-             </table>
-           </div>";
-         }
 
         //Getting or fetching all rows from true or false
         $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
@@ -177,7 +146,7 @@
              </tr>
            </table>
          </div>";
-       }
+
 
        //Getting or fetching all rows from Identification
        $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
@@ -219,6 +188,8 @@
         </div>";
 
       }
+    }
+  }
        ?>
    </div>
 

@@ -27,7 +27,7 @@ $title = $fetch['title'];
     include_once("navbar.php");
     echo "<br><br><br><br><br><br> $title";
 
-    
+
     //This is for user id
    $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
 
