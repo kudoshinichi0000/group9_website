@@ -17,6 +17,7 @@
     $fetchCodes = mysqli_fetch_assoc($execQuery);
     $question = $fetchCodes["question"];
     $code = $fetchCodes["quiz_code"];
+    $questionP = $fetchCodes["points"];
 
     echo "
     <form action='deletetrueorfalseHandler.php' method='POST'>
@@ -35,6 +36,7 @@
       </table>
       <input type='hidden' name='quizId' value='$quizId'>
       <input type='hidden' name='quizCode' value='$code'>
+      <input type='hidden' name='quizP' value='$questionP'>
     </form>
     ";
 

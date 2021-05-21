@@ -35,10 +35,6 @@
             <input type='text' name='IdenAnswer' value='$answer' required></th>
         </tr>
 
-          <tr>
-            <th colspan='3'><h2><label for='points'>points: </label> </h2>
-            <h2><input type='number' name='points' value='$points' required> </h2></th>
-        </tr>
         <tr>
           <th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>
           <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>

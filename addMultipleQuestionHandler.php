@@ -14,13 +14,29 @@
   //Hidden Input
   $quizC = $_POST["hiencod"];
 
-    $queryyy = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz)
+    //inserting in multiple question
+    $query = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz)
                 VALUES('$quizC', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', 'Multiple Questions')";
-    $execQueryyy = mysqli_query($con, $queryyy);
-      if($execQueryyy){
-        header("location: questions.php?quiz_code=$quizC");
-      }else{
-        echo "$quizC";
+    $execQuery = mysqli_query($con, $query);
+      if($execQuery){
+
+        //i made this to add a points in Overall scores in quiz_list
+        $query = " SELECT * FROM quiz_list";
+        $execQuery = mysqli_query($con, $query);
+        while($fetchQuestion = mysqli_fetch_assoc($execQuery)){
+        $addscore = $fetchQuestion["OverallScores"];
+        $items = $fetchQuestion["items"];
+        $OverallScores = $addscore + $points;
+        $iitem = $items + 1;
+         $addScore = "UPDATE quiz_list
+                      SET OverallScores = $OverallScores, items = $iitem
+                      WHERE quiz_code = $quizC";
+         $execaddScore = mysqli_query($con, $addScore);
+
+         if($execaddScore){
+           header("location: questions.php?quiz_code=$quizC");
+         }
+       }
       }
 
  ?>

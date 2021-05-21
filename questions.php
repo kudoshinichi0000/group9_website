@@ -37,19 +37,18 @@
      	  $fetch = mysqli_fetch_assoc($execQuery);
         $title = $fetch['title'];
         $QuizPic = $fetch["picture"];
-        $Desc = $fetch["description"];
         $Cat = $fetch["categories"];
-        $Pub = $fetch["publish"];
-        $newDate = date("m-d-Y", strtotime($Pub));
+        $OS = $fetch["OverallScores"];
+        $items = $fetch["items"];
           //This section will provide information about the quiz
           echo "
           <div class='Containerhead'>
             <div class='cont'>
-            <img src='res/quizPicture/$QuizPic' width='15%' style='border-radius: 25em;' alt='image not found' class='Prof' >
+            <img src='res/quizPicture/$QuizPic' width='10%' height='10%' style='border-radius: 25em;' alt='image not found' class='Prof' >
               <h4>Title: $title</h4>
-              <h4>Description: $Desc</h4>
               <h4>Categories: $Cat</h4>
-              <h4>Publication Date: $newDate</h4>
+              <h4>Total Points: $OS</h4>
+              <h4>Items: $items</h4>
             </div>
           </div>";
 
@@ -65,7 +64,6 @@
     ?>
 
      <div class="SectionQ">
-
        <div class="mid">
          <br><h2>Questions</h2><hr>
        </div>

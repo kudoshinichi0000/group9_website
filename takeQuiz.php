@@ -7,6 +7,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
   </head>
   <body>
+
 <?php
 
 //Step 1 Database Connectivity
@@ -62,6 +63,8 @@ $title = $fetch['title'];
 
       echo "<br>
       <div class='cons'>
+      <form action='index.html' method='post'>
+
         <table width='100%' style='background-color: #dacb72;'>
           <tr>
             <th colspan='2'><label><h3>Question: $question</h3></label></th>
@@ -90,6 +93,7 @@ $title = $fetch['title'];
           </tr>
 
         </table>
+        </form>
       </div><br><br>";
     }
 
@@ -159,7 +163,6 @@ $title = $fetch['title'];
         </tr>
       </table>
     </div><br><br>";
-
   }
      ?>
      </div>

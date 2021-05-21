@@ -14,16 +14,16 @@
 }
 
 .Container{
-  margin-left:auto;
-  margin-bottom:auto;
-  margin-top:auto;
-  margin-bottom: 15em;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: 5em;
   width: 70%;
-  border:1px solid black;
+  border: 1px solid black;
 }
 
 .cons{
-  margin:auto;
+  margin: auto;
   width: 93%;
-  border:1px solid black;
+  border: 1px solid black;
 }

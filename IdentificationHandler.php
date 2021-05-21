@@ -17,10 +17,24 @@
 	$execQuery = mysqli_query($con, $Query);
 
     if ($execQuery) {
-      header("Location: questions.php?quiz_code=$quizcode");
-    }else{
-		header("Location: quiz_list.php");
-		exit();
-	}
+      //i made this to add a points in Overall scores in quiz_list
+      $queryy = " SELECT * FROM quiz_list";
+      $execQueryy = mysqli_query($con, $queryy);
+      while($fetch = mysqli_fetch_assoc($execQueryy)){
+      $addscore = $fetch["OverallScores"];
+      $items = $fetch["items"];
+      $OverallScores = $addscore + $points;
+      $iitem = $items + 1;
+
+       $addScore = "UPDATE quiz_list
+                    SET OverallScores = $OverallScores, items = $iitem
+                    WHERE quiz_code = $quizcode";
+
+       $execaddScore = mysqli_query($con, $addScore);
+         if ($execaddScore) {
+           header("Location: questions.php?quiz_code=$quizcode");
+         }
+     }
+    }
 
  ?>

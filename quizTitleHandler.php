@@ -14,7 +14,7 @@
   $query = " SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizCode'";
   $execQuery = mysqli_query($con, $query);
     if ($execQuery) {
-      $insertQuestion = "INSERT INTO quiz_list (admin_id, quiz_code, title, categories ,description) VALUES('$userid', '$quizCode', '$quizTitle', '$Catg' ,'$Desc')";
+      $insertQuestion = "INSERT INTO quiz_list (admin_id, quiz_code, title, categories ,description,items, OverallScores) VALUES('$userid', '$quizCode', '$quizTitle', '$Catg' ,'$Desc', 0, 0)";
       $execInsert = mysqli_query($con, $insertQuestion);
         if($execInsert){
 

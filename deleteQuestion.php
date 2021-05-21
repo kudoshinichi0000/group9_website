@@ -16,6 +16,7 @@
 
     $fetchCodes = mysqli_fetch_assoc($execQuery);
     $question = $fetchCodes["question"];
+    $questionP = $fetchCodes["questionPoints"];
     $code = $fetchCodes["quiz_code"];
 
     echo "
@@ -35,6 +36,7 @@
       </table>
       <input type='hidden' name='quizId' value='$quizId'>
       <input type='hidden' name='quizCode' value='$code'>
+      <input type='hidden' name='quizP' value='$questionP'>
     </form>
     ";
 
