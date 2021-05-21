@@ -21,9 +21,9 @@
       if($execQuery){
 
         //i made this to add a points in Overall scores in quiz_list
-        $query = " SELECT * FROM quiz_list";
-        $execQuery = mysqli_query($con, $query);
-        while($fetchQuestion = mysqli_fetch_assoc($execQuery)){
+        $queryy = " SELECT * FROM quiz_list";
+        $execQueryy = mysqli_query($con, $queryy);
+        while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
         $addscore = $fetchQuestion["OverallScores"];
         $items = $fetchQuestion["items"];
         $OverallScores = $addscore + $points;

@@ -34,9 +34,9 @@
       <table height='50px' width='85%'>
         <tr>
           <th colspan='2'><h2><label>Title: </label></h2>
-          <th colspan='2'><h2><label>Description: </label></h2>
+          <th colspan='2'><h2><label>Items: </label></h2>
+          <th colspan='2'><h2><label>Total Points: </label></h2>
           <th colspan='2'><h2><label>Categories: </label></h2>
-          <th colspan='2'><h2><label>Publication Date: </label></h2>
           <th colspan='2'><h2><label>Quiz Code: </label></h2>
           <th colspan='3'><h2><label>Action: </label></h2>
         </tr>
@@ -58,41 +58,34 @@
       while ($fetchTitle = mysqli_fetch_assoc($execQuery)) {
       $title = $fetchTitle["title"];
       $code = $fetchTitle['quiz_code'];
-      $Desc = $fetchTitle['description'];
-      $Cat = $fetchTitle['categories'];
-      $Pub = $fetchTitle['publish'];
-
+      $items = $fetchTitle['items'];
+      $OS = $fetchTitle['OverallScores'];
+      $Cat= $fetchTitle['categories'];
 
       if(strlen($title) >= 1){
-            $Ftitle = substr($title,0,10) . "...";
+            $Ftitle = substr($title,0,20) . "...";
 
-            if(strlen($Desc) >= 1){
-                  $FDesc = substr($Desc,0,10) . "...";
+            echo "
+              <tr>
+                <br><br>
+                <th colspan='2'><h2>$Ftitle</h2></th>
+                <th colspan='2'><h2>$items</h2></th>
+                <th colspan='2'><h2>$OS</h2></th>
+                <th colspan='2'><h2>$Cat</h2></th>
+                <th colspan='2'><h2>$code</h2></th>
 
-                  $newDate = date("m-d-Y", strtotime($Pub));
+                <th colspan='3'>
+                  <a href='editTitle.php?quiz_code=$code' class='action'>edit title</a>
+                  <a href='questions.php?quiz_code=$code' class='action'>edit/add questions</a>
+                  <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
+                </th>
+              </tr>
 
-                  echo "
-                      <tr>
-                        <br><br>
-                        <th colspan='2'><h2>$Ftitle</h2></th>
-                        <th colspan='2'><h2>$FDesc</h2></th>
-                        <th colspan='2'><h2>$Cat</h2></th>
-                        <th colspan='2'><h2>$newDate</h2></th>
-                        <th colspan='2'><h2>$code</h2></th>
-
-                        <th colspan='3'>
-                          <a href='editTitle.php?quiz_code=$code' class='action'>edit title</a>
-                          <a href='questions.php?quiz_code=$code' class='action'>edit/add questions</a>
-                          <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
-                        </th>
-                      </tr>
-
-                  ";
-                }
-              }
+              ";
             }
           }
         }
+      }
      ?>
 
    </table>
