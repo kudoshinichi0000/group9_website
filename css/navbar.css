@@ -183,12 +183,9 @@ nav a:hover {
 .DisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
-  padding-top: 19px;
-  position: relative;
 	border: 1px solid black;
 	width: 50%;
-	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 11em;
 	color: black;
 }
 
@@ -429,17 +426,4 @@ section {
   padding: 5px;;
   padding-left: 13.3%;
 	margin-left: 1em;
-}
-
-.quizzes{
-	border: 1px solid black;
-	width: 100%;
-	color: black;
-	text-decoration: none;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	font-size: 0.5em;
-}
-.quizzes :hover{
-	background-color: yellow;
 }

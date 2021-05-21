@@ -33,8 +33,6 @@
 		</div>--->
 
 	<div class="centerBlack">News Feed</div>
-		<div class="DisplayQuestions">
-
 			<?php
 				include_once("db.php");
 				$query = "SELECT * FROM quiz_list";
@@ -48,24 +46,27 @@
 	        $Pub = $fetchQuiz["publish"];
 	        $newDate = date("m-d-Y", strtotime($Pub));
 
+					if(strlen($title) >= 1){
+		            $Ftitle = substr($title,0,25) . "...";
 					echo "
-						<a href='takeQuiz.php?quiz_code=$QuizCode' class='quizzes'
+					<div class='DisplayQuestions'>
+						<a href='takeQuiz.php?quiz_code=$QuizCode'
 							style='
 									color: black;
 									text-decoration: none;
-									font-size: 0.5em;
 									'>
-								<img src='res/quizPicture/$pic' width='140px' height='140px;' style='border-radius:25em; float: left; margin-left: 1em; margin-right: 1em;' alt='image not found' >
-								<h5>Title: $title</h5>
+								<img src='res/quizPicture/$pic' width='250px' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
+								<b style='font-size:2em;'>$Ftitle</b>
 								<h5>Description: $Desc</h5>
 								<h5>Categories: $Cat</h5>
 								<h5>Publication Date: $newDate</h5><br><br>
 						</a>
+					</div><br>
 					";
 				}
+			}
 			 ?>
 
-		</div>
 </body>
 	<?php include_once "footerr.php";?>
 </html>

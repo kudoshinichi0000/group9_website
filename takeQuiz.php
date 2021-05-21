@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/takeQuiz.css">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
-  </head>
-  <body>
-
 <?php
 
 //Step 1 Database Connectivity
@@ -31,6 +21,8 @@ $title = $fetch['title'];
   <head>
     <meta charset="utf-8">
     <title><?php echo "$title"; ?></title>
+    <link rel="stylesheet" type="text/css" href="css/takeQuiz.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
   </head>
   <body>
     <?php
@@ -114,7 +106,7 @@ $title = $fetch['title'];
      //This section will provide information about the quiz
 
      echo "<br><br>
-     <div class='cons2'>
+     <div class='cons'>
        <table width='100%' style='background-color: #dda3f1;'>
          <tr>
            <th colspan='2'><label><h3>Question: $questionn</h3></label></th>
@@ -152,7 +144,7 @@ $title = $fetch['title'];
 
     //This section will provide information about the quiz
     echo "<br><br>
-    <div class='cons3'>
+    <div class='cons'>
       <table width='100%' style='background-color: #e55f5f;'>
         <tr>
           <th colspan='2'><label><h3>Question: $questionnn</h3></label></th>
