@@ -27,8 +27,8 @@
           <h2>$question</h2></th>
         </tr>
         <tr>
-          <th colspan='2'><input type='submit' name='Confirm' value='yes'>
-          <input type='submit' name='Confirm' value='no'></th>
+          <th colspan='2'><input type='submit' name='Confirm' value='no'>
+          <input type='submit' name='Confirm' value='yes'></th>
         </tr>
         <tr>
           <th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>

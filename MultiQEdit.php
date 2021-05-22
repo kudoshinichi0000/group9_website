@@ -44,7 +44,7 @@
             <tr>
               <th colspan='2'><label for='typeOfQuiz'><h3>Type of quiz: Multiple Choices</h3></label></th>
             </tr>
-            
+
             <tr>
               <th colspan='2'><label><h3>Option</h3></label></th>
             </tr>

@@ -40,31 +40,19 @@
           </tr>
 
           <tr>
-            <th colspan='2'><label><h3>Option</h3></label></th>
-          </tr>
+            <th colspan='2'><label><h3>Option</h3></label><br>
 
-          <tr>
-            <th colspan='2'>
-              <label for='A'>A.</label>
-              <input type='text' name='A' required><br>
+            <textarea rows='2' cols='40' placeholder='Correct Answer' style='color:red;' name='ans' required></textarea><br><br>
 
-              <label for='B'>B.</label>
-              <input type='text' name='B' required><br>
+            <textarea name='A' rows='2' cols='40' placeholder='Posible Answer (A)' required></textarea><br><br>
 
-              <label for='C'>C.</label>
-              <input type='text' name='C' required><br>
+            <textarea name='B' rows='2' cols='40' placeholder='Posible Answer (B)' required></textarea><br><br>
 
-              <label for='D'>D.</label>
-              <input type='text' name='D' required><br>
+            <textarea name='C' rows='2' cols='40' placeholder='Posible Answer (C)' required></textarea><br><br>
+
+            <textarea name='D' rows='2' cols='40' placeholder='Posible Answer (D)' required></textarea><br><br>
+
             </th>
-          </tr>
-
-          <tr>
-            <th colspan='2'><label><h3>Answer: </h3></label></th>
-          </tr>
-
-          <tr>
-            <th colspan='2'><input type='text' name='ans' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' required></th>
           </tr>
 
           <tr>

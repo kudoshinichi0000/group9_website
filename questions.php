@@ -16,16 +16,6 @@
     $userId = $_SESSION['userid'];
     $code = $_GET["quiz_code"];
 
-    //Step 2 Prepare the query
-	  $query = " SELECT * FROM admin WHERE userid = '$userId'";
-
-    //Step 3 Perform the query
-   	$execQuery = mysqli_query($con, $query);
-
-    //Getting/fetching all rows from the executed query
- 	  $fetch = mysqli_fetch_assoc($execQuery);
-    $username = $fetch['username'];
-
         //This is for user id
         //Step 2 Prepare the query
     	  $query = " SELECT * FROM quiz_list WHERE admin_id = '$userId' AND quiz_code = '$code'";
@@ -44,7 +34,7 @@
           echo "
           <div class='Containerhead'>
             <div class='cont'>
-            <img src='res/quizPicture/$QuizPic' width='10%' height='10%' style='border-radius: 25em;' alt='image not found' class='Prof' >
+            <img src='res/quizPicture/$QuizPic' width='250px' height='150px' alt='image not found' class='Prof' >
               <h4>Title: $title</h4>
               <h4>Categories: $Cat</h4>
               <h4>Total Points: $OS</h4>
