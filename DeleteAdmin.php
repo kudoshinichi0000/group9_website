@@ -38,7 +38,9 @@
               </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">YES</button>
+                <button type="submit" name="choice" class="btn btn-secondary" value="YES">
+                <button type="submit" name="choice" class="btn btn-danger" value="NO">
+                <button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>
             </div>
         </div>
       </div>
