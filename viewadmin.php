@@ -45,7 +45,8 @@ $result = mysqli_query($con, $query);
               <table class="table table dark table-hover table-bordered">
                 <thead>
                   <tr>
-                    <th scopre="col">Name</th>
+                    <th scopre="col">NAME</th>
+                    <th class="text-right">ACTIONS</th>
                   </tr>
                 </thead>
             </div>
