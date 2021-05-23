@@ -62,7 +62,7 @@ $result = mysqli_query($con, $query);
                         </td>
                         </tr>
 
-                    "
+                    ";
                   }
                   ?>
                 </tbody>
