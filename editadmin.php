@@ -40,7 +40,8 @@
               <div class="card-header">
                 <h2><b> EDIT PROFILE <b></h2>
               </div>
-              <div class="center">
+                <div class="card-body">
+                  <div class="center">
                     <div class="row">
                       <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
                     </div>
@@ -80,6 +81,7 @@
                   </form>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
