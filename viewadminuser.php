@@ -45,16 +45,18 @@ $fetchid = $admin['userid'];
      </script>
      <?php unset($_SESSION['delsuccess']);
     endif;?>
-    <div class="card">
-      <div class="card-header">
-        FEATURED
-      </div>
-      <div class="card-body">
-        <h5 class="card-title" SPECIAL MO TO JOKE </h5>
-        <p class="card-text"> With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-     </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          FEATURED
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" SPECIAL MO TO JOKE </h5>
+          <p class="card-text"> With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+       </div>
+    </div>
 
     <div class="container">
       <h1>Admins: </h1>
