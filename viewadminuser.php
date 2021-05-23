@@ -64,7 +64,7 @@ $fetchid = $admin['userid'];
 
                     echo "
                           <tr>
-                          <th scope='row'>1</th>
+                          <th scope='row'></th>
                           <td>
                           $fetchname
                           </td>
