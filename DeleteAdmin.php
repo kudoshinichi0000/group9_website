@@ -19,6 +19,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title"> Delete Confirmation</h2>
+            s<button><span></span></button>
           </div>
         </div>
       </div>
