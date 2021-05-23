@@ -41,7 +41,7 @@
       <input type="hidden" name="id" value=<?php echo $adminid ?>>
 <div class="row">
   <div class="col">
-    <button type="button"class="btn btn-primary" data-toggle="modal" data-target="DeleteModal">
+    <button type="button"class="btn btn-primary" data-toggle="modal" data-target="#DeleteModal"> DELETEEEE</button>
   </div>
  </div
 
