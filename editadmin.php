@@ -37,8 +37,8 @@
         <div class="container">
           <div class="jumbotron">
             <div class="card">
-              <div class="card-header" style="margin-left:40%;font-size:30px;">
-                <h2><b> EDIT PROFILE <b></h2>
+              <div class="card-header">
+                <h2  style="margin-left:40%;font-size:30px;"><b> EDIT PROFILE <b></h2>
               </div>
                 <div class="card-body">
                   <div class="center">
