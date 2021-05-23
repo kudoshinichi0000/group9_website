@@ -56,7 +56,7 @@ $result = mysqli_query($con, $query);
                   {
                     echo "
                       <tr>
-                        <th scope='row'>{$admin['username']}</th>
+                        <td scope='row'>{$admin['username']}</td>
                         <td>
                         <a href='editadmin.pjp?id={$admin['userid']}' Type='button' class='btn btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'> DELETE</a>
                         <a href='editadmin.php?id={$admin['userid']}' type='button' class='btn btn info badge-pill text-centered float right' style='width:80px; text-align: center;  margin:5px;'>EDIT</a>
