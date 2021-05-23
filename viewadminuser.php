@@ -56,7 +56,7 @@ $fetchid = $admin['userid'];
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
-                    <th class="float-right" scope="col">Action</th>
+                    <th class="float-right>Action</th>
                   </tr>
                 </thead>
                 <tbody>
