@@ -36,6 +36,19 @@
       cursor: pointer;
 
     }
+    .form-submit{
+      border:none;
+      color:white;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin:4px 2px;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+    }
     input[type=submit] .btn{
       background-color:#f44336;
       color:white;
