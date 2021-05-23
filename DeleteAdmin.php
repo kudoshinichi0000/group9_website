@@ -60,22 +60,6 @@
     </style>
   </head>
   <body>
-    <div class="modal fade" id="DeleteModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title"> Delete Confirmation</h2>
-              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-            </div>
-            <div class="modal-body">
-              <form action="DelAdminHandler.php" id="form-delete-user" method="post">
-                  <label><p>  Are you sure you want to delete your account: <?php echo $name ?>?</p></label>
-
-            </div>
-            <div class="modal-footer">
-              <input type="submit" name="choice" class="btn" value="yes">
-                <input type="submit" name="choice" class="btn" value="no">
-                  <input type="hidden" name="id" value=<?php echo $adminid ?>>
             </div>
             </form>
         </div>
@@ -83,7 +67,7 @@
     </div>
 
 
-    <form action="DelAdminHandler.php" method="post">
+  <!--  <form action="DelAdminHandler.php" method="post">
       <label>Do you want to delete this user: <?php echo $name ?>?</label>
       <input type="submit" name="choice" value="yes">
       <input type="submit" name="choice" value="no">
@@ -93,7 +77,7 @@
   <div class="col">
     <button type="button"class="btn btn-primary" data-toggle="modal" data-target="#DeleteModal"> DELETEEEE</button>
   </div>
- </div
+</div -->
 
     </form>
   </body>
