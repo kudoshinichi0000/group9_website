@@ -49,19 +49,19 @@ $result = mysqli_query($con, $query);
                     <th class="text-right">ACTIONS</th>
                   </tr>
                 </thead>
+                <tbody>
+                  <?php
+                  while($admin = mysqli_fetch_assoc($result))
+                  {
+                    echo "
+                    "
+                  }
+                  ?>
             </div>
          </div>
       </div>
     </div>
-    <div class="container">
-      <h1>Admins: </h1>
-        <table class="table table-hover" align="center">
-            <thead>
-              <tr>
-                <th>Name</th>
-              </tr>
-            </thead>
-        <tbody>
+
           <?php
           while($admin = mysqli_fetch_assoc($result))
           {
