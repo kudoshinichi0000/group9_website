@@ -60,8 +60,8 @@
 
             </div>
             <div class="modal-footer">
-              <input type="submit" name="choice" class="btn" value="yes">YUP</button>
-                <input type="submit" name="choice" class="btn" value="no">NOoah</button>
+              <input type="submit" name="choice" class="btn" value="yes">
+                <input type="submit" name="choice" class="btn" value="no">
                   <input type="hidden" name="id" value=<?php echo $adminid ?>>
             </div>
         </div>
