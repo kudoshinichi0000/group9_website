@@ -46,7 +46,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['delsuccess']);
     endif;?>
     <div class="container">
-      <div class="jumbotron"
+      <div class="jumbotron">
         <div class="card">
           <div class="card-header">
               Bootstrap Card , Model, and forms
@@ -75,29 +75,11 @@ $fetchid = $admin['userid'];
                   ?>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
 
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-         </div>
-      </div>
-    </div>
 
-            echo "
-                <tr>
-                  <td>
-                    $fetchname
-                  </td>
-
-                  <td>
-                    <a class='link' href='editadmin.php?id={$fetchid}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$fetchid} '>Delete</a>
-
-                  </td>
-                </tr>
-                ";
-
-            ?>
-          </tbody>
-      </table>
   </div>
   <script>
     $('.delete-btn').click((e) => {
