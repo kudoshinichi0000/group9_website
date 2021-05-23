@@ -34,7 +34,7 @@
             </div>
             <div class="modal-body">
               <p>  Are you sure you want to delete your account  <?php echo $name ?>?</p>
-              <form action="DelAdminHandler.php" id=form-delete>
+              <form action="DelAdminHandler.php" id="form-delete-user">
               </form>
             </div>
             <div class="modal-footer">
