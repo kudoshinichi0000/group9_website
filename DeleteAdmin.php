@@ -19,7 +19,10 @@
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title"> Delete Confirmation</h2>
-            s<button><span></span></button>
+            s<button type="button" class="close"><span></span></button>
+          </div>
+          <div class="modal-body">
+            <p> Do you want to delete your account?</p>
           </div>
         </div>
       </div>
