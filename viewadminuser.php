@@ -45,6 +45,11 @@ $fetchid = $admin['userid'];
      </script>
      <?php unset($_SESSION['delsuccess']);
     endif;?>
+    <div class="card">
+      <div class="card-header">
+      </div>
+     </div>
+
     <div class="container">
       <h1>Admins: </h1>
       <h1>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</h1>
