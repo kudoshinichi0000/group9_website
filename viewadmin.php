@@ -72,7 +72,6 @@ $result = mysqli_query($con, $query);
             </div>
          </div>
       </div>
-    </div>
 
           <?php
           while($admin = mysqli_fetch_assoc($result))
