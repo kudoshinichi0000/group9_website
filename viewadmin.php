@@ -60,7 +60,7 @@ $result = mysqli_query($con, $query);
                         <th scope='row'>{$admin['username']}</th>
                         <td>
                         <a href='editadmin.pjp?id={$admin['userid']}' Type='button' class='btn btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'> DELETE</a>
-                        <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn info badge-pill text-centered float right' 
+                        <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn info badge-pill text-centered float right' style='width:80px; text-align: center;  margin:5px;'>EDIT</a>
                         </td>
                         </tr>
 
