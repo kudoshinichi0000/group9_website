@@ -18,7 +18,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2
+            <h2 class="modal-title"> Delete Confirmation</h2>
           </div>
         </div>
       </div>
