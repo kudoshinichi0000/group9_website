@@ -43,7 +43,7 @@ $result = mysqli_query($con, $query);
             <h2><b> LIST OF ADMINS<b></h2>
           </div>
             <div class="card-body">
-              <table class="table table dark table-hover table-bordered">
+              <table class="table table-dark table-hover table-bordered">
                 <thead>
                   <tr>
                     <th scopre="col">NAME</th>
