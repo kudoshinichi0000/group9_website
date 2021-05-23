@@ -50,10 +50,9 @@ $fetchid = $admin['userid'];
         <div class="card">
           <div class="card-header">
               Bootstrap Card , Model, and forms
-            FEATURED
           </div>
           <div class="card-body">
-            <h5 class="card-title" SPECIAL MO TO JOKE </h5>
+            <h5 class="card-title"> SPECIAL MO TO JOKE </h5>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
          </div>
