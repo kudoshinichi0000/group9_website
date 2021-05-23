@@ -58,6 +58,8 @@ $result = mysqli_query($con, $query);
                         <th scope='row'>
                         {$admin['username']}<.th>
                         <td>
+                        <a href='editadmin.pjp?id={$admin['userid']}' Type='button'
+
 
                     "
                   }
