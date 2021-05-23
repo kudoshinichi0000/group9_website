@@ -38,8 +38,8 @@ $result = mysqli_query($con, $query);
     endif;?>
     <div class="container">
       <div class="jumbotron">
-        <div class="card">
-          <div="card-header">
+          <div class="card">
+          <div class="card-header">
             <h2><b> LIST OF ADMINS<b></h2>
           </div>
             <div class="card-body">
@@ -55,7 +55,7 @@ $result = mysqli_query($con, $query);
                   while($admin = mysqli_fetch_assoc($result))
                   {
                     echo "
-                    <div class='card'>
+
                       <tr>
                         <td scope='row'>{$admin['username']}</td>
                         <td>
@@ -63,7 +63,7 @@ $result = mysqli_query($con, $query);
                         <a href='editadmin.php?id={$admin['userid']}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center;  margin:5px;'>EDIT</a>
                         </td>
                         </tr>
-                    </div>
+
 
                     ";
                   }
@@ -71,7 +71,9 @@ $result = mysqli_query($con, $query);
                 </tbody>
               </table>
             </div>
+            </div>
          </div>
+       </div>
       </div>
   <script>
     $('.delete-btn').click((e) => {
