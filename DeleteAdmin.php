@@ -36,7 +36,7 @@
               <p> Do you want to delete your account?</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary"></button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">YES</button>
             </div>
           </div>
         </div>
