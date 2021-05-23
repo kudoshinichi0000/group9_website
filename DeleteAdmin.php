@@ -33,14 +33,14 @@
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-              <p>  Are you sure you want to delete your account  <?php echo $name ?>?</p>
               <form action="DelAdminHandler.php" id="form-delete-user">
+                  <label><p>  Are you sure you want to delete your account  <?php echo $name ?>?</p></label>
               </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" name="choice" class="btn btn-secondary" value="yes">YES</button>
                 <button type="submit" name="choice" class="btn btn-danger" value="no">NO</button>
-                <button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>
+                <!--<button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>!-->
             </div>
         </div>
       </div>
