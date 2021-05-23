@@ -65,6 +65,8 @@ $result = mysqli_query($con, $query);
                     "
                   }
                   ?>
+                </tbody>
+              </table>
             </div>
          </div>
       </div>
