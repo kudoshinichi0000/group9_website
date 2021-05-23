@@ -14,6 +14,16 @@
     <title>Delete</title>
   </head>
   <body>
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2
+          </div>
+        </div>
+      </div>
+    </div>
+
     <form action="DelAdminHandler.php" method="post">
       <label>Do you want to delete this user: <?php echo $name ?>?</label>
       <input type="submit" name="choice" value="yes">
