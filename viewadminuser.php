@@ -58,6 +58,19 @@ $fetchid = $admin['userid'];
                     <th scope="col">Name</th>
                   </tr>
                 </thead>
+                <tbody>
+                  <?php
+
+                    echo "
+                          <tr>
+                          <th scope="row"></th>
+                          <td>
+                          $fetchname
+                          </td>
+                          </tr>
+                    "
+                  ?>
+                </tbody>
               </table>
 
                 <a href="#" class="btn btn-primary">Go somewhere</a>
