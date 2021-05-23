@@ -38,13 +38,10 @@
           <div class="jumbotron">
             <div class="card">
               <div class="card-header">
-                <h2  style="margin-left:40%;font-size:30px;"><b> EDIT PROFILE <b></h2>
+                <h2  style="margin-left:40%;font-size:30px;"><b> Edit Profile <b></h2>
               </div>
                 <div class="card-body">
                   <div class="center">
-                    <div class="row">
-                      <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
-                    </div>
                       <div class="container">
                         <div class="row formContainer">
                           <div class="col-lg-12">
