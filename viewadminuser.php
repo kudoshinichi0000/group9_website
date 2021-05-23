@@ -94,7 +94,7 @@ $fetchid = $admin['userid'];
           </div>
           <div class="modal-body">
             <form action="DelAdminHandler.php" id="form-delete-user" method="post">
-                <label><p>  Are you sure you want to delete your account:?</p></label>
+                <label><p>  Are you sure you want to delete your account: <?php echo $adminid?>?</p></label>
 
           </div>
           <div class="modal-footer">
