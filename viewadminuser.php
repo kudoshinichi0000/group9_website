@@ -16,6 +16,7 @@ $fetchid = $admin['userid'];
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,"
     <link rel="stylesheet" href="css/bootstrap.min3.css">
 
     <script src="js/bootstrap.bundle.min.js"> </script>
