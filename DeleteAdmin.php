@@ -35,9 +35,15 @@
       transition-duration: 0.2s;
       cursor: pointer;
 
-
-
     }
+    input[type=submit] .btn{
+      background-color:#f44336;
+      color:white;
+    }
+      input[type=submit] .btn:hover{
+        background-color: #f44336;
+        color: white;
+      }
     </style>
   </head>
   <body>
