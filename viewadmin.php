@@ -58,7 +58,7 @@ $result = mysqli_query($con, $query);
                         <th scope='row'>
                         {$admin['username']}<.th>
                         <td>
-                        <a href='editadmin.pjp?id={$admin['userid']}' Type='button'
+                        <a href='editadmin.pjp?id={$admin['userid']}' Type='button' class='btn btn-danger badge-pill text-right float-right' style='width:80px;'>
 
 
                     "
