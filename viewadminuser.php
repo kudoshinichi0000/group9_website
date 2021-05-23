@@ -52,7 +52,7 @@ $fetchid = $admin['userid'];
               Bootstrap Card , Model, and forms
           </div>
               <div class="card-body">
-              <table class="table table-dark">
+              <table class="table table-dark table-hover table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
