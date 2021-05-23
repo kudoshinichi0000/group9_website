@@ -49,7 +49,7 @@ $fetchid = $admin['userid'];
       <div class="jumbotron">
         <div class="card">
           <div class="card-header">
-              Bootstrap Card , Model, and forms
+            ADMIN'S PROFILE
           </div>
               <div class="card-body">
               <table class="table table-dark table-hover table-bordered">
