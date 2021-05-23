@@ -40,44 +40,44 @@
               <div class="card-header">
                 <h2><b> EDIT PROFILE <b></h2>
               </div>
-        <div class="center">
-              <div class="row">
-                <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
-              </div>
-                <div class="container">
-                  <div class="row formContainer">
-                    <div class="col-lg-12">
-                      <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
-                      <div class="row form-group">
-                        <div class="col">
-                        <label for="username">Username:</label>
-                          <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col">
-                          <label for="password">Password :</label>
-                          <input type="password" class="form-control" placeholder="Enter your new password" name="password" required>
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col">
-                          <label for="confirmpassword">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="row form-group" style="margin-top: 40px;">
-                        <div class="col">
-                          <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Update Profile</button>
-                      <a href="viewadmin.php" class="btn btn-outline-danger">Cancel</a>
-                        <input type="hidden" name="id" value="<?php echo $userId ?>">
-                    </form>
+              <div class="center">
+                    <div class="row">
+                      <span class="title" style="margin-left:40%;font-size:30px;"><b> Edit Profile</b></span>
                     </div>
-                  </div>
-                </div>
+                      <div class="container">
+                        <div class="row formContainer">
+                          <div class="col-lg-12">
+                            <form action="editAdminHandler.php" method="post" enctype="multipart/form-data">
+                            <div class="row form-group">
+                              <div class="col">
+                              <label for="username">Username:</label>
+                                <input type="text" class="form-control" placeholder="Enter New Username" name="username" required>
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col">
+                                <label for="password">Password :</label>
+                                <input type="password" class="form-control" placeholder="Enter your new password" name="password" required>
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col">
+                                <label for="confirmpassword">Confirm Password</label>
+                                  <input type="password" class="form-control" placeholder="Confirm your new passoword.." name="confirmpassword" required>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="row form-group" style="margin-top: 40px;">
+                              <div class="col">
+                                <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Update Profile</button>
+                            <a href="viewadmin.php" class="btn btn-outline-danger">Cancel</a>
+                              <input type="hidden" name="id" value="<?php echo $userId ?>">
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
               </div>
-            </form>
-        </div>
     </body>
 </html>
