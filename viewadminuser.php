@@ -84,7 +84,7 @@ $fetchid = $admin['userid'];
   <script>
     $('.delete-btn').click((e) => {
       e.preventDefault();
-      if(confirm('Do you want to delete user?')){
+      if(confirm(' Are you sure you want to delete your account')){
         window.location.href = $(e.target).attr('href');
       }
     });
