@@ -64,9 +64,12 @@ $fetchid = $admin['userid'];
 
                     echo "
                           <tr>
-                          <th scope='row'></th>
+                          <th scope='row'>1</th>
                           <td>
                           $fetchname
+                          </td>
+                          <td>
+                            <a class lin
                           </td>
                           </tr>
                     "
@@ -79,13 +82,6 @@ $fetchid = $admin['userid'];
          </div>
       </div>
     </div>
-            <thead>
-              <tr>
-                <th>Name</th>
-              </tr>
-            </thead>
-        <tbody>
-          <?php
 
             echo "
                 <tr>
