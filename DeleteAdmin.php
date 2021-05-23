@@ -57,7 +57,7 @@
             <div class="modal-body">
               <form action="DelAdminHandler.php" id="form-delete-user" method="post">
                   <label><p>  Are you sure you want to delete your account: <?php echo $name ?>?</p></label>
-              </form>
+
             </div>
             <div class="modal-footer">
               <input type="submit" name="choice" class="btn" value="yes">YUP</button>
@@ -67,6 +67,7 @@
         </div>
       </div>
     </div>
+      </form>
 
     <form action="DelAdminHandler.php" method="post">
       <label>Do you want to delete this user: <?php echo $name ?>?</label>
