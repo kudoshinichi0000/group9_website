@@ -34,11 +34,11 @@
             </div>
             <div class="modal-body">
               <form action="DelAdminHandler.php" id="form-delete-user">
-                  <label><p>  Are you sure you want to delete your account  <?php echo $name ?>?</p></label>
+                  <label><p>  Are you sure you want to delete your account: <?php echo $name ?>?</p></label>
               </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" name="choice" class="btn btn-secondary" value="yes">YES</button>
+                <input type="submit" name="choice" class="btn btn-secondary" value="yes">YES</button>
                 <button type="submit" name="choice" class="btn btn-danger" value="no">NO</button>
                 <!--<button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>!-->
             </div>
