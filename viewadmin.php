@@ -43,6 +43,11 @@ $result = mysqli_query($con, $query);
           </div>
             <div class="card-body">
               <table class="table table dark table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th scopre="col">Name</th>
+                  </tr>
+                </thead>
             </div>
          </div>
       </div>
