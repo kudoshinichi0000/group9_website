@@ -25,13 +25,12 @@
     <title>Delete</title>
   </head>
   <body>
-    <div class="modal" id="DeleteModal">
-      <div class="modal">
-        <div class="modal-dialog">
+    <div class="modal fade" id="DeleteModal">
+      <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title"> Delete Confirmation</h2>
-              <button type="button" class="close"><span></span></button>
+              <button type="button" class="close" data-dismiss="modal"><span></span></button>
             </div>
             <div class="modal-body">
               <p> Do you want to delete your account?</p>
