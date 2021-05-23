@@ -47,6 +47,10 @@ $fetchid = $admin['userid'];
     endif;?>
     <div class="card">
       <div class="card-header">
+        FEATURED
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" SPECIAL MO TO JOKE </h5>
       </div>
      </div>
 
