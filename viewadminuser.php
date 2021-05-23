@@ -20,6 +20,7 @@ $fetchid = $admin['userid'];
     <link rel="stylesheet" href="css/bootstrap.min3.css">
 
     <script src="js/bootstrap.bundle.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
     <title>View User</title>
