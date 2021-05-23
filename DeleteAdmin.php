@@ -77,10 +77,11 @@
                 <input type="submit" name="choice" class="btn" value="no">
                   <input type="hidden" name="id" value=<?php echo $adminid ?>>
             </div>
+            </form>
         </div>
       </div>
     </div>
-      </form>
+
 
     <form action="DelAdminHandler.php" method="post">
       <label>Do you want to delete this user: <?php echo $name ?>?</label>
