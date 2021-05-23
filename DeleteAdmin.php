@@ -30,8 +30,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title"> Delete Confirmation</h2>
-              <button type="button" class="close" data-dismiss="modal"><span></span></button>
-                <span>&timesl;</span>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
               <p> Do you want to delete your account?</p>
