@@ -66,7 +66,7 @@ $fetchid = $admin['userid'];
                           <tr>
                             <th scope='row'>  $fetchname</th>
                           <td>
-                            <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-primary'>EDIT</a>
+                            <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-info'>EDIT</a>
                             <a href='DeleteAdmin.php?id={$fetchid}' type='button' class='btn btn-danger'>DELETE</a>
                           </td>
                           <td>
