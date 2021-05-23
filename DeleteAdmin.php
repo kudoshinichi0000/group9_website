@@ -24,6 +24,9 @@
           <div class="modal-body">
             <p> Do you want to delete your account?</p>
           </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"></button>
+          </div>
         </div>
       </div>
     </div>
