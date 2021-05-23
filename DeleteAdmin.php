@@ -34,6 +34,8 @@
             </div>
             <div class="modal-body">
               <p>  Are you sure you want to delete your account  <?php echo $name ?>?</p>
+              <form action="DelAdminHandler.php" id=form-delete>
+              </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">YES</button>
