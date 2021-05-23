@@ -36,6 +36,18 @@ $result = mysqli_query($con, $query);
      <?php unset($_SESSION['delsuccess']);
     endif;?>
     <div class="container">
+      <div class="jumbotron">
+        <div class="card">
+          <div="card-header">
+            <h2><b> LIST OF ADMINS<b></h2>
+          </div>
+            <div class="card-body">
+              <table class="table table dark table-hover table-bordered">
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="container">
       <h1>Admins: </h1>
         <table class="table table-hover" align="center">
             <thead>
