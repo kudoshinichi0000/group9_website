@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-     <link rel="stylesheet" href="main.css">
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
        crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -23,6 +22,21 @@
        crossorigin="anonymous"></script>
 
     <title>Delete</title>
+    <style>
+    .input[type=submit]{
+      border:none;
+      color:white;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin:4px
+
+
+
+    }
+    </style>
   </head>
   <body>
     <div class="modal fade" id="DeleteModal">
@@ -38,7 +52,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <input type="submit"name="choice" class="btn btn-secondary" value="yes">YESido</button>
+              <input type="submit" name="choice" class="btn btn-secondary" value="yes">YESido</button>
                 <button type="submit" name="choice" class="btn btn-danger" value="no">NO</button>
                 <!--<button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>!-->
                   <input type="hidden" name="id" value=<?php echo $adminid ?>>
