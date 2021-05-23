@@ -8,6 +8,7 @@ $result = mysqli_query($con, $query);
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min3.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <script src="js/bootstrap.bundle.min.js"> </script>
 
