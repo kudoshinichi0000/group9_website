@@ -71,25 +71,6 @@ $result = mysqli_query($con, $query);
             </div>
          </div>
       </div>
-
-          <?php
-          while($admin = mysqli_fetch_assoc($result))
-          {
-            echo "
-                <tr>
-                  <td>
-                    {$admin['username']}
-                  </td>
-                  <td>
-                    <a class='link' href='editadmin.php?id={$admin['userid']}' type='button' class='btn btn-warning btn-sm'>Edit</a> | <a class='link' href='DeleteAdmin.php?id={$admin['userid']} '>Delete</a>
-                  </td>
-                </tr>
-                ";
-          }
-            ?>
-          </tbody>
-      </table>
-  </div>
   <script>
     $('.delete-btn').click((e) => {
       e.preventDefault();
