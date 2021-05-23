@@ -31,7 +31,9 @@
       text-decoration: none;
       display: inline-block;
       font-size: 14px;
-      margin:4px
+      margin:4px 2px;
+      transition-duration: 0.2s;
+      cursor: pointer;
 
 
 
