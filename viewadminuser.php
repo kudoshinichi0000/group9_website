@@ -55,6 +55,7 @@ $fetchid = $admin['userid'];
               <table class="table table-dark">
                 <thead>
                   <tr>
+                    <th scope="col">Name</th>
                   </tr>
                 </thead>
               </table>
@@ -64,11 +65,6 @@ $fetchid = $admin['userid'];
          </div>
       </div>
     </div>
-
-    <div class="container">
-      <h1>Admins: </h1>
-      <h1>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</h1>
-        <table class="table table-hover" align="center">
             <thead>
               <tr>
                 <th>Name</th>
