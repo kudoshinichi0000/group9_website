@@ -14,18 +14,20 @@
     <title>Delete</title>
   </head>
   <body>
-    <div class="modal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title"> Delete Confirmation</h2>
-            s<button type="button" class="close"><span></span></button>
-          </div>
-          <div class="modal-body">
-            <p> Do you want to delete your account?</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary"></button>
+    <div class="modal" id="DeleteModal">
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title"> Delete Confirmation</h2>
+              s<button type="button" class="close"><span></span></button>
+            </div>
+            <div class="modal-body">
+              <p> Do you want to delete your account?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"></button>
+            </div>
           </div>
         </div>
       </div>
