@@ -55,6 +55,7 @@ $result = mysqli_query($con, $query);
                   while($admin = mysqli_fetch_assoc($result))
                   {
                     echo "
+                    <div class='card'>
                       <tr>
                         <td scope='row'>{$admin['username']}</td>
                         <td>
@@ -62,6 +63,7 @@ $result = mysqli_query($con, $query);
                         <a href='editadmin.php?id={$admin['userid']}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center;  margin:5px;'>EDIT</a>
                         </td>
                         </tr>
+                    </div>
 
                     ";
                   }
