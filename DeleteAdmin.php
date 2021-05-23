@@ -33,7 +33,7 @@
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-              <p> Do you want to delete your account?</p>
+              <p>  Are you sure you want to delete your account  <?php echo $name ?>?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">YES</button>
