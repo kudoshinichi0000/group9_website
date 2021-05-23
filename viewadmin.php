@@ -54,6 +54,11 @@ $result = mysqli_query($con, $query);
                   while($admin = mysqli_fetch_assoc($result))
                   {
                     echo "
+                      <tr>
+                        <th scope='row'>
+                        {$admin['username']}<.th>
+                        <td>
+
                     "
                   }
                   ?>
