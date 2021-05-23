@@ -38,7 +38,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <input type="button"name="choice" class="btn btn-secondary" value="yes">YESido</button>
+              <input type="submit"name="choice" class="btn btn-secondary" value="yes">YESido</button>
                 <button type="submit" name="choice" class="btn btn-danger" value="no">NO</button>
                 <!--<button type="submit" class="btn btn-secondary" data-dismiss="modal">YES</button>!-->
                   <input type="hidden" name="id" value=<?php echo $adminid ?>>
