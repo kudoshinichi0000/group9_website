@@ -35,7 +35,7 @@ $fetchid = $admin['userid'];
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 14px;
+      font-size: 18px;
       margin:4px 2px;
       transition-duration: 0.2s;
       cursor: pointer;
