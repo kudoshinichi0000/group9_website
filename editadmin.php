@@ -89,8 +89,6 @@
       <?php
         if($_SESSION['status']  && S_SESSION['status']!= '')
         {
-        header("Location: viewadminuser.php");
-        exit();
         ?>
         <script>
         swal({
@@ -103,8 +101,6 @@
         <?php
         unset($_SESSION['status']);
         ?>
-
       }
-
     </body>
 </html>
