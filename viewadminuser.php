@@ -28,7 +28,7 @@ $fetchid = $admin['userid'];
 
     <title>View User</title>
     <style>
-    .btn{
+    .btn1{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -41,7 +41,7 @@ $fetchid = $admin['userid'];
       cursor: pointer;
 
     }
-    .btn{
+    .btn1{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -129,8 +129,8 @@ $fetchid = $admin['userid'];
 
           </div>
           <div class="modal-footer">
-            <input type="submit" name="choice" class="btn" value="yes">
-              <input type="submit" name="choice" class="btn" value="no">
+            <input type="submit" name="choice" class="btn1" value="yes">
+              <input type="submit" name="choice" class="btn1" value="no">
           </div>
           </form>
       </div>
