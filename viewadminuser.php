@@ -128,7 +128,7 @@ $fetchid = $admin['userid'];
 
           </div>
           <div class="modal-footer">
-            <input type="submit" name="choice" class="butonnn button01" value="yes">
+            <input type="submit" name="choice" class="buttonnn button01" value="yes">
               <input type="submit" name="choice" class=" buttonnn button1" value="no">
           </div>
           </form>
