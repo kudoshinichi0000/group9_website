@@ -37,7 +37,7 @@ if(isset($_POST['btn']))
               swal({
                 title: "<?php echo $_SESSION['status']; ?>",
                 //text: "You clicked the button!",
-                icon: "<?php echo $_SESSION['status']?>",
+                icon: "<?php echo $_SESSION['status_code']?>",
                 button: "Aww yiss!",
               });
               </script>
