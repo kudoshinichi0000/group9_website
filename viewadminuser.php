@@ -31,7 +31,7 @@ $fetchid = $admin['userid'];
     .buttonnn{
       border:none;
       color:white;
-      padding: 20px 40px;
+      padding: 10px 30px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -53,11 +53,12 @@ $fetchid = $admin['userid'];
 
       }
     .button1{
-        background-color:#f44336;
-        color:white;
+        background-color:white;
+        color:black;
+        border: 2px solid #555555;
       }
     .button1:hover{
-          background-color: #f44336;
+          background-color: #555555;
           color: white;
       }
     </style>
