@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/bootstrap.min2.css">
         <link rel="stylesheet" type="text/css" href="css/main2.css">
         /* for pop up alert edit*/
+        <link rel="stylesheet" href="js/sweetalert.min.js">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
