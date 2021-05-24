@@ -28,19 +28,29 @@ if(isset($_POST['btn']))
             $pass = password_hash($password, PASSWORD_DEFAULT);
             $update = "UPDATE admin SET username='$username', password='$pass' WHERE userid='$userId'";
             $runQueryUpdateUser = mysqli_query($con, $update);
-            $_SESSION['editsuccess'] = "User Successfully Edited!";
-            header("Location: viewadminuser.php");
-            exit();
+            if($_SESSION['editsuccess']  && S_SESSION['success']!= '')
+            {
+              header("Location: viewadminuser.php");
+              exit();
+              ?>
+              <script>
+              swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "Aww yiss!",
+              });
+              </script>
+              <?php
+              unset($_SESSION['success']);
+              ?>
+
+            }
         }
       }
     }
+
 }
 ?>
-<script>
-swal({
-  title: "Good job!",
-  text: "You clicked the button!",
-  icon: "success",
-  button: "Aww yiss!",
-});
-</script>
+<?php
+ ?>
