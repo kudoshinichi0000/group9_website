@@ -68,7 +68,7 @@
                               <div class="row form-group" style="margin-top: 40px;">
                               <div class="col">
                                 <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Update Profile</button>
-                            <a href="viewadmin.php" class="btn btn-outline-danger">Cancel</a>
+                            <a href="viewadminuser.php" class="btn btn-outline-danger">Cancel</a>
                               <input type="hidden" name="id" value="<?php echo $userId ?>">
                           </form>
                           </div>
