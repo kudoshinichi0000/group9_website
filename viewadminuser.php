@@ -61,7 +61,15 @@ $fetchid = $admin['userid'];
     .button01:hover{
         background-color: #f44336;
         color: white;
+
       }
+    .button1{
+        background-color:#f44336;
+        color:white;
+      }
+    .button1:hover{
+          background-color: #808080;
+          color: white;
     </style>
   </head>
   <body>
