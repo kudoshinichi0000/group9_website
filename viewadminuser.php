@@ -28,7 +28,7 @@ $fetchid = $admin['userid'];
 
     <title>View User</title>
     <style>
-    .btn1{
+    .button1{
       border:none;
       color:white;
       padding: 10px 30px;
