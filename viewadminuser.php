@@ -41,7 +41,7 @@ $fetchid = $admin['userid'];
       cursor: pointer;
 
     }
-    .btn1{
+    .button01{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -54,11 +54,11 @@ $fetchid = $admin['userid'];
       cursor: pointer;
 
     }
-    .btn{
+    .button01{
       background-color:#f44336;
       color:white;
     }
-    .btn:hover{
+    .button01:hover{
         background-color: #f44336;
         color: white;
       }
@@ -129,8 +129,8 @@ $fetchid = $admin['userid'];
 
           </div>
           <div class="modal-footer">
-            <input type="submit" name="choice" class="btn1" value="yes">
-              <input type="submit" name="choice" class="btn1" value="no">
+            <input type="submit" name="choice" class="button01" value="yes">
+              <input type="submit" name="choice" class="button1" value="no">
           </div>
           </form>
       </div>
