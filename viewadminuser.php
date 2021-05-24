@@ -30,6 +30,7 @@ $fetchid = $admin['userid'];
     <style>
     .button1{
       border:none;
+      border-color:#f44336; 
       color:white;
       padding: 10px 30px;
       text-align: center;
