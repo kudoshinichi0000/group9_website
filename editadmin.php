@@ -86,14 +86,25 @@
           </div>
         </div>
       </div>
-<script>
-swal({
-  title: "Good job!",
-  text: "You clicked the button!",
-  icon: "success",
-  button: "Aww yiss!",
-});
-</script>
+      <?php
+        if($_SESSION['status']  && S_SESSION['status']!= '')
+        {
+        header("Location: viewadminuser.php");
+        exit();
+        ?>
+        <script>
+        swal({
+          title: "<?php echo $_SESSION['status']; ?>",
+          //text: "You clicked the button!",
+          icon: "<?php echo $_SESSION['status_code']?>",
+          button: "Aww yiss!",
+        });
+        </script>
+        <?php
+        unset($_SESSION['status']);
+        ?>
+
+      }
 
     </body>
 </html>

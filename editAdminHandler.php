@@ -28,6 +28,18 @@ if(isset($_POST['btn']))
             $pass = password_hash($password, PASSWORD_DEFAULT);
             $update = "UPDATE admin SET username='$username', password='$pass' WHERE userid='$userId'";
             $runQueryUpdateUser = mysqli_query($con, $update);
+            if($runQueryUpdateUser)
+            {
+              $_SESSION['status'] = " Your Data is Updated";
+              $_SESSION['Status_Code']= "warning";
+              header("Location: viewadminuser.php");
+            }
+            else{
+              $_SESSION['status'] = " Your Data is NOT Updated";
+              $_SESSION['Status_Code']= "error";
+              header("Location: viewadminuser.php");
+            }
+
             if($_SESSION['status']  && S_SESSION['status']!= '')
             {
               header("Location: viewadminuser.php");
