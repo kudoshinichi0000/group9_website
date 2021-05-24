@@ -28,7 +28,7 @@ $fetchid = $admin['userid'];
 
     <title>View User</title>
     <style>
-    .button1{
+    .buttonnn{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -70,6 +70,7 @@ $fetchid = $admin['userid'];
     .button1:hover{
           background-color: #f44336;
           color: white;
+      }
     </style>
   </head>
   <body>
@@ -89,6 +90,7 @@ $fetchid = $admin['userid'];
      </script>
      <?php unset($_SESSION['delsuccess']);
     endif;?>
+
     <div class="container">
       <div class="jumbotron">
         <div class="card">
@@ -123,7 +125,7 @@ $fetchid = $admin['userid'];
         </div>
       </div>
     </div>
-    <!-- TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME-->
+    //TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME
   <div class="modal fade" id="DeleteModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -137,8 +139,8 @@ $fetchid = $admin['userid'];
 
           </div>
           <div class="modal-footer">
-            <input type="submit" name="choice" class="button01" value="yes">
-              <input type="submit" name="choice" class="button1" value="no">
+            <input type="submit" name="choice" class="butonnn button01" value="yes">
+              <input type="submit" name="choice" class=" buttonnn button1" value="no">
           </div>
           </form>
       </div>
