@@ -28,7 +28,7 @@ $fetchid = $admin['userid'];
 
     <title>View User</title>
     <style>
-    .input[type=submit]{
+    .btn{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -41,7 +41,7 @@ $fetchid = $admin['userid'];
       cursor: pointer;
 
     }
-    .form-submit{
+    .btn{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -54,11 +54,11 @@ $fetchid = $admin['userid'];
       cursor: pointer;
 
     }
-    input[type=submit] .btn{
+    .btn{
       background-color:#f44336;
       color:white;
     }
-      input[type=submit] .btn:hover{
+    .btn:hover{
         background-color: #f44336;
         color: white;
       }
