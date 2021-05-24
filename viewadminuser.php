@@ -31,7 +31,7 @@ $fetchid = $admin['userid'];
     .buttonnn{
       border:none;
       color:white;
-      padding: 10px 30px;
+      padding: 20px 40px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
