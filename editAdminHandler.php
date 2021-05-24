@@ -35,9 +35,9 @@ if(isset($_POST['btn']))
               ?>
               <script>
               swal({
-                title: "<?php echo $_SESSION['success']; ?>",
-                text: "You clicked the button!",
-                icon: "success",
+                title: "<?php echo $_SESSION['status']; ?>",
+                //text: "You clicked the button!",
+                icon: "<?php echo $_SESSION['status']?>",
                 button: "Aww yiss!",
               });
               </script>
