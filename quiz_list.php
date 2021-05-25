@@ -37,7 +37,7 @@
 
     <br><br><br><br>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron" style="width:800px";>
         <div class="card">
           <div class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
