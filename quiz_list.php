@@ -53,7 +53,7 @@
                     <th scope="col"><h4><label>Total Points: </label></h4></th>
                     <th scope="col"><h4><label>Categories: </label></h4></th>
                     <th scope="col"><h4><label>Quiz Code: </label></h4></th>
-                    <th scope="col"><h4><label>Action: </label></h4></th>
+                    <th class="text-right"><h4><label>Action: </label></h4></th>
                   </tr>
               </thead>
 
