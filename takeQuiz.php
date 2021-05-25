@@ -27,7 +27,7 @@ $title = $fetch['title'];
   <body>
     <?php
 
-    include_once("navbar.php");
+    //include_once("navbar.php");
     echo "<br><br><br><br><br><br>
           <div class='quiz'> $title </div><br><br><br>";
 
@@ -55,8 +55,7 @@ $title = $fetch['title'];
 
       echo "<br>
       <div class='cons'>
-      <form action='index.html' method='post'>
-
+      <form action='takeQuiz.php' method='post'>
         <table width='100%' style='background-color: #dacb72;'>
           <tr>
             <th colspan='2'><label><h3>Question: $question</h3></label></th>
@@ -70,17 +69,22 @@ $title = $fetch['title'];
               </label><br><br>
 
 
-              <label for='A'>
-                <input type='radio' name='A' value=''> B. $option2
+              <label for='B'>
+                <input type='radio' name='B' value=''> B. $option2
               </label><br><br>
 
-              <label for='A'>
-                <input type='radio' name='A' value=''> C. $option3
+              <label for='C'>
+                <input type='radio' name='C' value=''> C. $option3
               </label><br><br>
 
-              <label for='A'>
-                <input type='radio' name='A' value=''> D. $option4
-              </label><br><br>
+              <label for='D'>
+                <input type='radio' name='D' value=''> D. $option4
+              </label><br><br
+
+              <label for='Submit'>
+                <input type='submit' name='submit'>
+              </label><br><br
+
             </th>
           </tr>
 
@@ -88,7 +92,7 @@ $title = $fetch['title'];
         </form>
       </div><br><br>";
     }
-
+    /*
     echo "<br><div style='text-align:center; font-size: 2em;'>True or False</div>";
     //Getting or fetching all rows from true or false
     $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
@@ -155,7 +159,7 @@ $title = $fetch['title'];
         </tr>
       </table>
     </div><br><br>";
-  }
+  }*/
      ?>
      </div>
   </body>

@@ -131,16 +131,6 @@ nav a:hover {
 	text-align: center;
 }
 
-.backg{
-	width: 100%;
-	height: auto;
-	background-image: url('res/images/Background.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
 #cat {
   background-color: #4CAF50;
   color: white;
@@ -172,27 +162,6 @@ nav a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
-
-/* Change color of dropdown links on hover
-#content a:hover {
-	background-color: #f1f1f1
-}
-
-Show the dropdown menu on hover
-.dropdown:hover #content {
-  display: block;
-}
-
- Change the background color of the dropdown button when the dropdown content is shown
-.dropdown:hover #cat {
-  background-color: #3e8e41;
-}*/
-
-.Greet{
-	text-align: center;
-	align-items: center;
-	color: yellow;
 }
 .home a::before {
   content: '';
@@ -243,7 +212,7 @@ Show the dropdown menu on hover
 	margin-top: -5px;
 }
 
-.BigDisplayQuestions{
+.DisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
@@ -252,11 +221,11 @@ Show the dropdown menu on hover
 	color: black;
 }
 
-.DisplayQuestions{
+.BigDisplayQuestions{
   margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
-	width: 50%;
+	width: 80%;
 	height: 11em;
 	color: black;
 }
