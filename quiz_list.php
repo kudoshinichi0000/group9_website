@@ -47,12 +47,12 @@
               <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
                 <thead>
                   <tr>
-                    <th scope="col"><h2><label>Title: </label></h2></th>
-                    <th scope="col"><h2><label>Items: </label></h2></th>
-                    <th scope="col"><h2><label>Total Points: </label></h2></th>
-                    <th scope="col"><h2><label>Categories: </label></h2></th>
-                    <th scope="col"><h2><label>Quiz Code: </label></h2></th>
-                    <th scope="col"><h2><label>Action: </label></h2></th>
+                    <th scope="col"><h4><label>Title: </label></h4></th>
+                    <th scope="col"><h4><label>Items: </label></h4></th>
+                    <th scope="col"><h4><label>Total Points: </label></h4></th>
+                    <th scope="col"><h4><label>Categories: </label></h4></th>
+                    <th scope="col"><h4><label>Quiz Code: </label></h4></th>
+                    <th scope="col"><h4><label>Action: </label></h4></th>
                   </tr>
               </thead>
 
