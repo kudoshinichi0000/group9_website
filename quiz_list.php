@@ -83,7 +83,6 @@
 
                       echo "
                         <tr>
-                          <br><br>
                           <th scope='row'>$Ftitle</th>
                           <th scope='row'>$items</th>
                           <th scope='row'>$OS</th>
