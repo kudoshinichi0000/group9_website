@@ -91,7 +91,7 @@
                           <th scope='row'>$code</th>
 
                           <td scope='row'>
-                            <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align:center; margin: 5px;'>edit title</a>
+                            <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' text-right style='width:80px; text-align:center; margin: 5px;'>edit title</a>
                             <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style=' text-align:center; margin: 5px;'>+ questions</a>
                             <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
 
