@@ -34,7 +34,7 @@ function random_num($length)
 
 	$len = rand(4,$length);
 
-	for ($i=0; $i < $len; $i++) { 
+	for ($i=0; $i < $len; $i++) {
 		# code...
 
 		$text .= rand(0,9);
@@ -42,3 +42,19 @@ function random_num($length)
 
 	return $text;
 }
+?>
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<?php
+				if(isset($_SESSION['status']))
+				{
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			</div>
+		</div>
+	</div>
+	</section>
