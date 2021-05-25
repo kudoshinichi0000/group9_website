@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         $password = password_hash($password, PASSWORD_DEFAULT);
         $sql = "INSERT INTO admin (userid, username, password) VALUES ( '$user_id', '$username', '$password')";
         if (mysqli_query($con, $sql)) {
-          $_SESSION['status'] = "User admin successfully added!";
+          $_SESSION['regsuccess'] = "Admin Added!";
   			     header("location: login.php");
   			        exit;
               }
