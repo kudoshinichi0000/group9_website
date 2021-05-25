@@ -59,7 +59,7 @@
         $title = $fetchCodes["title"];
 
         echo "
-                <form action='DeleteQuizHandler.php' id='form-delete-user' method='post'>
+                <form action='DeleteQuizHandler.php' method='post'>
                     <label><p>  Are you sure you want to delete this quiz: <?php echo $Ftitle?>?</p></label>
 
               </div>
