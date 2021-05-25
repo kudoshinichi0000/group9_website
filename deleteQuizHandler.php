@@ -1,7 +1,7 @@
 <?php
   include_once("db.php");
 	//Var_dump
-  $code = $_POST['quiz_code'];
+  $code = $_POST['code'];
 	$Confirm = $_POST["Confirm"];
 
     $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code'";
