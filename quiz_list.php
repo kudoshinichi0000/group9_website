@@ -32,9 +32,6 @@
   <body>
 
     <?php include_once("navbaradmin.php"); ?>
-
-
-
     <br><br><br><br>
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
