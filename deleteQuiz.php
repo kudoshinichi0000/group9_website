@@ -38,6 +38,15 @@
     </style>
   </head>
   <body>
+    <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
+    <div class='modal fade' id='DeleteModal'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h2 class='modal-title'> Delete Confirmation</h2>
+            <button type='button' class='close' data-dismiss='modal'><span>&times;</span></button>
+          </div>
+          <div class='modal-body'>
     <?php
     include_once("db.php");
     include_once("navbaradmin.php");
@@ -50,16 +59,6 @@
         $title = $fetchCodes["title"];
 
         echo "
-
-        <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
-        <div class='modal fade' id='DeleteModal'>
-        <div class='modal-dialog'>
-            <div class='modal-content'>
-              <div class='modal-header'>
-                <h2 class='modal-title'> Delete Confirmation</h2>
-                <button type='button' class='close' data-dismiss='modal'><span>&times;</span></button>
-              </div>
-              <div class='modal-body'>
                 <form action='DeleteQuizHandler.php' id='form-delete-user' method='post'>
                     <label><p>  Are you sure you want to delete this quiz: <?php echo $Ftitle?>?</p></label>
 
@@ -69,11 +68,12 @@
                   <input type='submit' name='Confirm' class='' buttonnn button1' value='no'>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-    "  
+
+    "
      ?>
+   </div>
+ </div>
+</div>
      <script>
        $('.delete-btn').click((e) => {
          e.preventDefault();
