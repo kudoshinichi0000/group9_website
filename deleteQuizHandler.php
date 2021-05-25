@@ -32,7 +32,7 @@
             }
           }
         }
-      
+
 	}else{
 		header("Location: quiz_list.php");
 		exit();
