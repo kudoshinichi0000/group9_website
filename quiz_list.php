@@ -26,41 +26,7 @@
       text-align: center;
       align-items: center;
       padding: 8px;
-
     }
-    .buttonnn{
-      border:none;
-      color:white;
-      padding: 10px 30px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 18px;
-      margin:4px 2px;
-      transition-duration: 0.2s;
-      cursor: pointer;
-
-    }
-
-    .button01{
-      background-color: white;
-      color:black;
-      border: 2px solid #f44336
-    }
-    .button01:hover{
-        background-color: #f44336;
-        color: white;
-
-      }
-    .button1{
-        background-color:white;
-        color:black;
-        border: 2px solid #555555;
-      }
-    .button1:hover{
-          background-color: #555555;
-          color: white;
-      }
     </style>
   </head>
   <body>
@@ -145,7 +111,7 @@
           </div>
         </div>
       </div>
-      <!--MODAL MESSAGE ALERT FOR DELETING QUIZ KASO DI GUMAGANA SA BACKEND D QALAM AYUSIN. RED DELETE BUTTON YUNG GINAWA KO-->
+      <!--MODAL MESSAGE ALERT FOR DELETING QUIZ KASO DI GUMAGANA SA BACKEND D QALAM AYUSIN. RED DELETE BUTTON YUNG GINAWA -->
       <div class="modal fade" id="DeleteModal">
       <div class="modal-dialog">
           <div class="modal-content">
