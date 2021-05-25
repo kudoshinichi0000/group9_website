@@ -4,10 +4,18 @@
   $code = $_POST['quiz_code'];
 	$Confirm = $_POST["Confirm"];
 
+  $code = $_GET['quiz_code'];
+
+    $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code'";
+    $execQuery = mysqli_query($con, $query);
+    $fetchCodes = mysqli_fetch_assoc($execQuery);
+      $codel = $fetchCodes["quiz_code"];
+      $title = $fetchCodes["title"];
+
 	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
 		//Hidden Input
-		$delGetid = $_POST["quizCode"];
+		//$delGetid = $_POST["quizCode"];
 
 		//Prepare The Query
 		$deleteQuery = "DELETE FROM quiz_list WHERE quiz_code = '$delGetid'";
