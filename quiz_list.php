@@ -43,7 +43,7 @@
             <h2><b>QUIZ DETAILS<b></h2>
           </div>
             <div class="card-body">
-            <table class="tabl table-striped table-hover table-bordered"
+            <table class="table table-striped table-hover table-bordered"
               <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
                 <thead>
                   <tr>
