@@ -4,8 +4,6 @@
   $code = $_POST['quiz_code'];
 	$Confirm = $_POST["Confirm"];
 
-  $code = $_GET['quiz_code'];
-
     $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code'";
     $execQuery = mysqli_query($con, $query);
     $fetchCodes = mysqli_fetch_assoc($execQuery);
