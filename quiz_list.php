@@ -54,6 +54,8 @@
                     <th scope="col"><h2><label>Quiz Code: </label></h2></th>
                     <th scope="col"><h2><label>Action: </label></h2></th>
                   </tr>
+              </thead>
+
                   <br>
 
               <?php
