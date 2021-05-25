@@ -27,6 +27,7 @@ $fetchid = $admin['userid'];
 
 
     <title>View User</title>
+    <!--  css for the message alert delete button options, yes or no -->
     <style>
     .buttonnn{
       border:none;
