@@ -1,6 +1,28 @@
 <?php
 	include_once "db.php";
 	include_once "functions.php";
+	?>
+
+
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<?php
+					if(isset($_SESSION['status']))
+					{
+						echo $_SESSION['status'];
+						unset($_SESSION['status']);
+					}
+					?>
+				</div>
+			</div>
+		</div>
+		</section>
+
+	</div>
+
+	<?php
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
