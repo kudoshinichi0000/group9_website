@@ -32,6 +32,14 @@
   <body>
 
     <?php include_once("navbaradmin.php"); ?>
+    <!-- Quiz Successfully Deleted -->
+    <?php include_once "db.php"; include_once "navbaradmin.php" ?><br><br>
+    <?php if(isset( $_SESSION['delsuccess'])): ?>
+       <script type="text/javascript">
+          alert('<?php echo $_SESSION['delsuccess']; ?>');
+       </script>
+       <?php unset($_SESSION['delsuccess']);
+      endif;?>
 
 
 
