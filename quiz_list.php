@@ -45,7 +45,6 @@
           </div>
             <div class="card-body">
                 <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
-                <a href='quiz_title.php'type='button' class='btn btn-info badge-pill text-centered float-right text-right' style=' text-align:center; margin: 5px; border 1px solid #39c9bb'>Add Quiz</a>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                   <tr>
