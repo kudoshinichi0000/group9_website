@@ -38,6 +38,8 @@
     </style>
   </head>
   <body>
+    <?php include_once("db.php");
+    include_once("navbaradmin.php"); ?>
     <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
     <div class='modal fade' id='DeleteModal'>
     <div class='modal-dialog'>
@@ -48,8 +50,6 @@
           </div>
           <div class='modal-body'>
     <?php
-    include_once("db.php");
-    include_once("navbaradmin.php");
     $code = $_GET['quiz_code'];
 
       $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code'";
