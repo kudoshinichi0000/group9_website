@@ -28,7 +28,6 @@
 
               $execqueryy = mysqli_query($con, $deleteuery);
               header("Location: quiz_list.php");
-              exit();
             }
           }
         }
