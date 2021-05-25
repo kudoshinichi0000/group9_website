@@ -72,29 +72,15 @@
           </div>
         </div>
       </div>
-      <script>
-        $('.delete-btn').click((e) => {
-          e.preventDefault();
-          if(confirm(' Are you sure you want to delete your account?')){
-            window.location.href = $(e.target).attr('href');
-          }
-        });
-      </script>
-        <form action='deleteQuizHandler.php' method='POST'>
-          <table height='250px' width='25%'>
-            <tr>
-              <th colspan='2'><h1>Delete Quiz</h1>
-              <h4>Are You Sure you want to delete this quiz?</h4>
-              <input type='submit' name='Confirm' value='no' class='but'>
-              <input type='submit' name='Confirm' value='yes' class='but' ></th>
-            </tr>
-
-          </table>
-          <input type='hidden' name='quizCode' value='$code'>
-        </form>
-        ";
-
      ?>
+     <script>
+       $('.delete-btn').click((e) => {
+         e.preventDefault();
+         if(confirm(' Are you sure you want to delete this quiz?')){
+           window.location.href = $(e.target).attr('href');
+         }
+       });
+     </script>
 
   </body>
 </html>
