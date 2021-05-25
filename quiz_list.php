@@ -91,7 +91,7 @@
                           <th scope='row><h2>$code</h2></th>
 
                           <th scope='row'>
-                            <a href='editTitle.php?quiz_code=$code' class='action'>edit title</a>
+                            <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill '>edit title</a>
                             <a href='questions.php?quiz_code=$code' class='action'>edit/add questions</a>
                             <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
                           </th>
