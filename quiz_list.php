@@ -48,6 +48,7 @@
                 <thead>
                   <tr>
                     <th scope="col"><h4><label>Title: </label></h4></th>
+                    <br>
                     <th scope="col"><h4><label>Items: </label></h4></th>
                     <th scope="col"><h4><label>Total Points: </label></h4></th>
                     <th scope="col"><h4><label>Categories: </label></h4></th>
