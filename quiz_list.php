@@ -26,8 +26,9 @@
       text-align: center;
       align-items: center;
       padding: 8px;
+
     }
-    buttonnn{
+    .buttonnn{
       border:none;
       color:white;
       padding: 10px 30px;
@@ -41,22 +42,22 @@
 
     }
 
-    button01{
+    .button01{
       background-color: white;
       color:black;
       border: 2px solid #f44336
     }
-    button01:hover{
+    .button01:hover{
         background-color: #f44336;
         color: white;
 
       }
-    button1{
+    .button1{
         background-color:white;
         color:black;
         border: 2px solid #555555;
       }
-    button1:hover{
+    .button1:hover{
           background-color: #555555;
           color: white;
       }
