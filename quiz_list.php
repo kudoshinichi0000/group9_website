@@ -84,11 +84,11 @@
                       echo "
                         <tr>
                           <br><br>
-                          <th scope='row'>$Ftitle</h2></th>
-                          <th scope='row'>$items</h2></th>
-                          <th scope='row'>$OS</h2></th>
-                          <th scope='row'>$Cat</h2></th>
-                          <th scope='row>$code</h2></th>
+                          <th scope='row'>$Ftitle</th>
+                          <th scope='row'>$items</th>
+                          <th scope='row'>$OS</th>
+                          <th scope='row'>$Cat</th>
+                          <th scope='row>$code</th>
 
                           <td scope='row'>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align:center; margin: 5px;'>edit title</a>
