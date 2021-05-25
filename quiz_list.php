@@ -44,6 +44,7 @@
           </div>
                 <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
             <div class="card-body">
+                <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                   <tr>
