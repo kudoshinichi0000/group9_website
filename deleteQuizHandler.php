@@ -4,12 +4,6 @@
   $code = $_POST['quiz_Code'];
 	$Confirm = $_POST["Confirm"];
 
-    $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code'";
-    $execQuery = mysqli_query($con, $query);
-    $fetchCodes = mysqli_fetch_assoc($execQuery);
-      $codel = $fetchCodes["quiz_code"];
-      $title = $fetchCodes["title"];
-
 	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
 		//Hidden Input
