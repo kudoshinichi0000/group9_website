@@ -48,11 +48,11 @@
                 <thead>
                   <tr>
                     <th scope="col"><h2><label>Title: </label></h2></th>
-                    <th scope="col"><h2><label>Items: </label></h2>
-                    <th scope="col"><h2><label>Total Points: </label></h2>
-                    <th scope="col"><h2><label>Categories: </label></h2>
-                    <th scope="col"><h2><label>Quiz Code: </label></h2>
-                    <th scope="col"><h2><label>Action: </label></h2>
+                    <th scope="col"><h2><label>Items: </label></h2></th>
+                    <th scope="col"><h2><label>Total Points: </label></h2></th>
+                    <th scope="col"><h2><label>Categories: </label></h2></th>
+                    <th scope="col"><h2><label>Quiz Code: </label></h2></th>
+                    <th scope="col"><h2><label>Action: </label></h2></th>
                   </tr>
                   <br>
 
