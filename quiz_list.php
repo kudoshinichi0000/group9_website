@@ -29,7 +29,11 @@
 
 
     <br><br><br><br>
-
+    <div class="container">
+      <div class="jumbotron">
+        <div class="card">
+          <div class="card-header">
+            <h2><b>QUIZ DETAILS<b></h2>
     <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
       <table height='50px' width='85%'>
         <tr>
