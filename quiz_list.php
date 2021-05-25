@@ -88,7 +88,7 @@
                           <th scope='row'>$items</h2></th>
                           <th scope='row'>$OS</h2></th>
                           <th scope='row'>$Cat</h2></th>
-                          <th scope='row>>$code</h2></th>
+                          <th scope='row>$code</h2></th>
 
                           <td scope='row'>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align:center; margin: 5px;'>edit title</a>
