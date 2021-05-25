@@ -30,7 +30,11 @@
     </style>
   </head>
   <body>
-    
+
+    <?php include_once("navbaradmin.php"); ?>
+
+
+
     <br><br><br><br>
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
@@ -116,7 +120,7 @@
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-              <form action="deleteQuizHandler.php" id="form-delete-user" method="post">
+              <form action="DeleteQuizHandler.php" id="form-delete-user" method="post">
                   <label><p>  Are you sure you want to delete this quiz: <?php echo $Ftitle?>?</p></label>
 
             </div>
