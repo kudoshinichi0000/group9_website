@@ -92,7 +92,6 @@
 
                           <td scope='row'>
                             <button type='button' data-toggle='modal' data-target='#DeleteModal' class='btn btn-danger badge-pill text-right float-right' style='text-align:center; margin:5px;'>Delete</button>
-                            <a  href='deleteQuiz.php?quiz_code=$code'type='button' data-toggle='modal' data-target='#DeleteModal' class='btn btn-danger badge-pill text-right float-right' style='text-align:center; margin:5px;'>Delete</a>
                             <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' text-right style='width:80px; text-align:center; margin: 5px;'>Edit Title</a>
                             <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style=' text-align:center; margin: 5px;'>+ Questions</a>
