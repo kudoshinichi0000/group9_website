@@ -34,6 +34,7 @@
     <?php include_once("navbaradmin.php"); ?>
 
 
+
     <br><br><br><br>
     <div class="container">
       <div class="jumbotron">
@@ -100,6 +101,10 @@
         }
       }
      ?>
+            </div>
+          </div>
+        </div>
+      </div>
 
    </table>
   </body>
