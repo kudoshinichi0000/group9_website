@@ -31,17 +31,6 @@
   </head>
   <body>
 
-    <?php include_once("navbaradmin.php"); ?>
-    <!-- Quiz Successfully Deleted -->
-    <?php if(isset( $_SESSION['delsuccess'])): ?>
-       <script type="text/javascript">
-          alert('<?php echo $_SESSION['delsuccess']; ?>');
-       </script>
-       <?php unset($_SESSION['delsuccess']);
-      endif;?>
-
-
-
     <br><br><br><br>
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
