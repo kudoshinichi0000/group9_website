@@ -72,6 +72,7 @@
           </div>
         </div>
       </div>
+    "  
      ?>
      <script>
        $('.delete-btn').click((e) => {
