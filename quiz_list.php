@@ -37,7 +37,7 @@
 
     <br><br><br><br>
     <div class="container">
-      <div class="jumbotron" style="width:110%; padding: 3rem 1rem; margin-left:-2.5rem;">
+      <div class="jumbotron" style="width:110%; padding: 3rem 1rem; margin-left:-3rem;">
         <div class="card">
           <div class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
