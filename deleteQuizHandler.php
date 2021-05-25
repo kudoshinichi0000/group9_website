@@ -20,6 +20,9 @@
 
 		//Perform the query
 		$execQuery = mysqli_query($con, $deleteQuery);
+        if($execQuery){
+          $deleteuery = "DELETE FROM quiz_list WHERE quiz_code = '$delGetid'";
+          $execquery = mysqli_query($con, $deleteuery);
 
         if ($execQuery) {
       		$deleteuery = "DELETE FROM multiple_questions WHERE quiz_code = '$delGetid'";
@@ -37,6 +40,7 @@
             }
           }
         }
+      }
 	}else{
 		header("Location: quiz_list.php");
 		exit();
