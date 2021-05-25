@@ -84,11 +84,11 @@
                       echo "
                         <tr>
                           <br><br>
-                          <th colspan='2'><h2>$Ftitle</h2></th>
-                          <th colspan='2'><h2>$items</h2></th>
-                          <th colspan='2'><h2>$OS</h2></th>
-                          <th colspan='2'><h2>$Cat</h2></th>
-                          <th colspan='2'><h2>$code</h2></th>
+                          <th scope='row'><h2>$Ftitle</h2></th>
+                          <th scope='row'><h2>$items</h2></th>
+                          <th scope='row'><h2>$OS</h2></th>
+                          <th scope='row'><h2>$Cat</h2></th>
+                          <th scope='row><h2>$code</h2></th>
 
                           <th colspan='3'>
                             <a href='editTitle.php?quiz_code=$code' class='action'>edit title</a>
