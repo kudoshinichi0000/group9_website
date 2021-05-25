@@ -42,19 +42,3 @@ function random_num($length)
 
 	return $text;
 }
-?>
-<section class="section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<?php
-				if(isset($_SESSION['status']))
-				{
-					echo $_SESSION['status'];
-					unset($_SESSION['status']);
-				}
-				?>
-			</div>
-		</div>
-	</div>
-	</section>
