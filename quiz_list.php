@@ -30,7 +30,6 @@
     </style>
   </head>
   <body>
-
     <?php include_once("navbaradmin.php"); ?>
     <br><br><br><br>
     <div class="container">
