@@ -92,7 +92,7 @@
 
                           <td scope='row'>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align:center; margin: 5px;'>edit title</a>
-                            <a href='questions.php?quiz_code=$code' class='action'>edit/add questions</a>
+                            <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style='color:#420264;'>edit/add questions</a>
                             <a href='deleteQuiz.php?quiz_code=$code' class='action'>delete</a>
 
                           </td>
