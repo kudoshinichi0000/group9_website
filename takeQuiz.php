@@ -27,71 +27,7 @@ $title = $fetch['title'];
   <body>
     <?php
 
-    //include_once("navbar.php");
-    echo "<br><br><br><br><br><br>
-          <div class='quiz'> $title </div><br><br><br>";
-
-    ?>
-    <div class="Container">
-
-    <?php
-    echo "<br><div style='text-align:center; font-size: 2em;'>Multiple Question</div>";
-    //This is for user id
-   $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
-
-   $execQuery = mysqli_query($con, $query);
-
-   while($fetchQuestion = mysqli_fetch_assoc($execQuery)){
-    $question = $fetchQuestion['question'];
-    $points = $fetchQuestion['questionPoints'];
-    $option1 = $fetchQuestion['option1'];
-    $option2 = $fetchQuestion['option2'];
-    $option3 = $fetchQuestion['option3'];
-    $option4 = $fetchQuestion['option4'];
-    $answer = $fetchQuestion['answer'];
-    $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
-
-      //This section will provide information about the quiz
-
-      echo "<br>
-      <div class='cons'>
-      <form action='takeQuiz.php' method='post'>
-        <table width='100%' style='background-color: #dacb72;'>
-          <tr>
-            <th colspan='2'><label><h3>Question: $question</h3></label></th>
-          </tr>
-
-          <tr>
-            <th colspan='2'>
-
-              <label for='A'>
-                <input type='radio' name='A' value=''> A. $option1
-              </label><br><br>
-
-
-              <label for='B'>
-                <input type='radio' name='B' value=''> B. $option2
-              </label><br><br>
-
-              <label for='C'>
-                <input type='radio' name='C' value=''> C. $option3
-              </label><br><br>
-
-              <label for='D'>
-                <input type='radio' name='D' value=''> D. $option4
-              </label><br><br
-
-              <label for='Submit'>
-                <input type='submit' name='submit'>
-              </label><br><br
-
-            </th>
-          </tr>
-
-        </table>
-        </form>
-      </div><br><br>";
-    }
+    
     /*
     echo "<br><div style='text-align:center; font-size: 2em;'>True or False</div>";
     //Getting or fetching all rows from true or false

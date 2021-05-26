@@ -1,3 +1,6 @@
+body{
+  background-color: #fff;
+}
 .quiz{
   text-align:center;
   padding-top:1em;
@@ -15,14 +18,26 @@
 .Container{
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 10em;
   margin-bottom: 5em;
   width: 70%;
   border: 1px solid black;
 }
 
 .cons{
-  margin: auto;
-  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 50%;
   border: 1px solid black;
+  background-color: #d8edf7;
+  padding-left: 2em;
+  
+}
+
+.tab{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  height:L 5em;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Main</title>
-	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@
 		            $Ftitle = substr($title,0,25) . "...";
 					echo "
 					<div class='DisplayQuestions'>
-						<a href='takeQuiz.php?quiz_code=$QuizCode'
+						<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'
 							style='
 									color: black;
 									text-decoration: none;
