@@ -25,6 +25,12 @@
              <h2><b> Adding Identification Question<b></h2>
            </div>
            <div class="card-body">
+              <div class="container">
+                <div class="row formContainer">
+                  <div class="col-lg-12">
+                  </div
+                </div>
+              </div>
              <form action='IdentificationHandler.php' method='POST'>
                <table border='1' height='350px' width='25%' class='container1'>
 
