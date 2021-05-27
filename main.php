@@ -3,37 +3,12 @@
 <head>
 	<title>Main</title>
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
-				<link type="text/css" rel="stylesheet" href="css/navbar.css">
-        <script src="https://use.fontawesome.com/52b2061ad6.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<style media="screen">
-		.wel{
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-			color: #fff;
-			background-color: red;
-			padding:1em;
-			font-size:1.2em;
-			width: 80%;
-			border-radius: 5em;
-		}
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+	<link type="text/css" rel="stylesheet" href="css/navbar.css">
+  <script src="https://use.fontawesome.com/52b2061ad6.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		#Maincontainer{
-			border: 1px solid black;
-			width: 80%;
-			margin: auto;
-		}
-		.DisplayQuestions{
-			margin-left: 2em;
-			border: 1px solid black;
-			width: 50%;
-			height: 11em;
-			color: black;
-		}
-	</style>
 </head>
 <body>
 	<?php
@@ -80,8 +55,10 @@
 					if(strlen($title) >= 1){
 		            $Ftitle = substr($title,0,25) . "...";
 					echo "
-								<div style='display: inline-block'>
-						      <div class='row' >
+						<div class='row'>
+						  <div class='section scrollspy'>
+						    <div class='container'>
+						      <div class='row'>
 						        <div class='col s12 m4 l4'>
 						          <div class='card'>
 						            <div class='card-image waves-effect waves-block waves-light'>
@@ -98,8 +75,9 @@
 						          </div>
 						        </div>
 						      </div>
-								</div>
-								
+						    </div>
+						  </div>
+						</div>
 					";
 				}
 			}

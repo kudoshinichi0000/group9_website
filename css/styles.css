@@ -174,18 +174,3 @@ body {
 .card-content a:hover {
     color: #2196F3;
 }
-
-/*
-  ============================================
-  Skills
-  ============================================
-*/
-
-.skills {
-    margin: 15% 0;
-    vertical-align: center;
-}
-.skills p {
-    font-size: 2em;
-    font-style: italic;
-}
