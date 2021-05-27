@@ -11,10 +11,13 @@
   </head>
   <body>
     <?php
-      include_once("navbaradmin.php");
       include_once("db.php");
       $code = $_GET["quiz_code"];
      ?>
+     <?php
+       include_once("navbaradmin.php");
+        ?>
+      <br><br><br><br>
      <div class="container">
        <div class="jumbotron">
          <div class="card-header">
