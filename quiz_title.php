@@ -10,13 +10,21 @@
     </style>
   </head>
   <body>
+
     <?php
-    include("db.php");
-    include("functions.php");
-    include_once("navbaradmin.php");
-    $code = rand();
-    ?>
-    <br><br><br><br>
+      //Database Connectivity
+      include("db.php");
+
+      //include("functions.php");
+
+      //inserting navbar for admin
+      include_once("navbaradmin.php");
+
+      //This rand() will generate random numbers, this numbers will be the quiz_code
+      $code = rand();
+    ?><br><br><br><br>
+
+
     <div class="container1">
       <div class="row">
           <span class="title" style="margin-left:40%;font-size:30px;"><b>Enter Quiz Details<b></span>

@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
     <style media="screen">
     table {
       background-color: #fff;
@@ -30,8 +29,13 @@
     </style>
   </head>
   <body>
-    <?php include_once("navbaradmin.php"); ?>
-    <br><br><br><br>
+
+    <?php
+      //Including navbar for admin
+      include_once("navbaradmin.php");
+    ?><br><br><br><br>
+
+
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
       <div class="jumbotron" style="width:118%; padding: 3rem 1rem; margin-left:-5.5rem;">
@@ -44,6 +48,7 @@
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                   <tr>
+                    <!---labeling the obtained quizzes in the database--->
                     <th scope="col"><h4><label>Title: </label></h4></th>
                     <th scope="col"><h4><label>Items: </label></h4></th>
                     <th scope="col"><h4><label>Total Points: </label></h4></th>
@@ -51,20 +56,27 @@
                     <th scope="col"><h4><label>Quiz Code: </label></h4></th>
                     <th scope="col"><h4><label>Action: </label></h4></th>
                   </tr>
-              </thead>
+              </thead><br>
 
-                  <br>
 
-              <?php
-              //Step 1 Database Connectivity
-              include_once "db.php";
-              $userid = $_SESSION['userid'];
+      <?php
 
-              $query = "SELECT * FROM quiz_list";
-              $execQuery = mysqli_query($con, $query);
-              while ($fetchId = mysqli_fetch_assoc($execQuery)) {
-              $admin_id = $fetchId["admin_id"];
+          //Step 1 Database Connectivity
+          include_once "db.php";
 
+          $userid = $_SESSION['userid'];
+
+          //Prepare the query
+          $query = "SELECT * FROM quiz_list";
+
+          //Perform the query
+          $execQuery = mysqli_query($con, $query);
+
+          //Getting or fethcing all rows from the executed query
+          while ($fetchId = mysqli_fetch_assoc($execQuery)) {
+          $admin_id = $fetchId["admin_id"];
+
+              //displaying all quizzes made by the admin user
               if ($userid == $admin_id) {
                 $query = "SELECT * FROM quiz_list WHERE admin_id = $admin_id ";
                 $execQuery = mysqli_query($con, $query);
@@ -75,6 +87,7 @@
                 $OS = $fetchTitle['OverallScores'];
                 $Cat= $fetchTitle['categories'];
 
+                //if letters is exceed in 20 the next letter will be "..."
                 if(strlen($title) >= 1){
                       $Ftitle = substr($title,0,20) . "...";
 
@@ -107,6 +120,7 @@
           </div>
         </div>
       </div>
+
       <!--MODAL MESSAGE ALERT FOR DELETING QUIZ KASO DI GUMAGANA SA BACKEND D QALAM AYUSIN. RED DELETE BUTTON YUNG GINAWA -->
       <div class="modal fade" id="DeleteModal">
       <div class="modal-dialog">
