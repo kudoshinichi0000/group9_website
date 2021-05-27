@@ -12,6 +12,7 @@
   <body>
     <?php
       include_once("db.php");
+      include_once "navbaradmin.php"
       $code = $_GET["quiz_code"];
      ?>
      <div class="container">
