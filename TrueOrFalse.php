@@ -19,14 +19,31 @@
          <div class="card">
            <div class="card-hearder">
              <h2><ba>Add True or False Question<b></h2>
-       <div class="row formContainer">
-         <div class="col-lg-12">
-           <form action="TrueOrFalseHandler.php" method="POST">
-           </form>
+           </div>
+           <div class="card-body">
+             <div class="row formContainer">
+               <div class="col-lg-12">
+                 <form action="TrueOrFalseHandler.php" method="POST">
+                   <div class="row form-group">
+                     <div class="col">
+                       <label for="TorFQuestion">Question: </label>
+                       <input type="text" class="form-control" placeholder="Enter your question" name="TorFQuestion" required>
+                     </div>
+                   </div>
+                   <div class="row form-group">
+                     <div class="col">
+                       <label for="TorFAnswer">Answer:</label>
+                        <select class="" name="TorFAnswer">
+                     </div>
+                   </div>
+                 </form>
+               </div>
+             </div>
+           </div>
          </div>
        </div>
-      </div>
-     </div
+     </div>
+
     <form action='TrueOrFalseHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
 
