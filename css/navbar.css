@@ -214,12 +214,14 @@ nav a:hover {
 
 .DisplayQuestions{
 	display: inline-block;
-	margin-left: 2em;
-	border: 1px solid black;
+	float: left;
+	margin-left: 4.5em;
+	margin-bottom: 2em;
 	width: 26%;
 	height: 20em;
 	color: black;
-
+	top: 0;
+	left: 0;
 }
 
 .box{
@@ -471,9 +473,9 @@ section {
 }
 
 #Maincontainer{
-
-	width: 90%;
-	margin: auto;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .Categories{
