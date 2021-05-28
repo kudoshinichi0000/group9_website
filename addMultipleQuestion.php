@@ -19,7 +19,28 @@
     <?php
     include_once("navbaradmin.php");
     ?>
-
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 style="margin-left:30%"><b> Add Mutiple Choice Item<b></h2>
+        </div>
+        <div class="card-body">
+          <div class="center">
+            <div class="row formContainer">
+              <div class="col-lg-12">
+                <form action="addMultipleQuestionHandler.php" method="POST">
+                  <div class="row form-group">
+                    <div class="col">
+                      <label for="question">Question:</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <br><br><br><br> <br><br><br><br>
     <div class='containerTable'>
       <form action='addMultipleQuestionHandler.php' method='POST'>
