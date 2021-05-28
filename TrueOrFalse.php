@@ -40,7 +40,7 @@
                        <label for="TorFAnswer">Answer:</label>
                        <div class="input-group mb-3">
                        <div class="input-group-prepend">
-                       <label class="input-group-text" for="TorFAnswer">Answer:</label>
+                       <label class="input-group-text" for="TorFAnswer"><b>Answer:<b></label>
                      </div>
                         <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
                           <option selected>Choose...</option>
