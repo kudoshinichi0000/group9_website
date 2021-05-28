@@ -31,7 +31,7 @@
                     <form action='IdentificationHandler.php' method="POST">
                     <div class="row form-group">
                       <div class="col">
-                        <label for="IdenQuestion">Question</label>
+                        <label for="IdenQuestion">Question:</label>
                         <input type="text" class="form-control" placeholder="Enter your question"name="IdenQuestion" required>
                       </div>
                     </div>
@@ -41,6 +41,22 @@
                         <input type="text" class="form-control" name="IdenAnswer" required>
                       </div>
                     </div>
+                    <div class="row form-group">
+                      <div class="col">
+                        <label for="points">Points:</label>
+                        <input type="number" class="form-control" placeholder="Enter numbers only"name="points" required>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="row form-group" style="margin-top: 40px;">
+                      <div class="col">
+                        <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">SAVE</button>
+                    <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger'>Cancel</a>";?>
+                      <input type="hidden" name="id" value="<?php echo $userId ?>">
+                  </form>
+                  </div>
+                </div>
+              </div>
 
                   </div>
                 </div>
