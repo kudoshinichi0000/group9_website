@@ -38,6 +38,7 @@
                    <div class="row form-group">
                      <div class="col">
                        <label for="TorFAnswer">Answer:</label>
+                       <div class="input-group mb-3">
                        <div class="input-group-prepend">
                        <label class="input-group-text" for="TorFAnswer">Answer:</label>
                      </div>
@@ -46,6 +47,7 @@
                           <option value="True">True</option>
                           <option value="False">False</option>
                         </select>
+                      </div>
                      </div>
                    </div>
 
