@@ -33,7 +33,9 @@
                    <div class="row form-group">
                      <div class="col">
                        <label for="TorFAnswer">Answer:</label>
+                       <label class="input-group-text" for="TorFAnswer">Answer:</label>
                         <select class="" name="TorFAnswer">
+                          <option value="True">True</option>
                      </div>
                    </div>
                  </form>
