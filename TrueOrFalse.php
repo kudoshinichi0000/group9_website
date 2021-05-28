@@ -26,31 +26,33 @@
              <h2><b>Add True or False Question<b></h2>
            </div>
            <div class="card-body">
-             <div class="row formContainer">
-               <div class="col-lg-12">
-                 <form action="TrueOrFalseHandler.php" method="POST">
-                   <div class="row form-group">
-                     <div class="col">
-                       <label for="TorFQuestion">Question: </label>
-                       <input type="text" class="form-control" placeholder="Enter your question" name="TorFQuestion" required>
-                     </div>
-                   </div>
-                   <div class="row form-group">
-                     <div class="col">
-                       <div class="input-group mb-3">
-                         <div class="input-group-prepend">
-                          <label class="input-group-text" for="TorFAnswer">Answer:</label>
-                        </div>
-                          <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
-                              <option selected>Choose...</option>
-                              <option value="True">True</option>
-                              <option value="False">False</option>
-                            </select>
+             <div class="center">
+               <div class="row formContainer">
+                 <div class="col-lg-12">
+                   <form action="TrueOrFalseHandler.php" method="POST">
+                     <div class="row form-group">
+                       <div class="col">
+                         <label for="TorFQuestion">Question: </label>
+                         <input type="text" class="form-control" placeholder="Enter your question" name="TorFQuestion" required>
                        </div>
-                    </div>
-                 </div>
+                     </div>
+                     <div class="row form-group">
+                       <div class="col">
+                         <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                            <label class="input-group-text" for="TorFAnswer">Answer:</label>
+                          </div>
+                            <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
+                                <option selected>Choose...</option>
+                                <option value="True">True</option>
+                                <option value="False">False</option>
+                              </select>
+                         </div>
+                      </div>
+                   </div>
 
-                 </form>
+                   </form>
+                 </div>
                </div>
              </div>
            </div>
