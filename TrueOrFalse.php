@@ -20,7 +20,7 @@
      ?>
      <br> <br><br><br>
      <div class="container">
-       <div class="jumbotron">
+
          <div class="card">
            <div class="card-header">
              <h2 style="margin-left:30%"><b>Add True or False Question<b></h2>
