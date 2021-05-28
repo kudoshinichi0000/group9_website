@@ -213,22 +213,26 @@ nav a:hover {
 }
 
 .DisplayQuestions{
-  margin-left: auto;
-	margin-right: auto;
-	border: 1px solid black;
-	width: 50%;
-	height: 11em;
+	display: inline-block;
+	float: left;
+	margin-left: 4.5em;
+	margin-bottom: 2em;
+	width: 26%;
+	height: 20em;
 	color: black;
+	top: 0;
+	left: 0;
 }
 
-.BigDisplayQuestions{
-  margin-left: auto;
-	margin-right: auto;
-	border: 1px solid black;
-	width: 80%;
-	height: 11em;
+.box{
+	background-color: #fff;
 	color: black;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
 .centerBlack{
 	font-family: 'Orelega One', cursive;
 	color: #523A28;
@@ -466,4 +470,14 @@ section {
   padding: 5px;;
   padding-left: 13.3%;
 	margin-left: 1em;
+}
+
+#Maincontainer{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Categories{
+	margin-top: 2em;
 }

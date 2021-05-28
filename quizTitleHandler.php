@@ -11,13 +11,18 @@
   //Hidden Input
   $quizCode = $_POST["quizCode"];
 
+  //Prepare the query
   $query = " SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizCode'";
+
+  //Perform the query
   $execQuery = mysqli_query($con, $query);
+
     if ($execQuery) {
+      //If true the information will insert to database
       $insertQuestion = "INSERT INTO quiz_list (admin_id, quiz_code, title, categories ,description,items, OverallScores) VALUES('$userid', '$quizCode', '$quizTitle', '$Catg' ,'$Desc', 0, 0)";
       $execInsert = mysqli_query($con, $insertQuestion);
         if($execInsert){
-
+          //This is for inserting picture in database
           $targetDirectory = "res/quizPicture/";
           $fileName	= $_FILES["ProfilePicture"]["name"];
 
