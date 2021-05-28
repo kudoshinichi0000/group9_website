@@ -28,7 +28,8 @@
               <div class="container">
                 <div class="row formContainer">
                   <div class="col-lg-12">
-                  </div
+                    <form action='IdentificationHandler.php' method="POST">
+                  </div>
                 </div>
               </div>
              <form action='IdentificationHandler.php' method='POST'>
