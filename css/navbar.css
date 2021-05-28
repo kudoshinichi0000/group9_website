@@ -214,7 +214,6 @@ nav a:hover {
 
 .DisplayQuestions{
 	display: inline-block;
-	float: left;
 	margin-left: 2em;
 	border: 1px solid black;
 	width: 26%;
