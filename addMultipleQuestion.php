@@ -15,7 +15,7 @@
     include_once("navbaradmin.php");
     ?>
 
-    echo "<br><br><br>
+    <br><br><br>
     <div class='containerTable'>
       <form action='addMultipleQuestionHandler.php' method='POST'>
         <table border='1' height='350px' width='100%' >
