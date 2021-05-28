@@ -8,8 +8,12 @@
     <?php
       include_once("db.php");
       $code = $_GET["quiz_code"];
-      
+
      ?>
+     <?php
+     include_once("navbaradmin.php");
+     ?>
+     <br> <br><br><br> <br><br>
     <form action='TrueOrFalseHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
 
