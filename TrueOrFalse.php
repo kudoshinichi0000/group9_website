@@ -18,7 +18,7 @@
      <?php
      include_once("navbaradmin.php");
      ?>
-     <br> <br><br><br> <br><br>
+     <br> <br><br><br>
      <div class="container">
        <div class="jumbotron">
          <div class="card">
