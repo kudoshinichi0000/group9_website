@@ -115,8 +115,8 @@
 
   		<!---Categories--->
   		<div class="Categories">
-  			<p style="text-align: center; align-items: center;">Our Categories</p><br>
-        <a href="#" class='catH'>Educational</a>
+  			<h4>Our Categories</h4><br>
+        <a href="#" class='catH'>Latest</a>
         <a href="#" class='cat'>Educational</a>
   			<a href="#" class='cat'>Entertainment</a>
   			<a href="#" class='cat'>Mix</a>
@@ -160,7 +160,7 @@
       					 <img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
       						 <div class='box'>
       				        <b style='font-size:2em;'>$title</b><br>
-      							  <a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+      							  <a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode' style='position: absolute; width: 50%; bottom: 10px;'>Play Quiz</a>
       						 </div>
               </div>";
             }

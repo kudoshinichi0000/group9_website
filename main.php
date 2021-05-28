@@ -132,15 +132,13 @@
 					<div class='DisplayQuestions'>
 								<img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
 								<div class='box'>
-									<b style='font-size:2em;'>$title</b><br>
-									<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+									<b style='font-size:1.5em;'>$title</b><br><br>
 								</div>
 					</div>
 					";
 			}
 			?>
 		</div>
-
 
 </body>
 	<?php include_once "footerr.php";?>
