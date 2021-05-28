@@ -47,9 +47,16 @@
                                 <option value="True">True</option>
                                 <option value="False">False</option>
                               </select>
-                         </div>
+                          </div>
+                        </div>
                       </div>
-                   </div>
+                      <div class="row form-group">
+                        <div class="col">
+                          <label for="points">Points:</label>
+                          <input type="number" class="form-control" placeholder="input points for this question" name="points" required>
+                        </div>
+                      </div>
+
 
                    </form>
                  </div>
@@ -59,24 +66,6 @@
          </div>
        </div>
      </div>
-
-    <form action='TrueOrFalseHandler.php' method='POST'>
-      <table border='1' height='350px' width='25%' class='container1'>
-
-        <tr>
-          <th colspan='3'><h2><label for="TorFQuestion">Question: </label> </h2>
-          <h2><input type="text" name="TorFQuestion" required> </h2></th>
-        </tr>
-
-        <tr>
-          <th colspan='3'><h2><label for="TorFAnswer">Answer: </label> </h2>
-            <select class="" name="TorFAnswer">
-                <option value="True">True</option>
-                <option value="False">False</option>
-            </select>
-          </th>
-        </tr>
-
           <tr>
             <th colspan='3'><h2><label for="points">points: </label> </h2>
             <h2><input type="number" name="points" required> </h2></th>
