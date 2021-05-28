@@ -10,6 +10,10 @@
     <?php
     include_once('db.php');
     $code = $_GET['quiz_code'];
+    ?>
+    <?php
+    include_once("navbaradmin.php");
+    ?>
 
     echo "<br><br><br>
     <div class='containerTable'>
