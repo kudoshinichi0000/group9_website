@@ -19,6 +19,7 @@
      include_once("navbaradmin.php");
      ?>
      <br> <br><br><br>
+     <div class="container">
        <div class="jumbotron">
          <div class="card">
            <div class="card-header">
@@ -72,6 +73,7 @@
            </div>
          </div>
        </div>
+     </div>
         <tr>
           <?php echo "<th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>"; ?>
           <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
