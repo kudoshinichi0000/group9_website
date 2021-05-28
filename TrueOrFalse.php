@@ -14,6 +14,14 @@
      include_once("navbaradmin.php");
      ?>
      <br> <br><br><br> <br><br>
+     <div class="container">
+       <div class="row formContainer">
+         <div class="col-lg-12">
+           <form action="TrueOrFalseHandler.php" method="POST">
+           </form>
+         </div>
+       </div>
+     </div>
     <form action='TrueOrFalseHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
 
