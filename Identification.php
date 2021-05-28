@@ -50,7 +50,7 @@
                     <div>
                       <div class="row form-group" style="margin-top: 40px;">
                       <div class="col">
-                        <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">SAVE</button>
+                        <button type="submit" name="btn" class="btn btn-outline-success"value="Submit">Submit</button>
                     <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger'>Cancel</a>";?>
                       <input type="hidden" name="id" value="<?php echo $userId ?>">
                   </form>
