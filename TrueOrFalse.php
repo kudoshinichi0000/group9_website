@@ -37,19 +37,18 @@
                    </div>
                    <div class="row form-group">
                      <div class="col">
-                       <label for="TorFAnswer">Answer:</label>
                        <div class="input-group mb-3">
-                       <div class="input-group-prepend">
-                       <label class="input-group-text" for="TorFAnswer">Answer:</label>
-                     </div>
-                        <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
-                          <option selected>Choose...</option>
-                          <option value="True">True</option>
-                          <option value="False">False</option>
-                        </select>
-                      </div>
-                     </div>
-                   </div>
+                         <div class="input-group-prepend">
+                          <label class="input-group-text" for="TorFAnswer">Answer:</label>
+                        </div>
+                          <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
+                              <option selected>Choose...</option>
+                              <option value="True">True</option>
+                              <option value="False">False</option>
+                            </select>
+                       </div>
+                    </div>
+                 </div>
 
                  </form>
                </div>
