@@ -74,12 +74,5 @@
          </div>
        </div>
      </div>
-        <tr>
-          <?php echo "<th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>"; ?>
-          <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-        </tr>
-      </table>
-      <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
-    </form>
   </body>
 </html>
