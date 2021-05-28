@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Main</title>
-	<link type="text/css" rel="stylesheet" href="css/styles.css">
+	<link type="text/css" rel="stylesheet" href="css/navbar.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
@@ -25,13 +25,7 @@
 			width: 80%;
 			margin: auto;
 		}
-		.DisplayQuestions{
-			margin-left: 2em;
-			border: 1px solid black;
-			width: 50%;
-			height: 11em;
-			color: black;
-		}
+
 	</style>
 </head>
 <body>
@@ -48,7 +42,6 @@
 	</div>
 
 		<div id="Maincontainer">
-
 			<b style="font-size: 4em;">BuzzFeed Quizzes</b>
 			<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
@@ -80,23 +73,16 @@
 		            $Ftitle = substr($title,0,25) . "...";
 					echo "
 					<div class='DisplayQuestions'>
-
-								<img src='res/quizPicture/$pic' width='250px' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
-								<b style='font-size:2em;'>$Ftitle</b>
-								<h5>Description: $Desc</h5>
-								<h5>Categories: $Cat</h5>
-								<h5>Publication Date: $newDate</h5><br><br><br><br>
-					</div><br>
+								<img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
+								<div class='box'>
+									<b style='font-size:2em;'>$Ftitle</b><br>
+									<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+								</div>
+					</div>
 					";
 				}
 			}
 			?>
-
-<!--<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'
-	style='
-			color: black;
-			text-decoration: none;
-			'>-->
 		</div>
 
 
