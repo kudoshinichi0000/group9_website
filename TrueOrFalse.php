@@ -23,7 +23,7 @@
        <div class="jumbotron">
          <div class="card">
            <div class="card-header">
-             <h2><b>Add True or False Question<b></h2>
+             <h2 style="margin-left:40%"><b>Add True or False Question<b></h2>
            </div>
            <div class="card-body">
              <div class="center">
