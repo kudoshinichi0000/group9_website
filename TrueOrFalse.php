@@ -18,9 +18,8 @@
      <?php
      include_once("navbaradmin.php");
      ?>
-     <br> <br><br><br>
+     <br> <br><br><br><br>
      <div class="container">
-
          <div class="card">
            <div class="card-header">
              <h2 style="margin-left:30%"><b>Add True or False Question<b></h2>
@@ -72,7 +71,6 @@
              </div>
            </div>
          </div>
-       </div>
      </div>
   </body>
 </html>
