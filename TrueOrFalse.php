@@ -61,7 +61,7 @@
                         <div class="row form-group" style="margin-top: 40px;">
                         <div class="col">
                           <button type="submit" name="btn" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
-                      <a href="viewadminuser.php" class="btn btn-outline-danger">Cancel</a>
+                          <?php echo "<a href="viewadminuser.php" class="btn btn-outline-danger">Cancel</a>";?>
                         <input type="hidden" name="id" value="<?php echo $userId ?>">
                         </div>
                       </div>
