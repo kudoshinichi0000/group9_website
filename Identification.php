@@ -50,46 +50,19 @@
                     <div>
                       <div class="row form-group" style="margin-top: 40px;">
                       <div class="col">
-                        <button type="submit" name="btn" class="btn btn-outline-info" style='margin:5px;'value="Submit">Submit</button>
-                    <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger'>Cancel</a>";?>
-                      <input type="hidden" name="id" value="<?php echo $userId ?>">
+                        <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
+                    <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                      <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
                   </form>
+                      </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-                  </div>
-                </div>
-              </div>
-             <form action='IdentificationHandler.php' method='POST'>
-               <table border='1' height='350px' width='25%' class='container1'>
-
-                 <tr>
-                   <th colspan='3'><h2><label for="IdenQuestion">Question: </label> </h2>
-                   <h2><input type="text" name="IdenQuestion" required> </h2></th>
-                 </tr>
-
-                 <tr>
-                   <th colspan='3'><h2><label for="IdenAnswer">Answer: </label> </h2>
-                     <input type="text" name="IdenAnswer" required></th>
-                 </tr>
-
-                   <tr>
-                     <th colspan='3'><h2><label for="points">points: </label> </h2>
-                     <h2><input type="number" name="points" required> </h2></th>
-                 </tr>
-                 <tr>
-                   <?php echo "<th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>"; ?>
-                   <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-                 </tr>
-               </table>
-               <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
-             </form>
-
-           </div>
+            </div>
          </div>
        </div>
      </div>
-
   </body>
 </html>
