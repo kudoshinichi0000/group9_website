@@ -9,23 +9,12 @@
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style media="screen">
-		.wel{
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-			color: #fff;
-			background-color: red;
-			padding:1em;
-			font-size:1.2em;
-			width: 80%;
-			border-radius: 5em;
-		}
-
 		#Maincontainer{
 			width: 80%;
 			margin: auto;
 		}
-		form.Searchbtn input[type=text] {
+
+	form.Searchbtn input[type=text] {
 		float: right;
 	  padding: 10px;
 	  font-size: 17px;
@@ -61,11 +50,12 @@
 	</style>
 </head>
 <body>
+
 	<?php
 		include_once("navbar.php");
 	?><br><br><br><br><br><br>
 
-	<br><br><br>
+		<!---Feedopedia introducing video--->
 		<div id="VideoIntroCenter">
 			<video width="600" controls>
 	  		<source src="res/Video/IntroVideo.mp4" type="video/mp4">
@@ -73,57 +63,27 @@
 		</div>
 	</div>
 
-		<div id="Maincontainer"><br>
-			<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
-			<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
+	<!---Welcoming text--->
+	<div id="Maincontainer"><br>
+		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
+		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
-			<div class="Categories">
-				<p style="text-align: center; align-items: center;">Our Categories</p><br>
-				<a href="#">Educational</a>
-				<a href="#">Entertainment</a>
-				<a href="#">Mix</a>
-			</div>
+		<!---Categories--->
+		<div class="Categories">
+			<p style="text-align: center; align-items: center;">Our Categories</p><br>
+			<a href="#">Educational</a>
+			<a href="#">Entertainment</a>
+			<a href="#">Mix</a>
+		</div>
 
-			<form class="Searchbtn" action="main.php">
-				<button type="submit" class="float: right;"><i class="fa fa-search"></i></button>
-				<input type="text" placeholder="Search.." name="search">
-				</form>
+		<!---Search Button--->
+		<form class="Searchbtn" action="main.php">
+			<button type="submit" class="float: right;"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search Title" name="search">
+		</form>
 
-				<?php
-				$con = new PDO("mysql:host=localhost;dbname=quizdb",'root','');
-				if (isset($_POST["submit"])) {
-					$str = $_POST["search"];
-					$sth = $con->prepare("SELECT * FROM `quiz_list` WHERE title = '$str'");
-
-					$sth->setFetchMode(PDO:: FETCH_OBJ);
-					$sth -> execute();
-
-					if($row = $sth->fetch())
-					{
-						?>
-						<br><br><br>
-						<table>
-							<tr>
-								<th>Name</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td><?php echo $row->Name; ?></td>
-								<td><?php echo $row->Description;?></td>
-							</tr>
-
-						</table>
-				<?php
-					}
-						else{
-							echo "Name Does not exist";
-						}
-				}
-
-				?>
-
-			<!--displaying all Quiz--->
-	<div class="centerBlack">News Feed</div><br>
+		<!--displaying all Quiz--->
+		<div class="centerBlack">News Feed</div><br>
 			<?php
 				include_once("db.php");
 				$query = "SELECT * FROM quiz_list";
