@@ -32,6 +32,7 @@
                   <div class="row form-group">
                     <div class="col">
                       <label for="question">Question:</label>
+                     <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
                     </div>
                   </div>
                 </form>
