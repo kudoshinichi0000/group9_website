@@ -29,6 +29,11 @@
                 <div class="row formContainer">
                   <div class="col-lg-12">
                     <form action='IdentificationHandler.php' method="POST">
+                    <div class="row form-group">
+                      <div class="col">
+                        <label for="IdenQuestion">Question</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
