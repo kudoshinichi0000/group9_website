@@ -39,7 +39,7 @@
                      <div class="col">
                        <label for="TorFAnswer">Answer:</label>
                        <label class="input-group-text" for="TorFAnswer">Answer:</label>
-                        <select class="custom-select" name="TorFAnswer">
+                        <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
                           <option selected>Choose...</option>
                           <option value="True">True</option>
                           <option value="False">False</option>
