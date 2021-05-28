@@ -46,13 +46,45 @@
 	  clear: both;
 	  display: table;
 	}
-
+	.cat{
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		color: #000;
+		border-radius: 8px;
+		border: 1px solid black;
+	}
+	.cat:hover{
+		background-color: #007bff;
+		color: #fff;
+		cursor: pointer;
+	}
+	.catH{
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 8px;
+		background-color: #007bff;
+		cursor: pointer;
+	}
+	.catH:hover{
+		color: #fff;
+	}
 	</style>
 </head>
 <body>
 
 	<?php
 		include_once("navbar.php");
+		include_once("db.php");
 	?><br><br><br><br><br><br>
 
 		<!---Feedopedia introducing video--->
@@ -70,22 +102,22 @@
 
 		<!---Categories--->
 		<div class="Categories">
-			<p style="text-align: center; align-items: center;">Our Categories</p><br>
-			<a href="#">Educational</a>
-			<a href="#">Entertainment</a>
-			<a href="#">Mix</a>
+			<h4>Our Categories</h4><br>
+			<a href="#" class='catH'>Latest</a>
+			<a href="#" class='cat'>Educational</a>
+			<a href="#" class='cat'>Entertainment</a>
+			<a href="#" class='cat'>Mix</a>
 		</div>
 
 		<!---Search Button--->
-		<form class="Searchbtn" action="main.php">
-			<button type="submit" class="float: right;"><i class="fa fa-search"></i></button>
+		<form class="Searchbtn" action="Search.php" method="POST">
+			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
 			<input type="text" placeholder="Search Title" name="search">
 		</form>
 
 		<!--displaying all Quiz--->
 		<div class="centerBlack">News Feed</div><br>
 			<?php
-				include_once("db.php");
 				$query = "SELECT * FROM quiz_list";
 				$execQuery = mysqli_query($con, $query);
 				while ($fetchQuiz = mysqli_fetch_assoc($execQuery)) {
@@ -96,19 +128,15 @@
 	        $Cat = $fetchQuiz["categories"];
 	        $Pub = $fetchQuiz["publish"];
 	        $newDate = date("m-d-Y", strtotime($Pub));
-
-					if(strlen($title) >= 1){
-		            $Ftitle = substr($title,0,25) . "...";
 					echo "
 					<div class='DisplayQuestions'>
 								<img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
 								<div class='box'>
-									<b style='font-size:2em;'>$Ftitle</b><br>
+									<b style='font-size:2em;'>$title</b><br>
 									<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
 								</div>
 					</div>
 					";
-				}
 			}
 			?>
 		</div>

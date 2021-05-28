@@ -222,8 +222,12 @@ nav a:hover {
 	color: black;
 	top: 0;
 	left: 0;
+	padding: 5px;
 }
-
+.card{
+	display: block;
+	float: left;
+}
 .box{
 	background-color: #fff;
 	color: black;
@@ -480,4 +484,39 @@ section {
 
 .Categories{
 	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cat{
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+	border-radius: 8px;
+	border: 1px solid black;
+}
+.cat:hover{
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+}
+.catH{
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 8px;
+	background-color: #007bff;
+	cursor: pointer;
+}
+.catH:hover{
+	color: #fff;
 }
