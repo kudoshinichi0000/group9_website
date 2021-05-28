@@ -36,7 +36,7 @@
                          <input type="text" class="form-control" placeholder="Enter your question" name="TorFQuestion" required>
                        </div>
                      </div>
-                     <br><br><br><br>
+                     <br><br>
                      <div class="row form-group">
                        <div class="col">
                          <div class="input-group mb-3">
