@@ -32,8 +32,16 @@
                     <div class="row form-group">
                       <div class="col">
                         <label for="IdenQuestion">Question</label>
+                        <input type="text" class="form-control" placeholder="Enter your question"name="IdenQuestion" required>
                       </div>
                     </div>
+                    <div class="row form-group">
+                      <div class="col">
+                        <label for="IdenAnswer">Anwer:</label>
+                        <input type="text" class="form-control" name="IdenAnswer" required>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
