@@ -57,6 +57,15 @@
                           <input type="number" class="form-control" placeholder="input points for this question" name="points" required>
                         </div>
                       </div>
+                      <div>
+                        <div class="row form-group" style="margin-top: 40px;">
+                        <div class="col">
+                          <button type="submit" name="btn" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
+                      <a href="viewadminuser.php" class="btn btn-outline-danger">Cancel</a>
+                        <input type="hidden" name="id" value="<?php echo $userId ?>">
+                        </div>
+                      </div>
+                    </div>
 
 
                    </form>
@@ -67,10 +76,6 @@
          </div>
        </div>
      </div>
-          <tr>
-            <th colspan='3'><h2><label for="points">points: </label> </h2>
-            <h2><input type="number" name="points" required> </h2></th>
-        </tr>
         <tr>
           <?php echo "<th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>"; ?>
           <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
