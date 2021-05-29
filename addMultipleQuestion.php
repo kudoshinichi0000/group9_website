@@ -39,7 +39,12 @@
                   <div class="ro form-group">
                     <div class="col">
                         <label for="typrOfQuiz">Type of Quiz: Multiple Choices</label>
-                        <th colspan='2'><label for='typeOfQuiz'><h3>Type of quiz: Multiple Choices</h3></label></th>
+                    </div>
+                  </div>
+                  <div class="row form-group">
+                    <div class="col">
+                      <label for="points>">Points:</label>
+                      <input type="number" class="form-control" placeholder="enter points for this question..." name="points" required>
                     </div>
                   </div>
                 </form>
@@ -50,24 +55,6 @@
       </div>
     </div>
     <br><br><br><br> <br><br><br><br>
-    <div class='containerTable'>
-      <form action='addMultipleQuestionHandler.php' method='POST'>
-        <table border='1' height='350px' width='100%' >
-          <tr>
-            <th colspan='2'><h2>New Question</h2>
-          </tr>
-
-          <tr>
-            <th colspan='2'><label><h3>question</h3></label></th>
-          </tr>
-
-          <tr>
-            <th colspan='2'><input type='text' name='question' required></th>
-          </tr>
-
-          <tr>
-            <th colspan='2'><label for='typeOfQuiz'><h3>Type of quiz: Multiple Choices</h3></label></th>
-          </tr>
 
           <tr>
             <th colspan='2'><label><h3>Question Points</h3></label></th>
