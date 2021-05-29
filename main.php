@@ -23,7 +23,6 @@
 	  background: #f1f1f1;
 	}
 
-	/* Style the submit button */
 	form.Searchbtn button {
 		float: right;
 	  width: 5%;
@@ -32,7 +31,7 @@
 	  color: white;
 	  font-size: 17px;
 	  border: 1px solid grey;
-	  border-left: none; /* Prevent double borders */
+	  border-left: none;
 	  cursor: pointer;
 	}
 
@@ -40,7 +39,6 @@
 	  background: #0b7dda;
 	}
 
-	/* Clear floats */
 	form.Searchbtn::after {
 	  content: "";
 	  clear: both;
@@ -144,9 +142,11 @@
 					</div>
 					";
 			}
-
 			?>
 		</div>
+
+
+
 </body>
 	<?php include_once "footerr.php";?>
 </html>
