@@ -76,10 +76,9 @@
                     <div class="col">
                       <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
                         <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
                     </div>
                   </div>
-
+                  <input type='hidden' name='hiencod' value='<?php echo $code?>'>
                 </form>
               </div>
             </div>
