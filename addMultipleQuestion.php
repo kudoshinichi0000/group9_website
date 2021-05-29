@@ -87,17 +87,6 @@
         </div>
       </div>
     </div>
-    <br><br><br><br> <br><br><br><br>
-
-          <tr>
-            <th><a href='questions.php?quiz_code=$code'>Cancel</a></th>
-            <th colspan='2'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-          </tr>
-        </table>
-        <input type='hidden' name='hiencod' value='$code'>
-      </form>
-    </div>
-
-    "; ?>
+    <br><br><br><br> <br><br><br>
   </body>
 </html>
