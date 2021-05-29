@@ -36,6 +36,12 @@
                      <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
                     </div>
                   </div>
+                  <div class="ro form-group">
+                    <div class="col">
+                        <label for="typrOfQuiz">Type of Quiz: Multiple Choices</label>
+                        <th colspan='2'><label for='typeOfQuiz'><h3>Type of quiz: Multiple Choices</h3></label></th>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
