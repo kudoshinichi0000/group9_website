@@ -57,7 +57,7 @@
                   </div>
                   <div class="row form-group">
                     <div class="col">
-                      <label> ANSWER CHOICES</label>
+                      <label> Answer Options</label>
                         <div class="form-outline mb-4">
                           <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
                           </div>
