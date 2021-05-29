@@ -47,6 +47,10 @@
                       <input type="number" class="form-control" placeholder="enter points for this question..." name="points" required>
                     </div>
                   </div>
+                  <div class="row form-group">
+                    <div class="col">
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
@@ -55,14 +59,6 @@
       </div>
     </div>
     <br><br><br><br> <br><br><br><br>
-
-          <tr>
-            <th colspan='2'><label><h3>Question Points</h3></label></th>
-          </tr>
-
-          <tr>
-            <th colspan='2'><input type='number' name='points' required></th>
-          </tr>
 
           <tr>
             <th colspan='2'><label><h3>Option</h3></label><br>
