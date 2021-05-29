@@ -115,8 +115,8 @@
 
   		<!---Categories--->
   		<div class="Categories">
-  			<h4>Our Categories</h4><br>
-        <a href="#" class='catH'>Latest</a>
+  			<h4>Categories</h4><br>
+        <a href="main.php" class='catH'>Latest</a>
         <a href="#" class='cat'>Educational</a>
   			<a href="#" class='cat'>Entertainment</a>
   			<a href="#" class='cat'>Mix</a>
