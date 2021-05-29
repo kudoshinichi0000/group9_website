@@ -72,6 +72,14 @@
                         </div>
                     </div>
                   </div>
+                  <div class="row form-group" style="margin-top: 40px;">
+                    <div class="col">
+                      <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
+                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
+                    </div>
+                  </div>
+
                 </form>
               </div>
             </div>
@@ -80,22 +88,6 @@
       </div>
     </div>
     <br><br><br><br> <br><br><br><br>
-
-          <tr>
-            <th colspan='2'><label><h3>Option</h3></label><br>
-
-            <textarea rows='2' cols='40' placeholder='Correct Answer' style='color:red;' name='ans' required></textarea><br><br>
-
-            <textarea name='A' rows='2' cols='40' placeholder='Posible Answer (A)' required></textarea><br><br>
-
-            <textarea name='B' rows='2' cols='40' placeholder='Posible Answer (B)' required></textarea><br><br>
-
-            <textarea name='C' rows='2' cols='40' placeholder='Posible Answer (C)' required></textarea><br><br>
-
-            <textarea name='D' rows='2' cols='40' placeholder='Posible Answer (D)' required></textarea><br><br>
-
-            </th>
-          </tr>
 
           <tr>
             <th><a href='questions.php?quiz_code=$code'>Cancel</a></th>
