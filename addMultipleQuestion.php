@@ -49,6 +49,8 @@
                   </div>
                   <div class="row form-group">
                     <div class="col">
+                      <label> Correct Answer</label>
+                      <textarea rows="2" cols="40" placeholder="enter the correct letter of the answer" style="color:green;" name="ans" required></textarea>
                     </div>
                   </div>
                 </form>
