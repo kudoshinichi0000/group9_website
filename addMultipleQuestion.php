@@ -60,10 +60,15 @@
                       <label> ANSWER CHOICES</label>
                         <div class="form-outline mb-4">
                           <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
+                          </div>
+                          <div class="form-outline mb-4">
                           <textarea  class="form-control" rows="3" cols="40"  name="B" placeholder="Possible answer (B)" required></textarea>
+                          </div>
+                          <div class="form-outline mb-4">
                           <textarea  class="form-control" rows="3" cols="40"  name="C" placeholder="Possible answer (C)" required></textarea>
+                          </div>
+                          <div class="form-outline mb-4">
                           <textarea  class="form-control" rows="3" cols="40"  name="D" placeholder="Possible answer (D)" required></textarea>
-                          <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
                         </div>
                     </div>
                   </div>
