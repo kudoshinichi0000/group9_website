@@ -104,21 +104,22 @@
 		<div class="Categories">
 			<h4>Categories</h4><br>
 			<a href="main.php" class='catH'>Latest</a>
-			<a href="#" class='cat'>Educational</a>
-			<a href="#" class='cat'>Entertainment</a>
-			<a href="#" class='cat'>Mix</a>
+			<a href="Educational.php" class='cat'>Educational</a>
+			<a href="Entertainment.php" class='cat'>Entertainment</a>
+			<a href="Mix.php" class='cat'>Mix</a>
 		</div>
 
 		<!---Search Button--->
 		<form class="Searchbtn" action="Search.php" method="POST">
 			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="Search Title" name="search">
+			<input type="text" placeholder="Search..." name="search">
 		</form>
 
 		<!--displaying all Quiz--->
 		<div class="centerBlack">News Feed</div><br>
 			<?php
-				$query = "SELECT * FROM quiz_list";
+				include_once("db.php");
+				$query = "SELECT * FROM quiz_list ORDER BY publish DESC";
 				$execQuery = mysqli_query($con, $query);
 				while ($fetchQuiz = mysqli_fetch_assoc($execQuery)) {
 					$QuizCode = $fetchQuiz["quiz_code"];
@@ -128,15 +129,22 @@
 	        $Cat = $fetchQuiz["categories"];
 	        $Pub = $fetchQuiz["publish"];
 	        $newDate = date("m-d-Y", strtotime($Pub));
+
 					echo "
 					<div class='DisplayQuestions'>
 								<img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
-								<div class='box'>
-									<b style='font-size:1.5em;'>$title</b><br><br>
+								<div class='box'><br><br>";
+
+								if($Ftitle = wordwrap($title, 25, "<br>")) {
+									echo "<b style='font-size:1.3em;'>$Ftitle</b><br><br>";
+								}
+						echo "
+									<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
 								</div>
 					</div>
 					";
 			}
+
 			?>
 		</div>
 </body>

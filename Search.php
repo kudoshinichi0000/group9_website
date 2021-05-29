@@ -117,15 +117,15 @@
   		<div class="Categories">
   			<h4>Categories</h4><br>
         <a href="main.php" class='catH'>Latest</a>
-        <a href="#" class='cat'>Educational</a>
-  			<a href="#" class='cat'>Entertainment</a>
-  			<a href="#" class='cat'>Mix</a>
+  			<a href="Educational.php" class='cat'>Educational</a>
+  			<a href="Entertainment.php" class='cat'>Entertainment</a>
+  			<a href="Mix.php" class='cat'>Mix</a>
   		</div><br><br>
 
   		<!---Search Button--->
   		<form class="Searchbtn" action="Search.php" method="POST">
   			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
-  			<input type="text" placeholder="Search Title" name="search">
+  			<input type="text" placeholder="Search..." name="search">
   		</form>
 
     <!--Go back to main button--->
@@ -155,45 +155,25 @@
       	       $Pub = $row["publish"];
       	       $newDate = date("m-d-Y", strtotime($Pub));
 
-      		     echo "
-      				 <div class='DisplayQuestions'>
-      					 <img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
-      						 <div class='box'>
-      				        <b style='font-size:2em;'>$title</b><br>
-      							  <a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode' style='position: absolute; width: 50%; bottom: 10px;'>Play Quiz</a>
-      						 </div>
-              </div>";
+               echo "
+               <div class='DisplayQuestions'>
+                     <img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
+                     <div class='box'><br><br>";
+
+                     if($Ftitle = wordwrap($title, 25, "<br>")) {
+                       echo "<b style='font-size:1.3em;'>$Ftitle</b><br><br>";
+                     }
+                 echo "
+                       <a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+                     </div>
+               </div>
+               ";
             }
           }else {
             echo "There are no Results Matching in your Search!";
           }
         }
        ?></div><br>
-
-       <!--displaying all Quiz--->
-       <div class="centerBlack2">News Feed</div>
-         <?php
-           $query = "SELECT * FROM quiz_list";
-           $execQuery = mysqli_query($con, $query);
-           while ($fetchQuiz = mysqli_fetch_assoc($execQuery)) {
-             $QuizCode = $fetchQuiz["quiz_code"];
-             $pic = $fetchQuiz["picture"];
-             $title = $fetchQuiz['title'];
-             $Desc = $fetchQuiz["description"];
-             $Cat = $fetchQuiz["categories"];
-             $Pub = $fetchQuiz["publish"];
-             $newDate = date("m-d-Y", strtotime($Pub));
-             echo "
-             <div class='DisplayQuestions'>
-                   <img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
-                   <div class='box'>
-                     <b style='font-size:2em;'>$title</b><br>
-                     <a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
-                   </div>
-             </div>
-             ";
-         }
-         ?>
  </div>
 </body>
   <?php include_once("footerr.php"); ?>
