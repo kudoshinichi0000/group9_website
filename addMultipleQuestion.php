@@ -51,9 +51,11 @@
                     <div class="col">
                       <label> Correct Answer</label>
                         <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40" placeholder="enter the correct letter of the answer" style="color:green;" name="ans" required></textarea>
-                
-                    </div>
+                          <textarea  class="form-control" rows="3" cols="4" placeholder="enter the correct letter of the answer" style="color:green;" name="ans" required></textarea>
+                        </div>
+                        <div class="form-group purple-border-focus">
+                          <textarea class="form-control" rows="3" placeholder="Enter the correct letter of the answer" name="ans" required></textarea>
+                        </div>
                   </div>
                 </form>
               </div>
