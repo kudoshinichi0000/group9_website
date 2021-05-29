@@ -74,7 +74,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['editsuccess']);
     endif;?>
   <!-- User Successfully Deleted -->
-  <?php include_once "db.php"; include_once "navbaradmin.php" ?><br><br>
+  <?php include7_once "db.php"; include_once "navbaradmin.php" ?><br><br>
   <?php if(isset( $_SESSION['delsuccess'])): ?>
      <script type="text/javascript">
         alert('<?php echo $_SESSION['delsuccess']; ?>');
