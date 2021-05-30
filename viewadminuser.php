@@ -19,6 +19,7 @@ $fetchid = $admin['userid'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min3.css">
     <link type="text/css" rel="stylesheet" href="css/card.css">
+
     <script src="js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -82,8 +83,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['delsuccess']);
     endif;?>
 
-
-      <div class="jumbotron">
+    <div class="container">
         <div class="card">
           <div class="card-header">
               <h2><b>ADMIN'S PROFILE<b></h2>
@@ -114,7 +114,8 @@ $fetchid = $admin['userid'];
             </div>
           </div>
         </div>
-    
+      </div>
+    </div>
     <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
   <div class="modal fade" id="DeleteModal">
     <div class="modal-dialog">
