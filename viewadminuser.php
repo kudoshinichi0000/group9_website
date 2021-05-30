@@ -83,7 +83,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['delsuccess']);
     endif;?>
 
-    <div style="margin-top: 40rem;" class="container">
+    <div style="margin-top: 10rem;" class="container">
         <div class="card">
           <div class="card-header">
               <h2><b>ADMIN'S PROFILE<b></h2>
