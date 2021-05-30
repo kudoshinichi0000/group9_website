@@ -30,6 +30,7 @@
     }
     .card{
       width: 110%;
+      padding-left: 10px;
     }
     </style>
   </head>
