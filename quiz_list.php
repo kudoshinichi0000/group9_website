@@ -28,11 +28,13 @@
       padding: 8px;
 
     }
-
+    .container{
+      padding-top: 5px;
+    }
     .card{
       width: 110%;
       margin-left: -45px;
-      padding-top: 5px;
+
 
     }
     </style>
