@@ -39,7 +39,7 @@
 
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
-      <div class="jumbotron" style="width:118%; padding: 3rem 1rem; margin-left:-5.5rem;">
+      <div class="jumbotron" style="width:118%; padding: 3rem 2rem; margin-left:-5.5rem;">
         <div class="card">
           <div class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
