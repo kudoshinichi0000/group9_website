@@ -32,6 +32,7 @@
     .card{
       width: 110%;
       margin-left: -45px;
+      margin-top: 5px;
 
     }
     </style>
