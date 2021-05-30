@@ -30,7 +30,7 @@
     }
     .container{
     padding-left: -30px;
-    padding-right: 10px;
+    padding-right: -10px;
 
     }
     .card{
