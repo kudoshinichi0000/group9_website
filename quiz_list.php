@@ -29,7 +29,7 @@
 
     }
     .container{
-    padding-left: -60px;
+    padding-left: -6rem;
     padding-right: -20px;
 
     }
