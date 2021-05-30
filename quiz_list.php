@@ -35,7 +35,7 @@
     }
     .card{
       width: 110%;
-      margin-left: -20px;
+      margin-left: -40px;
 
     }
     </style>
