@@ -41,8 +41,8 @@
       <!-- you can adjust the size of the table here through padding and margin-->
       <div class="jumbotron" style="width:118%; padding: 3rem 1rem; margin-left:-5.5rem;">
         <div class="card">
-          <div class="card-header">
-            <h2 style="padding: 1rem;"><b>QUIZ DETAILS<b></h2>
+          <div  style="padding: 1rem;" class="card-header">
+            <h2><b>QUIZ DETAILS<b></h2>
           </div>
             <div class="card-body">
                 <a href='quiz_title.php' class='addquiz'>Add Quiz</a><br><br>
