@@ -9,7 +9,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style media="screen">
-		#Maincontainer{
+		#Maincontainer1{
 			width: 80%;
 			margin: auto;
 		}
@@ -94,7 +94,7 @@
 	</div>
 
 	<!---Welcoming text--->
-	<div id="Maincontainer"><br>
+	<div id="Maincontainer1"><br>
 		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
