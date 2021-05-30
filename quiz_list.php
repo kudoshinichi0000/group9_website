@@ -30,8 +30,7 @@
     }
     .container{
     padding-left: -10rem;
-    padding-right: -20px;
-
+  
     }
     .card{
       width: 110%;
