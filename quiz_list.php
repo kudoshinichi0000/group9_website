@@ -26,6 +26,10 @@
       text-align: center;
       align-items: center;
       padding: 8px;
+
+    }
+    .container{
+      width: auto;
     }
     </style>
   </head>
