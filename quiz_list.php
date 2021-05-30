@@ -29,8 +29,8 @@
 
     }
     .container{
-    padding-left: -30px;
-    padding-right: -50px;
+    padding-left: -60px;
+    padding-right: -20px;
 
     }
     .card{
