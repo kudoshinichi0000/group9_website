@@ -28,7 +28,7 @@
       padding: 8px;
 
     }
-    .container{
+    .card{
       width: 200%;
     }
     </style>
