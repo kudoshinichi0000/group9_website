@@ -29,7 +29,7 @@
 
     }
     .card{
-      width: 200%;
+      width: 110%;
     }
     </style>
   </head>
