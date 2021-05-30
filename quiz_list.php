@@ -29,7 +29,7 @@
 
     }
     .container{
-    padding-left: 30px;
+    padding-left: -30px;
 
     }
     .card{
