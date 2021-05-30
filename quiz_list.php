@@ -31,11 +31,11 @@
     .container{
     padding-left: -10rem;
     padding-right: -20px;
-    margin: left: 30px;
 
     }
     .card{
       width: 105%;
+      margin-left: 10px;
 
     }
     </style>
