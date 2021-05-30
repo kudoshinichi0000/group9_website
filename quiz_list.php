@@ -28,9 +28,7 @@
       padding: 8px;
 
     }
-    .container{
-      padding-top: 5px;
-    }
+
     .card{
       width: 110%;
       margin-left: -45px;
@@ -47,7 +45,7 @@
     ?><br><br><br><br>
 
 
-    <div class="container">
+    <div style="padding-top: 5px;"class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
 
         <div class="card">
