@@ -29,7 +29,7 @@
 
     }
     .container{
-      width: auto;
+      width: 200%;
     }
     </style>
   </head>
