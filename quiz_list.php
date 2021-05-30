@@ -39,9 +39,9 @@
 
     <div class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
-      
+
         <div class="card">
-          <div  style="padding: 1rem;" class="card-header">
+          <div  style="padding: 1.2rem;" class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
           </div>
             <div class="card-body">
