@@ -34,7 +34,7 @@
 
     }
     .card{
-      width: 110%;
+      width: 105%;
 
     }
     </style>
