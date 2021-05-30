@@ -29,8 +29,8 @@
 
     }
     .container{
-    padding-left: -10rem;
   
+
     }
     .card{
       width: 110%;
