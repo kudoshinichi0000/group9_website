@@ -28,13 +28,10 @@
       padding: 8px;
 
     }
-    .container{
-  
 
-    }
     .card{
       width: 110%;
-      margin-left: -40px;
+      margin-left: -45px;
 
     }
     </style>
