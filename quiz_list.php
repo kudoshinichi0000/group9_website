@@ -105,51 +105,51 @@
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' text-right style='width:80px; text-align:center; margin: 5px;'>Edit Title</a>
                             <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style=' text-align:center; margin: 5px;'>+ Questions</a>
 
-
                           </td>
                         </tr>
 
                         ";
                       }
-                    }
                   }
                 }
-               ?>
+                echo "
                 </table>
             </div>
           </div>
         </div>
       </div>
+      ";
 
-      <!--MODAL MESSAGE ALERT FOR DELETING QUIZ KASO DI GUMAGANA SA BACKEND D QALAM AYUSIN. RED DELETE BUTTON YUNG GINAWA -->
-      <div class="modal fade" id="DeleteModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title"> Delete Confirmation</h2>
-              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      //MODAL MESSAGE ALERT FOR DELETING QUIZ
+      echo "
+      <div class='modal fade' id='DeleteModal'>
+      <div class='modal-dialog'>
+          <div class='modal-content'>
+            <div class='modal-header'>
+              <h2 class='modal-title'> Delete Confirmation</h2>
+              <button type='button' class='close' data-dismiss='modal'><span>&times;</span></button>
             </div>
-            <div class="modal-body">
-              <form action="DeleteQuizHandler.php" id="form-delete-user" method="post">
-                  <label><p>  Are you sure you want to delete this quiz: <?php echo $Ftitle?>?</p></label>
+            <div class='modal-body'>
+            ";
+
+              echo "
+              <form action='deleteQuizHandler.php?quiz_code=$code' id='form-delete-user' method='post'>
+                  <label><p> Are you sure you want to delete this quiz: <br><br> Title: $title </p></label>
 
             </div>
-            <div class="modal-footer">
-              <input type="submit" name="Confirm" class="buttonnn button01" value="yes">
-                <input type="submit" name="Confirm" class=" buttonnn button1" value="no">
+            <div class='modal-footer'>
+              <input type='submit' name='Confirm' value='no' class='buttonnn button01'>
+              <input type='submit' name='Confirm' value='yes' class='buttonnn button1'>
             </div>
           </form>
+            ";
+
+          }
+          ?>
         </div>
       </div>
     </div>
-    <script>
-      $('.delete-btn').click((e) => {
-        e.preventDefault();
-        if(confirm(' Are you sure you want to delete your account?')){
-          window.location.href = $(e.target).attr('href');
-        }
-      });
-    </script>
+
   </body>
-  
+
 </html>
