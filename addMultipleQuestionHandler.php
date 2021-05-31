@@ -11,6 +11,7 @@
   $optB = $_POST["B"];
   $optC = $_POST["C"];
   $optD = $_POST["D"];
+
   //Hidden Input
   $quizC = $_POST["hiencod"];
 
@@ -20,7 +21,8 @@
     $execQuery = mysqli_query($con, $query);
       if($execQuery){
 
-        //i made this to add a points in Overall scores in quiz_list
+        //i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+        //the item is the total number of all questions
         $queryy = " SELECT * FROM quiz_list";
         $execQueryy = mysqli_query($con, $queryy);
         while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){

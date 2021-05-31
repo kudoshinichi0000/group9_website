@@ -6,7 +6,7 @@
 
 	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
-		//Hidden Input
+		//Getting Quiz_code
 		$delGetid = $_GET["quiz_code"];
 
 		//Prepare The Query

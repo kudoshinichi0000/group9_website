@@ -9,11 +9,14 @@
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style media="screen">
-		#Maincontainer{
-			width: 80%;
-			margin: auto;
-		}
 
+	/* Maam may topak po yung css namin, kapag nilagay ko po io sa navbar.css
+	ayaw gumana ng css kaya ginawa ko nalang po syang internal*/
+
+	.Maincontainer{
+		width: 80%;
+		margin: auto;
+	}
 	form.Searchbtn input[type=text] {
 		float: right;
 	  padding: 10px;
@@ -94,10 +97,16 @@
 	</div>
 
 	<!---Welcoming text--->
-	<div id="Maincontainer"><br>
+	<div class="Maincontainer"><br>
 		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
+		<!---Search Button--->
+		<form class="Searchbtn" action="Search.php" method="POST">
+			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search..." name="search">
+		</form>
+		
 		<!---Categories--->
 		<div class="Categories">
 			<h4>Categories</h4><br>
@@ -106,12 +115,6 @@
 			<a href="Entertainment.php" class='cat'>Entertainment</a>
 			<a href="Mix.php" class='cat'>Mix</a>
 		</div>
-
-		<!---Search Button--->
-		<form class="Searchbtn" action="Search.php" method="POST">
-			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="Search..." name="search">
-		</form>
 
 		<!--displaying all Quiz--->
 		<div class="centerBlack">News Feed</div><br>
