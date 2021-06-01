@@ -94,7 +94,7 @@
 	</div>
 
 	<!---Welcoming text--->
-	<div id="Maincontainer1"><br>
+	<div id="Maincontainer"><br>
 		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
