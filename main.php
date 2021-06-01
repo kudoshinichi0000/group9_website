@@ -3,83 +3,11 @@
 <head>
 	<title>Main</title>
 	<link type="text/css" rel="stylesheet" href="css/navbar.css">
+	<link type="text/css" rel="stylesheet" href="css/quizcard.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style media="screen">
-
-	/* Maam may topak po yung css namin, kapag nilagay ko po io sa navbar.css
-	ayaw gumana ng css kaya ginawa ko nalang po syang internal*/
-
-	.Maincontainer{
-		width: 80%;
-		margin: auto;
-	}
-	form.Searchbtn input[type=text] {
-		float: right;
-	  padding: 10px;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  width: 20%;
-	  background: #f1f1f1;
-	}
-
-	form.Searchbtn button {
-		float: right;
-	  width: 5%;
-	  padding: 10px;
-	  background: #2196F3;
-	  color: white;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  border-left: none;
-	  cursor: pointer;
-	}
-
-	form.Searchbtn button:hover {
-	  background: #0b7dda;
-	}
-
-	form.Searchbtn::after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-	.cat{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #000;
-		border-radius: 8px;
-		border: 1px solid black;
-	}
-	.cat:hover{
-		background-color: #007bff;
-		color: #fff;
-		cursor: pointer;
-	}
-	.catH{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #fff;
-		text-decoration: none;
-		border-radius: 8px;
-		background-color: #007bff;
-		cursor: pointer;
-	}
-	.catH:hover{
-		color: #fff;
-	}
-	</style>
 </head>
 <body>
 
@@ -106,7 +34,7 @@
 			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
 			<input type="text" placeholder="Search..." name="search">
 		</form>
-		
+
 		<!---Categories--->
 		<div class="Categories">
 			<h4>Categories</h4><br>
@@ -131,20 +59,37 @@
 	        $Pub = $fetchQuiz["publish"];
 	        $newDate = date("m-d-Y", strtotime($Pub));
 
-					echo "
-					<div class='DisplayQuestions'>
-								<img src='res/quizPicture/$pic' width='100%' height='150px' style='float: left; margin-right: 1em;' alt='image not found' >
-								<div class='box'><br><br>";
+					if($Ftitle = wordwrap($title, 25, "<br>")) {
 
-								if($Ftitle = wordwrap($title, 25, "<br>")) {
-									echo "<b style='font-size:1.3em;'>$Ftitle</b><br><br>";
-								}
-						echo "
-									<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
-								</div>
+					echo "
+					<div class='align'>
+					<div class='card-container'>
+						<div class='card-horizontal'>
+							<div class='card-front'>
+								<article class='card-front-content'>
+								<img src='res/quizPicture/$pic' width='100%' height='175px' alt='' class='card-pic'>
+								<h2 style='color:#000;'>$Ftitle</h2>
+									</article>
+							</div>
+							<div class='card-back card-back-hr'>
+								<article class='card-back-content'>
+								<h2>Title: $Ftitle</h2>
+								<p>Description: $Desc</p>
+								<p>Category: $Cat</p>
+
+								<p>$newDate</p>
+								<a style='color:#fff;' href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+									</article>
+
+							</div>
+						</div>
 					</div>
+			</div>
+
+
 					";
 			}
+		} //<a href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz
 			?>
 		</div>
 
