@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Quiz list</title>
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
+    <link type="text/css" rel="stylesheet" href="css/card.css">
     <script src="js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -25,6 +26,14 @@
       text-align: center;
       align-items: center;
       padding: 8px;
+
+    }
+
+    .card{
+      width: 110%;
+      margin-left: -45px;
+
+
     }
     </style>
   </head>
@@ -36,11 +45,11 @@
     ?><br><br><br><br>
 
 
-    <div class="container">
+    <div style="margin-top: 20px;"class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
-      <div class="jumbotron" style="width:118%; padding: 3rem 1rem; margin-left:-5.5rem;">
+
         <div class="card">
-          <div class="card-header">
+          <div  style="padding: 1.2rem;" class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
           </div>
             <div class="card-body">

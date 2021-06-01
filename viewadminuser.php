@@ -18,6 +18,7 @@ $fetchid = $admin['userid'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min3.css">
+    <link type="text/css" rel="stylesheet" href="css/card.css">
 
     <script src="js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -82,8 +83,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['delsuccess']);
     endif;?>
 
-    <div class="container">
-      <div class="jumbotron">
+    <div style="margin-top: 5rem;" class="container">
         <div class="card">
           <div class="card-header">
               <h2><b>ADMIN'S PROFILE<b></h2>
@@ -114,8 +114,6 @@ $fetchid = $admin['userid'];
             </div>
           </div>
         </div>
-      </div>
-    </div>
     <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
   <div class="modal fade" id="DeleteModal">
     <div class="modal-dialog">
