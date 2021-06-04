@@ -193,13 +193,16 @@
          </div>
          <div class="modal-body">
            <form action="DelAdminHandler.php" id="form-delete-user" method="post">
-               <label><p>  Are you sure you want to delete your account: <?php echo $fetchname?>?</p></label>
+               <label><p>  Are you sure you want to delete this item: <?php echo $question?>?</p></label>
 
          </div>
          <div class="modal-footer">
-           <input type="submit" name="choice" class="buttonnn button01" value="yes">
-             <input type="submit" name="choice" class=" buttonnn button1" value="no">
+           <input type="submit" name="Connfirm" class="buttonnn button01" value="yes">
+             <input type="submit" name="Confirm" class=" buttonnn button1" value="no">
          </div>
+         <input type="hidden" name="quizId" value="$quizId">
+         <input type="hidden" name="quizCode" value="$code">
+         <input type="hidden" name="quizP" value="$questionP">
          </form>
      </div>
    </div>
@@ -207,7 +210,7 @@
  <script>
    $('.delete-btn').click((e) => {
      e.preventDefault();
-     if(confirm(' Are you sure you want to delete your account?')){
+     if(confirm(' Are you sure you want to \to delete this item?')){
        window.location.href = $(e.target).attr('href');
      }
    });
