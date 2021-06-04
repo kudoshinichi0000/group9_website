@@ -74,13 +74,13 @@
                               <div class='col'>
                                 <label> Answer Options</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='2' cols='78'  name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
+                                    <textarea  class='form-control' rows='2'   name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                      <textarea  class='form-control' rows='3' cols='40'  name='B' placeholder='Possible answer (B)' value='$option2'required></textarea>
+                                      <textarea  class='form-control' rows='1'  name='B' placeholder='Possible answer (B)' value='$option2'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='3' cols='40'  name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
+                                        <textarea  class='form-control' rows='2'   name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
                                         <textarea  class='form-control' rows='3' cols='40'  name='D' placeholder='Possible answer (D)' value='$option4' required></textarea>
