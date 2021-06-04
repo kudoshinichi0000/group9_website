@@ -230,7 +230,7 @@
          </div>
          <div class="modal-body">
            <form action="DelAdminHandler.php" id="form-delete-user" method="post">
-               <label><p>  Are you sure you want to delete this item: <?php echo $questionn?>?</p></label>
+               <label><p>  Are you sure you want to delete this item: <?php echo $questionnn?>?</p></label>
 
          </div>
          <div class="modal-footer">
