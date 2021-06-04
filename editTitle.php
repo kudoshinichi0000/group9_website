@@ -33,7 +33,7 @@
     $picture = $fetchCodes["picture"];
 
         echo "
-        <div style='width: 80%; margin-left:2rem;' class='container>
+        <div  class='container>
           <div class='jumbotron'>
           <div class='card'>
             <div class='card-header'>
