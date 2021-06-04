@@ -17,7 +17,10 @@
     <?php
     include_once('db.php');
     $quizId = $_GET['id'];
-      include_once("navbaradmin.php");
+    include_once("navbaradmin.php");
+    ?>
+    <br> <br><br><br><br>
+    <?php
 
 
     $query = "SELECT * FROM multiple_questions WHERE id = '$quizId'";
@@ -35,7 +38,7 @@
 
 
       echo "
-              <br> <br><br><br><br>
+
               <div class='container'>
                 <div class='card'>
                   <div class='card-header'>
