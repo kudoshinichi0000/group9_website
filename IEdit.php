@@ -52,10 +52,10 @@
                             <input type='text' class='form-control'  name='IdenAnswer' value='$answer' required>
                             </div>
                           </div>
-                        <div class="row form-group">
-                          <div class="col">
-                          <label for="points">Points:</label>
-                          <input type="number" class="form-control" placeholder="Enter numbers only"name="points" required>
+                        <div class='row form-group'>
+                          <div class='col'>
+                          <label for='points'>Points:</label>
+                          <input type='number' class='form-control' placeholder='Enter numbers only'name='points' required>
                          </div>
                        </div>
                        <div>
