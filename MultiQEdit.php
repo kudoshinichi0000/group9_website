@@ -66,7 +66,7 @@
                               <div class='col'>
                                 <label> Correct Answer</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='1'  placeholder='Enter the correct letter of the answer' name='ans' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
+                                    <textarea  class='form-control' rows='1'  placeholder='Enter the correct letter of the answer' name='answer' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
                                   </div>
                               </div>
                             </div>
