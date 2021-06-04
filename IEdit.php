@@ -29,6 +29,52 @@
        $points = $fetchtrueorfalse['points'];
        $typeOfQuiz = $fetchtrueorfalse['typeOfQuiz'];
       echo "
+            <br><br><br><br>
+            <div class='container'>
+              <div class='card'>
+                <div class='card-header'>
+                <h2 style='margin-left:30%'><b>Editing Identification Item<b></h2>
+                </div>
+                  <div class='card-body'>
+                    <div class='center'>
+                      <div class='row formContainer'>
+                        <div class='col-lg-12'>
+                        <form action='IEditHandler.php' method='POST'>
+                          <div class='row form-group'>
+                            <div class='col'>
+                            <label for='IdenQuestion'>Question:</label>
+                            <input type='text' class='form-control' placeholder='Enter your question' name='IdenQuestion' value='$question' required>
+                            </div>
+                          </div>
+                          <div class='row form-group'>
+                            <div class='col'>
+                            <label for='IdenAnswer'>Anwer:</label>
+                            <input type='text' class='form-control' name='IdenAnswer' required>
+                            </div>
+                          </div>
+                        <div class="row form-group">
+                          <div class="col">
+                          <label for="points">Points:</label>
+                          <input type="number" class="form-control" placeholder="Enter numbers only"name="points" required>
+                         </div>
+                       </div>
+                       <div>
+                       <div class="row form-group" style="margin-top: 40px;">
+                        <div class="col">
+                        <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
+                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
+                      </form>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+       </div>
+     </div>
 
     <form action='IEditHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
