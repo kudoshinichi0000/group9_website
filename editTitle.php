@@ -89,6 +89,7 @@
                           </div>
                         </div>
                       </div>
+                      <br>
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='ProfilePicture'>Profiel Picture: </label>
