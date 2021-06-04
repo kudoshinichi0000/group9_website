@@ -14,6 +14,7 @@
     <?php
       include_once("db.php");
       $Quizid = $_GET["id"];
+      include_once("navbaradmin.php");
 
       //Getting or fetching all rows from Identification
       $queryy = " SELECT * FROM identification WHERE id = '$Quizid'";
