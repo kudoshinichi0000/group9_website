@@ -174,7 +174,7 @@
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointss </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionn</i>
-                       <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found'  data-toggle='modal' data-target='#DeleteModaltrue'class='Prof' ></a>
+                       <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                        <a href='ToFEdit.php?id=$questionnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                     </th>
                    </tr>
@@ -209,8 +209,8 @@
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointsss </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionnn</i>
-                       <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'>DELETE</button>
-                      <a href='IdenDelete.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' data-toggle='modal' data-target='#DeleteModalIden' class='Prof' ></a>
+
+                      <a href='IdenDelete.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found'' class='Prof' ></a>
                        <a href='IEdit.php?id=$questionnnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                      </th>
                 </table>";
