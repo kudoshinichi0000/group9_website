@@ -172,7 +172,7 @@
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointsss </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionnn</i>
-                       <a href='IdenDelete.php?id=$questionnnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                       <a href='IdenDelete.php?id=$questionnnId'> data-toggle='modal' data-target='#DeleteModal'<img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                        <a href='IEdit.php?id=$questionnnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                      </th>
                 </table>";
