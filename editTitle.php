@@ -100,7 +100,7 @@
                       <div>
                         <div class='row form-group' style='margin-top: 40px;'>
                         <div class='col'>
-                          <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
+                          <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Save</button>
                           <a href='quiz_list.php' class='btn btn-outline-danger float-right'>Cancel</a>
                         </div>
                       </div>
@@ -114,18 +114,6 @@
             </div>
           </div>
         </div>
-                <?php  echo "
-                  </select>
-
-    				<tr>
-              <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
-    					<th><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-    				</tr>
-
-    			</table>
-          <input type='hidden' name='quizCode' value='$code'>
-    		</form>
-    	</div>
         ";
       }
   ?>
