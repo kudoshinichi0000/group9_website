@@ -97,12 +97,6 @@
                           <input type='file' class='form-control' name='ProfilePicture' required>
                         </div>
                       </div>
-                      <div class='row form-group'>
-                        <div class='col'>
-                          <label for='ProfilePicture'>Profiel Picture: </label>
-                          <input type='file' class='form-control' name='ProfilePicture' required>
-                        </div>
-                      </div>
                       <div>
                         <div class="row form-group" style="margin-top: 40px;">
                         <div class="col">
