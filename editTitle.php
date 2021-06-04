@@ -12,13 +12,13 @@
 
     .card{
       width: 50%;
-      height: 100%;
+      height: 60%;
       margin-top: 1rem;
       margin-bottom: 5rem;
     }
 
     .jumbotron{
-
+      width: 60%;
       height: 100%;
       margin-bottom: 15px;
     }
