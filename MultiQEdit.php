@@ -52,7 +52,7 @@
                             <div class='row form-group'>
                               <div class='col'>
                                 <label for='points>'Points:</label>
-                                <label for='typeOfQuiz'>Type of quiz:<h4><b>Multiple Choices<b></h4></label>
+                                <label for='typeOfQuiz'>Type of quiz:<h4>Multiple Choices</h4></label>
                               </div>
                             </div>
                             <div class='row form-group'>
