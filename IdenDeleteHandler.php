@@ -43,7 +43,7 @@
 }
 else{
   //if no
-  header("Location:questions.php");
+  header("Location: quiz_list.php");
   exit();
 }
 
