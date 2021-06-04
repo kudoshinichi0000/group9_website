@@ -12,12 +12,14 @@
   </head>
   <body>
     <?php
+      //Including Database
       include_once("db.php");
+
+      //Getiing code
       $code = $_GET["quiz_code"];
 
-     ?>
-     <?php
-     include_once("navbaradmin.php");
+      //Including navbar for admin
+      include_once("navbaradmin.php");
      ?>
      <br> <br><br><br><br>
      <div class="container">

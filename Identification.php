@@ -12,11 +12,14 @@
   </head>
   <body>
     <?php
+      //Including Database
       include_once("db.php");
+
+      //Getting Quiz_code from the previous webpage
       $code = $_GET["quiz_code"];
-     ?>
-     <?php
-       include_once("navbaradmin.php");
+
+      //Including Navar for admin
+      include_once("navbaradmin.php");
         ?>
       <br><br><br><br>
      <div class="container">
@@ -52,8 +55,8 @@
                       <div class="row form-group" style="margin-top: 40px;">
                       <div class="col">
                         <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
-                    <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                      <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
+                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
                   </form>
                       </div>
                       </div>

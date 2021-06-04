@@ -16,10 +16,9 @@
     <?php
     include_once('db.php');
     $code = $_GET['quiz_code'];
-    ?>
-    <?php
     include_once("navbaradmin.php");
     ?>
+
     <br> <br><br><br><br>
     <div class="container">
       <div class="card">
@@ -35,11 +34,6 @@
                     <div class="col">
                       <label for="question">Question:</label>
                      <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
-                    </div>
-                  </div>
-                  <div class="ro form-group">
-                    <div class="col">
-                        <label for="typrOfQuiz">Type of Quiz: Multiple Choices</label>
                     </div>
                   </div>
                   <div class="row form-group">

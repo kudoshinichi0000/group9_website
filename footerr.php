@@ -147,7 +147,7 @@
             <div class="row">
               <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
                   <h3> Feedopedia</h3>
-                  <p> Feedopedia is an entertainment and educatioal websites.....</p>
+                  <p> Feedopedia is Recreation of knowledgeable and fun buzzfeed quizzes Activities for all ages.</p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                   <h2> LINKS LINKS</h2>
@@ -160,7 +160,7 @@
               <div class="col-md-3 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
                   <h2> Contacts</h2>
                   <p> You can visit out social media accounts for transactions</p>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a>
               </div>
               <div class=" col-md-3 col-sm-6 col-xs-12 segment-four md-mb-30 sm-mb-30">
                   <h2> Di ko pa alam ilalagay</h2>

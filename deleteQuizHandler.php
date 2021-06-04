@@ -1,13 +1,13 @@
 <?php
   include_once("db.php");
 	//Var_dump
-  $code = $_POST['quiz_code'];
+  $code = $_GET['quiz_code'];
 	$Confirm = $_POST["Confirm"];
 
 	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
-		//Hidden Input
-		$delGetid = $_POST["quizCode"];
+		//Getting Quiz_code
+		$delGetid = $_GET["quiz_code"];
 
 		//Prepare The Query
 		$deleteQuery = "DELETE FROM quiz_list WHERE quiz_code = '$delGetid'";
