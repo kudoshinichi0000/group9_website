@@ -15,8 +15,8 @@
 
 		//Hidden Input
 
-    $quizCode = $_POST["quiz_code"];
-    $quizP = $_POST["points"];
+    $quizCode = $_POST["code"];
+    $quizP = $_POST["questionP"];
 
 
 	  $deleteuery = "DELETE FROM identification WHERE id = '$quizId'";
