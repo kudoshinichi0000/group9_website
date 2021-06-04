@@ -229,7 +229,7 @@
            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
          </div>
          <div class="modal-body">
-           <form action="deletetrueorfalseHandler.php" id="form-delete-user" method="post">
+           <form action="IdenDeleteHandler.php" id="form-delete-user" method="post">
                <label><p>  Are you sure you want to delete this item: <?php echo $questionn?>?</p></label>
 
          </div>
