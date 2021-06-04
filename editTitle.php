@@ -83,6 +83,7 @@
                                 <option value='Entertainment'>Entertainment</option>
                                 ";
                               }
+                            }
                             ?>
                             </select>
                           </div>
