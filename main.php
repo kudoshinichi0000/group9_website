@@ -59,9 +59,9 @@
 					$title = $fetchQuiz['title'];
 	        $Desc = $fetchQuiz["description"];
 	        $Cat = $fetchQuiz["categories"];
-	        $Pub = $fetchQuiz["publish"];
+	        $Item = $fetchQuiz["items"];
+					$Os = $fetchQuiz["OverallScores"];
 
-	        $newDate = date("m-d-Y", strtotime($Pub));
 
 					if($Ftitle = wordwrap($title, 25, "<br>")) {
 
@@ -72,17 +72,16 @@
 							<div class='card-front'>
 								<article class='card-front-content'>
 								<img src='res/quizPicture/$pic' width='100%' height='175px' alt='' class='card-pic'>
-								<h2 style='color:#000;'>$Ftitle</h2>
+								<h2 style='color:#fff;'>$Ftitle</h2>
 									</article>
 							</div>
 							<div class='card-back card-back-hr'>
 								<article class='card-back-content'>
 								<h2>Title: $Ftitle</h2>
-								<p>Description: $Desc</p>
-								<p>Category: $Cat</p>
-
-								<p>$newDate</p>
-								<a style='color:#fff;' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
+								<p style='color:#fff;'>Category: $Cat</p>
+								<p style='color:#fff;'>Items: $Item</p>
+								<p style='color:#fff;'>Overall Scores: $Os</p>
+								<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
 									</article>
 
 							</div>

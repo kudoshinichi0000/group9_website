@@ -32,7 +32,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>SiplayInfo</title>
+    <title>Diplay Info</title>
     <link type="text/css" rel="stylesheet" href="css/quizcard.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,19 +44,47 @@
       margin-top: 10em;
       width: 70%;
       border: 1px solid black;
-      height: auto;
       margin-left: auto;
       margin-right: auto;
+      height: auto;
     }
     .info h2{
       color: black;
     }
     .info{
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 3em;
       padding-top: 50px;
     }
+    .tayble{
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+
+    }
+
+    td {
+    padding-left: 8px;
+    }
+
+    tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+
+    tr:hover{
+      background-color: #ddd;
+    }
+
+    td {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-left: 12px;
+    color: white;
+    }
+
+    
     </style>
   </head>
   <body>
@@ -70,38 +98,44 @@
 
        <!---Display Title--->
        <div class="info">
-         <h2>Title: <?php echo " $title "; ?></h2>
-           <h2>Description: <?php echo " $Desc "; ?></h2>
-           <h2>Categories: <?php echo " $Cat "; ?></h2>
-           <h2>Items: <?php echo " $item "; ?></h2>
-           <h2>Overall Scores: <?php echo " $Os "; ?></h2>
-           <h2>Date Crerated: <?php echo " $newDate "; ?></h2>
-           <br><br>
+         <table width="80%" class="tayble">
+           <tr>
+             <td><h2>Title:</h2></td>
+             <td><h2><?php echo " $title "; ?></h2></td>
+           </tr>
 
-           <?php
-            echo "
-              <a href='PlayQuiz.php?quiz_code=$QuizCode'>Play Quiz</a>
-            ";
-           ?>
+           <tr>
+             <td><h2>Description:</h2></td>
+             <td><h2><?php echo " $Desc "; ?></h2></td>
+           </tr>
 
+           <tr>
+             <td><h2>Categories:</h2></td>
+             <td><h2><?php echo " $Cat "; ?></h2></td>
+           </tr>
+
+           <tr>
+             <td><h2>Items:</h2></td>
+             <td><h2><?php echo " $item "; ?></h2></td>
+           </tr>
+
+           <tr>
+             <td><h2>Overall Scores:</h2></td>
+             <td><h2><h2><?php echo " $Os "; ?></h2></h2></td>
+           </tr>
+
+           <tr>
+             <td><h2>Date Crerated:</h2></td>
+             <td><h2><?php echo " $newDate "; ?></h2></td>
+           </tr>
+
+         </table>
+          <?php echo " <a class='PlayQuiz'  href='PlayQuiz.php?quiz_code=$QuizCode'  >Play Quiz</a>";?>
        </div><br><br><br><br>
-
-       <!---Info--->
 
 
      </div>
-     <!--
-     $fetchQuiz = mysqli_fetch_assoc($execQuery);
-     $QuizCode = $fetchQuiz["quiz_code"];
-     $pic = $fetchQuiz["picture"];
-     $title = $fetchQuiz['title'];
-     $Desc = $fetchQuiz["description"];
-     $Cat = $fetchQuiz["categories"];
-     $Pub = $fetchQuiz["publish"];
-     $item = $fetchQuiz["items"];
-     $Os = $fetchQuiz["OverallScores"];
-
-     --->
+     <a href="main.php">Back</a>
   </body>
   <?php include_once("footerr.php"); ?>
 </html>

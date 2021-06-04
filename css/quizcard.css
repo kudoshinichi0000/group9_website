@@ -1,3 +1,4 @@
+
 h1{
   text-align:center;
   font-size:2em;
@@ -12,6 +13,7 @@ h1{
   justify-content:space-around;
   align-items:space-around;
   margin-left: 3.5em;
+  color:#fff;
 }
 .card-container{
   -webkit-perspective:1200;
@@ -28,11 +30,11 @@ h1{
   transition:all .4s ease;
  }
 .card-front, .card-back{
-  color:#fafafa;
+  color:#fff;
   height:100%;
   width:100%;
   position:absolute;
-  background:green;
+  background:#007bff;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -44,7 +46,7 @@ h1{
   -moz-transform:rotateY(179.9deg);
   -webkit-transform:rotateY(179.9deg);
   transform:rotateY(179.9deg);
-  background:yellow ;
+  background: #420264 ;
  }
 .card-front-content, .card-back-content{
   box-sizing:border-box;
@@ -134,12 +136,40 @@ form.Searchbtn::after {
 .catH:hover{
   color: #fff;
 }
-
-.Displayinfo{
+.PlayButton{
   margin-top: 10em;
-  width: 70%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   border: 1px solid black;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
+  background-color: red;
+  color: #fff;
+  border-radius: 1em;
+}
+
+.PlayButton:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.PlayQuiz
+{
+  margin-top: 10em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color: #fff;
+  border-radius: 1em;
+}
+.PlayQuiz:hover{
+  color: #fff;
+  text-decoration: none;
 }

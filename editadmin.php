@@ -1,4 +1,16 @@
 <?php
+
+	//Step 1 Database Connectivity
+	include_once "db.php";
+
+	//Will check if the user try to access pages without logging in
+	if(empty($_SESSION["userid"])){
+		header("Location:login.php");
+	}
+
+ ?>
+
+<?php
     /*Access the database*/
     include_once("db.php");
 
@@ -16,7 +28,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min2.css">
         <link type="text/css" rel="stylesheet" href="css/card.css">
-        
+
         <link rel="stylesheet" type="text/css" href="css/main2.css">
         <!-- for pop up alert edit -->
         <link rel="stylesheet" href="js/sweetalert.min.js">

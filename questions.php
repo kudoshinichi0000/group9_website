@@ -1,3 +1,10 @@
+<?php
+	//Will check if the user try to access pages without logging in
+	if(empty($_SESSION["userId"])){
+		header("Location:login.php");
+	}
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
