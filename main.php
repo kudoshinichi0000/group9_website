@@ -60,6 +60,7 @@
 	        $Desc = $fetchQuiz["description"];
 	        $Cat = $fetchQuiz["categories"];
 	        $Pub = $fetchQuiz["publish"];
+
 	        $newDate = date("m-d-Y", strtotime($Pub));
 
 					if($Ftitle = wordwrap($title, 25, "<br>")) {
@@ -81,7 +82,7 @@
 								<p>Category: $Cat</p>
 
 								<p>$newDate</p>
-								<a style='color:#fff;' href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+								<a style='color:#fff;' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
 									</article>
 
 							</div>

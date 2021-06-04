@@ -21,6 +21,7 @@
       include_once("navbaradmin.php");
 
       //This rand() will generate random numbers, this numbers will be the quiz_code
+      //Quiz_code is like a quiz_id, it mades from random and unique numbers
       $code = rand();
     ?><br><br><br><br>
 

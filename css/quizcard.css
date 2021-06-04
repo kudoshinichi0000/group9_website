@@ -32,7 +32,7 @@ h1{
   height:100%;
   width:100%;
   position:absolute;
-  background:#fff;
+  background:green;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -133,4 +133,13 @@ form.Searchbtn::after {
 }
 .catH:hover{
   color: #fff;
+}
+
+.Displayinfo{
+  margin-top: 10em;
+  width: 70%;
+  border: 1px solid black;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
