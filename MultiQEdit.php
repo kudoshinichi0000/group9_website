@@ -43,7 +43,7 @@
                 <div class='card'>
                   <div class='card-header'>
                     <br>
-                    <h2 style='margin-left:30%; padding-bottom: 2rem;'><b> Edit Mutiple Choice Item<b></h2>
+                    <h2 style='margin-left:30%;'><b> Edit Mutiple Choice Item<b></h2>
                   </div>
                   <div class='card-body'>
                     <div class='center'>
@@ -74,16 +74,16 @@
                               <div class='col'>
                                 <label> Answer Options</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='3' cols='40'  name='A' placeholder='Possible answer (A)' required></textarea>
+                                    <textarea  class='form-control' rows='3' cols='78'  name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                      <textarea  class='form-control' rows='3' cols='40'  name='B' placeholder='Possible answer (B)' required></textarea>
+                                      <textarea  class='form-control' rows='3' cols='40'  name='B' placeholder='Possible answer (B)' value='$option2'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='3' cols='40'  name='C' placeholder='Possible answer (C)' required></textarea>
+                                        <textarea  class='form-control' rows='3' cols='40'  name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='3' cols='40'  name='D' placeholder='Possible answer (D)' required></textarea>
+                                        <textarea  class='form-control' rows='3' cols='40'  name='D' placeholder='Possible answer (D)' value='$option4' required></textarea>
                                   </div>
                               </div>
                             </div>
