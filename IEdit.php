@@ -61,7 +61,7 @@
                        <div>
                        <div class='row form-group'style='margin-top: 40px;''>
                         <div class='col'>
-                        <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value="Submit">Submit</button>
+                        <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
                         <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
                         <input type='hidden' name='quizCode' value='$code'>
                         <input type='hidden' name='quizId' value='$Quizid'>
