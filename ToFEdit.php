@@ -56,7 +56,6 @@
                              <label class='input-group-text' for='TorFAnswer'>Answer:</label>
                            </div>
                               <select class='custom-select' id='inputGroupSelect01' name='TorFAnswer'>
-                             <select name='TorFAnswer'>
                              ";
                                if ($answerr == 'True') {
                                  echo "
