@@ -46,13 +46,13 @@
                     <form action='editTitleHandler.php' method='POST' enctype='multipart/form-data'>
                       <div class='row form-group'>
                         <div class='col'>
-                          <label for='Title'>Title: </label>
+                          <label for='title'>Title: </label>
                           <input type='text' class='form-control' placeholder='Enter new Title' name='title' required>
                         </div>
                       </div>
                       <div class='row form-group'>
                         <div class='col'>
-                          <label for='Desc'>Title: </label>
+                          <label for='Desc'>Description: </label>
                           <input type='text' class='form-control' placeholder='Enter new Description' name='Desc' value='$Desc' required>
                         </div>
                       </div>
