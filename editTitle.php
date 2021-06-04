@@ -18,7 +18,7 @@
     include_once("navbaradmin.php");
 
      ?>
-    <br><br><br><br>
+    <br><br><br><br><br>
   	<?php
     //get the id from the url
   	$code = $_GET['quiz_code'];
