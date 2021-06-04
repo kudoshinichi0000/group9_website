@@ -52,7 +52,7 @@
 
 			// user input
 			$page 	 = isset( $_GET['page'] ) ? (int) $_GET['page'] : 1;
-			$perPage = isset( $_GET['per-page'] ) && $_GET['per-page'] <= 50 ? (int) $_GET['per-page'] : 12;
+			$perPage = isset( $_GET['per-page'] ) && $_GET['per-page'] <= 50 ? (int) $_GET['per-page'] : 1;
 
 			// positioning
 			$start = ( $page > 1 ) ? ( $page * $perPage ) - $perPage : 0;
@@ -70,6 +70,8 @@
 			//if($Ftitle = wordwrap($articles["title"], 25, "<br>")) {
 			foreach ( $articles as $article ):
 			$QuizCode = $article["quiz_code"];
+
+			//Displaying Quiz
 					echo "
 					<div class='align'>
 					<div class='card-container'>
@@ -100,26 +102,34 @@
 			 </div>
 
 			 <?php
-				 echo "<br><br><br>
-				 <div class='col-md-12'>
-			 <div class='well well-sm'>
-				 <div class='paginate'>
-				 ";
-					 for ( $x=1; $x <= $pages; $x++ ):
-						 echo "
-					 <ul class='pagination'>
-						 <li>
-							 <a href='?page=$x; &per-page=$perPage'>$x</a>
-						 </li>
-					 </ul>
-					 ";
-					  endfor;
-						echo "
-				 </div>
-			 </div>
-		 </div>
+			 //Pagination
 
-				 ";
+				 echo "
+				 <div class='col-md-12'>
+					 <div class='well well-sm'>
+						 <div class='paginate'>
+							 <ul class='pagination'>
+								 <li>
+										<a href='#'>&laquo;</a>
+								 </li>
+							 </ul>";
+							 		for ( $x=1; $x <= $pages; $x++ ):
+										 echo "
+									 		<ul class='pagination'>
+										 		<li>
+											 		<a href='?page=$x; &per-page=$perPage'>$x</a>
+										 		</li>
+									 		</ul>";
+									endfor;
+								echo "
+									<ul class='pagination'>
+			 				 			<li>
+			 								<a href='#'>&raquo;</a>
+			 				 			</li>
+			 					</ul>
+						 </div>
+					 </div>
+				 </div>";
 
 			//}
 
