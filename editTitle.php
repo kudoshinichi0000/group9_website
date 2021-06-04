@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <script src="js/bootstrap.bundle.min.js"> </script>
     <link type="text/css" rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min4.css">
