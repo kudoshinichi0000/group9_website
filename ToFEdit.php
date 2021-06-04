@@ -9,7 +9,7 @@
       include_once("db.php");
       $quizId = $_GET['id'];
       include_once("navbaradmin.php");
-      <br> <br><br><br><br>
+
 
       $queryy = " SELECT * FROM trueorfalse WHERE id = $quizId";
       $execQuery = mysqli_query($con, $queryy);
@@ -23,6 +23,7 @@
        $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
 
       echo "
+      <br> <br><br><br><br>
       <form action='ToREditHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
 
