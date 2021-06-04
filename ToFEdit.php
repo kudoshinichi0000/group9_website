@@ -42,17 +42,27 @@
                         </div>
                       </div>
                       <br>
-                      <div class="row form-group">
-                        <div class="col">
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                             <label class="input-group-text" for="TorFAnswer">Answer:</label>
+                      <div class='row form-group'>
+                        <div class='col'>
+                          <div class='input-group mb-3'>
+                            <div class='input-group-prepend'>
+                             <label class='input-group-text' for='TorFAnswer'>Answer:</label>
                            </div>
-                             <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
-                                 <option selected>Choose...</option>
-                                 <option value="True">True</option>
-                                 <option value="False">False</option>
-                               </select>
+                              <select class='custom-select' id='inputGroupSelect01' name='TorFAnswer'>
+                             <select name='TorFAnswer'>
+                             ";
+                               if ($answerr == 'True') {
+                                 echo "
+                                   <option value='$answerr'>$answerr</option>
+                                   <option value='False'>False</option>
+                                 ";
+                               }else{
+                                 echo "
+                                   <option value='$answerr'>$answerr</option>
+                                   <option value='True'>True</option>
+                                 ";
+                               }echo "
+                             </select>
                            </div>
                          </div>
                        </div>
