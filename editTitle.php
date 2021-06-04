@@ -12,7 +12,7 @@
 
 
     .card{
-      width: 50%;
+      width: 80%;
       height: 60%;
       margin-top: 1rem;
       margin-bottom: 5rem;
