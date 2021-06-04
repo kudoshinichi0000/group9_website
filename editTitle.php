@@ -101,11 +101,11 @@
                         <div class='row form-group' style='margin-top: 40px;'>
                         <div class='col'>
                           <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
-                          <?php echo '<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>';?>
+                          <?php echo '<a href='quiz_list' class='btn btn-outline-danger float-right'>Cancel</a>';?>
                         </div>
                       </div>
                     </div>
-                        <input type='hidden'name='quizCode' value='<?php echo $code ?>'>
+                        <input type='hidden'name='quizCode' value=' $code'>
 
                     </form>
                   </div>
@@ -116,13 +116,6 @@
         </div>
                 <?php  echo "
                   </select>
-              </th>
-            </tr>
-
-            <tr>
-    					<th colspan='2'><label for='ProfilePicture'>Profile Picture</label></th>
-    					<th colspan='2'><input type='file' name='ProfilePicture' required></th>
-    				</tr>
 
     				<tr>
               <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
