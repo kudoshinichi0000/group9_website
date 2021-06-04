@@ -42,7 +42,7 @@
               <div class='container'>
                 <div class='card'>
                   <div class='card-header'>
-                    <h2 style='margin-left:30%'><b> Edit Mutiple Choice Item<b></h2>
+                    <h2 style='margin-left:30%; padding-bottom: 2rem;'><b> Edit Mutiple Choice Item<b></h2>
                   </div>
                   <div class='card-body'>
                     <div class='center'>
