@@ -55,14 +55,14 @@
                         <div class='row form-group'>
                           <div class='col'>
                           <label for='points'>Points:</label>
-                          <input type='number' class='form-control' placeholder='Enter numbers only'name='points' required>
+                          <input type='number' class='form-control' placeholder='Enter numbers only' name='points'  value='$points' required>
                          </div>
                        </div>
                        <div>
-                       <div class="row form-group" style="margin-top: 40px;">
-                        <div class="col">
-                        <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
-                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                       <div class='row form-group'style='margin-top: 40px;''>
+                        <div class='col'>
+                        <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value="Submit">Submit</button>
+                        <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
                         <input type='hidden' name='quizCode' value='$code'>
                         <input type='hidden' name='quizId' value='$Quizid'>
                       </form>
