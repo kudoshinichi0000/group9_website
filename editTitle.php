@@ -85,11 +85,11 @@
                               }
                             ?>
                             </select>
-                            <? php echo "
-
+                            </div>
                           </div>
                         </div>
-                      </div>
+                            <? php echo "
+
                       <br>
                       <div class='row form-group'>
                         <div class='col'>
