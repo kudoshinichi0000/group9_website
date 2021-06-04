@@ -13,6 +13,43 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>question</title>
     <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
+
+    <!--  css for the message alert delete button options, yes or no -->
+    <style>
+    .buttonnn{
+      border:none;
+      color:white;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin:4px 2px;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+    }
+
+    .button01{
+      background-color: white;
+      color:black;
+      border: 2px solid #f44336
+    }
+    .button01:hover{
+        background-color: #f44336;
+        color: white;
+
+      }
+    .button1{
+        background-color:white;
+        color:black;
+        border: 2px solid #555555;
+      }
+    .button1:hover{
+          background-color: #555555;
+          color: white;
+      }
+    </style>
   </head>
   <body>
     <?php
