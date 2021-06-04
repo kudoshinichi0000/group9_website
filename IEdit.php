@@ -76,27 +76,6 @@
          </div>
        </div>
      </div>
-
-    <form action='IEditHandler.php' method='POST'>
-      <table border='1' height='350px' width='25%' class='container1'>
-        <tr>
-          <th colspan='3'><h2><label for='IdenQuestion'>Question: </label> </h2>
-          <h2><input type='text' name='IdenQuestion' value='$question' required> </h2></th>
-        </tr>
-
-        <tr>
-          <th colspan='3'><h2><label for='IdenAnswer'>Answer: </label> </h2>
-            <input type='text' name='IdenAnswer' value='$answer' required></th>
-        </tr>
-
-        <tr>
-          <th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>
-          <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-        </tr>
-      </table>
-      <input type='hidden' name='quizCode' value='$code'>
-        <input type='hidden' name='quizId' value='$Quizid'>
-    </form>
     ";
   }
     ?>
