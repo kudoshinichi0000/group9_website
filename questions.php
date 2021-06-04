@@ -220,7 +220,7 @@
        ?>
 
    </div>
-   <!-- PARA SA MODAL DELETE SA IDENTIFICATION-->
+   <!-- PARA SA MODAL DELETE SA TRUE OR FLASE KASO DIPAKO SURE HAHA
  <div class="modal fade" id="DeleteModaltrue">
    <div class="modal-dialog">
        <div class="modal-content">
@@ -252,7 +252,7 @@
      }
    });
  </script>
-   <!-- PARA SA MODAL DELETE SA IDENTIFICATION-->
+   <!-- PARA SA MODAL DELETE SA IDENTIFICATION
  <div class="modal fade" id="DeleteModalIden">
    <div class="modal-dialog">
        <div class="modal-content">
@@ -270,8 +270,8 @@
              <input type="submit" name="Choice" class=" buttonnn button1" value="no">
          </div>
          <input type="hidden" name="quizId" value="$quizId">
-         <input type="hidden" name="quizCode" value="$quiz_code">
-         <input type="hidden" name="quizP" value="$points">
+         <input type="hidden" name="quizCode" value="$code">
+         <input type="hidden" name="quizP" value="$questionP">
          </form>
      </div>
    </div>
@@ -284,5 +284,6 @@
      }
    });
  </script>
+ -->
   </body>
 </html>
