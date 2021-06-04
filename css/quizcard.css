@@ -13,6 +13,7 @@ h1{
   justify-content:space-around;
   align-items:space-around;
   margin-left: 3.5em;
+  margin-bottom: 4em;
   color:#fff;
 }
 .card-container{
@@ -72,7 +73,9 @@ h1{
 
 .Maincontainer{
   width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
 }
 form.Searchbtn input[type=text] {
   float: right;
