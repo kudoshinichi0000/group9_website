@@ -15,6 +15,8 @@
         <title>EditAdmin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min2.css">
+        <link type="text/css" rel="stylesheet" href="css/card.css">
+        
         <link rel="stylesheet" type="text/css" href="css/main2.css">
         <!-- for pop up alert edit -->
         <link rel="stylesheet" href="js/sweetalert.min.js">
@@ -86,6 +88,6 @@
           </div>
         </div>
       </div>
-    
+
     </body>
 </html>
