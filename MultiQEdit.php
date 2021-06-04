@@ -53,13 +53,13 @@
                             <div class='row form-group'>
                               <div class='col'>
                                 <label for='question'>Question:</label>
-                               <input type='text' class='form-control'  placeholder='Enter your question' name='question' required>
+                               <input type='text' class='form-control'  placeholder='Enter your question' name='question' value='$question' required>
                               </div>
                             </div>
                             <div class='row form-group'>
                               <div class='col'>
                                 <label for='points>'Points:</label>
-                                <label for='typeOfQuiz'>Type of quiz:<h5>Multiple Choices</h5></label>
+                                <label for='typeOfQuiz' value='$typeOfQuiz'>Type of quiz:<h5>Multiple Choices</h5></label>
                               </div>
                             </div>
                             <div class='row form-group'>
