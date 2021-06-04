@@ -24,6 +24,60 @@
 
       echo "
       <br> <br><br><br><br>
+
+      <div class='container'>
+          <div class='card'>
+            <div class='card-header'>
+              <h2 style='margin-left:30%'><b>Add True or False Question<b></h2>
+            </div>
+            <div class='card-body'>
+              <div class='center'>
+                <div class='row formContainer'>
+                  <div class='col-lg-12'>
+                  <form action='ToREditHandler.php' method='POST'>
+                      <div class='row form-group'>
+                        <div class='col'>
+                          <label for='TorFQuestion'>Question: </label>
+                          <input type='text' class='form-control' placeholder='Enter your question' name='TorFQuestion' value='$questionn' required>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row form-group">
+                        <div class="col">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                             <label class="input-group-text" for="TorFAnswer">Answer:</label>
+                           </div>
+                             <select class="custom-select" id="inputGroupSelect01" name="TorFAnswer">
+                                 <option selected>Choose...</option>
+                                 <option value="True">True</option>
+                                 <option value="False">False</option>
+                               </select>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="row form-group">
+                         <div class="col">
+                           <label for="points">Points:</label>
+                           <input type="number" class="form-control" placeholder="input points for this question" name="points" required>
+                         </div>
+                       </div>
+                       <div>
+                         <div class="row form-group" style="margin-top: 40px;">
+                         <div class="col">
+                           <button type="submit" name="btn" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
+                           <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                         </div>
+                       </div>
+                     </div>
+                         <input type='hidden'name='quizCode' value='<?php echo $code ?>'>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
       <form action='ToREditHandler.php' method='POST'>
       <table border='1' height='350px' width='25%' class='container1'>
 
