@@ -33,7 +33,7 @@
     $picture = $fetchCodes["picture"];
 
         echo "
-        <div style='width: 80%; padding-left:-2rem;' class='container>
+        <div style='width: 80%; margin-left:-2rem;' class='container>
           <div class='card'>
             <div class='card-header'>
               <h2 style='margin-left:30%'><b> Edit Title Quiz<b></h2>
