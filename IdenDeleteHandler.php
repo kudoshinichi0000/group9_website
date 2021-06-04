@@ -9,7 +9,7 @@
   include_once("db.php");
 	//Var_dump
   $quizId = $_POST["quizId"];
-	$Confirm = $_POST["Choice"];
+	$Choice = $_POST["Choice"];
 
 	if ($Choice == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
