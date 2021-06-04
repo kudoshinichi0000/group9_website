@@ -9,84 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style media="screen">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 42e715d9c2f76478ca63eb6d2633fa6a29675d61
-		#Maincontainer1{
-			width: 80%;
-			margin: auto;
-		}
-<<<<<<< HEAD
-=======
->>>>>>> 0a93f7f2c996b9a5dc5e74fa9bdece41546191c1
-=======
->>>>>>> 42e715d9c2f76478ca63eb6d2633fa6a29675d61
 
-	form.Searchbtn input[type=text] {
-		float: right;
-	  padding: 10px;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  width: 20%;
-	  background: #f1f1f1;
-	}
-
-	form.Searchbtn button {
-		float: right;
-	  width: 5%;
-	  padding: 10px;
-	  background: #2196F3;
-	  color: white;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  border-left: none;
-	  cursor: pointer;
-	}
-
-	form.Searchbtn button:hover {
-	  background: #0b7dda;
-	}
-
-	form.Searchbtn::after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-	.cat{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #000;
-		border-radius: 8px;
-		border: 1px solid black;
-	}
-	.cat:hover{
-		background-color: #007bff;
-		color: #fff;
-		cursor: pointer;
-	}
-	.catH{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #fff;
-		text-decoration: none;
-		border-radius: 8px;
-		background-color: #007bff;
-		cursor: pointer;
-	}
-	.catH:hover{
-		color: #fff;
-	}
-	</style>
 
 </head>
 <body>
@@ -136,8 +59,9 @@
 					$title = $fetchQuiz['title'];
 	        $Desc = $fetchQuiz["description"];
 	        $Cat = $fetchQuiz["categories"];
-	        $Pub = $fetchQuiz["publish"];
-	        $newDate = date("m-d-Y", strtotime($Pub));
+	        $Item = $fetchQuiz["items"];
+					$Os = $fetchQuiz["OverallScores"];
+
 
 					if($Ftitle = wordwrap($title, 25, "<br>")) {
 
@@ -148,17 +72,16 @@
 							<div class='card-front'>
 								<article class='card-front-content'>
 								<img src='res/quizPicture/$pic' width='100%' height='175px' alt='' class='card-pic'>
-								<h2 style='color:#000;'>$Ftitle</h2>
+								<h2 style='color:#fff;'>$Ftitle</h2>
 									</article>
 							</div>
 							<div class='card-back card-back-hr'>
 								<article class='card-back-content'>
 								<h2>Title: $Ftitle</h2>
-								<p>Description: $Desc</p>
-								<p>Category: $Cat</p>
-
-								<p>$newDate</p>
-								<a style='color:#fff;' href='takeQuizMultipleChoice.php?quiz_code=$QuizCode'>Play Quiz</a>
+								<p style='color:#fff;'>Category: $Cat</p>
+								<p style='color:#fff;'>Items: $Item</p>
+								<p style='color:#fff;'>Overall Scores: $Os</p>
+								<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
 									</article>
 
 							</div>

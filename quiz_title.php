@@ -1,3 +1,16 @@
+<?php
+
+	//Step 1 Database Connectivity
+	include_once "db.php";
+
+	//Will check if the user try to access pages without logging in
+	if(empty($_SESSION["userid"])){
+		header("Location:login.php");
+	}
+
+ ?>
+ 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -21,6 +34,7 @@
       include_once("navbaradmin.php");
 
       //This rand() will generate random numbers, this numbers will be the quiz_code
+      //Quiz_code is like a quiz_id, it mades from random and unique numbers
       $code = rand();
     ?><br><br><br><br>
 
