@@ -16,8 +16,8 @@
 
 		//Hidden Input
 
-    $quizCode = $_POST["quizCode"];
-    $quizP = $_POST["quizP"];
+    $quizCode = $_POST["quiz_code"];
+    $quizP = $_POST["points"];
 
 
 	  $deleteuery = "DELETE FROM identification WHERE id = '$quizId'";
@@ -40,6 +40,7 @@
          }
       }
 	}
+
 }
 else{
   //if no
