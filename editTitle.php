@@ -107,12 +107,18 @@
                     </div>
                         <input type='hidden'name='quizCode' value=' $code'>
                     </form>
+                    ";
+                    ?>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        "?>
+                <?php  echo "
+                
+        ";
+      }
+  ?>
   </body>
 </html>
