@@ -52,14 +52,14 @@
                             <div class='row form-group'>
                               <div class='col'>
                                 <label for='points>'Points:</label>
-                                <input type='number' class='form-control' placeholder='enter points for this question...' name='points' required>
+                                <label for='typeOfQuiz'>Type of quiz: Multiple Choices</label>
                               </div>
                             </div>
                             <div class='row form-group'>
                               <div class='col'>
                                 <label> Correct Answer</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='3' cols='4' placeholder='Enter the correct letter of the answer' name='ans' required></textarea>
+                                    <textarea  class='form-control' rows='3' cols='4' placeholder='Enter the correct letter of the answer' name='ans' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
                                   </div>
                               </div>
                             </div>
