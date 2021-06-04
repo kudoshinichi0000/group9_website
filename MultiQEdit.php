@@ -17,6 +17,7 @@
     <?php
     include_once('db.php');
     $quizId = $_GET['id'];
+      include_once("navbaradmin.php");
 
     $query = "SELECT * FROM multiple_questions WHERE id = '$quizId'";
     $execQuery = mysqli_query($con, $query);
