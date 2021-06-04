@@ -109,7 +109,7 @@
                         </div>
                       </div>
                     </div>
-                        <input type='hidden'name='quizCode' value='<?php echo $code?>'>
+                        <input type='hidden'name='quizCode' value='<?php echo "$code";?>'>
                     </form>
 
                   </div>
