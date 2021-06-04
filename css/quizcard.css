@@ -44,7 +44,7 @@ h1{
   -moz-transform:rotateY(179.9deg);
   -webkit-transform:rotateY(179.9deg);
   transform:rotateY(179.9deg);
-  background:#8d6e63 ;
+  background:yellow ;
  }
 .card-front-content, .card-back-content{
   box-sizing:border-box;
