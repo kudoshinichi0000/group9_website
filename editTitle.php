@@ -33,7 +33,7 @@
     $picture = $fetchCodes["picture"];
 
         echo "
-        <div style='width: 90%; margin-left:4rem;' class='container>
+        <div style='width: 90%; margin-left:3.5rem;' class='container>
           <div class='jumbotron'>
           <div class='card'>
             <div class='card-header'>
@@ -56,6 +56,7 @@
                           <input type='text' class='form-control' placeholder='Enter new Description' name='Desc' value='$Desc' required>
                         </div>
                       </div>
+                      <br>
                       <div class='row form-group'>
                         <div class='col'>
                           <div class='input-group mb-3'>
@@ -118,6 +119,6 @@
           </div>
           </div>
         </div>
-            
+
   </body>
 </html>
