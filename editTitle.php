@@ -54,6 +54,39 @@
                           <input type='text' class='form-control' placeholder='Enter new Description' name='Desc' value='$Desc' required>
                         </div>
                       </div>
+                      <div class='row form-group'>
+                        <div class='col'>
+                          <div class='input-group mb-3'>
+                            <div class='input-group-prepend'>
+                              <label class='input-group-text' for='catg'>Categories: </label>
+                            </div>
+                              <select class='custom-select' id='inputGroupSelect01' name='catg'>
+                            ";
+                            ?>
+                            <?php
+                              if ($categories == 'Educational') {
+                                echo "
+                                <option value='$categories'>$categories</option>
+                                <option value='Entertainment'>Entertainment</option>
+                                <option value='Mix'>Mix</option>
+                                ";
+                              }elseif ($categories == 'Entertainment') {
+                                echo "
+                                <option value='$categories'>$categories</option>
+                                <option value='Educational'>Educational</option>
+                                <option value='Mix'>Mix</option>
+                                ";
+                              }else {
+                                echo "
+                                <option value='$categories'>$categories</option>
+                                <option value='Educational'>Educational</option>
+                                <option value='Entertainment'>Entertainment</option>
+                                ";
+                              }
+                            ?>
+                          </div>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -61,12 +94,6 @@
             </div>
           </div>
         </div>
-    				<tr>
-              <th colspan='2'><label for='Desc'><h3>Description</h3></label></th>
-              <th colspan='2'><input type='text' name='Desc' value='$Desc' required></th>
-    				</tr>
-
-            <tr>
               <th colspan='2'><label for='catg'><h3>Categories</h3></label></th>
                 <th colspan='2'>
                   <select name='catg'>
