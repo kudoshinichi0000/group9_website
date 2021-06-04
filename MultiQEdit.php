@@ -66,7 +66,7 @@
                               <div class='col'>
                                 <label> Correct Answer</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='3' cols='4' placeholder='Enter the correct letter of the answer' name='ans' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
+                                    <textarea  class='form-control' rows='1'  placeholder='Enter the correct letter of the answer' name='ans' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
                                   </div>
                               </div>
                             </div>
@@ -74,16 +74,16 @@
                               <div class='col'>
                                 <label> Answer Options</label>
                                   <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='2'   name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
+                                    <textarea  class='form-control' rows='1'   name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
                                       <textarea  class='form-control' rows='1'  name='B' placeholder='Possible answer (B)' value='$option2'required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='2'   name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
+                                        <textarea  class='form-control' rows='1'   name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
                                   </div>
                                   <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='3' cols='40'  name='D' placeholder='Possible answer (D)' value='$option4' required></textarea>
+                                        <textarea  class='form-control' rows='1'   name='D' placeholder='Possible answer (D)' value='$option4' required></textarea>
                                   </div>
                               </div>
                             </div>
