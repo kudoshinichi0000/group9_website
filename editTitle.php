@@ -47,7 +47,7 @@
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='Title'>Title: </label>
-                          <input type='text' class='form-control' placeholder='Enter new Title' name='Title' required>
+                          <input type='text' class='form-control' placeholder='Enter new Title' name='title' required>
                         </div>
                       </div>
                       <div class='row form-group'>
