@@ -37,7 +37,7 @@
           <div class='jumbotron'>
           <div class='card'>
             <div class='card-header'>
-              <h2 style='margin-left:30%'><b> Edit Title Quiz<b></h2>
+              <h2 style='margin-left:50%'><b> Edit Title Quiz<b></h2>
             </div>
             <div class='card-body'>
               <div class='center'>
