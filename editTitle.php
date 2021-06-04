@@ -101,7 +101,7 @@
                         <div class='row form-group' style='margin-top: 40px;'>
                         <div class='col'>
                           <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
-                          <?php echo '<a href='quiz_list' class='btn btn-outline-danger float-right'>Cancel</a>';?>
+                          <?php echo '<a href='quiz_list.php' class='btn btn-outline-danger float-right'>Cancel</a>';?>
                         </div>
                       </div>
                     </div>
