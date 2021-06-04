@@ -70,8 +70,8 @@
 
             </div>
             <div class='modal-footer'>
-              <input type='submit' name='choice' class='buttonnn button01' value='yes'>
-                <input type='submit' name='choice' class='buttonnn button1' value='no'>
+              <input type='submit' name='Confirm' class='buttonnn button01' value='yes'>
+                <input type='submit' name='Confirm' class='buttonnn button1' value='no'>
             </div>
             <input type='hidden' name='quizId' value='$quizId'>
             <input type='hidden' name='quizCode' value='$code'>
