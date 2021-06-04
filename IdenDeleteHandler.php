@@ -86,13 +86,14 @@
          }
       }
 	}
+  else{
+    //if no
+    header("Location: quiz_list.php");
+    exit();
+  }
 
 }
-else{
-  //if no
-  header("Location: quiz_list.php");
-  exit();
-}
+
 
  ?>
 
