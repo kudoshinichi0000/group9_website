@@ -115,16 +115,6 @@
           </div>
         </div>
 
-              <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
-    					<th><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-    				</tr>
-
-    			</table>
-          <input type='hidden' name='quizCode' value='$code'>
-    		</form>
-    	</div>
-        ";
-      }
-  ?>
+            
   </body>
 </html>
