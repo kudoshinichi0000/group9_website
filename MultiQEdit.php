@@ -33,67 +33,68 @@
 
 
       echo "
-      <div class="container">
-        <div class="card">
-          <div class="card-header">
-            <h2 style="margin-left:30%"><b> Add Mutiple Choice Item<b></h2>
-          </div>
-          <div class="card-body">
-            <div class="center">
-              <div class="row formContainer">
-                <div class="col-lg-12">
-                  <form action="addMultipleQuestionHandler.php" method="POST">
-                    <div class="row form-group">
-                      <div class="col">
-                        <label for="question">Question:</label>
-                       <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col">
-                        <label for="points>">Points:</label>
-                        <input type="number" class="form-control" placeholder="enter points for this question..." name="points" required>
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col">
-                        <label> Correct Answer</label>
-                          <div class="form-outline mb-4">
-                            <textarea  class="form-control" rows="3" cols="4" placeholder="Enter the correct letter of the answer" name="ans" required></textarea>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col">
-                        <label> Answer Options</label>
-                          <div class="form-outline mb-4">
-                            <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
+              <div class='container'>
+                <div class='card'>
+                  <div class='card-header'>
+                    <h2 style='margin-left:30%'><b> Edit Mutiple Choice Item<b></h2>
+                  </div>
+                  <div class='card-body'>
+                    <div class='center'>
+                      <div class='row formContainer'>
+                        <div class='col-lg-12'>
+                          <form action='MultiQEditHandler.php' method='POST'>
+                            <div class='row form-group'>
+                              <div class='col'>
+                                <label for='question'>Question:</label>
+                               <input type='text' class='form-control'  placeholder='Enter your question' name='question' required>
+                              </div>
                             </div>
-                            <div class="form-outline mb-4">
-                            <textarea  class="form-control" rows="3" cols="40"  name="B" placeholder="Possible answer (B)" required></textarea>
+                            <div class='row form-group'>
+                              <div class='col'>
+                                <label for='points>'Points:</label>
+                                <input type='number' class='form-control' placeholder='enter points for this question...' name='points' required>
+                              </div>
                             </div>
-                            <div class="form-outline mb-4">
-                            <textarea  class="form-control" rows="3" cols="40"  name="C" placeholder="Possible answer (C)" required></textarea>
+                            <div class='row form-group'>
+                              <div class='col'>
+                                <label> Correct Answer</label>
+                                  <div class='form-outline mb-4'>
+                                    <textarea  class='form-control' rows='3' cols='4' placeholder='Enter the correct letter of the answer' name='ans' required></textarea>
+                                  </div>
+                              </div>
                             </div>
-                            <div class="form-outline mb-4">
-                            <textarea  class="form-control" rows="3" cols="40"  name="D" placeholder="Possible answer (D)" required></textarea>
-                          </div>
+                            <div class='row form-group'>
+                              <div class='col'>
+                                <label> Answer Options</label>
+                                  <div class='form-outline mb-4'>
+                                    <textarea  class='form-control' rows='3' cols='40'  name='A' placeholder='Possible answer (A)' required></textarea>
+                                  </div>
+                                  <div class='form-outline mb-4'>
+                                      <textarea  class='form-control' rows='3' cols='40'  name='B' placeholder='Possible answer (B)' required></textarea>
+                                  </div>
+                                  <div class='form-outline mb-4'>
+                                        <textarea  class='form-control' rows='3' cols='40'  name='C' placeholder='Possible answer (C)' required></textarea>
+                                  </div>
+                                  <div class='form-outline mb-4'>
+                                        <textarea  class='form-control' rows='3' cols='40'  name='D' placeholder='Possible answer (D)' required></textarea>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class='row form-group' style='margin-top: 40px;'>
+                              <div class='col'>
+                                <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
+                                <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+                              </div>
+                            </div>
+                            <input type='hidden' name='quizId' value='$quizId'>
+                            <input type='hidden' name='quizC' value='$code'>
+                          </form>
+                        </div>
                       </div>
                     </div>
-                    <div class="row form-group" style="margin-top: 40px;">
-                      <div class="col">
-                        <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
-                          <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                      </div>
-                    </div>
-                    <input type='hidden' name='hiencod' value='<?php echo $code?>'>
-                  </form>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
