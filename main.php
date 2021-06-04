@@ -8,7 +8,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<style media="screen">
+	.paginate{
+		margin: auto;
+	}
 
+	.pagination > li > a{
+		text-decoration: none;
+		display: block;
+		margin: auto;
+		border: 4px solid #663300;
+		color: #000;
+		font-weight: 400;
+		font-size: 1.6em;
+		border-radius: 10px;
+		width: 10em;
+		height: auto;
+		padding: 8px;
+	}
+	</style>
 </head>
 <body>
 
@@ -48,94 +67,88 @@
 		<!--displaying all Quiz--->
 		<div class="centerBlack">News Feed</div><br>
 			<?php
-			$db = new PDO( 'mysql:dbname=quizdb;host=127.0.0.1','root','' );
+			$connect = mysqli_connect("localhost", "root", "", "quizdb");
+			$record_per_page = 1;
+			$page = '';
+			if (isset($_GET["page"])) {
+			    $page = $_GET["page"];
+			} else {
+			    $page = 1;
+			}
 
-			// user input
-			$page 	 = isset( $_GET['page'] ) ? (int) $_GET['page'] : 1;
-			$perPage = isset( $_GET['per-page'] ) && $_GET['per-page'] <= 50 ? (int) $_GET['per-page'] : 1;
+			$start_from = ($page - 1) * $record_per_page;
 
-			// positioning
-			$start = ( $page > 1 ) ? ( $page * $perPage ) - $perPage : 0;
-
-			// query
-			$articles = $db->prepare( "SELECT SQL_CALC_FOUND_ROWS * FROM quiz_list LIMIT {$start}, {$perPage}" );
-			$articles->execute();
-			$articles = $articles->fetchAll( PDO::FETCH_ASSOC );
-
-			// pages
-			$total = $db->query( "SELECT FOUND_ROWS() as total" )->fetch()['total'];
-			$pages = ceil( $total / $perPage );
-
+			$query = "SELECT * FROM quiz_list order by publish DESC LIMIT $start_from, $record_per_page";
+			$result = mysqli_query($connect, $query);
+			while ($row = mysqli_fetch_array($result)) {
 
 			//if($Ftitle = wordwrap($articles["title"], 25, "<br>")) {
-			foreach ( $articles as $article ):
-			$QuizCode = $article["quiz_code"];
 
-			//Displaying Quiz
-					echo "
-					<div class='align'>
-					<div class='card-container'>
-						<div class='card-horizontal'>
-							<div class='card-front'>
-								<article class='card-front-content'>
-								<img src='res/quizPicture/$article[picture]' width='100%' height='175px' alt='' class='card-pic'>
-								<h2 style='color:#fff;'>$article[title]</h2>
-									</article>
-							</div>
-							<div class='card-back card-back-hr'>
-								<article class='card-back-content'>
-									<h2>Title: $article[title]e</h2>
-									<p style='color:#fff;'>Category:	$article[categories]</p>
-									<p style='color:#fff;'>Items: $article[items]</p>
-									<p style='color:#fff;'>Overall Scores: $article[OverallScores]</p>
-									<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
-								</article>
+
+				$QuizCode = $row["quiz_code"];
+
+				//Displaying Quiz
+				echo "
+						<div class='align'>
+							<div class='card-container'>
+								<div class='card-horizontal'>
+									<div class='card-front'>
+										<article class='card-front-content'>
+											<img src='res/quizPicture/$row[picture]' width='100%' height='175px' alt='' class='card-pic'>
+											<h2 style='color:#fff;'>$row[title]</h2>
+										</article>
+									</div>
+
+									<div class='card-back card-back-hr'>
+										<article class='card-back-content'>
+											<h2>Title: $row[title]e</h2>
+											<p style='color:#fff;'>Category:	$row[categories]</p>
+											<p style='color:#fff;'>Items: $row[items]</p>
+											<p style='color:#fff;'>Overall Scores: $row[OverallScores]</p>
+											<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
+										</article>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-			</div>
 					";
-			 endforeach;
+				}
 
 			 ?>
 
 			 </div>
 
-			 <?php
-			 //Pagination
-
-				 echo "
-				 <div class='col-md-12'>
-					 <div class='well well-sm'>
-						 <div class='paginate'>
-							 <ul class='pagination'>
-								 <li>
-										<a href='#'>&laquo;</a>
-								 </li>
-							 </ul>";
-							 		for ( $x=1; $x <= $pages; $x++ ):
-										 echo "
-									 		<ul class='pagination'>
-										 		<li>
-											 		<a href='?page=$x; &per-page=$perPage'>$x</a>
-										 		</li>
-									 		</ul>";
-									endfor;
-								echo "
-									<ul class='pagination'>
-			 				 			<li>
-			 								<a href='#'>&raquo;</a>
-			 				 			</li>
-			 					</ul>
-						 </div>
-					 </div>
-				 </div>";
-
-			//}
-
-			?>
-
-
+			 <div align="center">
+                 <br />
+                 <?php
+                 $page_query = "SELECT * FROM quiz_list ORDER BY publish DESC";
+                 $page_result = mysqli_query($connect, $page_query);
+                 $total_records = mysqli_num_rows($page_result);
+                 $total_pages = ceil($total_records / $record_per_page);
+                 $start_loop = $page;
+                 $difference = $total_pages - $page;
+                 if ($difference <= 5) {
+                     $start_loop = $total_pages + 1;
+                 }
+                 $end_loop = $start_loop + 4;
+                 if ($page > 1) {
+                     echo "<a href='main.php?page=1'>First</a>";
+                     echo "<a href='main.php?page=" . ($page - 1) . "'><<</a>";
+                 }
+                 for ($i = $start_loop; $i <= $end_loop; $i++) {
+                     echo "<a href='main.php?page=" . $i . "'>" . $i . "</a>";
+                 }
+                 if ($page <= $end_loop) {
+                     echo "<a href='main.php?page=" . ($page + 1) . "'>>></a>";
+                     echo "<a href='main.php?page=" . $total_pages . "'>Last</a>";
+                 }
+                 ?>
+             </div>
+             <br /><br />
+         </div>
+     </div>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 </body>
 	<?php include_once "footerr.php";?>

@@ -3,82 +3,12 @@
 <head>
 	<title>Main</title>
 	<link type="text/css" rel="stylesheet" href="css/navbar.css">
+	<link type="text/css" rel="stylesheet" href="css/quizcard.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style media="screen">
-		#Maincontainer{
-			width: 80%;
-			margin: auto;
-		}
-
-	form.Searchbtn input[type=text] {
-		float: right;
-	  padding: 10px;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  width: 20%;
-	  background: #f1f1f1;
-	}
-
-	/* Style the submit button */
-	form.Searchbtn button {
-		float: right;
-	  width: 5%;
-	  padding: 10px;
-	  background: #2196F3;
-	  color: white;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  border-left: none; /* Prevent double borders */
-	  cursor: pointer;
-	}
-
-	form.Searchbtn button:hover {
-	  background: #0b7dda;
-	}
-
-	/* Clear floats */
-	form.Searchbtn::after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-	.cat{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #000;
-		border-radius: 8px;
-		border: 1px solid black;
-	}
-	.cat:hover{
-		background-color: #007bff;
-		color: #fff;
-		cursor: pointer;
-	}
-	.catH{
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		padding-left: 1em;
-		padding-right: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		color: #fff;
-		text-decoration: none;
-		border-radius: 8px;
-		background-color: #007bff;
-		cursor: pointer;
-	}
-	.catH:hover{
-		color: #fff;
-	}
-	</style>
 </head>
 <body>
 
@@ -96,7 +26,7 @@
 	</div>
 
 	<!---Welcoming text--->
-	<div id="Maincontainer"><br>
+	<div class="Maincontainer"><br>
 		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
