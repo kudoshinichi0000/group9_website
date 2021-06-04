@@ -84,9 +84,18 @@
                                 ";
                               }
                             ?>
+                            <? php echo "
+                            </select>
                           </div>
                         </div>
                       </div>
+                      <div class='row form-group'>
+                        <div class='col'>
+                          <label for='ProfilePicture'>Profiel Picture: </label>
+                          <input type='file' class='form-control' name='ProfilePicture' required>
+                        </div>
+                      </div>
+
                     </form>
                   </div>
                 </div>
@@ -94,32 +103,6 @@
             </div>
           </div>
         </div>
-              <th colspan='2'><label for='catg'><h3>Categories</h3></label></th>
-                <th colspan='2'>
-                  <select name='catg'>
-                  ";
-                  ?>
-                  <?php
-                    if ($categories == 'Educational') {
-                      echo "
-                      <option value='$categories'>$categories</option>
-                      <option value='Entertainment'>Entertainment</option>
-                      <option value='Mix'>Mix</option>
-                      ";
-                    }elseif ($categories == 'Entertainment') {
-                      echo "
-                      <option value='$categories'>$categories</option>
-                      <option value='Educational'>Educational</option>
-                      <option value='Mix'>Mix</option>
-                      ";
-                    }else {
-                      echo "
-                      <option value='$categories'>$categories</option>
-                      <option value='Educational'>Educational</option>
-                      <option value='Entertainment'>Entertainment</option>
-                      ";
-                    }
-                  ?>
                 <?php  echo "
                   </select>
               </th>
