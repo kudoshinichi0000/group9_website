@@ -43,6 +43,10 @@
                   <div class='col-lg-12'>
                     <form action='editTitleHandler.php' method='POST' enctype='multipart/form-data'>
                       <div class='row form-group'>
+                        <div class='col'>
+                          <label for='Title'>Title: </label>
+                          <input type='text' class='form-control' placeholder='Enter new Title' name='Title' required>
+                        </div>
                       </div>
                     </form>
                   </div>
