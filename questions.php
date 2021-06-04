@@ -266,12 +266,12 @@
 
          </div>
          <div class="modal-footer">
-           <input type="submit" name="Confirm" class="buttonnn button01" value="yes">
-             <input type="submit" name="Confirm" class=" buttonnn button1" value="no">
+           <input type="submit" name="Choice" class="buttonnn button01" value="yes">
+             <input type="submit" name="Choice" class=" buttonnn button1" value="no">
          </div>
          <input type="hidden" name="quizId" value="$quizId">
-         <input type="hidden" name="quizCode" value="$code">
-         <input type="hidden" name="quizP" value="$questionP">
+         <input type="hidden" name="quizCode" value="$quiz_code">
+         <input type="hidden" name="quizP" value="$points">
          </form>
      </div>
    </div>
