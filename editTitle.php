@@ -48,6 +48,12 @@
                           <input type='text' class='form-control' placeholder='Enter new Title' name='Title' required>
                         </div>
                       </div>
+                      <div class='row form-group'>
+                        <div class='col'>
+                          <label for='title'>Title: </label>
+                          <input type='text' class='form-control' placeholder='Enter new Title' name='quiz_title' value='$title' required>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -55,14 +61,7 @@
             </div>
           </div>
         </div>
-        <div class='container1'>
-    		<form action='editTitleHandler.php' method='POST' enctype='multipart/form-data'>
-    			<table border='1' height='350px' width='35%' class='container1'>
-            <tr>
-    					<th colspan='3'><h2>New Quiz</h2>
-    				</tr>
 
-            <tr>
               <th colspan='2'><label for='title'><h3>title</h3></label></th>
               <th colspan='2'><input type='text' name='quiz_title' value='$title' required></th>
             </tr>
