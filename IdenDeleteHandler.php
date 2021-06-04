@@ -44,6 +44,7 @@
 else{
   //if no
   header("Location:questions.php");
+  exit();
 }
 
  ?>
