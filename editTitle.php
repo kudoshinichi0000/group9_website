@@ -85,9 +85,9 @@
                               }
                             ?>
                             </select>
-                            </div>
                           </div>
-                        </div>
+                          </div>
+                                                  </div>
                             <? php echo "
 
                       <br>
@@ -105,7 +105,17 @@
             </div>
           </div>
         </div>
+                <?php  echo "
+                  </select>
+              </th>
+            </tr>
 
+            <tr>
+    					<th colspan='2'><label for='ProfilePicture'>Profile Picture</label></th>
+    					<th colspan='2'><input type='file' name='ProfilePicture' required></th>
+    				</tr>
+
+    				<tr>
               <th colspan='2'><a href='quiz_list.php'>Cancel</a></th>
     					<th><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
     				</tr>
@@ -115,7 +125,7 @@
     		</form>
     	</div>
         ";
-      
+      }
   ?>
   </body>
 </html>
