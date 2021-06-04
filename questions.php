@@ -174,7 +174,7 @@
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointss </i>
                        <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionn</i>
-                       <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                       <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found'  data-toggle='modal' data-target='#DeleteModaltrue'class='Prof' ></a>
                        <a href='ToFEdit.php?id=$questionnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
                     </th>
                    </tr>
@@ -220,7 +220,39 @@
        ?>
 
    </div>
-   <!--TRY KO LANG TO PARA SA MODAL DELETE, SA DELETE ADMIN MAY GANITO DIN NAG EEXPLORE PA ME -->
+   <!-- PARA SA MODAL DELETE SA IDENTIFICATION-->
+ <div class="modal fade" id="DeleteModaltrue">
+   <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h2 class="modal-title"> Delete Confirmation</h2>
+           <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+         </div>
+         <div class="modal-body">
+           <form action="deletetrueorfalseHandler.php" id="form-delete-user" method="post">
+               <label><p>  Are you sure you want to delete this item: <?php echo $questionn?>?</p></label>
+
+         </div>
+         <div class="modal-footer">
+           <input type="submit" name="Connfirm" class="buttonnn button01" value="yes">
+             <input type="submit" name="Confirm" class=" buttonnn button1" value="no">
+         </div>
+         <input type="hidden" name="quizId" value="$quizId">
+         <input type="hidden" name="quizCode" value="$code">
+         <input type="hidden" name="quizP" value="$questionP">
+         </form>
+     </div>
+   </div>
+ </div>
+ <script>
+   $('.delete-btn').click((e) => {
+     e.preventDefault();
+     if(confirm(' Are you sure you want to \to delete this item?')){
+       window.location.href = $(e.target).attr('href');
+     }
+   });
+ </script>
+   <!-- PARA SA MODAL DELETE SA IDENTIFICATION-->
  <div class="modal fade" id="DeleteModal">
    <div class="modal-dialog">
        <div class="modal-content">
