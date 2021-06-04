@@ -66,64 +66,26 @@
                            </div>
                          </div>
                        </div>
-                       <div class="row form-group">
-                         <div class="col">
-                           <label for="points">Points:</label>
-                           <input type="number" class="form-control" placeholder="input points for this question" name="points" required>
+                       <div class='row form-group'>
+                         <div class='col'>
+                           <label for='pointss'>Points:</label>
+                           <input type='number' class='form-control' placeholder='input points for this question' name='points' value='$pointss' required>
                          </div>
                        </div>
                        <div>
-                         <div class="row form-group" style="margin-top: 40px;">
-                         <div class="col">
-                           <button type="submit" name="btn" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
-                           <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+                         <div class='row form-group' style='margin-top: 40px;'>
+                         <div class='col'>
+                           <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;' value='Submit'>Submit</button>
+                           <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
                          </div>
                        </div>
                      </div>
-                         <input type='hidden'name='quizCode' value='<?php echo $code ?>'>
+                     <input type='hidden' name='quizCode' value='$code'>
+                     <input type='hidden' name='questionId' value='$questionnId'>
                     </form>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-      </div>
-      <form action='ToREditHandler.php' method='POST'>
-      <table border='1' height='350px' width='25%' class='container1'>
-
-        <tr>
-          <th colspan='3'><h2><label for='TorFQuestion'>Question: </label> </h2>
-          <h2><input type='text' name='TorFQuestion' value='$questionn' required> </h2></th>
-        </tr>
-
-        <tr>
-          <th colspan='3'><h2><label for='TorFAnswer'>Answer: </label> </h2>
-            <select name='TorFAnswer'>
-            ";
-              if ($answerr == 'True') {
-                echo "
-                  <option value='$answerr'>$answerr</option>
-                  <option value='False'>False</option>
-                ";
-              }else{
-                echo "
-                  <option value='$answerr'>$answerr</option>
-                  <option value='True'>True</option>
-                ";
-              }echo "
-            </select>
-          </th>
-        </tr>
-
-        <tr>
-          <th colspan='2'><a href='questions.php?quiz_code=$code'>Cancel</a></th>
-          <th colspan='3'><input type='submit' name='submit' class='btn' placeholder='Save' ></th>
-        </tr>
-      </table>
-      <input type='hidden' name='quizCode' value='$code'>
-      <input type='hidden' name='questionId' value='$questionnId'>
-    </form>
-    ";
   }
     ?>
   </body>
