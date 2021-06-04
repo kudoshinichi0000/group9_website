@@ -84,8 +84,9 @@
                                 ";
                               }
                             ?>
-                            <? php echo "
                             </select>
+                            <? php echo "
+
                           </div>
                         </div>
                       </div>
