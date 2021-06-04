@@ -37,6 +37,18 @@
             <div class='card-header'>
               <h2 style='margin-left:30%'><b> Edit Title Quiz<b></h2>
             </div>
+            <div class='card-body'>
+              <div class='center'>
+                <div class='row formContainer'>
+                  <div class='col-lg-12'>
+                    <form action='editTitleHandler.php' method='POST' enctype='multipart/form-data'>
+                      <div class='row form-group'>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class='container1'>
