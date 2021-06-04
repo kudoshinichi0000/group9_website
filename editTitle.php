@@ -47,7 +47,7 @@
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='title'>Title: </label>
-                          <input type='text' class='form-control' placeholder='Enter new Title' name='title' value='$title' required>
+                          <input type='text' class='form-control' placeholder='Enter new Title' name='title' value='$title' value='titel'required>
                         </div>
                       </div>
                       <div class='row form-group'>
@@ -87,7 +87,7 @@
                                 ";
                               }
                             }
-
+                            ?>
                             </select>
                           </div>
                           </div>
@@ -109,7 +109,7 @@
                         </div>
                       </div>
                     </div>
-                        <input type='hidden'name='quizCode' value='$quizCode'>
+                        <input type='hidden'name='quizCode' value=' $code'>
                     </form>
 
                   </div>
