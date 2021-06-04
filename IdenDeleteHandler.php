@@ -9,12 +9,13 @@
   <?php
   include_once("db.php");
 	//Var_dump
+  $quizId = $_POST["quizId"];
 	$Confirm = $_POST["Confirm"];
 
 	if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
 
 		//Hidden Input
-		$quizId = $_POST["quizId"];
+
     $quizCode = $_POST["quizCode"];
     $quizP = $_POST["quizP"];
 
@@ -39,6 +40,10 @@
          }
       }
 	}
+}
+else{
+  //if no
+  header("Location:questions.php");
 }
 
  ?>
