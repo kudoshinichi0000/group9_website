@@ -49,7 +49,7 @@
                           <div class='row form-group'>
                             <div class='col'>
                             <label for='IdenAnswer'>Anwer:</label>
-                            <input type='text' class='form-control' name='IdenAnswer' required>
+                            <input type='text' class='form-control'  name='IdenAnswer' value='$answer' required>
                             </div>
                           </div>
                         <div class="row form-group">
@@ -63,7 +63,8 @@
                         <div class="col">
                         <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
                         <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
+                        <input type='hidden' name='quizCode' value='$code'>
+                        <input type='hidden' name='quizId' value='$Quizid'>
                       </form>
                        </div>
                       </div>
