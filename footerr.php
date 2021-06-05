@@ -10,7 +10,7 @@
       background-color: #000;
       width: 100%;
       color: white;
-      margin-top: 15em;
+      margin-top: 40em;
     }
     p{
       color:#a6a6a6;

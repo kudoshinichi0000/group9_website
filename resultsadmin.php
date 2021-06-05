@@ -18,6 +18,11 @@
 	<!---Ito yung nag bibigay ng cursive font style sa header--->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+	<style media="screen">
+		.resultadmin{
+			margin-bottom: 25em;
+		}
+	</style>
 </head>
 <body>
 	<?php
@@ -40,8 +45,13 @@
 	?>
 	<br><br><br><br><br><br><br><br>
 
-	<?php echo "Username: $username <br>
-	 						UserId: $userId"; ?>
+	<?php echo "
+	<div class='resultadmin'>
+		Username: $username <br>
+		UserId: $userId
+	</div>
+
+		"; ?>
 </body>
 	<?php include_once "footerr.php";?>
 </html>
