@@ -82,12 +82,11 @@
       <?php
 
           //Step 1 Database Connectivity
-          include_once "db.php";
+          include_once("db.php");
 
           $userid = $_SESSION['userid'];
-
           //Prepare the query
-          $query = "SELECT * FROM quiz_list";
+          $query = "SELECT * FROM quiz_list WHERE admin_id = $userid";
 
           //Perform the query
           $execQuery = mysqli_query($con, $query);
@@ -98,7 +97,7 @@
 
               //displaying all quizzes made by the admin user
               if ($userid == $admin_id) {
-                $query = "SELECT * FROM quiz_list WHERE admin_id = $admin_id ";
+                $query = "SELECT * FROM quiz_list WHERE admin_id = $admin_id ORDER BY publish DESC";
                 $execQuery = mysqli_query($con, $query);
                 while ($fetchTitle = mysqli_fetch_assoc($execQuery)) {
                 $title = $fetchTitle["title"];

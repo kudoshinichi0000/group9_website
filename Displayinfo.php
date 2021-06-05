@@ -15,6 +15,7 @@
   //Fetch all exectued querries
   $fetchQuiz = mysqli_fetch_assoc($execQuery);
   $QuizCode = $fetchQuiz["quiz_code"];
+  $adminId = $fetchQuiz["admin_id"];
   $pic = $fetchQuiz["picture"];
   $title = $fetchQuiz['title'];
   $Desc = $fetchQuiz["description"];
@@ -22,6 +23,16 @@
   $Pub = $fetchQuiz["publish"];
   $item = $fetchQuiz["items"];
   $Os = $fetchQuiz["OverallScores"];
+
+      //Prepare the query
+      $queryid = "SELECT * FROM admin WHERE userid = $adminId";
+
+      //Perform the query
+      $execQueryid = mysqli_query($con, $queryid);
+
+      //Fetch all exectued querries
+      $fetchadmin = mysqli_fetch_assoc($execQueryid);
+      $Userid = $fetchadmin["userid"];
 
   //it change the format of date
   $newDate = date("m-d-Y", strtotime($Pub));
@@ -63,9 +74,6 @@
 
     }
 
-    td {
-    padding-left: 8px;
-    }
 
     tr:nth-child(even){
       background-color: #f2f2f2;
@@ -75,30 +83,27 @@
       background-color: #ddd;
     }
 
-    td {
-
-    padding-top: 12px;
+    th {
+    padding-top: 5px;
     padding-bottom: 12px;
     text-align: left;
     padding-left: 12px;
     color: white;
     }
-
-    
     </style>
   </head>
   <body>
 
     <?php
       //Include the navbar for public
-      include_once("navbar.php");
+      //include_once("navbar.php");
      ?>
 
      <div class="Displayinfo">
 
        <!---Display Title--->
        <div class="info">
-         <table width="80%" class="tayble">
+         <table width="100%" class="tayble">
            <tr>
              <td><h2>Title:</h2></td>
              <td><h2><?php echo " $title "; ?></h2></td>
@@ -112,6 +117,11 @@
            <tr>
              <td><h2>Categories:</h2></td>
              <td><h2><?php echo " $Cat "; ?></h2></td>
+           </tr>
+
+           <tr>
+             <td><h2>Quiz Code:</h2></td>
+             <td><h2><?php echo " $QuizCode "; ?></h2></td>
            </tr>
 
            <tr>
@@ -129,12 +139,25 @@
              <td><h2><?php echo " $newDate "; ?></h2></td>
            </tr>
 
+           <tr>
+             <td><h2>Created By:</h2></td>
+             <td><h2>
+               <?php
+               if ($Userid == $adminId) {
+               $username = $fetchadmin["username"];
+               echo " $username ";
+                }
+              ?>
+           </h2></td>
+           </tr>
+
          </table>
-          <?php echo " <a class='PlayQuiz'  href='PlayQuiz.php?quiz_code=$QuizCode'  >Play Quiz</a>";?>
+
        </div><br><br><br><br>
 
 
      </div>
+     <?php echo " <a class='PlayQuiz' href='PlayQuiz.php?quiz_code=$QuizCode'>Play Quiz</a>";?>
      <a href="main.php">Back</a>
   </body>
   <?php include_once("footerr.php"); ?>

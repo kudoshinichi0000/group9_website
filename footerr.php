@@ -10,7 +10,7 @@
       background-color: #000;
       width: 100%;
       color: white;
-      margin-top: 50em;
+      margin-top: 15em;
     }
     p{
       color:#a6a6a6;
@@ -162,7 +162,7 @@
                   <p> You can visit out social media accounts for transactions</p>
                   <a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a>
               </div>
-              
+
             </div>
           </div>
         </div>
