@@ -132,12 +132,12 @@
 
 	 //Pagination for Previous botton
 	 if ($page > 1) {
-			 echo "<a class='pagButtonPrev' href='main.php?page=" . ($page - 1) . "'>Previous</a>";
+			 echo "<a class='pagButtonPrev' href='Entertainment.php?page=" . ($page - 1) . "'>Previous</a>";
 	 }
 
 	 //Pagination for Previous botton
 	 if ($page < $end_loop) {
-		 echo "<a class='pagButtonNext' href='main.php?page=" . ($page + 1) . "'>Next</a>";
+		 echo "<a class='pagButtonNext' href='Entertainment.php?page=" . ($page + 1) . "'>Next</a>";
 	 }
 		?>
 

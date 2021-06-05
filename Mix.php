@@ -65,7 +65,7 @@
 		$start_from = ($page - 1) * $record_per_page;
 
 		//Prepare the query
-		$query = "SELECT * FROM quiz_list order by publish DESC LIMIT $start_from, $record_per_page";
+		$query = "SELECT * FROM quiz_list LIMIT $start_from, $record_per_page";
 
 		//Perform the query
 		$result = mysqli_query($con, $query);
@@ -112,7 +112,7 @@
 
 	 <?php
 	 //Prepare the query
-	 $page_query = "SELECT * FROM quiz_list ORDER BY publish DESC";
+	 $page_query = "SELECT * FROM quiz_list";
 
 	 //Perform the query
 	 $page_result = mysqli_query($con, $page_query);
@@ -131,12 +131,12 @@
 
 	 //Pagination for Previous botton
 	 if ($page > 1) {
-			 echo "<a class='pagButtonPrev' href='main.php?page=" . ($page - 1) . "'>Previous</a>";
+			 echo "<a class='pagButtonPrev' href='Mix.php?page=" . ($page - 1) . "'>Previous</a>";
 	 }
 
 	 //Pagination for Previous botton
 	 if ($page < $end_loop) {
-		 echo "<a class='pagButtonNext' href='main.php?page=" . ($page + 1) . "'>Next</a>";
+		 echo "<a class='pagButtonNext' href='Mix.php?page=" . ($page + 1) . "'>Next</a>";
 	 }
 		?>
 

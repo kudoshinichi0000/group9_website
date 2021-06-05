@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Main</title>
+	<title>Educational</title>
 	<link type="text/css" rel="stylesheet" href="css/navbar.css">
 	<link type="text/css" rel="stylesheet" href="css/quizcard.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
@@ -52,8 +52,7 @@
 		include_once("db.php");
 
 		//this is the maximum number that the quiz can display in main.php
-		$record_per_page = 8;
-
+		$record_per_page = 9;
 		$page = '';
 
 		if (isset($_GET["page"])) {
@@ -132,12 +131,12 @@
 
 	 //Pagination for Previous botton
 	 if ($page > 1) {
-			 echo "<a class='pagButtonPrev' href='main.php?page=" . ($page - 1) . "'>Previous</a>";
+			 echo "<a class='pagButtonPrev' href='Educational.php?page=" . ($page - 1) . "'>Previous</a>";
 	 }
 
 	 //Pagination for Previous botton
 	 if ($page < $end_loop) {
-		 echo "<a class='pagButtonNext' href='main.php?page=" . ($page + 1) . "'>Next</a>";
+		 echo "<a class='pagButtonNext' href='Educational.php?page=" . ($page + 1) . "'>Next</a>";
 	 }
 		?>
 
