@@ -48,19 +48,19 @@
     <link type="text/css" rel="stylesheet" href="css/navbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
-  	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
-  	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+
+    </style>
 
   </head>
   <body>
 
     <?php
       //Include the navbar for public
-      //include_once("navbar.php");
-     ?>
+      include_once("navbar.php");
+     ?><br><br><br><br><br><br>
 
-     <a href="main.php" class="Backbtton">Back</a>
+     <a class="Backbtton" href="main.php" >Back</a><br><br>
      <div class="Displayinfo">
 
        <!---Display Title--->
@@ -114,7 +114,7 @@
            </tr>
 
          </table>
-          <td colspan="2"><?php echo " <br><br><a class='PlayQuiz' href='PlayQuiz.php?quiz_code=$QuizCode'>Play Quiz</a>";?></td>
+          <td colspan="2"><?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?quiz_code=$QuizCode'>Play Quiz</a></h2>";?></td>
        </div><br><br><br><br>
 
 

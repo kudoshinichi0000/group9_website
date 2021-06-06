@@ -217,7 +217,6 @@ form.Searchbtn::after {
 
 .PlayQuiz
 {
-
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
@@ -226,13 +225,13 @@ form.Searchbtn::after {
   background-color: red;
   color: #fff;
   border-radius: 1em;
+  margin-left: 43%;
 }
 .PlayQuiz:hover{
   color: #fff;
   text-decoration: none;
 }
 .Displayinfo{
-	margin-top: 10em;
 	width: 70%;
 	border: 1px solid black;
 	margin-left: auto;
@@ -269,13 +268,9 @@ text-align: left;
 padding-left: 12px;
 color: white;
 }
-.PlayQuiz{
-	margin-left: 45%;
-	width: 100%;
-	border: 1px solid black;
-}
 .Backbtton{
   margin-top: 10em;
+  margin-left: 5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
