@@ -45,52 +45,13 @@
     <meta charset="utf-8">
     <title>Diplay Info</title>
     <link type="text/css" rel="stylesheet" href="css/quizcard.css">
+    <link type="text/css" rel="stylesheet" href="css/navbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
   	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
   	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style media="screen">
-    .Displayinfo{
-      margin-top: 10em;
-      width: 70%;
-      border: 1px solid black;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .info h2{
-      color: black;
-    }
-    .info{
-      margin-left: 3em;
-      padding-top: 50px;
-    }
-    .tayble{
-      margin-left: auto;
-      margin-right: auto;
-      font-family: Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
 
-    }
-
-
-    tr:nth-child(even){
-      background-color: #f2f2f2;
-    }
-
-    tr:hover{
-      background-color: #ddd;
-    }
-
-    th {
-    padding-top: 5px;
-    padding-bottom: 12px;
-    text-align: left;
-    padding-left: 12px;
-    color: white;
-    }
-    </style>
   </head>
   <body>
 
@@ -99,10 +60,12 @@
       //include_once("navbar.php");
      ?>
 
+     <a href="main.php" class="Backbtton">Back</a>
      <div class="Displayinfo">
 
        <!---Display Title--->
        <div class="info">
+         <h1 style="float: left; margin-bottom:1em;">Quiz Status<h1>
          <table width="100%" class="tayble">
            <tr>
              <td><h2>Title:</h2></td>
@@ -147,18 +110,16 @@
                $username = $fetchadmin["username"];
                echo " $username ";
                 }
-              ?>
-           </h2></td>
+              ?></h2></td>
            </tr>
 
          </table>
-
+          <td colspan="2"><?php echo " <br><br><a class='PlayQuiz' href='PlayQuiz.php?quiz_code=$QuizCode'>Play Quiz</a>";?></td>
        </div><br><br><br><br>
 
 
      </div>
-     <?php echo " <a class='PlayQuiz' href='PlayQuiz.php?quiz_code=$QuizCode'>Play Quiz</a>";?>
-     <a href="main.php">Back</a>
+
   </body>
   <?php include_once("footerr.php"); ?>
 </html>

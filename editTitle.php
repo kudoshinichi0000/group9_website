@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -35,7 +35,7 @@
     //get the id from the url
   	$code = $_GET['quiz_code'];
 
-    $query = "SELECT * FROM quiz_list WHERE quiz_code = '$code' ";
+    $query = "SELECT * FROM quiz_list WHERE quiz_code = $code";
     $execQuery = mysqli_query($con, $query);
     while($fetchCodes = mysqli_fetch_assoc($execQuery)){
     $admin_id = $fetchCodes["admin_id"];
@@ -59,7 +59,7 @@
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='title'>Title: </label>
-                          <input type='text' class='form-control' placeholder='Enter new Title' name='title' value='$title' value='titel'required>
+                          <input type='text' class='form-control' placeholder='Enter new Title' name='title' value='$title' required>
                         </div>
                       </div>
                       <div class='row form-group'>
@@ -104,15 +104,8 @@
                           </div>
                           </div>
                           </div>
-                            <? php echo "
-
+					<?php echo "
                       <br>
-                      <div class='row form-group'>
-                        <div class='col'>
-                          <label for='ProfilePicture'>Profiel Picture: </label>
-                          <input type='file' class='form-control' name='ProfilePicture' required>
-                        </div>
-                      </div>
                       <div>
                         <div class='row form-group' style='margin-top: 40px;'>
                         <div class='col'>
@@ -121,9 +114,10 @@
                         </div>
                       </div>
                     </div>
-                        <input type='hidden'name='quizCode' value='<?php echo "$QuizCode";?>'>
+                        <input type='hidden' name='quizCode' value='$code'>
                     </form>
-
+										";
+										?>
                   </div>
                 </div>
               </div>

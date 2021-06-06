@@ -130,7 +130,7 @@
 		 if ($page > 1) {
 				 echo "<a class='pagButtonPrev' href='main.php?page=" . ($page - 1) . "'>Previous</a>";
 		 }
-		 
+
 		 //Pagination for Previous botton
 		 if ($page < $end_loop) {
 			 echo "<a class='pagButtonNext' href='main.php?page=" . ($page + 1) . "'>Next</a>";

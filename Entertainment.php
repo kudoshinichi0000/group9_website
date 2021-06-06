@@ -51,21 +51,8 @@
 		//Including Database
 		include_once("db.php");
 
-		//this is the maximum number that the quiz can display in main.php
-		$record_per_page = 8;
-
-		$page = '';
-
-		if (isset($_GET["page"])) {
-				$page = $_GET["page"];
-		} else {
-				$page = 1;
-		}
-
-		$start_from = ($page - 1) * $record_per_page;
-
 		//Prepare the query
-		$query = "SELECT * FROM quiz_list order by publish DESC LIMIT $start_from, $record_per_page";
+		$query = "SELECT * FROM quiz_list order by publish DESC";
 
 		//Perform the query
 		$result = mysqli_query($con, $query);
@@ -110,36 +97,6 @@
 	}
 		 ?>
 	 </div>
-
-	 <?php
-	 //Prepare the query
-	 $page_query = "SELECT * FROM quiz_list ORDER BY publish DESC";
-
-	 //Perform the query
-	 $page_result = mysqli_query($con, $page_query);
-
-	 //Fetch all rows
-	 $total_records = mysqli_num_rows($page_result);
-
-	 //Compute
-	 $total_pages = ceil($total_records / $record_per_page);
-	 $start_loop = $page;
-	 $difference = $total_pages - $page;
-	 if ($difference < 1) {
-			 $start_loop = $total_pages + -1;
-	 }
-	 $end_loop = $start_loop + 1;
-
-	 //Pagination for Previous botton
-	 if ($page > 1) {
-			 echo "<a class='pagButtonPrev' href='Entertainment.php?page=" . ($page - 1) . "'>Previous</a>";
-	 }
-
-	 //Pagination for Previous botton
-	 if ($page < $end_loop) {
-		 echo "<a class='pagButtonNext' href='Entertainment.php?page=" . ($page + 1) . "'>Next</a>";
-	 }
-		?>
 
 </body>
 	<?php include_once "footerr.php";?>
