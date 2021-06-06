@@ -43,7 +43,7 @@
 
 			//Getting or fetching all rows from the executed query
 			while ($row = mysqli_fetch_array($result)) {
-
+        
 			if($Ftitle = wordwrap($row["title"], 25, "<br>")) {
 
 			$QuizCode = $row["quiz_code"];
