@@ -69,12 +69,7 @@
 .segment-three ul li:nth-child(3) a:hover {
     background-color: #e4405f;
 }
-.segment-three ul li:nth-child(4) a:hover {
-    background-color: #cd201f;
-}
-.segment-three ul li:nth-child(5) a:hover {
-    background-color: #0077B5;
-}
+
     .footer-top{
       background: #000000;
       padding: 10px 0;
