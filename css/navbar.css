@@ -110,6 +110,7 @@ nav a:hover {
 	color:white;
 }
 .logout :hover {
+	background-color: white;
 	color: #523A28;
 }
 
