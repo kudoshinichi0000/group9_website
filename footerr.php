@@ -46,9 +46,7 @@
 }
 .segment-three ul li a {
     position: relative;
-    display: block;
-    bottom: 50%;
-    width: 50px;
+    display: inline-block;
     height: 50px;
     border-radius: 50%;
     background-color: white;
