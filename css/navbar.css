@@ -34,6 +34,7 @@ header {
   overflow: hidden;
 	z-index: 1;
   width: 100%;
+	color: white;
 }
 
 header::after {
@@ -102,7 +103,7 @@ nav a:hover {
   background-color:#228280;
   padding: 0.5em 1em;
   border-radius: 25px;
-	color: white;
+	color:white;
 }
 
 .logout a{
