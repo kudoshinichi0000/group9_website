@@ -20,7 +20,7 @@
     }
     h2{
       color: white;
-      font-size: 25px;
+      font-size: 20px;
     }
     h3{
       color: white;
@@ -204,7 +204,7 @@
                   <p> It improves your creativity and test your understanding while sharing your knowledge and having fun.</p>
               </div>
               <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
-                  <h2> LINKS LINKS</h2>
+                  <h2> About Us</h2>
                   <ul>
                       <li><a href="#"></a> Services</li>
                       <li><a href="#"></a> Contacts</li>
