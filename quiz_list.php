@@ -107,8 +107,7 @@
                 $Cat= $fetchTitle['categories'];
 
                 //if letters is exceed in 20 the next letter will be "..."
-                if(strlen($title) >= 1){
-                      $Ftitle = substr($title,0,20) . "...";
+                if($Ftitle = wordwrap($title, 20, "<br>")) {
 
                       echo "
                         <tr>
