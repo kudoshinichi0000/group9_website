@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2021 at 09:03 PM
+-- Generation Time: Jun 07, 2021 at 02:58 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -81,6 +81,8 @@ CREATE TABLE `quiz_list` (
   `quiz_code` int(11) NOT NULL,
   `categories` varchar(225) NOT NULL,
   `description` varchar(225) NOT NULL,
+  `items` int(11) NOT NULL,
+  `OverallScores` int(11) NOT NULL,
   `picture` varchar(225) NOT NULL,
   `publish` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
