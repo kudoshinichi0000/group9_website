@@ -145,11 +145,11 @@
         <div class="footer-top">
           <div class="container">
             <div class="row">
-              <div class="col-md-5 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+              <div class="col-md-4 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
                   <h3> Feedopedia</h3>
                   <p> Feedopedia is Recreation of knowledgeable and fun buzzfeed quizzes Activities for all ages.</p>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+              <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                   <h2> LINKS LINKS</h2>
                   <ul>
                       <li><a href="#"></a> Services</li>
