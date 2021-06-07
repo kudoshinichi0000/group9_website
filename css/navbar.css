@@ -103,11 +103,12 @@ nav a:hover {
   background-color:#228280;
   padding: 0.5em 1em;
   border-radius: 25px;
-	color:white;
+	opacity: 2;
 }
 
 .logout a{
 	color: #000;
+	color:white;
 }
 
 #PrevBtn{
