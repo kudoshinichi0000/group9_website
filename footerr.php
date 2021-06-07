@@ -31,20 +31,20 @@
       margin: 0;
       display: flex;
 }
-.segment-threes ul li {
+.segment-three ul li {
     list-style: none;
     margin: 0 10px;
 }
-.social-icons ul li .fa {
+.segment-three ul li .fa {
     color: #000000;
     font-size: 25px;
     line-height: 50px;
     transition: .5s;
 }
-.social-menu ul li .fa:hover {
+.segment-three ul li .fa:hover {
     color: #ffffff;
 }
-.social-menu ul li a {
+.segment-three ul li a {
     position: relative;
     display: block;
     width: 50px;
@@ -56,7 +56,7 @@
     transform: translate(0,0px);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.social-menu ul li a:hover {
+.segment-threeul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
 .social-menu ul li:nth-child(1) a:hover {
