@@ -22,54 +22,6 @@
       color: white;
       font-size: 16px;
     }
-    .segment-three ul{
-      padding:0;
-      position: absolute;
-      top: 125%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      display: flex;
-}
-.segment-three ul li {
-    list-style: none;
-    margin: 0 10px;
-}
-.segment-three ul li .fa {
-    color: #000000;
-    font-size: 25px;
-    line-height: 50px;
-    transition: .5s;
-}
-.segment-three ul li .fa:hover {
-    color: #ffffff;
-}
-.segment-three ul li a {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-}
-
-.segment-three ul li a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -10px);
-}
-.segment-three ul li:nth-child(1) a:hover {
-    background-color: #3b5999;
-}
-.segment-three ul li:nth-child(2) a:hover {
-    background-color: #55acee;
-}
-.segment-three ul li:nth-child(3) a:hover {
-    background-color: #e4405f;
-}
-
     .footer-top{
       background: #000000;
       padding: 10px 0;
@@ -164,6 +116,54 @@
       margin-left: -10px;
       text-transform: uppercase;
     }
+    .segment-three ul{
+      padding:0;
+      position: absolute;
+      top: 125%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      display: flex;
+}
+    .segment-three ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .segment-three ul li .fa {
+        color: #000000;
+        font-size: 25px;
+        line-height: 50px;
+        transition: .5s;
+    }
+    .segment-three ul li .fa:hover {
+        color: #ffffff;
+    }
+    .segment-three ul li a {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .segment-three ul li a:hover {
+        transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    }
+    .segment-three ul li:nth-child(1) a:hover {
+        background-color: #3b5999;
+    }
+    .segment-three ul li:nth-child(2) a:hover {
+        background-color: #55acee;
+    }
+    .segment-three ul li:nth-child(3) a:hover {
+        background-color: #e4405f;
+    }
+
     .footer-bottom{
       color: white ;
       text-align: center;
@@ -214,7 +214,7 @@
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a></li>
-                    
+
                     </ul>
 
               </div>
