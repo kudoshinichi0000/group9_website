@@ -47,6 +47,7 @@
 .segment-three ul li a {
     position: relative;
     display: block;
+    bottom: 50%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -218,7 +219,7 @@
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a></li>
-                      </li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-gmail"></i></a></li>
+                    </li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-l"></i></a></li>
                     </ul>
 
               </div>
