@@ -47,17 +47,15 @@
 .segment-three ul li a {
     position: relative;
     display: inline-block;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding-bottom: 25px;
     background-color: white;
     text-align: center;
     transition: 0.5s;
     transform: translate(0,0px);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.segment-three ul li a .fa {
-    align-items: center;
 .segment-three ul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
