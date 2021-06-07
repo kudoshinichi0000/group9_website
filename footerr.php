@@ -214,13 +214,12 @@
               <div class="col-md-4 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
                   <h2> Contacts</h2>
                   <p> You can visit out social media accounts for transactions</p>
-                  <div class="social-icons">
                     <ul>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a>
                       </li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-gmail"></i></a></li>
                     </ul>
-                  </div>
+                
               </div>
 
             </div>
