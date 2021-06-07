@@ -22,7 +22,7 @@
       color: white;
       font-size: 16px;
     }
-    .social-icons ul{
+    .segment-three ul{
       padding:0;
       position: absolute;
       top: 50%;
@@ -31,7 +31,7 @@
       margin: 0;
       display: flex;
 }
-.social-icons ul li {
+.segment-threes ul li {
     list-style: none;
     margin: 0 10px;
 }
@@ -219,7 +219,7 @@
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a>
                       </li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-gmail"></i></a></li>
                     </ul>
-                
+
               </div>
 
             </div>
