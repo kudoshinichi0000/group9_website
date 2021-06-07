@@ -89,7 +89,6 @@ nav a:hover {
   background-color: #228280;
   padding: 0.5em 1em;
   border-radius: 25px;
-	color: white;
 }
 
 #login :hover{
@@ -109,6 +108,9 @@ nav a:hover {
 .logout a{
 	color: #000;
 	color:white;
+}
+.logout :hover {
+	color: #523A28;
 }
 
 #PrevBtn{
