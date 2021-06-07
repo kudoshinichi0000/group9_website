@@ -297,6 +297,7 @@ nav a:hover {
   border-radius: 5px;
   padding:4px;
   border: solid thin #aaa;
+	color: white;
 }
 
 #submit:hover{
