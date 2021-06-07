@@ -216,7 +216,8 @@
                   <p> You can visit out social media accounts for transactions</p>
                     <ul>
                       <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a>
+                      <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-instagram"></i></a></li>
                       </li><a href="https://www.facebook.com/JezreelAgapito27/"><i class="fa fa-gmail"></i></a></li>
                     </ul>
 
