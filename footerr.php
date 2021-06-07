@@ -50,6 +50,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: white;
+    align-items: center;
     text-align: center;
     transition: 0.5s;
     transform: translate(0,0px);
