@@ -56,22 +56,22 @@
     transform: translate(0,0px);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.segment-threeul li a:hover {
+.segment-three ul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-.social-menu ul li:nth-child(1) a:hover {
+.segment-three ul li:nth-child(1) a:hover {
     background-color: #3b5999;
 }
-.social-menu ul li:nth-child(2) a:hover {
+.segment-three ul li:nth-child(2) a:hover {
     background-color: #55acee;
 }
-.social-menu ul li:nth-child(3) a:hover {
+.segment-three ul li:nth-child(3) a:hover {
     background-color: #e4405f;
 }
-.social-menu ul li:nth-child(4) a:hover {
+.segment-three ul li:nth-child(4) a:hover {
     background-color: #cd201f;
 }
-.social-menu ul li:nth-child(5) a:hover {
+.segment-three ul li:nth-child(5) a:hover {
     background-color: #0077B5;
 }
     .footer-top{
