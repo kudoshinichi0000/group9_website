@@ -18,7 +18,11 @@
       text-indent: 25px;;
 
     }
-    h2,h3{
+    h2{
+      color: white;
+      font-size: 25px;
+    }
+    h3{
       color: white;
       font-size: 16px;
     }
@@ -195,7 +199,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
-                  <h3> Feedopedia</h3>
+                  <h2> Feedopedia</h2>
                   <p> Feedopedia is Recreation of knowledgeable and fun buzzfeed quizzes Activities for all ages.</p>
                   <p> It improves your creativity and test your understanding while sharing your knowledge and having fun.</p>
               </div>
