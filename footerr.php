@@ -25,7 +25,7 @@
     .segment-three ul{
       padding:0;
       position: absolute;
-      top: 95%;
+      top: 105%;
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
