@@ -49,6 +49,7 @@
     display: inline-block;
     height: 50px;
     border-radius: 50%;
+    margin-bottom: 50%;
     background-color: white;
     text-align: center;
     transition: 0.5s;
