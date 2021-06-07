@@ -15,7 +15,7 @@
     p{
       color:#a6a6a6;
       line-height: 27px;
-      indent: 5%;
+      text-indent: 25px;;
 
     }
     h2,h3{
