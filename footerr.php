@@ -56,9 +56,7 @@
     transform: translate(0,0px);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.segment-three ul li a .fa{
-    padding-bottom: 10rem;
-  }
+
 .segment-three ul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
