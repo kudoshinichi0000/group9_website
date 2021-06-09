@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2021 at 02:18 AM
+-- Generation Time: Jun 09, 2021 at 04:11 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -67,7 +67,21 @@ INSERT INTO `identification` (`id`, `quiz_code`, `question`, `answer`, `points`,
 (4, 634149305, 'Do u like behind the scenes?', 'no', 1000, 'Identification'),
 (5, 1447591385, 'Sasagutin mo ba ako', 'hindi', 1000, 'Identification'),
 (6, 1249895079, 'What is the kit that you need to be medically prepared', 'medkit', 12, 'Identification'),
-(7, 1773514397, 'The motion of this movable joint is gliding.', 'Plane Joints', 5, 'Identification');
+(7, 1773514397, 'The motion of this movable joint is gliding.', 'Plane Joints', 5, 'Identification'),
+(8, 1251040833, 'It is the solid outer layer of the Earth', 'Crust', 2, 'Identification'),
+(9, 1251040833, 'It is hotter than the mantle. ', 'Core', 2, 'Identification'),
+(10, 1251040833, 'What are the two parts of the core? ', 'OUTER CORE AND INNER CORE', 5, 'Identification'),
+(11, 1251040833, 'It is located between the crust and the upper mantle. Also describe as rigid brittle rock. ', 'LITHOSPHERE', 2, 'Identification'),
+(12, 277034725, 'It is the end of the species existences', 'extinctions', 3, 'Identification'),
+(13, 277034725, 'Refers to the genetics make up of an organism', 'Genotype', 3, 'Identification'),
+(14, 277034725, 'When the organism has the same alleles.', 'Homozygous', 3, 'Identification'),
+(15, 277034725, 'Refers to the observable traits of an organism', 'Phenotype', 3, 'Identification'),
+(16, 277034725, 'The father of Genetics', 'Gregor Mendel', 3, 'Identification'),
+(17, 277034725, 'When an organism has two different alleles for a gene', 'Heterozygous', 3, 'Identification'),
+(18, 277034725, 'The blue print of an organism. ', 'DNA', 3, 'Identification'),
+(19, 277034725, 'The study of heredity', 'Genetics', 3, 'Identification'),
+(20, 277034725, 'Are segment of DNA that determine the traits of an individual.', 'Genes', 3, 'Identification'),
+(21, 277034725, 'Is a wide spread and rapid decrease in the amount of biodiversity. ', 'Mass Extinction', 3, 'Identification');
 
 -- --------------------------------------------------------
 
@@ -132,7 +146,11 @@ INSERT INTO `multiple_questions` (`id`, `quiz_code`, `question`, `questionPoints
 (38, 617741012, 'Made up of dust and gases.', 2, 'B', 'A.	Stars	 ', 'B. Nebulae		', 'C. Black Body		', 'D. Sun', 'Multiple Questions'),
 (39, 617741012, 'The largest Star', 2, 'D', 'A.	Stars	 	', 'B. Nebulae		', 'C. Black Body		', 'D. Sun', 'Multiple Questions'),
 (40, 617741012, 'Tell how much energy a star carries.', 2, 'B', 'A.	Magnitude	', 'B. Amplitude		', 'C. Black dwarf		', 'D. Black Hole', 'Multiple Questions'),
-(41, 617741012, 'Tell how bright a star is a perceived on Earth.', 2, 'A', 'A.	Magnitude	', 'B. Amplitude		', 'C. Black dwarf		', 'D. Black Hole', 'Multiple Questions');
+(41, 617741012, 'Tell how bright a star is a perceived on Earth.', 2, 'A', 'A.	Magnitude	', 'B. Amplitude		', 'C. Black dwarf		', 'D. Black Hole', 'Multiple Questions'),
+(42, 532699490, 'One of the largest biomes.', 3, 'B', 'A.	Desert\r\n', 'B.	Taiga\r\n\r\n', 'C.	Tundra\r\n', 'D.	Savannas', 'Multiple Questions'),
+(43, 532699490, 'Located at 18-28 degrees north and south of the equator. ', 5, 'A', 'A.	Desert\r\n\r\n', 'B.	Taiga\r\n', 'C.	Tundra\r\n\r\n', 'D.	Savannas\r\n', 'Multiple Questions'),
+(44, 532699490, 'Are located at 15-25 degrees north and south of the equator. ', 5, 'D', 'A.	Desert\r\n', 'B.	Taiga\r\n\r\n', 'C.	Tundra\r\n\r\n', 'D.	Savannas\r\n', 'Multiple Questions'),
+(45, 532699490, 'Located at 65-75 degrees north of the equator. ', 5, 'C', 'A.	Desert\r\n\r\n', 'B.	Taiga\r\n', 'C.	Tundra\r\n', 'D.	Savannas', 'Multiple Questions');
 
 -- --------------------------------------------------------
 
@@ -173,8 +191,10 @@ INSERT INTO `quiz_list` (`id`, `title`, `admin_id`, `quiz_code`, `categories`, `
 (14, 'Endocrine System', 2087244396, 198460025, 'Educational', 'This quiz will test your knowledge and understanding about endocrine system and function of each part.', 10, 40, '198460025_Hero_EndocrineSystem1.jpg', '2021-06-08 18:52:53'),
 (15, 'THE MUSCULAR AND SKELETAL SYSTEMS', 2087244396, 1112383241, 'Educational', 'In this quiz, it test what you have learned on your high school life lessons in Science. Goodluck!', 17, 41, '1112383241_skeandmus.jpg', '2021-06-08 19:35:11'),
 (16, 'Joints and Muscles', 2087244396, 1773514397, 'Educational', 'You will learn the location of the muscles on your body. And also the different joints.', 7, 20, '1773514397_skeletalmuscle.jpg', '2021-06-08 20:13:48'),
-(17, 'Layers of the Earth', 2087244396, 1251040833, 'Educational', 'In this quiz, you will learn so much about the different layers of the earth and their respective characteristics.', 1, 4, '1251040833_layersofdearth.jpg', '2021-06-08 20:31:12'),
-(18, 'Stars and their Characteristics ', 2087244396, 617741012, 'Educational', 'You will learn a lot if things after you take this quiz. Or you can test your understanding about the stars and their characteristics ', 5, 13, '617741012_stars.jpg', '2021-06-08 20:43:59');
+(17, 'Layers of the Earth', 2087244396, 1251040833, 'Educational', 'In this quiz, you will learn so much about the different layers of the earth and their respective characteristics.', 6, 15, '1251040833_layersofdearth.jpg', '2021-06-08 20:31:12'),
+(18, 'Stars and their Characteristics ', 2087244396, 617741012, 'Educational', 'You will learn a lot if things after you take this quiz. Or you can test your understanding about the stars and their characteristics ', 5, 13, '617741012_stars.jpg', '2021-06-08 20:43:59'),
+(19, 'Genetics', 2087244396, 277034725, 'Educational', 'This quiz will help you learn thing about genetics and heredity. Goodluck and study well!', 10, 30, '277034725_maxresdefault.jpg', '2021-06-09 21:59:27'),
+(20, 'Biomes', 2087244396, 532699490, 'Educational', 'Goodluck!', 4, 18, '532699490_biomes.jpg', '2021-06-09 22:06:13');
 
 -- --------------------------------------------------------
 
@@ -266,19 +286,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `identification`
 --
 ALTER TABLE `identification`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `multiple_questions`
 --
 ALTER TABLE `multiple_questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `quiz_list`
 --
 ALTER TABLE `quiz_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `trueorfalse`
