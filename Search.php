@@ -30,7 +30,13 @@
   		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
   		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
-  		<!---Categories--->
+  		<!---Search Button--->
+  		<form class="Searchbtn" action="Search.php" method="POST">
+  			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+  			<input type="text" placeholder="Search..." name="search">
+  		</form>
+
+      <!---Categories--->
   		<div class="Categories">
   			<h4>Categories</h4><br>
         <a href="main.php" class='catH'>Latest</a>
@@ -38,16 +44,7 @@
   			<a href="Entertainment.php" class='cat'>Entertainment</a>
   			<a href="Mix.php" class='cat'>Mix</a>
   		</div><br><br>
-
-  		<!---Search Button--->
-  		<form class="Searchbtn" action="Search.php" method="POST">
-  			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
-  			<input type="text" placeholder="Search..." name="search">
-  		</form>
-
-    <!--Go back to main button--->
-    <a href="main.php" class="backmain">Go back</a>
-
+      
     <!---here will appear the searches-->
     <div class="card">
     <?php
