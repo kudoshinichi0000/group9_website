@@ -10,78 +10,65 @@
 
  ?>
 
- <?php
 
- include_once("db.php");
- if(isset($_POST['submit'])){
-	//Vardump
-	$question_number = $_POST['question_number'];
-	$question = $_POST['question'];
-	$correct_choice = $_POST['correct_choice'];
-	$questionPoints = $_POST['points'];
-	$quizCode = $_POST['code'];
-	//New variable for type of quiz
-	$type = "Multiple Questions";
+		 <?php
+		 if(isset($_POST['submit'])){
+			//Vardump
+			$question_number = $_POST['question_number'];
+			$question = $_POST['question'];
+			$correct_choice = $_POST['correct_choice'];
+			$questionPoints = $_POST['points'];
+			$quizCode = $_POST['code'];
+			$quizId = $_POST['quizId'];
 
-	// Choice Array
-	$choice = array();
-	$choice[1] = $_POST['choice1'];
-	$choice[2] = $_POST['choice2'];
-	$choice[3] = $_POST['choice3'];
-	$choice[4] = $_POST['choice4'];
+			// First Query for multiple_questions Table
+			$query = "UPDATE multiple_questions
+								SET question_number = '$question_number', question = '$question', questionPoints = '$questionPoints'
+								WHERE id = '$quizId'";
 
-	// First Query for multiple_questions Table
-	$quer = " SELECT * FROM quiz_list WHERE quiz_code = '$quizCode' AND question_number = '$question_number'";
-  $execQuer = mysqli_query($con, $quer);
-    if ($execQuer) {
-	$query = "UPDATE multiple_questions
-						SET question_number = '$question_number', question = '$question', questionPoints = '$questionPoints'
-						WHERE quiz_code = '$quizCode' AND question_number = '$question_number'";
+			$result = mysqli_query($con,$query);
 
-	$result = mysqli_query($con,$query);
+			if ($result) {
+				//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+				//the item is the total number of all questions
+				$queryy = " SELECT * FROM quiz_list";
+				$execQueryy = mysqli_query($con, $queryy);
+				while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+				$addscore = $fetchQuestion["OverallScores"];
+				$items = $fetchQuestion["items"];
+				$OverallScores = $addscore + $questionPoints;
+				$iitem = $items + 1;
+				 $addScore = "UPDATE quiz_list
+											SET OverallScores = $OverallScores, items = $iitem
+											WHERE quiz_code = $quizCode";
+				 $execaddScore = mysqli_query($con, $addScore);
+			 }
 
-	if ($result) {
-		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
-		//the item is the total number of all questions
-		$queryy = " SELECT * FROM quiz_list";
-		$execQueryy = mysqli_query($con, $queryy);
-		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
-		$addscore = $fetchQuestion["OverallScores"];
-		$items = $fetchQuestion["items"];
-		$OverallScores = $addscore + $questionPoints;
-		$iitem = $items + 1;
-		 $addScore = "UPDATE quiz_list
-									SET OverallScores = $OverallScores, items = $iitem
-									WHERE quiz_code = $quizCode";
-		 $execaddScore = mysqli_query($con, $addScore);
-	 }
-	}
-}
-	//Validate First Query
-	if($result){
-		foreach($choice as $option => $value){
-			if($value != ""){
-				if($correct_choice == $option){
-					$is_correct = 1;
-				}else{
-					$is_correct = 0;
-				}
-
-				//Second Query for Choices Table
-				$query = "UPDATE option
-	 									SET question_number = '$question_number', answer = '$is_correct', options = '$value', questionPoints = '$questionPoints'
-	 									WHERE quiz_code = '$quizCode' AND question_number = '$question_number'";
-
-				$insert_row = mysqli_query($con,$query);
-				// Validate Insertion of Choices
-
-			}
 		}
-		header("Location: questions.php?quiz_code=$quizCode");
-	}
- }
-  ?>
+			//Validate First Query
+			if($result){
+				foreach($choice as $option => $value){
+					if($value != ""){
+						if($correct_choice == $option){
+							$is_correct = 1;
+						}else{
+							$is_correct = 0;
+						}
 
+						//Second Query for Choices Table
+						$query = "UPDATE option
+												SET question_number = '$question_number', answer = '$is_correct', options = '$value', questionPoints = '$questionPoints'
+											WHERE id = '$quizId'";
+
+						$insert_row = mysqli_query($con,$query);
+						// Validate Insertion of Choices
+
+					}
+				}
+				header("Location: questions.php?quiz_code=$quizCode");
+			}
+		 }
+			?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -99,17 +86,15 @@
   <body>
 
     <?php
-    include_once('db.php');
-    $quizId = $_GET['id'];
-    include_once("navbaradmin.php");
-    ?>
-    <br> <br><br><br><br>
+		include_once("db.php");
+		$quizId = $_GET['id'];
+		//include_once("navbaradmin.php");
 
-    <?php
-
-    $query = "SELECT * FROM multiple_questions WHERE id = '$quizId'";
+    $query = "SELECT * FROM multiple_questions WHERE id = $quizId";
     $execQuery = mysqli_query($con, $query);
-    while ($Question = mysqli_fetch_assoc($execQuery)) {
+
+    	while ($Question = mysqli_fetch_assoc($execQuery)) {
+			$questionId = $Question['id'];
       $question = $Question['question'];
 			$question_number = $Question['question_number'];
       $code = $Question['quiz_code'];
@@ -132,7 +117,7 @@
 						<div class='center'>
 							<div class='row formContainer'>
 								<div class='col-lg-12'>
-									<form action='addMultipleQuestion.php' method='POST'>
+									<form action='MultiQedit.php' method='POST'>
 										<div class='row form-group'>
 											<div class='col'>
 												<label for='question_number'>Question Number:</label>
@@ -177,6 +162,7 @@
 											</div>
 										</div>
 										<input type='hidden' name='code' value='$code'>
+										<input type='hidden' name='quizId' value='$questionId'>
 									</form>
 								</div>
 							</div>
@@ -189,6 +175,5 @@
     }
 
      ?>
-
   </body>
 </html>
