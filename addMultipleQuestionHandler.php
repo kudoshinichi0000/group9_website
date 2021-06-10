@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <?php
 
   //Database Connectivity
