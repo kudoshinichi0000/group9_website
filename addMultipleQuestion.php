@@ -20,7 +20,7 @@
  	$question_number = $_POST['question_number'];
  	$question = $_POST['question'];
  	$correct_choice = $_POST['correct_choice'];
- 	$questionPoints = $_POST['questionPoints'];
+ 	$questionPoints = $_POST['points'];
  	$quizCode = $_POST['code'];
  	//New variable for type of quiz
  	$type = "Multiple Questions";
@@ -33,12 +33,27 @@
  	$choice[4] = $_POST['choice4'];
 
   // First Query for multiple_questions Table
- 	$query = "INSERT INTO multiple_questions (quiz_code, question_number, question, typeOFQuiz)
- 	VALUES ('$quizCode', '$question_number','$question', '$type')";
-
+ 	$query = "INSERT INTO multiple_questions (quiz_code, question_number, question, questionPoints,typeOFQuiz)
+ 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type')";
 
  	$result = mysqli_query($con,$query);
 
+	if ($result) {
+		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+		//the item is the total number of all questions
+		$queryy = " SELECT * FROM quiz_list";
+		$execQueryy = mysqli_query($con, $queryy);
+		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+		$addscore = $fetchQuestion["OverallScores"];
+		$items = $fetchQuestion["items"];
+		$OverallScores = $addscore + $questionPoints;
+		$iitem = $items + 1;
+		 $addScore = "UPDATE quiz_list
+									SET OverallScores = $OverallScores, items = $iitem
+									WHERE quiz_code = $quizCode";
+		 $execaddScore = mysqli_query($con, $addScore);
+	 }
+	}
  	//Validate First Query
  	if($result){
  		foreach($choice as $option => $value){
@@ -51,14 +66,11 @@
 
  				//Second Query for Choices Table
  				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
- 				VALUES ('$quizCode', '$question_number', '$is_correct','$value', '$questionPoints')";
+ 				VALUES ('$quizCode', '$question_number', '$is_correct', '$value', '$questionPoints')";
 
  				$insert_row = mysqli_query($con,$query);
  				// Validate Insertion of Choices
 
- 				if($insert_row){
- 					continue;
- 				}
 			}
  		}
  		header("Location: questions.php?quiz_code=$quizCode");

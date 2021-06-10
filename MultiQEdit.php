@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -34,7 +34,6 @@
     <br> <br><br><br><br>
     <?php
 
-
     $query = "SELECT * FROM multiple_questions WHERE id = '$quizId'";
     $execQuery = mysqli_query($con, $query);
     while ($Question = mysqli_fetch_assoc($execQuery)) {
@@ -48,74 +47,102 @@
       $answer = $Question['answer'];
       $typeOfQuiz = $Question['typeOfQuiz'];
 
+				//Get Choices
+				$query = "SELECT * FROM option WHERE question_number = $number";
+				$choices = mysqli_query($con,$query);
+
+				$query = "SELECT * FROM multiple_questions";
+		 		$questions = mysqli_query($con,$query);
+		 		$total = mysqli_num_rows($questions);
+		 		$next = $total+1;
 
       echo "
 
-              <div class='container'>
-                <div class='card'>
-                  <div class='card-header'>
-                    <br>
-                    <h2 style='margin-left:30%;'><b> Edit Mutiple Choice Item<b></h2>
-                  </div>
-                  <div class='card-body'>
-                    <div class='center'>
-                      <div class='row formContainer'>
-                        <div class='col-lg-12'>
-                          <form action='MultiQEditHandler.php' method='POST'>
-                            <div class='row form-group'>
-                              <div class='col'>
-                                <label for='question'>Question:</label>
-                               <input type='text' class='form-control'  placeholder='Enter your question' name='question' value='$question' required>
-                              </div>
-                            </div>
-                            <div class='row form-group'>
-                              <div class='col'>
-                                <label for='points>'Points:</label>
-                                <label for='typeOfQuiz' value='$typeOfQuiz'>Type of quiz:<h5>Multiple Choices</h5></label>
-                              </div>
-                            </div>
-                            <div class='row form-group'>
-                              <div class='col'>
-                                <label> Correct Answer</label>
-                                  <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='1'  placeholder='Enter the correct letter of the answer' name='answer' maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' value='$answer' required></textarea>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class='row form-group'>
-                              <div class='col'>
-                                <label> Answer Options</label>
-                                  <div class='form-outline mb-4'>
-                                    <textarea  class='form-control' rows='1'   name='A' placeholder='Possible answer (A)' value='$option1'required></textarea>
-                                  </div>
-                                  <div class='form-outline mb-4'>
-                                      <textarea  class='form-control' rows='1'  name='B' placeholder='Possible answer (B)' value='$option2'required></textarea>
-                                  </div>
-                                  <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='1'   name='C' placeholder='Possible answer (C)'value='$option3' required></textarea>
-                                  </div>
-                                  <div class='form-outline mb-4'>
-                                        <textarea  class='form-control' rows='1'   name='D' placeholder='Possible answer (D)' value='$option4' required></textarea>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class='row form-group' style='margin-top: 40px;'>
-                              <div class='col'>
-                                <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
-                                <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
-                              </div>
-                            </div>
-                            <input type='hidden' name='quizId' value='$quizId'>
-                            <input type='hidden' name='quizC' value='$code'>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+			<div class='container'>
+				<div class='card'>
+					<div class='card-header'>
+						<h2 style='margin-left:30%'><b> Add Mutiple Choice Item<b></h2>
+					</div>
+					<div class='card-body'>
+						<div class='center'>
+							<div class='row formContainer'>
+								<div class='col-lg-12'>
+									<form action='addMultipleQuestion.php' method='POST'>
+										<div class='row form-group'>
+											<div class='col'>
+												<label for='question_number'>Question Number:</label>
+												<input type='number' class='form-control' name='question_number' value='<?php echo $next;  ?>'>
+											</div>
+										</div>
+										<div class='row form-group'>
+											<div class='col'>
+												<label for='question'>Question:</label>
+											 <input type='text' class='form-control' placeholder='Enter your question' name='question' required>
+											</div>
+										</div>
+										<div class='row form-group'>
+											<div class='col'>
+												<label for='points'>Points:</label>
+												<input type='number' class='form-control' placeholder='Enter points for this question...' name='points' required>
+											</div>
+										</div>
+										<div class='row form-group'>
+											<div class='col'>
+												<label> Correct Answer Number:</label>
+													<div class='form-outline mb-4'>
+														<input type='number' class='form-control' placeholder='Enter the correct Number of the answer' name='correct_choice'  min='1' max='5' required></input>
+													</div>
+											</div>
+										</div>
+										<?php while($row = mysqli_fetch_assoc($choices)){ ?>
+										<div class='row form-group'>
+											<div class='col'>
+												<label> Answer Options</label>
+													<div class='form-outline mb-4'>
+														<textarea class='form-control' rows='3' cols='40'  name='choice1' placeholder='Option[1]' value='$row['options']' required></textarea>
+														</div>
+														<div class='form-outline mb-4'>
+														<textarea class='form-control' rows='3' cols='40'  name='choice2' placeholder='Option[2]' value='$row['options']' required></textarea>
+														</div>
+														<div class='form-outline mb-4'>
+														<textarea  class='form-control' rows='3' cols='40' name='choice3' placeholder='Option[3]' value='$row['options']' required></textarea>
+														</div>
+														<div class='form-outline mb-4'>
+														<textarea class='form-control' rows='3' cols='40'  name='choice4' placeholder='Option[4]' value='$row['options']' required></textarea>
+													</div>
+											</div>
+										</div>
+
+										<?php } ?>
+										<div class='row form-group' style='margin-top: 40px;'>
+											<div class='col'>
+												<button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
+												<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+											</div>
+										</div>
+										<input type='hidden' name='code' value='$code'>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br><br><br> <br><br><br>
     ";
     }
      ?>
+
+
+		 <?php
+
+		 	if(isset($_POST['Confirm'])){
+
+
+			}
+
+
+
+		  ?>
   </body>
 </html>
