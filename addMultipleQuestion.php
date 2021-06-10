@@ -1,98 +1,136 @@
 <?php
+include_once("db.php");
 
-	//Step 1 Database Connectivity
-	include_once "db.php";
+if(isset($_POST['submit'])){
 
-	//Will check if the user try to access pages without logging in
-	if(empty($_SESSION["userid"])){
-		header("Location:login.php");
+	//Vardump
+	$question_number = $_POST['question_number'];
+	$question = $_POST['question'];
+	$correct_choice = $_POST['correct_choice'];
+	$questionPoints = $_POST['questionPoints'];
+	//New variable for type of quiz
+	$type = "Multiple Questions";
+
+	// Choice Array
+	$choice = array();
+	$choice[1] = $_POST['choice1'];
+	$choice[2] = $_POST['choice2'];
+	$choice[3] = $_POST['choice3'];
+	$choice[4] = $_POST['choice4'];
+
+ // First Query for multiple_questions Table
+	$query = "INSERT INTO multiple_questions (question_number, question, typeOFQuiz)
+	VALUES ('$question_number','$question', '$type')";
+
+
+	$result = mysqli_query($con,$query);
+
+	//Validate First Query
+	if($result){
+		foreach($choice as $option => $value){
+			if($value != ""){
+				if($correct_choice == $option){
+					$is_correct = 1;
+				}else{
+					$is_correct = 0;
+				}
+
+				//Second Query for Choices Table
+				$query = "INSERT INTO option (question_number, answer, options, questionPoints)
+				VALUES ('$question_number', '$is_correct','$value', '$questionPoints')";
+
+				$insert_row = mysqli_query($con,$query);
+				// Validate Insertion of Choices
+
+				if($insert_row){
+					continue;
+				}else{
+					die("2nd Query for Choices could not be executed" . $query);
+
+				}
+
+			}
+		}
+		$message = "Question has been added successfully";
 	}
 
- ?>
+}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Creating Multiple Question</title>
-    <link type="text/css" rel="stylesheet" href="css/card.css">
-    <script src="js/bootstrap.bundle.min.js"> </script>
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min4.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
-  </head>
-  <body>
+		$query = "SELECT * FROM multiple_questions";
+		$questions = mysqli_query($con,$query);
+		$total = mysqli_num_rows($questions);
+		$next = $total+1;
 
-    <?php
-    include_once('db.php');
-    $code = $_GET['quiz_code'];
-    include_once("navbaradmin.php");
-    ?>
 
-    <br> <br><br><br><br>
-    <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <h2 style="margin-left:30%"><b> Add Mutiple Choice Item<b></h2>
-        </div>
-        <div class="card-body">
-          <div class="center">
-            <div class="row formContainer">
-              <div class="col-lg-12">
-                <form action="addMultipleQuestionHandler.php" method="POST">
-                  <div class="row form-group">
-                    <div class="col">
-                      <label for="question">Question:</label>
-                     <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
-                    </div>
-                  </div>
-                  <div class="row form-group">
-                    <div class="col">
-                      <label for="points>">Points:</label>
-                      <input type="number" class="form-control" placeholder="enter points for this question..." name="points" required>
-                    </div>
-                  </div>
-                  <div class="row form-group">
-                    <div class="col">
-                      <label> Correct Answer</label>
-                        <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="4" placeholder="Enter the correct letter of the answer" name="ans"  maxlength='1' onkeypress='return /[a-d]/i.test(event.key)'' oninput='this.value = this.value.toUpperCase()' required></textarea>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row form-group">
-                    <div class="col">
-                      <label> Answer Options</label>
-                        <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
-                          </div>
-                          <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="B" placeholder="Possible answer (B)" required></textarea>
-                          </div>
-                          <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="C" placeholder="Possible answer (C)" required></textarea>
-                          </div>
-                          <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="D" placeholder="Possible answer (D)" required></textarea>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row form-group" style="margin-top: 40px;">
-                    <div class="col">
-                      <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
-                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                    </div>
-                  </div>
-                  <input type='hidden' name='hiencod' value='<?php echo $code?>'>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br><br><br> <br><br><br>
-  </body>
+?>
+<html>
+<head>
+	<title>PHP Quizer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<p>PHP Quizer</p>
+		</div>
+	</header>
+
+	<main>
+			<div class="container">
+				<h2>Add A Question</h2>
+				<?php if(isset($message)){
+					echo "<h4>" . $message . "</h4>";
+				} ?>
+
+				<form method='POST' action='addMultipleQuestion.php'>
+						<p>
+							<label>Question Number:</label>
+							<input type="number" name="question_number" value="<?php echo $next;  ?>">
+						</p>
+						<p>
+							<label>Question Text:</label>
+							<input type="text" name="question">
+						</p>
+						<p>
+							<label>Choice 1:</label>
+							<input type="text" name="choice1">
+						</p>
+						<p>
+							<label>Choice 2:</label>
+							<input type="text" name="choice2">
+						</p>
+						<p>
+							<label>Choice 3:</label>
+							<input type="text" name="choice3">
+						</p>
+						<p>
+							<label>Choice 4:</label>
+							<input type="text" name="choice4">
+						</p>
+						<p>
+							<label>Correct Option Number</label>
+							<input type="number" name="correct_choice" min="1" max="5">
+						</p>
+						<p>
+							<label>Question points</label>
+							<input type="number" name="questionPoints">
+						</p>
+						<input type="submit" name="submit" value ="submit">
+
+
+				</form>
+			</div>
+
+	</main>
+
+
+	<footer>
+			<div class="container">
+				Copyright &copy; IT SERIES TUTOR
+			</div>
+
+
+	</footer>
+</body>
 </html>
