@@ -33,8 +33,8 @@
  	$choice[4] = $_POST['choice4'];
 
   // First Query for multiple_questions Table
- 	$query = "INSERT INTO multiple_questions (quiz_code, question_number, question, questionPoints,typeOFQuiz)
- 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type')";
+ 	$query = "INSERT INTO multiple_questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+ 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
 
  	$result = mysqli_query($con,$query);
 

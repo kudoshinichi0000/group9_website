@@ -33,6 +33,7 @@
 
 		//Getting/Fetching all rows from the executed query
     $fetchCodes = mysqli_fetch_assoc($execQuery);
+		$question_number = $fetchCodes["question_number"];
     $question = $fetchCodes["question"];
     $questionP = $fetchCodes["questionPoints"];
     $code = $fetchCodes["quiz_code"];
@@ -55,6 +56,7 @@
       <input type='hidden' name='quizId' value='$quizId'>
       <input type='hidden' name='quizCode' value='$code'>
       <input type='hidden' name='quizP' value='$questionP'>
+			<input type='hidden' name='questionNumber' value='$question_number'>
     </form>
     ";
 
@@ -76,6 +78,7 @@
 			 		$quizId = $_POST["quizId"];
 			    $quizCode = $_POST["quizCode"];
 			    $quizP = $_POST["quizP"];
+					$questionNumber = $_POST["questionNumber"];
 
 					//Prepare the query
 			 	  $deleteuery = "DELETE FROM multiple_questions WHERE id = '$quizId'";
@@ -84,6 +87,14 @@
 			    $execquery = mysqli_query($con, $deleteuery);
 
 			     if ($execquery) {
+						 //Prepare the query
+	 			 	  $deleteueryy = "DELETE FROM option WHERE question_number = $questionNumber";
+
+	 					//perform the query
+	 			    $execqueryy = mysqli_query($con, $deleteueryy);
+
+						if ($execqueryy ) {
+
 			     //if I delete the question, the overallscores and items will deductible based on their points
 			     $query = " SELECT * FROM quiz_list WHERE quiz_code = $quizCode";
 			     $execQuery = mysqli_query($con, $query);
@@ -102,6 +113,7 @@
 			       }
 			     }
 			 	}
+			}
 			 }else{
 			     $quizCode = $_POST["quizCode"];
 			     header("Location: questions.php?quiz_code=$quizCode");
