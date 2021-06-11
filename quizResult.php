@@ -23,10 +23,7 @@ session_start();
 				<p>Congratulation You have completed this test succesfully.</p>
 				<p>Your <strong>Score</strong> is <?php echo $_SESSION['score']; ?>  </p>
 				<?php unset($_SESSION['score']); ?>
-
 			</div>
-
 	</main>
-
 </body>
 </html>
