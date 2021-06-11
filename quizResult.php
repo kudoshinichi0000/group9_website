@@ -28,21 +28,5 @@ session_start();
 
 	</main>
 
-
-	<footer>
-			<div class="container">
-				Copyright &copy; IT SERIES TUTOR
-			</div>
-
-
-	</footer>
-
-
-
-
-
-
-
-
 </body>
 </html>

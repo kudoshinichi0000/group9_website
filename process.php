@@ -23,12 +23,13 @@
  	$query = "SELECT * FROM option WHERE question_number = $number AND answer = 1";
  	 $result = mysqli_query($con,$query);
  	 $row = mysqli_fetch_assoc($result);
-
+	 $points = $row["questionPoints"];
  	 $correct_choice = $row['id'];
 
 	//Increase the score if selected cohice is correct
  	 if($selected_choice == $correct_choice){
- 	 	$_SESSION['score']++;
+ 	 	$score = $_SESSION['score'] + $points;
+		$_SESSION['score'] = $score;
  	 }
 		//Redirect to next question or final score page.
  	 if($number == $total_questions){
