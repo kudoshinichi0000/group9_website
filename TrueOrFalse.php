@@ -9,7 +9,84 @@
 	}
 
  ?>
- 
+
+ <?php
+ include_once("db.php");
+ $code = $_GET['quiz_code'];
+
+ if(isset($_POST['submit'])){
+
+	 //Vardump
+	 $question_number = $_POST['question_number'];
+	 $question = $_POST['question'];
+	 $correct_choice = $_POST['correct_choice'];
+	 $TorFAnswer = $_POST['TorFAnswer'];
+	 $questionPoints = $_POST['points'];
+	 $quizCode = $_POST['quizCode'];
+	 //New variable for type of quiz
+	 $type = "Multiple Questions";
+
+	 // Choice Array
+	 $choice = array();
+	 $choice[1] = 'True';
+	 $choice[2] = 'False';
+
+
+	// First Query for multiple_questions Table
+	 $query = "INSERT INTO trueorfalse (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+	 VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$TorFAnswer')";
+
+	 $result = mysqli_query($con,$query);
+
+ if ($result) {
+	 //i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+	 //the item is the total number of all questions
+	 $queryy = " SELECT * FROM quiz_list";
+	 $execQueryy = mysqli_query($con, $queryy);
+	 while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+	 $addscore = $fetchQuestion["OverallScores"];
+	 $items = $fetchQuestion["items"];
+	 $OverallScores = $addscore + $questionPoints;
+	 $iitem = $items + 1;
+		$addScore = "UPDATE quiz_list
+								 SET OverallScores = $OverallScores, items = $iitem
+								 WHERE quiz_code = $quizCode";
+		$execaddScore = mysqli_query($con, $addScore);
+	}
+ }
+	 //Validate First Query
+	 if($result){
+		 foreach($choice as $option => $value){
+			 if($value != ""){
+				 if($correct_choice == $option){
+					 $is_correct = 1;
+				 }else{
+					 $is_correct = 0;
+				 }
+
+				 //Second Query for Choices Table
+				 $query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+				 VALUES ('$quizCode', '$question_number', '$is_correct', '$value', '$questionPoints')";
+
+				 $insert_row = mysqli_query($con,$query);
+				 // Validate Insertion of Choices
+
+		 }
+		 }
+		 header("Location: questions.php?quiz_code=$quizCode");
+	 }
+
+ }
+
+		 $query = "SELECT * FROM trueorfalse";
+		 $questions = mysqli_query($con,$query);
+		 $total = mysqli_num_rows($questions);
+		 $next = $total+1;
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -24,14 +101,8 @@
   </head>
   <body>
     <?php
-      //Including Database
-      include_once("db.php");
-
-      //Getiing code
-      $code = $_GET["quiz_code"];
-
       //Including navbar for admin
-      include_once("navbaradmin.php");
+      //include_once("navbaradmin.php");
      ?>
      <br> <br><br><br><br>
      <div class="container">
@@ -43,7 +114,7 @@
              <div class="center">
                <div class="row formContainer">
                  <div class="col-lg-12">
-                   <form action="TrueOrFalseHandler.php" method="POST">
+                   <form action="TrueOrFalse.php" method="POST">
                      <div class="row form-group">
                        <div class="col">
                          <label for="TorFQuestion">Question: </label>

@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <?php
 
   //Database Connectivity
@@ -18,12 +18,13 @@
   //Var_dump();
   $question = $_POST["IdenQuestion"];
   $answer = $_POST["IdenAnswer"];
+	$points = $_POST["points"];
   $typeOfQuiz = "Identification";
   //Hidden Input
   $quizC = $_POST["quizCode"];
   $quizId = $_POST["quizId"];
 
-    $query = "UPDATE identification SET question = '$question', answer = '$answer', typeOfQuiz = '$typeOfQuiz' WHERE id = '$quizId'";
+    $query = "UPDATE identification SET question = '$question', answer = '$answer', typeOfQuiz = '$typeOfQuiz', points = '$points' WHERE id = '$quizId'";
     $execQueryyy = mysqli_query($con, $query);
       if($execQueryyy){
         header("location: questions.php?quiz_code=$quizC");

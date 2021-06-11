@@ -15,7 +15,6 @@
 
  if(isset($_POST['submit'])){
 
-
  	//Vardump
  	$question_number = $_POST['question_number'];
  	$question = $_POST['question'];
@@ -102,7 +101,7 @@
   <body>
 
     <?php
-    include_once("navbaradmin.php");
+    //include_once("navbaradmin.php");
     ?>
 
     <br> <br><br><br><br>

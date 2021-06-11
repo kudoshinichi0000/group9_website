@@ -31,15 +31,13 @@
 			if ($result) {
 				//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
 				//the item is the total number of all questions
-				$queryy = " SELECT * FROM quiz_list";
+				$queryy = " SELECT * FROM quiz_list WHERE id = '$quizId'";
 				$execQueryy = mysqli_query($con, $queryy);
 				while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
 				$addscore = $fetchQuestion["OverallScores"];
-				$items = $fetchQuestion["items"];
 				$OverallScores = $addscore + $questionPoints;
-				$iitem = $items + 1;
 				 $addScore = "UPDATE quiz_list
-											SET OverallScores = $OverallScores, items = $iitem
+											SET OverallScores = $questionPoints
 											WHERE quiz_code = $quizCode";
 				 $execaddScore = mysqli_query($con, $addScore);
 			 }
