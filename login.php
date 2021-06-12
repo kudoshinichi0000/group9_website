@@ -65,7 +65,7 @@
 </head>
 <body>
 	<!-- If login info is not correct -->
-	<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+	<?php include_once "db.php"; include_once "navbar.php" ?><br>
 	<?php if(isset($_SESSION['errormessage'])): ?>
 		 <script type="text/javascript">
 		 		alert('<?php echo $_SESSION['errormessage']; ?>');
