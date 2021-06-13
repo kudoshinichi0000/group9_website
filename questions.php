@@ -115,7 +115,7 @@
 			<button class='view-modal1'> Add Questions </button>
 			<div class='popupm'>
 				<div class='headerPop'>
-					<p>Question Editor</p>
+					<span>Question Editor</span>
 						<div class='close'<i class='uil uil-times'></i></div>
 				</div>
 				<div class='contentt'>
