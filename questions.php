@@ -111,6 +111,30 @@
     //displaying Buttons
     echo "
       <br><br>
+			<div>
+			<button class='view-modal1'> Add Questions </button>
+			<div class='popupm'>
+				<div class='headerPop'>
+					<p>Question Editor</p>
+						<div class='close'<i class='uil uil-times'></i></div>
+				</div>
+				<div class='content'>
+					<p> Choose type of question</p>
+					<ul class='icons'>
+						<a href='#'><i class='bi bi-chat-text-fill'></i></a>
+						<a href='#'><i class='fab fa-facebook'></i><a>
+						<a href='#''><i class='bi bi-dash-square'></i></a>
+						<a href='#'><i class='bi bi-ui-checks-grid'></i></a>
+						<a href='#'><i class='fab fa-facebook'></i></a>
+						<a href='#'><i class='fab fa-github'></i></a>
+						<a href='#'><i class='far fa-arrow-alt-circle-left'></i></a>
+					</ul>
+					<div class='field'>
+						<button class='buttonEnter'>Enter</button>
+					</div>
+				</div>
+			</div>
+			</div>
         <a href='quiz_list.php' class='Goback'>Back</a>
         <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
         <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>
