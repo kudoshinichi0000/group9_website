@@ -144,6 +144,8 @@
     ";
 
     ?>
+		<script src="js/popup.js"> </script>
+
 
     <!--In this area will displaying all questions created by the user-->
     <div class="SectionQ">
@@ -324,6 +326,5 @@
    });
  </script>
  -->
- <script src="js/popup.js"> </script>
   </body>
 </html>
