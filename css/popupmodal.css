@@ -30,3 +30,10 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
   background: #fff;
   transform: translate(-50%, -50%);
 }
+.popupm{
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  top: -150%;
+  max-width: 380px;
+}
