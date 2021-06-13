@@ -70,11 +70,20 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
-header .close{
+.headerPop .close{
   color: #878787;
   font-size: 17px;
   background: #f2f3fb;
   height: 33px;
   width: 33px;
   cursor: pointer;
+}
+.headerPop .close:hover{
+  background: #ebedf9;
+}
+.popupm .contentt{
+  margin: 20px 0;
+}
+.popupm .iconss{
+  margin: 15px 0 20px;
 }
