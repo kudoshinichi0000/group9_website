@@ -36,4 +36,26 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
   border-radius: 15px;
   top: -150%;
   max-width: 380px;
+  width: 100%;
+  pointer-events: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: top 0s 0.2s ease-in-out, opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+}
+.popupm.show{
+  top: 50%;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0s 0s ease-in-out, opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+
+}
+.popupm :is(headerPop, .iconss, .field){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popupm headerPop{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebedf9;
 }

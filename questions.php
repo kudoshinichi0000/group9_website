@@ -120,7 +120,7 @@
 				</div>
 				<div class='contentt'>
 					<p> Choose type of question</p>
-					<ul class='icons'>
+					<ul class='iconss'>
 						<a href='#'><i class='bi bi-chat-text-fill'></i></a>
 						<a href='#'><i class='fab fa-facebook'></i><a>
 						<a href='#''><i class='bi bi-dash-square'></i></a>
