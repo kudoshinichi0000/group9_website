@@ -118,7 +118,7 @@
 					<p>Question Editor</p>
 						<div class='close'<i class='uil uil-times'></i></div>
 				</div>
-				<div class='content'>
+				<div class='contentt'>
 					<p> Choose type of question</p>
 					<ul class='icons'>
 						<a href='#'><i class='bi bi-chat-text-fill'></i></a>
@@ -129,7 +129,7 @@
 						<a href='#'><i class='fab fa-github'></i></a>
 						<a href='#'><i class='far fa-arrow-alt-circle-left'></i></a>
 					</ul>
-					<div class='field'>
+					<div class='fieldd'>
 						<button class='buttonEnter'>Enter</button>
 					</div>
 				</div>
