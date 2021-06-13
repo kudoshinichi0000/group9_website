@@ -50,7 +50,7 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
   transition: top 0s 0s ease-in-out, opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
 
 }
-.popupm :is(headerPop, .iconss, .field){
+.popupm :is(.headerPop, .iconss, .field){
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,4 +58,16 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
 .popupm headerPop{
   padding-bottom: 15px;
   border-bottom: 1px solid #ebedf9;
+}
+.headerPop span{
+  font-size: 21px;
+  font-weight: 600;
+}
+.headerPop .close, .iconss a{
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
 }
