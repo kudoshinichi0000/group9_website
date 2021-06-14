@@ -129,6 +129,12 @@
 				<a href='#'><i class='fas fa-check-square'></i></i></a>
 			 <a href='#'='><i class='fas fa-minus-square'></i></a>
     </ul>
+		<p>Click to Copy</p>
+    <div class="field">
+      <i class="url-icon uil uil-link"></i>
+      <input type ="text" readyonly value ="example.com/share-link">
+      <button>Copy</button>
+    </div>
   </div>
 </div>
 			</div>
