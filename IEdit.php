@@ -10,6 +10,53 @@
 
  ?>
 
+ <?php
+ include_once("db.php");
+ $Quizid = $_GET["id"];
+
+	 if(isset($_POST['submit'])){
+		 //Database Connectivity
+	   include_once("db.php");
+
+	   //Var_dump();
+	   $question = $_POST["IdenQuestion"];
+		 $question_number = $_POST["question_number"];
+	   $option = $_POST["IdenAnswer"];
+	 	$points = $_POST["points"];
+
+	   //Hidden Input
+	   $quizC = $_POST["quizCode"];
+	   $quizId = $_POST["quizId"];
+		 $answer = "1";
+
+		 	$query = "SELECT * FROM questions WHERE id = $quizId ";
+			$execQuery = mysqli_query($con, $query);
+			if ($execQuery) {
+
+
+	     $query = "UPDATE questions
+			 SET question = '$question', question_number = $question_number, answer = '$option', questionPoints = '$points'
+			 WHERE id = $quizId";
+	     $execQueryyy = mysqli_query($con, $query);
+
+	       if($execQueryyy){
+				  		//Second Query for Choices Table
+							$queryy = "UPDATE option
+												SET question_number = $question_number, answer = $answer, options = $option, questionPoints = $points
+												WHERE id = $quizId";
+
+				  		$insert_row = mysqli_query($con,$queryy);
+				  			// Validate Insertion of Choices
+}
+
+									header("location: questions.php?quiz_code=$quizC");
+}
+
+	 }
+
+
+  ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -24,9 +71,7 @@
   </head>
   <body>
     <?php
-      include_once("db.php");
-      $Quizid = $_GET["id"];
-      include_once("navbaradmin.php");
+      //include_once("navbaradmin.php");
 			echo "<br><br>";
 
       //Getting or fetching all rows from Identification
@@ -37,6 +82,7 @@
      while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
        $questionnnId = $fetchtrueorfalse['id'];
        $code = $fetchtrueorfalse['quiz_code'];
+			 $next = $fetchtrueorfalse['question_number'];
        $question = $fetchtrueorfalse['question'];
        $answer = $fetchtrueorfalse['answer'];
        $points = $fetchtrueorfalse['questionPoints'];
@@ -52,7 +98,13 @@
                     <div class='center'>
                       <div class='row formContainer'>
                         <div class='col-lg-12'>
-                        <form action='IEditHandler.php' method='POST'>
+                        <form action='IEdit.php' method='POST'>
+												<div class='row form-group'>
+													<div class='col'>
+														<label for='question_number'>Question Number:</label>
+													 <input type='number' class='form-control' name='question_number' value='$next' min='1'>
+													</div>
+												</div>
                           <div class='row form-group'>
                             <div class='col'>
                             <label for='IdenQuestion'>Question:</label>
@@ -61,23 +113,23 @@
                           </div>
                           <div class='row form-group'>
                             <div class='col'>
-                            <label for='IdenAnswer'>Anwer:</label>
+                            <label for='IdenAnswer'>Answer:</label>
                             <input type='text' class='form-control'  name='IdenAnswer' value='$answer' required>
                             </div>
                           </div>
                         <div class='row form-group'>
                           <div class='col'>
                           <label for='points'>Points:</label>
-                          <input type='number' class='form-control' placeholder='Enter numbers only' name='points'  value='$points' required>
+                          <input type='number' class='form-control' placeholder='Enter numbers only' name='points'  value='$points' readonly>
                          </div>
                        </div>
                        <div>
                        <div class='row form-group'style='margin-top: 40px;''>
                         <div class='col'>
-                        <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Submit</button>
+                        <button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='submit'>Submit</button>
                         <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
                         <input type='hidden' name='quizCode' value='$code'>
-                        <input type='hidden' name='quizId' value='$Quizid'>
+                        <input type='hidden' name='quizId' value='$questionnnId'>
                       </form>
                        </div>
                       </div>

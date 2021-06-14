@@ -119,7 +119,7 @@
 									<div class="row form-group">
                     <div class="col">
                       <label for="question_number">Question Number:</label>
-											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" >
+											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" min="1" >
                     </div>
                   </div>
                   <div class="row form-group">

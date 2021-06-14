@@ -10,6 +10,81 @@
 
  ?>
 
+ <?php
+
+ if(isset($_POST['submit'])){
+
+ 	//Vardump
+ 	$question_number = $_POST['question_number'];
+ 	$question = $_POST['TorFQuestion'];
+ 	$correct_choice = $_POST['TorFAnswer'];
+ 	$questionPoints = $_POST['points'];
+ 	$quizCode = $_POST['quizCode'];
+	$quizId = $_POST["questionId"];
+
+  // First Query for multiple_questions Table
+ 	$query = "UPDATE questions
+						SET quiz_code = $quizCode, question_number = $question_number, question = $question, questionPoints = $questionPoints, answer = $correct_choice
+ 	 					WHERE id = $quizId";
+
+ 	$result = mysqli_query($con,$query);
+
+	if ($result) {
+		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+		//the item is the total number of all questions
+		$queryy = " SELECT * FROM quiz_list";
+		$execQueryy = mysqli_query($con, $queryy);
+		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+		$addscore = $fetchQuestion["OverallScores"];
+		$items = $fetchQuestion["items"];
+		$OverallScores = $addscore + $questionPoints;
+		$iitem = $items + 1;
+		 $addScore = "UPDATE quiz_list
+									SET OverallScores = $OverallScores, items = $iitem
+									WHERE quiz_code = $quizCode";
+		 $execaddScore = mysqli_query($con, $addScore);
+	 }
+	}
+ 	//Validate First Query
+ 	if($correct_choice == "True"){
+ 				//Second Query for Choices Table
+ 				$query = "UPDATE option
+									SET quiz_code = $quizCode, question_number = $question_number, answer = '1', options = 'True', questionPoints = $questionPoints";
+
+ 				$insert_row = mysqli_query($con,$query);
+
+				if($insert_row){
+							//Second Query for Choices Table
+
+							$query = "UPDATE option
+												SET quiz_code = $quizCode, question_number = $question_number, answer = '0', options = 'False', questionPoints = $questionPoints";
+
+							$insert_row = mysqli_query($con,$query);
+
+							header("Location: questions.php?quiz_code=$quizCode");
+				}
+}
+
+//Validate First Query
+if($correct_choice == "False"){
+			//Second Query for Choices Table
+			$query = "UPDATE option
+								SET quiz_code = $quizCode, question_number = $question_number, answer = '0', options = 'False', questionPoints = $questionPoints";
+
+			$insert_row = mysqli_query($con,$query);
+			if($insert_row){
+				//Second Query for Choices Table
+				$query = "UPDATE option
+									SET quiz_code = $quizCode, question_number = $question_number, answer = '1', options = 'True', questionPoints = $questionPoints";
+
+				$insert_row = mysqli_query($con,$query);
+						header("Location: questions.php?quiz_code=$quizCode");
+			}
+}
+ }
+
+  ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,7 +102,7 @@
     <?php
       include_once("db.php");
       $quizId = $_GET['id'];
-      include_once("navbaradmin.php");
+      //include_once("navbaradmin.php");
 
 
       $queryy = " SELECT * FROM questions WHERE id = $quizId";
@@ -36,6 +111,7 @@
      while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
        $questionnId = $fetchtrueorfalse['id'];
        $code = $fetchtrueorfalse['quiz_code'];
+			 $next = $fetchtrueorfalse['question_number'];
        $questionn = $fetchtrueorfalse['question'];
        $answerr = $fetchtrueorfalse['answer'];
        $pointss = $fetchtrueorfalse['questionPoints'];
@@ -53,7 +129,13 @@
               <div class='center'>
                 <div class='row formContainer'>
                   <div class='col-lg-12'>
-                  <form action='ToREditHandler.php' method='POST'>
+                  <form action='ToFEdit.php' method='POST'>
+									<div class='row form-group'>
+										<div class='col'>
+											<label for='question_number'>Question Number:</label>
+										 <input type='number' class='form-control' name='question_number' value='$next'>
+										</div>
+									</div>
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='TorFQuestion'>Question: </label>
@@ -93,7 +175,7 @@
                        <div>
                          <div class='row form-group' style='margin-top: 40px;'>
                          <div class='col'>
-                           <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;' value='Submit'>Submit</button>
+                           <button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='Submit'>Submit</button>
                            <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
                          </div>
                        </div>
