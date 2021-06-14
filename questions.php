@@ -136,27 +136,7 @@
 
 
 
-			<div>
-			<button class='view-modal1'> Add Questions </button>
-			<div class='popupm'>
-				<div class='headerPop'>
-					<span>Question Editor</span>
-						<div class='close'<i class='uil uil-times'></i></div>
-				</div>
-				<div class='contentt'>
-					<p> Choose type of question</p>
-					<ul class='iconss'>
-						<a href='#'><i class='bi bi-chat-text-fill'></i></a>
-						<a href='#'><i class='fab fa-facebook'></i><a>
-						<a href='#''><i class='bi bi-dash-square'></i></a>
-						<a href='#'><i class='bi bi-ui-checks-grid'></i></a>
-						<a href='#'><i class='fab fa-facebook'></i></a>
-						<a href='#'><i class='far fa-arrow-alt-circle-left'></i></a>
-					</ul>
-					<div class='fieldd'>
-						<button class='buttonEnter'>Enter</button>
-					</div>
-				</div>
+
 			</div>
 			</div>
         <a href='quiz_list.php' class='Goback'>Back</a>
