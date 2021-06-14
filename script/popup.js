@@ -1,7 +1,7 @@
 const viewBtn = document.querySelector(".view-modaal"),
     popuup = document.querySelector(".popuup"),
     close = popuup.querySelector(".close"),
-    field = popup.querySelector(".field"),
+    field = popuup.querySelector(".field"),
     input = field.querySelector("input"),
     copy = field.querySelector("button");
 
