@@ -60,12 +60,16 @@ button {
   transition: top 0s 0s ease-in-out, opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
 }
 
-.popuup :is(header, .icons, .field){
+.popuup :is( .icons, .field){
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+.headerMod{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .popuup .headerMod {
   padding-bottom: 15px;
   border-bottom: 1px solid #ebedf9;
