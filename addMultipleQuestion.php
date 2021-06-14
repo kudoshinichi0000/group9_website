@@ -9,8 +9,9 @@
 	}
 
  ?>
+
  <?php
- include_once("db.php");
+ include_once "db.php";
  $code = $_GET['quiz_code'];
 
  if(isset($_POST['submit'])){
@@ -101,7 +102,7 @@
   <body>
 
     <?php
-    //include_once("navbaradmin.php");
+    include_once("navbaradmin.php");
     ?>
 
     <br> <br><br><br><br>

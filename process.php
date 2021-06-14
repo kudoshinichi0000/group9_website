@@ -5,7 +5,15 @@
 	if(!isset($_SESSION['score'])){
 		$_SESSION['score'] = 0;
 	}
- if($_POST){
+
+	//We need total question in process file too
+ 	$query = "SELECT * FROM multiple_questions, trueorfalse, identification";
+	$type = mysqli_fetch_assoc($con,$query));
+	$typeOfQuiz = $type["typeOfQuiz"];
+
+
+	if ($typeOfQuiz = "Multiple Questions") {
+ 	if($_POST){
 	//We need total question in process file too
  	$query = "SELECT * FROM multiple_questions";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
@@ -39,7 +47,7 @@
  	 }
 
  }
-
+}
 
 
 ?>
