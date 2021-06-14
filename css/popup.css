@@ -17,6 +17,7 @@
 .view-modaal, .popuup {
   position: absolute;
   left: 50%;
+  padding-top: 3rem;
 }
 
 button {
