@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
- <link type="text/css" rel="stylesheet" href="popup.css">
+ <link type="text/css" rel="stylesheet" href="css/popup.css">
   <title>POPUP MODAL</title>
 </head>
 <body>
