@@ -22,7 +22,7 @@
 			$quizId = $_POST['quizId'];
 
 			// First Query for multiple_questions Table
-			$query = "UPDATE multiple_questions
+			$query = "UPDATE questions
 								SET question_number = '$question_number', question = '$question', questionPoints = '$questionPoints'
 								WHERE id = '$quizId'";
 
@@ -88,7 +88,7 @@
 		$quizId = $_GET['id'];
 		//include_once("navbaradmin.php");
 
-    $query = "SELECT * FROM multiple_questions WHERE id = $quizId";
+    $query = "SELECT * FROM questions WHERE id = $quizId";
     $execQuery = mysqli_query($con, $query);
 
     	while ($Question = mysqli_fetch_assoc($execQuery)) {

@@ -132,7 +132,7 @@
         // In this section we will get all multiple questions in table in database
 
         //Step 2 Prepare the query
-     	  $query = " SELECT * FROM questions WHERE quiz_code = '$code'";
+     	  $query = " SELECT * FROM questions WHERE quiz_code = '$code' ORDER BY question_number ASC";
 
         //Step 3 Perform the query
         $execQuery = mysqli_query($con, $query);
@@ -152,84 +152,24 @@
                    <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
                    <i style='float:left; margin-left: 1em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
-                   <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
-                   <a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
-                 </th>
+									 <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+
+									 if ($typeOfQuiz == "Multiple Questions") {
+                   		echo "<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+									 }
+									 if ($typeOfQuiz == "True or False") {
+                   		echo " <a href='ToFEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+                   }
+									 if ($typeOfQuiz == "Identification") {
+									 		echo "<a href='IEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+									 }
+									 echo "
+								 </th>
                </tr>
              </table>";
          }
 
-				 //Deletequetions
-
-
-            /*  // In this section we will get all True or False question in table in database
-
-              //Step 2 Prepare the query
-              $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
-
-              //Step 3 Perform the query
-              $execQuery = mysqli_query($con, $queryy);
-
-               //Getting/fetching all rows from the executed query
-               while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
-               $questionnId = $fetchtrueorfalse['id'];
-               $codee = $fetchtrueorfalse['quiz_code'];
-               $questionn = $fetchtrueorfalse['question'];
-               $answerr = $fetchtrueorfalse['answer'];
-               $pointss = $fetchtrueorfalse['points'];
-               $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
-
-               //Display all True or false questions
-               echo "
-                 <table class='cons' width='100%' height='1em;' style='background-color: #dda3f1;'>
-                   <tr>
-                     <th colspan='5'>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointss </i>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionn</i>
-
-                       <a href='ToFEdit.php?id=$questionnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
-                    </th>
-                   </tr>
-
-                 </table>";
-             }
-
-
-
-             // In this section we will get all Identification question in table in database
-
-             //Step 2 Prepare the query
-             $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
-
-             //Step 3 Perform the query
-             $execQuery = mysqli_query($con, $queryy);
-
-              //Getting/fetching all rows from the executed query
-              while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
-              $questionnnId = $fetchtrueorfalse['id'];
-              $codeee = $fetchtrueorfalse['quiz_code'];
-              $questionnn = $fetchtrueorfalse['question'];
-              $answerrr = $fetchtrueorfalse['answer'];
-              $pointsss = $fetchtrueorfalse['points'];
-              $typeOfQuizzz = $fetchtrueorfalse['typeOfQuiz'];
-
-              //Display all Identification questions
-              echo "
-                <table class='cons' width='100%' height='1em;' style='background-color: #e55f5f;'>
-                  <tr>
-                    <th colspan='5'>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointsss </i>
-                       <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionnn</i>
-
-                       <a href='IEdit.php?id=$questionnnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
-                     </th>
-                </table>";
-            }
-
-
-       ?>
+			?>
 
    </div>
    <!-- PARA SA MODAL DELETE SA TRUE OR FLASE KASO DIPAKO SURE HAHA
@@ -242,7 +182,7 @@
          </div>
          <div class="modal-body">
            <form action="IdenDeleteHandler.php" id="form-delete-user" method="post">
-               <label><p>  Are you sure you want to delete this item: <?php echo $questionn?>?</p></label>
+               <label><p>  Are you sure you want to delete this item: <?php //echo $questionn?>?</p></label>
 
          </div>
          <div class="modal-footer">
@@ -274,7 +214,7 @@
          </div>
          <div class="modal-body">
            <form action="IdenDeleteHandler.php" id="form-delete-user" method="post">
-               <label><p>  Are you sure you want to delete this item: <?php echo $questionnn?>?</p></label>
+               <label><p>  Are you sure you want to delete this item: <?php //echo $questionnn?>?</p></label>
 
          </div>
          <div class="modal-footer">

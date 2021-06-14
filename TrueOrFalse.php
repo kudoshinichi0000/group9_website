@@ -23,7 +23,7 @@
  	$questionPoints = $_POST['points'];
  	$quizCode = $_POST['code'];
  	//New variable for type of quiz
- 	$type = "True or false";
+ 	$type = "True or False";
 
 
   // First Query for multiple_questions Table

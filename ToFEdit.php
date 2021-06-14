@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,7 +27,7 @@
     <?php
       include_once("db.php");
       $quizId = $_GET['id'];
-      include_once("navbaradmin.php");
+      //include_once("navbaradmin.php");
 
 
       $queryy = " SELECT * FROM trueorfalse WHERE id = $quizId";
