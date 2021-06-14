@@ -66,17 +66,17 @@ button {
   justify-content: space-between;
 }
 
-.popup header {
+.popup .headerMod {
   padding-bottom: 15px;
   border-bottom: 1px solid #ebedf9;
 }
 
-header span {
+.headerMod span {
   font-size: 21px;
   font-weight: 600;
 }
 
-header .close, .icons a {
+.headerMod .close, .icons a {
   display: flex;
   align-items: center;
   border-radius: 50%;
@@ -84,7 +84,7 @@ header .close, .icons a {
   transition: all 0.3s ease-in-out;
 }
 
-header .close {
+.headerMod .close {
   color: #878787;
   font-size: 17px;
   background: #f2f3fb;
@@ -93,7 +93,7 @@ header .close {
   cursor: pointer;
 }
 
-header .close:hover {
+.headerMod .close:hover {
   background: #ebedf9;
 }
 
