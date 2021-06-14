@@ -132,7 +132,7 @@
         // In this section we will get all multiple questions in table in database
 
         //Step 2 Prepare the query
-     	  $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
+     	  $query = " SELECT * FROM questions WHERE quiz_code = '$code'";
 
         //Step 3 Perform the query
         $execQuery = mysqli_query($con, $query);
@@ -162,7 +162,7 @@
 
 
 
-              // In this section we will get all True or False question in table in database
+            /*  // In this section we will get all True or False question in table in database
 
               //Step 2 Prepare the query
               $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
@@ -297,6 +297,6 @@
      }
    });
  </script>
- -->
+ -->*/?>
   </body>
 </html>

@@ -50,7 +50,7 @@
                   $execUpdatePic = mysqli_query($con, $queryUpdatePic);
                 }
             }
-          header("location: quiz_list.php");
+          header("location: questions.php?quiz_code=$quizCode");
         }
     }
 

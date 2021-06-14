@@ -9,7 +9,13 @@
 	}
 
  ?>
- 
+ <?php
+
+	$query = "SELECT * FROM identification";
+	$questions = mysqli_query($con,$query);
+	$total = mysqli_num_rows($questions);
+	$next = $total+1;
+  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,11 +33,9 @@
       //Including Database
       include_once("db.php");
 
-      //Getting Quiz_code from the previous webpage
-      $code = $_GET["quiz_code"];
-
+			$code = $_GET["quiz_code"];
       //Including Navar for admin
-      include_once("navbaradmin.php");
+      //include_once("navbaradmin.php");
         ?>
       <br><br><br><br>
      <div class="container">
@@ -45,6 +49,12 @@
                 <div class="row formContainer">
                   <div class="col-lg-12">
                     <form action='IdentificationHandler.php' method="POST">
+											<div class="row form-group">
+		                    <div class="col">
+		                      <label for="question_number">Question Number:</label>
+													<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" >
+		                    </div>
+		                  </div>
                     <div class="row form-group">
                       <div class="col">
                         <label for="IdenQuestion">Question:</label>
@@ -66,7 +76,7 @@
                     <div>
                       <div class="row form-group" style="margin-top: 40px;">
                       <div class="col">
-                        <button type="submit" name="btn" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
                         <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
                         <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
                   </form>

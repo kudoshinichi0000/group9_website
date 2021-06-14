@@ -33,7 +33,7 @@
  	$choice[4] = $_POST['choice4'];
 
   // First Query for multiple_questions Table
- 	$query = "INSERT INTO multiple_questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+ 	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
  	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
 
  	$result = mysqli_query($con,$query);
@@ -78,7 +78,7 @@
 
  }
 
- 		$query = "SELECT * FROM multiple_questions";
+ 		$query = "SELECT * FROM questions";
  		$questions = mysqli_query($con,$query);
  		$total = mysqli_num_rows($questions);
  		$next = $total+1;
@@ -138,7 +138,7 @@
                     <div class="col">
                       <label> Correct Answer Number:</label>
                         <div class="form-outline mb-4">
-                          <input type="number" class="form-control" placeholder="Enter the correct Number of the answer" name="correct_choice"  min="1" max="5" required></input>
+                          <input type="number" class="form-control" placeholder="Enter the correct Number of the answer" name="correct_choice"  min="1" max="4" required></input>
                         </div>
                     </div>
                   </div>

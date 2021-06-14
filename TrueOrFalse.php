@@ -12,30 +12,23 @@
 
  <?php
  include_once "db.php";
- $code = $_GET["quiz_code"];
+ $code = $_GET['quiz_code'];
 
  if(isset($_POST['submit'])){
 
  	//Vardump
-	$Questions = $_POST["TorFQuestion"];
-	$question_number = $_POST["question_number"];
-  $TrueorFalse = $_POST["TorFAnswer"];
-  $points = $_POST["points"];
+ 	$question_number = $_POST['question_number'];
+ 	$question = $_POST['TorFQuestion'];
+ 	$correct_choice = $_POST['TorFAnswer'];
+ 	$questionPoints = $_POST['points'];
+ 	$quizCode = $_POST['code'];
+ 	//New variable for type of quiz
+ 	$type = "True or false";
 
-  //Hidden Input
-	$quizcode = $_POST["code"];
 
-  //Creating new variable for the identity of this quiz
-  $typeOfQuiz = "True or False";
-
- 	// Choice Array
- 	$choice = array();
- 	$choice[1] = "True";
- 	$choice[2] = "False";
-
-	//Inserting all variables in Database
-	$query = "INSERT INTO trueorfalse (quiz_code, question_number, question, answer, points, typeOfQuiz)
-  VALUES('$quizcode', '$question_number', $Questions', '$TrueorFalse', '$points', '$typeOfQuiz')";
+  // First Query for multiple_questions Table
+ 	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+ 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
 
  	$result = mysqli_query($con,$query);
 
@@ -47,37 +40,36 @@
 		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
 		$addscore = $fetchQuestion["OverallScores"];
 		$items = $fetchQuestion["items"];
-		$OverallScores = $addscore + $points;
+		$OverallScores = $addscore + $questionPoints;
 		$iitem = $items + 1;
 		 $addScore = "UPDATE quiz_list
 									SET OverallScores = $OverallScores, items = $iitem
-									WHERE quiz_code = $quizcode";
+									WHERE quiz_code = $quizCode";
 		 $execaddScore = mysqli_query($con, $addScore);
 	 }
 	}
  	//Validate First Query
  	if($result){
- 		foreach($choice as $option => $value){
- 			if($value != ""){
- 				if($TrueorFalse == $option){
- 					$is_correct = 1;
- 				}else{
- 					$is_correct = 0;
- 				}
-
  				//Second Query for Choices Table
  				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
- 				VALUES ('$quizcode', '$question_number', '$is_correct', '$value', '$questionPoints')";
+ 				VALUES ('$quizCode', '$question_number', '$correct_choice','True', '$questionPoints')";
 
  				$insert_row = mysqli_query($con,$query);
-			}
- 		}
- 		header("Location: questions.php?quiz_code=$quizcode");
- 	}
+}
+if($result){
+			//Second Query for Choices Table
+			$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+			VALUES ('$quizCode', '$question_number', '$correct_choice', 'False', '$questionPoints')";
+
+			$insert_row = mysqli_query($con,$query);
+			header("Location: questions.php?quiz_code=$quizCode");
+}
+
+
 
  }
 
- 		$query = "SELECT * FROM trueorfalse";
+ 		$query = "SELECT * FROM questions";
  		$questions = mysqli_query($con,$query);
  		$total = mysqli_num_rows($questions);
  		$next = $total+1;
@@ -150,7 +142,7 @@
                       <div>
                         <div class="row form-group" style="margin-top: 40px;">
                         <div class="col">
-                          <button type="submit" name="submit" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
+                          <button type="submit" name="submit" class="btn btn-outline-info float-right" style="margin-left:15px;" value="submit" >Submit</button>
                           <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
                         </div>
                       </div>
