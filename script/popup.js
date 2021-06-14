@@ -1,12 +1,12 @@
-const viewBtn = document.querySelector(".view-modal1"),
-    popupm = document.querySelector(".popupm"),
-    close = popupm.querySelector(".close"),
-    field = popupm.querySelector(".fieldd"),
-    input = fieldd.querySelector("input"),
-    copy = fieldd.querySelector("buttonEnter");
+const viewBtn = document.querySelector(".view-modaal"),
+    popuup = document.querySelector(".popuup"),
+    close = popuup.querySelector(".close"),
+    field = popup.querySelector(".field"),
+    input = field.querySelector("input"),
+    copy = field.querySelector("button");
 
     viewBtn.onclick = ()=>{
-      popupm.classList.toggle("show");
+      popup.classList.toggle("show");
     }
     close.onclick = ()=>{
       viewBtn.click();
@@ -19,7 +19,7 @@ const viewBtn = document.querySelector(".view-modal1"),
         copy.innerText = "Copied";
         setTimeout(()=>{
           window.getSelection().removeAllRanges(); //remove selection from document
-          fieldd.classList.remove("active");
+          field.classList.remove("active");
           copy.innerText = "Copy";
         }, 3000);
       }
