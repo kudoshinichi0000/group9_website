@@ -12,6 +12,7 @@
 ::selection {
   color: #fff;
   background: #0f4ce4;
+  padding-top: 3px;
 }
 
 .view-modaal, .popuup {
