@@ -97,3 +97,27 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
   text-decoration: 20px;
   border: 1px solid transparent;
 }
+.iconss a i{
+  transition: transform 0.3s ease-in-out;
+}
+.icons a:nth-child(1){
+  color: #0f4ce4;
+  border-color: #0f4ce4;
+}
+.icons a:nth-child(2){
+  color: #0f4ce4;
+  border-color: #0f4ce4;
+}.icons a:nth-child(3){
+  color: #0f4ce4;
+  border-color: #0f4ce4;
+}.icons a:nth-child(3):hover{
+  color: #0f4ce4;
+}
+.icons a:nth-child(4){
+  color: #0f4ce4;
+  border-color: #0f4ce4;
+}
+.iconss a:hover{
+  color: #fff;
+  border-color: transparent;
+}
