@@ -128,7 +128,6 @@
 						<a href='#''><i class='bi bi-dash-square'></i></a>
 						<a href='#'><i class='bi bi-ui-checks-grid'></i></a>
 						<a href='#'><i class='fab fa-facebook'></i></a>
-						<a href='#'><i class='fab fa-github'></i></a>
 						<a href='#'><i class='far fa-arrow-alt-circle-left'></i></a>
 					</ul>
 					<div class='fieldd'>
