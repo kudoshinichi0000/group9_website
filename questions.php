@@ -130,9 +130,7 @@
 			 <a href='#'='><i class='fas fa-minus-square'></i></a>
     </ul>
 		<p>Click to Copy</p>
-    <div class='field'>
-      <button>Copy</button>
-    </div>
+    
   </div>
 </div>
 			</div>
