@@ -1,6 +1,6 @@
-const viewBtn = document.querySelector(".view-modaal"),
-    popuup = document.querySelector(".popuup"),
-    close = popuup.querySelector(".close"),
+const viewBtn = document.querySelector(".view-modal"),
+    popup = document.querySelector(".popup"),
+    close = popup.querySelector(".close"),
     field = popup.querySelector(".field"),
     input = field.querySelector("input"),
     copy = field.querySelector("button");
