@@ -27,10 +27,10 @@
     <?php
       include_once("db.php");
       $quizId = $_GET['id'];
-      //include_once("navbaradmin.php");
+      include_once("navbaradmin.php");
 
 
-      $queryy = " SELECT * FROM trueorfalse WHERE id = $quizId";
+      $queryy = " SELECT * FROM questions WHERE id = $quizId";
       $execQuery = mysqli_query($con, $queryy);
 
      while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
@@ -38,7 +38,7 @@
        $code = $fetchtrueorfalse['quiz_code'];
        $questionn = $fetchtrueorfalse['question'];
        $answerr = $fetchtrueorfalse['answer'];
-       $pointss = $fetchtrueorfalse['points'];
+       $pointss = $fetchtrueorfalse['questionPoints'];
        $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
 
       echo "

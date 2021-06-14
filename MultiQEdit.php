@@ -86,7 +86,8 @@
     <?php
 		include_once("db.php");
 		$quizId = $_GET['id'];
-		//include_once("navbaradmin.php");
+		include_once("navbaradmin.php");
+		echo "<br><br><br><br><br><br>";
 
     $query = "SELECT * FROM questions WHERE id = $quizId";
     $execQuery = mysqli_query($con, $query);

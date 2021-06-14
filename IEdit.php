@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,9 +27,10 @@
       include_once("db.php");
       $Quizid = $_GET["id"];
       include_once("navbaradmin.php");
+			echo "<br><br>";
 
       //Getting or fetching all rows from Identification
-      $queryy = " SELECT * FROM identification WHERE id = '$Quizid'";
+      $queryy = " SELECT * FROM questions WHERE id = '$Quizid'";
 
       $execQuery = mysqli_query($con, $queryy);
 
@@ -38,7 +39,7 @@
        $code = $fetchtrueorfalse['quiz_code'];
        $question = $fetchtrueorfalse['question'];
        $answer = $fetchtrueorfalse['answer'];
-       $points = $fetchtrueorfalse['points'];
+       $points = $fetchtrueorfalse['questionPoints'];
        $typeOfQuiz = $fetchtrueorfalse['typeOfQuiz'];
       echo "
             <br><br><br><br>
