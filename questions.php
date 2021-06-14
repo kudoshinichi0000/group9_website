@@ -115,12 +115,12 @@
       <br><br>
 
 			<div>
-			<button class='view-modal'>Click Me</button>
-<div class='popup'>
-  <header>
+			<button class='view-modaal'>Click Me</button>
+<div class='popuup'>
+  <div class='headerMod'>
     <span>Share Modal</span>
     <div class='close'><i class='uil uil-times'></i></div>
-  </header>
+  </div>
   <div class='content'>
     <p>Share this link</p>
     <ul class='icons'>
