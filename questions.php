@@ -126,6 +126,9 @@
       <a href='#'>=<i class='bi bi-file-check-fill'></i></a>
       <a href='#'><i class='fab fa-facebook'></i></a>
       <a href='#'><i class='fab fa-github'></i></a>
+			<a href='#'><i class='fas fa-comments'></i></a></li>
+				<a href='#'><i class='fas fa-check-square'></i></i></a>
+			 <a href='#'='><i class='fas fa-minus-square'></i></a>
     </ul>
     <p>Click to Copy</p>
     <div class='field'>
