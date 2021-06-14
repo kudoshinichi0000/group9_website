@@ -16,7 +16,7 @@ body {
   background: #0f4ce4;
 }
 
-.view-modal, .popup {
+.view-modaal, .popuup {
   position: absolute;
   left: 50%;
 }
@@ -30,7 +30,7 @@ button {
   transition: background 0.1s linear, border-color 0.1s linear, color 0.1s linear;
 }
 
-.view-modal{
+.view-modaal{
   top: 50%;
   color: #0f4ce4;
   font-size: 18px;
@@ -39,7 +39,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.popup {
+.popuup {
   background: #fff;
   padding: 25px;
   border-radius: 15px;
@@ -52,7 +52,7 @@ button {
   transform: translate(-50%, -50%) scale(1.2);
   transition: top 0s 0.2s ease-in-out, opacity 0.2s 0s ease-in-out,transform 0.2s 0s ease-in-out;
 }
-.popup.show {
+.popuup.show {
   top: 50%;
   opacity: 1;
   pointer-events: auto;
@@ -60,13 +60,13 @@ button {
   transition: top 0s 0s ease-in-out, opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
 }
 
-.popup :is(header, .icons, .field){
+.popuup :is(header, .icons, .field){
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.popup .headerMod {
+.popuup .headerMod {
   padding-bottom: 15px;
   border-bottom: 1px solid #ebedf9;
 }
