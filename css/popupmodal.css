@@ -135,3 +135,11 @@ transition-background: 0.1s linear, border-color 0.1s linear, color 0.1s;
 .fieldd.active{
   border-color: #0f4ce4;
 }
+.fieldd .buttonEnter{
+  color: #fff;
+  padding: 5px 18px;
+  background: #0f4ce4
+}
+.fieldd.buttonEnter:hover{
+  background: #8d39fa;
+}
