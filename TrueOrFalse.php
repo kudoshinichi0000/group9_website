@@ -49,20 +49,37 @@
 	 }
 	}
  	//Validate First Query
- 	if($result){
+ 	if($correct_choice == "True"){
  				//Second Query for Choices Table
  				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
- 				VALUES ('$quizCode', '$question_number', '$correct_choice','True', '$questionPoints')";
+ 				VALUES ('$quizCode', '$question_number', '1','True', '$questionPoints')";
 
  				$insert_row = mysqli_query($con,$query);
+				if($insert_row){
+							//Second Query for Choices Table
+							$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+							VALUES ('$quizCode', '$question_number', '0', 'False', '$questionPoints')";
+
+							$insert_row = mysqli_query($con,$query);
+							header("Location: questions.php?quiz_code=$quizCode");
+				}
 }
-if($result){
+
+//Validate First Query
+if($correct_choice == "False"){
 			//Second Query for Choices Table
 			$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
-			VALUES ('$quizCode', '$question_number', '$correct_choice', 'False', '$questionPoints')";
+			VALUES ('$quizCode', '$question_number', '0','True', '$questionPoints')";
 
 			$insert_row = mysqli_query($con,$query);
-			header("Location: questions.php?quiz_code=$quizCode");
+			if($insert_row){
+						//Second Query for Choices Table
+						$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+						VALUES ('$quizCode', '$question_number', '1', 'False', '$questionPoints')";
+
+						$insert_row = mysqli_query($con,$query);
+						header("Location: questions.php?quiz_code=$quizCode");
+			}
 }
 
 
@@ -92,7 +109,7 @@ if($result){
   <body>
 
 		<?php
-    //include_once("navbaradmin.php");
+    include_once("navbaradmin.php");
     ?>
 
      <br> <br><br><br><br>

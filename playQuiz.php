@@ -5,7 +5,7 @@
 	$number = $_GET['n'];
 
 	//Query for the Question
-	$query = "SELECT * FROM multiple_questions WHERE question_number = $number";
+	$query = "SELECT * FROM questions WHERE question_number = $number";
 
 	// Get the question
 	$result = mysqli_query($con,$query);
@@ -15,7 +15,7 @@
 	$query = "SELECT * FROM option WHERE question_number = $number";
 	$choices = mysqli_query($con,$query);
 	// Get Total questions
-	$query = "SELECT * FROM multiple_questions";
+	$query = "SELECT * FROM questions";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
 
 

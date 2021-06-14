@@ -9,12 +9,73 @@
 	}
 
  ?>
- <?php
 
-	$query = "SELECT * FROM identification";
-	$questions = mysqli_query($con,$query);
-	$total = mysqli_num_rows($questions);
-	$next = $total+1;
+ <?php
+ include_once "db.php";
+ $code = $_GET['quiz_code'];
+
+ if(isset($_POST['submit'])){
+
+ 	//Vardump
+ 	$question_number = $_POST['question_number'];
+ 	$question = $_POST['IdenQuestion'];
+ 	$correct_choice = $_POST['IdenAnswer'];
+ 	$questionPoints = $_POST['points'];
+ 	$quizCode = $_POST['code'];
+ 	//New variable for type of quiz
+ 	$type = "Identification";
+
+ 	// Choice Array
+ 	$choice = array();
+ 	$choice[1] = $_POST['choice1'];
+ 	$choice[2] = $_POST['choice2'];
+ 	$choice[3] = $_POST['choice3'];
+ 	$choice[4] = $_POST['choice4'];
+
+  // First Query for multiple_questions Table
+ 	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+ 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
+
+ 	$result = mysqli_query($con,$query);
+
+	if ($result) {
+		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+		//the item is the total number of all questions
+		$queryy = " SELECT * FROM quiz_list";
+		$execQueryy = mysqli_query($con, $queryy);
+		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+		$addscore = $fetchQuestion["OverallScores"];
+		$items = $fetchQuestion["items"];
+		$OverallScores = $addscore + $questionPoints;
+		$iitem = $items + 1;
+		 $addScore = "UPDATE quiz_list
+									SET OverallScores = $OverallScores, items = $iitem
+									WHERE quiz_code = $quizCode";
+		 $execaddScore = mysqli_query($con, $addScore);
+	 }
+	}
+ 	//Validate First Query
+ 	if($result){
+
+ 				//Second Query for Choices Table
+ 				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+ 				VALUES ('$quizCode', '$question_number', '1', '$correct_choice', '$questionPoints')";
+
+ 				$insert_row = mysqli_query($con,$query);
+ 				// Validate Insertion of Choices
+
+			}
+
+ 		header("Location: questions.php?quiz_code=$quizCode");
+
+
+ }
+
+ 		$query = "SELECT * FROM questions";
+ 		$questions = mysqli_query($con,$query);
+ 		$total = mysqli_num_rows($questions);
+ 		$next = $total+1;
+
   ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -30,10 +91,6 @@
   </head>
   <body>
     <?php
-      //Including Database
-      include_once("db.php");
-
-			$code = $_GET["quiz_code"];
       //Including Navar for admin
       //include_once("navbaradmin.php");
         ?>
@@ -48,7 +105,7 @@
               <div class="container">
                 <div class="row formContainer">
                   <div class="col-lg-12">
-                    <form action='IdentificationHandler.php' method="POST">
+                    <form action='Identification.php' method="POST">
 											<div class="row form-group">
 		                    <div class="col">
 		                      <label for="question_number">Question Number:</label>
@@ -58,7 +115,7 @@
                     <div class="row form-group">
                       <div class="col">
                         <label for="IdenQuestion">Question:</label>
-                        <input type="text" class="form-control" placeholder="Enter your question"name="IdenQuestion" required>
+                        <input type="text" class="form-control" placeholder="Enter your question" name="IdenQuestion" required>
                       </div>
                     </div>
                     <div class="row form-group">
@@ -76,9 +133,9 @@
                     <div>
                       <div class="row form-group" style="margin-top: 40px;">
                       <div class="col">
-                        <button type="submit" name="submit" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-outline-info float-right" style='margin-left:15px;' value="submit">Submit</button>
                         <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
-                        <input type='hidden' name='quizCode' value='<?php echo $code ?>'>
+                        <input type="hidden" name="code" value="<?php echo "$code"; ?>">
                   </form>
                       </div>
                       </div>
