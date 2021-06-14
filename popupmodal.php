@@ -23,9 +23,7 @@
     </ul>
   </div>
 </div>
-
-
- <script src="popup.js"> </script>
+ <script src="scrip/popup.js"></script>
 
 </body>
 </html>
