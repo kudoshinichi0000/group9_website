@@ -114,18 +114,15 @@
       <br><br>
 
 			<div>
-			<button class='view-modaal'>Click Me</button>
+			<button class='view-modaal'>Type Questions</button>
 <div class='popuup'>
   <div class='headerMod'>
-    <span>Share Modal</span>
+    <span>Quiz Editorl</span>
     <div class='close'><i class='uil uil-times'></i></div>
   </div>
   <div class='content'>
-    <p>Share this link</p>
+    <p>Choose type of quiz</p>
     <ul class='icons'>
-      <a href='#'>=<i class='bi bi-file-check-fill'></i></a>
-      <a href='#'><i class='fab fa-facebook'></i></a>
-      <a href='#'><i class='fab fa-github'></i></a>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
 				<a href='#'><i class='fas fa-check-square'></i></i></a>
 			 <a href='#'='><i class='fas fa-minus-square'></i></a>

@@ -8,27 +8,19 @@
   <title>POPUP MODAL</title>
 </head>
 <body>
-  <button class="view-modal">Click Me</button>
+  <button class="view-modal">Type Of quiz</button>
 <div class="popup">
   <header>
-    <span>Share Modal</span>
+    <span>Quiz Editor</span>
     <div class="close"><i class="uil uil-times"></i></div>
   </header>
   <div class="content">
-    <p>Share this link</p>
+    <p>Choose type of quiz</p>
     <ul class="icons">
-      <a href="#"><i class="fas fa-comments"></i></a></li>
-        <a href="#"><i class="fas fa-check-square"></i></i></a>
-       <a href="#"><i class="fas fa-minus-square"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
+      <a href='#'><i class='fas fa-comments'></i></a></li>
+				<a href='#'><i class='fas fa-check-square'></i></i></a>
+			 <a href='#'='><i class='fas fa-minus-square'></i></a>
     </ul>
-    <p>Click to Copy</p>
-    <div class="field">
-      <i class="url-icon uil uil-link"></i>
-      <input type ="text" readyonly value ="example.com/share-link">
-      <button>Copy</button>
-    </div>
   </div>
 </div>
 
