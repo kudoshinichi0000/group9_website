@@ -117,7 +117,7 @@
 			<button class='view-modaal'>Type Questions</button>
 <div class='popuup'>
   <div class='headerMod'>
-    <span>Quiz Editorl</span>
+    <span>Quiz Editor</span>
     <div class='close'><i class='uil uil-times'></i></div>
   </div>
   <div class='content'>
