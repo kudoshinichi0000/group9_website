@@ -169,7 +169,7 @@
     ";
 
     ?>
-		<script src="js/popup.js"> </script>
+
 
 
     <!--In this area will displaying all questions created by the user-->
@@ -351,5 +351,6 @@
    });
  </script>
  -->
+ <script src="js/popup.js"> </script>
   </body>
 </html>
