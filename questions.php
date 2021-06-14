@@ -144,6 +144,7 @@
     ";
 
     ?>
+		<script src="script/popup.js"> </script>
 
 
 
@@ -326,6 +327,6 @@
    });
  </script>
  -->
- <script src="script/popup.js"> </script>
+
   </body>
 </html>
