@@ -113,6 +113,7 @@
     //displaying Buttons
     echo "
       <br><br>
+			<br><br>
 
 			<div>
 			<button class='view-modaal'>Type Questions</button>
