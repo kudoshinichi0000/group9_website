@@ -182,9 +182,9 @@ border: 1.4px solid transparent;
   padding-right: 1em;
   float: left;
   margin-left: 2em;
-  height: 30px;
-  width: 30px;
-  font-size: 20px; /* icon size*/
+  height: 50px;
+  width: 50px;
+  font-size: 40px; /* icon size*/
   margin: 20px 10px;
   text-decoration: none;
 }
