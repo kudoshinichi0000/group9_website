@@ -115,6 +115,9 @@ button {
 
 .content p {
   font-size: 16px;
+  position: relative;
+  
+  top: 50px;
 }
 
 .content .icons a{
