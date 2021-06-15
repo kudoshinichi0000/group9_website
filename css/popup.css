@@ -119,7 +119,9 @@ button {
   right: 4px;
   top: 10px;
 }
-
+.content span{
+  margin: 15px;
+}
 .content .icons a{
 height: 90px;
 width: 90px;
