@@ -187,7 +187,8 @@ border: 1.4px solid transparent;
   margin: 10px 10px;
   text-decoration: none;
   margin: 15px 0 20px 0;
-  align-items: center;
+  margin: 0 30px;
+  justify-content: space-between;
 }
 .icongb a{
   margin-top: -2em;
