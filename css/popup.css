@@ -31,7 +31,7 @@ button {
 }
 
 .view-modaal{
-  top: 55%;
+  top: 35%;
   color: #fff ;
   font-size: 18px;
   padding: 12px 30px;
@@ -184,7 +184,7 @@ border: 1.4px solid transparent;
   height: 50px;
   width: 50px;
   font-size: 50px; /* icon size*/
-  margin: 20px 10px;
+  margin: 10px 10px;
   text-decoration: none;
   margin: 15px 0 20px 0;
 }
