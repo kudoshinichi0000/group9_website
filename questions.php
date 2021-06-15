@@ -126,6 +126,8 @@
     <p>Choose type of quiz</p>
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
+			<br>
+			<br>
 			<p> IDENTIFICATION</p>
 				<a href='#'><i class='fas fa-check-square'></i></a>
 				<p> IDENTIFICATION</p>
