@@ -186,14 +186,14 @@ border: 1.4px solid transparent;
   font-size: 50px; /* icon size*/
   text-decoration: none;
   margin: 15px 30 20px 0;
-
   justify-content: space-between;
+  border: 1.4px solid transparent;
 }
 .icongb a{
 margin-top: -2em;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
-border: 1.4px solid transparent;
+
 padding: 15px;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
