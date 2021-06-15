@@ -176,17 +176,19 @@ border: 1.4px solid transparent;
   border: 3px solid #e1e1e1;
 }
 .icongb{
-  border: 1px solid black;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-left: 1em;
   padding-right: 1em;
   float: left;
   margin-left: 2em;
-  color: white;
-  background-color: white;
+  height: 90px;
+  width: 90px;
+  font-size: 60px; /* icon size*/
+  margin: 20px 10px;
+  align-items: center;
   text-decoration: none;
-  border-radius: 8px;
+  border: 1.4px solid transparent;
 }
 .icongb a{
 border-radius: 50%;
@@ -196,4 +198,11 @@ transition: all 0.3s ease-in-out;
 .icongb:hover{
   text-decoration: underline;
   cursor: pointer;
+  color: #028476;
+  border-color:#028476;
+}
+
+.icons a i {
+
+  transition: transform 0.3s ease-in-out;
 }
