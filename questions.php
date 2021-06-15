@@ -115,7 +115,7 @@
       <br><br>
 			<br><br>
 
-			<div>
+			<div class='container01'>
 			<button class='view-modaal'>Type Questions</button>
 <div class='popuup'>
   <div class='headerMod'>
