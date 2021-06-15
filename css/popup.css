@@ -42,6 +42,7 @@ button {
 
 .popuup {
   background: #fff;
+  margin: -20px -20px;
   padding: 90px 100px;
   border-radius: 15px;
   top: 50%;
