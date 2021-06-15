@@ -125,13 +125,15 @@ border: 1px solid transparent;
 }
 
 .icons a i {
-  
+
   transition: transform 0.3s ease-in-out;
 }
 
 .icons a:nth-child(1){
   color: #0f4ce4;
   border-color: #0f4ce4;
+  height: 80px;
+  width: 80px;
 }
 .icons a:nth-child(2){
   color: #0f4ce4;
