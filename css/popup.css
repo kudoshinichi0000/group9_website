@@ -116,6 +116,7 @@ button {
 .content p {
   font-size: 16px;
   position: relative;
+  right: 30px;
   top: 70px;
 }
 
