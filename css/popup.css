@@ -64,7 +64,7 @@ button {
 }
 
 .popuup :is( .icons, .field){
-  display: inline;
+  display: contents;
   align-items: center;
   justify-content: space-between;
 }
