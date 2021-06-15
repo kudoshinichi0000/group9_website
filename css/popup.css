@@ -46,8 +46,8 @@ button {
   padding: 90px 100px;
   border-radius: 15px;
   top: 10%;
-  max-width: 600px;
-  width: 500%;
+  max-width: 900px;
+  width: 700%;
   opacity: 0;
   pointer-events: none;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
