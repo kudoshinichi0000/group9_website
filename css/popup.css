@@ -199,7 +199,7 @@ border-radius: 50%;
 transition: all 0.3s ease-in-out;
 }
 
-.icongb:hover{
+.icongb a:hover{
 color: #0f4ce4;
   cursor: pointer;
 }
