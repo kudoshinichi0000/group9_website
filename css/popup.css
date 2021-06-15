@@ -32,10 +32,10 @@ button {
 
 .view-modaal{
   top: 50%;
-  color: #0f4ce4;
+  color: #fff ;
   font-size: 18px;
   padding: 10px 25px;
-  background: #fff;
+  background:  #0f4ce4;
   transform: translate(-50%, -50%);
 }
 
