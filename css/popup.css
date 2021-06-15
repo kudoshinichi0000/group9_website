@@ -185,7 +185,6 @@ border: 1.4px solid transparent;
   width: 50px;
   font-size: 50px; /* icon size*/
   text-decoration: none;
-  display: flex;
   margin: 15px 30 20px 0;
 
   justify-content: space-between;
@@ -195,6 +194,11 @@ border: 1.4px solid transparent;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
 border: 1.4px solid transparent;
+display: inline-flex;
+align-items: center;
+border-radius: 50%;
+justify-content: center;
+transition: all 0.3s ease-in-out;
 }
 
 .icongb:hover{
