@@ -120,7 +120,8 @@ button {
 height: 100px;
 width: 100px;
 font-size: 60px; /* icon size*/
-margin: 15px 10px;
+margin: 25px 10px;
+align-items: center;
 text-decoration: none;
 border: 1.4px solid transparent;
 }
