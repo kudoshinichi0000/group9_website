@@ -123,7 +123,7 @@
     <div class='close'><i class='uil uil-times'></i></div>
   </div>
   <div class='content'>
-    <p>Choose type of quiz</p>
+    <spanp>Choose type of quiz</span>
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
 			<p> MULTIPLE CHOICE</p>
@@ -132,7 +132,6 @@
 			 <a href='#'><i class='fas fa-minus-square'></i></a>
 			 <p> IDENTIFICATION</p>
     </ul>
-		<p>Click to Copy</p>
     <div class='field'>
     </div>
   </div>
