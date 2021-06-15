@@ -44,7 +44,7 @@ button {
   background: #fff;
   padding: 90px 100px;
   border-radius: 15px;
-  top: -150%;
+  top: 150%;
   max-width: 380px;
   width: 100%;
   opacity: 0;
