@@ -67,7 +67,7 @@ button {
   display: contents;
   align-items: center;
   justify-content: space-between;
-   transform: translate(-50%, -50%);
+
 }
 .headerMod{
   display: flex;
@@ -107,6 +107,8 @@ button {
 
 .popup .content {
   margin: -20px -50px;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .popup .icons {
