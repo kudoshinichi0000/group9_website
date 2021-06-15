@@ -188,6 +188,8 @@ border: 1.4px solid transparent;
   margin: 15px 30 20px 0;
   justify-content: space-between;
   border: 1.4px solid transparent;
+  padding: 15px;
+  border-radius: 50%;
 }
 .icongb a{
 margin-top: -2em;
