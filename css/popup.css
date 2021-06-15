@@ -31,11 +31,11 @@ button {
 }
 
 .view-modaal{
-  top: 50%;
+  top: 70%;
   color: #fff ;
-  font-size: 23px;
+  font-size: 18px;
   padding: 10px 25px;
-  background:  #028476;
+  background:  #420264;
   transform: translate(-50%, -50%);
 }
 
