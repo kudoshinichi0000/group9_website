@@ -126,13 +126,16 @@
     <spanp>Choose type of quiz</span>
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
-			<p> MULTIPLE CHOICE</p>
+
 				<a href='#'><i class='fas fa-check-square'></i></a>
-				<p> TRUE OR FALSE</p>
+
 			 <a href='#'><i class='fas fa-minus-square'></i></a>
-			 <p> IDENTIFICATION</p>
+
     </ul>
     <div class='field'>
+			<p> MULTIPLE CHOICE</p>
+				<p> TRUE OR FALSE</p>
+				<p> IDENTIFICATION</p>
     </div>
   </div>
 </div>
