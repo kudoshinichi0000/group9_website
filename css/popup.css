@@ -42,7 +42,7 @@ button {
 
 .popuup {
   background: #fff;
-  padding: 90px;
+  padding: 90px 90px;
   border-radius: 15px;
   top: -150%;
   max-width: 380px;
