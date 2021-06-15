@@ -193,7 +193,7 @@ transition: all 0.3s ease-in-out;
 }
 
 .icongb:hover{
-
+color: #0f4ce4;
   cursor: pointer;
 }
 
@@ -206,5 +206,5 @@ transition: all 0.3s ease-in-out;
   border-color:#028476;
 }
 .iconfb a:nth-child(1):hover{
-  color: #0f4ce4;
+
 }
