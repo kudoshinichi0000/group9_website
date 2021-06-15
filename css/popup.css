@@ -179,6 +179,7 @@ border: 1.4px solid transparent;
 .icongb{
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 3em;
   float: left;
   margin-left: 4em;
   height: 50px;
@@ -187,15 +188,13 @@ border: 1.4px solid transparent;
   text-decoration: none;
   margin: 15px 30 20px 0;
   justify-content: space-between;
-  border: 1.4px solid transparent;
-  padding: 15px;
-  border-radius: 50%;
+
 }
 .icongb a{
 margin-top: -2em;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
-
+border: 1.4px solid transparent;
 padding: 15px;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
@@ -211,5 +210,6 @@ transition: all 0.3s ease-in-out;
 }
 .icongb a:nth-child(1):hover{
   color: #0f4ce4;
+  border-color:#0f4ce4;
 
 }
