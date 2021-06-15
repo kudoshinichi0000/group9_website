@@ -125,9 +125,9 @@
   <div class='content'>
     <p>Choose type of quiz</p>
     <ul class='icons'>
-			<li><a href='#'><i class='fas fa-comments'></a>idifkhdsfndsmnv</li>
-				<li><a href='#'><i class='fas fa-check-square'></i></a>true or false</li>
-			 <li><a href='#'='><i class='fas fa-minus-square'>asdgdfjdjfflskg</i></a>nsdkalv,sfv</li>
+			<a href='#'><i class='fas fa-comments'></i></a></li>
+				<a href='#'><i class='fas fa-check-square'></i></a>
+			 <a href='#'='><i class='fas fa-minus-square'></i></a>
     </ul>
 		<p>Click to Copy</p>
     <div class='field'>
