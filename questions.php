@@ -123,7 +123,7 @@
     <div class='close'><i class='uil uil-times'></i></div>
   </div>
   <div class='content'>
-    <spanp>Choose type of quiz</span>
+    <span>Choose type of quiz</span>
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
 			<a href='#'><i class='fas fa-check-square'></i></a>
