@@ -15,7 +15,7 @@
 }
 
 .view-modaal, .popuup {
-  position: absolute;
+  position: none;
   left: 60%;
   margin-top: 6rem;
 }
