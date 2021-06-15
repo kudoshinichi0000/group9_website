@@ -15,7 +15,7 @@
 }
 
 .view-modaal, .popuup {
-  position: none;
+  position: absolute;
   left: 60%;
   margin-top: 6rem;
 }
@@ -46,7 +46,7 @@ button {
   border-radius: 15px;
   top: -150%;
   max-width: 380px;
-  width: 200%;
+  width: 1000%;
   opacity: 0;
   pointer-events: none;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
