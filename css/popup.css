@@ -184,8 +184,8 @@ border: 1.4px solid transparent;
   height: 50px;
   width: 50px;
   font-size: 50px; /* icon size*/
-  margin: 10px 10px;
   text-decoration: none;
+  display: flex;
   margin: 15px 30 20px 0;
 
   justify-content: space-between;
