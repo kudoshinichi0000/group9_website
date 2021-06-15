@@ -182,13 +182,11 @@ border: 1.4px solid transparent;
   padding-right: 1em;
   float: left;
   margin-left: 2em;
-  height: 90px;
-  width: 90px;
-  font-size: 60px; /* icon size*/
+  height: 30px;
+  width: 30px;
+  font-size: 20px; /* icon size*/
   margin: 20px 10px;
-  align-items: center;
   text-decoration: none;
-  border: 1.4px solid transparent;
 }
 .icongb a{
 border-radius: 50%;
