@@ -205,8 +205,8 @@ transition: all 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
 .icongb a:nth-child(1){
-  color: #028476;
-  border-color:#028476;
+  color: #420364;
+  border-color: #420364;
 }
 .icongb a:nth-child(1):hover{
   color: #0f4ce4;
