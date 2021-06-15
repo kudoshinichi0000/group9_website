@@ -179,9 +179,8 @@ border: 1.4px solid transparent;
 .icongb{
   padding-left: 1em;
   padding-right: 1em;
-
   float: left;
-  margin-left: 4em;
+  margin-left: 2em;
   height: 50px;
   width: 50px;
   font-size: 50px; /* icon size*/
