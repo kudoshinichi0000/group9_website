@@ -131,7 +131,6 @@
     </ul>
 		<p>Click to Copy</p>
     <div class='field'>
-      <button>Copy</button>
     </div>
   </div>
 </div>
