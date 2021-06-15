@@ -147,6 +147,7 @@
 
 			</div>
 			</div>
+			<div class='icongb'>
         <a href='quiz_list.php'<i class='fas fa-arrow-alt-circle-left'></i></a>
         <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
         <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>

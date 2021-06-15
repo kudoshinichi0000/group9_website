@@ -175,3 +175,21 @@ border: 1.4px solid transparent;
   padding: 0 5px;
   border: 3px solid #e1e1e1;
 }
+.icongb{
+  border: 1px solid black;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left;
+  margin-left: 2em;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.icongb:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
