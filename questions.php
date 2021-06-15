@@ -125,7 +125,7 @@
   <div class='content'>
 	<br>
 	<br>
-    <span>Choose type of quiz</span>
+  
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
 			<a href='#'><i class='fas fa-check-square'></i></a>
