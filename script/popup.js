@@ -1,6 +1,8 @@
 const viewBtn = document.querySelector(".view-modaal"),
     popuup = document.querySelector(".popuup"),
     close = popuup.querySelector(".close"),
+    input = field.querySelector("input"),
+    copy = field.querySelector("button");
 
     viewBtn.onclick = ()=>{
       popuup.classList.toggle("show");
@@ -8,6 +10,4 @@ const viewBtn = document.querySelector(".view-modaal"),
     close.onclick = ()=>{
       viewBtn.click();
     }
-
-
     }
