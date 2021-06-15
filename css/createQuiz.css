@@ -33,24 +33,6 @@ body{
   cursor: pointer;
 }
 
-.Goback{
-  border: 1px solid black;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-left: 1em;
-  padding-right: 1em;
-  float: left;
-  margin-left: 2em;
-  color: white;
-  background-color: #007bff;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-.Goback:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 .action{
   border: 1px solid black;
