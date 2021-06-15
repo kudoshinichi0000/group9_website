@@ -34,7 +34,8 @@ button {
   top: 55%;
   color: #fff ;
   font-size: 18px;
-  padding: 10px 40px;
+  padding: 15px 40px;
+  border-radius: 3px;
   background:  #420264;
   transform: translate(-50%, -50%);
 }
