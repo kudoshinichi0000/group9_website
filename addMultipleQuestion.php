@@ -12,7 +12,7 @@
  <?php
  include_once("navbaradmin.php");
 ?>
-<br> <br><br><br><br>
+
  <?php
  include_once("db.php");
  $code = $_GET['quiz_code'];
