@@ -134,7 +134,7 @@
 			 <p> MULTIPLE CHOICE</p>
 			 <p> TRUE OR FALSE</p>
 				<p> IDENTIFICATION</p>
-				<button>Copy</button>
+				
     </div>
   </div>
 </div>
