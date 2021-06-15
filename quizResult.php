@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+include_once("db.php");
 
 ?>
 
@@ -13,7 +13,6 @@ session_start();
 
 	<header>
 		<div class="container">
-			<p>PHP Quizer</p>
 		</div>
 	</header>
 
@@ -25,5 +24,6 @@ session_start();
 				<?php unset($_SESSION['score']); ?>
 			</div>
 	</main>
+	<a href="main.php">Back</a>
 </body>
 </html>

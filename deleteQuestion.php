@@ -26,7 +26,7 @@
     $quizId = $_GET['id'];
 
 		//Prepare the query
-    $query = "SELECT * FROM multiple_questions WHERE id = '$quizId'";
+    $query = "SELECT * FROM questions WHERE id = '$quizId'";
 
 		//Perform the query
     $execQuery = mysqli_query($con, $query);
@@ -81,7 +81,7 @@
 					$questionNumber = $_POST["questionNumber"];
 
 					//Prepare the query
-			 	  $deleteuery = "DELETE FROM multiple_questions WHERE id = '$quizId'";
+			 	  $deleteuery = "DELETE FROM questions WHERE id = '$quizId'";
 
 					//perform the query
 			    $execquery = mysqli_query($con, $deleteuery);

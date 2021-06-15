@@ -5,7 +5,7 @@
 	$number = $_GET['n'];
 
 	//Query for the Question
-	$query = "SELECT * FROM multiple_questions WHERE question_number = $number";
+	$query = "SELECT * FROM questions WHERE question_number = $number";
 
 	// Get the question
 	$result = mysqli_query($con,$query);
@@ -14,15 +14,16 @@
 	//Get Choices
 	$query = "SELECT * FROM option WHERE question_number = $number";
 	$choices = mysqli_query($con,$query);
+	
 	// Get Total questions
-	$query = "SELECT * FROM multiple_questions";
+	$query = "SELECT * FROM questions";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
 
 
 ?>
 <html>
 <head>
-	<title>PHP Quizer</title>
+	<title>Feedopedia Play Quiz</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
