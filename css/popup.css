@@ -142,28 +142,20 @@ border: 1.4px solid transparent;
   border-color: #028476;
 }
 .icons a:nth-child(2){
-  color: #0f4ce4;
-  border-color: #0f4ce4;
+  color: #028476;
+  border-color: #028476;
 }
 .icons a:nth-child(2):hover{
   color: #0f4ce4;
 }
 .icons a:nth-child(3){
-  color: #0f4ce4;
-  border-color: #0f4ce4;
-}
-.icons a:nth-child(4){
-  color: #0f4ce4;
-  border-color: #0f4ce4;
+  color: #028476;
+  border-color:#028476;
 }
 .icons a:nth-child(1):hover{
   color: #0f4ce4;
 }
-.icons a:nth-child(5){
-  color: #0f4ce4;
-  border-color: #0f4ce4;
-}
-.icons a:nth-child(1):hover{
+.icons a:nth-child(3):hover{
   color: #0f4ce4;
 }
 
