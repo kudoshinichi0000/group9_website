@@ -117,12 +117,12 @@ button {
 }
 
 .content .icons a{
-height: 80px;
-width: 80px;
-font-size: 40px;
+height: 90px;
+width: 90px;
+font-size: 40px; /* icon size*/
 margin: 15px 10px;
 text-decoration: none;
-border: 1px solid transparent;
+border: 2px solid transparent;
 }
 
 .icons a i {
