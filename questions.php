@@ -152,6 +152,7 @@
         <a href='addMultipleQuestion.php?quiz_code=$code' class='addQ'>Add Multiple Question</a>
         <a href='TrueOrFalse.php?quiz_code=$code' class='addQ'>add True or False</a>
         <a href='Identification.php?quiz_code=$code' class='addQ'>Add Identification</a><br><br><br>
+			</div>
     ";
 
     ?>
