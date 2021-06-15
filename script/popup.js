@@ -10,4 +10,5 @@ const viewBtn = document.querySelector(".view-modaal"),
     close.onclick = ()=>{
       viewBtn.click();
     }
-    }
+
+    
