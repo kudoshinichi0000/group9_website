@@ -190,6 +190,7 @@ border: 1.4px solid transparent;
 .icongb a{
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
+border: 1.4px solid transparent;
 }
 
 .icongb:hover{
