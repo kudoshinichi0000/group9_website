@@ -120,6 +120,7 @@ button {
 height: 80px;
 width: 80px;
 font-size: 20px;
+padding: 10px 10px;
 text-decoration: none;
 border: 1px solid transparent;
 }
