@@ -11,9 +11,13 @@
  ?>
 
  <?php
- include_once "db.php";
+ //Including database
+ include_once("db.php");
+
+ //Geting Quizcode from questions.php
  $code = $_GET['quiz_code'];
 
+ //If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
  if(isset($_POST['submit'])){
 
  	//Vardump
@@ -21,7 +25,10 @@
  	$question = $_POST['question'];
  	$correct_choice = $_POST['correct_choice'];
  	$questionPoints = $_POST['points'];
+
+	//Hidden input
  	$quizCode = $_POST['code'];
+
  	//New variable for type of quiz
  	$type = "Multiple Questions";
 
@@ -32,12 +39,14 @@
  	$choice[3] = $_POST['choice3'];
  	$choice[4] = $_POST['choice4'];
 
-  // First Query for multiple_questions Table
+  // First Query for questions Table
  	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
  	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
 
+	//perform the query
  	$result = mysqli_query($con,$query);
 
+	//adding points in items and OverallScores
 	if ($result) {
 		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
 		//the item is the total number of all questions
@@ -54,6 +63,7 @@
 		 $execaddScore = mysqli_query($con, $addScore);
 	 }
 	}
+
  	//Validate First Query
  	if($result){
  		foreach($choice as $option => $value){
@@ -64,20 +74,21 @@
  					$is_correct = 0;
  				}
 
- 				//Second Query for Choices Table
+ 				//Second Query for option Table
  				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
  				VALUES ('$quizCode', '$question_number', '$is_correct', '$value', '$questionPoints')";
 
  				$insert_row = mysqli_query($con,$query);
- 				// Validate Insertion of Choices
 
 			}
  		}
+		//If sucessfull, it will redirect in questions.php
  		header("Location: questions.php?quiz_code=$quizCode");
  	}
 
  }
 
+		//This query is for question Number
  		$query = "SELECT * FROM questions";
  		$questions = mysqli_query($con,$query);
  		$total = mysqli_num_rows($questions);
@@ -102,7 +113,8 @@
   <body>
 
     <?php
-    include_once("navbaradmin.php");
+			//including navbar for admin
+    	include_once("navbaradmin.php");
     ?>
 
     <br> <br><br><br><br>

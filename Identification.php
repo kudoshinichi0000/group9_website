@@ -11,9 +11,13 @@
  ?>
 
  <?php
+ //Including database
  include_once "db.php";
+
+ //Getting quiz_code from questions.php
  $code = $_GET['quiz_code'];
 
+ //If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
  if(isset($_POST['submit'])){
 
  	//Vardump
@@ -21,21 +25,18 @@
  	$question = $_POST['IdenQuestion'];
  	$correct_choice = $_POST['IdenAnswer'];
  	$questionPoints = $_POST['points'];
+
+	//Hidden input for quiz_code
  	$quizCode = $_POST['code'];
+
  	//New variable for type of quiz
  	$type = "Identification";
 
- 	// Choice Array
- 	$choice = array();
- 	$choice[1] = $_POST['choice1'];
- 	$choice[2] = $_POST['choice2'];
- 	$choice[3] = $_POST['choice3'];
- 	$choice[4] = $_POST['choice4'];
-
-  // First Query for multiple_questions Table
+  // First Query for questions Table
  	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
  	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
 
+	//Perform the query
  	$result = mysqli_query($con,$query);
 
 	if ($result) {
@@ -54,23 +55,24 @@
 		 $execaddScore = mysqli_query($con, $addScore);
 	 }
 	}
- 	//Validate First Query
+
+
  	if($result){
 
- 				//Second Query for Choices Table
+ 				//Second Query for option Table
  				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
  				VALUES ('$quizCode', '$question_number', '1', '$correct_choice', '$questionPoints')";
 
+				//Perform the query
  				$insert_row = mysqli_query($con,$query);
- 				// Validate Insertion of Choices
-
 			}
 
+		//If sucessfull, it will redirect in questions.php
  		header("Location: questions.php?quiz_code=$quizCode");
-
 
  }
 
+		//This query is for question Number
  		$query = "SELECT * FROM questions";
  		$questions = mysqli_query($con,$query);
  		$total = mysqli_num_rows($questions);
@@ -91,8 +93,8 @@
   </head>
   <body>
     <?php
-      //Including Navar for admin
-      //include_once("navbaradmin.php");
+      //Including Navarbar for admin
+      include_once("navbaradmin.php");
         ?>
       <br><br><br><br>
      <div class="container">

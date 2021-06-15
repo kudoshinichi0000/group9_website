@@ -1,5 +1,5 @@
 <?php
-
+/*
 	//Step 1 Database Connectivity
 	include_once "db.php";
 
@@ -172,7 +172,8 @@
 			<br><br><br><br> <br><br><br>
     ";
     }
-
+*/
      ?>
+		 Something Went Wrong!
   </body>
 </html>

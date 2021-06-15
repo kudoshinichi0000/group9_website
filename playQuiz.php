@@ -14,6 +14,7 @@
 	//Get Choices
 	$query = "SELECT * FROM option WHERE question_number = $number";
 	$choices = mysqli_query($con,$query);
+	
 	// Get Total questions
 	$query = "SELECT * FROM questions";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
@@ -22,7 +23,7 @@
 ?>
 <html>
 <head>
-	<title>PHP Quizer</title>
+	<title>Feedopedia Play Quiz</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>

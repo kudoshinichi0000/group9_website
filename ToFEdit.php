@@ -1,5 +1,5 @@
 <?php
-
+/*
 	//Step 1 Database Connectivity
 	include_once "db.php";
 
@@ -191,6 +191,7 @@ if($correct_choice == "False"){
       </div>
     ";
   }
-    ?>
+    */?>
+	something went wrong!
   </body>
 </html>
