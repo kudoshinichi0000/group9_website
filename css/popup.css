@@ -31,7 +31,8 @@ button {
 }
 
 .view-modaal{
-  top: 70%;
+  top: 60%;
+  right: 30%;
   color: #fff ;
   font-size: 18px;
   padding: 10px 25px;
