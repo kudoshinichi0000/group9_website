@@ -190,18 +190,13 @@ border: 1.4px solid transparent;
   justify-content: space-between;
 }
 .icongb a{
-  margin-top: -2em;
+margin-top: -2em;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
 border: 1.4px solid transparent;
 padding: 15px;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
-}
-
-.icongb a i:hover{
-color: #0f4ce4;
-  cursor: pointer;
 }
 
 .icongb a i {
