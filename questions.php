@@ -150,7 +150,10 @@
 			<div class='icongb'>
         <a href='quiz_list.php'<i class='fas fa-arrow-alt-circle-left'></i></a>
 			</div>
-        
+			<br>
+			<br>
+			<br>
+
 
     ";
 
