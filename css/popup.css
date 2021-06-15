@@ -116,14 +116,14 @@ button {
 .content p {
   font-size: 16px;
   position: relative;
-  right: 6px;
+  right: 4px;
   top: 10px;
 }
 
 .content .icons a{
 height: 90px;
 width: 90px;
-font-size: 50px; /* icon size*/
+font-size: 60px; /* icon size*/
 margin: 20px 10px;
 align-items: center;
 text-decoration: none;
