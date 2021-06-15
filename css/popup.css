@@ -184,9 +184,13 @@ border: 1.4px solid transparent;
   float: left;
   margin-left: 2em;
   color: white;
-  background-color: #007bff;
+  background-color: white;
   text-decoration: none;
   border-radius: 8px;
+}
+.icongb a{
+border-radius: 50%;
+transition: all 0.3s ease-in-out;
 }
 
 .icongb:hover{
