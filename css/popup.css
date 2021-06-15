@@ -108,7 +108,9 @@ button {
 .popup .content {
   margin: -20px -50px;
   text-align: center;
-  transform: translate(-50%, -50%);
+  align-items:center;
+  
+
 }
 
 .popup .icons {
