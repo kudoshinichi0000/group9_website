@@ -75,13 +75,14 @@ button {
   justify-content: space-between;
 }
 .popuup .headerMod {
-  padding-bottom: 45px;
+  padding-bottom: 25px;
   border-bottom: 1.4px solid #ebedf9;
 }
 
 .headerMod span {
   font-size: 21px;
   font-weight: 600;
+  text-align: center;
 }
 
 .headerMod .close, .icons a {
