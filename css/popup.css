@@ -85,7 +85,7 @@ button {
 }
 
 .headerMod .close, .icons a {
-  display: flex;
+  display:contents;
   align-items: center;
   border-radius: 50%;
   justify-content: center;
