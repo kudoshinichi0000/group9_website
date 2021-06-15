@@ -32,7 +32,7 @@ button {
 
 .view-modaal{
   top: 55%;
-  right: 50%;
+  padding-right: 50%;
   color: #fff ;
   font-size: 18px;
   padding: 10px 25px;
