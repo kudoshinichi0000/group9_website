@@ -123,6 +123,8 @@
     <div class='close'><i class='uil uil-times'></i></div>
   </div>
   <div class='content'>
+	<br>
+	<br>
     <span>Choose type of quiz</span>
     <ul class='icons'>
 			<a href='#'><i class='fas fa-comments'></i></a></li>
@@ -134,7 +136,7 @@
 			 <p> MULTIPLE CHOICE</p>
 			 <p> TRUE OR FALSE</p>
 				<p> IDENTIFICATION</p>
-				
+
     </div>
   </div>
 </div>
