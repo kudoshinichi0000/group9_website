@@ -33,9 +33,9 @@ button {
 .view-modaal{
   top: 50%;
   color: #fff ;
-  font-size: 18px;
+  font-size: 23px;
   padding: 10px 25px;
-  background:  #420264;
+  background:  #028476;
   transform: translate(-50%, -50%);
 }
 
