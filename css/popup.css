@@ -46,7 +46,7 @@ button {
   padding: 45px 35px; /* contents sa loob ng modal*/
   border-radius: 15px;
   top: 10%;
-  max-width: 580px;
+  max-width: 800px;
   width: 680%;
   height: 90%;
   opacity: 0;
@@ -117,8 +117,8 @@ button {
 }
 
 .content .icons a{
-height: 100px;
-width: 100px;
+height: 90px;
+width: 90px;
 font-size: 50px; /* icon size*/
 margin: 20px 10px;
 align-items: center;
