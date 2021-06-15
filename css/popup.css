@@ -176,7 +176,7 @@ border: 1.4px solid transparent;
   border: 3px solid #e1e1e1;
 }
 .icongb{
-  margin-top: -2rem;
+
   padding-left: 1em;
   padding-right: 1em;
   float: left;
@@ -189,6 +189,7 @@ border: 1.4px solid transparent;
   margin: 15px 0 20px 0;
 }
 .icongb a{
+  margin-top: -2em;
 border-radius: 50%;
 transition: all 0.3s ease-in-out;
 border: 1.4px solid transparent;
