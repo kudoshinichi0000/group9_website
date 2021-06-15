@@ -117,14 +117,16 @@ button {
 }
 
 .content .icons a{
-height: 100px;
-width: 100px;
+height: 80px;
+width: 80px;
 font-size: 20px;
 text-decoration: none;
 border: 1px solid transparent;
 }
 
 .icons a i {
+  height: 80px;
+  width: 80px;
   transition: transform 0.3s ease-in-out;
 }
 
