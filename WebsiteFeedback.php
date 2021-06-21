@@ -2,9 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Feedback Form</title>
   </head>
   <body>
+    <div class="feedback-title">
+      <div>
+        <h1>Give Your Feedback </h1>
+        <link type="text/css" rel="stylesheet" href="css/feedback.css">
+        <h2>We are always to give the best to serve you! </h2>
+      </div>
     <form class="" action="WebsiteFeedback.php" method="post">
       <label for="name">Full name: </label>
       <input type="text" name="name" required><br>
