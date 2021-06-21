@@ -10,7 +10,7 @@ body {
 </style>
   </head>
   <body>
-    <class="BG"><img src="res/images/fb4.jpg">
+    <img src="res/images/fb4.jpg">
     <div class="feedback-title">
 
       <div>
