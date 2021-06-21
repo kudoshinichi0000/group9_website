@@ -5,7 +5,7 @@
     <title>Feedback Form</title>
     <style>
 body {
-  background-image: url("/images/fb4.jpg");
+  background-image: url("/images/Logo.png");
 }
 </style>
   </head>
