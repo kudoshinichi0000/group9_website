@@ -10,7 +10,9 @@ body {
 </style>
   </head>
   <body>
+    <class="BG"><img src="res/images/fb4.jpg">
     <div class="feedback-title">
+
       <div>
         <h1>Give Your Feedback </h1>
         <link type="text/css" rel="stylesheet" href="css/feedback.css">
