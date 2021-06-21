@@ -7,6 +7,11 @@ body{
   background-position: center;
   font-family: sans-serif;
 }
+BG{
+  background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5));
+  background-size: cover;
+  background-position: center;
+}
 feedback-title{
   margin-top: 100px;
   color:#fff;
