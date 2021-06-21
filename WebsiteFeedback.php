@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Feedback Form</title>
+    <style>
+body {
+  background-image: url("/images/fb4.jpg");
+}
+</style>
   </head>
   <body>
     <div class="feedback-title">

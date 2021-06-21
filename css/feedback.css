@@ -7,3 +7,9 @@ body{
   background-position: center;
   font-family: sans-serif;
 }
+feedback-title{
+  margin-top: 100px;
+  color:#fff;
+  text-transform: uppercase;
+  transition: all
+}
