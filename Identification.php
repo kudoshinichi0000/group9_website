@@ -72,11 +72,11 @@
 
  }
 
-		//This query is for question Number
- 		$query = "SELECT * FROM questions";
- 		$questions = mysqli_query($con,$query);
- 		$total = mysqli_num_rows($questions);
- 		$next = $total+1;
+ //This query is for question Number
+ $query = "SELECT * FROM questions WHERE quiz_code = $code";
+ $questions = mysqli_query($con,$query);
+ $total = mysqli_num_rows($questions);
+ $next = $total+1;
 
   ?>
 <!DOCTYPE html>
