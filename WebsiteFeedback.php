@@ -4,7 +4,27 @@
     <meta charset="utf-8">
     <title>Feedback Form</title>
       <link type="text/css" rel="stylesheet" href="css/feedback.css">
+      <style>
+      body{
+        margin: 0;
+        padding:0;
+        text-align: center;
+        font-family: sans-serif;
+        background-image: url("res/images/fb7.jpg");
+      	height: 100%;
+      	width: 100%;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	color: #f2d411;
+      	text-align: center;
+      	padding:60px;
+      	margin:15px;
+      	text-align: center;
+      }
+      </style>
   </head>
+
   <body>
 
     <div class="feedback-title">
