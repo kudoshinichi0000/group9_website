@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link type="text/css" rel="stylesheet" href="css/feedback.css">
       <style>
       body{
@@ -10,14 +12,14 @@
         padding:0;
         text-align: center;
         font-family: sans-serif;
-        background-image: url("res/images/fb4.jpg");
+        background-image: url("res/images/fb10.png");
       	height:auto;
       	width: auto;
       	background-position: center;
       	background-repeat: no-repeat;
       	background-size: cover;
       	text-align: center;
-      	padding:60px;
+      	padding:10px;
       }
       .feedback-title{
         margin-top: 95px;
@@ -33,6 +35,27 @@
       .feedback-title h2{
       font-size: 16px;
       }
+      ::placeholder {
+        color: #ffffff;
+        opacity: 1; /* Firefox */
+      }
+      ::-webkit-input-placeholder{ /*Safari, Google Chrome, Opera 15+) and Microsoft Edge*/
+        color: #ffffff;
+        opacity: 1;
+      }
+      ::-moz-placeholder{ /* mozilla Firefox */
+        color: #ffffff;
+        opacity: 1;
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #ffffff;
+        opacity: 1;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #ffffff;
+        opacity: 1;
+      }
       form{
         margin-top: 50px;
         transition: all 4s ease-in-out;
@@ -47,6 +70,41 @@
         font-size: 18px;
         margin-bottom: 16px;
       }
+      input{
+        height: 45px;
+      }
+      form .submit{
+        background: #8F00FF;
+        border-color: transparent;
+        border: 1px solid white;
+        color: #fff;
+        width: 340px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-top: 35px;
+      }
+      form .submit:hover{
+        background-color: #420264;
+        cursor: pointer;
+
+      }
+      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+    .w3-button {
+  width:150px;
+}
+    .w3-deep-purple .w3-hover-deep-purple:hover{
+      color: #264420!important;
+      background-color:#673ab7!important
+}
+
       </style>
   </head>
 
@@ -59,20 +117,19 @@
     </div>
     <div class="feedback-form">
         <form id=" feedback-form" action="WebsiteFeedback.php" method="post">
-          <label for="name">Full name: </label>
+
           <input type="text" name="name" class="form-control" placeholder="Your Full Name" required><br>
 
-          <label for="email">email: </label>
+
           <input type="email" name="email" class="form-control" placeholder="Enter your email" required><br>
 
-          <label for="Feedback">Feedback: </label>
-          <textarea  name="Feedback" class="form-control" placeholder="Enter your feedback" required></textarea><br><br><br>
 
-          <input type="submit" class="form-control submit" name="SEND FEEDBACK">
+          <textarea  name="Feedback" class="form-control" placeholder="Enter your feedback"  required></textarea><br><br>
 
+          <input type="submit" class="form-control submit" name="submit" value="SEND FEEDBACK">
         </form>
   </div>
-  <a href="index.php">Go back</a>
+  <p><button class="w3-button w3-deep-orange"><a href="index.php">GO BACK<a/></button></p>
   </body>
 </html>
 
