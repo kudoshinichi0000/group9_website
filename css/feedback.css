@@ -3,7 +3,7 @@ body{
   padding:0;
   text-align: center;
   font-family: sans-serif;
-  background-image: url("res/images/fb7.jpg");
+  background-image: url("res/images/fb4.jpg");
 	height: 100%;
 	width: 100%;
 	background-position: center;
@@ -15,11 +15,7 @@ body{
 	margin:15px;
 	text-align: center;
 }
-{
-  background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5));
-  background-size:auto;
-  background-position: center;
-}
+
 feedback-title{
   margin-top: 100px;
   color:#fff;
