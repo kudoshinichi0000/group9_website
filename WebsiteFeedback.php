@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Feedback Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link type="text/css" rel="stylesheet" href="css/feedback.css">
       <style>
       body{
@@ -97,14 +96,19 @@
     text-decoration: none;
     color: initial;
 }
-    .w3-button {
-  width:150px;
-}
-    .w3-deep-purple .w3-hover-deep-purple:hover{
-      color: #264420!important;
-      background-color:#673ab7!important
+a:link, a:visited {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
 }
 
+a:hover, a:active {
+  background-color: red;
+}
       </style>
   </head>
 
@@ -129,7 +133,7 @@
           <input type="submit" class="form-control submit" name="submit" value="SEND FEEDBACK">
         </form>
   </div>
-  <p><button class="w3-button w3-deep-orange"><a href="index.php">GO BACK<a/></button></p>
+    <a href="index.php">GO BACK</a>
   </body>
 </html>
 
