@@ -5,7 +5,7 @@
     <title>Feedback Form</title>
   </head>
   <body>
-    <class="BG"><img src="res/images/fb4.jpg">
+  
     <div class="feedback-title">
 
       <div>
