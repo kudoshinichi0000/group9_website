@@ -1,6 +1,6 @@
-feedback-title{
+.feedback-title{
   margin-top: 100px;
   color:#fff;
   text-transform: uppercase;
-  transition: all
+  transition: all 4s ease
 }

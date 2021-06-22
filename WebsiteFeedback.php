@@ -10,17 +10,42 @@
         padding:0;
         text-align: center;
         font-family: sans-serif;
-        background-image: url("res/images/fb7.jpg");
-      	height: 100%;
-      	width: 100%;
+        background-image: url("res/images/fb4.jpg");
+      	height:auto;
+      	width: auto;
       	background-position: center;
       	background-repeat: no-repeat;
       	background-size: cover;
-      	color: #f2d411;
       	text-align: center;
       	padding:60px;
-      	margin:15px;
-      	text-align: center;
+      }
+      .feedback-title{
+        margin-top: 95px;
+        color:#fff;
+        text-transform: uppercase;
+        transition: all 4s ease-in-out;
+      }
+      .feedback-title h1{
+
+      font-size: 40px;
+      line-height: 10px;
+      }
+      .feedback-title h2{
+      font-size: 16px;
+      }
+      form{
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+      }
+      .form-control{
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 16px;
       }
       </style>
   </head>
@@ -28,25 +53,25 @@
   <body>
 
     <div class="feedback-title">
-
-      <div>
         <h1>Give Your Feedback </h1>
 
         <h2>We are always to give the best to serve you! </h2>
-      </div>
-    <form class="" action="WebsiteFeedback.php" method="post">
-      <label for="name">Full name: </label>
-      <input type="text" name="name" required><br>
+    </div>
+    <div class="feedback-form">
+        <form id=" feedback-form" action="WebsiteFeedback.php" method="post">
+          <label for="name">Full name: </label>
+          <input type="text" name="name" class="form-control" placeholder="Your Full Name" required><br>
 
-      <label for="email">email: </label>
-      <input type="email" name="email" required><br>
+          <label for="email">email: </label>
+          <input type="email" name="email" class="form-control" placeholder="Enter your email" required><br>
 
-      <label for="Feedback">Feedback: </label>
-      <textarea  name="Feedback" required></textarea><br>
+          <label for="Feedback">Feedback: </label>
+          <textarea  name="Feedback" class="form-control" placeholder="Enter your feedback" required></textarea><br><br><br>
 
-      <input type="submit" name="submit" >
-    </form>
+          <input type="submit" class="form-control submit" name="SEND FEEDBACK">
 
+        </form>
+  </div>
   <a href="index.php">Go back</a>
   </body>
 </html>
