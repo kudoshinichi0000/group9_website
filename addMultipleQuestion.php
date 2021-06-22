@@ -9,7 +9,96 @@
 	}
 
  ?>
+  <?php
+	?>
+	include_once("navbaradmin.php");
 
+ <?php
+ //Including database
+ include_once("db.php");
+
+ //Geting Quizcode from questions.php
+ $code = $_GET['quiz_code'];
+
+ //If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
+ if(isset($_POST['submit'])){
+
+ 	//Vardump
+ 	$question_number = $_POST['question_number'];
+ 	$question = $_POST['question'];
+ 	$correct_choice = $_POST['correct_choice'];
+ 	$questionPoints = $_POST['points'];
+
+	//Hidden input
+ 	$quizCode = $_POST['code'];
+
+ 	//New variable for type of quiz
+ 	$type = "Multiple Questions";
+
+ 	// Choice Array
+ 	$choice = array();
+ 	$choice[1] = $_POST['choice1'];
+ 	$choice[2] = $_POST['choice2'];
+ 	$choice[3] = $_POST['choice3'];
+ 	$choice[4] = $_POST['choice4'];
+
+  // First Query for questions Table
+ 	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
+ 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
+
+	//perform the query
+ 	$result = mysqli_query($con,$query);
+
+	//adding points in items and OverallScores
+	if ($result) {
+		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+		//the item is the total number of all questions
+		$queryy = " SELECT * FROM quiz_list";
+		$execQueryy = mysqli_query($con, $queryy);
+		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+		$addscore = $fetchQuestion["OverallScores"];
+		$items = $fetchQuestion["items"];
+		$OverallScores = $addscore + $questionPoints;
+		$iitem = $items + 1;
+		 $addScore = "UPDATE quiz_list
+									SET OverallScores = $OverallScores, items = $iitem
+									WHERE quiz_code = $quizCode";
+		 $execaddScore = mysqli_query($con, $addScore);
+	 }
+	}
+
+ 	//Validate First Query
+ 	if($result){
+ 		foreach($choice as $option => $value){
+ 			if($value != ""){
+ 				if($correct_choice == $option){
+ 					$is_correct = 1;
+ 				}else{
+ 					$is_correct = 0;
+ 				}
+
+ 				//Second Query for option Table
+ 				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
+ 				VALUES ('$quizCode', '$question_number', '$is_correct', '$value', '$questionPoints')";
+
+ 				$insert_row = mysqli_query($con,$query);
+
+			}
+ 		}
+		//If sucessfull, it will redirect in questions.php
+ 		header("Location: questions.php?quiz_code=$quizCode");
+ 	}
+
+ }
+
+		//This query is for question Number
+ 		$query = "SELECT * FROM questions";
+ 		$questions = mysqli_query($con,$query);
+ 		$total = mysqli_num_rows($questions);
+ 		$next = $total+1;
+
+
+ ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -26,10 +115,9 @@
   </head>
   <body>
 
-		<?php
-    include_once('db.php');
-    $code = $_GET['quiz_code'];
-    include_once("navbaradmin.php");
+    <?php
+			//including navbar for admin
+    	include_once("navbaradmin.php");
     ?>
 
     <br> <br><br><br><br>
@@ -43,6 +131,12 @@
             <div class="row formContainer">
               <div class="col-lg-12">
                 <form action="addMultipleQuestion.php" method="POST">
+									<div class="row form-group">
+                    <div class="col">
+                      <label for="question_number">Question Number:</label>
+											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" min="1" >
+                    </div>
+                  </div>
                   <div class="row form-group">
                     <div class="col">
                       <label for="question">Question:</label>
@@ -52,14 +146,14 @@
                   <div class="row form-group">
                     <div class="col">
                       <label for="points>">Points:</label>
-                      <input type="number" class="form-control" placeholder="enter points for this question..." name="points" required>
+                      <input type="number" class="form-control" placeholder="Enter points for this question..." name="points" required>
                     </div>
                   </div>
                   <div class="row form-group">
                     <div class="col">
-                      <label> Correct Answer</label>
+                      <label> Correct Answer Number:</label>
                         <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="4" placeholder="Enter the correct letter of the answer" name="ans"  maxlength='1' onkeypress='return /[a-d]/i.test(event.key)' oninput='this.value = this.value.toUpperCase()' required></textarea>
+                          <input type="number" class="form-control" placeholder="Enter the correct Number of the answer" name="correct_choice"  min="1" max="4" required></input>
                         </div>
                     </div>
                   </div>
@@ -67,16 +161,16 @@
                     <div class="col">
                       <label> Answer Options</label>
                         <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="A" placeholder="Possible answer (A)" required></textarea>
+                          <textarea  class="form-control" rows="3" cols="40"  name="choice1" placeholder="Option[1]" required></textarea>
                           </div>
                           <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="B" placeholder="Possible answer (B)" required></textarea>
+                          <textarea  class="form-control" rows="3" cols="40"  name="choice2" placeholder="Option[2]" required></textarea>
                           </div>
                           <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="C" placeholder="Possible answer (C)" required></textarea>
+                          <textarea  class="form-control" rows="3" cols="40"  name="choice3" placeholder="Option[3]" required></textarea>
                           </div>
                           <div class="form-outline mb-4">
-                          <textarea  class="form-control" rows="3" cols="40"  name="D" placeholder="Possible answer (D)" required></textarea>
+                          <textarea  class="form-control" rows="3" cols="40"  name="choice4" placeholder="Option[4]" required></textarea>
                         </div>
                     </div>
                   </div>
@@ -86,7 +180,7 @@
                         <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
                     </div>
                   </div>
-                  <input type='hidden' name='hiencod' value='<?php echo $code?>'>
+                  <input type="hidden" name="code" value="<?php echo "$code"; ?>">
                 </form>
               </div>
             </div>
@@ -97,46 +191,3 @@
     <br><br><br><br> <br><br><br>
   </body>
 </html>
-
-<?php
-//If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
-if(isset($_POST['submit'])){
-
-	//Var_dump();
-	$question = $_POST["question"];
-	$points = $_POST["points"];
-	$answer = $_POST["ans"];
-	$optA = $_POST["A"];
-	$optB = $_POST["B"];
-	$optC = $_POST["C"];
-	$optD = $_POST["D"];
-
-	//Hidden Input
-	$quizC = $_POST["hiencod"];
-
-		//inserting in multiple question
-		$query = "INSERT INTO multiple_questions (quiz_code, question, questionPoints, answer, option1, option2, option3, option4, typeOfQuiz)
-								VALUES('$quizC', '$question', '$points', '$answer', '$optA', '$optB', '$optC', '$optD', 'Multiple Questions')";
-		$execQuery = mysqli_query($con, $query);
-			if($execQuery){
-
-				//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
-				//the item is the total number of all questions
-				$queryy = " SELECT * FROM quiz_list";
-				$execQueryy = mysqli_query($con, $queryy);
-				while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
-				$addscore = $fetchQuestion["OverallScores"];
-				$items = $fetchQuestion["items"];
-				$OverallScores = $addscore + $points;
-				$iitem = $items + 1;
-				 $addScore = "UPDATE quiz_list
-											SET OverallScores = $OverallScores, items = $iitem
-											WHERE quiz_code = $quizC";
-				 $execaddScore = mysqli_query($con, $addScore);
-				 }
-			}
-			if($execQuery){
-			header("location: questions.php?quiz_code=$quizC");
-		}
-		}
-?>

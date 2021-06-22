@@ -1,49 +1,85 @@
+<?php
+
+	//Including Database
+	include_once('db.php');
+
+	//Set Question Number
+	$number = $_GET['n'];
+
+	//Query for the Question
+	$query = "SELECT * FROM questions WHERE question_number = $number";
+	$result = mysqli_query($con,$query);
+	$question = mysqli_fetch_assoc($result);
+	$typeOfQuiz = $question["typeOfQuiz"];
+	$typeOfQuiz = $question["typeOfQuiz"];
+	$typeOfQuiz = $question["typeOfQuiz"];
+
+	//Get Choices
+	$query = "SELECT * FROM option WHERE question_number = $number";
+	$choices = mysqli_query($con,$query);
+
+
+
+	// Get Total questions
+	$query = "SELECT * FROM questions";
+	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
+
+
+?>
 <html>
 <head>
 	<title>Feedopedia Play Quiz</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<?php //Including Database
-	include_once('db.php');
 
-	//Set Question Number
-	$quiz_code = $_POST['QuizCode'];
-	$name = $_POST['name'];
+	<main>
+			<div class="container">
 
-	echo "$name";
-	
-	//Query for the Question
-	$query = "SELECT * FROM multiple_questions WHERE quiz_code = $quiz_code LIMIT 1";
-	$result = mysqli_query($con,$query);
-
-	while($question = mysqli_fetch_assoc($result)){
-		$option1 = $question["option1"];
-		$option2 = $question["option2"];
-		$option3 = $question["option3"];
-		$option4 = $question["option4"];
-	$question = $question["question"];
+				<!---Getting total number--->
+				<div class="current">Question <?php echo $number; ?> of <?php echo $total_questions; ?> </div>
 
 
-	echo "
-			<div class='container'>
-				<div class='current'>$question  </div>
-				<p class='question'> </p>
-				<form method='POST' action='process.php'>
-					<ul class='choicess'>
+				<!---Questions--->
+				<p class="question"><?php echo $question['question']; ?> </p>
 
-										<li><input type='radio' name='choice'>$option1</li>
-										<li><input type='radio' name='choice'>$option2</li>
-										<li><input type='radio' name='choice'>$option3</li>
-										<li><input type='radio' name='choice'>$option4</li>
+				<form method="POST" action="process.php">
+					<ul class="choicess">
+
+						<?php
+							while($row=mysqli_fetch_assoc($choices)){
+								if ($typeOfQuiz == "Multiple Questions") {
+									echo "
+										<li><input type='radio' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
+						 			";
+					 			}
+								if ($typeOfQuiz == "True or False") {
+									echo "
+										<li><input type='radio' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
+						 			";
+					 			}
+								if ($typeOfQuiz == "Identification") {
+									echo "
+										<input type='text' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "
+						 			";
+					 			}
+
+					 } ?>
+
+
 					</ul>
+					<input type="hidden" name="number" value="<?php echo $number; ?>">
+					<input type="submit" name="submit" value="Submit">
+
+
 				</form>
+
+
 			</div>
-			";
-		}
-			?>
-			<input type='hidden' name='choice'>
-			<input type='submit' name='submit' value='Submit'>
+
+	</main>
+
+
 
 
 </body>

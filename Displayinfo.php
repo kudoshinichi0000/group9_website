@@ -3,9 +3,8 @@
   //Database Connectivity
   include_once("db.php");
 
-  //vardump
-  $QuizCode = $_POST['QuizCode'];
-  $name = $_POST['name'];
+  //Getting quiz_code from the main.php
+  $QuizCode = $_GET['quiz_code'];
 
   //Prepare the query
   $query = "SELECT * FROM quiz_list WHERE quiz_code = $QuizCode";
@@ -15,6 +14,7 @@
 
   //Fetch all exectued querries
   $fetchQuiz = mysqli_fetch_assoc($execQuery);
+  $QuizCode = $fetchQuiz["quiz_code"];
   $adminId = $fetchQuiz["admin_id"];
   $pic = $fetchQuiz["picture"];
   $title = $fetchQuiz['title'];
@@ -66,7 +66,6 @@
        <!---Display Title--->
        <div class="info">
          <h1 style="float: left; margin-bottom:1em;">Quiz Status<h1>
-        <form action="playQuiz.php" method="POST">
          <table width="100%" class="tayble">
            <tr>
              <td><h2>Title:</h2></td>
@@ -115,10 +114,7 @@
            </tr>
 
          </table>
-          <td colspan="2"><?php echo " <br><br><h2><input class='PlayQuiz' type='submit' value='Play Quiz'></h2>";?></td>
-          <input type="hidden" name="QuizCode" value="<?php echo $QuizCode; ?>">
-          <input type="hidden" name="name" value="<?php echo $name; ?>">
-        </form>
+          <td colspan="2"><?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?n=1'>Play Quiz</a></h2>";?></td>
        </div><br><br><br><br>
 
 
