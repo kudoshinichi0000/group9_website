@@ -96,7 +96,7 @@
 											<p style='color:#fff;'>Category: $row[categories]</p>
 											<p style='color:#fff;'>Items: $row[items]</p>
 											<p style='color:#fff;'>Overall Scores: $row[OverallScores]</p>
-											<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
+											<a class='PlayButton' href='playerinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
 										</article>
 									</div>
 								</div>

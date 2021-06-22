@@ -1,10 +1,13 @@
-<?php include_once('db.php'); ?>
-
 <?php
+
+	include_once('db.php');
+
 	//For first question, score will not be there.
 	if(!isset($_SESSION['score'])){
 		$_SESSION['score'] = 0;
-	}if($_POST){
+	}
+
+	if($_POST){
 	//We need total question in process file too
  	$query = "SELECT * FROM questions";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));

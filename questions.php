@@ -110,59 +110,45 @@
           </div>
         </div>";
 
-    //displaying Buttons
-    echo "
-      <br><br>
-			<br><br>
-
-			<div class='container01'>
+  //displaying Buttons
+  echo "
+  <br><br><br><br>
+		<div class='container01'>
 			<button class='view-modaal'>Type Questions</button>
-<div class='popuup'>
-  <div class='headerMod'>
-    <span>Quiz Editor</span>
-    <div class='close'><i class='uil uil-times'></i></div>
-  </div>
-  <div class='content'>
-	<br>
-	<br>
+				<div class='popuup'>
+  				<div class='headerMod'>
+    				<span>Quiz Editor</span>
+    				<div class='close'><i class='uil uil-times'></i></div>
+  			  </div>
 
-    <ul class='icons'>
-			<a href='addMultipleQuestion.php?quiz_code=$code'><i class='fas fa-comments'></i></a></li>
-			<a href='TrueOrFalse.php?quiz_code=$code'><i class='fas fa-check-square'></i></a>
-			<a href='Identification.php?quiz_code=$code'><i class='fas fa-minus-square'></i></a>
+  					<div class='content'><br><br>
+							<ul class='icons'>
+								<a href='addMultipleQuestion.php?quiz_code=$code'><i class='fas fa-comments'></i></a></li>
+								<a href='TrueOrFalse.php?quiz_code=$code'><i class='fas fa-check-square'></i></a>
+								<a href='Identification.php?quiz_code=$code'><i class='fas fa-minus-square'></i></a>
+							</ul>
 
-    </ul>
-    <div class='field'>
-			 <p> MULTIPLE CHOICE</p>
-			 <p> TRUE OR FALSE</p>
-				<p> IDENTIFICATION</p>
-
-    </div>
-  </div>
-</div>
+    						<div class='field'>
+			 						<p> MULTIPLE CHOICE</p>
+			 						<p> TRUE OR FALSE</p>
+									<p> IDENTIFICATION</p>
+    						</div>
+  						</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-
-
-
-			</div>
-			</div>
 			<div class='icongb'>
         <a href='quiz_list.php'<i class='fas fa-arrow-alt-circle-left'></i></a>
-			</div>
-			<br>
-			<br>
-			<br>
-
-
+			</div><br><br><br>
     ";
 
     ?>
+
 		<script src="script/popup.js"> </script>
 
-
-
-    <!--In this area will displaying all questions created by the user-->
+		<!--In this area will displaying all questions created by the user-->
     <div class="SectionQ">
 
       <!---Labeling all Questions--->
@@ -175,7 +161,7 @@
         // In this section we will get all multiple questions in table in database
 
         //Step 2 Prepare the query
-     	  $query = " SELECT * FROM questions WHERE quiz_code = '$code' ORDER BY question_number ASC";
+     	  $query = " SELECT * FROM multiple_questions WHERE quiz_code = '$code'";
 
         //Step 3 Perform the query
         $execQuery = mysqli_query($con, $query);
@@ -195,24 +181,85 @@
                    <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
                    <i style='float:left; margin-left: 1em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
-									 <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
-
-									 if ($typeOfQuiz == "Multiple Questions") {
-                   		echo "<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
-									 }
-									 if ($typeOfQuiz == "True or False") {
-                   		echo " <a href='ToFEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
-                   }
-									 if ($typeOfQuiz == "Identification") {
-									 		echo "<a href='IEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
-									 }
-									 echo "
-								 </th>
+                   <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                   <a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                 </th>
                </tr>
              </table>";
          }
 
-			?>
+
+
+
+              // In this section we will get all True or False question in table in database
+
+              //Step 2 Prepare the query
+              $queryy = " SELECT * FROM trueorfalse WHERE quiz_code = '$code'";
+
+              //Step 3 Perform the query
+              $execQuery = mysqli_query($con, $queryy);
+
+               //Getting/fetching all rows from the executed query
+               while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
+               $questionnId = $fetchtrueorfalse['id'];
+               $codee = $fetchtrueorfalse['quiz_code'];
+               $questionn = $fetchtrueorfalse['question'];
+               $answerr = $fetchtrueorfalse['answer'];
+               $pointss = $fetchtrueorfalse['points'];
+               $typeOfQuizz = $fetchtrueorfalse['typeOfQuiz'];
+
+               //Display all True or false questions
+               echo "
+                 <table class='cons' width='100%' height='1em;' style='background-color: #dda3f1;'>
+                   <tr>
+                     <th colspan='5'>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizz </i>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointss </i>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionn</i>
+                       <a href='deletetrueorfalse.php?id=$questionnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                       <a href='ToFEdit.php?id=$questionnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                    </th>
+                   </tr>
+
+                 </table>";
+             }
+
+
+
+             // In this section we will get all Identification question in table in database
+
+             //Step 2 Prepare the query
+             $queryy = " SELECT * FROM identification WHERE quiz_code = '$code'";
+
+             //Step 3 Perform the query
+             $execQuery = mysqli_query($con, $queryy);
+
+              //Getting/fetching all rows from the executed query
+              while($fetchtrueorfalse = mysqli_fetch_assoc($execQuery)){
+              $questionnnId = $fetchtrueorfalse['id'];
+              $codeee = $fetchtrueorfalse['quiz_code'];
+              $questionnn = $fetchtrueorfalse['question'];
+              $answerrr = $fetchtrueorfalse['answer'];
+              $pointsss = $fetchtrueorfalse['points'];
+              $typeOfQuizzz = $fetchtrueorfalse['typeOfQuiz'];
+
+              //Display all Identification questions
+              echo "
+                <table class='cons' width='100%' height='1em;' style='background-color: #e55f5f;'>
+                  <tr>
+                    <th colspan='5'>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuizzz </i>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'> Points: $pointsss </i>
+                       <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $questionnn</i>
+
+                      <a href='IdenDelete.php?id=$questionnnId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found'' class='Prof' ></a>
+                       <a href='IEdit.php?id=$questionnnId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+                     </th>
+                </table>";
+            }
+
+
+       ?>
 
    </div>
    <!-- PARA SA MODAL DELETE SA TRUE OR FLASE KASO DIPAKO SURE HAHA
@@ -281,9 +328,5 @@
  </script>
 <<<<<<< HEAD
  -->
-
-=======
- -->*/?>
->>>>>>> b30972a0f73ff7d63b09c5a1803bc350d45459a2
   </body>
 </html>

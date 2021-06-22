@@ -10,102 +10,6 @@
 
  ?>
 
- <?php
-
- //Including database
- include_once("db.php");
-
- //Getting quizCode from questions.php
- $code = $_GET['quiz_code'];
-
- //If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
- if(isset($_POST['submit'])){
-
- 	//Vardump
- 	$question_number = $_POST['question_number'];
- 	$question = $_POST['TorFQuestion'];
- 	$correct_choice = $_POST['TorFAnswer'];
- 	$questionPoints = $_POST['points'];
-
-	//Hidden input quiz_code
- 	$quizCode = $_POST['code'];
-
- 	//New variable for type of quiz
- 	$type = "True or False";
-
-
-  // First Query for questions Table
- 	$query = "INSERT INTO questions (quiz_code, question_number, question, questionPoints,typeOFQuiz, answer)
- 	VALUES ('$quizCode', '$question_number','$question', '$questionPoints','$type','$correct_choice')";
-
-	//perform the query
- 	$result = mysqli_query($con,$query);
-
-	//adding points in items and OverallScores
-	if ($result) {
-		//i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
-		//the item is the total number of all questions
-		$queryy = " SELECT * FROM quiz_list";
-		$execQueryy = mysqli_query($con, $queryy);
-		while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
-		$addscore = $fetchQuestion["OverallScores"];
-		$items = $fetchQuestion["items"];
-		$OverallScores = $addscore + $questionPoints;
-		$iitem = $items + 1;
-		 $addScore = "UPDATE quiz_list
-									SET OverallScores = $OverallScores, items = $iitem
-									WHERE quiz_code = $quizCode";
-		 $execaddScore = mysqli_query($con, $addScore);
-	 }
-	}
-
-
-	//if the user/admin choose the true
-	//Inserting in database
- 	if($correct_choice == "True"){
-
- 				$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
- 				VALUES ('$quizCode', '$question_number', '1','True', '$questionPoints')";
-
- 				$insert_row = mysqli_query($con,$query);
-				if($insert_row){
-
-							$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
-							VALUES ('$quizCode', '$question_number', '0', 'False', '$questionPoints')";
-
-							$insert_row = mysqli_query($con,$query);
-							header("Location: questions.php?quiz_code=$quizCode");
-				}
-			}
-
-//if the user/admin choose the False
-//Inserting in database
-if($correct_choice == "False"){
-
-			$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
-			VALUES ('$quizCode', '$question_number', '0','True', '$questionPoints')";
-
-			$insert_row = mysqli_query($con,$query);
-			if($insert_row){
-
-						$query = "INSERT INTO option (quiz_code, question_number, answer, options, questionPoints)
-						VALUES ('$quizCode', '$question_number', '1', 'False', '$questionPoints')";
-
-						$insert_row = mysqli_query($con,$query);
-						header("Location: questions.php?quiz_code=$quizCode");
-			}
-		}
- 	}
-
-		//This query is for question Number
- 		$query = "SELECT * FROM questions";
- 		$questions = mysqli_query($con,$query);
- 		$total = mysqli_num_rows($questions);
- 		$next = $total+1;
-
-
- ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -121,10 +25,15 @@ if($correct_choice == "False"){
   <body>
 
 		<?php
-			//Including navbar for admin
-    	include_once("navbaradmin.php");
-    ?>
+      //Including Database
+      include_once("db.php");
 
+      //Getiing code
+      $code = $_GET["quiz_code"];
+
+      //Including navbar for admin
+      include_once("navbaradmin.php");
+     ?>
      <br> <br><br><br><br>
      <div class="container">
          <div class="card">
@@ -136,12 +45,6 @@ if($correct_choice == "False"){
                <div class="row formContainer">
                  <div class="col-lg-12">
                    <form action="TrueOrFalse.php" method="POST">
-										 <div class="row form-group">
-	                     <div class="col">
-	                       <label for="question_number">Question Number:</label>
-	 											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" >
-	                     </div>
-	                   </div>
                      <div class="row form-group">
                        <div class="col">
                          <label for="TorFQuestion">Question: </label>
@@ -172,12 +75,12 @@ if($correct_choice == "False"){
                       <div>
                         <div class="row form-group" style="margin-top: 40px;">
                         <div class="col">
-                          <button type="submit" name="submit" class="btn btn-outline-info float-right" style="margin-left:15px;" value="submit" >Submit</button>
+                          <button type="submit" name="submit" class="btn btn-outline-info float-right" style="margin-left:15px;"value="Submit">Submit</button>
                           <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
                         </div>
                       </div>
                     </div>
-                      <input type="hidden" name="code" value="<?php echo "$code"; ?>">
+                        <input type='hidden'name='quizCode' value='<?php echo $code ?>'>
                    </form>
                  </div>
                </div>
@@ -187,3 +90,49 @@ if($correct_choice == "False"){
      </div>
   </body>
 </html>
+
+	<?php
+	//If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
+	if(isset($_POST['submit'])){
+		include_once("db.php");
+
+	//Var_dump
+	$Questions = $_POST["TorFQuestion"];
+  $TrueorFalse = $_POST["TorFAnswer"];
+  $points = $_POST["points"];
+
+  //Hidden Input
+	$quizcode = $_POST["quizCode"];
+
+  //Creating new variable for the identity of this quiz
+  $typeOfQuiz = "True or False";
+
+
+	//Inserting all variables in Database
+	$Query = "INSERT INTO trueorfalse(quiz_code, question, answer, points, typeOfQuiz)
+  VALUES('$quizcode', '$Questions', '$TrueorFalse', '$points', '$typeOfQuiz')";
+
+	//Perform the query
+	$execQuery = mysqli_query($con, $Query);
+
+    if ($execQuery) {
+      //i made this to add a points in Overall scores in quiz_list, when you create questions the item will be added by 1
+      //the item is the total number of all questions
+      $queryy = " SELECT * FROM quiz_list";
+      $execQueryy = mysqli_query($con, $queryy);
+      while($fetchQuestion = mysqli_fetch_assoc($execQueryy)){
+      $addscore = $fetchQuestion["OverallScores"];
+      $items = $fetchQuestion["items"];
+      $OverallScores = $addscore + $points;
+      $iitem = $items + 1;
+       $addScore = "UPDATE quiz_list
+                    SET OverallScores = $OverallScores, items = $iitem
+                    WHERE quiz_code = $quizcode";
+       $execaddScore = mysqli_query($con, $addScore);
+       if ($execaddScore) {
+         header("Location: questions.php?quiz_code=$quizcode");
+       }
+    }
+	}
+	}
+	?>
