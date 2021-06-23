@@ -18,6 +18,7 @@
         <nav>
           <ul>
             <li><div class="home"><a href="viewadminuser.php">View User</a></div></li>
+            <li><div class="home"><a href="logs.php">Update</a></div></li>
             <li><div class="home"><a href="resultsadmin.php">results</a></div></li>
             <li><div class="home"><a href="quiz_list.php">Create Quiz</a></div></li>
             <li><div class="logout"><a href="logout.php"><b>Logout</b></a></div></li>
