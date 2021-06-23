@@ -5,25 +5,21 @@
 
 	//Set Question Number
 	$number = $_GET['n'];
+	$code = $_GET['quiz_code'];
 
 	//Query for the Question
-	$query = "SELECT * FROM questions WHERE question_number = $number";
+	$query = "SELECT * FROM questions WHERE question_number = $number AND quiz_code = $code";
 	$result = mysqli_query($con,$query);
 	$question = mysqli_fetch_assoc($result);
 	$typeOfQuiz = $question["typeOfQuiz"];
-	$typeOfQuiz = $question["typeOfQuiz"];
-	$typeOfQuiz = $question["typeOfQuiz"];
 
 	//Get Choices
-	$query = "SELECT * FROM option WHERE question_number = $number";
+	$query = "SELECT * FROM option WHERE question_number = $number AND quiz_code = $code";
 	$choices = mysqli_query($con,$query);
 
-
-
 	// Get Total questions
-	$query = "SELECT * FROM questions";
+	$query = "SELECT * FROM questions WHERE quiz_code = $code";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
-
 
 ?>
 <html>
@@ -39,9 +35,8 @@
 				<!---Getting total number--->
 				<div class="current">Question <?php echo $number; ?> of <?php echo $total_questions; ?> </div>
 
-
 				<!---Questions--->
-				<p class="question"><?php echo $question['question']; ?> </p>
+				<p class="question">Question: <?php echo $question['question']; ?> </p>
 
 				<form method="POST" action="process.php">
 					<ul class="choicess">
@@ -50,31 +45,27 @@
 							while($row=mysqli_fetch_assoc($choices)){
 								if ($typeOfQuiz == "Multiple Questions") {
 									echo "
-										<li><input type='radio' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
+										<li><input type='radio' name='choice' required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
 						 			";
 					 			}
 								if ($typeOfQuiz == "True or False") {
 									echo "
-										<li><input type='radio' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
+										<li><input type='radio' name='choice' required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
 						 			";
 					 			}
 								if ($typeOfQuiz == "Identification") {
 									echo "
-										<li><input type='text' name='choice' value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</li>
-						 			";
+										<input type='text' name='identiAns' required> ";
 					 			}
 
 					 } ?>
 
 
 					</ul>
+					<input type="hidden" name="code" value="<?php echo $code; ?>">
 					<input type="hidden" name="number" value="<?php echo $number; ?>">
 					<input type="submit" name="submit" value="Submit">
-
-
 				</form>
-
-
 			</div>
 
 	</main>

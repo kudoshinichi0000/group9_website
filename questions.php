@@ -110,59 +110,45 @@
           </div>
         </div>";
 
-    //displaying Buttons
-    echo "
-      <br><br>
-			<br><br>
-
-			<div class='container01'>
+  //displaying Buttons
+  echo "
+  <br><br><br><br>
+		<div class='container01'>
 			<button class='view-modaal'>Type Questions</button>
-<div class='popuup'>
-  <div class='headerMod'>
-    <span>Quiz Editor</span>
-    <div class='close'><i class='uil uil-times'></i></div>
-  </div>
-  <div class='content'>
-	<br>
-	<br>
+				<div class='popuup'>
+  				<div class='headerMod'>
+    				<span>Quiz Editor</span>
+    				<div class='close'><i class='uil uil-times'></i></div>
+  			  </div>
 
-    <ul class='icons'>
-			<a href='addMultipleQuestion.php?quiz_code=$code'><i class='fas fa-comments'></i></a></li>
-			<a href='TrueOrFalse.php?quiz_code=$code'><i class='fas fa-check-square'></i></a>
-			<a href='Identification.php?quiz_code=$code'><i class='fas fa-minus-square'></i></a>
+  					<div class='content'><br><br>
+							<ul class='icons'>
+								<a href='addMultipleQuestion.php?quiz_code=$code'><i class='fas fa-comments'></i></a></li>
+								<a href='TrueOrFalse.php?quiz_code=$code'><i class='fas fa-check-square'></i></a>
+								<a href='Identification.php?quiz_code=$code'><i class='fas fa-minus-square'></i></a>
+							</ul>
 
-    </ul>
-    <div class='field'>
-			 <p> MULTIPLE CHOICE</p>
-			 <p> TRUE OR FALSE</p>
-				<p> IDENTIFICATION</p>
-
-    </div>
-  </div>
-</div>
+    						<div class='field'>
+			 						<p> MULTIPLE CHOICE</p>
+			 						<p> TRUE OR FALSE</p>
+									<p> IDENTIFICATION</p>
+    						</div>
+  						</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-
-
-
-			</div>
-			</div>
 			<div class='icongb'>
         <a href='quiz_list.php'<i class='fas fa-arrow-alt-circle-left'></i></a>
-			</div>
-			<br>
-			<br>
-			<br>
-
-
+			</div><br><br><br>
     ";
 
     ?>
+
 		<script src="script/popup.js"> </script>
 
-
-
-    <!--In this area will displaying all questions created by the user-->
+		<!--In this area will displaying all questions created by the user-->
     <div class="SectionQ">
 
       <!---Labeling all Questions--->
@@ -281,9 +267,5 @@
  </script>
 <<<<<<< HEAD
  -->
-
-=======
- -->*/?>
->>>>>>> b30972a0f73ff7d63b09c5a1803bc350d45459a2
   </body>
 </html>

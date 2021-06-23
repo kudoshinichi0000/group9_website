@@ -9,9 +9,6 @@
 	}
 
  ?>
-  <?php
-	?>
-	include_once("navbaradmin.php");
 
  <?php
  //Including database
@@ -91,12 +88,11 @@
 
  }
 
-		//This query is for question Number
- 		$query = "SELECT * FROM questions";
- 		$questions = mysqli_query($con,$query);
- 		$total = mysqli_num_rows($questions);
- 		$next = $total+1;
-
+ //This query is for question Number
+ $query = "SELECT * FROM questions WHERE quiz_code = $code";
+ $questions = mysqli_query($con,$query);
+ $total = mysqli_num_rows($questions);
+ $next = $total+1;
 
  ?>
 
@@ -134,7 +130,7 @@
 									<div class="row form-group">
                     <div class="col">
                       <label for="question_number">Question Number:</label>
-											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" min="1" >
+											<input type="number" class="form-control" name="question_number" value="<?php echo $next;  ?>" min="1" readonly>
                     </div>
                   </div>
                   <div class="row form-group">

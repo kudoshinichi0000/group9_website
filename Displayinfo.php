@@ -114,7 +114,7 @@
            </tr>
 
          </table>
-          <td colspan="2"><?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?n=1'>Play Quiz</a></h2>";?></td>
+          <td colspan="2"><?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?n=1&quiz_code=$QuizCode'>Play Quiz</a></h2>";?></td>
        </div><br><br><br><br>
 
 
