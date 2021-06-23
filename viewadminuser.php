@@ -9,7 +9,7 @@
 	}
 
  ?>
- 
+
 <?php include_once("db.php");
 
 if ($_SESSION["username"] == "mod") {
@@ -24,6 +24,33 @@ $admin = mysqli_fetch_assoc($result);
 $fetchname = $admin['username'];
 $fetchid = $admin['userid'];
 ?>
+<?php
+include_once "db.php";
+include_once "navbaradmin.php";
+$userId = $_SESSION['userid'];
+
+
+//This is for user id
+//Step 2 Prepare the query
+$query = " SELECT * FROM admin WHERE userid = '$userId'";
+
+//Step 3 Perform the query
+$execQuery = mysqli_query($con, $query);
+
+//Getting/fetching all rows from the executed query
+$fetch = mysqli_fetch_assoc($execQuery);
+$username = $fetch['username'];
+
+?>
+<br><br><br><br><br><br>
+
+<?php echo "
+<div class='resultadmin'>
+	Username: $username <br>
+	UserId: $userId
+</div>
+
+	"; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -95,7 +122,7 @@ $fetchid = $admin['userid'];
      <?php unset($_SESSION['delsuccess']);
     endif;?>
 
-    <div style="margin-top: 5rem;" class="container">
+    <div style="margin-top: 0.8rem;" class="container">
         <div class="card">
           <div class="card-header">
               <h2><b>ADMIN'S PROFILE<b></h2>
