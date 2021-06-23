@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900');
+/*
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', san-serif;
+}
+*/
+body{
+  background-color:white;
+}
+.menu{/*iadjust san mapupunta yung dropdown*/
+  margin-left: 20px;
+}
+.action .profile{
+  overflow: hidden;
+  cursor: pointer;
+}
+.action .menu{ /*size of the container of icons*/
+  position: absolute;
+  top: 80px;
+  margin-top: -30px;
+  margin-left: -230px;
+  padding: 10px 5px; /*size nung container*/
+  background: #fff;
+  box-sizing:  0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.action .menu.active{
+  visibility: visible;
+  opacity: 1;
+
+}
+.action .menu::before{ /*maliit na3white sa taas --diamond--*/
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.action .menu h3{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.2em;
+}
+.action .menu h3 span{
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 400;
+
+}
+.action .menu .iconsss i{
+/*height: 10px; pwede rin to lakihan  yung sa white na popup
+width: 10px; all about icons*/
+font-size: 42px; /* icon size*/
+margin: 10px 10px; /*space bet icons and its text*/
+text-decoration: none;
+border: 1.4px solid transparent;
+color:#420264;;
+}
+
+.action .menu ul li{
+  list-style: none;
+  padding: 5px 0;
+  direction: flex;
+
+}
+.action .menu ul li a{ /* text icon */
+  display: inline-block;
+  text-decoration: none;
+  color:#555;
+  font-size: 13px;
+  font-weight: 900;
+  transition: 0.5s
+}
+.action .menu ul li:hover a{ /* text icon when hovered*/
+  color:#0f4ce4;
+}

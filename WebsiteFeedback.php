@@ -116,7 +116,6 @@ a:hover, a:active {
 
     <div class="feedback-title">
         <h1>Give Your Feedback </h1>
-
         <h2>We are always to give the best to serve you! </h2>
     </div>
     <div class="feedback-form">
@@ -133,7 +132,7 @@ a:hover, a:active {
           <input type="submit" class="form-control submit" name="submit" value="SEND FEEDBACK">
         </form>
   </div>
-    <a href="index.php">GO BACK</a>
+    <a href="1. Startup Page.php">GO BACK</a>
   </body>
 </html>
 
