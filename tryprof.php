@@ -90,8 +90,9 @@
       position: absolute;
       top: 80px;
       margin-top: -18px;
-      margin-left: -290px;
-      height: 13em;
+      margin-left: -230px;
+      height: 10em;
+      width: 9em;
       padding: 4px 5px; /*size nung container*/
       background: white;
       box-sizing:  0 1px 5px rgba(0, 0, 0, 0.1);
@@ -111,8 +112,8 @@
     .action .menu::before{ /*maliit na3white sa taas --diamond--*/
       content: '';
       position: absolute;
-      top: -5px;
-      right: 8px;
+      top: -6px;
+      right: 55px; /*adjustposition*/
       width: 20px;
       height: 20px;
       background: #fff;
@@ -129,9 +130,8 @@
     }
     .action .menu h3 span{
       font-size: 20px;
-      color: #cecece;
+      color: #420264;
       font-weight: 400;
-      padding: 5px;
 
     }
     .action .profile:hover .menu{
@@ -151,6 +151,18 @@
     text-decoration: none;
     border: 1.4px solid transparent;
     color:#420264;;
+    padding: 0;
+
+
+    }
+    .action .menu .iconsss i:hover{
+    /*height: 10px; pwede rin to lakihan  yung sa white na popup
+    width: 10px; all about icons*/
+    font-size: 35px; /* icon size*/
+    margin: 2px 8px; /*space bet icons and its text*/
+    text-decoration: none;
+    border: 1.4px solid transparent;
+    color: #01949A;
     padding: 0;
 
 
@@ -179,7 +191,7 @@
 
     }
     .action .menu ul li:hover a{ /* text icon when hovered*/
-      color:#0f4ce4;
+      color: #016367;
       border-radius: none;
       box-shadow: none;
       line-height: none;
@@ -198,11 +210,11 @@
 
               <ul>
                 <li><div class=""><a href="viewadminuser.php">View User</a></div></li>
-                <li><div class=""><a href="resultsadmin.php">results</a></div></li>
+                <li><div class=""><a href="resultsadmin.php">Results</a></div></li>
                 <li><div class=""><a href="quiz_list.php">Create Quiz</a></div></li>
                 <li><div class="profile" onclick="menuToggle();" style=" font-size: 35px;color: white; margin:-10px;"><i class="far fa-user-circle"></i>
                     <div class="menu">
-                        <h3>Welcome to BUZZFEED!<br><span>HELOO User!</span></h3>
+                        <h3>Welcome to BUZZFEED!<br><span><br> Hello User!</span></h3>
                           <ul class="iconsss">
                             <li><i class="fas fa-user-alt"></i><a href="resultsadmin.php">Profile</a></li>
                             <li><i class="fas fa-user-edit"></i><a href="#">Edit</a></li>
