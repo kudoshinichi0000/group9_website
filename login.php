@@ -51,21 +51,14 @@
 	<title>Login Form</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/btn.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<style media="screen">
-		body{
-			background-image: url("css/images/LogBackground.jfif");
-			margin: 0;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 	<!-- If login info is not correct -->
-	<?php include_once "db.php"; include_once "navbar.php" ?><br>
+	<?php include_once "db.php"; include_once "navbar2.php" ?>
 	<?php if(isset($_SESSION['errormessage'])): ?>
 		 <script type="text/javascript">
 		 		alert('<?php echo $_SESSION['errormessage']; ?>');
@@ -73,41 +66,44 @@
 		 <?php unset($_SESSION['errormessage']);
 	 	endif;?>
 		<!-- Admin Added -->
-		<?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+		<?php include_once "db.php"; include_once "navbar2.php" ?><
 		<?php if(isset($_SESSION['regsuccess'])): ?>
 			 <script type="text/javascript">
 			 		alert('<?php echo $_SESSION['regsuccess']; ?>');
 			 </script>
 			 <?php unset($_SESSION['regsuccess']);
 		 	endif;?>
-	<div id="box">
-		<form method="POST">
-			<table class="formchild" style="border-radius: 2em;">
-				<tr>
-					<th><br><div class="centerBlack">Login</div></th>
-				</tr>
-				<tr>
-					<td><input type="text" name="username" placeholder="Username:" class="btnon" required></td>
-				</tr>
-				<tr>
-					<td><input type="password" name="password" placeholder="Password: " class="btnon" required> </td>
-				</tr>
-				<tr>
-            <td colspan="2"><input type="submit" value="LOGIN" id="login"></td>
-        </tr>
-        		<tr>
-								<td><a href="#" class="iconbtn far fa-arrow-alt-circle-left"></i></td>
-          	</tr>
-						<tr id="formFooter">
-								<td colspna="2">Don't have any account?</td>
-						</tr>
-						<tr>
-							<td><a class="underlineHover" href="register.php">Register</a></td>
-						</tr>
-			</table>
-		</form>
-	</div>
-
+	<div class="container">
+		<div class="img">
+			<img src="res/images/bg1.svg">
+		</div>
+		<div class="login-content">
+			<form method="POST">
+				<img src="res/images/prof.svg">
+				<h2 class="title">LOGIN</h2>
+							<div class="input-div one">
+								 <div class="i">
+										<i class="fas fa-user"></i>
+								 </div>
+								 <div class="div">
+										<h5>Username</h5>
+										<input type="text" name="username" class="input" required>
+								 </div>
+							</div>
+							<div class="input-div pass">
+								 <div class="i">
+										<i class="fas fa-lock"></i>
+								 </div>
+								 <div class="div">
+										<h5>Password</h5>
+										<input type="password" name="password" class="input" required>
+								 </div>
+							</div>
+							<input type="submit" class="btn" value="Login" id="login">
+							<h4>Don't have any account?<a href="register.php">Sign In</a></h4>
+						</form>
+				</div>
+		</div>
+		<script type="text/javascript" src="script/main01.js"></script>
 </body>
-		<?php include_once "footerr.php";?>
 </html>

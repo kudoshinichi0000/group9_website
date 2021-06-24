@@ -63,13 +63,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   <head>
     <meta charset="utf-8">
     <title>Register</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min4.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- If User Exists -->
-    <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+    <?php include_once "db.php"; include_once "navbar.php" ?>
   	<?php if(isset($_SESSION['userexists'])): ?>
   		 <script type="text/javascript">
   		 		alert('<?php echo $_SESSION['userexists']; ?>');
@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 <?php unset($_SESSION['userexists']);
   	 	endif;?>
     <!-- If register is not successful -->
-    <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+    <?php include_once "db.php"; include_once "navbar.php" ?>
   	<?php if(isset($_SESSION['registererror'])): ?>
   		 <script type="text/javascript">
   		 		alert('<?php echo $_SESSION['registererror']; ?>');
@@ -85,7 +85,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 <?php unset($_SESSION['registererror']);
   	 	endif;?>
       <!-- If Register is Successful -->
-      <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+      <?php include_once "db.php"; include_once "navbar.php" ?>
     	<?php if(isset($_SESSION['regsuccess'])): ?>
     		 <script type="text/javascript">
     		 		alert('<?php echo $_SESSION['regsuccess']; ?>');
@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     		 <?php unset($_SESSION['regsuccess']);
     	 	endif;?>
         <!-- if Password is incorrect -->
-        <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+        <?php include_once "db.php"; include_once "navbar.php" ?>
       	<?php if(isset($_SESSION['passerror'])): ?>
       		 <script type="text/javascript">
       		 		alert('<?php echo $_SESSION['passerror']; ?>');
