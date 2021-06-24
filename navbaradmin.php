@@ -143,6 +143,8 @@
       float: none;
       display: block;
       text-align: left;
+      text-decoration: none;
+
     }
     .actionn .menu .iconsss i{
     /*height: 10px; pwede rin to lakihan  yung sa white na popup
@@ -324,8 +326,7 @@ to {
 opacity: 1;
 }
 }
-<!--  css for the message alert delete button options, yes or no -->
-<style>
+/*css for the message alert delete button options, yes or no */
 .buttonnn{
   border:none;
   color:white;
@@ -453,7 +454,7 @@ $username = $fetch['username'];
    </script>
    <?php unset($_SESSION['delsuccess']);
   endif;?>
-  
+
 <?php echo "
 <div id='my-modal' class='modal'>
   <div class='modal-content'>

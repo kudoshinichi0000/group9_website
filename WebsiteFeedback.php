@@ -150,7 +150,7 @@ a:hover, a:active {
 
       //Inserting feedback into website_feedback table
       $query = "INSERT INTO website_feedback (name, email, feedback)
-     	VALUES ('$name', '$email','$Feedback')";
+     	VALUES ('$name', '$email','$Feedback')"
 
     	//perform the query
      	$result = mysqli_query($con,$query);

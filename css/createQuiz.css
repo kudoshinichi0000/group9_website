@@ -49,7 +49,7 @@ body{
 }
 
 .action:hover{
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ body{
 }
 
 .addquiz{
-  border: 1px solid green;
+  border: 1px solid black;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-left: 1em;
@@ -129,7 +129,7 @@ body{
 }
 
 .addquiz:hover{
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
