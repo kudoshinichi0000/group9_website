@@ -45,6 +45,18 @@ $username = $fetch['username'];
 <br><br><br><br><br><br>
 
 <?php echo "
+	<div class='container'>
+		<div class='heading'>
+			<h1></h1>
+		</div>
+		<div class='row'>
+			<div class='card'>
+				<div class='card-header'>
+					<h1></h1>
+				</div>
+				<div class='card-body'
+		</div>
+	</div>
 <div class='resultadmin'>
 	Username: $username <br>
 	UserId: $userId
