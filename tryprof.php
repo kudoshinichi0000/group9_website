@@ -21,6 +21,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', san-serif;
+
     }
 
     body{
@@ -195,15 +196,16 @@
       line-height: none;
     }
     .btn-danger{
-      justify-content: center;
       position: relative;
       display: inline-block;
-      padding:12px 36px;
+      padding:10px 60px;
+      margin: 10px 10px;
+      cursor:pointer;
       color:#fff;
+      text-align:left;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 18px;
-      letter-spacing: 2px;
       border-radius: 40px;
       background: linear-gradient(90deg,#0162c8,#55e7fc);
 
@@ -344,7 +346,7 @@ opacity: 1;
       </div>
       <div class="modal-footer">
         <h3>
-          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'>DELETE</button>
+          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger' style='width:100px; text-align:center;'>DELETE</button>
           <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center; margin:5px;'>EDIT</a>Modal Footer</h3>
       </div>
     </div>
