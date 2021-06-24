@@ -118,7 +118,7 @@
                           <th scope='row'>$code</th>
 
                           <td scope='row'>
-                            <button type='button' data-toggle='modal' data-target='#DeleteModal' class='btn btn-danger badge-pill text-right float-right' style='text-align:center; margin:5px;'>Delete</button>
+														<a href='deleteQuiz.php?quiz_code=$code' type='button' class='btn btn-danger badge-pill text-right float-right' style='text-align:center; margin:5px;'>Delete</a>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' text-right style='width:80px; text-align:center; margin: 5px;'>Edit Title</a>
                             <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style=' text-align:center; margin: 5px;'>+ Questions</a>
 
@@ -173,17 +173,8 @@
 	<?php
 		if(isset($_POST['Confirm'])){
 			//Step 1 Database Connectivity
-			include_once "db.php";
-
-			//Will check if the user try to access pages without logging in
-			if(empty($_SESSION["userid"])){
-				header("Location:login.php");
-			}
-
-		 ?>
-
-		<?php
 		  include_once("db.php");
+
 			//Var_dump
 		  $code = $_GET['quiz_code'];
 			$Confirm = $_POST["Confirm"];

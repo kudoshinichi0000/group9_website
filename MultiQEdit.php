@@ -10,6 +10,46 @@
 
  ?>
 
+	<?php
+
+	/*
+
+	Hello po miss, dapat ito po yung Edit page for Multiple questions kaso dahil nga po binago ko yung mga methods
+	Sa pag gawa ng questions sa add multiple questions, add true or false at add identifications ngayong 90% completion
+	Hindi ko na po sya magawa/debug kaya ang ginawa ko nilagyan ko nalang po syang attribute na readonly kaya
+	parang naging view question nalang po sya
+
+	pero naman po nung 50-75% completion ng website meron po talaga syang edit and delete button at gumagana
+	naman po dati yung edit and delete questions po namin, dahil lang po sa few changes ngayong 90% hindi ko na po ma debug
+	*/
+
+
+	/*
+	//If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
+	if(isset($_POST['submit'])){
+
+		//Vardump
+		$question = $_POST['question'];
+
+	//Hidden input
+		$quizCode = $_POST['code'];
+	$id = $_POST['id'];
+
+	 // First Query for questions Table
+		$query = "UPDATE questions
+							SET question = $question
+							WHERE id = $id";
+
+	//perform the query
+		$result = mysqli_query($con,$query);
+
+		//If sucessfull, it will redirect in questions.php
+			header("Location: questions.php?quiz_code=$quizCode");
+		}
+
+	*/
+
+	 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,7 +67,7 @@
 
     <?php
 		//including navbar for admin
-    //include_once("navbaradmin.php");
+    include_once("navbaradmin.php");
 		?>
 
 		<?php
@@ -71,7 +111,7 @@
                   <div class="row form-group">
                     <div class="col">
                       <label for="question">Question:</label>
-                     <input type='text' class="form-control"  placeholder="Enter your question" name='question' value="<?php echo $question; ?>" required>
+                     <input type='text' class="form-control"  placeholder="Enter your question" name='question' value="<?php echo $question; ?>" readonly>
                     </div>
                   </div>
                   <div class="row form-group">
@@ -94,15 +134,17 @@
 
 											<?php
 												//query for Getting the value of the questions
-												$queryy = "SELECT * FROM option WHERE id = $id";
+												$queryy = "SELECT * FROM option WHERE quiz_code = $code AND question_number = $next";
 												$questionss = mysqli_query($con,$queryy);
 											  while($fetchh = mysqli_fetch_assoc($questionss)){
 												$options = $fetchh["options"];
 
 														echo "
 			                        <div class='form-outline mb-4'>
-			                          <textarea  class='form-control' rows='3' cols='40' readonly value=' ";?> <?php echo $options; ?> <?php echo"' required>$options</textarea>
+			                          <textarea  class='form-control' rows='3' cols='40' readonly>$options</textarea>
 			                          </div>
+
+
 														";
 													}
 												?>
@@ -110,12 +152,14 @@
                   </div>
                   <div class="row form-group" style="margin-top: 40px;">
                     <div class="col">
-                      <button type="submit" name="submit" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>
-                        <?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+											<?php
+                      //<button type="submit" name="submit" class="btn btn-outline-info float-right" style='margin-left:15px;'value="Submit">Submit</button>?>
+                        <?php //echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>";?>
+												<?php echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Go Back</a>"; ?>
                     </div>
                   </div>
-                  <input type="hidden" name="code" value="<?php echo "$code"; ?>">
-									<input type="hidden" name="id" value="<?php echo "$id"; ?>">
+                  <input type="hidden" name="code" value="<?php echo $code; ?>">
+									<input type="hidden" name="id" value="<?php echo $id; ?>">
                 </form>
               </div>
             </div>
@@ -126,29 +170,3 @@
     <br><br><br><br> <br><br><br>
   </body>
 </html>
-
-<?php
-//If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
-if(isset($_POST['submit'])){
-
-	//Vardump
-	$question = $_POST['question'];
-
-//Hidden input
-	$quizCode = $_POST['code'];
-$id = $_POST['id'];
-
- // First Query for questions Table
-	$query = "UPDATE questions
-						SET question = $question
-						WHERE id = $id";
-
-//perform the query
-	$result = mysqli_query($con,$query);
-
-	//If sucessfull, it will redirect in questions.php
-		header("Location: questions.php?quiz_code=$quizCode");
-	}
-
-
-?>
