@@ -194,19 +194,18 @@
       box-shadow: none;
       line-height: none;
     }
-    .badge-info{
-      color:#fff;background-color:#17a2b8
-      }
-      .badge-info[href]:focus,.badge-info[href]:hover{
-        color:#fff;text-decoration:none;
-        background-color:#117a8b;
-      }
-      .badge-danger{
-        color:#fff;background-color:#dc3545
-        }
-        .badge-danger[href]:focus,.badge-danger[href]:hover{
-          color:#fff;text-decoration:none;background-color:#bd2130;
-        }
+    .btn-danger{
+      display: inline-block;
+      padding:12px 36px;
+      color:#fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 2px;
+      border-radius: 40px;
+      background: linear-gradient(90deg,#0162c8,#55e7fc);
+
+    }
 
     :root {
 --modal-duration: 1s;
@@ -343,7 +342,7 @@ opacity: 1;
       </div>
       <div class="modal-footer">
         <h3>
-          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'>DELETE</button>
+          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'>DELETE</button>
           <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center; margin:5px;'>EDIT</a>Modal Footer</h3>
       </div>
     </div>
