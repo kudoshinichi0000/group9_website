@@ -58,6 +58,7 @@ $username = $fetch['username'];
 					<p>
 					<i class='fas fa-user-circle'></i>
 					Username: $username <br>
+					<i class='fas fa-address-card'></i>
 					UserId: $userId
 					</p>
 				</div>
