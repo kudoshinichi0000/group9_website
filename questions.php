@@ -186,7 +186,7 @@
 											<i style='float:left; margin-left: 2em; font-size: 1em;'> $typeOfQuiz </i>
 	                    <i style='float:left; margin-left: 1.5em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
 	                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question:  <colspan style='margin-left:0.5em;'>$questionn</colspan></i>
-											<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/view.gif' width='4%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+											<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/view.gif' width='3.9%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
 											";
 									 }
 									 if ($typeOfQuiz == "True or False") {
