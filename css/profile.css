@@ -99,23 +99,23 @@ body {
   font-family: sans-serif;
 }
 
-.container {
+.cont {
   width: 100%;
   margin: 50px auto;
 }
-.heading {
+.head {
   text-align: center;
   font-size: 30px;
   margin-bottom: 50px;
 }
 
-.row {
+.rows {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
 }
-.card {
+.cardd {
   width: 90%;
   height: 30%;
   background: #fff;
@@ -124,20 +124,20 @@ body {
   transition: 0.3s;
 }
 
-.card-header {
+.card-headerr {
   text-align: center;
   padding: 15px 10px;
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   color: #fff;
 }
 
-.card-body {
+.card-bodyy {
   padding: 40px 20px;
   text-align: center;
   font-size: 18px;
 }
 
-.card-body .btn {
+.card-body .btnn {
   display: block;
   color: #fff;
   text-align: center;
@@ -147,13 +147,13 @@ body {
   padding: 10px 5px;
 }
 
-.card:hover {
+.cardd:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 1000px) {
-  .card {
+  .cardd {
     width: 40%;
   }
 }

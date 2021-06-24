@@ -45,14 +45,14 @@ $username = $fetch['username'];
 <br><br><br><br><br><br>
 
 <?php echo "
-	<div class='container'>
-		<div class='heading'>
+	<div class='cont'>
+		<div class='head'>
 			<h1></h1>
 		</div>
-		<div class='row'>
+		<div class='rows'>
 			<div class='card'>
 				<div class='card-header'>
-					<h1></h1>
+					<h1> My Profile</h1>
 				</div>
 				<div class='card-body'>
 					<p>
