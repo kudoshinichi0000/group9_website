@@ -172,31 +172,43 @@
          $question = $fetchQuestion['question'];
          $points = $fetchQuestion['questionPoints'];
          $typeOfQuiz = $fetchQuestion['typeOfQuiz'];
+				 if(strlen($question) >= 0){
+            $questionn = substr($question,0,40) . " ...";
 
            //Display all Multiple Question questions
            echo "
-             <table class='cons' width='100%' height='1em' style='background-color: #dacb72;'>
+             <table class='cons' width='100%' height='1em' style='background-color: #cce5ff;'>
                <tr>
-                 <th colspan='5'>
-                   <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
-                   <i style='float:left; margin-left: 1em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
-                   <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>";
+                 <th colspan='5'>";
 
 									 if ($typeOfQuiz == "Multiple Questions") {
-                   		echo "<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+                   		echo "
+											<i style='float:left; margin-left: 2em; font-size: 1em;'> $typeOfQuiz </i>
+	                    <i style='float:left; margin-left: 1.5em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
+	                    <i style='float:left; margin-left: 1em; font-size: 1em;'>Question:  <colspan style='margin-left:0.5em;'>$questionn</colspan></i>
+											<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/view.gif' width='4%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>
+											";
 									 }
 									 if ($typeOfQuiz == "True or False") {
-                   		echo " <a href='ToFEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+                   		echo "
+											<i style='float:left; margin-left: 3em; font-size: 1em;'> $typeOfQuiz </i>
+	                    <i style='float:left; margin-left: 3em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
+	                    <i style='float:left; margin-left: 1.2em; font-size: 1em;'>Question: <colspan style='margin-left:0.5em;'>$questionn</colspan></i>
+											<a href='ToFEdit.php?id=$questionId'><img src='res/logo/view.gif' width='3.9%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
                    }
 									 if ($typeOfQuiz == "Identification") {
-									 		echo "<a href='IEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+									 		echo "
+											<i style='float:left; margin-left: 3em; font-size: 1em;'> $typeOfQuiz </i>
+	                    <i style='float:left; margin-left: 2.5em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
+	                    <i style='float:left; margin-left: 1.5em; font-size: 1em;'>Question:  <colspan style='margin-left:0.5em;'>$questionn</colspan></i>
+											<a href='IEdit.php?id=$questionId'><img src='res/logo/view.gif' width='3.9%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
 									 }
 									 echo "
 								 </th>
                </tr>
              </table>";
          }
-
+			 }
 			?>
 
    </div>
