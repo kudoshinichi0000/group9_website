@@ -156,10 +156,8 @@
 
     }
     .action .menu .iconsss i:hover{
-    /*height: 10px; pwede rin to lakihan  yung sa white na popup
-    width: 10px; all about icons*/
-    font-size: 35px; /* icon size*/
-    margin: 2px 8px; /*space bet icons and its text*/
+    font-size: 35px; 
+    margin: 2px 8px;
     text-decoration: none;
     border: 1.4px solid transparent;
     color: #01949A;

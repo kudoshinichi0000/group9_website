@@ -98,7 +98,28 @@ color:#420264;;
   font-size: 30px;
   margin-bottom: 50px;
 }
+.card-bodyy i{
+/*height: 10px; pwede rin to lakihan  yung sa white na popup
+width: 10px; all about icons*/
+font-size: 35px; /* icon size*/
+margin: 2px 8px; /*space bet icons and its text*/
+text-decoration: none;
+border: 1.4px solid transparent;
+color:#420264;;
+padding: 0;
 
+
+}
+.card-bodyy i:hover{
+font-size: 35px;
+margin: 2px 8px;
+text-decoration: none;
+border: 1.4px solid transparent;
+color: #01949A;
+padding: 0;
+
+
+}
 .rows {
   display: flex;
   flex-direction: row;

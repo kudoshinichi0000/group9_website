@@ -65,10 +65,6 @@ $username = $fetch['username'];
 			</div>
 	  </div>
 	</div>
-<div class='resultadmin'>
-	Username: $username <br>
-	UserId: $userId
-</div>
 
 	"; ?>
 <!DOCTYPE html>
