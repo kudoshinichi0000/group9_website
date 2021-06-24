@@ -195,6 +195,7 @@
       line-height: none;
     }
     .btn-danger{
+      justify-content: center;
       position: relative;
       display: inline-block;
       padding:12px 36px;
