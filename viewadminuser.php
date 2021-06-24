@@ -54,8 +54,14 @@ $username = $fetch['username'];
 				<div class='card-header'>
 					<h1></h1>
 				</div>
-				<div class='card-body'
-		</div>
+				<div class='card-body'>
+					<p>
+					Username: $username <br>
+					UserId: $userId
+					</p>
+				</div>
+			</div>
+	  </div>
 	</div>
 <div class='resultadmin'>
 	Username: $username <br>
