@@ -228,6 +228,7 @@
     </div>
   </div>
 </nav>
+<div id="my-modal" class="modal">
 
 <script>
   function menuToggle(){
