@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="css/buttons.css">
-
-
-
 
 
 
@@ -200,90 +196,91 @@
       line-height: none;
     }
     :root {
- --modal-duration: 1s;
- --modal-color: #428bca;
+--modal-duration: 1s;
+--modal-color: #428bca;
 }
 
 body {
- font-family: Arial, Helvetica, sans-serif;
- background: #f4f4f4;
- font-size: 17px;
- line-height: 1.6;s
- display: flex;
- height: 100vh;
- align-items: center;
- justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f4f4;
+font-size: 17px;
+line-height: 1.6;s
+display: flex;
+height: 100vh;
+align-items: center;
+justify-content: center;
 }
 
 .modal {
- display: none;
- position: fixed;
- z-index: 1;
- left: 0;
- top: 0;
- height: 100%;
- width: 100%;
- overflow: auto;
- background-color: rgba(0, 0, 0, 0.5);
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
- margin: 10% auto;
- width: 60%;
- box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
- animation-name: modalopen;
- animation-duration: var(--modal-duration);
+margin: 10% auto;
+width: 60%;
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+animation-name: modalopen;
+animation-duration: var(--modal-duration);
 }
 
 .modal-header h2,
 .modal-footer h3 {
- margin: 0;
+margin: 0;
 }
 
 .modal-header {
- background: var(--modal-color);
- padding: 15px;
- color: #fff;
- border-top-left-radius: 5px;
- border-top-right-radius: 5px;
+background: var(--modal-color);
+padding: 15px;
+color: #fff;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
 }
 
 .modal-body {
- padding: 10px 20px;
- background: #fff;
+padding: 10px 20px;
+background: #fff;
 }
 
 .modal-footer {
- background: var(--modal-color);
- padding: 10px;
- color: #fff;
- text-align: center;
- border-bottom-left-radius: 5px;
- border-bottom-right-radius: 5px;
+background: var(--modal-color);
+padding: 10px;
+color: #fff;
+text-align: center;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 
 .close {
- color: #ccc;
- float: right;
- font-size: 30px;
- color: #fff;
+color: #ccc;
+float: right;
+font-size: 30px;
+color: #fff;
 }
 
 .close:hover,
 .close:focus {
- color: #000;
- text-decoration: none;
- cursor: pointer;
+color: #000;
+text-decoration: none;
+cursor: pointer;
 }
 
 @keyframes modalopen {
- from {
-   opacity: 0;
- }
- to {
-   opacity: 1;
- }
+from {
+opacity: 0;
 }
+to {
+opacity: 1;
+}
+}
+
 
     </style>
   </head>
@@ -332,8 +329,6 @@ body {
 					UserId:mlvdsklvmsdvs</p>
       </div>
       <div class="modal-footer">
-        <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn btn-danger badge-pill text-right float-right' style='width:80px; text-align:center; margin:5px;'>DELETE</button>
-        <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center; margin:5px;'>EDIT</a>
         <h3>Modal Footer</h3>
       </div>
     </div>
