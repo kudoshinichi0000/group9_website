@@ -180,8 +180,7 @@
                  <th colspan='5'>
                    <i style='float:left; margin-left: 1em; font-size: 1em;'> $typeOfQuiz </i>
                    <i style='float:left; margin-left: 1em; margin-right: 1em; font-size: 1em;'> Points: $points </i>
-                   <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>
-									 <a href='deleteQuestion.php?id=$questionId'><img src='res/logo/Delete.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
+                   <i style='float:left; margin-left: 1em; font-size: 1em;'>Question: $question</i>";
 
 									 if ($typeOfQuiz == "Multiple Questions") {
                    		echo "<a href='MultiQEdit.php?id=$questionId'><img src='res/logo/Edit.png' width='2%' style='border-radius: 25em;' alt='image not found' class='Prof' ></a>";
