@@ -156,7 +156,7 @@
 
     }
     .action .menu .iconsss i:hover{
-    font-size: 35px; 
+    font-size: 35px;
     margin: 2px 8px;
     text-decoration: none;
     border: 1.4px solid transparent;
@@ -228,6 +228,7 @@
     </div>
   </div>
 </nav>
+
 <script>
   function menuToggle(){
     const toggleMenu = document.querySelector('.menu');
