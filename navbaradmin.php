@@ -380,7 +380,7 @@ opacity: 1;
                     <div class="menu">
                         <h3>Welcome to BUZZFEED!<br><span><br> Hello User!</span></h3>
                           <ul class="iconsss">
-                            <li><i class="fas fa-user-alt"></i><a href="resultsadmin.php">Profile</a></li>
+                            <li><i class="fas fa-user-alt"></i><a href="viewadminuser.php">Profile</a></li>
                             <li id="modal-btn" class="button"><i class="fas fa-user-edit"></i><a href="#">Edit</a></li>
                             <li><i class="fas fa-sign-out-alt"></i><a href="logout.php">Logout</a></li>
 
