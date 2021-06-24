@@ -52,6 +52,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -99,6 +100,7 @@
 										<input type="password" name="password" class="input" required>
 								 </div>
 							</div>
+
 							<input type="submit" class="btn" value="Login" id="login">
 							<h4>Don't have any account?<a href="register.php">Sign In</a></h4>
 						</form>

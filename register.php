@@ -102,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
       		 </script>
       		 <?php unset($_SESSION['passerror']);
       	 	endif;?>
-
+          <br>
           <div class="container">
       		<div class="img">
       			<img src="res/images/bg5.svg">
