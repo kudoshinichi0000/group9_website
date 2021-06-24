@@ -228,72 +228,24 @@
     </div>
   </div>
 </nav>
-<?php
-
-	//Step 1 Database Connectivity
-	include_once "db.php";
-
-	//Will check if the user try to access pages without logging in
-	if(empty($_SESSION["userid"])){
-		header("Location:login.php");
-	}
-
- ?>
-
-<?php include_once("db.php");
-
-if ($_SESSION["username"] == "mod") {
-  header("location: viewadmin.php");
-  exit();
-}
-
-$id = $_SESSION['userid'];
-$query = "SELECT * FROM admin WHERE userid = $id";
-$result = mysqli_query($con, $query);
-$admin = mysqli_fetch_assoc($result);
-$fetchname = $admin['username'];
-$fetchid = $admin['userid'];
-?>
-<?php
-include_once "db.php";
-include_once "navbaradmin.php";
-$userId = $_SESSION['userid'];
-
-
-//This is for user id
-//Step 2 Prepare the query
-$query = " SELECT * FROM admin WHERE userid = '$userId'";
-
-//Step 3 Perform the query
-$execQuery = mysqli_query($con, $query);
-
-//Getting/fetching all rows from the executed query
-$fetch = mysqli_fetch_assoc($execQuery);
-$username = $fetch['username'];
-
-?>
-<?php echo "
-<div id='my-modal' class=modal'>
-  <div class='modal-content'>
-      <div class='modal-header'>
-        <span class='close'>&times;</span>
+<div id="my-modal" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
         <h2>Manage Profile</h2>
       </div>
-      <div class='modal-body'>
+      <div class="modal-body">
         <p>This is my modal</p>
-        <p>
-          <i class='fas fa-user-circle'></i>
-					Username: $username <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit
-          repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam nemo
-          commodi ab.</p>
+        <p>	<i class='fas fa-user-circle'></i>
+					Username: angekl mfnds <br>
+				  <i class='fas fa-id-badge'></i>
+					UserId:mlvdsklvmsdvs</p>
       </div>
-      <div class='modal-footer'>
+      <div class="modal-footer">
         <h3>Modal Footer</h3>
       </div>
     </div>
   </div>
-  ";?>
   <script src="main.js"></script>
 
 <script>
