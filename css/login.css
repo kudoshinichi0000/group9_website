@@ -49,14 +49,14 @@ form{
 }
 
 .login-content img{
-    height: 100px;
+    height: 90px;
 }
 
 .login-content h2{
 	margin: 15px 0;
 	color: #420264;
 	text-transform: uppercase;
-	font-size: 2.9rem;
+	font-size: 2.5rem;
 }
 
 .login-content .input-div{

@@ -139,7 +139,7 @@
                     <div class="menu">
                         <h3>Welcome to BUZZFEED!<br><span>HELOO User!</span></h3>
                           <ul class="iconsss">
-                            <li><i class="fas fa-user-alt"></i><a href="resultsadmin.php">My Profile</a></li>
+                            <li><i class="fas fa-user-alt"></i><a href="viewadminuser.php">My Profile</a></li>
                             <li><i class="fas fa-user-edit"></i><a href="#">Edit Profile</a></li>
                             <li><i class="fas fa-user-cog"></i><a href="#">Settings</a></li>
                             <li><i class="fas fa-sign-out-alt"></i><a href="logout.php"><br>Logout</a></li>
