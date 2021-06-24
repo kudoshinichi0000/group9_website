@@ -75,6 +75,7 @@ $username = $fetch['username'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min3.css">
+		<link rel="stylesheet" href="css/profile.css">
     <link type="text/css" rel="stylesheet" href="css/card.css">
 
     <script src="js/bootstrap.bundle.min.js"> </script>
