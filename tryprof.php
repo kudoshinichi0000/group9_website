@@ -195,25 +195,11 @@
       box-shadow: none;
       line-height: none;
     }
-    .btn-danger{
-      position: relative;
-      display: inline-block;
-      padding:10px 60px;
-      margin: 10px 10px;
-      cursor:pointer;
-      color:#fff;
-      text-align:left;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 18px;
-      border-radius: 40px;
-      background: linear-gradient(90deg,#0162c8,#55e7fc);
 
-    }
 
     :root {
 --modal-duration: 1s;
---modal-color: #428bca;
+--modal-color:linear-gradient(to right, #69008e, #2e4ebc, #0077d3, #009ad8, #00b9d5);
 }
 
 body {
@@ -226,6 +212,43 @@ height: 100vh;
 align-items: center;
 justify-content: center;
 }
+
+.btn-danger{
+  position: relative;
+  display: inline-block;
+  padding:5px 30px;
+  margin: 10px 30px;
+  cursor:pointer;
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 40px;
+   background-color:#420264;
+
+}
+.btn-edit {
+  position: relative;
+  display: inline-block;
+  padding:5px 30px;
+  margin: 10px 10px;
+  cursor:pointer;
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 40px;
+  background-color:#420264;
+  border: 1.5px solid #fff;
+
+}
+.btn-danger:hover {
+background-color: #0497ae;;
+
+}
+.btn-edit:hover {
+background-color:#9D31E3;
+
+}
+
 
 .modal {
 display: none;
@@ -241,7 +264,8 @@ background-color: rgba(0, 0, 0, 0.5);
 
 .modal-content {
 margin: 10% auto;
-width: 60%;
+width: 35%;
+padding:3px;
 box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 animation-name: modalopen;
 animation-duration: var(--modal-duration);
@@ -267,7 +291,7 @@ background: #fff;
 
 .modal-footer {
 background: var(--modal-color);
-padding: 10px;
+padding: 2px;
 color: #fff;
 text-align: center;
 border-bottom-left-radius: 5px;
@@ -338,16 +362,16 @@ opacity: 1;
         <h2>Manage Profile</h2>
       </div>
       <div class="modal-body">
-        <p>This is my modal</p>
+        <p>SAPAK O GAGANA KA?</p>
         <p>	<i class='fas fa-user-circle'></i>
-					Username: angekl mfnds <br>
+					Username: angekl mfnds sndad nerymskds <br>
 				  <i class='fas fa-id-badge'></i>
 					UserId:</p>
       </div>
       <div class="modal-footer">
         <h3>
-          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger' style='width:100px; text-align:center;'>DELETE</button>
-          <a href='editadmin.php?id={$fetchid}' type='button' class='btn btn-info badge-pill text-centered float-right' style='width:80px; text-align: center; margin:5px;'>EDIT</a>Modal Footer</h3>
+          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger'>DELETE</button>
+          <a href='editadmin.php?id={$fetchid}' type='button' class=' btn-edit'>EDIT</a></h3>
       </div>
     </div>
   </div>
