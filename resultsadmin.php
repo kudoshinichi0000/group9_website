@@ -14,13 +14,13 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+
 	<!---Ito yung nag bibigay ng cursive font style sa header--->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<style media="screen">
 		.resultadmin{
-			margin-bottom: 25em;
+			margin-bottom: 35em;
 		}
 	</style>
 </head>

@@ -87,3 +87,95 @@ color:#420264;;
 .action .menu ul li:hover a{ /* text icon when hovered*/
   color:#0f4ce4;
 }
+
+
+.cont {
+  width: 100%;
+  margin: 50px auto;
+}
+.head {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.card-bodyy i{
+/*height: 10px; pwede rin to lakihan  yung sa white na popup
+width: 10px; all about icons*/
+font-size: 35px; /* icon size*/
+margin: 2px 8px; /*space bet icons and its text*/
+text-decoration: none;
+border: 1.4px solid transparent;
+color:#420264;;
+padding: 0;
+
+
+}
+.card-bodyy i:hover{
+color: #01949A;
+padding: 0;
+
+
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.cardd {
+  width: 90%;
+  height: 30%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-headerr {
+  text-align: center;
+  padding: 15px 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.card-bodyy {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btnn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.cardd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .cardd {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

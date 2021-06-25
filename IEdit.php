@@ -1,5 +1,5 @@
 <?php
-/*
+
 	//Step 1 Database Connectivity
 	include_once "db.php";
 
@@ -11,8 +11,21 @@
  ?>
 
  <?php
- include_once("db.php");
- $Quizid = $_GET["id"];
+
+ /*
+
+ Hello po miss, dapat ito po yung Edit page for Identification kaso dahil nga po binago ko yung mga methods
+ Sa pag gawa ng questions sa add multiple questions, add true or false at add identifications ngayong 90% completion
+ Hindi ko na po sya magawa/debug kaya ang ginawa ko nilagyan ko nalang po syang attribute na readonly kaya
+ parang naging view question nalang po sya
+
+ pero naman po nung 50-75% completion ng website meron po talaga syang edit and delete button at gumagana
+ naman po dati yung edit and delete questions po namin, dahil lang po sa few changes ngayong 90% hindi ko na po ma debug
+ */
+
+
+
+ /*
 
 	 if(isset($_POST['submit'])){
 		 //Database Connectivity
@@ -54,7 +67,7 @@
 
 	 }
 
-
+*/
   ?>
 
 <!DOCTYPE html>
@@ -71,7 +84,11 @@
   </head>
   <body>
     <?php
-      //include_once("navbaradmin.php");
+
+    include_once("db.php");
+    $Quizid = $_GET["id"];
+
+      include_once("navbaradmin.php");
 			echo "<br><br>";
 
       //Getting or fetching all rows from Identification
@@ -102,19 +119,19 @@
 												<div class='row form-group'>
 													<div class='col'>
 														<label for='question_number'>Question Number:</label>
-													 <input type='number' class='form-control' name='question_number' value='$next' min='1'>
+													 <input type='number' class='form-control' name='question_number' value='$next' min='1' readonly>
 													</div>
 												</div>
                           <div class='row form-group'>
                             <div class='col'>
                             <label for='IdenQuestion'>Question:</label>
-                            <input type='text' class='form-control' placeholder='Enter your question' name='IdenQuestion' value='$question' required>
+                            <input type='text' class='form-control' placeholder='Enter your question' name='IdenQuestion' value='$question' readonly>
                             </div>
                           </div>
                           <div class='row form-group'>
                             <div class='col'>
                             <label for='IdenAnswer'>Answer:</label>
-                            <input type='text' class='form-control'  name='IdenAnswer' value='$answer' required>
+                            <input type='text' class='form-control'  name='IdenAnswer' value='$answer' readonly>
                             </div>
                           </div>
                         <div class='row form-group'>
@@ -125,9 +142,10 @@
                        </div>
                        <div>
                        <div class='row form-group'style='margin-top: 40px;''>
-                        <div class='col'>
-                        <button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='submit'>Submit</button>
-                        <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+                        <div class='col'>";
+                        //<button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='submit'>Submit</button>
+                        //<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+                        echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Go Back</a>
                         <input type='hidden' name='quizCode' value='$code'>
                         <input type='hidden' name='quizId' value='$questionnnId'>
                       </form>
@@ -142,8 +160,8 @@
        </div>
      </div>
     ";
-  }*/
+  }
     ?>
-		Something Went Wrong
+
   </body>
 </html>

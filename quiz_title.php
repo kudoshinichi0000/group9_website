@@ -25,10 +25,8 @@
   <body>
 
     <?php
-      //Database Connectivity
-      include("db.php");
 
-      //include("functions.php");
+      include("functions.php");
 
       //inserting navbar for admin
       include_once("navbaradmin.php");

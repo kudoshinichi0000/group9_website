@@ -21,6 +21,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', san-serif;
+
     }
 
     body{
@@ -156,10 +157,8 @@
 
     }
     .action .menu .iconsss i:hover{
-    /*height: 10px; pwede rin to lakihan  yung sa white na popup
-    width: 10px; all about icons*/
-    font-size: 35px; /* icon size*/
-    margin: 2px 8px; /*space bet icons and its text*/
+    font-size: 35px;
+    margin: 2px 8px;
     text-decoration: none;
     border: 1.4px solid transparent;
     color: #01949A;
@@ -197,6 +196,132 @@
       line-height: none;
     }
 
+
+    :root {
+--modal-duration: 1s;
+--modal-color:linear-gradient(to right, #69008e, #2e4ebc, #0077d3, #009ad8, #00b9d5);
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f4f4;
+font-size: 17px;
+line-height: 1.6;s
+display: flex;
+height: 100vh;
+align-items: center;
+justify-content: center;
+}
+
+.btn-danger{
+  position: relative;
+  display: inline-block;
+  padding:5px 30px;
+  margin: 10px 30px;
+  cursor:pointer;
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 40px;
+   background-color:#420264;
+
+}
+.btn-edit {
+  position: relative;
+  display: inline-block;
+  padding:5px 30px;
+  margin: 10px 10px;
+  cursor:pointer;
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 40px;
+  background-color:#420264;
+  border: 1.5px solid #fff;
+
+}
+.btn-danger:hover {
+background-color: #0497ae;;
+
+}
+.btn-edit:hover {
+background-color:#9D31E3;
+
+}
+
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+margin: 10% auto;
+width: 35%;
+padding:3px;
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+animation-name: modalopen;
+animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+margin: 0;
+}
+
+.modal-header {
+background: var(--modal-color);
+padding: 15px;
+color: #fff;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.modal-body {
+padding: 10px 20px;
+background: #fff;
+}
+
+.modal-footer {
+background: var(--modal-color);
+padding: 2px;
+color: #fff;
+text-align: center;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.close {
+color: #ccc;
+float: right;
+font-size: 30px;
+color: #fff;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+@keyframes modalopen {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+
     </style>
   </head>
   <body>
@@ -217,7 +342,7 @@
                         <h3>Welcome to BUZZFEED!<br><span><br> Hello User!</span></h3>
                           <ul class="iconsss">
                             <li><i class="fas fa-user-alt"></i><a href="resultsadmin.php">Profile</a></li>
-                            <li><i class="fas fa-user-edit"></i><a href="#">Edit</a></li>
+                            <li id="modal-btn" class="button"><i class="fas fa-user-edit"></i><a href="#">Edit</a></li>
                             <li><i class="fas fa-sign-out-alt"></i><a href="logout.php">Logout</a></li>
 
                           </ul>
@@ -230,6 +355,28 @@
     </div>
   </div>
 </nav>
+<div id="my-modal" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Manage Profile</h2>
+      </div>
+      <div class="modal-body">
+        <p>SAPAK O GAGANA KA?</p>
+        <p>	<i class='fas fa-user-circle'></i>
+					Username: angekl mfnds sndad nerymskds <br>
+				  <i class='fas fa-id-badge'></i>
+					UserId:</p>
+      </div>
+      <div class="modal-footer">
+        <h3>
+          <button type='button' data-toggle='modal' data-target='#DeleteModal'class='btn-danger'>DELETE</button>
+          <a href='editadmin.php?id={$fetchid}' type='button' class=' btn-edit'>EDIT</a></h3>
+      </div>
+    </div>
+  </div>
+  <script src="script/main.js"></script>
+
 <script>
   function menuToggle(){
     const toggleMenu = document.querySelector('.menu');

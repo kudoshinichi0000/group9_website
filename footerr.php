@@ -88,6 +88,7 @@
       display: inline-block;
       border-radius:50%;
       background: #494848;
+      text-decoration: none;
     }
     .segment-three a i{
       color: #fff;
@@ -145,6 +146,7 @@
     .segment-three ul li a {
         position: relative;
         display: inline-block;
+        text-decoration: none;
         width: 50px;
         height: 50px;
         border-radius: 50%;

@@ -1,3 +1,4 @@
+<?php
 //Step 1 Database Connectivity
 	include_once "db.php";
 
@@ -10,6 +11,19 @@
 
  <?php
 
+	/*
+
+	Hello po miss, dapat ito po yung Edit page for true or false kaso dahil nga po binago ko yung mga methods
+	Sa pag gawa ng questions sa add multiple questions, add true or false at add identifications ngayong 90% completion
+	Hindi ko na po sya magawa/debug kaya ang ginawa ko nilagyan ko nalang po syang attribute na readonly kaya
+	parang naging view question nalang po sya
+
+	pero naman po nung 50-75% completion ng website meron po talaga syang edit and delete button at gumagana
+	naman po dati yung edit and delete questions po namin, dahil lang po sa few changes ngayong 90% hindi ko na po ma debug
+	*/
+
+
+	/*
  if(isset($_POST['submit'])){
 
  	//Vardump
@@ -79,7 +93,7 @@ if($correct_choice == "False"){
 						header("Location: questions.php?quiz_code=$quizCode");
 			}
 }
- }
+}*/
 
   ?>
 
@@ -100,8 +114,7 @@ if($correct_choice == "False"){
     <?php
       include_once("db.php");
       $quizId = $_GET['id'];
-      //include_once("navbaradmin.php");
-
+      include_once("navbaradmin.php");
 
       $queryy = " SELECT * FROM questions WHERE id = $quizId";
       $execQuery = mysqli_query($con, $queryy);
@@ -131,13 +144,13 @@ if($correct_choice == "False"){
 									<div class='row form-group'>
 										<div class='col'>
 											<label for='question_number'>Question Number:</label>
-										 <input type='number' class='form-control' name='question_number' value='$next'>
+										 <input type='number' class='form-control' name='question_number' value='$next' readonly>
 										</div>
 									</div>
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='TorFQuestion'>Question: </label>
-                          <input type='text' class='form-control' placeholder='Enter your question' name='TorFQuestion' value='$questionn' required>
+                          <input type='text' class='form-control' placeholder='Enter your question' name='TorFQuestion' value='$questionn' readonly>
                         </div>
                       </div>
                       <br>
@@ -147,17 +160,17 @@ if($correct_choice == "False"){
                             <div class='input-group-prepend'>
                              <label class='input-group-text' for='TorFAnswer'>Answer:</label>
                            </div>
-                              <select class='custom-select' id='inputGroupSelect01' name='TorFAnswer'>
+                              <select class='custom-select' id='inputGroupSelect01' name='TorFAnswer' >
                              ";
                                if ($answerr == 'True') {
                                  echo "
-                                   <option value='$answerr'>$answerr</option>
-                                   <option value='False'>False</option>
+                                   <option value='$answerr' selected>$answerr</option>
+                                   <option value='False' disabled>False</option>
                                  ";
                                }else{
                                  echo "
-                                   <option value='$answerr'>$answerr</option>
-                                   <option value='True'>True</option>
+                                   <option value='$answerr' selected>$answerr</option>
+                                   <option value='True' disabled>True</option>
                                  ";
                                }echo "
                              </select>
@@ -167,14 +180,15 @@ if($correct_choice == "False"){
                        <div class='row form-group'>
                          <div class='col'>
                            <label for='pointss'>Points:</label>
-                           <input type='number' class='form-control' placeholder='input points for this question' name='points' value='$pointss' required>
+                           <input type='number' class='form-control' placeholder='input points for this question' name='points' value='$pointss' readonly>
                          </div>
                        </div>
                        <div>
                          <div class='row form-group' style='margin-top: 40px;'>
-                         <div class='col'>
-                           <button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='Submit'>Submit</button>
-                           <a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+                         <div class='col'>";
+                           //<button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;' value='Submit'>Submit</button>
+                           //<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Cancel</a>
+													echo "<a href='questions.php?quiz_code=$code' class='btn btn-outline-danger float-right'>Go Back</a>
                          </div>
                        </div>
                      </div>

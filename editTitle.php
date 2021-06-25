@@ -55,7 +55,7 @@
               <div class='center'>
                 <div class='row formContainer'>
                   <div class='col-lg-12'>
-                    <form action='editTitleHandler.php' method='POST' enctype='multipart/form-data'>
+                    <form action='editTitle.php' method='POST' enctype='multipart/form-data'>
                       <div class='row form-group'>
                         <div class='col'>
                           <label for='title'>Title: </label>
@@ -109,7 +109,7 @@
                       <div>
                         <div class='row form-group' style='margin-top: 40px;'>
                         <div class='col'>
-                          <button type='submit' name='btn' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Save</button>
+                          <button type='submit' name='submit' class='btn btn-outline-info float-right' style='margin-left:15px;'value='Submit'>Save</button>
                           <a href='quiz_list.php' class='btn btn-outline-danger float-right'>Cancel</a>
                         </div>
                       </div>
@@ -126,5 +126,35 @@
           </div>
         </div>
 
+				<?php
+
+				if(isset($_POST['submit'])){
+
+				//Database Connectivity
+				include_once("db.php");
+
+				//var_dump()
+				$userid = $_SESSION["userid"];
+				$quizTitle = $_POST['title'];
+				$Desc = $_POST["Desc"];
+				$Catg = $_POST["catg"];
+
+				//Hidden Input
+				$quizCode = $_POST["quizCode"];
+
+				$query = " SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizCode'";
+				$execQuery = mysqli_query($con, $query);
+					if ($execQuery) {
+						$insertQuestion = "UPDATE quiz_list
+						SET quiz_code = '$quizCode', title = '$quizTitle', categories = '$Catg' ,description = '$Desc'
+						WHERE quiz_code = '$quizCode'";
+
+						$execInsert = mysqli_query($con, $insertQuestion);
+							if($execInsert){
+								header("location: quiz_list.php");
+							}
+					}
+				}
+				 ?>
   </body>
 </html>

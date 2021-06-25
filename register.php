@@ -63,13 +63,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   <head>
     <meta charset="utf-8">
     <title>Register</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <!-- If User Exists -->
-    <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+    <?php include_once "db.php"; include_once "navbar2.php" ?>
   	<?php if(isset($_SESSION['userexists'])): ?>
   		 <script type="text/javascript">
   		 		alert('<?php echo $_SESSION['userexists']; ?>');
@@ -77,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 <?php unset($_SESSION['userexists']);
   	 	endif;?>
     <!-- If register is not successful -->
-    <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+    <?php include_once "db.php"; include_once "navbar2.php" ?>
   	<?php if(isset($_SESSION['registererror'])): ?>
   		 <script type="text/javascript">
   		 		alert('<?php echo $_SESSION['registererror']; ?>');
@@ -85,7 +87,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   		 <?php unset($_SESSION['registererror']);
   	 	endif;?>
       <!-- If Register is Successful -->
-      <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+      <?php include_once "db.php"; include_once "navbar2.php" ?>
     	<?php if(isset($_SESSION['regsuccess'])): ?>
     		 <script type="text/javascript">
     		 		alert('<?php echo $_SESSION['regsuccess']; ?>');
@@ -93,38 +95,57 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     		 <?php unset($_SESSION['regsuccess']);
     	 	endif;?>
         <!-- if Password is incorrect -->
-        <?php include_once "db.php"; include_once "navbar.php" ?><br><br>
+        <?php include_once "db.php"; include_once "navbar2.php" ?>
       	<?php if(isset($_SESSION['passerror'])): ?>
       		 <script type="text/javascript">
       		 		alert('<?php echo $_SESSION['passerror']; ?>');
       		 </script>
       		 <?php unset($_SESSION['passerror']);
       	 	endif;?>
-    <div class="wrapper">
-      <div id="formContent">
-        <h1>Register</h1>
-          <form  method="post" enctype="multipart/form-data">
-      			<div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" name="username" placeholder="Username : ">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                  <input type="password" class="form-control" placeholder="Password: " required name="password">
-                </div>
-                <div class="col">
-                  <input type="password" class="form-control" placeholder="Confirm Password: " required name="password_conf">
-                </div>
-            </div>
-            <input type="submit" value="SignUp">
-      	    <div id="formFooter">
-              Already have an Account?
-              <br>
-              <a class="underlineHover" href="login.php">LOGIN</a>
-            </div>
-      		</form>
-      </div>
-    </div>
+          <br>
+          <div class="container">
+      		<div class="img">
+      			<img src="res/images/bg5.svg">
+      		</div>
+      		<div class="login-content">
+      			<form method="POST" e enctype="multipart/form-data">
+      				<img src="res/images/prof.svg">
+      				<h2 class="title">SignUp</h2>
+      							<div class="input-div one">
+      								 <div class="i">
+      										<i class="fas fa-user"></i>
+      								 </div>
+      								 <div class="div">
+      										<h5>Username</h5>
+      										<input type="text" name="username" class="input" required>
+      								 </div>
+      							</div>
+      							<div class="input-div pass">
+      								 <div class="i">
+      								 		<i class="fas fa-unlock-alt"></i>
+
+      								 </div>
+      								 <div class="div">
+      										<h5>Password</h5>
+      										<input type="password" name="password" class="input" required>
+      								 </div>
+      							</div>
+      							<div class="input-div pass">
+      								 <div class="i">
+      										<i class="fas fa-lock"></i>
+
+      								 </div>
+      								 <div class="div">
+      										<h5>Confirm Password</h5>
+      										<input type="password" name="password_conf" class="input" required>
+      								 </div>
+      							</div>
+
+      							<input type="submit" class="btn" value="SignUp" id="login">
+      							<h4>Already have an account?<a href="login.php">LOGIN</a></h4>
+      						</form>
+      				</div>
+      		</div>
+    <script type="text/javascript" src="script/main01.js"></script>
   </body>
 </html>
