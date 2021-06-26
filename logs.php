@@ -1,19 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Announce</title>
+
   </head>
   <body>
+
     <form class="" action="logsHandler.php" method="post">
-        <textarea name="content" placeholder="POTA"></textarea>
+        <textarea name="content" placeholder="Announce"></textarea>
         <input type="submit" name="submit" value="submit">
     </form>
 
     <hr>
     <h4>LOGS</h4>
     <?php
-    include_once ("db.php");
+    include_once "db.php";
         $id = $_SESSION['userid'];
         if ($_SESSION["username"] == "mod") {
           $selquery = "SELECT * FROM announcements";
