@@ -31,47 +31,56 @@
 <body>
 	</main>
 
-<div class="wrapper">
-      <div class="quiz">
-        <div class="quiz_header">
-          <div class="quiz_user">
-          	<div class="current"><h4><span class="name">Question <?php echo $number; ?> of <?php echo $total_questions; ?></span></h4> </div>
-          </div>
-          <div class="quiz_timer">
-            <span class="time">goodluck</span>
-          </div>
-        </div>
-        <div class="quiz_body">
-          <div id="questions">
+		<div class="wrapper">
+		      <div class="quiz">
+		        <div class="quiz_header">
+		          <div class="quiz_user">
+		          	<div class="current"><h4><span class="name">Question <?php echo $number; ?> of <?php echo $total_questions; ?></span></h4> </div>
+		          </div>
+		          <div class="quiz_timer">
+		            <span class="time">goodluck</span>
+		          </div>
+		        </div>
+		        <div class="quiz_body">
+		          <div id="questions">
+						<!---Questions--->
+								<p class="question">Question: <?php echo $question['question']; ?> </p>
 
+								<form method="POST" action="process.php">
+									<ul class="choicess">
+										<?php
+															while($row=mysqli_fetch_assoc($choices)){
+																if ($typeOfQuiz == "Multiple Questions") {
+																	echo "
+																		<li class='option'><label for='radio2'><input type='radio' name='choice' class='optionn' id='radio1' for='radio1'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
+														 			";
+													 			}
+																if ($typeOfQuiz == "True or False") {
+																	echo "
+																		<li class='option'><label for='radio2'><input type='radio' name='choice' id='radio2'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
+														 			";
+													 			}
+																if ($typeOfQuiz == "Identification") {
+																	echo "
+																	<div class='div'>
+																		<h5>Your Answer:</h5>
+																		<input type='text' name='identiAns' required>
+																 </div>
 
+																		";
+													 			}
 
-				<!---Questions--->
-				<p class="question">Question: <?php echo $question['question']; ?> </p>
+													 } ?>
+												 </ul>
+										<input type="hidden"  name="code" value="<?php echo $code; ?>">
+										<input type="hidden" name="number" value="<?php echo $number; ?>">
+										<input type="submit"class="btn-next" onclick="next()" name="submit" value="Submit">
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="script/main01.js"></script>
 
-				<form method="POST" action="process.php">
-					<ul class="choicess">
-
-						<?php
-													while($row=mysqli_fetch_assoc($choices)){
-														if ($typeOfQuiz == "Multiple Questions") {
-															echo "
-																<li class='option'><label for='radio2'><input type='radio' name='choice' class='optionn' id='radio1' for='radio1'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
-												 			";
-											 			}
-														if ($typeOfQuiz == "True or False") {
-															echo "
-																<li class='option'><label for='radio2'><input type='radio' name='choice' id='radio2'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
-												 			";
-											 			}
-														if ($typeOfQuiz == "Identification") {
-															echo "
-															<div class='div'>
-																<h5>Your Answer:</h5>
-																<input type='text' name='identiAns' required>
-														 </div>
-
-																";
-											 			}
-
-											 } ?>
+</body>
+</html>
