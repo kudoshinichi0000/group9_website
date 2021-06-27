@@ -123,13 +123,13 @@
                     <div class="row form-group">
                       <div class="col">
                         <label for="IdenAnswer">Anwer:</label>
-                        <input type="text" class="form-control" name="IdenAnswer" required>
+                        <input type="text" class="form-control" name="IdenAnswer" oninput="this.value = this.value.toUpperCase()" placeholder="Capital Letter*" required>
                       </div>
                     </div>
                     <div class="row form-group">
                       <div class="col">
                         <label for="points">Points:</label>
-                        <input type="number" class="form-control" placeholder="Enter numbers only"name="points" required>
+                        <input type="number" class="form-control" placeholder="Enter numbers only" name="points" required>
                       </div>
                     </div>
                     <div>
