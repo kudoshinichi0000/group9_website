@@ -43,12 +43,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Diplay Info</title>
-    <link type="text/css" rel="stylesheet" href="css/quizcard.css">
-    <link type="text/css" rel="stylesheet" href="css/navbar.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-  	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <style media="screen">
+      <title>Diplay Info</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link type="text/css" rel="stylesheet" href="css/quizcard.css">
+      <link type="text/css" rel="stylesheet" href="css/navbar.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+      <style media="screen">
 
     </style>
 
