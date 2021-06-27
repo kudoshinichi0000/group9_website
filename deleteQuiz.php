@@ -51,17 +51,16 @@ nav a {
 		<div class="rows">
 			<div class="cardd">
 				<div class="card-headerr">
-					<h1> Delete Quiz Data</h1>
+					<h3> Delete Quiz Data</h3>
 				</div>
 				<div class="card-bodyy">
 					<p>
 						<form action="deleteQuiz.php" method="POST">
-						<h2>Are you sure want to delete this Quiz <?php echo $code; ?>?</h2>
-
-
+						<h4>Are you sure want to delete this Quiz <?php echo $code; ?>?</h4>
+						<br><br>
 								<input type="submit" class="btn btn-outline-danger" name="Confirm" value="No" >
 								<input type="submit"  class="btn btn-outline-success" name="Confirm" value="Yes">
-						
+
 
 							<!--Hidden Input-->
 							<input type="hidden" name="code" value="<?php echo $code ?>">
