@@ -8,14 +8,69 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+
+<style>
+.announcement{
+	align-items: center;
+	align-content: center;
+  float: left;
+	font-weight: bold;
+	margin-left: 200px;
+	padding: 30px;
+	padding-left: 50px;
+	height: 350px;
+	width: 500px;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  background: -webkit-linear-gradient(to bottom, #fff 70%, #fff6e9);
+  background: linear-gradient(to bottom, #fff 70%, #fff6e9);
+  overflow: auto;
+	color: #080707;
+}
+.announcement h1{
+	color: black;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
-
 	<?php
 		include_once("navbar.php");
 		include_once("db.php");
 		//Test1
 	?><br><br><br><br><br><br>
+
+	<!-- Announcements -->
+		<aside class="announcement">
+		<h1>===Announcements===</h1><br>
+			<?php
+						$selquery = "SELECT * FROM announcements ORDER BY anndate DESC limit 15";
+						$execselquery = mysqli_query($con, $selquery);
+
+						while ($fetch = mysqli_fetch_assoc($execselquery)) {
+							$announcementid = $fetch['id'];
+							$adminid = $fetch['adminid'];
+
+							$query = "SELECT * FROM admin WHERE userid = '$adminid'";
+							$execquery = mysqli_query($con, $query);
+							while($fetchid = mysqli_fetch_assoc($execquery)){
+								$username = $fetchid['username'];
+							}
+
+
+							$content = $fetch['content'];
+							$date = $fetch['anndate'];
+							// echo var_dump($fetch);
+							echo "<br>Announcement No: ".$announcementid."<br>";
+							echo "ID: ".$adminid."<br>";
+							echo "User: ".$username."<br>";
+							echo "Content: ".$content."<br>";
+							echo "Date: ".$date."<br><br>";
+						}
+			 ?>
+		</aside>
+
 
 		<!---Feedopedia introducing video--->
 		<div id="VideoIntroCenter">
@@ -24,6 +79,7 @@
 			</video>
 		</div>
 	</div>
+
 
 	<!---Welcoming text--->
 	<div class="Maincontainer"><br>
