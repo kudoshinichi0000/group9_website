@@ -112,15 +112,19 @@
                 }
               ?></h2></td>
            </tr>
-
-         </table>
-          <td colspan="2"><?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?n=1&quiz_code=$QuizCode'>Play Quiz</a></h2>";?></td>
-       </div><br><br><br><br>
-
-
+          </table>
+          <td colspan="2">
+             <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+             <?php echo " <br><br><h2><a class='PlayQuiz' href='playQuiz.php?n=1&quiz_code=$QuizCode'>Play Quiz</a></h2>";?></td>
+             <form>
      </div>
+ </div>
+    </div><br><br><br><br>
 
-  </body>
-  
-  <?php include_once("footerr.php"); ?>
+
+  </div>
+  <script src="dist/js/start.js"></script>
+
+</body>
+<?php include_once("footerr.php"); ?>
 </html>
