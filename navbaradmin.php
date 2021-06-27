@@ -374,6 +374,7 @@ opacity: 1;
         <div class="actionn">
 
               <ul>
+                <li><div class=""><a href="logs.php">Update</a></div></li>
                 <li><div class=""><a href="viewadminuser.php">View User</a></div></li>
                 <li><div class=""><a href="resultsadmin.php">Results</a></div></li>
                 <li><div class=""><a href="quiz_list.php">Create Quiz</a></div></li>
