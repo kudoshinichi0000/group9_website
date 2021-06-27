@@ -50,13 +50,6 @@
       //Including navbar for admin
       include_once("navbaradmin.php");
     ?>
-<<<<<<< HEAD
-
-
-    <div style="margin-top: 20px;"class="container">
-      <!-- you can adjust the size of the table here through padding and margin-->
-=======
->>>>>>> 9874da82c387e38bda0513a6570abd427b77dee0
 
     <div style="margin-top: 20px;" class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
