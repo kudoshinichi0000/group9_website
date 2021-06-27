@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php ob_start(); ?>
 <html>
 <head>
 	<title>Delete User Confirmation</title>
