@@ -43,9 +43,9 @@
 
 	<!-- Announcements -->
 		<aside class="announcement">
-		<h1>Announcements</h1><br>
-			<<?php
-						$selquery = "SELECT * FROM announcements";
+		<h1>===Announcements===</h1><br>
+			<?php
+						$selquery = "SELECT * FROM announcements ORDER BY anndate DESC limit 15";
 						$execselquery = mysqli_query($con, $selquery);
 
 						while ($fetch = mysqli_fetch_assoc($execselquery)) {
@@ -61,8 +61,8 @@
 
 							$content = $fetch['content'];
 							$date = $fetch['anndate'];
-
-							echo "Announcement No: ".$announcementid."<br>";
+							// echo var_dump($fetch);
+							echo "<br>Announcement No: ".$announcementid."<br>";
 							echo "ID: ".$adminid."<br>";
 							echo "User: ".$username."<br>";
 							echo "Content: ".$content."<br>";

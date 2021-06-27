@@ -5,14 +5,37 @@
     <meta charset="utf-8">
     <title>Announce</title>
 
+    <style>
+      .container{
+        display: inline-block;
+        overflow: auto;
+        width: 250px;
+        height: 300px;
+      }
+      *{
+        font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-
+    <center><h1><==========================Announcement==========================></h1>
     <form class="" action="logsHandler.php" method="post">
-        <textarea name="content" placeholder="Announce"></textarea>
+        <textarea cols="50" rows="5" name="content" placeholder="Announce"></textarea>
+        <br><br>
         <input type="submit" name="submit" value="submit">
     </form>
-
+    <br>
+    <a href="resultsadmin.php">Return</a>
     <hr>
     <h4>LOGS</h4>
     <?php
@@ -22,7 +45,7 @@
           $selquery = "SELECT * FROM announcements";
         }
         else {
-          $selquery = "SELECT * FROM announcements WHERE adminid = $id";
+          $selquery = "SELECT * FROM announcements WHERE adminid = $id ORDER BY anndate DESC limit 100";
         }
         $execselquery = mysqli_query($con, $selquery);
 
@@ -39,16 +62,19 @@
 
           $content = $fetch['content'];
           $date = $fetch['anndate'];
-
-          echo "announcement ".$announcementid."<br>";
+          echo "<div class='container'><hr>";
+          echo "<h4>Announcement No ".$announcementid."<br><hr></h4>";
           echo "adminid ".$adminid."<br>";
           echo "name ".$username."<br>";
           echo "content ".$content."<br>";
           echo "date ".$date."<br>";
           ?>
+            <br>
             <a href="deleteAnnouncement.php?id=<?php echo $announcementid ?>">Delete</a><br><br>
+            <?php echo "</div>"; ?>
             <?php
         }
      ?>
+     </center>
   </body>
 </html>
