@@ -83,7 +83,7 @@
 
 	<!---Welcoming text--->
 	<div class="Maincontainer"><br>
-		<b style="font-size: 4em; ">Feedopedia Quizzes</b>
+		<b style="font-size: 3em; margin-left: 0.5em;">Feedopedia Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
 		<!---Search Button--->
