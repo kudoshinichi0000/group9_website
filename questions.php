@@ -71,7 +71,6 @@
     //Including navbar for admin
       include_once("navbaradmin.php");
     ?>
-    <br><br><br><br><br>
 
   <?php
 
