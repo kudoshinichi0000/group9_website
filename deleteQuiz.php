@@ -1,3 +1,15 @@
+<?php
+
+	//Step 1 Database Connectivity
+	include_once "db.php";
+
+	//Will check if the user try to access pages without logging in
+	if(empty($_SESSION["userid"])){
+		header("Location:login.php");
+	}
+
+ ?>
+
 <!DOCTYPE html>
 <?php ob_start(); ?>
 <html>
@@ -33,17 +45,30 @@ nav a {
 </head>
 <body>
 
-	<!--Include Header-->
 	<?php
-  include_once("db.php");
-	include_once("navbar2.php");
 
+	/*
+		 Hello po maam, dapat po itong delete quiz ay isang alert sa quiz_list.php, like kapag pinindot
+	   po yung delete button for quiz dapat may lalabas na alert na confirmation ng delete quiz
+		 kaso po may bug at medyo lack po kami sa information sa pag gawa ng alert kaya hiniwalay nalang namin
+		 po ng file
+
+		 pero nung 50-75% meron po kaming alert for delete quiz, nakakapag delete din po sya ng quiz kaso may bug,
+		 hindi ko na po ma debug kase i spend 2 or 3 whole days para sa pag debug
+		 kaso hindi ko na po talaga kaya hindi na po kaya ng powers ko, kaya hiniwalay nalang po namin
+	*/
+
+	//Database Connectivity
+  include_once("db.php");
+
+	//Navbar for admin
+	//include_once("navbar2.php");
+
+	//Getting quizcode
   $code = $_GET["quiz_code"];
 
-  //include_once("navbaradmin.php"); ?>
-	<?php
-	include_once("navbar2.php"); ?>
-	<br><br><br>
+	?><br><br><br>
+
 	<!---Delete User Confirmation-->
 	<div class="cont">
 		<div class="head">
@@ -57,14 +82,16 @@ nav a {
 				<div class="card-bodyy">
 					<p>
 						<form action="deleteQuiz.php" method="POST">
-						<h4>Are you sure want to delete this Quiz <?php echo $code; ?>?</h4>
+						<h4>Are you sure want to delete this Quiz?</h4>
 						<br><br>
 								<input type="submit" class="btn btn-outline-danger" name="Confirm" value="No" >
 								<input type="submit"  class="btn btn-outline-success" name="Confirm" value="Yes">
+<<<<<<< HEAD
+=======
 
-
+>>>>>>> 9874da82c387e38bda0513a6570abd427b77dee0
 							<!--Hidden Input-->
-							<input type="hidden" name="code" value="<?php echo $code ?>">
+							<input type="hidden" name="code" value="<?php echo $code; ?>">
 						</form>
 					</p>
 				</div>
@@ -76,6 +103,8 @@ nav a {
 </html>
 
   <?php
+		//If admin clicks the button it will process here in the if statement
+		// i will use this if statement instead of creating a new php file handler
     if(isset($_POST['Confirm'])){
       include_once("db.php");
     	//Var_dump

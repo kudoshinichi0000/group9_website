@@ -25,18 +25,23 @@
   </head>
   <body>
     <?php
-    include("db.php");
     include("functions.php");
     include_once("navbaradmin.php");
+     ?> <br><br><br><br><br>
 
-     ?>
-    <br><br><br><br><br>
+
   	<?php
+
     //get the id from the url
   	$code = $_GET['quiz_code'];
 
+		//Prepare the query
     $query = "SELECT * FROM quiz_list WHERE quiz_code = $code";
+
+		//Perform the query
     $execQuery = mysqli_query($con, $query);
+
+		//Getting/Fetching all rows from the executed query
     while($fetchCodes = mysqli_fetch_assoc($execQuery)){
     $admin_id = $fetchCodes["admin_id"];
     $title = $fetchCodes["title"];
@@ -128,6 +133,8 @@
 
 				<?php
 
+				// If the admin clicks the submit button, it will process here inside of f(isset($_POST['submit'])){
+				// i will use this if statements instead of creating a new file handlers
 				if(isset($_POST['submit'])){
 
 				//Database Connectivity
@@ -142,15 +149,21 @@
 				//Hidden Input
 				$quizCode = $_POST["quizCode"];
 
+				//prepare the query
 				$query = " SELECT * FROM quiz_list WHERE admin_id = '$userid' AND quiz_code = '$quizCode'";
+
+				//Perform the query
 				$execQuery = mysqli_query($con, $query);
 					if ($execQuery) {
+
 						$insertQuestion = "UPDATE quiz_list
-						SET quiz_code = '$quizCode', title = '$quizTitle', categories = '$Catg' ,description = '$Desc'
-						WHERE quiz_code = '$quizCode'";
+															 SET quiz_code = '$quizCode', title = '$quizTitle', categories = '$Catg' ,description = '$Desc'
+															 WHERE quiz_code = '$quizCode'";
 
 						$execInsert = mysqli_query($con, $insertQuestion);
 							if($execInsert){
+
+								//if successfull it will redirect into quiz_list
 								header("location: quiz_list.php");
 							}
 					}
