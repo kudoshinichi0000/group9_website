@@ -37,14 +37,10 @@
       text-align: center;
       align-items: center;
       padding: 8px;
-
     }
-
     .card{
       width: 110%;
       margin-left: -45px;
-
-
     }
     </style>
   </head>
@@ -54,9 +50,9 @@
       //Including navbar for admin
       include_once("navbaradmin.php");
     ?>
-    <div style="margin-top: 20px;"class="container">
-      <!-- you can adjust the size of the table here through padding and margin-->
 
+    <div style="margin-top: 20px;" class="container">
+      <!-- you can adjust the size of the table here through padding and margin-->
         <div class="card">
           <div  style="padding: 1.2rem;" class="card-header">
             <h2><b>QUIZ DETAILS<b></h2>
@@ -75,14 +71,14 @@
                     <th scope="col"><h4><label>Action: </label></h4></th>
                   </tr>
               </thead><br>
-
-
       <?php
 
           //Step 1 Database Connectivity
           include_once("db.php");
 
+					//Session id
           $userid = $_SESSION['userid'];
+
           //Prepare the query
           $query = "SELECT * FROM quiz_list WHERE admin_id = $userid";
 
@@ -119,10 +115,8 @@
 														<a href='deleteQuiz.php?quiz_code=$code' type='button' class='btn btn-danger badge-pill text-right float-right' style='text-align:center; margin:5px;'>Delete</a>
                             <a href='editTitle.php?quiz_code=$code' type='button' class='btn btn-info badge-pill text-centered float-right' text-right style='width:80px; text-align:center; margin: 5px;'>Edit Title</a>
                             <a href='questions.php?quiz_code=$code' type='button'class='btn btn-info badge-pill text-centered float-right' style=' text-align:center; margin: 5px;'>+ Questions</a>
-
                           </td>
                         </tr>
-
                         ";
                       }
                   }
@@ -134,80 +128,7 @@
         </div>
       </div>
       ";
-
-      //MODAL MESSAGE ALERT FOR DELETING QUIZ
-      echo "
-      <div class='modal fade' id='DeleteModal'>
-      <div class='modal-dialog'>
-          <div class='modal-content'>
-            <div class='modal-header'>
-              <h2 class='modal-title'> Delete Confirmation</h2>
-              <button type='button' class='close' data-dismiss='modal'><span>&times;</span></button>
-            </div>
-            <div class='modal-body'>
-            ";
-
-              echo "
-              <form action='deleteQuizHandler.php?quiz_code=$code' id='form-delete-user' method='post'>
-                  <label><p> Are you sure you want to delete this quiz: <br><br> Title: $title </p></label>
-
-            </div>
-            <div class='modal-footer'>
-              <input type='submit' name='Confirm' value='no' class='buttonnn button01'>
-              <input type='submit' name='Confirm' value='yes' class='buttonnn button1'>
-            </div>
-          </form>
-            ";
-
-          }
-          ?>
-        </div>
-      </div>
-    </div>
-
+		}
+		?>
   </body>
 </html>
-
-	<?php
-		if(isset($_POST['Confirm'])){
-			//Step 1 Database Connectivity
-		  include_once("db.php");
-
-			//Var_dump
-		  $code = $_GET['quiz_code'];
-			$Confirm = $_POST["Confirm"];
-
-			if ($Confirm == "yes") {//If admin click the Yes button, the information that he/she wants delete, will be deleted to the database
-
-				//Getting Quiz_code
-				$delGetid = $_GET["quiz_code"];
-
-				//Prepare The Query
-				$deleteQuery = "DELETE FROM quiz_list WHERE quiz_code = '$delGetid'";
-
-				//Perform the query
-				$execQuery = mysqli_query($con, $deleteQuery);
-
-		        if ($execQuery) {
-		      		$deleteuery = "DELETE FROM multiple_questions WHERE quiz_code = '$delGetid'";
-		      		$execquery = mysqli_query($con, $deleteuery);
-
-		          if ($execquery) {
-		            $deleteuery = "DELETE FROM trueorfalse WHERE quiz_code = '$delGetid'";
-		            $execqueryy = mysqli_query($con, $deleteuery);
-
-		            if ($execqueryy) {
-		              $deleteuery = "DELETE FROM identification WHERE quiz_code = '$delGetid'";
-
-		              $execqueryy = mysqli_query($con, $deleteuery);
-		              header("Location: quiz_list.php");
-		            }
-		          }
-		        }
-
-			}else{
-				header("Location: quiz_list.php");
-				exit();
-			}
-		}
-	 ?>
