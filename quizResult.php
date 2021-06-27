@@ -56,3 +56,70 @@ include_once("db.php");
         color: #ffffff;
         opacity: 1;
       }
+			::-ms-input-placeholder { /* Microsoft Edge */
+        color: #ffffff;
+        opacity: 1;
+      }
+      form{
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+      }
+      .form-control-e{
+        width: 990px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      .form-control-text{
+        width: 400px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      input{
+        height: 45px;
+      }
+      form .submit{
+        background: #8F00FF;
+        border-color: transparent;
+        border: 1px solid white;
+        color: #fff;
+        width: 340px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-top: 35px;
+      }
+      form .submit:hover{
+        background-color: #420264;
+        cursor: pointer;
+
+      }
+      input{
+        height: 45px;
+      }
+      form .submit{
+        background: #8F00FF;
+        border-color: transparent;
+        border: 1px solid white;
+        color: #fff;
+        width: 340px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-top: 35px;
+      }
+      form .submit:hover{
+        background-color: #420264;
+        cursor: pointer;
+
+      }
+     
