@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: "Lato";
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #bdeff2, #b8f1f3, #b4f3f4, #aff4f4, #aaf6f4, #a8f7f1, #a6f9ee, #a5faeb, #a9fbe4, #aefbdc, #b4fbd4, #bcfbcc);
+}
+
+.quiz {
+  display: grid;
+  margin-top: 20px;
+  grid-template-rows: 60px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+.quiz_header {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.quiz_body {
+  padding: 15px 30px;
+}
+.quiz_user {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.quiz_timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+  background-color: #341f97;
+  color: #fff;
+}
+.quiz_body {
+  background-color: #ecf0f1;
+
+}
+.question{
+  font-size: 16px;
+}
+
+
+.choicess{
+  list-style-type: none;
+  margin: 30px 0;
+  font-size: 14px;
+}
+input[type="radio"]
+{
+  -webkit-appearance: visible}
+
+label{
+  display: block;
+  width: 270px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+  align-items: center;
+  text-align: center;
+
+}
+
+label:hover {
+  cursor: pointer;
+  border: 2px solid #341f97;
+  color: #341f97;
+}
+
+
+input[type="radio"]:checked:before {
+  display: block;
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+  align-items: center;
+  text-align: center;
+
+}
+label input[type="radio"]:checked:after:hover{
+  background-color: #341f97 ;
+  color: white;
+}
+ label:focus-within:active{
+  display: block;
+  width: 270px;
+  background-color: #420264;
+  margin-bottom: 20px;
+ padding: 10px 18px;
+  border-radius: 100px;
+  border: 2px solid #420264;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+
+.optionnn:after  {
+  background-color: #341f97 ;
+  color: white;
+}
+
+input[type=text]{
+    width:40%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+  input[type=text]:focus{
+    border-color:#420264;
+    box-shadow:0 0 8px 0 #420264;
+  }
+.btn-next {
+  border: none;
+  padding: 15px 35px;
+  background-color: #341f97;
+  color: #fff;
+  border-radius: 27px;
+  transition: 0.4s all;
+}
+input[type=email]{
+    width:40%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+  input[type=email]:focus{
+    border-color:#420264;
+    box-shadow:0 0 8px 0 #420264;
+  }
+ textarea{
+    width:40%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+ textarea:focus{
+    border-color:#420264;
+    box-shadow:0 0 8px 0 #420264;
+  }
+
+  .ffeed{
+  display: block;
+  width: none;
+  background-color:none;
+  margin-bottom: 0
+  padding: 0 0;
+  border-radius: 0;
+  border: none;
+
+  text-align: center;.
+
+}
+.ffeed:hover {
+  cursor: none;
+  border: none;
+  color: #341f97;
+}
+.resul{
+
+}
+.btn-next {
+  border: none;
+  padding: 15px 35px;
+  background-color: #341f97;
+  color: #fff;
+  border-radius: 27px;
+  transition: 0.4s all;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #341f97;
+  border: 2px solid #341f97;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.award_icon {
+  display: block;
+  font-size: 300px;
+  color: #fff;
+}
+
+.username,
+.userpoints,
+.usertime {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+    #contr {
+        width: 89%;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+        #img {
+            width: 1em;
+            height: 2px;
+        }
