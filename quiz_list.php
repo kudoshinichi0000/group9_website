@@ -42,6 +42,7 @@
       width: 110%;
       margin-left: -45px;
     }
+
     </style>
   </head>
   <body>
@@ -51,7 +52,7 @@
       include_once("navbaradmin.php");
     ?>
 
-    <div style="margin-top: 20px;" class="container">
+    <div style="margin-top: 20px; margin-bottom: 40px;" class="container">
       <!-- you can adjust the size of the table here through padding and margin-->
         <div class="card">
           <div  style="padding: 1.2rem;" class="card-header">

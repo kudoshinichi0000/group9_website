@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<?php ob_start(); ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -408,7 +409,7 @@ opacity: 1;
 
  ?>
 
-<?php include_once("db.php");
+<?php
 
 if ($_SESSION["username"] == "mod") {
   header("location: viewadmin.php");
@@ -441,7 +442,7 @@ $username = $fetch['username'];
 
 ?>
 <!-- User Successfully Edited-->
-<?php include_once "db.php"; include_once "navbaradmin.php" ?><br><
+<?php include_once "db.php"; include_once "navbaradmin.php" ?><br>
 <?php if(isset($_SESSION['editsuccess'])): ?>
    <script type="text/javascript">
       alert('<?php echo $_SESSION['editsuccess']; ?>');
