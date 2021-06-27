@@ -122,4 +122,40 @@ include_once("db.php");
         cursor: pointer;
 
       }
-     
+			.notif{
+      position: absolute;
+      top: 90px;
+      left: 300px;
+      font-size: 25px;
+      color: #fff;
+      border: 2px solid #fff;
+      background-image: linear-gradient(to left, #2e0294, #41019b, #5201a2, #6300a9, #7200af, #7503b4, #7706b9, #7a0abe, #7011c3, #6418c9, #551dce, #4122d3);
+      border-color:white;
+
+      width: 340px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 3px;
+
+      }
+      .notif:hover{
+        background-image: linear-gradient(to left, #2e0294, #41019b, #5201a2, #6300a9, #7200af, #7503b4, #7706b9, #7a0abe, #7011c3, #6418c9, #551dce, #4122d3);
+        cursor: pointer;
+        border: 2px solid #white;
+        color: #fff;
+
+      }
+
+      .notif a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+      }
+      .notif a:hover{
+        text-decoration: none;
+        color: #19FBF1;
+      }
+
+  </style>
+</head>
+<body>
