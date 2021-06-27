@@ -51,3 +51,27 @@
 
 				<form method="POST" action="process.php">
 					<ul class="choicess">
+
+						<?php
+													while($row=mysqli_fetch_assoc($choices)){
+														if ($typeOfQuiz == "Multiple Questions") {
+															echo "
+																<li class='option'><label for='radio2'><input type='radio' name='choice' class='optionn' id='radio1' for='radio1'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
+												 			";
+											 			}
+														if ($typeOfQuiz == "True or False") {
+															echo "
+																<li class='option'><label for='radio2'><input type='radio' name='choice' id='radio2'  required value=' ";?><?php echo $row['id']; ?>'><?php echo $row['options']; echo "</label></li>
+												 			";
+											 			}
+														if ($typeOfQuiz == "Identification") {
+															echo "
+															<div class='div'>
+																<h5>Your Answer:</h5>
+																<input type='text' name='identiAns' required>
+														 </div>
+
+																";
+											 			}
+
+											 } ?>
