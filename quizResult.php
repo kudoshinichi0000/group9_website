@@ -159,6 +159,7 @@ include_once("db.php");
   </style>
 </head>
 <body>
+	<?php
 	include_once ("navbar2.php");
 
 ?>
