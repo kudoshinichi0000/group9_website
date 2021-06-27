@@ -441,7 +441,7 @@ $username = $fetch['username'];
 
 ?>
 <!-- User Successfully Edited-->
-<?php include_once "db.php"; include_once "navbaradmin.php" ?><br><br>
+<?php include_once "db.php"; include_once "navbaradmin.php" ?><br><
 <?php if(isset($_SESSION['editsuccess'])): ?>
    <script type="text/javascript">
       alert('<?php echo $_SESSION['editsuccess']; ?>');
@@ -449,7 +449,7 @@ $username = $fetch['username'];
    <?php unset($_SESSION['editsuccess']);
   endif;?>
 <!-- User Successfully Deleted -->
-<?php include_once "db.php"; include_once "navbaradmin.php" ?><br><br>
+<?php include_once "db.php"; include_once "navbaradmin.php" ?><br>
 <?php if(isset( $_SESSION['delsuccess'])): ?>
    <script type="text/javascript">
       alert('<?php echo $_SESSION['delsuccess']; ?>');
