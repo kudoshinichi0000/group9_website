@@ -3,34 +3,75 @@
 <head>
 	<title>Delete User Confirmation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/stle.css">
+	<link rel="stylesheet" href="css/bootstrap.min2.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+<style>
+*{
+    font-family: 'Poppins', sans-serif;
+		padding: 0;
+		margin:
+	}
+nav ul{
+	padding-top: -10px;
+	margin-top: -4px;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+</style>
 </head>
 <body>
 
 	<!--Include Header-->
 	<?php
   include_once("db.php");
+	include_once("navbar2.php");
 
   $code = $_GET["quiz_code"];
 
   //include_once("navbaradmin.php"); ?>
-
+	<?php
+	include_once("navbar2.php"); ?>
+	<br><br><br>
 	<!---Delete User Confirmation-->
-	<div class="containER">
-		<form action="deleteQuiz.php" method="POST">
-			<table border="2"  width="50%" >
+	<div class="cont">
+		<div class="head">
+			<h1></h1>
+		</div>
+		<div class="rows">
+			<div class="cardd">
+				<div class="card-headerr">
+					<h1> Delete Quiz Data</h1>
+				</div>
+				<div class="card-bodyy">
+					<p>
+						<form action="deleteQuiz.php" method="POST">
+						<h2>Are you sure want to delete this Quiz <?php echo $code; ?>?</h2>
 
-				<tr>
-					<th colspan="2"><h2>Are you sure want to delete this Quiz <?php echo $code; ?>?</h2></th>
-				</tr>
-			</table>
 
-				<input type="submit" name="Confirm" value="No" >
-				<input type="submit" name="Confirm" value="Yes">
+								<input type="submit" class="btn btn-outline-danger" name="Confirm" value="No" >
+								<input type="submit"  class="btn btn-outline-success" name="Confirm" value="Yes">
+						
 
-			<!--Hidden Input-->
-			<input type="hidden" name="code" value="<?php echo $code ?>">
-		</form>
+							<!--Hidden Input-->
+							<input type="hidden" name="code" value="<?php echo $code ?>">
+						</form>
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
+
 </body>
 </html>
 
