@@ -4,6 +4,9 @@
 body{
   background-color: #dcdcdc;
 }
+.container{
+ padding-bottom: 60px;
+}
 .Containerhead{
   width: 96%;
   border: 1px solid black;
