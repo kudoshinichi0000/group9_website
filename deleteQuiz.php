@@ -35,7 +35,6 @@ nav a {
 	<!--Include Header-->
 	<?php
   include_once("db.php");
-	include_once("navbar2.php");
 
   $code = $_GET["quiz_code"];
 
@@ -60,8 +59,6 @@ nav a {
 						<br><br>
 								<input type="submit" class="btn btn-outline-danger" name="Confirm" value="No" >
 								<input type="submit"  class="btn btn-outline-success" name="Confirm" value="Yes">
-
-
 							<!--Hidden Input-->
 							<input type="hidden" name="code" value="<?php echo $code ?>">
 						</form>
