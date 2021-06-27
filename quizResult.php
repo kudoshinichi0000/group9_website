@@ -159,3 +159,66 @@ include_once("db.php");
   </style>
 </head>
 <body>
+	include_once ("navbar2.php");
+
+?>
+<br>
+	<main>
+		<div id="contr">
+		<div id="img">
+			<img src="res/images/feed1.svg" style="width: 600px;height: 600px; flex: wrap; padding-top: 7rem;">
+		</div>
+			<div class="container-feedback-title">
+				<h1>Your Result</h1>
+				<p>Congratulation You have completed this test succesfully.</p>
+				<h2>Your <strong>Score</strong> is <?php echo $_SESSION['score']; ?> </h2>
+
+	<form class="result-form" action="quizResult.php" method="post">
+
+		<input type="text"  class="form-control-e"name="name" placeholder="Your Full Name" required><br>
+
+		<input type="email"  class="form-control-e" name="email" placeholder="Email" required><br>
+
+		<textarea   class="form-control-text" name="Feedback" placeholder="Feedback" required></textarea><br>
+
+		<input type="submit"class="form-control submit" name="submit" >
+	</form>
+</div>
+
+	</div>
+	</main>
+
+
+
+</body>
+</html>
+
+<?php
+//Including database
+include_once("db.php");
+
+	//If the user/admin click the submit button, all of the informations in inputbox will process here, to put in database
+	if(isset($_POST['submit'])){
+
+		//Vardump
+		$score = $_SESSION['score'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$Feedback = $_POST['Feedback'];
+
+		//Inserting feedback into website_feedback table
+		$query = "INSERT INTO quiz_feedback (name, email, feedback, score)
+		VALUES ('$name', '$email','$Feedback', '$score')";
+
+		//perform the query
+		$result = mysqli_query($con,$query);
+
+		if ($result) {
+			unset($_SESSION['score']);
+			echo "<div class='notif'>Successfuly added to database<br>
+				<a href='main.php'>Back</a></div>
+			";
+
+		}
+	}
+	 ?>
