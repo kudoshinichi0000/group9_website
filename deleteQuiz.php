@@ -86,10 +86,6 @@ nav a {
 						<br><br>
 								<input type="submit" class="btn btn-outline-danger" name="Confirm" value="No" >
 								<input type="submit"  class="btn btn-outline-success" name="Confirm" value="Yes">
-<<<<<<< HEAD
-=======
-
->>>>>>> 9874da82c387e38bda0513a6570abd427b77dee0
 							<!--Hidden Input-->
 							<input type="hidden" name="code" value="<?php echo $code; ?>">
 						</form>

@@ -64,7 +64,7 @@
 																	echo "
 																	<div class='div'>
 																		<h5>Your Answer:</h5>
-																		<input type='text' name='identiAns' required>
+																		<input type='text' name='identiAns' oninput='this.value = this.value.toUpperCase()' required>
 																 </div>
 
 																		";
