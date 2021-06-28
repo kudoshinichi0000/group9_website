@@ -82,7 +82,7 @@
 	<!---Welcoming text--->
 	<div class="Maincontainer"><br>
 		<b style="font-size: 4em; ">Feedopedia Quizzes</b>
-		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
+		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul<a href="mod/modsetting.php">.</a></p>
 
 		<!---Search Button--->
 		<form class="Searchbtn" action="Search.php" method="POST">

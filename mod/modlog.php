@@ -1,10 +1,34 @@
+<?php
+  // if($_SERVER['REQUEST_METHOD'] == "POST"){
+  // include_once ("../db.php");
+  //
+  // $userid = "";
+  // $content = $_POST['content'];
+  //
+  // $query = "SELECT * FROM admin WHERE userid = 8";
+  // $execquery = mysqli_query($con, $query);
+  //
+  // $fetchusermod = mysqli_fetch_assoc($execquery)
+  //
+  // $query = "INSERT INTO announcements(adminid, content) VALUES ('$userid', '$content')";
+  // $execquery = mysqli_query($con, $query);
+
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Announce</title>
+    <title>MOD</title>
 
     <style>
+    *{
+      background-color: #1c1b18;
+      color: #4ecfa5;
+      font-weight: bold;
+    }
+    hr{
+      color: #4ecfa5;
+    }
       .container{
         display: inline-block;
         overflow: auto;
@@ -14,38 +38,24 @@
       *{
         font-weight: bold;
       }
-      a{
-        text-decoration: none;
-        background-color: black;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-      }
+
     </style>
   </head>
   <body>
-    <center><h1><==========================Announcement==========================></h1>
-    <form class="" action="logsHandler.php" method="post">
+    <center><h1>Announcement</h1>
+    <a href="modsetting.php"><h3>BACK</h3> </a> <hr>
+    <!-- <form method="post">
         <textarea cols="50" rows="5" name="content" placeholder="Announce"></textarea>
         <br><br>
         <input type="submit" name="submit" value="submit">
     </form>
     <br>
-    <a href="resultsadmin.php">Return</a>
-    <hr>
+    <a href="modsetting.php"><h3>BACK</h3></a>
+    <hr> -->
     <h4>LOGS</h4>
     <?php
-    include_once "db.php";
-        $id = $_SESSION['userid'];
-        if ($_SESSION["username"] == "mod") {
-          $selquery = "SELECT * FROM announcements";
-        }
-        else {
-          $selquery = "SELECT * FROM announcements WHERE adminid = $id ORDER BY anndate DESC limit 100";
-        }
+    include_once "../db.php";
+        $selquery = "SELECT * FROM announcements";
         $execselquery = mysqli_query($con, $selquery);
 
         while ($fetch = mysqli_fetch_assoc($execselquery)) {
@@ -57,7 +67,6 @@
           while($fetchid = mysqli_fetch_assoc($execquery)){
             $username = $fetchid['username'];
           }
-
           $content = $fetch['content'];
           $date = $fetch['anndate'];
           echo "<div class='container'><hr>";
@@ -68,7 +77,7 @@
           echo "date ".$date."<br>";
           ?>
             <br>
-            <a href="deleteAnnouncement.php?id=<?php echo $announcementid ?>">Delete</a><br><br>
+            <a href="modlogdel.php?id=<?php echo $announcementid ?>">Delete</a><br><br>
             <?php echo "</div>"; ?>
             <?php
         }
