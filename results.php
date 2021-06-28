@@ -14,28 +14,18 @@
 </head>
 <body>
 	<?php
-
-	$id = $_GET["id"];
 	include_once "db.php";
 	include_once "navbar.php" ?>
 
 	<div class="Rank">
 		<?php
 
-		//In this page we will displaying all quiz oci_get_implicit_resultset
+		//In this page we will displaying all quiz result
 
-		//Prepare the query
-		$query = " SELECT * FROM quiz_list WHERE admin_id = $id";
-
-		//Perform the query
-		$execQuery = mysqli_query($con, $query);
-
-		//if sucessful
-		if ($execQuery ) {
 			//getting all data in logs table
-			$queryy = " SELECT * FROM logs";
-			$execQueryy = mysqli_query($con, $queryy);
-			while($fetchscores = mysqli_fetch_assoc($execQueryy)){
+			$query = " SELECT * FROM logs";
+			$execQuery = mysqli_query($con, $query);
+			while($fetchscores = mysqli_fetch_assoc($execQuery)){
 			$name = $fetchscores["username"];
 			$email = $fetchscores["email"];
 			$quizCode = $fetchscores["quiz_code"];
@@ -44,9 +34,9 @@
 			$newDate = date("m-d-Y", strtotime($date));
 
 					//Getting the title
-					$queryyy = " SELECT * FROM quiz_list WHERE quiz_code = $quizCode";
-					$execQueryyy = mysqli_query($con, $queryyy);
-					$fetchtitle = mysqli_fetch_assoc($execQueryyy);
+					$queryy = " SELECT * FROM quiz_list WHERE quiz_code = $quizCode";
+					$execQueryy = mysqli_query($con, $queryy);
+					$fetchtitle = mysqli_fetch_assoc($execQueryy);
 					$title = $fetchtitle["title"];
 
 			echo "Name: $name<br>
@@ -57,7 +47,7 @@
 						Date: $newDate
 						<br><br><br>";
 			}
-		}
+
 
 		 ?>
 	</div>
