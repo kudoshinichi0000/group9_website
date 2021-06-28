@@ -375,6 +375,8 @@ opacity: 1;
         <div class="actionn">
 
               <ul>
+                <?php $id = $_SESSION['userid']; ?>
+                <li><div class=""><a href="quiz_feedback.php?id=<?php echo $id; ?>">Feedback</a></div></li>
                 <li><div class=""><a href="logs.php">Update</a></div></li>
                 <li><div class=""><a href="viewadminuser.php">View User</a></div></li>
                 <li><div class=""><a href="resultsadmin.php">Results</a></div></li>

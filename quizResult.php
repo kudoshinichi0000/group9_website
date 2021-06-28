@@ -3,13 +3,11 @@
 	//Database Connectivity
 	include_once("db.php");
 
-	//Getting quiz_code
-	$code = $_GET['quiz_code'];
-
 ?>
 
+
 <html>
-<head>>
+<head>
 	<title>PHP Quizer</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
@@ -30,7 +28,7 @@
       	padding:10px;
       }
       .container-feedback-title{
-        margin-top: 40px;
+        margin-top: 50px;
         color:#fff;
         text-transform: uppercase;
         transition: all 4s ease-in-out;
@@ -171,8 +169,12 @@
 <body>
 
 	<?php
+
 	//Navbar for admin
 	include_once ("navbar2.php");
+
+	$code = $_GET["quiz_code"];
+
 	?>
 <br>
 	<main>
@@ -184,7 +186,7 @@
 			<div class="container-feedback-title">
 				<h1>Your Result</h1>
 				<p>Congratulation You have completed this test succesfully.</p>
-				<h2>Your <strong>Score</strong> is <?php echo $_SESSION['score']; ?> </h2>
+				<h2>Your <strong>Score</strong> is <?php echo $_SESSION['score']; ?></h2>
 
 						<form class="result-form" action="quizResult.php" method="post">
 
@@ -216,20 +218,27 @@
 								//Hidden input
 								$quizCode = $_POST['code'];
 
-								//Inserting feedback into website_feedback table
+								//Inserting feedback into quiz_feedback table
 								$query = "INSERT INTO quiz_feedback (name, email, feedback, quiz_code, score )
-								VALUES ('$name', '$email','$Feedback',' $quizCode', '$score')";
+								VALUES ('$name', '$email', '$Feedback', '$quizCode', '$score')";
 
 								//perform the query
 								$result = mysqli_query($con,$query);
 
-								if ($result) {
-									unset($_SESSION['score']);
-									echo "<br><p>Your Feedback is <br> Successfuly added to database.<br>
-										<a href='main.php' class='underl'>Exit</a></p>
-									";
+										if ($result) {
+											$Resultquery = "INSERT INTO logs (quiz_code, username, email, score )
+											VALUES ('$quizCode', '$name', '$email', '$score')";
 
-								}
+											//perform the query
+											$execResult = mysqli_query($con, $Resultquery);
+
+												if ($execResult) {
+													unset($_SESSION['score']);
+													echo "<br><p>Your Feedback is <br> Successfuly added to database.<br>
+														<a href='main.php' class='underl'>Exit</a></p>
+													";
+												}
+											}
 							}
 							 ?>
 			 </div>
