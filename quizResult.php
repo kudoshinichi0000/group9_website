@@ -173,6 +173,7 @@
 	//Navbar for admin
 	include_once ("navbar2.php");
 
+	//Get quiz_code
 	$code = $_GET["quiz_code"];
 
 	?>
@@ -188,7 +189,7 @@
 				<p>Congratulation You have completed this test succesfully.</p>
 				<h2>Your <strong>Score</strong> is <?php echo $_SESSION['score']; ?></h2>
 
-						<form class="result-form" action="quizResult.php" method="post">
+						<form class="result-form" action="quizResultHandler.php" method="post">
 
 								<input type="text"  class="form-control-e"name="name" placeholder="Your Full Name" required><br>
 
@@ -200,47 +201,6 @@
 
 								<input type="hidden" name="code" value="<?php echo $code; ?>">
 						</form>
-
-						<?php
-							//Including database
-							include_once("db.php");
-
-							// If the admin clicks the submit button, it will process here inside of f(isset($_POST['submit'])){
-							// i will use this if statements instead of creating a new file handlers
-							if(isset($_POST['submit'])){
-
-								//Vardump
-								$score = $_SESSION['score'];
-								$name = $_POST['name'];
-								$email = $_POST['email'];
-								$Feedback = $_POST['Feedback'];
-
-								//Hidden input
-								$quizCode = $_POST['code'];
-
-								//Inserting feedback into quiz_feedback table
-								$query = "INSERT INTO quiz_feedback (name, email, feedback, quiz_code, score )
-								VALUES ('$name', '$email', '$Feedback', '$quizCode', '$score')";
-
-								//perform the query
-								$result = mysqli_query($con,$query);
-
-										if ($result) {
-											$Resultquery = "INSERT INTO logs (quiz_code, username, email, score )
-											VALUES ('$quizCode', '$name', '$email', '$score')";
-
-											//perform the query
-											$execResult = mysqli_query($con, $Resultquery);
-
-												if ($execResult) {
-													unset($_SESSION['score']);
-													echo "<br><p>Your Feedback is <br> Successfuly added to database.<br>
-														<a href='main.php' class='underl'>Exit</a></p>
-													";
-												}
-											}
-							}
-							 ?>
 			 </div>
 	   </div>
 	 </main>

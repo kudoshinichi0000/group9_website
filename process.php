@@ -45,7 +45,7 @@
 	 	 }
 			//Redirect to next question or final score page.
 	 	 if($number == $total_questions){
-	 	 	header("LOCATION: quizResult.php");
+	 	 	header("LOCATION: quizResult.php?quiz_code=$code");
 	 	 }else{
 	 	 	header("LOCATION: playQuiz.php?quiz_code=$code&n=".$next);
 	 	 }
