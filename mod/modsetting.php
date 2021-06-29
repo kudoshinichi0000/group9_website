@@ -32,6 +32,8 @@
       <a href="modlog.php">HERE</a>
       <h2>Reset Announcements</h2>
       <a href="moddelannall.php">HERE</a>
+      <h2>View Website Feedback</h2>
+      <a href="modWebsiteFeedback.php">HERE</a>
     </center>
   </body>
 </html>
