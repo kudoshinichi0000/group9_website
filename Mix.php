@@ -44,7 +44,7 @@
 	<!-- Announcements -->
 		<aside class="announcement">
 		<h1>Announcements</h1><br>
-			<<?php
+			<?php
 						$selquery = "SELECT * FROM announcements ORDER BY anndate DESC limit 15";
 						$execselquery = mysqli_query($con, $selquery);
 
