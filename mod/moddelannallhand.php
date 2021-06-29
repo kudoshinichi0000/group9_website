@@ -1,4 +1,5 @@
 <?php
+// DELETE ALL ANNNOUNCEMENTS
   include_once("../db.php");
   $choice = $_POST["choice"];
   if($_SERVER['REQUEST_METHOD'] == "POST"){

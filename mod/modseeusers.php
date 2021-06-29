@@ -24,6 +24,7 @@
        <?php unset($_SESSION['status']);
       endif;?>
     <center>
+    <!-- This is where all users are shown, has the option to delete, or edit -->
     <h1>All Users</h1>
     <a href="modsetting.php"><h3>BACK</h3></a><hr>
     <table>

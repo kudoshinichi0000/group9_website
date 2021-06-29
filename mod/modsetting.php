@@ -24,14 +24,19 @@
        <?php unset($_SESSION['anndel']);
       endif;?>
     <center>
+      <!-- MOD SETTINGS -->
       <h1>MOD Settings</h1>
       <a href="../main.php"><h3>BACK</h3></a><hr>
+      <!-- SHOW ALL USERS -->
       <h2>Show All Users</h2>
       <a href="modseeusers.php">HERE</a>
-      <h2>Announce</h2>
+      <!-- SHOW ALL USERS ANNOUNCEMENTS -->
+      <h2>Announcements</h2>
       <a href="modlog.php">HERE</a>
+      <!-- DELETE ALL ANNOUNCEMENTS -->
       <h2>Reset Announcements</h2>
       <a href="moddelannall.php">HERE</a>
+      <!-- WEBSITE FEEDBACK -->
       <h2>View Website Feedback</h2>
       <a href="modWebsiteFeedback.php">HERE</a>
     </center>

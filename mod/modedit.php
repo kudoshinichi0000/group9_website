@@ -43,6 +43,7 @@
     		 </script>
     		 <?php unset($_SESSION['userexist']);
     	 	endif;?>
+        <!-- EDIT USERS -->
                 <h1>Edit Profile</h2>
                 <a href="modseeusers.php"><h3>BACK</h3></a><hr>
                 <form action="modedithandler.php" method="post" enctype="multipart/form-data">

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>Announce</title>
   </head>
-
+<!-- This is where all announcements are made -->
   <body>
     <center><h1><==========================Announcement==========================></h1>
     <form class="" action="logsHandler.php" method="post">
@@ -29,11 +29,11 @@
           $selquery = "SELECT * FROM announcements WHERE adminid = $id ORDER BY anndate DESC limit 100";
         }
         $execselquery = mysqli_query($con, $selquery);
-
+        // show all logs of the user with a limit of 100
         while ($fetch = mysqli_fetch_assoc($execselquery)) {
           $announcementid = $fetch['id'];
           $adminid = $fetch['adminid'];
-
+          // Show name from the admin table
           $query = "SELECT * FROM admin WHERE userid = '$adminid'";
           $execquery = mysqli_query($con, $query);
           while($fetchid = mysqli_fetch_assoc($execquery)){
