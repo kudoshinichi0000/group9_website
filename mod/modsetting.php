@@ -27,18 +27,27 @@
       <!-- MOD SETTINGS -->
       <h1>MOD Settings</h1>
       <a href="../main.php"><h3>BACK</h3></a><hr>
+
       <!-- SHOW ALL USERS -->
       <h2>Show All Users</h2>
       <a href="modseeusers.php">HERE</a>
+
       <!-- SHOW ALL USERS ANNOUNCEMENTS -->
       <h2>Announcements</h2>
       <a href="modlog.php">HERE</a>
+
       <!-- DELETE ALL ANNOUNCEMENTS -->
       <h2>Reset Announcements</h2>
       <a href="moddelannall.php">HERE</a>
+
       <!-- WEBSITE FEEDBACK -->
       <h2>View Website Feedback</h2>
       <a href="modWebsiteFeedback.php">HERE</a>
+
+      <!-- Factory Reset -->
+      <h2>Reset Website</h2>
+      <a href="modFactoryReset.php">HERE</a>
+      
     </center>
   </body>
 </html>
