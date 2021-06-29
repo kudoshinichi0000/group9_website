@@ -37,7 +37,7 @@
  }
  .bgimg-1 {
    background-image: url("res/images/Admin.jpg");
-   height: 150%;
+   height: 106%;
 	 background-size: cover;
 	 margin-top: -3em;
 	 margin-bottom: -40em;
@@ -46,7 +46,7 @@
  .caption {
    position: absolute;
    left: 0;
-   top: 50%;
+   top: 40%;
    width: 100%;
    text-align: center;
    color: #000;
@@ -66,13 +66,20 @@
    font: 20px "Lato", sans-serif;
    color: #111;
  }
+ .link{
+	 color: #fff;
+	 text-decoration: none;
+ }
+ .link:hover{
+	 color: yellow;
+	 text-decoration: underline;
+ }
  </style>
  </head>
  <body>
 
  <?php
  include_once "db.php";
- include_once "navbaradmin.php";
  $userId = $_SESSION['userid'];
 
 
@@ -91,10 +98,9 @@
 <div class="bgimg-1">
   <div class="caption">
     <span class="border">Welcome Back <?php echo "$username"; ?>!</span><br><br><br>
-    <span class="border"><a href="quiz_list.php">Let's get started</a> </span>
+    <span class="border"><a href="quiz_list.php" class="link">Let's get started</a> </span>
   </div>
 </div>
 
 </body>
-	<?php include_once "footerr.php";?>
 </html>
