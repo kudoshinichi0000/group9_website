@@ -103,7 +103,7 @@
 		</div>
 
 		<!--displaying all Quiz--->
-		<div class="centerBlack">News Feed</div><br>
+		<div class="centerBlack">Quiz Feed</div><br>
 		<?php
 
 		//Including Database
