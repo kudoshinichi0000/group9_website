@@ -467,11 +467,10 @@ $username = $fetch['username'];
         <h2>Manage Profile</h2>
       </div>
       <div class='modal-body'>
-        <p>SAPAK O GAGANA KA?</p>
         <p>	<i class='fas fa-user-circle'></i>
-					Username: angekl mfnds sndad nerymskds <br>
+					Username: $username<br>
 				  <i class='fas fa-id-badge'></i>
-					UserId:</p>
+					UserId: $userId</p>
       </div>
       <div class='modal-footer'>
         <h3>
