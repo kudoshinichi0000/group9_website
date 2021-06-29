@@ -10,6 +10,9 @@
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 
 <style>
+body{
+	background-image: linear-gradient(to left top, #87eda1, #82f0b5, #82f3c8, #87f5d8, #90f7e6, #90f7e6, #90f7e6, #90f7e6, #87f5d8, #82f3c8, #82f0b5, #87eda1);
+}
 .announcement{
 	align-items: center;
 	align-content: center;
