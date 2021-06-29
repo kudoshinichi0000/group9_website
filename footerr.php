@@ -70,6 +70,7 @@
     .segment-two ul li a{
       color: #999;
       text-decoration: none;
+      cursor: pointer;
     }
 
     .segment-three h2{
