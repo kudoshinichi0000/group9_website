@@ -1,5 +1,5 @@
-body {
-	background-color: #EDF1F2; /*#e7dfdd*/
+body{
+	background-image: linear-gradient(to left top, #87eda1, #82f0b5, #82f3c8, #87f5d8, #90f7e6, #90f7e6, #90f7e6, #90f7e6, #87f5d8, #82f3c8, #82f0b5, #87eda1);
 }
 
 .container {

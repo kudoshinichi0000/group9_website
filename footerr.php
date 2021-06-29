@@ -208,8 +208,8 @@
               <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                   <h2> About Us</h2>
                   <ul>
-                      <li><a href="#"></a> Services</li>
-                      <li><a href="#"></a> Contacts</li>
+                      <li><a href="WebsiteFeedback.php"></a> Customer Service</li>
+                      <li><a href="WebsiteFeedback.php"></a> Feedback</li>
                       <li><a href="#"></a> Policy</li>
                   </ul>
               </div>
