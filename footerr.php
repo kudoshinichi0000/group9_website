@@ -59,13 +59,14 @@
       font size: 25px;
       -webkit-transition: .5s all ease;
       -moz-transition: 1s all ease;
-      transition: .5s all ease;
+      transition: .8s all ease;
     }
     .segment-two ul li:hover{
       color: #feab02;
       padding: 3px 0;
       margin-left: 5px;
       font-weight: 600;
+      cursor: pointer;
     }
     .segment-two ul li a{
       color: #999;
@@ -211,7 +212,7 @@
                   <ul>
                       <li><a href="WebsiteFeedback.php"></a> Customer Service</li>
                       <li><a href="WebsiteFeedback.php"></a> Feedback</li>
-                      <li><a href="#"></a> Policy</li>
+                      <li><a href="footerr-content.php"></a> Policy</li>
                   </ul>
               </div>
               <div class="col-md-4 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
