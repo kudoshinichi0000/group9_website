@@ -52,11 +52,11 @@
           $content = $fetch['content'];
           $date = $fetch['anndate'];
           echo "<div class='annbox'><hr>";
-          echo "<h4>Announcement No ".$announcementid."<br><hr></h4>";
-          echo "adminid ".$adminid."<br>";
-          echo "name ".$username."<br>";
-          echo "content ".$content."<br>";
-          echo "date ".$date."<br>";
+          echo "<h4>Announcement No: ".$announcementid."<br><hr></h4>";
+          echo "AdminId: ".$adminid."<br>";
+          echo "Name ".$username."<br>";
+          echo "Content: ".$content."<br>";
+          echo "Date: ".$date."<br>";
           ?>
             <br>
             <a href="deleteAnnouncement.php?id=<?php echo $announcementid ?>">Delete</a><br><br>
