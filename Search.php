@@ -9,13 +9,71 @@
   	<link rel="preconnect" href="https://fonts.gstatic.com">
   	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
   	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+
+    <style media="screen">
+    body{
+      background-image: linear-gradient(to left top, #87eda1, #82f0b5, #82f3c8, #87f5d8, #90f7e6, #90f7e6, #90f7e6, #90f7e6, #87f5d8, #82f3c8, #82f0b5, #87eda1);
+    }
+    .announcement{
+  		align-items: center;
+  		align-content: center;
+  	  float: left;
+  		font-weight: bold;
+  		margin-left: 200px;
+  		padding: 30px;
+  		padding-left: 50px;
+  		height: 350px;
+  		width: 500px;
+  	  border-radius: 5px;
+  	  -moz-border-radius:5px;
+  	  -webkit-border-radius:5px;
+  	  background: -webkit-linear-gradient(to bottom, #fff 70%, #fff6e9);
+  	  background: linear-gradient(to bottom, #fff 70%, #fff6e9);
+  	  overflow: auto;
+  		color: #080707;
+  	}
+  	.announcement h1{
+  		color: black;
+  		font-weight: bold;
+  	}
+    </style>
   </head>
-  </head>
+
   <body>
     <?php
   		include_once("navbar.php");
   		include_once("db.php");
   	?><br><br><br><br><br><br>
+
+    <!-- Announcements -->
+  		<aside class="announcement">
+  		<h1>Announcements</h1><br>
+  			<?php
+  						$selquery = "SELECT * FROM announcements ORDER BY anndate DESC limit 15";
+  						$execselquery = mysqli_query($con, $selquery);
+
+  						while ($fetch = mysqli_fetch_assoc($execselquery)) {
+  							$announcementid = $fetch['id'];
+  							$adminid = $fetch['adminid'];
+
+  							$query = "SELECT * FROM admin WHERE userid = '$adminid'";
+  							$execquery = mysqli_query($con, $query);
+  							while($fetchid = mysqli_fetch_assoc($execquery)){
+  								$username = $fetchid['username'];
+  							}
+
+
+  							$content = $fetch['content'];
+  							$date = $fetch['anndate'];
+
+  							echo "Announcement No: ".$announcementid."<br>";
+  							echo "ID: ".$adminid."<br>";
+  							echo "User: ".$username."<br>";
+  							echo "Content: ".$content."<br>";
+  							echo "Date: ".$date."<br><br>";
+  						}
+  			 ?>
+  		</aside>
 
   		<!---Feedopedia introducing video--->
   		<div id="VideoIntroCenter">
@@ -25,54 +83,25 @@
   		</div>
   	</div>
 
-    <!-- Announcements -->
-    <div class="announcement">
-      <<?php
-            $selquery = "SELECT * FROM announcements";
-            $execselquery = mysqli_query($con, $selquery);
+	<!---Welcoming text--->
+	<div class="Maincontainer"><br>
+		<b style="font-size: 3em; margin-left: 0.5em;">Feedopedia Quizzes</b>
+		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
 
-            while ($fetch = mysqli_fetch_assoc($execselquery)) {
-              $announcementid = $fetch['id'];
-              $adminid = $fetch['adminid'];
+		<!---Search Button--->
+		<form class="Searchbtn" action="Search.php" method="POST">
+			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search..." name="search">
+		</form>
 
-              $query = "SELECT * FROM admin WHERE userid = '$adminid'";
-              $execquery = mysqli_query($con, $query);
-              while($fetchid = mysqli_fetch_assoc($execquery)){
-                $username = $fetchid['username'];
-              }
-
-
-              $content = $fetch['content'];
-              $date = $fetch['anndate'];
-
-              echo "announcement ".$announcementid."<br>";
-              echo "adminid ".$adminid."<br>";
-              echo "name ".$username."<br>";
-              echo "content ".$content."<br>";
-              echo "date ".$date."<br><br>";
-            }
-       ?>
-    </div>
-    
-  	<!---Welcoming text--->
-  	<div class="Maincontainer"><br>
-  		<b style="font-size: 4em; ">BuzzFeed Quizzes</b>
-  		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul.</p>
-
-  		<!---Search Button--->
-  		<form class="Searchbtn" action="Search.php" method="POST">
-  			<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
-  			<input type="text" placeholder="Search..." name="search">
-  		</form>
-
-      <!---Categories--->
-  		<div class="Categories">
-  			<h4>Categories</h4><br>
-        <a href="main.php" class='catH'>Latest</a>
-  			<a href="Educational.php" class='cat'>Educational</a>
-  			<a href="Entertainment.php" class='cat'>Entertainment</a>
-  			<a href="Mix.php" class='cat'>Mix</a>
-  		</div><br><br>
+		<!---Categories--->
+		<div class="Categories">
+			<h4>Categories</h4><br>
+			<a href="main.php" class='catH'>Latest</a>
+			<a href="Educational.php" class='cat'>Educational</a>
+			<a href="Entertainment.php" class='cat'>Entertainment</a>
+			<a href="Mix.php" class='cat'>Mix</a>
+		</div>
 
     <!---here will appear the searches-->
     <div class="card">
@@ -87,7 +116,7 @@
         $queryResult = mysqli_num_rows($result);
 
         //displaying number of results
-        echo "<h1>There are ".$queryResult." Results: </h1><br><br>";
+        echo "<br><br><h2 style='color: #000;'>There are ".$queryResult." Results: </h2><br><br>";
 
         if ($queryResult > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
