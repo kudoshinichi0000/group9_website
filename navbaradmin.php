@@ -73,7 +73,7 @@
       font-size: 28px;
       margin-top: 0.6em;
       margin-bottom: 0.1em;
-      margin-left: 0.6em;
+      margin-left: 1em;
       font-weight: 600;
 
     }
