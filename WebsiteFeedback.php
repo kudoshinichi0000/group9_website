@@ -150,13 +150,13 @@ a:hover, a:active {
 
       //Inserting feedback into website_feedback table
       $query = "INSERT INTO website_feedback (name, email, feedback)
-     	VALUES ('$name', '$email','$Feedback')"
+     	VALUES ('$name', '$email','$Feedback')";
 
     	//perform the query
      	$result = mysqli_query($con,$query);
 
       if ($result) {
-        echo "<br><br>Successfuly added to database";
+        echo "<br><br><p style='color: #fff;'>Successfuly added to database</p>";
       }
     }
      ?>
