@@ -30,10 +30,11 @@
          Feedback: $feedback<br>
          Date: $date
          <br><br><br>
+
          ";
        }
-
-
+       echo "<a href='modsetting.php'>Go Back</a>";
         ?>
+
   </body>
 </html>
