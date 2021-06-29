@@ -17,6 +17,7 @@
 <center>
   <h1>Delete User</h1>
   <hr>
+  <!-- DELETE ALL ANNOUNCEMENTS -->
 <form action="moddelannallhand.php" method="post">
       <h2><label>Do you want to delete all announcements?</label>
       <input type="submit" name="choice" value="yes">
