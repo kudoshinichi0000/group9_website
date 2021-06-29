@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Accordion Menu | CodingNepal</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="css/footer-cont.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -82,63 +83,20 @@ This policy is effective as of 16 April 2022 and was last updated on 16 April 20
     <div class="parent-tab">
       <input type="radio" name="tab" id="tab-6">
       <label for="tab-6">
-        <span>Accordion Heading Four</span>
+        <span>Contact Us</span>
         <div class="icon"><i class="fas fa-plus"></i></div>
       </label>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+        <p>For any questions or concerns regarding your privacy, you may contact us using the following details:<br>
+          + agapitojezreel25@gmail.com<br>
+          + arriolaaa123@gmail.com<br>
+          + princess.raynaud0808@gmail.com<br>
+          + lj.baloca2@gmail.com</p>
       </div>
     </div>
   </div>
-
-  <div class="wrapperr">
-
-    <!-- Accordion Heading Three -->
-    <div class="parent-tabb tabb-3">
-      <input type="radio" name="tabb" id="tabb-3">
-      <label for="tabb-3" class="tabb-3">
-        <span>Accordion Heading Three</span>
-        <div class="iconn"><i class="fas fa-plus"></i></div>
-      </label>
-      <div class="contentt">
-        <!-- Sub Heading One -->
-        <div class="child-tabb">
-          <input type="checkbox" name="sub-tabb" id="tabb-4">
-          <label for="tabb-4">
-            <span>Sub Heading One</span>
-            <div class="iconn"><i class="fas fa-plus"></i></div>
-          </label>
-          <div class="sub-contentt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
-          </div>
-        </div>
-        <!-- Sub Heading Two -->
-        <div class="child-tabb">
-          <input type="checkbox" name="sub-tabb" id="tabb-5">
-          <label for="tabb-5">
-            <span>Sub Heading Two</span>
-            <div class="iconn"><i class="fas fa-plus"></i></div>
-          </label>
-          <div class="sub-contentt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Accordion Heading Four -->
-    <div class="parent-tabb">
-      <input type="radio" name="tabb" id="tabb-6">
-      <label for="tabb-6">
-        <span>Accordion Heading Four</span>
-        <div class="iconn"><i class="fas fa-plus"></i></div>
-      </label>
-      <div class="contentt">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
-      </div>
-    </div>
+  <div class='icongb'>
+    <a href='main.php'<i class='fas fa-arrow-alt-circle-left'></i></a>
   </div>
-
-
 </body>
 </html>

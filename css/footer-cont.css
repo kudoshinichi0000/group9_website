@@ -8,8 +8,9 @@
 body{
   display: flex;
   align-items: center;
-  justify-content:left;
+  justify-content:center;
   min-height: 100vh;
+  background-image: linear-gradient(to bottom, #bdeff2, #b8f1f3, #b4f3f4, #aff4f4, #aaf6f4, #a8f7f1, #a6f9ee, #a5faeb, #a9fbe4, #aefbdc, #b4fbd4, #bcfbcc);
 }
 ::selection{
   background: rgb(0,123,255,0.3);
@@ -27,7 +28,7 @@ body{
 }
 .wrapper .parent-tab label,
 .wrapper .child-tab label{
-  background: #007bff;
+  background: #420264;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -39,12 +40,13 @@ body{
   transition: all 0.3s ease;
 }
 .wrapper .parent-tab label:hover{
-  background: #006fe6;
+background-image: linear-gradient(to bottom, #0a6f6a, #008171, #009473, #00a66f, #00b766, #00c26d, #00cc73, #00d77a, #0fde96, #2ce4ae, #49e9c4, #66eed7);
+
 }
 .parent-tab input:checked ~ label,
 .child-tab input:checked ~ label{
   border-radius: 3px 3px 0 0;
-  background: #006fe6;
+  background-image: linear-gradient(to bottom, #0a6f6a, #008171, #009473, #00a66f, #00b766, #00c26d, #00cc73, #00d77a, #0fde96, #2ce4ae, #49e9c4, #66eed7);
 }
 .wrapper label span{
   color: #fff;
@@ -107,98 +109,42 @@ input[type="radio"],
 input[type="checkbox"]{
   display: none;
 }
-
-
-.wrapperr{
-  max-width: 600px;
-  padding: 0 20px;
-
-}
-.wrapperr .parent-tabb,
-.wrapperr .child-tabb{
-  margin-bottom: 8px;
-  border-radius: 3px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
-}
-.wrapperr .parent-tabb label,
-.wrapperr .child-tabb label{
-  background: #007bff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
+.icongb{
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left;
+  margin-left: -0.5em;
+  margin-top: -1em;
+  height: 50px;
+  width: 50px;
+  font-size: 50px; /* icon size*/
+  text-decoration: none;
+  margin: 15px 30 20px 0;
   justify-content: space-between;
-  cursor: pointer;
-  border-radius: 3px;
-  position: relative;
-  z-index: 99;
-  transition: all 0.3s ease;
+
 }
-.wrapperr .parent-tabb label:hover{
-  background: #006fe6;
+.icongb a{
+margin-top: -2em;
+border-radius: 50%;
+transition: all 0.3s ease-in-out;
+border: 1.4px solid transparent;
+padding: 15px;
+border-radius: 50%;
+transition: all 0.3s ease-in-out;
+text-decoration: none;
 }
-.parent-tabb input:checked ~ label,
-.child-tabb input:checked ~ label{
-  border-radius: 3px 3px 0 0;
-  background: #006fe6;
+
+.icongb a i {
+
+  transition: transform 0.3s ease-in-out;
 }
-.wrapperr label span{
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  text-shadow: 0 -1px 1px #0056b3;
+.icongb a:nth-child(1){
+  color: #420364;
+  border-color: #420364;
 }
-.wrapperr .child-tabb label span{
-  font-size: 17px;
+.icongb a:nth-child(1):hover{
+  color: #0f4ce4;
+  background-image: linear-gradient(to bottom, #0a6f6a, #008171, #009473, #00a66f, #00b766, #00c26d, #00cc73, #00d77a, #0fde96, #2ce4ae, #49e9c4, #66eed7);
 }
-.parent-tabb label .iconn{
-  position: relative;
-  height: 30px;
-  width: 30px;
-  font-size: 15px;
-  color: #007bff;
-  display: block;
-  background: #fff;
-  border-radius: 50%;
-  text-shadow: 0 -1px 1px #0056b3;
-}
-.wrapperr .child-tabb label .iconn{
-  height: 27px;
-  width: 27px;
-}
-.parent-tabb label .iconn i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.parent-tabb input:checked ~ label .iconn i:before,
-.child-tabb input:checked ~ label .iconn i:before{
-  content: '\f068';
-}
-.wrapperr .parent-tabb.contentt,
-.wrapperr .child-tabb .sub-contentt{
-  max-height: 0px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 0 0 3px 3px;
-  transition: all 0.4s ease;
-}
-.parent-tabb input:checked ~ .contentt,
-.child-tabb input:checked ~ .sub-contentt{
-  max-height: 100vh;
-}
-.tabb-3 input:checked ~ .contentt{
-  padding: 15px 20px;
-}
-.parent-tabb .contentt p,
-.child-tabb .sub-contentt p{
-  padding: 15px 20px;
-  font-size: 16px;
-}
-.child-tabb .sub-contentt p{
-  font-size: 15px;
-}
-input[type="radio"],
-input[type="checkbox"]{
-  display: none;
+
 }
