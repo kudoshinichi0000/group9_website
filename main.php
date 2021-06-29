@@ -18,11 +18,11 @@ body{
 	align-content: center;
   float: left;
 	font-weight: bold;
-	margin-left: 200px;
+	margin-left: 150px;
 	padding: 30px;
 	padding-left: 50px;
 	height: 350px;
-	width: 500px;
+	width: 510px;
   border-radius: 5px;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
