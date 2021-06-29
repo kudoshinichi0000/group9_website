@@ -378,7 +378,6 @@ opacity: 1;
                 <li><div class=""><a href="quiz_feedback.php">Feedback</a></div></li>
                 <li><div class=""><a href="logs.php">Update</a></div></li>
                 <li><div class=""><a href="viewadminuser.php">View User</a></div></li>
-                <li><div class=""><a href="resultsadmin.php">Results</a></div></li>
                 <li><div class=""><a href="quiz_list.php">Create Quiz</a></div></li>
                 <li><div class="profile" onclick="menuToggle();" style=" font-size: 35px;color: white; margin:-10px;"><i class="far fa-user-circle"></i>
                     <div class="menu">

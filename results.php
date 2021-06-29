@@ -90,6 +90,7 @@
 												<div class='card-front'>
 													<article class='card-front-content'>
 													<div style='color:#fff;'>Title: $title</div>
+													<div style='color:#fff;'>Quiz Code: $quizCode</div>
 													<div style='color:#fff;'>Name: $name</div>
 													<div style='color:#fff;'>Email: $email</div>
 													<div style='color:#fff;'>Score: $score / $OverallScores</div>
