@@ -136,7 +136,7 @@
                   <div class="row form-group">
                     <div class="col">
                       <label for="question">Question:</label>
-                     <input type='text' class="form-control"  placeholder="Enter your question" name='question' required>
+                     <textarea class="form-control" rows="3" cols="40" placeholder="Enter your question" name='question' required></textarea>
                     </div>
                   </div>
                   <div class="row form-group">
