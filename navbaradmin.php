@@ -23,7 +23,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', san-serif;
-
     }
 
     body{
@@ -68,6 +67,7 @@
       display: inline-block;
     }
     nav .TextDesign{
+      font-family: 'Orelega One', cursive;
       float: left;
       color: white;
       font-size: 28px;
