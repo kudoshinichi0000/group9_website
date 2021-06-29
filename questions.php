@@ -101,8 +101,8 @@
     echo "
       <div class='Containerhead'>
         <div class='cont'>
-          <img src='res/quizPicture/$QuizPic' width='250px' height='150px' alt='image not found' class='Prof' >
-            <h4>Title: $title</h4>
+          <img src='res/quizPicture/$QuizPic' width='250px' height='150px' alt='image not found' class='Prof' style='margin-top:-0.5em;' >
+            <h4 style='margin-top:1.5em;'>Title: $title</h4>
             <h4>Categories: $Cat</h4>
             <h4>Total Points: $OS</h4>
             <h4>Items: $items</h4>
