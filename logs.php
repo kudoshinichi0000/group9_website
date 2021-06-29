@@ -1,31 +1,13 @@
+<?php
+  include_once("navbar.php");
+?><br><br>>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Announce</title>
-
-    <style>
-      .container{
-        display: inline-block;
-        overflow: auto;
-        width: 250px;
-        height: 300px;
-      }
-      *{
-        font-weight: bold;
-      }
-      a{
-        text-decoration: none;
-        background-color: black;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-      }
-    </style>
   </head>
+
   <body>
     <center><h1><==========================Announcement==========================></h1>
     <form class="" action="logsHandler.php" method="post">
