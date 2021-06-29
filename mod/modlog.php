@@ -1,4 +1,5 @@
 <?php
+// Cant figure out how to put the name while inputting a log
   // if($_SERVER['REQUEST_METHOD'] == "POST"){
   // include_once ("../db.php");
   //
@@ -53,6 +54,7 @@
     <a href="modsetting.php"><h3>BACK</h3></a>
     <hr> -->
     <h4>LOGS</h4>
+    <!-- SHOW ALL USERS LOGS, CAN DELETE -->
     <?php
     include_once "../db.php";
         $selquery = "SELECT * FROM announcements";

@@ -10,6 +10,9 @@
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
 
 	<style>
+	body{
+		background-image: linear-gradient(to left top, #87eda1, #82f0b5, #82f3c8, #87f5d8, #90f7e6, #90f7e6, #90f7e6, #90f7e6, #87f5d8, #82f3c8, #82f0b5, #87eda1);
+	}
 	.announcement{
 		align-items: center;
 		align-content: center;
@@ -81,7 +84,7 @@
 
 	<!---Welcoming text--->
 	<div class="Maincontainer"><br>
-		<b style="font-size: 4em; ">Feedopedia Quizzes</b>
+		<b style="font-size: 3em; margin-left: 0.5em;">Feedopedia Quizzes</b>
 		<p>We've got all the quizzes you love to binge! Come on in and hunker down for the long haul<a href="mod/modsetting.php">.</a></p>
 
 		<!---Search Button--->
@@ -100,7 +103,7 @@
 		</div>
 
 		<!--displaying all Quiz--->
-		<div class="centerBlack">News Feed</div><br>
+		<div class="centerBlack">Quiz Feed</div><br>
 		<?php
 
 		//Including Database

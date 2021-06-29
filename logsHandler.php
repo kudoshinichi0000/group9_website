@@ -1,6 +1,6 @@
 <?php
   include_once ("db.php");
-
+// Insert announcement 
   $userid = $_SESSION['userid'];
   $content = $_POST['content'];
 
