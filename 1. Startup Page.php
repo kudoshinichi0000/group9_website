@@ -12,10 +12,10 @@
               <h2 class="logo"><img src="res/images/Logo.png" alt="" height="50" style="padding-top: 0.5em; margin-bottom: -0.4em; margin-right: 1em;">Feedopedia </h2>
               <div class="toggle"></div>
             </header>
-            <video muted loop autoplay>
+            <!--<video muted loop autoplay>
               <source src="res/Video/backgroundVideo.mp4" type="video/mp4">
               <source src="res/Video/backgroundVideo.mp4" type="video/ogg">
-            </video>
+            </video>-->
 
             <div class="overlay"></div>
             <div class="text">
