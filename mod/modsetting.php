@@ -47,7 +47,10 @@
       <!-- Factory Reset -->
       <h2>Reset Website</h2>
       <a href="modFactoryReset.php">HERE</a>
-      
+
+      <!-- logs Reset -->
+      <h2>Reset Quiz Results</h2>
+      <a href="modResetQuizResults.php">HERE</a>
     </center>
   </body>
 </html>

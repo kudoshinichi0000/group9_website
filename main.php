@@ -152,9 +152,9 @@ body{
 									<div class='card-back card-back-hr'>
 										<article class='card-back-content'>
 											<h2>Title: $Ftitle</h2>
-											<p style='color:#fff;'>Category: $row[categories]</p>
-											<p style='color:#fff;'>Items: $row[items]</p>
-											<p style='color:#fff;'>Overall Scores: $row[OverallScores]</p>
+											<p style='color:#fff; text-align: left;'>Category: $row[categories]</p>
+											<p style='color:#fff; text-align: left;'>Items: $row[items]</p>
+											<p style='color:#fff; text-align: left;'>Overall Scores: $row[OverallScores]</p>
 											<a class='PlayButton' href='Displayinfo.php?quiz_code=$QuizCode'>Play Quiz</a>
 										</article>
 									</div>
