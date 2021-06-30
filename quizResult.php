@@ -170,9 +170,6 @@
 
 	<?php
 
-	//Navbar for admin
-	include_once ("navbar2.php");
-
 	//Get quiz_code
 	$code = $_GET["quiz_code"];
 

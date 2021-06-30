@@ -20,7 +20,7 @@
 	// Get Total questions
 	$query = "SELECT * FROM questions WHERE quiz_code = $code";
 	$total_questions = mysqli_num_rows(mysqli_query($con,$query));
- include_once "navbar2.php"
+
 ?>
 <html>
 <head>

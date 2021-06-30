@@ -26,7 +26,7 @@
             </div>
             <ul class="social">
               <li><a href="https://www.facebook.com/JezreelAgapito27/"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
-              <li><a href="https://www.facebook.com/JezreelAgapito27/"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+              <li><a href="https://twitter.com/btsissogaywtf/"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
               <li><a href="https://www.facebook.com/JezreelAgapito27/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
             </ul>
           </section>
