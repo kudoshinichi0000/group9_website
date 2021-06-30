@@ -23,7 +23,7 @@
 
     <center><h1>Announcement</h1><br>
     <form class="" action="logsHandler.php" method="post">
-        <textarea cols="50" rows="5" name="content" placeholder="Announce"></textarea>
+        <textarea cols="50" rows="5" name="content" placeholder="Announce" required></textarea>
         <br><br>
         <h2><input type="submit" name="submit" value="submit"></h2>
     </form>
